@@ -1,5 +1,6 @@
 ﻿
 using System.Reflection.Metadata.Ecma335;
+using static System.Windows.Forms.LinkLabel;
 
 namespace FF7_SYW_Unified
 {
@@ -9,15 +10,31 @@ namespace FF7_SYW_Unified
         //call translation on lang selection
         private void langInterface_SelectedIndexChanged(object sender, EventArgs e) { translation(langInterface.Text); }
 
+        private void menuClick(Control btn)
+        {
+            btn.BackColor = Globals.activButtonBolor;
+            Globals.activMenuName = btn.Name;
 
-        //menu buttons toogle
+            foreach (Control c in settingsGroup.Controls)
+            {
+                if(c.Name != Globals.activMenuName) {c.BackColor = Globals.inactivButtonBolor; }
+            }
+        }
+
+        private void menuMouseOver(Control menuBtn, bool isActiv = true)
+        {
+            if (Globals.activMenuName != menuBtn.Name && isActiv == false)
+            {
+                menuBtn.BackColor = Globals.inactivButtonBolor;
+                return;
+            }
+            menuBtn.BackColor = Globals.activButtonBolor;
+        }
+
+
+        /*menu buttons toogle
         private void menutoogle(int menu)
         {
-            Globals.isMenuAbout = false;
-            Globals.isMenuGraphic = false;
-            Globals.ismenuFFNx = false;
-            Globals.ismenuSound = false;
-            Globals.ismenuGameplay = false;
             menuAbout.BackColor = Globals.inactivButtonBolor;
             menuGraphic.BackColor = Globals.inactivButtonBolor;
             menuSound.BackColor = Globals.inactivButtonBolor;
@@ -90,29 +107,27 @@ namespace FF7_SYW_Unified
             c.Visible = true;
 
         }
+        */
 
 
-        //textbox "buttons" colors
+        private void menuAbout_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuAbout); }
+        private void menuAbout_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuAbout, false); }
+        private void menuGraphic_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuGraphic); }
+        private void menuGraphic_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuGraphic, false); }
+        private void menuSound_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuSound); }
+        private void menuSound_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuSound, false); }
+        private void menuGameplay_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuGameplay); ; }
+        private void menuGameplay_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuGameplay, false); }
+        private void menuFFNx_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuFFNx); }
+        private void menuFFNx_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuFFNx, false); }
+
+        private void menuAbout_Click(object sender, EventArgs e) { menuClick(menuAbout); }
+        private void menuGraphic_Click(object sender, EventArgs e) { menuClick(menuGraphic); }
+        private void menuSound_Click(object sender, EventArgs e) { menuClick(menuSound); }
+        private void menuGameplay_Click(object sender, EventArgs e) { menuClick(menuGameplay); }
+        private void menuFFNx_Click(object sender, EventArgs e) { menuClick(menuFFNx); }
+
         private void launchGame_MouseEnter(object sender, EventArgs e) { launchGame.BackColor = Globals.activButtonBolor; }
         private void launchGame_MouseLeave(object sender, EventArgs e) { launchGame.BackColor = Globals.inactivButtonBolor; }
-
-        private void menuAbout_MouseEnter(object sender, EventArgs e) { menuAbout.BackColor = Globals.activButtonBolor; }
-        private void menuAbout_MouseLeave(object sender, EventArgs e) { if (Globals.isMenuAbout == false) { menuAbout.BackColor = Globals.inactivButtonBolor; } }
-        private void menuGraphic_MouseEnter(object sender, EventArgs e) { menuGraphic.BackColor = Globals.activButtonBolor; }
-        private void menuGraphic_MouseLeave(object sender, EventArgs e) { if (Globals.isMenuGraphic == false) { menuGraphic.BackColor = Globals.inactivButtonBolor; } }
-        private void menuSound_MouseEnter(object sender, EventArgs e) { menuSound.BackColor = Globals.activButtonBolor; }
-        private void menuSound_MouseLeave(object sender, EventArgs e) { if (Globals.ismenuSound == false) { menuSound.BackColor = Globals.inactivButtonBolor; } }
-        private void menuGameplay_MouseEnter(object sender, EventArgs e) { menuGameplay.BackColor = Globals.activButtonBolor; }
-        private void menuGameplay_MouseLeave(object sender, EventArgs e) { if (Globals.ismenuGameplay == false) { menuGameplay.BackColor = Globals.inactivButtonBolor; } }
-        private void menuFFNx_MouseEnter(object sender, EventArgs e) { menuFFNx.BackColor = Globals.activButtonBolor; }
-        private void menuFFNx_MouseLeave(object sender, EventArgs e) { if (Globals.ismenuFFNx == false) { menuFFNx.BackColor = Globals.inactivButtonBolor; } }
-
-        private void menuAbout_Click(object sender, EventArgs e) { menutoogle(1); }
-        private void menuGraphic_Click(object sender, EventArgs e) { menutoogle(2); }
-        private void menuSound_Click(object sender, EventArgs e) { menutoogle(3); }
-        private void menuGameplay_Click(object sender, EventArgs e) { menutoogle(4); }
-        private void menuFFNx_Click(object sender, EventArgs e) { menutoogle(5); }
-
-
     }
 }
