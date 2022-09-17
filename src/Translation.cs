@@ -31,7 +31,7 @@ namespace FF7_SYW_Unified
                         x.Text = (lines[i].Replace(x.Name + ":::", "")).Replace("###", System.Environment.NewLine);
                     }
 
-                    if (lines[i].Contains("donation:::") && x.Name.Contains("d"))
+                    if (lines[i].Contains("donation:::") && x.Name.Contains("donation"))
                     {
                         x.Text = lines[i].Replace("donation:::", ""); ;
                     }

@@ -51,8 +51,8 @@
             this.aboutFrame1 = new System.Windows.Forms.GroupBox();
             this.authorUrl12 = new System.Windows.Forms.Label();
             this.authorUrl12b = new System.Windows.Forms.Label();
-            this.officialFf7 = new System.Windows.Forms.Label();
-            this.author42urlD = new System.Windows.Forms.Label();
+            this.authorUrl99 = new System.Windows.Forms.Label();
+            this.author42UrlD = new System.Windows.Forms.Label();
             this.author42UrlD2 = new System.Windows.Forms.Label();
             this.donation42 = new System.Windows.Forms.Label();
             this.authorUrl42 = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
             this.authorUrl11b = new System.Windows.Forms.Label();
             this.authorUrl10 = new System.Windows.Forms.Label();
             this.authorUrl8 = new System.Windows.Forms.Label();
-            this.authoUrl7 = new System.Windows.Forms.Label();
+            this.authorUrl7 = new System.Windows.Forms.Label();
             this.donation6 = new System.Windows.Forms.Label();
             this.authorUrl6 = new System.Windows.Forms.Label();
             this.donation5 = new System.Windows.Forms.Label();
@@ -377,7 +377,7 @@
             // 
             this.menuAboutPanel.Controls.Add(this.aboutFrame1);
             this.menuAboutPanel.Controls.Add(this.aboutFrame2);
-            this.menuAboutPanel.Location = new System.Drawing.Point(1600, -3);
+            this.menuAboutPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuAboutPanel.Name = "menuAboutPanel";
             this.menuAboutPanel.Size = new System.Drawing.Size(799, 715);
             this.menuAboutPanel.TabIndex = 11;
@@ -387,8 +387,8 @@
             this.aboutFrame1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.aboutFrame1.Controls.Add(this.authorUrl12);
             this.aboutFrame1.Controls.Add(this.authorUrl12b);
-            this.aboutFrame1.Controls.Add(this.officialFf7);
-            this.aboutFrame1.Controls.Add(this.author42urlD);
+            this.aboutFrame1.Controls.Add(this.authorUrl99);
+            this.aboutFrame1.Controls.Add(this.author42UrlD);
             this.aboutFrame1.Controls.Add(this.author42UrlD2);
             this.aboutFrame1.Controls.Add(this.donation42);
             this.aboutFrame1.Controls.Add(this.authorUrl42);
@@ -402,7 +402,7 @@
             this.aboutFrame1.Controls.Add(this.authorUrl11b);
             this.aboutFrame1.Controls.Add(this.authorUrl10);
             this.aboutFrame1.Controls.Add(this.authorUrl8);
-            this.aboutFrame1.Controls.Add(this.authoUrl7);
+            this.aboutFrame1.Controls.Add(this.authorUrl7);
             this.aboutFrame1.Controls.Add(this.donation6);
             this.aboutFrame1.Controls.Add(this.authorUrl6);
             this.aboutFrame1.Controls.Add(this.donation5);
@@ -457,7 +457,7 @@
             this.aboutFrame1.Controls.Add(this.authorName12);
             this.aboutFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.aboutFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.aboutFrame1.Location = new System.Drawing.Point(3, 7);
+            this.aboutFrame1.Location = new System.Drawing.Point(3, 4);
             this.aboutFrame1.Name = "aboutFrame1";
             this.aboutFrame1.Size = new System.Drawing.Size(788, 513);
             this.aboutFrame1.TabIndex = 8;
@@ -477,6 +477,7 @@
             this.authorUrl12.TabIndex = 72;
             this.authorUrl12.Text = "ff7.fr";
             this.authorUrl12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl12.Click += new System.EventHandler(this.authorUrl12_Click);
             // 
             // authorUrl12b
             // 
@@ -491,34 +492,37 @@
             this.authorUrl12b.TabIndex = 71;
             this.authorUrl12b.Text = "qhimm.com";
             this.authorUrl12b.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl12b.Click += new System.EventHandler(this.authorUrl12b_Click);
             // 
-            // officialFf7
+            // authorUrl99
             // 
-            this.officialFf7.AutoSize = true;
-            this.officialFf7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.officialFf7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.officialFf7.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.officialFf7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.officialFf7.Location = new System.Drawing.Point(648, 465);
-            this.officialFf7.Name = "officialFf7";
-            this.officialFf7.Size = new System.Drawing.Size(97, 15);
-            this.officialFf7.TabIndex = 70;
-            this.officialFf7.Text = "Site Officiel FF7";
-            this.officialFf7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl99.AutoSize = true;
+            this.authorUrl99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.authorUrl99.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.authorUrl99.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.authorUrl99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.authorUrl99.Location = new System.Drawing.Point(648, 465);
+            this.authorUrl99.Name = "authorUrl99";
+            this.authorUrl99.Size = new System.Drawing.Size(116, 15);
+            this.authorUrl99.TabIndex = 70;
+            this.authorUrl99.Text = "square-enix-games";
+            this.authorUrl99.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl99.Click += new System.EventHandler(this.authorUrl99_Click);
             // 
-            // author42urlD
+            // author42UrlD
             // 
-            this.author42urlD.AutoSize = true;
-            this.author42urlD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.author42urlD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.author42urlD.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.author42urlD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.author42urlD.Location = new System.Drawing.Point(648, 368);
-            this.author42urlD.Name = "author42urlD";
-            this.author42urlD.Size = new System.Drawing.Size(108, 15);
-            this.author42urlD.TabIndex = 69;
-            this.author42urlD.Text = "discord (français)";
-            this.author42urlD.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.author42UrlD.AutoSize = true;
+            this.author42UrlD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.author42UrlD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.author42UrlD.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.author42UrlD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.author42UrlD.Location = new System.Drawing.Point(648, 368);
+            this.author42UrlD.Name = "author42UrlD";
+            this.author42UrlD.Size = new System.Drawing.Size(108, 15);
+            this.author42UrlD.TabIndex = 69;
+            this.author42UrlD.Text = "discord (français)";
+            this.author42UrlD.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.author42UrlD.Click += new System.EventHandler(this.author42UrlD_Click);
             // 
             // author42UrlD2
             // 
@@ -533,6 +537,7 @@
             this.author42UrlD2.TabIndex = 68;
             this.author42UrlD2.Text = "discord (english)";
             this.author42UrlD2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.author42UrlD2.Click += new System.EventHandler(this.author42UrlD2_Click);
             // 
             // donation42
             // 
@@ -547,6 +552,7 @@
             this.donation42.TabIndex = 67;
             this.donation42.Text = "Donation";
             this.donation42.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.donation42.Click += new System.EventHandler(this.donation42_Click);
             // 
             // authorUrl42
             // 
@@ -561,6 +567,7 @@
             this.authorUrl42.TabIndex = 66;
             this.authorUrl42.Text = "ff7.fr";
             this.authorUrl42.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl42.Click += new System.EventHandler(this.authorUrl42_Click);
             // 
             // authorUrl42b
             // 
@@ -575,6 +582,7 @@
             this.authorUrl42b.TabIndex = 65;
             this.authorUrl42b.Text = "qhimm.com";
             this.authorUrl42b.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl42b.Click += new System.EventHandler(this.authorUrl42b_Click);
             // 
             // authorUrl17
             // 
@@ -589,6 +597,7 @@
             this.authorUrl17.TabIndex = 64;
             this.authorUrl17.Text = "qhimm.com";
             this.authorUrl17.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl17.Click += new System.EventHandler(this.authorUrl17_Click);
             // 
             // donation16
             // 
@@ -603,6 +612,7 @@
             this.donation16.TabIndex = 63;
             this.donation16.Text = "Donation";
             this.donation16.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.donation16.Click += new System.EventHandler(this.donation16_Click);
             // 
             // authorUrl16
             // 
@@ -617,6 +627,7 @@
             this.authorUrl16.TabIndex = 62;
             this.authorUrl16.Text = "qhimm.com";
             this.authorUrl16.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl16.Click += new System.EventHandler(this.authorUrl16_Click);
             // 
             // donation13
             // 
@@ -631,6 +642,7 @@
             this.donation13.TabIndex = 61;
             this.donation13.Text = "Donation";
             this.donation13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.donation13.Click += new System.EventHandler(this.donation13_Click);
             // 
             // authorUrl13
             // 
@@ -645,6 +657,7 @@
             this.authorUrl13.TabIndex = 60;
             this.authorUrl13.Text = "nexusmods";
             this.authorUrl13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl13.Click += new System.EventHandler(this.authorUrl13_Click);
             // 
             // authorUrl11
             // 
@@ -659,6 +672,7 @@
             this.authorUrl11.TabIndex = 58;
             this.authorUrl11.Text = "ff7.fr";
             this.authorUrl11.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl11.Click += new System.EventHandler(this.authorUrl11_Click);
             // 
             // authorUrl11b
             // 
@@ -673,6 +687,7 @@
             this.authorUrl11b.TabIndex = 57;
             this.authorUrl11b.Text = "qhimm.com";
             this.authorUrl11b.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl11b.Click += new System.EventHandler(this.authorUrl11b_Click);
             // 
             // authorUrl10
             // 
@@ -687,6 +702,7 @@
             this.authorUrl10.TabIndex = 56;
             this.authorUrl10.Text = "qhimm.com";
             this.authorUrl10.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl10.Click += new System.EventHandler(this.authorUrl10_Click);
             // 
             // authorUrl8
             // 
@@ -701,20 +717,22 @@
             this.authorUrl8.TabIndex = 55;
             this.authorUrl8.Text = "qhimm.com";
             this.authorUrl8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl8.Click += new System.EventHandler(this.authorUrl8_Click);
             // 
-            // authoUrl7
+            // authorUrl7
             // 
-            this.authoUrl7.AutoSize = true;
-            this.authoUrl7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.authoUrl7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.authoUrl7.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.authoUrl7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.authoUrl7.Location = new System.Drawing.Point(648, 124);
-            this.authoUrl7.Name = "authoUrl7";
-            this.authoUrl7.Size = new System.Drawing.Size(74, 15);
-            this.authoUrl7.TabIndex = 54;
-            this.authoUrl7.Text = "qhimm.com";
-            this.authoUrl7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl7.AutoSize = true;
+            this.authorUrl7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.authorUrl7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.authorUrl7.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.authorUrl7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.authorUrl7.Location = new System.Drawing.Point(648, 124);
+            this.authorUrl7.Name = "authorUrl7";
+            this.authorUrl7.Size = new System.Drawing.Size(74, 15);
+            this.authorUrl7.TabIndex = 54;
+            this.authorUrl7.Text = "qhimm.com";
+            this.authorUrl7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl7.Click += new System.EventHandler(this.authorUrl7_Click);
             // 
             // donation6
             // 
@@ -729,6 +747,7 @@
             this.donation6.TabIndex = 53;
             this.donation6.Text = "Donation";
             this.donation6.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.donation6.Click += new System.EventHandler(this.donation6_Click);
             // 
             // authorUrl6
             // 
@@ -743,6 +762,7 @@
             this.authorUrl6.TabIndex = 52;
             this.authorUrl6.Text = "qhimm.com";
             this.authorUrl6.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl6.Click += new System.EventHandler(this.authorUrl6_Click);
             // 
             // donation5
             // 
@@ -757,6 +777,7 @@
             this.donation5.TabIndex = 51;
             this.donation5.Text = "Donation";
             this.donation5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.donation5.Click += new System.EventHandler(this.donation5_Click);
             // 
             // authorUrl5
             // 
@@ -771,6 +792,7 @@
             this.authorUrl5.TabIndex = 50;
             this.authorUrl5.Text = "qhimm.com";
             this.authorUrl5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl5.Click += new System.EventHandler(this.authorUrl5_Click);
             // 
             // donation4
             // 
@@ -785,6 +807,7 @@
             this.donation4.TabIndex = 49;
             this.donation4.Text = "Donation";
             this.donation4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.donation4.Click += new System.EventHandler(this.donation4_Click);
             // 
             // authorUrl4
             // 
@@ -799,6 +822,7 @@
             this.authorUrl4.TabIndex = 48;
             this.authorUrl4.Text = "qhimm.com";
             this.authorUrl4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl4.Click += new System.EventHandler(this.authorUrl4_Click);
             // 
             // donation2
             // 
@@ -813,6 +837,7 @@
             this.donation2.TabIndex = 47;
             this.donation2.Text = "Donation";
             this.donation2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.donation2.Click += new System.EventHandler(this.donation2_Click);
             // 
             // authorUrl3
             // 
@@ -827,6 +852,7 @@
             this.authorUrl3.TabIndex = 46;
             this.authorUrl3.Text = "ff7.fr";
             this.authorUrl3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl3.Click += new System.EventHandler(this.authorUrl3_Click);
             // 
             // donation1
             // 
@@ -841,6 +867,7 @@
             this.donation1.TabIndex = 45;
             this.donation1.Text = "Donation";
             this.donation1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.donation1.Click += new System.EventHandler(this.donation1_Click);
             // 
             // authorUrl2
             // 
@@ -855,6 +882,7 @@
             this.authorUrl2.TabIndex = 44;
             this.authorUrl2.Text = "ff7.fr";
             this.authorUrl2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl2.Click += new System.EventHandler(this.authorUrl2_Click);
             // 
             // authorUrl1
             // 
@@ -869,6 +897,7 @@
             this.authorUrl1.TabIndex = 43;
             this.authorUrl1.Text = "ff7.fr";
             this.authorUrl1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl1.Click += new System.EventHandler(this.authorUrl1_Click);
             // 
             // authorUrl1b
             // 
@@ -883,6 +912,7 @@
             this.authorUrl1b.TabIndex = 42;
             this.authorUrl1b.Text = "qhimm.com";
             this.authorUrl1b.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl1b.Click += new System.EventHandler(this.authorUrl1b_Click);
             // 
             // author99
             // 
@@ -1291,7 +1321,7 @@
             this.aboutFrame2.Controls.Add(this.packStory);
             this.aboutFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.aboutFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.aboutFrame2.Location = new System.Drawing.Point(3, 526);
+            this.aboutFrame2.Location = new System.Drawing.Point(3, 523);
             this.aboutFrame2.Name = "aboutFrame2";
             this.aboutFrame2.Size = new System.Drawing.Size(788, 180);
             this.aboutFrame2.TabIndex = 6;
@@ -1364,8 +1394,8 @@
         private GroupBox aboutFrame1;
         private Label authorUrl12;
         private Label authorUrl12b;
-        private Label officialFf7;
-        private Label author42urlD;
+        private Label authorUrl99;
+        private Label author42UrlD;
         private Label author42UrlD2;
         private Label donation42;
         private Label authorUrl42;
@@ -1379,7 +1409,7 @@
         private Label authorUrl11b;
         private Label authorUrl10;
         private Label authorUrl8;
-        private Label authoUrl7;
+        private Label authorUrl7;
         private Label donation6;
         private Label authorUrl6;
         private Label donation5;

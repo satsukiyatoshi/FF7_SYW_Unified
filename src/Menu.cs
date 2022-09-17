@@ -44,7 +44,7 @@ namespace FF7_SYW_Unified
 
 
         //Change menu button color on mouse over
-        private void menuMouseOver(Control menuBtn, bool isActiv = true)
+        private static void menuMouseOver(Control menuBtn, bool isActiv = true)
         {
             if (Globals.activMenuName != menuBtn.Name && isActiv == false)
             {
