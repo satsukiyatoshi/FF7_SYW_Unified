@@ -28,4 +28,10 @@
     </EmbeddedResource>
   </ItemGroup>
 
+	<ItemGroup>
+		<Content Include="..\depoyement\**\*.*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
 </Project>
