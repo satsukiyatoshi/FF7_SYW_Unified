@@ -46,7 +46,7 @@ namespace FF7_SYW_Unified
         //Change menu button color on mouse over
         private static void menuMouseOver(Control menuBtn, bool isActiv = true)
         {
-            if (Globals.activMenuName != menuBtn.Name && isActiv == false)
+            if (Globals.activMenuName != menuBtn.Name && !isActiv)
             {
                 menuBtn.BackColor = Globals.inactivButtonBolor;
                 return;
@@ -62,7 +62,7 @@ namespace FF7_SYW_Unified
         private void menuGraphic_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuGraphic, false); }
         private void menuSound_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuSound); }
         private void menuSound_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuSound, false); }
-        private void menuGameplay_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuGameplay); ; }
+        private void menuGameplay_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuGameplay); }
         private void menuGameplay_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuGameplay, false); }
         private void menuFFNx_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuFFNx); }
         private void menuFFNx_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuFFNx, false); }

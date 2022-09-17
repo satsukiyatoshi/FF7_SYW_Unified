@@ -33,7 +33,7 @@ namespace FF7_SYW_Unified
 
                     if (lines[i].Contains("donation:::") && x.Name.Contains("donation"))
                     {
-                        x.Text = lines[i].Replace("donation:::", ""); ;
+                        x.Text = lines[i].Replace("donation:::", ""); 
                     }
                 }
             }
