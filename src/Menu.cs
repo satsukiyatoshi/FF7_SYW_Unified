@@ -7,9 +7,14 @@ namespace FF7_SYW_Unified
     partial class Form1
     {
 
-        //call translation on lang selection
+        //call translation on menu lang selection
         private void langInterface_SelectedIndexChanged(object sender, EventArgs e) { translation(langInterface.Text); }
 
+
+        /*
+         *Set menu button color on click
+         *Set the matching options pannel visible
+         */
         private void menuClick(Control btn)
         {
             btn.BackColor = Globals.activButtonBolor;
@@ -19,8 +24,26 @@ namespace FF7_SYW_Unified
             {
                 if(c.Name != Globals.activMenuName) {c.BackColor = Globals.inactivButtonBolor; }
             }
+
+            foreach (Control cpanel in Controls)
+            {
+                if (cpanel is Panel)
+                {
+                    if (cpanel.Name.Contains(btn.Name)) {
+                        cpanel.Location = new Point(327, 0);
+                        cpanel.Visible = true;
+
+                    } else
+                    {
+                        cpanel.Location = new Point(1600, 0);
+                        cpanel.Visible = false;
+                    }
+                }
+            }
         }
 
+
+        //Change menu button color on mouse over
         private void menuMouseOver(Control menuBtn, bool isActiv = true)
         {
             if (Globals.activMenuName != menuBtn.Name && isActiv == false)
@@ -32,84 +55,7 @@ namespace FF7_SYW_Unified
         }
 
 
-        /*menu buttons toogle
-        private void menutoogle(int menu)
-        {
-            menuAbout.BackColor = Globals.inactivButtonBolor;
-            menuGraphic.BackColor = Globals.inactivButtonBolor;
-            menuSound.BackColor = Globals.inactivButtonBolor;
-            menuGameplay.BackColor = Globals.inactivButtonBolor;
-            menuFFNx.BackColor = Globals.inactivButtonBolor;
-
-            if (menu == 1)
-            {
-                Globals.isMenuAbout = true;
-                menuAbout.BackColor = Globals.activButtonBolor;
-                showFrame(aboutFrame1);
-                showFrame(aboutFrame2);
-                showFrame(graphicFrame1, false);
-                showFrame(graphicFrame2, false);
-            }
-
-            if (menu == 2)
-            {
-                Globals.isMenuGraphic = true;
-                menuGraphic.BackColor = Globals.activButtonBolor;
-                showFrame(aboutFrame1,false);
-                showFrame(aboutFrame2,false);
-                showFrame(graphicFrame1);
-                showFrame(graphicFrame2);
-            }
-
-            if (menu == 3)
-            {
-                Globals.ismenuSound = true;
-                menuSound.BackColor = Globals.activButtonBolor;
-                showFrame(aboutFrame1, false);
-                showFrame(aboutFrame2, false);
-                showFrame(graphicFrame1, false);
-                showFrame(graphicFrame2, false);
-            }
-
-            if (menu == 4)
-            {
-                Globals.ismenuGameplay = true;
-                menuGameplay.BackColor = Globals.activButtonBolor;
-                showFrame(aboutFrame1, false);
-                showFrame(aboutFrame2, false);
-                showFrame(graphicFrame1, false);
-                showFrame(graphicFrame2, false);
-            }
-
-            if (menu == 5)
-            {
-                Globals.ismenuFFNx = true;
-                menuFFNx.BackColor = Globals.activButtonBolor;
-                showFrame(aboutFrame1, false);
-                showFrame(aboutFrame2, false);
-                showFrame(graphicFrame1, false);
-                showFrame(graphicFrame2, false);
-            }
-
-        }
-
-
-        private void showFrame (Control c, bool isShow = true)
-        {
-            if(isShow == false)
-            {
-                c.Location = new Point(1600, c.Location.Y);
-                c.Visible = false;
-                return;
-            }
-
-            c.Location = new Point(Globals.optionsFramesLeft, c.Location.Y);
-            c.Visible = true;
-
-        }
-        */
-
-
+        //menu buttons toogle call on mouve enter/leave
         private void menuAbout_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuAbout); }
         private void menuAbout_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuAbout, false); }
         private void menuGraphic_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuGraphic); }

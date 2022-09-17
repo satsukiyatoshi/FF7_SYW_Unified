@@ -1,9 +1,3 @@
-using FF7_SYW_Unified.Properties;
-using System;
-using System.Diagnostics;
-using System.Reflection;
-using System.Security.AccessControl;
-using static System.Windows.Forms.LinkLabel;
 
 namespace FF7_SYW_Unified
 {
@@ -44,10 +38,7 @@ namespace FF7_SYW_Unified
 
         }
 
-        private void MenuAbout_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 
   }

@@ -43,6 +43,11 @@
             this.langInterface = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.graphicFrame1 = new System.Windows.Forms.GroupBox();
+            this.graphicFrame2 = new System.Windows.Forms.GroupBox();
+            this.menuGraphicPanel = new System.Windows.Forms.Panel();
+            this.graphicFrame1_1 = new System.Windows.Forms.GroupBox();
+            this.menuAboutPanel = new System.Windows.Forms.Panel();
             this.aboutFrame1 = new System.Windows.Forms.GroupBox();
             this.authorUrl12 = new System.Windows.Forms.Label();
             this.authorUrl12b = new System.Windows.Forms.Label();
@@ -114,21 +119,18 @@
             this.authorName2 = new System.Windows.Forms.Label();
             this.authorName42 = new System.Windows.Forms.Label();
             this.authorName12 = new System.Windows.Forms.Label();
-            this.donation = new System.Windows.Forms.Label();
             this.aboutFrame2 = new System.Windows.Forms.GroupBox();
             this.packStory = new System.Windows.Forms.Label();
-            this.graphicFrame1 = new System.Windows.Forms.GroupBox();
-            this.graphicFrame1_1 = new System.Windows.Forms.GroupBox();
-            this.graphicFrame2 = new System.Windows.Forms.GroupBox();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
             this.interfaceLang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuGraphicPanel.SuspendLayout();
+            this.menuAboutPanel.SuspendLayout();
             this.aboutFrame1.SuspendLayout();
             this.aboutFrame2.SuspendLayout();
-            this.graphicFrame1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuFrame
@@ -328,6 +330,58 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // graphicFrame1
+            // 
+            this.graphicFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.graphicFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicFrame1.Location = new System.Drawing.Point(3, 4);
+            this.graphicFrame1.Name = "graphicFrame1";
+            this.graphicFrame1.Size = new System.Drawing.Size(514, 279);
+            this.graphicFrame1.TabIndex = 6;
+            this.graphicFrame1.TabStop = false;
+            this.graphicFrame1.Text = "Mods graphiques";
+            // 
+            // graphicFrame2
+            // 
+            this.graphicFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicFrame2.Location = new System.Drawing.Point(3, 289);
+            this.graphicFrame2.Name = "graphicFrame2";
+            this.graphicFrame2.Size = new System.Drawing.Size(788, 414);
+            this.graphicFrame2.TabIndex = 9;
+            this.graphicFrame2.TabStop = false;
+            this.graphicFrame2.Text = "Aperçu";
+            // 
+            // menuGraphicPanel
+            // 
+            this.menuGraphicPanel.Controls.Add(this.graphicFrame1_1);
+            this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
+            this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
+            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuGraphicPanel.Name = "menuGraphicPanel";
+            this.menuGraphicPanel.Size = new System.Drawing.Size(795, 703);
+            this.menuGraphicPanel.TabIndex = 10;
+            // 
+            // graphicFrame1_1
+            // 
+            this.graphicFrame1_1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.graphicFrame1_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicFrame1_1.Location = new System.Drawing.Point(523, 4);
+            this.graphicFrame1_1.Name = "graphicFrame1_1";
+            this.graphicFrame1_1.Size = new System.Drawing.Size(268, 279);
+            this.graphicFrame1_1.TabIndex = 10;
+            this.graphicFrame1_1.TabStop = false;
+            this.graphicFrame1_1.Text = "Aide";
+            // 
+            // menuAboutPanel
+            // 
+            this.menuAboutPanel.Controls.Add(this.aboutFrame1);
+            this.menuAboutPanel.Controls.Add(this.aboutFrame2);
+            this.menuAboutPanel.Location = new System.Drawing.Point(1600, -3);
+            this.menuAboutPanel.Name = "menuAboutPanel";
+            this.menuAboutPanel.Size = new System.Drawing.Size(799, 715);
+            this.menuAboutPanel.TabIndex = 11;
+            // 
             // aboutFrame1
             // 
             this.aboutFrame1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -403,10 +457,10 @@
             this.aboutFrame1.Controls.Add(this.authorName12);
             this.aboutFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.aboutFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.aboutFrame1.Location = new System.Drawing.Point(1600, 4);
+            this.aboutFrame1.Location = new System.Drawing.Point(3, 7);
             this.aboutFrame1.Name = "aboutFrame1";
             this.aboutFrame1.Size = new System.Drawing.Size(788, 513);
-            this.aboutFrame1.TabIndex = 3;
+            this.aboutFrame1.TabIndex = 8;
             this.aboutFrame1.TabStop = false;
             this.aboutFrame1.Text = "Auteurs";
             // 
@@ -423,7 +477,6 @@
             this.authorUrl12.TabIndex = 72;
             this.authorUrl12.Text = "ff7.fr";
             this.authorUrl12.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl12.Click += new System.EventHandler(this.authorUrl12_Click);
             // 
             // authorUrl12b
             // 
@@ -438,7 +491,6 @@
             this.authorUrl12b.TabIndex = 71;
             this.authorUrl12b.Text = "qhimm.com";
             this.authorUrl12b.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl12b.Click += new System.EventHandler(this.authorUrl12b_Click);
             // 
             // officialFf7
             // 
@@ -453,7 +505,6 @@
             this.officialFf7.TabIndex = 70;
             this.officialFf7.Text = "Site Officiel FF7";
             this.officialFf7.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.officialFf7.Click += new System.EventHandler(this.officialFf7_Click);
             // 
             // author42urlD
             // 
@@ -468,7 +519,6 @@
             this.author42urlD.TabIndex = 69;
             this.author42urlD.Text = "discord (français)";
             this.author42urlD.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.author42urlD.Click += new System.EventHandler(this.author42urlD_Click);
             // 
             // author42UrlD2
             // 
@@ -483,7 +533,6 @@
             this.author42UrlD2.TabIndex = 68;
             this.author42UrlD2.Text = "discord (english)";
             this.author42UrlD2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.author42UrlD2.Click += new System.EventHandler(this.author42UrlD2_Click);
             // 
             // donation42
             // 
@@ -498,7 +547,6 @@
             this.donation42.TabIndex = 67;
             this.donation42.Text = "Donation";
             this.donation42.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.donation42.Click += new System.EventHandler(this.donation42_Click);
             // 
             // authorUrl42
             // 
@@ -513,7 +561,6 @@
             this.authorUrl42.TabIndex = 66;
             this.authorUrl42.Text = "ff7.fr";
             this.authorUrl42.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl42.Click += new System.EventHandler(this.authorUrl42_Click);
             // 
             // authorUrl42b
             // 
@@ -528,7 +575,6 @@
             this.authorUrl42b.TabIndex = 65;
             this.authorUrl42b.Text = "qhimm.com";
             this.authorUrl42b.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl42b.Click += new System.EventHandler(this.authorUrl42b_Click);
             // 
             // authorUrl17
             // 
@@ -557,7 +603,6 @@
             this.donation16.TabIndex = 63;
             this.donation16.Text = "Donation";
             this.donation16.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.donation16.Click += new System.EventHandler(this.donation16_Click);
             // 
             // authorUrl16
             // 
@@ -572,7 +617,6 @@
             this.authorUrl16.TabIndex = 62;
             this.authorUrl16.Text = "qhimm.com";
             this.authorUrl16.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl16.Click += new System.EventHandler(this.authorUrl16_Click);
             // 
             // donation13
             // 
@@ -587,7 +631,6 @@
             this.donation13.TabIndex = 61;
             this.donation13.Text = "Donation";
             this.donation13.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.donation13.Click += new System.EventHandler(this.donation13_Click);
             // 
             // authorUrl13
             // 
@@ -602,7 +645,6 @@
             this.authorUrl13.TabIndex = 60;
             this.authorUrl13.Text = "nexusmods";
             this.authorUrl13.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl13.Click += new System.EventHandler(this.authorUrl13_Click);
             // 
             // authorUrl11
             // 
@@ -617,7 +659,6 @@
             this.authorUrl11.TabIndex = 58;
             this.authorUrl11.Text = "ff7.fr";
             this.authorUrl11.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl11.Click += new System.EventHandler(this.authorUrl11_Click);
             // 
             // authorUrl11b
             // 
@@ -632,7 +673,6 @@
             this.authorUrl11b.TabIndex = 57;
             this.authorUrl11b.Text = "qhimm.com";
             this.authorUrl11b.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl11b.Click += new System.EventHandler(this.authorUrl11b_Click);
             // 
             // authorUrl10
             // 
@@ -647,7 +687,6 @@
             this.authorUrl10.TabIndex = 56;
             this.authorUrl10.Text = "qhimm.com";
             this.authorUrl10.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl10.Click += new System.EventHandler(this.authorUrl10_Click);
             // 
             // authorUrl8
             // 
@@ -662,7 +701,6 @@
             this.authorUrl8.TabIndex = 55;
             this.authorUrl8.Text = "qhimm.com";
             this.authorUrl8.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl8.Click += new System.EventHandler(this.authorUrl8_Click);
             // 
             // authoUrl7
             // 
@@ -677,7 +715,6 @@
             this.authoUrl7.TabIndex = 54;
             this.authoUrl7.Text = "qhimm.com";
             this.authoUrl7.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authoUrl7.Click += new System.EventHandler(this.authoUrl7_Click);
             // 
             // donation6
             // 
@@ -692,7 +729,6 @@
             this.donation6.TabIndex = 53;
             this.donation6.Text = "Donation";
             this.donation6.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.donation6.Click += new System.EventHandler(this.donation6_Click);
             // 
             // authorUrl6
             // 
@@ -707,7 +743,6 @@
             this.authorUrl6.TabIndex = 52;
             this.authorUrl6.Text = "qhimm.com";
             this.authorUrl6.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl6.Click += new System.EventHandler(this.authorUrl6_Click);
             // 
             // donation5
             // 
@@ -722,7 +757,6 @@
             this.donation5.TabIndex = 51;
             this.donation5.Text = "Donation";
             this.donation5.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.donation5.Click += new System.EventHandler(this.donation5_Click);
             // 
             // authorUrl5
             // 
@@ -737,7 +771,6 @@
             this.authorUrl5.TabIndex = 50;
             this.authorUrl5.Text = "qhimm.com";
             this.authorUrl5.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl5.Click += new System.EventHandler(this.authorUrl5_Click);
             // 
             // donation4
             // 
@@ -752,7 +785,6 @@
             this.donation4.TabIndex = 49;
             this.donation4.Text = "Donation";
             this.donation4.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.donation4.Click += new System.EventHandler(this.donation4_Click);
             // 
             // authorUrl4
             // 
@@ -767,7 +799,6 @@
             this.authorUrl4.TabIndex = 48;
             this.authorUrl4.Text = "qhimm.com";
             this.authorUrl4.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl4.Click += new System.EventHandler(this.authorUrl4_Click);
             // 
             // donation2
             // 
@@ -782,7 +813,6 @@
             this.donation2.TabIndex = 47;
             this.donation2.Text = "Donation";
             this.donation2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.donation2.Click += new System.EventHandler(this.donation2_Click);
             // 
             // authorUrl3
             // 
@@ -797,7 +827,6 @@
             this.authorUrl3.TabIndex = 46;
             this.authorUrl3.Text = "ff7.fr";
             this.authorUrl3.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl3.Click += new System.EventHandler(this.authorUrl3_Click);
             // 
             // donation1
             // 
@@ -812,7 +841,6 @@
             this.donation1.TabIndex = 45;
             this.donation1.Text = "Donation";
             this.donation1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.donation1.Click += new System.EventHandler(this.donation1_Click);
             // 
             // authorUrl2
             // 
@@ -827,7 +855,6 @@
             this.authorUrl2.TabIndex = 44;
             this.authorUrl2.Text = "ff7.fr";
             this.authorUrl2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl2.Click += new System.EventHandler(this.authorUrl2_Click);
             // 
             // authorUrl1
             // 
@@ -842,7 +869,6 @@
             this.authorUrl1.TabIndex = 43;
             this.authorUrl1.Text = "ff7.fr";
             this.authorUrl1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl1.Click += new System.EventHandler(this.authorUrl1_Click);
             // 
             // authorUrl1b
             // 
@@ -857,7 +883,6 @@
             this.authorUrl1b.TabIndex = 42;
             this.authorUrl1b.Text = "qhimm.com";
             this.authorUrl1b.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.authorUrl1b.Click += new System.EventHandler(this.authorUrl1b_Click);
             // 
             // author99
             // 
@@ -1261,24 +1286,15 @@
             this.authorName12.TabIndex = 3;
             this.authorName12.Text = "Myst6re : ";
             // 
-            // donation
-            // 
-            this.donation.AutoSize = true;
-            this.donation.Location = new System.Drawing.Point(1277, 659);
-            this.donation.Name = "donation";
-            this.donation.Size = new System.Drawing.Size(55, 15);
-            this.donation.TabIndex = 4;
-            this.donation.Text = "donation";
-            // 
             // aboutFrame2
             // 
             this.aboutFrame2.Controls.Add(this.packStory);
             this.aboutFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.aboutFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.aboutFrame2.Location = new System.Drawing.Point(1600, 531);
+            this.aboutFrame2.Location = new System.Drawing.Point(3, 526);
             this.aboutFrame2.Name = "aboutFrame2";
-            this.aboutFrame2.Size = new System.Drawing.Size(788, 172);
-            this.aboutFrame2.TabIndex = 5;
+            this.aboutFrame2.Size = new System.Drawing.Size(788, 180);
+            this.aboutFrame2.TabIndex = 6;
             this.aboutFrame2.TabStop = false;
             this.aboutFrame2.Text = "À propos du pack";
             // 
@@ -1292,52 +1308,15 @@
             this.packStory.Size = new System.Drawing.Size(767, 134);
             this.packStory.TabIndex = 40;
             // 
-            // graphicFrame1
-            // 
-            this.graphicFrame1.Controls.Add(this.graphicFrame1_1);
-            this.graphicFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.graphicFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame1.Location = new System.Drawing.Point(327, 4);
-            this.graphicFrame1.Name = "graphicFrame1";
-            this.graphicFrame1.Size = new System.Drawing.Size(788, 279);
-            this.graphicFrame1.TabIndex = 6;
-            this.graphicFrame1.TabStop = false;
-            this.graphicFrame1.Text = "À propos du pack";
-            // 
-            // graphicFrame1_1
-            // 
-            this.graphicFrame1_1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.graphicFrame1_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame1_1.Location = new System.Drawing.Point(510, 14);
-            this.graphicFrame1_1.Name = "graphicFrame1_1";
-            this.graphicFrame1_1.Size = new System.Drawing.Size(268, 251);
-            this.graphicFrame1_1.TabIndex = 8;
-            this.graphicFrame1_1.TabStop = false;
-            this.graphicFrame1_1.Text = "Aide";
-            // 
-            // graphicFrame2
-            // 
-            this.graphicFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame2.Location = new System.Drawing.Point(327, 289);
-            this.graphicFrame2.Name = "graphicFrame2";
-            this.graphicFrame2.Size = new System.Drawing.Size(788, 414);
-            this.graphicFrame2.TabIndex = 9;
-            this.graphicFrame2.TabStop = false;
-            this.graphicFrame2.Text = "Aperçu";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1123, 711);
-            this.Controls.Add(this.graphicFrame2);
-            this.Controls.Add(this.graphicFrame1);
-            this.Controls.Add(this.aboutFrame2);
-            this.Controls.Add(this.donation);
-            this.Controls.Add(this.aboutFrame1);
+            this.ClientSize = new System.Drawing.Size(1127, 709);
+            this.Controls.Add(this.menuAboutPanel);
+            this.Controls.Add(this.menuGraphicPanel);
             this.Controls.Add(this.menuFrame);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1352,12 +1331,12 @@
             this.interfaceLang.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuGraphicPanel.ResumeLayout(false);
+            this.menuAboutPanel.ResumeLayout(false);
             this.aboutFrame1.ResumeLayout(false);
             this.aboutFrame1.PerformLayout();
             this.aboutFrame2.ResumeLayout(false);
-            this.graphicFrame1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1377,7 +1356,40 @@
         private ComboBox langGame;
         private GroupBox interfaceLang;
         private ComboBox langInterface;
+        private GroupBox graphicFrame1;
+        private GroupBox graphicFrame2;
+        private Panel menuGraphicPanel;
+        private GroupBox graphicFrame1_1;
+        private Panel menuAboutPanel;
         private GroupBox aboutFrame1;
+        private Label authorUrl12;
+        private Label authorUrl12b;
+        private Label officialFf7;
+        private Label author42urlD;
+        private Label author42UrlD2;
+        private Label donation42;
+        private Label authorUrl42;
+        private Label authorUrl42b;
+        private Label authorUrl17;
+        private Label donation16;
+        private Label authorUrl16;
+        private Label donation13;
+        private Label authorUrl13;
+        private Label authorUrl11;
+        private Label authorUrl11b;
+        private Label authorUrl10;
+        private Label authorUrl8;
+        private Label authoUrl7;
+        private Label donation6;
+        private Label authorUrl6;
+        private Label donation5;
+        private Label authorUrl5;
+        private Label donation4;
+        private Label authorUrl4;
+        private Label donation2;
+        private Label authorUrl3;
+        private Label donation1;
+        private Label authorUrl2;
         private Label authorUrl1;
         private Label authorUrl1b;
         private Label author99;
@@ -1400,6 +1412,7 @@
         private Label author4;
         private Label author3;
         private Label author2;
+        private Label author1;
         private Label authorName16;
         private Label authorName18;
         private Label authorName4;
@@ -1419,40 +1432,7 @@
         private Label authorName2;
         private Label authorName42;
         private Label authorName12;
-        private Label author1;
-        private Label donation;
-        private Label authorUrl2;
-        private Label donation1;
-        private Label donation2;
-        private Label authorUrl3;
-        private Label donation4;
-        private Label authorUrl4;
-        private Label donation5;
-        private Label authorUrl5;
-        private Label donation6;
-        private Label authorUrl6;
-        private Label authoUrl7;
-        private Label authorUrl8;
-        private Label authorUrl10;
-        private Label authorUrl11;
-        private Label authorUrl11b;
-        private Label donation13;
-        private Label authorUrl13;
-        private Label donation16;
-        private Label authorUrl16;
-        private Label authorUrl17;
-        private Label donation42;
-        private Label authorUrl42;
-        private Label authorUrl42b;
-        private Label author42urlD;
-        private Label author42UrlD2;
-        private Label officialFf7;
         private GroupBox aboutFrame2;
         private Label packStory;
-        private Label authorUrl12;
-        private Label authorUrl12b;
-        private GroupBox graphicFrame1;
-        private GroupBox graphicFrame1_1;
-        private GroupBox graphicFrame2;
     }
 }
