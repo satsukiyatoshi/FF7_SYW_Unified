@@ -21,7 +21,7 @@ namespace FF7_SYW_Unified
         private void authorUrl2_Click(object sender, EventArgs e) { openUrl("https://ff7.fr/neo-midgar/");}
         private void donation1_Click(object sender, EventArgs e) { openUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2L3TQKPJ2V2WU");}
         private void authorUrl3_Click(object sender, EventArgs e) { openUrl("https://ff7.fr/forum/index.php?page=post&ids=378595");}
-        private void donation2_Click(object sender, EventArgs e) { openUrl("http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M5RWMESJQ8J5E");}
+        private void donation2_Click(object sender, EventArgs e) { openUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M5RWMESJQ8J5E");}
         private void authorUrl4_Click(object sender, EventArgs e) { openUrl("https://forums.qhimm.com/index.php?topic=20475.0");}
         private void donation4_Click(object sender, EventArgs e) { openUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=77DA5WPWUWHCJ&currency_code=USD&source=url");}
         private void authorUrl5_Click(object sender, EventArgs e) { openUrl("https://forums.qhimm.com/index.php?topic=14541.0");}
