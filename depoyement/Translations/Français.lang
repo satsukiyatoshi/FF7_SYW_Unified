@@ -44,5 +44,14 @@ packStory:::###Le projet FF7 SYW est un pack comprenant le jeu Final Fantasy VII
 
 ///
 graphicFrame1=Mods graphiques
-graphicFrame1_1=Aide
-graphicFrame2=Aperçu
+graphicFrame2=Aide
+graphicFrame3=Aperçu
+soundFrame1=Mods audio
+soundFrame2=Aide
+soundFrame3=Aperçu
+gameplayFrame1=Mods de gameplay
+gameplayFrame2=Aide
+gameplayFrame3=Aperçu
+FFNxFrame1=Patchs de gameplay
+FFNxFrame2=Aide
+FFNxFrame3=Configuration du pilote FFNx

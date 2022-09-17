@@ -44,9 +44,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.graphicFrame1 = new System.Windows.Forms.GroupBox();
-            this.graphicFrame2 = new System.Windows.Forms.GroupBox();
+            this.graphicFrame3 = new System.Windows.Forms.GroupBox();
             this.menuGraphicPanel = new System.Windows.Forms.Panel();
-            this.graphicFrame1_1 = new System.Windows.Forms.GroupBox();
+            this.graphicFrame2 = new System.Windows.Forms.GroupBox();
             this.menuAboutPanel = new System.Windows.Forms.Panel();
             this.aboutFrame1 = new System.Windows.Forms.GroupBox();
             this.authorUrl12 = new System.Windows.Forms.Label();
@@ -121,6 +121,18 @@
             this.authorName12 = new System.Windows.Forms.Label();
             this.aboutFrame2 = new System.Windows.Forms.GroupBox();
             this.packStory = new System.Windows.Forms.Label();
+            this.menuSoundPanel = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.soundFrame3 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.menuGameplayPanel = new System.Windows.Forms.Panel();
+            this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
+            this.gameplayFrame1 = new System.Windows.Forms.GroupBox();
+            this.gameplayFrame3 = new System.Windows.Forms.GroupBox();
+            this.menuFFNxPanel = new System.Windows.Forms.Panel();
+            this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
+            this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
+            this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
@@ -131,6 +143,9 @@
             this.menuAboutPanel.SuspendLayout();
             this.aboutFrame1.SuspendLayout();
             this.aboutFrame2.SuspendLayout();
+            this.menuSoundPanel.SuspendLayout();
+            this.menuGameplayPanel.SuspendLayout();
+            this.menuFFNxPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuFrame
@@ -341,37 +356,37 @@
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
             // 
-            // graphicFrame2
+            // graphicFrame3
             // 
-            this.graphicFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame2.Location = new System.Drawing.Point(3, 289);
-            this.graphicFrame2.Name = "graphicFrame2";
-            this.graphicFrame2.Size = new System.Drawing.Size(788, 414);
-            this.graphicFrame2.TabIndex = 9;
-            this.graphicFrame2.TabStop = false;
-            this.graphicFrame2.Text = "Aperçu";
+            this.graphicFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.graphicFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicFrame3.Location = new System.Drawing.Point(3, 289);
+            this.graphicFrame3.Name = "graphicFrame3";
+            this.graphicFrame3.Size = new System.Drawing.Size(788, 414);
+            this.graphicFrame3.TabIndex = 9;
+            this.graphicFrame3.TabStop = false;
+            this.graphicFrame3.Text = "Aperçu";
             // 
             // menuGraphicPanel
             // 
-            this.menuGraphicPanel.Controls.Add(this.graphicFrame1_1);
-            this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
-            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
+            this.menuGraphicPanel.Controls.Add(this.graphicFrame3);
+            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuGraphicPanel.Name = "menuGraphicPanel";
             this.menuGraphicPanel.Size = new System.Drawing.Size(795, 703);
             this.menuGraphicPanel.TabIndex = 10;
             // 
-            // graphicFrame1_1
+            // graphicFrame2
             // 
-            this.graphicFrame1_1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.graphicFrame1_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame1_1.Location = new System.Drawing.Point(523, 4);
-            this.graphicFrame1_1.Name = "graphicFrame1_1";
-            this.graphicFrame1_1.Size = new System.Drawing.Size(268, 279);
-            this.graphicFrame1_1.TabIndex = 10;
-            this.graphicFrame1_1.TabStop = false;
-            this.graphicFrame1_1.Text = "Aide";
+            this.graphicFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicFrame2.Location = new System.Drawing.Point(523, 4);
+            this.graphicFrame2.Name = "graphicFrame2";
+            this.graphicFrame2.Size = new System.Drawing.Size(268, 279);
+            this.graphicFrame2.TabIndex = 10;
+            this.graphicFrame2.TabStop = false;
+            this.graphicFrame2.Text = "Aide";
             // 
             // menuAboutPanel
             // 
@@ -1338,13 +1353,145 @@
             this.packStory.Size = new System.Drawing.Size(767, 134);
             this.packStory.TabIndex = 40;
             // 
+            // menuSoundPanel
+            // 
+            this.menuSoundPanel.Controls.Add(this.groupBox1);
+            this.menuSoundPanel.Controls.Add(this.soundFrame3);
+            this.menuSoundPanel.Controls.Add(this.groupBox3);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuSoundPanel.Name = "menuSoundPanel";
+            this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
+            this.menuSoundPanel.TabIndex = 12;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Location = new System.Drawing.Point(523, 4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(268, 279);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Aide";
+            // 
+            // soundFrame3
+            // 
+            this.soundFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundFrame3.Location = new System.Drawing.Point(3, 4);
+            this.soundFrame3.Name = "soundFrame3";
+            this.soundFrame3.Size = new System.Drawing.Size(514, 279);
+            this.soundFrame3.TabIndex = 6;
+            this.soundFrame3.TabStop = false;
+            this.soundFrame3.Text = "Mods audio";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox3.Location = new System.Drawing.Point(3, 289);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(788, 414);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Aperçu";
+            // 
+            // menuGameplayPanel
+            // 
+            this.menuGameplayPanel.Controls.Add(this.gameplayFrame2);
+            this.menuGameplayPanel.Controls.Add(this.gameplayFrame1);
+            this.menuGameplayPanel.Controls.Add(this.gameplayFrame3);
+            this.menuGameplayPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuGameplayPanel.Name = "menuGameplayPanel";
+            this.menuGameplayPanel.Size = new System.Drawing.Size(795, 703);
+            this.menuGameplayPanel.TabIndex = 13;
+            // 
+            // gameplayFrame2
+            // 
+            this.gameplayFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gameplayFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gameplayFrame2.Location = new System.Drawing.Point(523, 4);
+            this.gameplayFrame2.Name = "gameplayFrame2";
+            this.gameplayFrame2.Size = new System.Drawing.Size(268, 279);
+            this.gameplayFrame2.TabIndex = 10;
+            this.gameplayFrame2.TabStop = false;
+            this.gameplayFrame2.Text = "Aide";
+            // 
+            // gameplayFrame1
+            // 
+            this.gameplayFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gameplayFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gameplayFrame1.Location = new System.Drawing.Point(3, 4);
+            this.gameplayFrame1.Name = "gameplayFrame1";
+            this.gameplayFrame1.Size = new System.Drawing.Size(514, 279);
+            this.gameplayFrame1.TabIndex = 6;
+            this.gameplayFrame1.TabStop = false;
+            this.gameplayFrame1.Text = "Mods de gameplay";
+            // 
+            // gameplayFrame3
+            // 
+            this.gameplayFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gameplayFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gameplayFrame3.Location = new System.Drawing.Point(3, 289);
+            this.gameplayFrame3.Name = "gameplayFrame3";
+            this.gameplayFrame3.Size = new System.Drawing.Size(788, 414);
+            this.gameplayFrame3.TabIndex = 9;
+            this.gameplayFrame3.TabStop = false;
+            this.gameplayFrame3.Text = "Aperçu";
+            // 
+            // menuFFNxPanel
+            // 
+            this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
+            this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
+            this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
+            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuFFNxPanel.Name = "menuFFNxPanel";
+            this.menuFFNxPanel.Size = new System.Drawing.Size(795, 703);
+            this.menuFFNxPanel.TabIndex = 14;
+            // 
+            // FFNxFrame2
+            // 
+            this.FFNxFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FFNxFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.FFNxFrame2.Location = new System.Drawing.Point(523, 4);
+            this.FFNxFrame2.Name = "FFNxFrame2";
+            this.FFNxFrame2.Size = new System.Drawing.Size(268, 279);
+            this.FFNxFrame2.TabIndex = 10;
+            this.FFNxFrame2.TabStop = false;
+            this.FFNxFrame2.Text = "Aide";
+            // 
+            // FFNxFrame1
+            // 
+            this.FFNxFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FFNxFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.FFNxFrame1.Location = new System.Drawing.Point(3, 4);
+            this.FFNxFrame1.Name = "FFNxFrame1";
+            this.FFNxFrame1.Size = new System.Drawing.Size(514, 279);
+            this.FFNxFrame1.TabIndex = 6;
+            this.FFNxFrame1.TabStop = false;
+            this.FFNxFrame1.Text = "Patchs de gameplay";
+            // 
+            // FFNxFrame3
+            // 
+            this.FFNxFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FFNxFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.FFNxFrame3.Location = new System.Drawing.Point(3, 289);
+            this.FFNxFrame3.Name = "FFNxFrame3";
+            this.FFNxFrame3.Size = new System.Drawing.Size(788, 414);
+            this.FFNxFrame3.TabIndex = 9;
+            this.FFNxFrame3.TabStop = false;
+            this.FFNxFrame3.Text = "Configuration du pilote FFNx";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1127, 709);
+            this.ClientSize = new System.Drawing.Size(1128, 711);
+            this.Controls.Add(this.menuFFNxPanel);
+            this.Controls.Add(this.menuGameplayPanel);
+            this.Controls.Add(this.menuSoundPanel);
             this.Controls.Add(this.menuAboutPanel);
             this.Controls.Add(this.menuGraphicPanel);
             this.Controls.Add(this.menuFrame);
@@ -1366,6 +1513,9 @@
             this.aboutFrame1.ResumeLayout(false);
             this.aboutFrame1.PerformLayout();
             this.aboutFrame2.ResumeLayout(false);
+            this.menuSoundPanel.ResumeLayout(false);
+            this.menuGameplayPanel.ResumeLayout(false);
+            this.menuFFNxPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1387,9 +1537,9 @@
         private GroupBox interfaceLang;
         private ComboBox langInterface;
         private GroupBox graphicFrame1;
-        private GroupBox graphicFrame2;
+        private GroupBox graphicFrame3;
         private Panel menuGraphicPanel;
-        private GroupBox graphicFrame1_1;
+        private GroupBox graphicFrame2;
         private Panel menuAboutPanel;
         private GroupBox aboutFrame1;
         private Label authorUrl12;
@@ -1464,5 +1614,17 @@
         private Label authorName12;
         private GroupBox aboutFrame2;
         private Label packStory;
+        private Panel menuSoundPanel;
+        private GroupBox groupBox1;
+        private GroupBox soundFrame3;
+        private GroupBox groupBox3;
+        private Panel menuGameplayPanel;
+        private GroupBox gameplayFrame2;
+        private GroupBox gameplayFrame1;
+        private GroupBox gameplayFrame3;
+        private Panel menuFFNxPanel;
+        private GroupBox FFNxFrame2;
+        public GroupBox FFNxFrame1;
+        private GroupBox FFNxFrame3;
     }
 }
