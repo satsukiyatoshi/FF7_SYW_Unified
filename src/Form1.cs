@@ -38,7 +38,6 @@ namespace FF7_SYW_Unified
             MessageBox.Show("launch game");
         }
 
-
     }
 
   }

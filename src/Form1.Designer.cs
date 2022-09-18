@@ -44,9 +44,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.graphicFrame1 = new System.Windows.Forms.GroupBox();
+            this.graphicsFields = new System.Windows.Forms.CheckBox();
             this.graphicFrame3 = new System.Windows.Forms.GroupBox();
+            this.graphicPrevPic = new System.Windows.Forms.PictureBox();
             this.menuGraphicPanel = new System.Windows.Forms.Panel();
             this.graphicFrame2 = new System.Windows.Forms.GroupBox();
+            this.graphicsHelpAuthor = new System.Windows.Forms.Label();
+            this.graphicsHelp = new System.Windows.Forms.Label();
             this.menuAboutPanel = new System.Windows.Forms.Panel();
             this.aboutFrame1 = new System.Windows.Forms.GroupBox();
             this.authorUrl12 = new System.Windows.Forms.Label();
@@ -139,7 +143,11 @@
             this.interfaceLang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.graphicFrame1.SuspendLayout();
+            this.graphicFrame3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.graphicPrevPic)).BeginInit();
             this.menuGraphicPanel.SuspendLayout();
+            this.graphicFrame2.SuspendLayout();
             this.menuAboutPanel.SuspendLayout();
             this.aboutFrame1.SuspendLayout();
             this.aboutFrame2.SuspendLayout();
@@ -347,6 +355,7 @@
             // 
             // graphicFrame1
             // 
+            this.graphicFrame1.Controls.Add(this.graphicsFields);
             this.graphicFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame1.Location = new System.Drawing.Point(3, 4);
@@ -356,8 +365,22 @@
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
             // 
+            // graphicsFields
+            // 
+            this.graphicsFields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsFields.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsFields.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsFields.Location = new System.Drawing.Point(11, 22);
+            this.graphicsFields.Name = "graphicsFields";
+            this.graphicsFields.Size = new System.Drawing.Size(490, 19);
+            this.graphicsFields.TabIndex = 0;
+            this.graphicsFields.Text = "Scènes du jeu HD (IA et éditions manuelles)";
+            this.graphicsFields.UseVisualStyleBackColor = false;
+            this.graphicsFields.MouseEnter += new System.EventHandler(this.graphicsFields_MouseEnter);
+            // 
             // graphicFrame3
             // 
+            this.graphicFrame3.Controls.Add(this.graphicPrevPic);
             this.graphicFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame3.Location = new System.Drawing.Point(3, 289);
@@ -367,18 +390,28 @@
             this.graphicFrame3.TabStop = false;
             this.graphicFrame3.Text = "Aperçu";
             // 
+            // graphicPrevPic
+            // 
+            this.graphicPrevPic.Location = new System.Drawing.Point(11, 22);
+            this.graphicPrevPic.Name = "graphicPrevPic";
+            this.graphicPrevPic.Size = new System.Drawing.Size(765, 376);
+            this.graphicPrevPic.TabIndex = 0;
+            this.graphicPrevPic.TabStop = false;
+            // 
             // menuGraphicPanel
             // 
             this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame3);
-            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 0);
             this.menuGraphicPanel.Name = "menuGraphicPanel";
             this.menuGraphicPanel.Size = new System.Drawing.Size(795, 703);
             this.menuGraphicPanel.TabIndex = 10;
             // 
             // graphicFrame2
             // 
+            this.graphicFrame2.Controls.Add(this.graphicsHelpAuthor);
+            this.graphicFrame2.Controls.Add(this.graphicsHelp);
             this.graphicFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame2.Location = new System.Drawing.Point(523, 4);
@@ -387,6 +420,27 @@
             this.graphicFrame2.TabIndex = 10;
             this.graphicFrame2.TabStop = false;
             this.graphicFrame2.Text = "Aide";
+            // 
+            // graphicsHelpAuthor
+            // 
+            this.graphicsHelpAuthor.BackColor = System.Drawing.Color.Black;
+            this.graphicsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.graphicsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 244);
+            this.graphicsHelpAuthor.Name = "graphicsHelpAuthor";
+            this.graphicsHelpAuthor.Size = new System.Drawing.Size(244, 22);
+            this.graphicsHelpAuthor.TabIndex = 1;
+            this.graphicsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // graphicsHelp
+            // 
+            this.graphicsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.graphicsHelp.Location = new System.Drawing.Point(12, 21);
+            this.graphicsHelp.Name = "graphicsHelp";
+            this.graphicsHelp.Size = new System.Drawing.Size(244, 216);
+            this.graphicsHelp.TabIndex = 0;
             // 
             // menuAboutPanel
             // 
@@ -1345,13 +1399,14 @@
             // 
             // packStory
             // 
-            this.packStory.BackColor = System.Drawing.Color.Transparent;
-            this.packStory.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.packStory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.packStory.Location = new System.Drawing.Point(11, 22);
+            this.packStory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.packStory.Font = new System.Drawing.Font("Roboto", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.packStory.ForeColor = System.Drawing.Color.White;
+            this.packStory.Location = new System.Drawing.Point(11, 24);
             this.packStory.Name = "packStory";
-            this.packStory.Size = new System.Drawing.Size(767, 134);
+            this.packStory.Size = new System.Drawing.Size(767, 140);
             this.packStory.TabIndex = 40;
+            this.packStory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // menuSoundPanel
             // 
@@ -1508,7 +1563,11 @@
             this.interfaceLang.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.graphicFrame1.ResumeLayout(false);
+            this.graphicFrame3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.graphicPrevPic)).EndInit();
             this.menuGraphicPanel.ResumeLayout(false);
+            this.graphicFrame2.ResumeLayout(false);
             this.menuAboutPanel.ResumeLayout(false);
             this.aboutFrame1.ResumeLayout(false);
             this.aboutFrame1.PerformLayout();
@@ -1626,5 +1685,9 @@
         private GroupBox FFNxFrame2;
         public GroupBox FFNxFrame1;
         private GroupBox FFNxFrame3;
+        private CheckBox graphicsFields;
+        private Label graphicsHelp;
+        private PictureBox graphicPrevPic;
+        private Label graphicsHelpAuthor;
     }
 }

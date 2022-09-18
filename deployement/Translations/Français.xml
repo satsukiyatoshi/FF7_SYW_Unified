@@ -22,7 +22,7 @@
 	</control>
 	<control>
 		<name>menuSound</name>
-		<text>Mods Audio</text>
+		<text>Mods audio</text>
 	</control>
 	<control>
 		<name>menuGameplay</name>
@@ -131,6 +131,7 @@
 	</control>
 		<name>packStory</name>
 		<text>Le projet FF7 SYW est un pack comprenant le jeu Final Fantasy VII retraduit intégralement avec retraitement graphique grâce à de l'intelligence artificielle avancée sur les images de fonds, combats, mappemonde, mini-jeux et séquences vidéos, d’autres éléments ont également été recréés tout en préservant l'essence originelle du jeu.
+		
 		De plus, le pack contient diverses options de configuration poussées et patchs divers comme les fonctions de sauvegarde en tout lieu, se déplacer automatiquement en courant, désactiver les combats aléatoires, l’avance rapide, des défis et mods de difficulté en tout genre... tout ça pour offrir une expérience et un confort de jeu inédit.</text>
 	</control>	
 	<control>
@@ -139,7 +140,7 @@
 	</control>
 	<control>
 		<name>graphicFrame2</name>
-		<text>Aide</text>
+		<text>Informations</text>
 	</control>
 	<control>
 		<name>graphicFrame3</name>
