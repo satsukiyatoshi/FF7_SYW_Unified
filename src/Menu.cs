@@ -8,7 +8,7 @@ namespace FF7_SYW_Unified
     {
 
         //call translation on menu lang selection
-        private void langInterface_SelectedIndexChanged(object sender, EventArgs e) { translation(langInterface.Text); }
+        private void langInterface_SelectedIndexChanged(object sender, EventArgs e) { translationXml(langInterface.Text); }
 
 
         /*

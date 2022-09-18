@@ -1,4 +1,7 @@
 ﻿
+using Microsoft.VisualBasic;
+using System.Xml;
+
 namespace FF7_SYW_Unified
 {
     partial class Form1
@@ -16,32 +19,67 @@ namespace FF7_SYW_Unified
             }
         }
 
-        //translation on all controls from .lang file
-        private void translation(string fileLang)
+        private void translationXml(string fileLang)
         {
-            var lines = File.ReadAllLines(Application.StartupPath + @"\Translations\" + fileLang + ".lang");
+            string ctrlName = "" ;
+            string ctrlText = "" ;
+            var translation = new List<(string name, string text)> { };
 
-            foreach (Control x in Flatten(this))
+            //Read translation file to a list
+            using (XmlReader reader = XmlReader.Create(Application.StartupPath + @"\Translations\" + fileLang + ".xml"))
             {
-
-                for (var i = 0; i < lines.Length; i += 1)
+                while (reader.Read())
                 {
-                    if (lines[i].Contains(x.Name + ":::"))
+                    if (reader.IsStartElement())
                     {
-                        x.Text = (lines[i].Replace(x.Name + ":::", "")).Replace("###", System.Environment.NewLine);
+                        switch (reader.Name.ToString())
+                        {
+                            case "name":
+                                ctrlName = reader.ReadString();
+                                break;
+                            case "text":
+                                ctrlText = reader.ReadString();
+                                break;
+                            case "control":
+                                ctrlName = "";
+                                ctrlText = "";
+                                break;
+                        }
                     }
 
-                    if (lines[i].Contains("donation:::") && x.Name.Contains("donation"))
+                    if (ctrlName != "" && ctrlText != "")
                     {
-                        x.Text = lines[i].Replace("donation:::", ""); 
+                        translation.Add((ctrlName, ctrlText));
+                        ctrlName = "";
+                        ctrlText = "";
+                    }
+                }
+
+            }
+
+            //apply translation list to each controls
+            foreach (Control x in Flatten(this))
+            {
+                for (var i = 0; i < translation.Count; i += 1)
+                {
+                    if (x.Name == translation[i].name)
+                    {
+                        x.Text = translation[i].text;
+                    }
+
+                    if (x.Name.Contains("donation") && translation[i].name == ("donation"))
+                    {
+                        x.Text = translation[i].text;
                     }
                 }
             }
 
+            //set game lang = interface lang if possible
             for (var i = 0; i < langGame.Items.Count; i += 1)
             {
                 if (langGame.GetItemText(langGame.Items[i]) == langInterface.Text) { langGame.Text = langInterface.Text; return; }
             }
+
         }
 
     }
