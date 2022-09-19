@@ -8,18 +8,18 @@ namespace FF7_SYW_Unified
 
         static void translateCtrl(Control ctrl)
         {
-            for (var i = 0; i < Globals.translation.Count; i += 1)
+            for (var i = 0; i < Globals.translateUI.Count; i += 1)
             {
-                if (ctrl.Name.Contains("donation") && Globals.translation[i].name == ("donation"))
+                if (ctrl.Name.Contains("donation") && Globals.translateUI[i].name == ("donation"))
                 {
-                    ctrl.Text = Globals.translation[i].text;
+                    ctrl.Text = Globals.translateUI[i].text;
                     break;
                 }
                 else
                 {
-                    if (ctrl.Name == Globals.translation[i].name)
+                    if (ctrl.Name == Globals.translateUI[i].name)
                     {
-                        ctrl.Text = Globals.translation[i].text;
+                        ctrl.Text = Globals.translateUI[i].text;
                         break;
                     }
                 }
@@ -27,13 +27,13 @@ namespace FF7_SYW_Unified
         }
 
 
-        static string translate(string name)
+        static string translate(string name, List<(string name, string text)> trans)
         {
-            for (var i = 0; i < Globals.translation.Count; i += 1)
+            for (var i = 0; i < trans.Count; i += 1)
             {
-                if (name == Globals.translation[i].name)
+                if (name == trans[i].name)
                 {
-                    return Globals.translation[i].text;
+                    return trans[i].text;
                 }
             }
             return "";
@@ -72,7 +72,7 @@ namespace FF7_SYW_Unified
 
 
         //Read translation file to a static list
-        static void getTranslationXml(string fileLang)
+        static void getTranslationXml(string fileLang, List<(string name, string text)> trans)
         {
             string ctrlName = "" ;
             string ctrlText = "" ;
@@ -100,7 +100,7 @@ namespace FF7_SYW_Unified
 
                     if (ctrlName != "" && ctrlText != "")
                     {
-                        Globals.translation.Add((ctrlName, ctrlText));
+                        trans.Add((ctrlName, ctrlText));
                         ctrlName = "";
                         ctrlText = "";
                     }

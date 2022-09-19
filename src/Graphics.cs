@@ -6,10 +6,9 @@ namespace FF7_SYW_Unified
         //display preview and description
         private void modShow(string path, string name)
         {
-            getTranslationXml(@"mods\" + path + @"\" + langInterface.Text);
             graphicPrevPic.ImageLocation = Application.StartupPath + @"Prev\Mods\" + path + @"\" + name + ".jpg";
-            graphicsHelp.Text = translate(name);
-            graphicsHelpAuthor.Text = translate(name+"author");
+            graphicsHelp.Text = translate(name, Globals.translateUI);
+            graphicsHelpAuthor.Text = translate(name+"author", Globals.translateUI);
         }
 
 
