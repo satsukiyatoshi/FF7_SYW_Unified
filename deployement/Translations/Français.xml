@@ -138,6 +138,10 @@
 		<name>graphicFrame1</name>
 		<text>Mods graphiques</text>
 	</control>
+	<control>
+		<name>graphicsFields</name>
+		<text>Scènes du jeux HD</text>
+	</control>
 		<control>
 		<name>fields</name>
 		<text>Scènes du jeu refaites en HD.
@@ -145,9 +149,95 @@
 		Beaucoup d'optimisations à la main</text>
 	</control>
 	<control>
-		<name>fieldsauthor</name>
+		<name>fields author</name>
 		<text>Satsuki_Yatoshi et Aavock</text>
 	</control>
+		<control>
+		<name>graphicsAnimations</name>
+		<text>Animations avancées</text>
+	</control>
+	<control>
+		<name>animations</name>
+		<text>description de animations avancées</text>
+	</control>
+	<control>
+		<name>animations author</name>
+		<text>Satsuki_Yatoshi</text>
+	</control>
+	<control>
+		<name>graphicsBattles</name>
+		<text>Scènes de combat HD</text>
+	</control>
+	<control>
+		<name>battles</name>
+		<text>battle description</text>
+	</control>
+	<control>
+		<name>battles author</name>
+		<text>Satsuki_Yatoshi</text>
+	</control>
+	<control>
+		<name>graphicsMagics</name>
+		<text>Magies de combat HD</text>
+	</control>
+	<control>
+		<name>magics</name>
+		<text>magics description</text>
+	</control>
+	<control>
+		<name>magics author</name>
+		<text>Kela51 et Satsuki_Yatoshi</text>
+	</control>
+	<control>
+		<name>graphicsWorldMap</name>
+		<text>Carte du monde HD</text>
+	</control>
+	<control>
+		<name>worldmap</name>
+		<text>worldmap description</text>
+	</control>
+	<control>
+		<name>worldmap author</name>
+		<text>Satsuki_Yatoshi</text>
+	</control>
+	<control>
+		<name>graphicsMiniGames</name>
+		<text>Mini-jeux HD</text>
+	</control>
+	<control>
+		<name>minigames</name>
+		<text>mini jeu description</text>
+	</control>
+	<control>
+		<name>minigames author</name>
+		<text>Aavock et Satsuki_Yatoshi</text>
+	</control>
+	<control>
+		<name>graphicsAlphaDialogs</name>
+		<text>Fenêtres de dialogue translucides</text>
+	</control>
+	<control>
+		<name>alphadialogs</name>
+		<text>description des fenetres de dialog</text>
+	</control>
+	<control>
+		<name>alphadialogs author</name>
+		<text>TrueOdin et Chrysalis</text>
+	</control>
+	<control>
+		<name>graphicsAlphaBattles</name>
+		<text>Fenêtres de combat translucides</text>
+	</control>
+	<control>
+		<name>alphabattles</name>
+		<text>description des fenetres de combat</text>
+	</control>
+	<control>
+		<name>alphabattles author</name>
+		<text>TrueOdin et Chrysalis</text>
+	</control>
+	
+	
 	<control>
 		<name>graphicFrame2</name>
 		<text>Informations</text>
@@ -191,94 +281,6 @@
 	<control>
 		<name>FFNxFrame3</name>
 		<text>Configuration du pilote FFNx</text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
 	</control>
 	<control>
 		<name></name>

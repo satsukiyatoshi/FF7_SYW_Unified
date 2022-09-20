@@ -44,6 +44,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.graphicFrame1 = new System.Windows.Forms.GroupBox();
+            this.graphicsAlphaBattles = new System.Windows.Forms.CheckBox();
+            this.graphicsAlphaDialogs = new System.Windows.Forms.CheckBox();
+            this.graphicsMagics = new System.Windows.Forms.CheckBox();
+            this.graphicsBattles = new System.Windows.Forms.CheckBox();
+            this.graphicsWorldMap = new System.Windows.Forms.CheckBox();
+            this.graphicsAnimations = new System.Windows.Forms.CheckBox();
+            this.graphicsMiniGames = new System.Windows.Forms.CheckBox();
             this.graphicsFields = new System.Windows.Forms.CheckBox();
             this.graphicFrame3 = new System.Windows.Forms.GroupBox();
             this.graphicPrevPic = new System.Windows.Forms.PictureBox();
@@ -355,6 +362,13 @@
             // 
             // graphicFrame1
             // 
+            this.graphicFrame1.Controls.Add(this.graphicsAlphaBattles);
+            this.graphicFrame1.Controls.Add(this.graphicsAlphaDialogs);
+            this.graphicFrame1.Controls.Add(this.graphicsMagics);
+            this.graphicFrame1.Controls.Add(this.graphicsBattles);
+            this.graphicFrame1.Controls.Add(this.graphicsWorldMap);
+            this.graphicFrame1.Controls.Add(this.graphicsAnimations);
+            this.graphicFrame1.Controls.Add(this.graphicsMiniGames);
             this.graphicFrame1.Controls.Add(this.graphicsFields);
             this.graphicFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -365,6 +379,97 @@
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
             // 
+            // graphicsAlphaBattles
+            // 
+            this.graphicsAlphaBattles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsAlphaBattles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsAlphaBattles.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsAlphaBattles.Location = new System.Drawing.Point(260, 88);
+            this.graphicsAlphaBattles.Name = "graphicsAlphaBattles";
+            this.graphicsAlphaBattles.Size = new System.Drawing.Size(246, 19);
+            this.graphicsAlphaBattles.TabIndex = 8;
+            this.graphicsAlphaBattles.Text = "Fenêtres de combat translusides";
+            this.graphicsAlphaBattles.UseVisualStyleBackColor = false;
+            this.graphicsAlphaBattles.MouseEnter += new System.EventHandler(this.graphicsAlphaBattles_MouseEnter);
+            // 
+            // graphicsAlphaDialogs
+            // 
+            this.graphicsAlphaDialogs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsAlphaDialogs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsAlphaDialogs.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsAlphaDialogs.Location = new System.Drawing.Point(11, 88);
+            this.graphicsAlphaDialogs.Name = "graphicsAlphaDialogs";
+            this.graphicsAlphaDialogs.Size = new System.Drawing.Size(246, 19);
+            this.graphicsAlphaDialogs.TabIndex = 7;
+            this.graphicsAlphaDialogs.Text = "Fenêtres de dialogue translusides";
+            this.graphicsAlphaDialogs.UseVisualStyleBackColor = false;
+            this.graphicsAlphaDialogs.MouseEnter += new System.EventHandler(this.graphicsAlphaDialogs_MouseEnter);
+            // 
+            // graphicsMagics
+            // 
+            this.graphicsMagics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsMagics.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsMagics.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsMagics.Location = new System.Drawing.Point(260, 44);
+            this.graphicsMagics.Name = "graphicsMagics";
+            this.graphicsMagics.Size = new System.Drawing.Size(246, 19);
+            this.graphicsMagics.TabIndex = 5;
+            this.graphicsMagics.Text = "Magies de combats HD";
+            this.graphicsMagics.UseVisualStyleBackColor = false;
+            this.graphicsMagics.MouseEnter += new System.EventHandler(this.graphicsMagics_MouseEnter);
+            // 
+            // graphicsBattles
+            // 
+            this.graphicsBattles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsBattles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsBattles.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsBattles.Location = new System.Drawing.Point(11, 44);
+            this.graphicsBattles.Name = "graphicsBattles";
+            this.graphicsBattles.Size = new System.Drawing.Size(246, 19);
+            this.graphicsBattles.TabIndex = 4;
+            this.graphicsBattles.Text = "Scènes de combats HD";
+            this.graphicsBattles.UseVisualStyleBackColor = false;
+            this.graphicsBattles.MouseEnter += new System.EventHandler(this.graphicsBattles_MouseEnter);
+            // 
+            // graphicsWorldMap
+            // 
+            this.graphicsWorldMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsWorldMap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsWorldMap.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsWorldMap.Location = new System.Drawing.Point(11, 66);
+            this.graphicsWorldMap.Name = "graphicsWorldMap";
+            this.graphicsWorldMap.Size = new System.Drawing.Size(246, 19);
+            this.graphicsWorldMap.TabIndex = 3;
+            this.graphicsWorldMap.Text = "Carte du monde HD";
+            this.graphicsWorldMap.UseVisualStyleBackColor = false;
+            this.graphicsWorldMap.MouseEnter += new System.EventHandler(this.graphicsWorldMap_MouseEnter);
+            // 
+            // graphicsAnimations
+            // 
+            this.graphicsAnimations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsAnimations.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsAnimations.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsAnimations.Location = new System.Drawing.Point(260, 22);
+            this.graphicsAnimations.Name = "graphicsAnimations";
+            this.graphicsAnimations.Size = new System.Drawing.Size(246, 19);
+            this.graphicsAnimations.TabIndex = 2;
+            this.graphicsAnimations.Text = "Animations avancées";
+            this.graphicsAnimations.UseVisualStyleBackColor = false;
+            this.graphicsAnimations.MouseEnter += new System.EventHandler(this.graphicsAnimations_MouseEnter);
+            // 
+            // graphicsMiniGames
+            // 
+            this.graphicsMiniGames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsMiniGames.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsMiniGames.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsMiniGames.Location = new System.Drawing.Point(260, 66);
+            this.graphicsMiniGames.Name = "graphicsMiniGames";
+            this.graphicsMiniGames.Size = new System.Drawing.Size(246, 19);
+            this.graphicsMiniGames.TabIndex = 1;
+            this.graphicsMiniGames.Text = "Mini-jeux HD";
+            this.graphicsMiniGames.UseVisualStyleBackColor = false;
+            this.graphicsMiniGames.MouseEnter += new System.EventHandler(this.graphicsMiniGames_MouseEnter);
+            // 
             // graphicsFields
             // 
             this.graphicsFields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
@@ -372,9 +477,9 @@
             this.graphicsFields.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsFields.Location = new System.Drawing.Point(11, 22);
             this.graphicsFields.Name = "graphicsFields";
-            this.graphicsFields.Size = new System.Drawing.Size(490, 19);
+            this.graphicsFields.Size = new System.Drawing.Size(246, 19);
             this.graphicsFields.TabIndex = 0;
-            this.graphicsFields.Text = "Scènes du jeu HD (IA et éditions manuelles)";
+            this.graphicsFields.Text = "Scènes du jeu HD";
             this.graphicsFields.UseVisualStyleBackColor = false;
             this.graphicsFields.MouseEnter += new System.EventHandler(this.graphicsFields_MouseEnter);
             // 
@@ -1689,5 +1794,12 @@
         private Label graphicsHelp;
         private PictureBox graphicPrevPic;
         private Label graphicsHelpAuthor;
+        private CheckBox graphicsAlphaBattles;
+        private CheckBox graphicsAlphaDialogs;
+        private CheckBox graphicsMagics;
+        private CheckBox graphicsBattles;
+        private CheckBox graphicsWorldMap;
+        private CheckBox graphicsAnimations;
+        private CheckBox graphicsMiniGames;
     }
 }

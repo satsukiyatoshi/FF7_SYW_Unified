@@ -11,6 +11,7 @@ namespace FF7_SYW_Unified
         private void langInterface_SelectedIndexChanged(object sender, EventArgs e) { getTranslationXml(langInterface.Text, Globals.translateUI); translateAll(); }
 
 
+
         /*
          *Set menu button color on click
          *Set the matching options pannel visible
@@ -43,6 +44,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         //Change menu button color on mouse over
         private static void menuMouseOver(Control menuBtn, bool isActiv = true)
         {
@@ -53,6 +55,7 @@ namespace FF7_SYW_Unified
             }
             menuBtn.BackColor = Globals.activButtonBolor;
         }
+
 
 
         //menu buttons toogle call on mouve enter/leave

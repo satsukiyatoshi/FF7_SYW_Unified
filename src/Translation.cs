@@ -6,6 +6,7 @@ namespace FF7_SYW_Unified
     partial class Form1
     {
 
+        //translate a text's control from its name
         static void translateCtrl(Control ctrl)
         {
             for (var i = 0; i < Globals.translateUI.Count; i += 1)
@@ -27,6 +28,8 @@ namespace FF7_SYW_Unified
         }
 
 
+
+        //translate a text's control from a specific label
         static string translate(string name, List<(string name, string text)> trans)
         {
             for (var i = 0; i < trans.Count; i += 1)
@@ -38,6 +41,7 @@ namespace FF7_SYW_Unified
             }
             return "";
         }
+
 
 
         //recusive control list
@@ -54,6 +58,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //translate all control of the UI
         private void translateAll()
         {
             //apply translation list to each controls
