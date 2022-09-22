@@ -70,8 +70,12 @@ namespace FF7_SYW_Unified
             //set game lang = interface lang if possible
             for (var i = 0; i < langGame.Items.Count; i += 1)
             {
-                if (langGame.GetItemText(langGame.Items[i]) == langInterface.Text) { langGame.Text = langInterface.Text; return; }
+                if (langGame.GetItemText(langGame.Items[i]) == langInterface.Text) { langGame.Text = langInterface.Text; }
             }
+
+            //get default "vanila" value and get mods options
+            Globals.vanilla = translate("vanilla", Globals.translateUI);
+            modsSetValues();
         }
 
 
@@ -82,7 +86,7 @@ namespace FF7_SYW_Unified
             string ctrlName = "" ;
             string ctrlText = "" ;
 
-            using (XmlReader reader = XmlReader.Create(Application.StartupPath + @"\Translations\" + fileLang + ".xml"))
+            using (XmlReader reader = XmlReader.Create(fileLang))
             {
                 while (reader.Read())
                 {

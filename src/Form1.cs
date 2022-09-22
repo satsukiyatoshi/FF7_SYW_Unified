@@ -29,7 +29,19 @@ namespace FF7_SYW_Unified
 
             //set default menu status
             menuClick(menuAbout);
+        }
 
+
+        private void modsSetValues()
+        {
+            graphicsModels3Df.Items.Clear();
+            graphicsModels3Dc.Items.Clear();
+
+            graphicsModels3Df.Items.Add(Globals.vanilla);
+            graphicsModels3Dc.Items.Add(Globals.vanilla);
+
+            graphicsModels3Df.Text = graphicsModels3Df.GetItemText(graphicsModels3Df.Items[0]);
+            graphicsModels3Dc.Text = graphicsModels3Dc.GetItemText(graphicsModels3Dc.Items[0]);
         }
 
 

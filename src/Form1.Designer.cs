@@ -44,6 +44,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.graphicFrame1 = new System.Windows.Forms.GroupBox();
+            this.graphicsGroupModels3Dc = new System.Windows.Forms.GroupBox();
+            this.graphicsModels3Dc = new System.Windows.Forms.ComboBox();
+            this.graphicsGroupModels3Df = new System.Windows.Forms.GroupBox();
+            this.graphicsModels3Df = new System.Windows.Forms.ComboBox();
             this.graphicsAlphaBattles = new System.Windows.Forms.CheckBox();
             this.graphicsAlphaDialogs = new System.Windows.Forms.CheckBox();
             this.graphicsMagics = new System.Windows.Forms.CheckBox();
@@ -151,6 +155,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.graphicFrame1.SuspendLayout();
+            this.graphicsGroupModels3Dc.SuspendLayout();
+            this.graphicsGroupModels3Df.SuspendLayout();
             this.graphicFrame3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.graphicPrevPic)).BeginInit();
             this.menuGraphicPanel.SuspendLayout();
@@ -362,6 +368,8 @@
             // 
             // graphicFrame1
             // 
+            this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dc);
+            this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Df);
             this.graphicFrame1.Controls.Add(this.graphicsAlphaBattles);
             this.graphicFrame1.Controls.Add(this.graphicsAlphaDialogs);
             this.graphicFrame1.Controls.Add(this.graphicsMagics);
@@ -378,6 +386,56 @@
             this.graphicFrame1.TabIndex = 6;
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
+            // 
+            // graphicsGroupModels3Dc
+            // 
+            this.graphicsGroupModels3Dc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupModels3Dc.Controls.Add(this.graphicsModels3Dc);
+            this.graphicsGroupModels3Dc.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsGroupModels3Dc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicsGroupModels3Dc.Location = new System.Drawing.Point(260, 110);
+            this.graphicsGroupModels3Dc.Name = "graphicsGroupModels3Dc";
+            this.graphicsGroupModels3Dc.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupModels3Dc.TabIndex = 10;
+            this.graphicsGroupModels3Dc.TabStop = false;
+            this.graphicsGroupModels3Dc.Text = "Modèles 3D des combats";
+            // 
+            // graphicsModels3Dc
+            // 
+            this.graphicsModels3Dc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.graphicsModels3Dc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsModels3Dc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.graphicsModels3Dc.ForeColor = System.Drawing.Color.White;
+            this.graphicsModels3Dc.FormattingEnabled = true;
+            this.graphicsModels3Dc.Location = new System.Drawing.Point(9, 23);
+            this.graphicsModels3Dc.Name = "graphicsModels3Dc";
+            this.graphicsModels3Dc.Size = new System.Drawing.Size(225, 23);
+            this.graphicsModels3Dc.TabIndex = 0;
+            // 
+            // graphicsGroupModels3Df
+            // 
+            this.graphicsGroupModels3Df.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupModels3Df.Controls.Add(this.graphicsModels3Df);
+            this.graphicsGroupModels3Df.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsGroupModels3Df.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicsGroupModels3Df.Location = new System.Drawing.Point(11, 110);
+            this.graphicsGroupModels3Df.Name = "graphicsGroupModels3Df";
+            this.graphicsGroupModels3Df.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupModels3Df.TabIndex = 9;
+            this.graphicsGroupModels3Df.TabStop = false;
+            this.graphicsGroupModels3Df.Text = "Modèles 3D des scènes du jeu";
+            // 
+            // graphicsModels3Df
+            // 
+            this.graphicsModels3Df.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.graphicsModels3Df.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsModels3Df.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.graphicsModels3Df.ForeColor = System.Drawing.Color.White;
+            this.graphicsModels3Df.FormattingEnabled = true;
+            this.graphicsModels3Df.Location = new System.Drawing.Point(9, 23);
+            this.graphicsModels3Df.Name = "graphicsModels3Df";
+            this.graphicsModels3Df.Size = new System.Drawing.Size(225, 23);
+            this.graphicsModels3Df.TabIndex = 0;
             // 
             // graphicsAlphaBattles
             // 
@@ -1669,6 +1727,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.graphicFrame1.ResumeLayout(false);
+            this.graphicsGroupModels3Dc.ResumeLayout(false);
+            this.graphicsGroupModels3Df.ResumeLayout(false);
             this.graphicFrame3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.graphicPrevPic)).EndInit();
             this.menuGraphicPanel.ResumeLayout(false);
@@ -1801,5 +1861,9 @@
         private CheckBox graphicsWorldMap;
         private CheckBox graphicsAnimations;
         private CheckBox graphicsMiniGames;
+        private GroupBox graphicsGroupModels3Dc;
+        private ComboBox graphicsModels3Dc;
+        private GroupBox graphicsGroupModels3Df;
+        private ComboBox graphicsModels3Df;
     }
 }

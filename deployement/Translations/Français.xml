@@ -5,6 +5,10 @@
 		<text>donation</text>
 	</control>
 	<control>
+		<name>vanilla</name>
+		<text>Jeu de base</text>
+	</control>
+	<control>
 		<name>interfaceLang</name>
 		<text>Langue de l'interface</text>
 	</control>
@@ -236,8 +240,71 @@
 		<name>alphabattles author</name>
 		<text>TrueOdin et Chrysalis</text>
 	</control>
-	
-	
+	<control>
+		<name>graphicsGroupModels3Df</name>
+		<text>Modèles 3D des scènes du jeu</text>
+	</control>
+	<control>
+		<name>graphicsGroupModels3Dc</name>
+		<text>Modèles 3D des combats</text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>
+	<control>
+		<name></name>
+		<text></text>
+	</control>	
+
 	<control>
 		<name>graphicFrame2</name>
 		<text>Informations</text>
@@ -282,70 +349,7 @@
 		<name>FFNxFrame3</name>
 		<text>Configuration du pilote FFNx</text>
 	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
+
 	<control>
 		<name></name>
 		<text></text>

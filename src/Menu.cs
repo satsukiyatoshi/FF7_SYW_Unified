@@ -1,6 +1,4 @@
 ﻿
-using System.Reflection.Metadata.Ecma335;
-using static System.Windows.Forms.LinkLabel;
 
 namespace FF7_SYW_Unified
 {
@@ -8,7 +6,11 @@ namespace FF7_SYW_Unified
     {
 
         //call translation on menu lang selection
-        private void langInterface_SelectedIndexChanged(object sender, EventArgs e) { getTranslationXml(langInterface.Text, Globals.translateUI); translateAll(); }
+        private void langInterface_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            getTranslationXml(Application.StartupPath + @"\Translations\" + langInterface.Text + ".xml", Globals.translateUI);
+            translateAll();
+        }
 
 
 
