@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<name>name</name>
+		<text>Cinématiques HD 30 fps</text>
+	</control>
+	<control>
+		<name>description</name>
+		<text>cinématiques refaites en hd depuis la version psx</text>
+	</control>
+	<control>
+		<name>author</name>
+		<text>SquareSoft</text>
+	</control>
+</translation>
+

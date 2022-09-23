@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<name>name</name>
+		<text>Gameplay original</text>
+	</control>
+	<control>
+		<name>description</name>
+		<text>Gameplay original</text>
+	</control>
+	<control>
+		<name>author</name>
+		<text>Square</text>
+	</control>
+</translation>
+

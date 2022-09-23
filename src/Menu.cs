@@ -1,5 +1,8 @@
 ﻿
 
+using System;
+using static FF7_SYW_Unified.Form1;
+
 namespace FF7_SYW_Unified
 {
     partial class Form1
@@ -8,8 +11,26 @@ namespace FF7_SYW_Unified
         //call translation on menu lang selection
         private void langInterface_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Globals.translateUI.Clear();
+            Globals.translateMod.Clear();
+            graphicsModels3Df.Items.Clear();
+            graphicsModels3Dc.Items.Clear();
+            graphicsFMV.Items.Clear();
+            graphicsMenu.Items.Clear();
+
+
             getTranslationXml(Application.StartupPath + @"\Translations\" + langInterface.Text + ".xml", Globals.translateUI);
             translateAll();
+
+            setModsItems(graphicsModels3Dc, @"models\battle\", "models.battle");
+            setModsItems(graphicsModels3Df, @"models\fields\", "models.fields");
+            setModsItems(graphicsFMV, @"movies\", "movies");
+            setModsItems(graphicsMenu, @"uis\", "uis");
+
+            graphicsModels3Df.Text = graphicsModels3Df.Items[0].ToString();
+            graphicsModels3Dc.Text = graphicsModels3Dc.Items[0].ToString();
+            graphicsFMV.Text = graphicsFMV.Items[0].ToString();
+            graphicsMenu.Text = graphicsMenu.Items[0].ToString();
         }
 
 

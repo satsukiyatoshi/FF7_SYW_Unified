@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<name>name</name>
+		<text>ChaOs Fields</text>
+	</control>
+	<control>
+		<name>description</name>
+		<text>Modèles modernisés.</text>
+	</control>
+	<control>
+		<name>author</name>
+		<text>Kadarasha</text>
+	</control>
+</translation>
+

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<name>name</name>
+		<text>Modèles de base</text>
+	</control>
+	<control>
+		<name>description</name>
+		<text>Modèles de base du jeu.</text>
+	</control>
+	<control>
+		<name>author</name>
+		<text>SquareSoft</text>
+	</control>
+</translation>
+

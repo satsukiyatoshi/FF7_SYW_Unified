@@ -1,5 +1,6 @@
 
 using System.Diagnostics;
+using System.IO;
 
 namespace FF7_SYW_Unified
 {
@@ -31,54 +32,6 @@ namespace FF7_SYW_Unified
 
             //set default menu status
             menuClick(menuAbout);
-        }
-
-
-        private void modsSetValues()
-        {
-            graphicsModels3Df.Items.Clear();
-            graphicsModels3Dc.Items.Clear();
-
-            graphicsModels3Df.Items.Add(Globals.vanilla);
-            graphicsModels3Dc.Items.Add(Globals.vanilla);
-
-            setModsItems(graphicsModels3Dc, @"Models\Battle\");
-
-            graphicsModels3Df.Text = graphicsModels3Df.GetItemText(graphicsModels3Df.Items[0]);
-            graphicsModels3Dc.Text = graphicsModels3Dc.GetItemText(graphicsModels3Dc.Items[0]);
-        }
-
-
-        private void setModsItems(ComboBox combo, string folderwSource)
-        {
-            string translationFile = "";
-
-            folderwSource = Application.StartupPath + @"mods\" + folderwSource;
-
-            string[] dirs = Directory.GetDirectories(folderwSource, "*", SearchOption.TopDirectoryOnly);
-
-            foreach (string dir in dirs)
-            {
-                if (File.Exists(dir + @"\translations\" + langInterface.Text + ".xml"))
-                {
-                    translationFile = dir + @"\translations\" + langInterface.Text + ".xml";
-                }
-                else if (File.Exists(dir + @"\translations\english.xml"))
-                {
-                    translationFile = dir + @"\translations\english.xml";
-                }
-                else
-                {
-                    MessageBox.Show("Error with mod : " + dir + " Need at least one english translation file");
-                    Process.GetCurrentProcess().Kill();
-                }
-
-                Globals.translateMod.Clear();
-                getTranslationXml(translationFile, Globals.translateMod);
-                combo.Items.Add(translate("name", Globals.translateMod));
-
-            }
-
         }
 
 

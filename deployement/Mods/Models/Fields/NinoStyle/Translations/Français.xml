@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<name>name</name>
+		<text>NynoStyle</text>
+	</control>
+	<control>
+		<name>description</name>
+		<text>Modèles chibi de haute qualité.</text>
+	</control>
+	<control>
+		<name>author</name>
+		<text>NynoStyle</text>
+	</control>
+</translation>
+

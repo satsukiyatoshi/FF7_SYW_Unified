@@ -1,10 +1,46 @@
 ﻿
+using System.Diagnostics;
 using System.Xml;
 
 namespace FF7_SYW_Unified
 {
     partial class Form1
     {
+
+        //set items of combos mods option and put their translation to Globals.translateMod
+        private void setModsItems(ComboBox combo, string folderwSource, string modType)
+        {
+            string translationFile = "";
+            string modDir = "";
+
+            folderwSource = Application.StartupPath + @"mods\" + folderwSource;
+
+                string[] dirs = Directory.GetDirectories(folderwSource, "*", SearchOption.TopDirectoryOnly);
+
+                foreach (string dir in dirs)
+                {
+                    if (File.Exists(dir + @"\translations\" + langInterface.Text + ".xml"))
+                    {
+                        translationFile = dir + @"\translations\" + langInterface.Text + ".xml";
+                    }
+                    else if (File.Exists(dir + @"\translations\english.xml"))
+                    {
+                        translationFile = dir + @"\translations\english.xml";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error with mod : " + dir + " Need at least one english translation file");
+                        Process.GetCurrentProcess().Kill();
+                    }
+
+                    modDir = Path.GetFileName(dir);
+
+                    getTranslationXml(translationFile, Globals.translateMod, "mod." + modType+ "." + modDir);
+
+                    combo.Items.Add(translate("namemod." + modType +"." + modDir, Globals.translateMod));
+                }
+
+        }
 
         //translate a text's control from its name
         static void translateCtrl(Control ctrl)
@@ -75,13 +111,12 @@ namespace FF7_SYW_Unified
 
             //get default "vanila" value and get mods options
             Globals.vanilla = translate("vanilla", Globals.translateUI);
-            modsSetValues();
         }
 
 
 
         //Read translation file to a static list
-        static void getTranslationXml(string fileLang, List<(string name, string text)> trans)
+        static void getTranslationXml(string fileLang, List<(string name, string text)> trans, string modName = "")
         {
             string ctrlName = "" ;
             string ctrlText = "" ;
@@ -109,7 +144,7 @@ namespace FF7_SYW_Unified
 
                     if (ctrlName != "" && ctrlText != "")
                     {
-                        trans.Add((ctrlName, ctrlText));
+                        trans.Add((ctrlName + modName, ctrlText));
                         ctrlName = "";
                         ctrlText = "";
                     }
