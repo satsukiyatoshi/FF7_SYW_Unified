@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<name>name</name>
+		<text>Jeu de base (bouches fermées)</text>
+	</control>
+	<control>
+		<name>description</name>
+		<text>Modèles de base du jeu de base.
+		Les bouches sont de simple traits.</text>
+	</control>
+	<control>
+		<name>author</name>
+		<text>jenesaisplus2</text>
+	</control>
+</translation>
+

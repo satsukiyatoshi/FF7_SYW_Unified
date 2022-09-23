@@ -249,16 +249,16 @@
 		<text>Modèles 3D des combats</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>graphicsGroupFMV</name>
+		<text>Cinématiques</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>graphicsGroupMenu</name>
+		<text>Interface (menus et polices)</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>graphicsGroupLighting</name>
+		<text>Ombres dynamiques</text>
 	</control>
 	<control>
 		<name></name>

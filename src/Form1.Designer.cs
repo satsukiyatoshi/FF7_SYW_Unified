@@ -44,6 +44,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.graphicFrame1 = new System.Windows.Forms.GroupBox();
+            this.graphicsGroupLighting = new System.Windows.Forms.GroupBox();
+            this.graphicsLighting = new System.Windows.Forms.ComboBox();
+            this.graphicsGroupMenu = new System.Windows.Forms.GroupBox();
+            this.graphicsMenu = new System.Windows.Forms.ComboBox();
+            this.graphicsGroupFMV = new System.Windows.Forms.GroupBox();
+            this.graphicsFMV = new System.Windows.Forms.ComboBox();
             this.graphicsGroupModels3Dc = new System.Windows.Forms.GroupBox();
             this.graphicsModels3Dc = new System.Windows.Forms.ComboBox();
             this.graphicsGroupModels3Df = new System.Windows.Forms.GroupBox();
@@ -155,6 +161,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.graphicFrame1.SuspendLayout();
+            this.graphicsGroupLighting.SuspendLayout();
+            this.graphicsGroupMenu.SuspendLayout();
+            this.graphicsGroupFMV.SuspendLayout();
             this.graphicsGroupModels3Dc.SuspendLayout();
             this.graphicsGroupModels3Df.SuspendLayout();
             this.graphicFrame3.SuspendLayout();
@@ -368,6 +377,9 @@
             // 
             // graphicFrame1
             // 
+            this.graphicFrame1.Controls.Add(this.graphicsGroupLighting);
+            this.graphicFrame1.Controls.Add(this.graphicsGroupMenu);
+            this.graphicFrame1.Controls.Add(this.graphicsGroupFMV);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dc);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Df);
             this.graphicFrame1.Controls.Add(this.graphicsAlphaBattles);
@@ -382,10 +394,85 @@
             this.graphicFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame1.Location = new System.Drawing.Point(3, 4);
             this.graphicFrame1.Name = "graphicFrame1";
-            this.graphicFrame1.Size = new System.Drawing.Size(514, 279);
+            this.graphicFrame1.Size = new System.Drawing.Size(514, 305);
             this.graphicFrame1.TabIndex = 6;
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
+            // 
+            // graphicsGroupLighting
+            // 
+            this.graphicsGroupLighting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupLighting.Controls.Add(this.graphicsLighting);
+            this.graphicsGroupLighting.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsGroupLighting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicsGroupLighting.Location = new System.Drawing.Point(11, 234);
+            this.graphicsGroupLighting.Name = "graphicsGroupLighting";
+            this.graphicsGroupLighting.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupLighting.TabIndex = 13;
+            this.graphicsGroupLighting.TabStop = false;
+            this.graphicsGroupLighting.Text = "Ombres dynamiques";
+            // 
+            // graphicsLighting
+            // 
+            this.graphicsLighting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.graphicsLighting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsLighting.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.graphicsLighting.ForeColor = System.Drawing.Color.White;
+            this.graphicsLighting.FormattingEnabled = true;
+            this.graphicsLighting.Location = new System.Drawing.Point(9, 23);
+            this.graphicsLighting.Name = "graphicsLighting";
+            this.graphicsLighting.Size = new System.Drawing.Size(225, 23);
+            this.graphicsLighting.TabIndex = 0;
+            // 
+            // graphicsGroupMenu
+            // 
+            this.graphicsGroupMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupMenu.Controls.Add(this.graphicsMenu);
+            this.graphicsGroupMenu.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsGroupMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicsGroupMenu.Location = new System.Drawing.Point(260, 172);
+            this.graphicsGroupMenu.Name = "graphicsGroupMenu";
+            this.graphicsGroupMenu.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupMenu.TabIndex = 12;
+            this.graphicsGroupMenu.TabStop = false;
+            this.graphicsGroupMenu.Text = "Interface (menus et polices)";
+            // 
+            // graphicsMenu
+            // 
+            this.graphicsMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.graphicsMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsMenu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.graphicsMenu.ForeColor = System.Drawing.Color.White;
+            this.graphicsMenu.FormattingEnabled = true;
+            this.graphicsMenu.Location = new System.Drawing.Point(9, 23);
+            this.graphicsMenu.Name = "graphicsMenu";
+            this.graphicsMenu.Size = new System.Drawing.Size(225, 23);
+            this.graphicsMenu.TabIndex = 0;
+            // 
+            // graphicsGroupFMV
+            // 
+            this.graphicsGroupFMV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupFMV.Controls.Add(this.graphicsFMV);
+            this.graphicsGroupFMV.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsGroupFMV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 172);
+            this.graphicsGroupFMV.Name = "graphicsGroupFMV";
+            this.graphicsGroupFMV.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupFMV.TabIndex = 11;
+            this.graphicsGroupFMV.TabStop = false;
+            this.graphicsGroupFMV.Text = "Cinématiques";
+            // 
+            // graphicsFMV
+            // 
+            this.graphicsFMV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.graphicsFMV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsFMV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.graphicsFMV.ForeColor = System.Drawing.Color.White;
+            this.graphicsFMV.FormattingEnabled = true;
+            this.graphicsFMV.Location = new System.Drawing.Point(9, 23);
+            this.graphicsFMV.Name = "graphicsFMV";
+            this.graphicsFMV.Size = new System.Drawing.Size(225, 23);
+            this.graphicsFMV.TabIndex = 0;
             // 
             // graphicsGroupModels3Dc
             // 
@@ -546,9 +633,9 @@
             this.graphicFrame3.Controls.Add(this.graphicPrevPic);
             this.graphicFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame3.Location = new System.Drawing.Point(3, 289);
+            this.graphicFrame3.Location = new System.Drawing.Point(3, 315);
             this.graphicFrame3.Name = "graphicFrame3";
-            this.graphicFrame3.Size = new System.Drawing.Size(788, 414);
+            this.graphicFrame3.Size = new System.Drawing.Size(788, 388);
             this.graphicFrame3.TabIndex = 9;
             this.graphicFrame3.TabStop = false;
             this.graphicFrame3.Text = "Aperçu";
@@ -557,7 +644,8 @@
             // 
             this.graphicPrevPic.Location = new System.Drawing.Point(11, 22);
             this.graphicPrevPic.Name = "graphicPrevPic";
-            this.graphicPrevPic.Size = new System.Drawing.Size(765, 376);
+            this.graphicPrevPic.Size = new System.Drawing.Size(765, 350);
+            this.graphicPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.graphicPrevPic.TabIndex = 0;
             this.graphicPrevPic.TabStop = false;
             // 
@@ -1727,6 +1815,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.graphicFrame1.ResumeLayout(false);
+            this.graphicsGroupLighting.ResumeLayout(false);
+            this.graphicsGroupMenu.ResumeLayout(false);
+            this.graphicsGroupFMV.ResumeLayout(false);
             this.graphicsGroupModels3Dc.ResumeLayout(false);
             this.graphicsGroupModels3Df.ResumeLayout(false);
             this.graphicFrame3.ResumeLayout(false);
@@ -1865,5 +1956,11 @@
         private ComboBox graphicsModels3Dc;
         private GroupBox graphicsGroupModels3Df;
         private ComboBox graphicsModels3Df;
+        private GroupBox graphicsGroupLighting;
+        private ComboBox graphicsLighting;
+        private GroupBox graphicsGroupMenu;
+        private ComboBox graphicsMenu;
+        private GroupBox graphicsGroupFMV;
+        private ComboBox graphicsFMV;
     }
 }
