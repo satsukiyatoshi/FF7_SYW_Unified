@@ -152,6 +152,7 @@
             this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
+            this.graphicsLighting = new System.Windows.Forms.CheckBox();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
@@ -374,6 +375,7 @@
             // 
             // graphicFrame1
             // 
+            this.graphicFrame1.Controls.Add(this.graphicsLighting);
             this.graphicFrame1.Controls.Add(this.graphicsGroupMenu);
             this.graphicFrame1.Controls.Add(this.graphicsGroupFMV);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dc);
@@ -390,7 +392,7 @@
             this.graphicFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame1.Location = new System.Drawing.Point(3, 4);
             this.graphicFrame1.Name = "graphicFrame1";
-            this.graphicFrame1.Size = new System.Drawing.Size(514, 279);
+            this.graphicFrame1.Size = new System.Drawing.Size(514, 266);
             this.graphicFrame1.TabIndex = 6;
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
@@ -401,12 +403,13 @@
             this.graphicsGroupMenu.Controls.Add(this.graphicsMenu);
             this.graphicsGroupMenu.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupMenu.Location = new System.Drawing.Point(260, 172);
+            this.graphicsGroupMenu.Location = new System.Drawing.Point(260, 194);
             this.graphicsGroupMenu.Name = "graphicsGroupMenu";
             this.graphicsGroupMenu.Size = new System.Drawing.Size(246, 59);
             this.graphicsGroupMenu.TabIndex = 12;
             this.graphicsGroupMenu.TabStop = false;
             this.graphicsGroupMenu.Text = "Interface (menus et polices)";
+            this.graphicsGroupMenu.MouseEnter += new System.EventHandler(this.graphicsGroupMenu_MouseEnter);
             // 
             // graphicsMenu
             // 
@@ -426,12 +429,13 @@
             this.graphicsGroupFMV.Controls.Add(this.graphicsFMV);
             this.graphicsGroupFMV.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupFMV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 172);
+            this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 194);
             this.graphicsGroupFMV.Name = "graphicsGroupFMV";
             this.graphicsGroupFMV.Size = new System.Drawing.Size(246, 59);
             this.graphicsGroupFMV.TabIndex = 11;
             this.graphicsGroupFMV.TabStop = false;
             this.graphicsGroupFMV.Text = "Cinématiques";
+            this.graphicsGroupFMV.MouseEnter += new System.EventHandler(this.graphicsGroupFMV_MouseEnter);
             // 
             // graphicsFMV
             // 
@@ -451,12 +455,13 @@
             this.graphicsGroupModels3Dc.Controls.Add(this.graphicsModels3Dc);
             this.graphicsGroupModels3Dc.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupModels3Dc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupModels3Dc.Location = new System.Drawing.Point(260, 110);
+            this.graphicsGroupModels3Dc.Location = new System.Drawing.Point(260, 132);
             this.graphicsGroupModels3Dc.Name = "graphicsGroupModels3Dc";
             this.graphicsGroupModels3Dc.Size = new System.Drawing.Size(246, 59);
             this.graphicsGroupModels3Dc.TabIndex = 10;
             this.graphicsGroupModels3Dc.TabStop = false;
             this.graphicsGroupModels3Dc.Text = "Modèles 3D des combats";
+            this.graphicsGroupModels3Dc.MouseEnter += new System.EventHandler(this.graphicsGroupModels3Dc_MouseEnter);
             // 
             // graphicsModels3Dc
             // 
@@ -476,12 +481,13 @@
             this.graphicsGroupModels3Df.Controls.Add(this.graphicsModels3Df);
             this.graphicsGroupModels3Df.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupModels3Df.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupModels3Df.Location = new System.Drawing.Point(11, 110);
+            this.graphicsGroupModels3Df.Location = new System.Drawing.Point(11, 132);
             this.graphicsGroupModels3Df.Name = "graphicsGroupModels3Df";
             this.graphicsGroupModels3Df.Size = new System.Drawing.Size(246, 59);
             this.graphicsGroupModels3Df.TabIndex = 9;
             this.graphicsGroupModels3Df.TabStop = false;
             this.graphicsGroupModels3Df.Text = "Modèles 3D des scènes du jeu";
+            this.graphicsGroupModels3Df.MouseEnter += new System.EventHandler(this.graphicsGroupModels3Df_MouseEnter);
             // 
             // graphicsModels3Df
             // 
@@ -604,9 +610,9 @@
             this.graphicFrame3.Controls.Add(this.graphicPrevPic);
             this.graphicFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame3.Location = new System.Drawing.Point(3, 289);
+            this.graphicFrame3.Location = new System.Drawing.Point(3, 276);
             this.graphicFrame3.Name = "graphicFrame3";
-            this.graphicFrame3.Size = new System.Drawing.Size(788, 414);
+            this.graphicFrame3.Size = new System.Drawing.Size(788, 427);
             this.graphicFrame3.TabIndex = 9;
             this.graphicFrame3.TabStop = false;
             this.graphicFrame3.Text = "Aperçu";
@@ -615,7 +621,7 @@
             // 
             this.graphicPrevPic.Location = new System.Drawing.Point(11, 22);
             this.graphicPrevPic.Name = "graphicPrevPic";
-            this.graphicPrevPic.Size = new System.Drawing.Size(765, 376);
+            this.graphicPrevPic.Size = new System.Drawing.Size(765, 389);
             this.graphicPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.graphicPrevPic.TabIndex = 0;
             this.graphicPrevPic.TabStop = false;
@@ -638,7 +644,7 @@
             this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame2.Location = new System.Drawing.Point(523, 4);
             this.graphicFrame2.Name = "graphicFrame2";
-            this.graphicFrame2.Size = new System.Drawing.Size(268, 279);
+            this.graphicFrame2.Size = new System.Drawing.Size(268, 266);
             this.graphicFrame2.TabIndex = 10;
             this.graphicFrame2.TabStop = false;
             this.graphicFrame2.Text = "Aide";
@@ -648,7 +654,7 @@
             this.graphicsHelpAuthor.BackColor = System.Drawing.Color.Black;
             this.graphicsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 244);
+            this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 231);
             this.graphicsHelpAuthor.Name = "graphicsHelpAuthor";
             this.graphicsHelpAuthor.Size = new System.Drawing.Size(244, 22);
             this.graphicsHelpAuthor.TabIndex = 1;
@@ -661,7 +667,7 @@
             this.graphicsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
             this.graphicsHelp.Location = new System.Drawing.Point(12, 21);
             this.graphicsHelp.Name = "graphicsHelp";
-            this.graphicsHelp.Size = new System.Drawing.Size(244, 216);
+            this.graphicsHelp.Size = new System.Drawing.Size(244, 210);
             this.graphicsHelp.TabIndex = 0;
             // 
             // menuAboutPanel
@@ -1759,6 +1765,19 @@
             this.FFNxFrame3.TabStop = false;
             this.FFNxFrame3.Text = "Configuration du pilote FFNx";
             // 
+            // graphicsLighting
+            // 
+            this.graphicsLighting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsLighting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsLighting.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsLighting.Location = new System.Drawing.Point(11, 110);
+            this.graphicsLighting.Name = "graphicsLighting";
+            this.graphicsLighting.Size = new System.Drawing.Size(246, 19);
+            this.graphicsLighting.TabIndex = 13;
+            this.graphicsLighting.Text = "Ombres dynamiques";
+            this.graphicsLighting.UseVisualStyleBackColor = false;
+            this.graphicsLighting.MouseEnter += new System.EventHandler(this.graphicsLighting_MouseEnter);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1930,5 +1949,6 @@
         private ComboBox graphicsMenu;
         private GroupBox graphicsGroupFMV;
         private ComboBox graphicsFMV;
+        private CheckBox graphicsLighting;
     }
 }

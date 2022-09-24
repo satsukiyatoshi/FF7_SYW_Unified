@@ -257,8 +257,16 @@
 		<text>Interface (menus et polices)</text>
 	</control>
 	<control>
-		<name>graphicsGroupLighting</name>
+		<name>graphicsLighting</name>
 		<text>Ombres dynamiques</text>
+	</control>
+	<control>
+		<name>lighting</name>
+		<text>description des ombres dyn</text>
+	</control>
+	<control>
+		<name>lighting author</name>
+		<text>TrueOdin et Cosmos</text>
 	</control>
 	<control>
 		<name></name>

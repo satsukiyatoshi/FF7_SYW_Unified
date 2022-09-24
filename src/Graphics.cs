@@ -3,14 +3,6 @@ namespace FF7_SYW_Unified
 {
     partial class Form1
     {
-        //display preview picture and description
-        private void modShow(string path, string name)
-        {
-            graphicPrevPic.ImageLocation = Application.StartupPath + @"Prev\Mods\" + path + @"\" + name + ".jpg";
-            graphicsHelp.Text = translate(name, Globals.translateUI);
-            graphicsHelpAuthor.Text = translate(name+" author", Globals.translateUI);
-        }
-
 
         private void graphicsFields_MouseEnter(object sender, EventArgs e) { modShow("SYW","fields"); }
         private void graphicsAnimations_MouseEnter(object sender, EventArgs e) { modShow("SYW", "animations"); }
@@ -20,6 +12,12 @@ namespace FF7_SYW_Unified
         private void graphicsMiniGames_MouseEnter(object sender, EventArgs e) { modShow("SYW", "minigames"); }
         private void graphicsAlphaDialogs_MouseEnter(object sender, EventArgs e) { modShow("SYW", "alphadialogs"); }
         private void graphicsAlphaBattles_MouseEnter(object sender, EventArgs e) { modShow("SYW", "alphabattles"); }
+        private void graphicsLighting_MouseEnter(object sender, EventArgs e) { modShow("SYW", "lighting"); }
+        private void graphicsGroupModels3Df_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", "models.fields"); }
+        private void graphicsGroupModels3Dc_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsModels3Dc, @"models\fields\", "models.fields"); }
+        private void graphicsGroupMenu_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsMenu, @"models\fields\", "models.fields"); }
+        private void graphicsGroupFMV_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"models\fields\", "models.fields"); }
+
 
     }
 }
