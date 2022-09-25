@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FF7_SYW_Unified
 {
-    partial class Form1
+    partial class FF7U
     {
         public static void openUrl(string url) 
         {

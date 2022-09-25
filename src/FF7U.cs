@@ -5,11 +5,11 @@ using System.Xml.Linq;
 
 namespace FF7_SYW_Unified
 {
-    public partial class Form1 : Form
+    public partial class FF7U : Form
     {
 
 
-        public Form1()
+        public FF7U()
         {
             InitializeComponent();
         }
@@ -55,7 +55,7 @@ namespace FF7_SYW_Unified
 
 
         //display preview picture and description for combobox mods
-        private void modShowCustom(ComboBox combo, string folderwSource, string modType)
+        private void modShowCustom(ComboBox combo, string folderwSource, string modType, Label helpLabel, Label authorLabel)
         {
             string folderMod = "";
             string modDir = "";
@@ -73,8 +73,8 @@ namespace FF7_SYW_Unified
 
             modDir = Path.GetFileName(folderMod);
 
-            graphicsHelp.Text = translate("descriptionmod." + modType + "." + modDir, Globals.translateMod);
-            graphicsHelpAuthor.Text = translate("authormod." + modType + "." + modDir, Globals.translateMod);
+            helpLabel.Text = translate("descriptionmod." + modType + "." + modDir, Globals.translateMod);
+            authorLabel.Text = translate("authormod." + modType + "." + modDir, Globals.translateMod);
 
         }
 

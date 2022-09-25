@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace FF7_SYW_Unified
 {
-    partial class Form1
+    partial class FF7U
     {
 
         //set items of combos mods option and put their translation to Globals.translateMod

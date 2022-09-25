@@ -1,6 +1,6 @@
 ﻿namespace FF7_SYW_Unified
 {
-    partial class Form1
+    partial class FF7U
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FF7U));
             this.menuFrame = new System.Windows.Forms.GroupBox();
             this.launchGame = new System.Windows.Forms.Label();
             this.settingsGroup = new System.Windows.Forms.GroupBox();
@@ -44,6 +44,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.graphicFrame1 = new System.Windows.Forms.GroupBox();
+            this.graphicsLighting = new System.Windows.Forms.CheckBox();
             this.graphicsGroupMenu = new System.Windows.Forms.GroupBox();
             this.graphicsMenu = new System.Windows.Forms.ComboBox();
             this.graphicsGroupFMV = new System.Windows.Forms.GroupBox();
@@ -142,7 +143,19 @@
             this.packStory = new System.Windows.Forms.Label();
             this.menuSoundPanel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.soundsAuthor = new System.Windows.Forms.Label();
+            this.soundsHelp = new System.Windows.Forms.Label();
             this.soundFrame3 = new System.Windows.Forms.GroupBox();
+            this.soundsGroupVoices = new System.Windows.Forms.GroupBox();
+            this.soundsVoices = new System.Windows.Forms.ComboBox();
+            this.soundsGroupFMV = new System.Windows.Forms.GroupBox();
+            this.soundsFMV = new System.Windows.Forms.ComboBox();
+            this.soundsGroupAmbients = new System.Windows.Forms.GroupBox();
+            this.soundsAmbients = new System.Windows.Forms.ComboBox();
+            this.soundsGroupSfx = new System.Windows.Forms.GroupBox();
+            this.soundsSfx = new System.Windows.Forms.ComboBox();
+            this.soundsGroupMusics = new System.Windows.Forms.GroupBox();
+            this.soundsMusics = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.menuGameplayPanel = new System.Windows.Forms.Panel();
             this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
@@ -152,7 +165,6 @@
             this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
-            this.graphicsLighting = new System.Windows.Forms.CheckBox();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
@@ -172,6 +184,13 @@
             this.aboutFrame1.SuspendLayout();
             this.aboutFrame2.SuspendLayout();
             this.menuSoundPanel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.soundFrame3.SuspendLayout();
+            this.soundsGroupVoices.SuspendLayout();
+            this.soundsGroupFMV.SuspendLayout();
+            this.soundsGroupAmbients.SuspendLayout();
+            this.soundsGroupSfx.SuspendLayout();
+            this.soundsGroupMusics.SuspendLayout();
             this.menuGameplayPanel.SuspendLayout();
             this.menuFFNxPanel.SuspendLayout();
             this.SuspendLayout();
@@ -397,6 +416,19 @@
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
             // 
+            // graphicsLighting
+            // 
+            this.graphicsLighting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsLighting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsLighting.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsLighting.Location = new System.Drawing.Point(11, 110);
+            this.graphicsLighting.Name = "graphicsLighting";
+            this.graphicsLighting.Size = new System.Drawing.Size(246, 19);
+            this.graphicsLighting.TabIndex = 13;
+            this.graphicsLighting.Text = "Ombres dynamiques";
+            this.graphicsLighting.UseVisualStyleBackColor = false;
+            this.graphicsLighting.MouseEnter += new System.EventHandler(this.graphicsLighting_MouseEnter);
+            // 
             // graphicsGroupMenu
             // 
             this.graphicsGroupMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
@@ -410,7 +442,6 @@
             this.graphicsGroupMenu.TabStop = false;
             this.graphicsGroupMenu.Text = "Interface (menus et polices)";
             this.graphicsGroupMenu.MouseEnter += new System.EventHandler(this.graphicsGroupMenu_MouseEnter);
-
             // 
             // graphicsMenu
             // 
@@ -423,8 +454,8 @@
             this.graphicsMenu.Name = "graphicsMenu";
             this.graphicsMenu.Size = new System.Drawing.Size(225, 23);
             this.graphicsMenu.TabIndex = 0;
+            this.graphicsMenu.SelectedIndexChanged += new System.EventHandler(this.graphicsMenu_SelectedIndexChanged);
             this.graphicsMenu.Click += new System.EventHandler(this.getMousePos);
-            this.graphicsMenu.SelectedIndexChanged += new System.EventHandler(graphicsMenu_SelectedIndexChanged);
             // 
             // graphicsGroupFMV
             // 
@@ -439,7 +470,6 @@
             this.graphicsGroupFMV.TabStop = false;
             this.graphicsGroupFMV.Text = "Cinématiques";
             this.graphicsGroupFMV.MouseEnter += new System.EventHandler(this.graphicsGroupFMV_MouseEnter);
-
             // 
             // graphicsFMV
             // 
@@ -452,8 +482,8 @@
             this.graphicsFMV.Name = "graphicsFMV";
             this.graphicsFMV.Size = new System.Drawing.Size(225, 23);
             this.graphicsFMV.TabIndex = 0;
+            this.graphicsFMV.SelectedIndexChanged += new System.EventHandler(this.graphicsFMV_SelectedIndexChanged);
             this.graphicsFMV.Click += new System.EventHandler(this.getMousePos);
-            this.graphicsFMV.SelectedIndexChanged += new System.EventHandler(graphicsFMV_SelectedIndexChanged);
             // 
             // graphicsGroupModels3Dc
             // 
@@ -480,9 +510,8 @@
             this.graphicsModels3Dc.Name = "graphicsModels3Dc";
             this.graphicsModels3Dc.Size = new System.Drawing.Size(225, 23);
             this.graphicsModels3Dc.TabIndex = 0;
+            this.graphicsModels3Dc.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3Dc_SelectedIndexChanged);
             this.graphicsModels3Dc.Click += new System.EventHandler(this.getMousePos);
-            this.graphicsModels3Dc.SelectedIndexChanged += new System.EventHandler(graphicsModels3Dc_SelectedIndexChanged);
-            
             // 
             // graphicsGroupModels3Df
             // 
@@ -497,7 +526,6 @@
             this.graphicsGroupModels3Df.TabStop = false;
             this.graphicsGroupModels3Df.Text = "Modèles 3D des scènes du jeu";
             this.graphicsGroupModels3Df.MouseEnter += new System.EventHandler(this.graphicsGroupModels3Df_MouseEnter);
-
             // 
             // graphicsModels3Df
             // 
@@ -510,9 +538,8 @@
             this.graphicsModels3Df.Name = "graphicsModels3Df";
             this.graphicsModels3Df.Size = new System.Drawing.Size(225, 23);
             this.graphicsModels3Df.TabIndex = 0;
+            this.graphicsModels3Df.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3Df_SelectedIndexChanged);
             this.graphicsModels3Df.Click += new System.EventHandler(this.getMousePos);
-
-            this.graphicsModels3Df.SelectedIndexChanged += new System.EventHandler(graphicsModels3Df_SelectedIndexChanged);
             // 
             // graphicsAlphaBattles
             // 
@@ -644,7 +671,7 @@
             this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame3);
-            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuGraphicPanel.Name = "menuGraphicPanel";
             this.menuGraphicPanel.Size = new System.Drawing.Size(795, 703);
             this.menuGraphicPanel.TabIndex = 10;
@@ -1654,40 +1681,193 @@
             this.menuSoundPanel.Controls.Add(this.groupBox1);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Controls.Add(this.groupBox3);
-            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.soundsAuthor);
+            this.groupBox1.Controls.Add(this.soundsHelp);
             this.groupBox1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBox1.Location = new System.Drawing.Point(523, 4);
+            this.groupBox1.Location = new System.Drawing.Point(395, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(268, 279);
+            this.groupBox1.Size = new System.Drawing.Size(396, 342);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Aide";
             // 
+            // soundsAuthor
+            // 
+            this.soundsAuthor.BackColor = System.Drawing.Color.Black;
+            this.soundsAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundsAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsAuthor.Location = new System.Drawing.Point(12, 308);
+            this.soundsAuthor.Name = "soundsAuthor";
+            this.soundsAuthor.Size = new System.Drawing.Size(372, 22);
+            this.soundsAuthor.TabIndex = 3;
+            this.soundsAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // soundsHelp
+            // 
+            this.soundsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsHelp.Location = new System.Drawing.Point(12, 22);
+            this.soundsHelp.Name = "soundsHelp";
+            this.soundsHelp.Size = new System.Drawing.Size(372, 286);
+            this.soundsHelp.TabIndex = 2;
+            // 
             // soundFrame3
             // 
+            this.soundFrame3.Controls.Add(this.soundsGroupVoices);
+            this.soundFrame3.Controls.Add(this.soundsGroupFMV);
+            this.soundFrame3.Controls.Add(this.soundsGroupAmbients);
+            this.soundFrame3.Controls.Add(this.soundsGroupSfx);
+            this.soundFrame3.Controls.Add(this.soundsGroupMusics);
             this.soundFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.soundFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.soundFrame3.Location = new System.Drawing.Point(3, 4);
             this.soundFrame3.Name = "soundFrame3";
-            this.soundFrame3.Size = new System.Drawing.Size(514, 279);
+            this.soundFrame3.Size = new System.Drawing.Size(386, 342);
             this.soundFrame3.TabIndex = 6;
             this.soundFrame3.TabStop = false;
             this.soundFrame3.Text = "Mods audio";
+            // 
+            // soundsGroupVoices
+            // 
+            this.soundsGroupVoices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupVoices.Controls.Add(this.soundsVoices);
+            this.soundsGroupVoices.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsGroupVoices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundsGroupVoices.Location = new System.Drawing.Point(11, 271);
+            this.soundsGroupVoices.Name = "soundsGroupVoices";
+            this.soundsGroupVoices.Size = new System.Drawing.Size(365, 59);
+            this.soundsGroupVoices.TabIndex = 17;
+            this.soundsGroupVoices.TabStop = false;
+            this.soundsGroupVoices.Text = "Voix des personnages";
+            // 
+            // soundsVoices
+            // 
+            this.soundsVoices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.soundsVoices.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundsVoices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.soundsVoices.ForeColor = System.Drawing.Color.White;
+            this.soundsVoices.FormattingEnabled = true;
+            this.soundsVoices.Location = new System.Drawing.Point(9, 23);
+            this.soundsVoices.Name = "soundsVoices";
+            this.soundsVoices.Size = new System.Drawing.Size(346, 23);
+            this.soundsVoices.TabIndex = 0;
+            // 
+            // soundsGroupFMV
+            // 
+            this.soundsGroupFMV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupFMV.Controls.Add(this.soundsFMV);
+            this.soundsGroupFMV.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsGroupFMV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundsGroupFMV.Location = new System.Drawing.Point(11, 208);
+            this.soundsGroupFMV.Name = "soundsGroupFMV";
+            this.soundsGroupFMV.Size = new System.Drawing.Size(365, 59);
+            this.soundsGroupFMV.TabIndex = 16;
+            this.soundsGroupFMV.TabStop = false;
+            this.soundsGroupFMV.Text = "Pistes audio des cinématiques";
+            // 
+            // soundsFMV
+            // 
+            this.soundsFMV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.soundsFMV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundsFMV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.soundsFMV.ForeColor = System.Drawing.Color.White;
+            this.soundsFMV.FormattingEnabled = true;
+            this.soundsFMV.Location = new System.Drawing.Point(9, 23);
+            this.soundsFMV.Name = "soundsFMV";
+            this.soundsFMV.Size = new System.Drawing.Size(346, 23);
+            this.soundsFMV.TabIndex = 0;
+            // 
+            // soundsGroupAmbients
+            // 
+            this.soundsGroupAmbients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupAmbients.Controls.Add(this.soundsAmbients);
+            this.soundsGroupAmbients.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsGroupAmbients.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundsGroupAmbients.Location = new System.Drawing.Point(11, 84);
+            this.soundsGroupAmbients.Name = "soundsGroupAmbients";
+            this.soundsGroupAmbients.Size = new System.Drawing.Size(365, 59);
+            this.soundsGroupAmbients.TabIndex = 15;
+            this.soundsGroupAmbients.TabStop = false;
+            this.soundsGroupAmbients.Text = "Sons d\'ambiance du jeu";
+            // 
+            // soundsAmbients
+            // 
+            this.soundsAmbients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.soundsAmbients.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundsAmbients.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.soundsAmbients.ForeColor = System.Drawing.Color.White;
+            this.soundsAmbients.FormattingEnabled = true;
+            this.soundsAmbients.Location = new System.Drawing.Point(9, 23);
+            this.soundsAmbients.Name = "soundsAmbients";
+            this.soundsAmbients.Size = new System.Drawing.Size(346, 23);
+            this.soundsAmbients.TabIndex = 0;
+            // 
+            // soundsGroupSfx
+            // 
+            this.soundsGroupSfx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupSfx.Controls.Add(this.soundsSfx);
+            this.soundsGroupSfx.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsGroupSfx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundsGroupSfx.Location = new System.Drawing.Point(11, 146);
+            this.soundsGroupSfx.Name = "soundsGroupSfx";
+            this.soundsGroupSfx.Size = new System.Drawing.Size(365, 59);
+            this.soundsGroupSfx.TabIndex = 14;
+            this.soundsGroupSfx.TabStop = false;
+            this.soundsGroupSfx.Text = "Effets sonores du jeu";
+            // 
+            // soundsSfx
+            // 
+            this.soundsSfx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.soundsSfx.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundsSfx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.soundsSfx.ForeColor = System.Drawing.Color.White;
+            this.soundsSfx.FormattingEnabled = true;
+            this.soundsSfx.Location = new System.Drawing.Point(9, 23);
+            this.soundsSfx.Name = "soundsSfx";
+            this.soundsSfx.Size = new System.Drawing.Size(346, 23);
+            this.soundsSfx.TabIndex = 0;
+            // 
+            // soundsGroupMusics
+            // 
+            this.soundsGroupMusics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupMusics.Controls.Add(this.soundsMusics);
+            this.soundsGroupMusics.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsGroupMusics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundsGroupMusics.Location = new System.Drawing.Point(11, 22);
+            this.soundsGroupMusics.Name = "soundsGroupMusics";
+            this.soundsGroupMusics.Size = new System.Drawing.Size(365, 59);
+            this.soundsGroupMusics.TabIndex = 13;
+            this.soundsGroupMusics.TabStop = false;
+            this.soundsGroupMusics.Text = "Musiques du jeu";
+            // 
+            // soundsMusics
+            // 
+            this.soundsMusics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.soundsMusics.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundsMusics.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.soundsMusics.ForeColor = System.Drawing.Color.White;
+            this.soundsMusics.FormattingEnabled = true;
+            this.soundsMusics.Location = new System.Drawing.Point(9, 23);
+            this.soundsMusics.Name = "soundsMusics";
+            this.soundsMusics.Size = new System.Drawing.Size(346, 23);
+            this.soundsMusics.TabIndex = 0;
             // 
             // groupBox3
             // 
             this.groupBox3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBox3.Location = new System.Drawing.Point(3, 289);
+            this.groupBox3.Location = new System.Drawing.Point(3, 352);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(788, 414);
+            this.groupBox3.Size = new System.Drawing.Size(788, 351);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Aperçu";
@@ -1778,20 +1958,7 @@
             this.FFNxFrame3.TabStop = false;
             this.FFNxFrame3.Text = "Configuration du pilote FFNx";
             // 
-            // graphicsLighting
-            // 
-            this.graphicsLighting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.graphicsLighting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.graphicsLighting.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.graphicsLighting.Location = new System.Drawing.Point(11, 110);
-            this.graphicsLighting.Name = "graphicsLighting";
-            this.graphicsLighting.Size = new System.Drawing.Size(246, 19);
-            this.graphicsLighting.TabIndex = 13;
-            this.graphicsLighting.Text = "Ombres dynamiques";
-            this.graphicsLighting.UseVisualStyleBackColor = false;
-            this.graphicsLighting.MouseEnter += new System.EventHandler(this.graphicsLighting_MouseEnter);
-            // 
-            // Form1
+            // FF7U
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1807,7 +1974,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FF7U";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FF7_SYW_Unified";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1831,6 +1998,13 @@
             this.aboutFrame1.PerformLayout();
             this.aboutFrame2.ResumeLayout(false);
             this.menuSoundPanel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.soundFrame3.ResumeLayout(false);
+            this.soundsGroupVoices.ResumeLayout(false);
+            this.soundsGroupFMV.ResumeLayout(false);
+            this.soundsGroupAmbients.ResumeLayout(false);
+            this.soundsGroupSfx.ResumeLayout(false);
+            this.soundsGroupMusics.ResumeLayout(false);
             this.menuGameplayPanel.ResumeLayout(false);
             this.menuFFNxPanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1963,5 +2137,17 @@
         private GroupBox graphicsGroupFMV;
         private ComboBox graphicsFMV;
         private CheckBox graphicsLighting;
+        private GroupBox soundsGroupFMV;
+        private ComboBox soundsFMV;
+        private GroupBox soundsGroupAmbients;
+        private ComboBox soundsAmbients;
+        private GroupBox soundsGroupSfx;
+        private ComboBox soundsSfx;
+        private GroupBox soundsGroupMusics;
+        private ComboBox soundsMusics;
+        private GroupBox soundsGroupVoices;
+        private ComboBox soundsVoices;
+        private Label soundsAuthor;
+        private Label soundsHelp;
     }
 }

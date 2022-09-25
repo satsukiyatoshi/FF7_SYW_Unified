@@ -1,11 +1,11 @@
 ﻿
 
 using System;
-using static FF7_SYW_Unified.Form1;
+using static FF7_SYW_Unified.FF7U;
 
 namespace FF7_SYW_Unified
 {
-    partial class Form1
+    partial class FF7U
     {
 
         //call translation on menu lang selection

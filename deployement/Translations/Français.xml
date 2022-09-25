@@ -269,24 +269,24 @@
 		<text>TrueOdin et Cosmos</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>soundsGroupMusics</name>
+		<text>Musiques du jeu</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>soundsGroupAmbients</name>
+		<text>Sons d'ambiance du jeu</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>soundsGroupSfx</name>
+		<text>effets sonores du jeu</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>soundsGroupFMV</name>
+		<text>Pistes audio des cinématiques</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>soundsGroupVoices</name>
+		<text>Voix du jeu</text>
 	</control>
 	<control>
 		<name></name>
