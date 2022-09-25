@@ -410,6 +410,7 @@
             this.graphicsGroupMenu.TabStop = false;
             this.graphicsGroupMenu.Text = "Interface (menus et polices)";
             this.graphicsGroupMenu.MouseEnter += new System.EventHandler(this.graphicsGroupMenu_MouseEnter);
+
             // 
             // graphicsMenu
             // 
@@ -422,6 +423,8 @@
             this.graphicsMenu.Name = "graphicsMenu";
             this.graphicsMenu.Size = new System.Drawing.Size(225, 23);
             this.graphicsMenu.TabIndex = 0;
+            this.graphicsMenu.Click += new System.EventHandler(this.getMousePos);
+            this.graphicsMenu.SelectedIndexChanged += new System.EventHandler(graphicsMenu_SelectedIndexChanged);
             // 
             // graphicsGroupFMV
             // 
@@ -436,6 +439,7 @@
             this.graphicsGroupFMV.TabStop = false;
             this.graphicsGroupFMV.Text = "Cinématiques";
             this.graphicsGroupFMV.MouseEnter += new System.EventHandler(this.graphicsGroupFMV_MouseEnter);
+
             // 
             // graphicsFMV
             // 
@@ -448,6 +452,8 @@
             this.graphicsFMV.Name = "graphicsFMV";
             this.graphicsFMV.Size = new System.Drawing.Size(225, 23);
             this.graphicsFMV.TabIndex = 0;
+            this.graphicsFMV.Click += new System.EventHandler(this.getMousePos);
+            this.graphicsFMV.SelectedIndexChanged += new System.EventHandler(graphicsFMV_SelectedIndexChanged);
             // 
             // graphicsGroupModels3Dc
             // 
@@ -474,6 +480,9 @@
             this.graphicsModels3Dc.Name = "graphicsModels3Dc";
             this.graphicsModels3Dc.Size = new System.Drawing.Size(225, 23);
             this.graphicsModels3Dc.TabIndex = 0;
+            this.graphicsModels3Dc.Click += new System.EventHandler(this.getMousePos);
+            this.graphicsModels3Dc.SelectedIndexChanged += new System.EventHandler(graphicsModels3Dc_SelectedIndexChanged);
+            
             // 
             // graphicsGroupModels3Df
             // 
@@ -488,6 +497,7 @@
             this.graphicsGroupModels3Df.TabStop = false;
             this.graphicsGroupModels3Df.Text = "Modèles 3D des scènes du jeu";
             this.graphicsGroupModels3Df.MouseEnter += new System.EventHandler(this.graphicsGroupModels3Df_MouseEnter);
+
             // 
             // graphicsModels3Df
             // 
@@ -500,6 +510,9 @@
             this.graphicsModels3Df.Name = "graphicsModels3Df";
             this.graphicsModels3Df.Size = new System.Drawing.Size(225, 23);
             this.graphicsModels3Df.TabIndex = 0;
+            this.graphicsModels3Df.Click += new System.EventHandler(this.getMousePos);
+
+            this.graphicsModels3Df.SelectedIndexChanged += new System.EventHandler(graphicsModels3Df_SelectedIndexChanged);
             // 
             // graphicsAlphaBattles
             // 

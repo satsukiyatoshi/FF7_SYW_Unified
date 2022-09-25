@@ -14,6 +14,8 @@ namespace FF7_SYW_Unified
             InitializeComponent();
         }
 
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //get translations list
@@ -36,6 +38,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         //display preview picture and description for SYW mods
         private void modShow(string path, string name)
         {
@@ -45,17 +48,26 @@ namespace FF7_SYW_Unified
         }
 
 
+
+        //Backup mouse Y position
+        private void getMousePos(object sender, EventArgs e) { Globals.mouseY = Cursor.Position.Y; }
+
+
+
         //display preview picture and description for combobox mods
         private void modShowCustom(ComboBox combo, string folderwSource, string modType)
         {
             string folderMod = "";
             string modDir = "";
 
-            folderwSource = Application.StartupPath + @"mods\" + folderwSource;
+            //resore mouse Y postion on combo before display mods information to avoid to display other mods information on-hover
+            if (Globals.mouseY != 0)
+            {
+                Cursor.Position = new System.Drawing.Point (Cursor.Position.X, Globals.mouseY);
+                Globals.mouseY = 0;
+            }
 
-            string[] dirs = Directory.GetDirectories(folderwSource, "*", SearchOption.TopDirectoryOnly);
-
-            folderMod = dirs[combo.SelectedIndex];
+            folderMod = getModCustomFolder(combo, folderwSource);
 
             graphicPrevPic.ImageLocation = folderMod + @"\prev.jpg";
 
@@ -63,7 +75,20 @@ namespace FF7_SYW_Unified
 
             graphicsHelp.Text = translate("descriptionmod." + modType + "." + modDir, Globals.translateMod);
             graphicsHelpAuthor.Text = translate("authormod." + modType + "." + modDir, Globals.translateMod);
+
         }
+
+
+
+        private string getModCustomFolder(ComboBox combo, string folderwSource)
+        {
+            folderwSource = Application.StartupPath + @"mods\" + folderwSource;
+
+            string[] dirs = Directory.GetDirectories(folderwSource, "*", SearchOption.TopDirectoryOnly);
+
+            return dirs[combo.SelectedIndex];
+        }
+
 
 
         private void launchGame_Click(object sender, EventArgs e)
