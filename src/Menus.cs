@@ -13,41 +13,14 @@ namespace FF7_SYW_Unified
         {
             Globals.translateUI.Clear();
             Globals.translateMod.Clear();
-            graphicsModels3Df.Items.Clear();
-            graphicsModels3Dc.Items.Clear();
-            graphicsFMV.Items.Clear();
-            graphicsMenu.Items.Clear();
-            soundsMusics.Items.Clear();
-            soundsAmbients.Items.Clear();
-            soundsSfx.Items.Clear();
-            soundsFMV.Items.Clear();
-            soundsVoices.Items.Clear();
-
+            graphicsClear();
+            soundsClear();
 
             getTranslationXml(Application.StartupPath + @"\Translations\" + langInterface.Text + ".xml", Globals.translateUI);
             translateAll();
 
-            setModsItems(graphicsModels3Dc, @"models\battle\", "models.battle");
-            setModsItems(graphicsModels3Df, @"models\fields\", "models.fields");
-            setModsItems(graphicsFMV, @"movies\", "movies");
-            setModsItems(graphicsMenu, @"uis\", "uis");
-
-            setModsItems(soundsMusics, @"audio\musics\", "audio.musics");
-            setModsItems(soundsAmbients, @"audio\ambients\", "audio.ambients");
-            setModsItems(soundsSfx, @"audio\sfxs\", "audio.sfxs");
-            setModsItems(soundsFMV, @"audio\movies\", "audio.movies");
-            setModsItems(soundsVoices, @"audio\voices\", "audio.voices");
-
-            graphicsModels3Df.Text = graphicsModels3Df.Items[0].ToString();
-            graphicsModels3Dc.Text = graphicsModels3Dc.Items[0].ToString();
-            graphicsFMV.Text = graphicsFMV.Items[0].ToString();
-            graphicsMenu.Text = graphicsMenu.Items[0].ToString();
-
-            soundsMusics.Text = soundsMusics.Items[0].ToString();
-            soundsAmbients.Text = soundsAmbients.Items[0].ToString();
-            soundsSfx.Text = soundsSfx.Items[0].ToString();
-            soundsFMV.Text = soundsFMV.Items[0].ToString();
-            soundsVoices.Text = soundsVoices.Items[0].ToString();
+            graphicsSetDefaults();
+            soundsSetDefaults();
         }
 
 
