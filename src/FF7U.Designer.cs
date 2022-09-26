@@ -143,7 +143,7 @@
             this.packStory = new System.Windows.Forms.Label();
             this.menuSoundPanel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.soundsAuthor = new System.Windows.Forms.Label();
+            this.soundsHelpAuthor = new System.Windows.Forms.Label();
             this.soundsHelp = new System.Windows.Forms.Label();
             this.soundFrame3 = new System.Windows.Forms.GroupBox();
             this.soundsGroupVoices = new System.Windows.Forms.GroupBox();
@@ -1688,7 +1688,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.soundsAuthor);
+            this.groupBox1.Controls.Add(this.soundsHelpAuthor);
             this.groupBox1.Controls.Add(this.soundsHelp);
             this.groupBox1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1699,16 +1699,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Aide";
             // 
-            // soundsAuthor
+            // soundsHelpAuthor
             // 
-            this.soundsAuthor.BackColor = System.Drawing.Color.Black;
-            this.soundsAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.soundsAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.soundsAuthor.Location = new System.Drawing.Point(12, 308);
-            this.soundsAuthor.Name = "soundsAuthor";
-            this.soundsAuthor.Size = new System.Drawing.Size(372, 22);
-            this.soundsAuthor.TabIndex = 3;
-            this.soundsAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.soundsHelpAuthor.BackColor = System.Drawing.Color.Black;
+            this.soundsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsHelpAuthor.Location = new System.Drawing.Point(12, 308);
+            this.soundsHelpAuthor.Name = "soundsHelpAuthor";
+            this.soundsHelpAuthor.Size = new System.Drawing.Size(372, 22);
+            this.soundsHelpAuthor.TabIndex = 3;
+            this.soundsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // soundsHelp
             // 
@@ -2009,6 +2009,24 @@
             this.menuFFNxPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
+            this.soundsGroupMusics.MouseEnter += new System.EventHandler(this.soundsGroupMusics_MouseEnter);
+            this.soundsGroupAmbients.MouseEnter += new System.EventHandler(this.soundsGroupAmbients_MouseEnter);
+            this.soundsGroupSfx.MouseEnter += new System.EventHandler(this.soundsGroupSfx_MouseEnter);
+            this.soundsGroupFMV.MouseEnter += new System.EventHandler(this.soundsGroupFMV_MouseEnter);
+            this.soundsGroupVoices.MouseEnter += new System.EventHandler(this.soundsGroupVoices_MouseEnter);
+
+            this.soundsMusics.SelectedIndexChanged += new System.EventHandler(this.soundsMusics_SelectedIndexChanged);
+            this.soundsAmbients.SelectedIndexChanged += new System.EventHandler(this.soundsAmbients_SelectedIndexChanged);
+            this.soundsSfx.SelectedIndexChanged += new System.EventHandler(this.soundsSfx_SelectedIndexChanged);
+            this.soundsFMV.SelectedIndexChanged += new System.EventHandler(this.soundsFMV_SelectedIndexChanged);
+            this.soundsVoices.SelectedIndexChanged += new System.EventHandler(this.soundsVoices_SelectedIndexChanged);
+
+            this.soundsMusics.Click += new System.EventHandler(this.getMousePos);
+            this.soundsAmbients.Click += new System.EventHandler(this.getMousePos);
+            this.soundsSfx.Click += new System.EventHandler(this.getMousePos);
+            this.soundsFMV.Click += new System.EventHandler(this.getMousePos);
+            this.soundsVoices.Click += new System.EventHandler(this.getMousePos);
+
         }
 
         #endregion
@@ -2147,7 +2165,7 @@
         private ComboBox soundsMusics;
         private GroupBox soundsGroupVoices;
         private ComboBox soundsVoices;
-        private Label soundsAuthor;
+        private Label soundsHelpAuthor;
         private Label soundsHelp;
     }
 }

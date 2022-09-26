@@ -83,7 +83,7 @@ namespace FF7_SYW_Unified
         private string getModCustomFolder(ComboBox combo, string folderwSource)
         {
             folderwSource = Application.StartupPath + @"mods\" + folderwSource;
-
+            //MessageBox.Show(folderwSource);
             string[] dirs = Directory.GetDirectories(folderwSource, "*", SearchOption.TopDirectoryOnly);
 
             return dirs[combo.SelectedIndex];
