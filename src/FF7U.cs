@@ -93,7 +93,7 @@ namespace FF7_SYW_Unified
 
         private void launchGame_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("launch game");
+            playAudio(@"C:\Jeux\FF7SYWV5\FF7_SYW\mods\modsmusique\1) Musiques psx originales (myst6re)\music\aseri.minipsf");
         }
 
     }

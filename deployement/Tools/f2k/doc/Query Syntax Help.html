@@ -1,0 +1,310 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <title>Query Syntax Help</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="titleformat_help.css" />
+</head>
+<body>
+<div class="dokuwiki export">
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#query_syntax_help" class="toc">Query Syntax Help</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#conventions_in_this_document" class="toc">Conventions in this Document</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#simple_search" class="toc">Simple Search</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#advanced_search" class="toc">Advanced Search</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#text_expressions" class="toc">Text Expressions</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#numeric_expressions" class="toc">Numeric Expressions</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#metadata_expressions" class="toc">Metadata Expressions</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#time_expressions" class="toc">Time Expressions</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#composed_queries" class="toc">Composed Queries</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#sorting_results" class="toc">Sorting Results</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#notes" class="toc">Notes</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#operator_summary" class="toc">Operator Summary</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+
+
+
+<h1><a name="query_syntax_help" id="query_syntax_help">Query Syntax Help</a></h1>
+<div class="level1">
+
+</div>
+<!-- SECTION "Query Syntax Help" [1-37] -->
+<h2><a name="conventions_in_this_document" id="conventions_in_this_document">Conventions in this Document</a></h2>
+<div class="level2">
+
+<p>
+ Queries are written in italics.<br/>
+ Example: <em>%rating% GREATER 3</em>
+</p>
+
+<p>
+Query examples may contain placeholders which are enclosed in angle brackets. Their name indicates what they need to be replaced within a real query. If multiple placeholders of the same type occur in the same query example, a number will be appended to the name.<br/>
+ Example: <em>&lt;field&gt; GREATER &lt;number&gt;</em>
+</p>
+
+<p>
+The following common types of placeholders are used in the rest of this document: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>&lt;field&gt;</em><br/>
+ A reference to a tag field. This can be either a plain field name or a title formatting expression. See <a href="#notes" title="help:query &crarr;" class="wikilink1">Notes</a> for details.</div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;number&gt;</em><br/>
+ An integer value.</div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;string&gt;</em><br/>
+ A text value that may be enclosed in double quotation marks. See <a href="#notes" title="help:query &crarr;" class="wikilink1">Notes</a> for details.</div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;time&gt;</em><br/>
+ A time value or a title formatting expression that evaluates to a time value. See <a href="#time_expressions" title="help:query &crarr;" class="wikilink1">Time Expressions</a> for details.</div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;expression&gt;</em><br/>
+ A query expression in a composed query. This has to follow the rules described under <a href="#advanced_search" title="help:query &crarr;" class="wikilink1">Advanced Search</a> below.</div>
+</li>
+</ul>
+
+</div>
+<!-- SECTION "Conventions in this Document" [38-1097] -->
+<h2><a name="simple_search" id="simple_search">Simple Search</a></h2>
+<div class="level2">
+
+<p>
+ The simple search mode does not use any keywords. 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>&lt;any string&gt;</em><br/>
+ Returns only items that have all words from specified string in their metadata or file path.</div>
+</li>
+</ul>
+
+<p>
+ When using the simple search, any latin characters are matched regardless of their accents, e.g. “foo” will match “foo” as well as “föö” or “fóo”.
+</p>
+
+</div>
+<!-- SECTION "Simple Search" [1098-1443] -->
+<h2><a name="advanced_search" id="advanced_search">Advanced Search</a></h2>
+<div class="level2">
+
+<p>
+ The advanced search allows the construction of more complex queries. It offers several keywords to perform specific types of comparisons and to combine multiple query expressions.
+</p>
+
+</div>
+<!-- SECTION "Advanced Search" [1444-1654] -->
+<h3><a name="text_expressions" id="text_expressions">Text Expressions</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <em>&lt;field&gt; HAS &lt;string&gt;</em><br/>
+ Returns only items that have all words from <em>&lt;string&gt;</em> in a metadata field named <em>&lt;field&gt;</em>.<br/>
+ Example: <em>title HAS blah</em></div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;field&gt; IS &lt;string&gt;</em><br/>
+ Returns only items where (at least one) metadata field <em>&lt;field&gt;</em> is equal to <em>&lt;string&gt;</em>.<br/>
+ Example: <em>artist IS blah</em></div>
+</li>
+<li class="level1"><div class="li"> <em>* HAS &lt;string&gt;</em><br/>
+ Same as simple search, but can be combined using logical operators (see below).</div>
+</li>
+</ul>
+
+</div>
+<!-- SECTION "Text Expressions" [1655-2098] -->
+<h3><a name="numeric_expressions" id="numeric_expressions">Numeric Expressions</a></h3>
+<div class="level3">
+
+<p>
+ Perform integral number comparison between the value of a <em>&lt;field&gt;</em> and a <em>&lt;number&gt;</em>, e.g. ”<em>%rating% GREATER 3</em>”. 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>&lt;field&gt; GREATER &lt;number&gt;</em></div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;field&gt; LESS &lt;number&gt;</em></div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;field&gt; EQUAL &lt;number&gt;</em></div>
+</li>
+</ul>
+
+</div>
+<!-- SECTION "Numeric Expressions" [2099-2346] -->
+<h3><a name="metadata_expressions" id="metadata_expressions">Metadata Expressions</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <em>&lt;field&gt; MISSING</em><br/>
+ Returns only items that don&#039;t have a metadata field named <em>&lt;field&gt;</em>.<br/>
+ Example: <em>genre MISSING</em></div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;field&gt; PRESENT</em><br/>
+ Returns only items that have a metadata field named <em>&lt;field&gt;</em>.<br/>
+ Example: <em>genre PRESENT</em></div>
+</li>
+</ul>
+
+</div>
+<!-- SECTION "Metadata Expressions" [2347-2625] -->
+<h3><a name="time_expressions" id="time_expressions">Time Expressions</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <em>&lt;time1&gt; BEFORE &lt;time2&gt;</em><br/>
+ Returns only items where <em>&lt;time1&gt;</em> value is before <em>&lt;time2&gt;</em>.<br/>
+ Example: <em>%last_modified% BEFORE 2008</em></div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;time1&gt; AFTER &lt;time2&gt;</em><br/>
+ Returns only items where <em>&lt;time1&gt;</em> value is after <em>&lt;time2&gt;</em>.<br/>
+ Example: <em>%last_modified% AFTER 2008</em></div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;time1&gt; SINCE &lt;time2&gt;</em><br/>
+ Returns only items where <em>&lt;time1&gt;</em> value is not before <em>&lt;time2&gt;</em>.<br/>
+ Example: <em>%last_modified% SINCE 2007</em></div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;time1&gt; DURING &lt;time2&gt;</em><br/>
+ Returns only items where <em>&lt;time1&gt;</em> value is a subset of <em>&lt;time2&gt;</em> period.<br/>
+ Example: <em>%last_modified% DURING 2007</em></div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;time&gt; DURING LAST &lt;number&gt; &lt;time-unit&gt;</em><br/>
+ Returns items where <em>&lt;time&gt;</em> value is contained in the specified period. <br/>
+ <em>&lt;time-unit&gt;</em> can be one of <em>SECONDS</em>, <em>MINUTES</em>, <em>HOURS</em>, <em>DAYS</em>, or <em>WEEKS</em>.<br/>
+ Example: <em>%last_modified% DURING LAST 2 WEEKS</em><br/>
+ If <em>&lt;number&gt;</em> is 1, the expression can be simplified to <em>&lt;time&gt; DURING LAST SECOND/MINUTE/HOUR/DAY/WEEK</em></div>
+</li>
+</ul>
+
+<p>
+ Time values used in these expressions must be in one of the following formats: YYYY, YYYY-MM, YYYY-MM-DD, YYYY-MM-DD hh, YYYY-MM-DD hh:mm, YYYY-MM-DD hh:mm:ss.
+</p>
+
+</div>
+<!-- SECTION "Time Expressions" [2626-3777] -->
+<h3><a name="composed_queries" id="composed_queries">Composed Queries</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <em>&lt;expression1&gt; AND &lt;expression2&gt;</em><br/>
+ Returns only items where both expressions are true.<br/>
+ Example: <em>artist IS blah AND title HAS blah</em><br/>
+</div>
+</li>
+<li class="level1"><div class="li"> <em>&lt;expression1&gt; OR &lt;expression2&gt;</em><br/>
+ Returns only items where at least one expression is true.</div>
+</li>
+<li class="level1"><div class="li"> <em>NOT &lt;expression&gt;</em><br/>
+ Returns only items where the expression is false.<br/>
+ Example: <em>NOT %last_played% AFTER %first_played%</em></div>
+</li>
+</ul>
+
+</div>
+<!-- SECTION "Composed Queries" [3778-4181] -->
+<h2><a name="sorting_results" id="sorting_results">Sorting Results</a></h2>
+<div class="level2">
+
+<p>
+ You can put a <em>SORT BY</em> operator at the end of your search expression to produce search results sorted by the specified title formatting pattern. 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>SORT BY &lt;sort-pattern&gt;</em>, <em>SORT ASCENDING BY &lt;sort-pattern&gt;</em><br/>
+ Sort results in ascending order.</div>
+</li>
+<li class="level1"><div class="li"> <em>SORT DESCENDING BY &lt;sort-pattern&gt;</em><br/>
+ Sort results in descending order.</div>
+</li>
+</ul>
+
+</div>
+<!-- SECTION "Sorting Results" [4182-4545] -->
+<h2><a name="notes" id="notes">Notes</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <em>&lt;field&gt;</em> and <em>&lt;string&gt;</em> in HAS and IS expressions should be enclosed in double quotation marks (”) if they include spaces or parentheses.<br/>
+ </div>
+</li>
+<li class="level1"><div class="li"> If <em>&lt;field&gt;</em> in <em>HAS</em>, <em>IS</em>, <em>GREATER</em>, <em>LESS</em>, <em>EQUAL</em> includes at least one of #$% characters, it will be treated as a title formatting string.<br/>
+ Example: <em>%codec% IS <acronym title="Motion Picture Experts Group Layer 3">MP3</acronym></em></div>
+</li>
+<li class="level1"><div class="li"> If <em>&lt;field&gt;</em> in <em>HAS</em>, <em>IS</em>, <em>GREATER</em>, <em>LESS</em>, <em>EQUAL</em> does not include any of #$% characters, it will be treated as a metadata field.<br/>
+ Example: <em>artist IS Radiohead</em><br/>
+ Note that you can&#039;t access technical information (such as codec specifications) or component-provided information (playback statistics and such) this way.</div>
+</li>
+<li class="level1"><div class="li"> Using title formatting strings instead of simple field names will decrease search speed on large libraries and break multiple field value handling in the <em>IS</em> operator - for example, a track with two artist names: “name1” and “name2”, will be found by <em>artist IS name1</em> query, but not by <em>%artist% IS name1</em>.</div>
+</li>
+<li class="level1"><div class="li"> To control the evaluation order of composed queries, enclose the individual expressions in parentheses.<br/>
+ Example: <em>( (artist IS blah) AND (title HAS blah) ) OR (%rating% GREATER 3)</em></div>
+</li>
+<li class="level1"><div class="li"> All search expressions are not case-sensitive. All keywords must be uppercase.</div>
+</li>
+</ul>
+
+</div>
+<!-- SECTION "Notes" [4546-5844] -->
+<h2><a name="operator_summary" id="operator_summary">Operator Summary</a></h2>
+<div class="level2">
+<table class="inline">
+	<tr>
+		<th> Operator </th><th> Syntax </th><th> Comment </th>
+	</tr>
+	<tr>
+		<td> <em>AFTER</em> </td><td> <em>&lt;time1&gt; AFTER &lt;time2&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>AND</em> </td><td> <em>&lt;expression1&gt; AND &lt;expression2&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>BEFORE</em> </td><td> <em>&lt;time1&gt; BEFORE &lt;time2&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>DURING</em> </td><td> <em>&lt;time1&gt; DURING &lt;time2&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>DURING LAST</em> </td><td> <em>&lt;time&gt; DURING LAST &lt;number&gt; SECONDS/MINUTES/HOURS/DAYS/WEEKS</em><br/>
+ <em>&lt;time&gt; DURING LAST SECOND/MINUTE/HOUR/DAY/WEEK</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>EQUAL</em> </td><td> <em>&lt;field&gt; EQUAL &lt;number&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>GREATER</em> </td><td> <em>&lt;field&gt; GREATER &lt;number&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>HAS</em> </td><td> <em>&lt;field&gt; HAS &lt;string&gt;</em><br/>
+ <em>* HAS &lt;string&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>IS</em> </td><td> <em>&lt;field&gt; IS &lt;string&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>LESS</em> </td><td> <em>&lt;field&gt; LESS &lt;number&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>MISSING</em> </td><td> <em>&lt;field&gt; MISSING</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>NOT</em> </td><td> <em>NOT &lt;expression&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>OR</em> </td><td> <em>&lt;expression1&gt; OR &lt;expression2&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>PRESENT</em> </td><td> <em>&lt;field&gt; PRESENT</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>SINCE</em> </td><td> <em>&lt;time1&gt; SINCE &lt;time2&gt;</em> </td><td> </td>
+	</tr>
+	<tr>
+		<td> <em>SORT BY</em> </td><td> <em>SORT BY &lt;sort-pattern&gt;</em><br/>
+ <em>SORT DESCENDING BY &lt;sort-pattern&gt;</em> </td><td> Must be at the end of the query. </td>
+	</tr>
+</table>
+
+</div>
+<!-- SECTION "Operator Summary" [5845-] --></div>
+</body>
+</html>

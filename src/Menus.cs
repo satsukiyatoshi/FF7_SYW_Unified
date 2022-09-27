@@ -26,11 +26,14 @@ namespace FF7_SYW_Unified
 
 
         /*
+         *close audio preview
          *Set menu button color on click
          *Set the matching options pannel visible
          */
         private void menuClick(Control btn)
         {
+            playAudioClose();
+
             btn.BackColor = Globals.activButtonBolor;
             Globals.activMenuName = btn.Name;
 

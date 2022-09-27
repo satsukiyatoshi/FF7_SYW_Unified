@@ -4,6 +4,46 @@ namespace FF7_SYW_Unified
     partial class FF7U
     {
 
+        //stop playing of a previews audio file then launch the audio file
+        private void playAudio(string audioFile)
+        {
+            System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+            pProcess.StartInfo.FileName = Application.StartupPath + @"tools\f2k\foobar2000.exe";
+            pProcess.StartInfo.UseShellExecute = false;
+            pProcess.StartInfo.RedirectStandardOutput = false;
+
+            if (Globals.isFoobarRunning)
+            {
+                pProcess.StartInfo.Arguments = "/stop";
+                pProcess.Start();
+                pProcess.WaitForExit();
+            }
+
+            pProcess.StartInfo.Arguments = "/nogui " + "\"" + audioFile + "\"";
+            pProcess.Start();
+            Globals.isFoobarRunning = true;
+        }
+
+
+
+        //exit the audio player engine
+        private void playAudioClose ()
+        {
+            if (Globals.isFoobarRunning)
+            {
+                System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+                pProcess.StartInfo.FileName = Application.StartupPath + @"tools\f2k\foobar2000.exe";
+                pProcess.StartInfo.UseShellExecute = false;
+                pProcess.StartInfo.RedirectStandardOutput = false;
+                pProcess.StartInfo.Arguments = "/exit";
+                pProcess.Start();
+                pProcess.WaitForExit();
+                Globals.isFoobarRunning = false;
+            }
+        }
+
+
+
         private void soundsClear()
         {
             soundsMusics.Items.Clear();
@@ -12,6 +52,8 @@ namespace FF7_SYW_Unified
             soundsFMV.Items.Clear();
             soundsVoices.Items.Clear();
         }
+
+
 
         private void soundsSetDefaults()
         {
@@ -27,6 +69,8 @@ namespace FF7_SYW_Unified
             soundsFMV.Text = soundsFMV.Items[0].ToString();
             soundsVoices.Text = soundsVoices.Items[0].ToString();
         }
+
+
 
         private void soundsGroupMusics_MouseEnter(object sender, EventArgs e) { modShowCustom(soundsMusics, @"audio\musics\", "audio.musics", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsMusics_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(soundsMusics, @"audio\musics\", "audio.musics", soundsHelp, soundsHelpAuthor, soundPrevPic); }
