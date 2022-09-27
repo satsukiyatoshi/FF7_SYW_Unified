@@ -125,6 +125,10 @@
 		<text>Codeur FFNx (60fps, 16/9)</text>
 	</control>
 	<control>
+		<name>author20</name>
+		<text>Créateur de Foobar2000, utilisé ici pour l'aperçu audio des mods</text>
+	</control>
+	<control>
 		<name>author42</name>
 		<text>Créateur du pack, des scènes du jeu HD, de la carte du monde HD, des fonds de combats en HD, des cinématiques HD en 60 fps, de patchs mémoire, de mods de gameplay, de correction diverses...</text>
 	</control>

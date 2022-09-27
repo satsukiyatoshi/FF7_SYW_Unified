@@ -37,6 +37,7 @@ namespace FF7_SYW_Unified
         private void donation13_Click(object sender, EventArgs e) { openUrl("https://www.nexusmods.com/finalfantasy7/mods/4?tab=description");}
         private void authorUrl16_Click(object sender, EventArgs e) { openUrl("https://forums.qhimm.com/index.php?topic=14938.0");}
         private void authorUrl17_Click(object sender, EventArgs e) { openUrl("https://forums.qhimm.com/index.php?topic=19970.0"); }
+        private void authorUrl20_Click(object sender, EventArgs e) { openUrl("https://www.foobar2000.org/"); }
         private void donation16_Click(object sender, EventArgs e) { openUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4NQDGBN7KYLLW");}
         private void authorUrl42_Click(object sender, EventArgs e) { openUrl("https://ff7.fr/forum/index.php?page=forum&idf=40");}
         private void authorUrl42b_Click(object sender, EventArgs e) { openUrl("https://forums.qhimm.com/index.php?topic=20434.0");}

@@ -69,6 +69,9 @@
             this.graphicsHelp = new System.Windows.Forms.Label();
             this.menuAboutPanel = new System.Windows.Forms.Panel();
             this.aboutFrame1 = new System.Windows.Forms.GroupBox();
+            this.authorUrl20 = new System.Windows.Forms.Label();
+            this.author20 = new System.Windows.Forms.Label();
+            this.authorName20 = new System.Windows.Forms.Label();
             this.authorUrl12 = new System.Windows.Forms.Label();
             this.authorUrl12b = new System.Windows.Forms.Label();
             this.authorUrl99 = new System.Windows.Forms.Label();
@@ -730,6 +733,9 @@
             // aboutFrame1
             // 
             this.aboutFrame1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.aboutFrame1.Controls.Add(this.authorUrl20);
+            this.aboutFrame1.Controls.Add(this.author20);
+            this.aboutFrame1.Controls.Add(this.authorName20);
             this.aboutFrame1.Controls.Add(this.authorUrl12);
             this.aboutFrame1.Controls.Add(this.authorUrl12b);
             this.aboutFrame1.Controls.Add(this.authorUrl99);
@@ -809,6 +815,41 @@
             this.aboutFrame1.TabStop = false;
             this.aboutFrame1.Text = "Auteurs";
             // 
+            // authorUrl20
+            // 
+            this.authorUrl20.AutoSize = true;
+            this.authorUrl20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.authorUrl20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.authorUrl20.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.authorUrl20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.authorUrl20.Location = new System.Drawing.Point(648, 344);
+            this.authorUrl20.Name = "authorUrl20";
+            this.authorUrl20.Size = new System.Drawing.Size(93, 15);
+            this.authorUrl20.TabIndex = 75;
+            this.authorUrl20.Text = "foobar2000.org";
+            this.authorUrl20.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.authorUrl20.Click += new System.EventHandler(this.authorUrl20_Click);
+            // 
+            // author20
+            // 
+            this.author20.BackColor = System.Drawing.Color.Transparent;
+            this.author20.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.author20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.author20.Location = new System.Drawing.Point(118, 344);
+            this.author20.Name = "author20";
+            this.author20.Size = new System.Drawing.Size(524, 16);
+            this.author20.TabIndex = 74;
+            // 
+            // authorName20
+            // 
+            this.authorName20.BackColor = System.Drawing.Color.Transparent;
+            this.authorName20.ForeColor = System.Drawing.Color.White;
+            this.authorName20.Location = new System.Drawing.Point(11, 344);
+            this.authorName20.Name = "authorName20";
+            this.authorName20.Size = new System.Drawing.Size(150, 16);
+            this.authorName20.TabIndex = 73;
+            this.authorName20.Text = "Peter Pawlowski : ";
+            // 
             // authorUrl12
             // 
             this.authorUrl12.AutoSize = true;
@@ -846,7 +887,7 @@
             this.authorUrl99.Cursor = System.Windows.Forms.Cursors.Hand;
             this.authorUrl99.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.authorUrl99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.authorUrl99.Location = new System.Drawing.Point(648, 465);
+            this.authorUrl99.Location = new System.Drawing.Point(648, 477);
             this.authorUrl99.Name = "authorUrl99";
             this.authorUrl99.Size = new System.Drawing.Size(116, 15);
             this.authorUrl99.TabIndex = 70;
@@ -861,7 +902,7 @@
             this.author42UrlD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.author42UrlD.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.author42UrlD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.author42UrlD.Location = new System.Drawing.Point(648, 368);
+            this.author42UrlD.Location = new System.Drawing.Point(648, 398);
             this.author42UrlD.Name = "author42UrlD";
             this.author42UrlD.Size = new System.Drawing.Size(108, 15);
             this.author42UrlD.TabIndex = 69;
@@ -876,7 +917,7 @@
             this.author42UrlD2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.author42UrlD2.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.author42UrlD2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.author42UrlD2.Location = new System.Drawing.Point(648, 385);
+            this.author42UrlD2.Location = new System.Drawing.Point(648, 415);
             this.author42UrlD2.Name = "author42UrlD2";
             this.author42UrlD2.Size = new System.Drawing.Size(102, 15);
             this.author42UrlD2.TabIndex = 68;
@@ -891,7 +932,7 @@
             this.donation42.Cursor = System.Windows.Forms.Cursors.Hand;
             this.donation42.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.donation42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.donation42.Location = new System.Drawing.Point(720, 402);
+            this.donation42.Location = new System.Drawing.Point(720, 432);
             this.donation42.Name = "donation42";
             this.donation42.Size = new System.Drawing.Size(58, 15);
             this.donation42.TabIndex = 67;
@@ -906,7 +947,7 @@
             this.authorUrl42.Cursor = System.Windows.Forms.Cursors.Hand;
             this.authorUrl42.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.authorUrl42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.authorUrl42.Location = new System.Drawing.Point(648, 351);
+            this.authorUrl42.Location = new System.Drawing.Point(648, 381);
             this.authorUrl42.Name = "authorUrl42";
             this.authorUrl42.Size = new System.Drawing.Size(36, 15);
             this.authorUrl42.TabIndex = 66;
@@ -921,7 +962,7 @@
             this.authorUrl42b.Cursor = System.Windows.Forms.Cursors.Hand;
             this.authorUrl42b.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.authorUrl42b.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.authorUrl42b.Location = new System.Drawing.Point(682, 351);
+            this.authorUrl42b.Location = new System.Drawing.Point(682, 381);
             this.authorUrl42b.Name = "authorUrl42b";
             this.authorUrl42b.Size = new System.Drawing.Size(74, 15);
             this.authorUrl42b.TabIndex = 65;
@@ -1264,7 +1305,7 @@
             this.author99.BackColor = System.Drawing.Color.Transparent;
             this.author99.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.author99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.author99.Location = new System.Drawing.Point(103, 450);
+            this.author99.Location = new System.Drawing.Point(103, 462);
             this.author99.Name = "author99";
             this.author99.Size = new System.Drawing.Size(539, 49);
             this.author99.TabIndex = 41;
@@ -1274,7 +1315,7 @@
             this.authorName99.BackColor = System.Drawing.Color.Transparent;
             this.authorName99.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.authorName99.ForeColor = System.Drawing.Color.White;
-            this.authorName99.Location = new System.Drawing.Point(11, 450);
+            this.authorName99.Location = new System.Drawing.Point(11, 462);
             this.authorName99.Name = "authorName99";
             this.authorName99.Size = new System.Drawing.Size(109, 35);
             this.authorName99.TabIndex = 40;
@@ -1315,7 +1356,7 @@
             this.author42.BackColor = System.Drawing.Color.Transparent;
             this.author42.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.author42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.author42.Location = new System.Drawing.Point(140, 351);
+            this.author42.Location = new System.Drawing.Point(140, 381);
             this.author42.Name = "author42";
             this.author42.Size = new System.Drawing.Size(502, 82);
             this.author42.TabIndex = 36;
@@ -1645,7 +1686,7 @@
             this.authorName42.BackColor = System.Drawing.Color.Transparent;
             this.authorName42.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.authorName42.ForeColor = System.Drawing.Color.White;
-            this.authorName42.Location = new System.Drawing.Point(11, 351);
+            this.authorName42.Location = new System.Drawing.Point(11, 381);
             this.authorName42.Name = "authorName42";
             this.authorName42.Size = new System.Drawing.Size(150, 42);
             this.authorName42.TabIndex = 4;
@@ -1690,7 +1731,7 @@
             this.menuSoundPanel.Controls.Add(this.soundFrame4);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Controls.Add(this.soundFrame2);
-            this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
@@ -1948,7 +1989,7 @@
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame2);
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame1);
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame3);
-            this.menuGameplayPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuGameplayPanel.Location = new System.Drawing.Point(327, 0);
             this.menuGameplayPanel.Name = "menuGameplayPanel";
             this.menuGameplayPanel.Size = new System.Drawing.Size(795, 703);
             this.menuGameplayPanel.TabIndex = 13;
@@ -2227,5 +2268,8 @@
         private PictureBox soundPrevPic;
         private ListBox soundsList;
         private Label soundsListHelp;
+        private Label authorUrl20;
+        private Label author20;
+        private Label authorName20;
     }
 }
