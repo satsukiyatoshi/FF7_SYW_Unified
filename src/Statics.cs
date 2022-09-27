@@ -11,6 +11,7 @@ namespace FF7_SYW_Unified
             public static readonly Color inactivButtonBolor = Color.FromArgb(180, 180, 180);
             public static string activMenuName { get; set; } = "menuAbout";
             public static string vanilla { get; set; } = "";
+            public static string actualModFolder { get; set; } = "";
             public static Boolean isFoobarRunning { get; set; } = false;
             public static int mouseY  = 0;
             public static System.Drawing.Point mousePos { get; set; } = new System.Drawing.Point(0, 0);

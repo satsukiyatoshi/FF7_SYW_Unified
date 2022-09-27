@@ -142,9 +142,11 @@
             this.aboutFrame2 = new System.Windows.Forms.GroupBox();
             this.packStory = new System.Windows.Forms.Label();
             this.menuSoundPanel = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.soundsHelpAuthor = new System.Windows.Forms.Label();
-            this.soundsHelp = new System.Windows.Forms.Label();
+            this.soundFrame5 = new System.Windows.Forms.GroupBox();
+            this.soundPrevPic = new System.Windows.Forms.PictureBox();
+            this.soundFrame4 = new System.Windows.Forms.GroupBox();
+            this.soundsListHelp = new System.Windows.Forms.Label();
+            this.soundsList = new System.Windows.Forms.ListBox();
             this.soundFrame3 = new System.Windows.Forms.GroupBox();
             this.soundsGroupVoices = new System.Windows.Forms.GroupBox();
             this.soundsVoices = new System.Windows.Forms.ComboBox();
@@ -156,8 +158,9 @@
             this.soundsSfx = new System.Windows.Forms.ComboBox();
             this.soundsGroupMusics = new System.Windows.Forms.GroupBox();
             this.soundsMusics = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.soundPrevPic = new System.Windows.Forms.PictureBox();
+            this.soundFrame2 = new System.Windows.Forms.GroupBox();
+            this.soundsHelpAuthor = new System.Windows.Forms.Label();
+            this.soundsHelp = new System.Windows.Forms.Label();
             this.menuGameplayPanel = new System.Windows.Forms.Panel();
             this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
             this.gameplayFrame1 = new System.Windows.Forms.GroupBox();
@@ -185,15 +188,16 @@
             this.aboutFrame1.SuspendLayout();
             this.aboutFrame2.SuspendLayout();
             this.menuSoundPanel.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.soundFrame5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).BeginInit();
+            this.soundFrame4.SuspendLayout();
             this.soundFrame3.SuspendLayout();
             this.soundsGroupVoices.SuspendLayout();
             this.soundsGroupFMV.SuspendLayout();
             this.soundsGroupAmbients.SuspendLayout();
             this.soundsGroupSfx.SuspendLayout();
             this.soundsGroupMusics.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).BeginInit();
+            this.soundFrame2.SuspendLayout();
             this.menuGameplayPanel.SuspendLayout();
             this.menuFFNxPanel.SuspendLayout();
             this.SuspendLayout();
@@ -426,7 +430,7 @@
             this.graphicsLighting.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsLighting.Location = new System.Drawing.Point(11, 110);
             this.graphicsLighting.Name = "graphicsLighting";
-            this.graphicsLighting.Size = new System.Drawing.Size(246, 19);
+            this.graphicsLighting.Size = new System.Drawing.Size(245, 19);
             this.graphicsLighting.TabIndex = 13;
             this.graphicsLighting.Text = "Ombres dynamiques";
             this.graphicsLighting.UseVisualStyleBackColor = false;
@@ -440,7 +444,7 @@
             this.graphicsGroupMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicsGroupMenu.Location = new System.Drawing.Point(260, 194);
             this.graphicsGroupMenu.Name = "graphicsGroupMenu";
-            this.graphicsGroupMenu.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupMenu.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupMenu.TabIndex = 12;
             this.graphicsGroupMenu.TabStop = false;
             this.graphicsGroupMenu.Text = "Interface (menus et polices)";
@@ -468,7 +472,7 @@
             this.graphicsGroupFMV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 194);
             this.graphicsGroupFMV.Name = "graphicsGroupFMV";
-            this.graphicsGroupFMV.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupFMV.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupFMV.TabIndex = 11;
             this.graphicsGroupFMV.TabStop = false;
             this.graphicsGroupFMV.Text = "Cinématiques";
@@ -496,7 +500,7 @@
             this.graphicsGroupModels3Dc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicsGroupModels3Dc.Location = new System.Drawing.Point(260, 132);
             this.graphicsGroupModels3Dc.Name = "graphicsGroupModels3Dc";
-            this.graphicsGroupModels3Dc.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupModels3Dc.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupModels3Dc.TabIndex = 10;
             this.graphicsGroupModels3Dc.TabStop = false;
             this.graphicsGroupModels3Dc.Text = "Modèles 3D des combats";
@@ -524,7 +528,7 @@
             this.graphicsGroupModels3Df.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicsGroupModels3Df.Location = new System.Drawing.Point(11, 132);
             this.graphicsGroupModels3Df.Name = "graphicsGroupModels3Df";
-            this.graphicsGroupModels3Df.Size = new System.Drawing.Size(246, 59);
+            this.graphicsGroupModels3Df.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupModels3Df.TabIndex = 9;
             this.graphicsGroupModels3Df.TabStop = false;
             this.graphicsGroupModels3Df.Text = "Modèles 3D des scènes du jeu";
@@ -551,7 +555,7 @@
             this.graphicsAlphaBattles.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsAlphaBattles.Location = new System.Drawing.Point(260, 88);
             this.graphicsAlphaBattles.Name = "graphicsAlphaBattles";
-            this.graphicsAlphaBattles.Size = new System.Drawing.Size(246, 19);
+            this.graphicsAlphaBattles.Size = new System.Drawing.Size(245, 19);
             this.graphicsAlphaBattles.TabIndex = 8;
             this.graphicsAlphaBattles.Text = "Fenêtres de combat translusides";
             this.graphicsAlphaBattles.UseVisualStyleBackColor = false;
@@ -564,7 +568,7 @@
             this.graphicsAlphaDialogs.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsAlphaDialogs.Location = new System.Drawing.Point(11, 88);
             this.graphicsAlphaDialogs.Name = "graphicsAlphaDialogs";
-            this.graphicsAlphaDialogs.Size = new System.Drawing.Size(246, 19);
+            this.graphicsAlphaDialogs.Size = new System.Drawing.Size(245, 19);
             this.graphicsAlphaDialogs.TabIndex = 7;
             this.graphicsAlphaDialogs.Text = "Fenêtres de dialogue translusides";
             this.graphicsAlphaDialogs.UseVisualStyleBackColor = false;
@@ -577,7 +581,7 @@
             this.graphicsMagics.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsMagics.Location = new System.Drawing.Point(260, 44);
             this.graphicsMagics.Name = "graphicsMagics";
-            this.graphicsMagics.Size = new System.Drawing.Size(246, 19);
+            this.graphicsMagics.Size = new System.Drawing.Size(245, 19);
             this.graphicsMagics.TabIndex = 5;
             this.graphicsMagics.Text = "Magies de combats HD";
             this.graphicsMagics.UseVisualStyleBackColor = false;
@@ -590,7 +594,7 @@
             this.graphicsBattles.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsBattles.Location = new System.Drawing.Point(11, 44);
             this.graphicsBattles.Name = "graphicsBattles";
-            this.graphicsBattles.Size = new System.Drawing.Size(246, 19);
+            this.graphicsBattles.Size = new System.Drawing.Size(245, 19);
             this.graphicsBattles.TabIndex = 4;
             this.graphicsBattles.Text = "Scènes de combats HD";
             this.graphicsBattles.UseVisualStyleBackColor = false;
@@ -603,7 +607,7 @@
             this.graphicsWorldMap.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsWorldMap.Location = new System.Drawing.Point(11, 66);
             this.graphicsWorldMap.Name = "graphicsWorldMap";
-            this.graphicsWorldMap.Size = new System.Drawing.Size(246, 19);
+            this.graphicsWorldMap.Size = new System.Drawing.Size(245, 19);
             this.graphicsWorldMap.TabIndex = 3;
             this.graphicsWorldMap.Text = "Carte du monde HD";
             this.graphicsWorldMap.UseVisualStyleBackColor = false;
@@ -616,7 +620,7 @@
             this.graphicsAnimations.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsAnimations.Location = new System.Drawing.Point(260, 22);
             this.graphicsAnimations.Name = "graphicsAnimations";
-            this.graphicsAnimations.Size = new System.Drawing.Size(246, 19);
+            this.graphicsAnimations.Size = new System.Drawing.Size(245, 19);
             this.graphicsAnimations.TabIndex = 2;
             this.graphicsAnimations.Text = "Animations avancées";
             this.graphicsAnimations.UseVisualStyleBackColor = false;
@@ -629,7 +633,7 @@
             this.graphicsMiniGames.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsMiniGames.Location = new System.Drawing.Point(260, 66);
             this.graphicsMiniGames.Name = "graphicsMiniGames";
-            this.graphicsMiniGames.Size = new System.Drawing.Size(246, 19);
+            this.graphicsMiniGames.Size = new System.Drawing.Size(245, 19);
             this.graphicsMiniGames.TabIndex = 1;
             this.graphicsMiniGames.Text = "Mini-jeux HD";
             this.graphicsMiniGames.UseVisualStyleBackColor = false;
@@ -642,7 +646,7 @@
             this.graphicsFields.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsFields.Location = new System.Drawing.Point(11, 22);
             this.graphicsFields.Name = "graphicsFields";
-            this.graphicsFields.Size = new System.Drawing.Size(246, 19);
+            this.graphicsFields.Size = new System.Drawing.Size(245, 19);
             this.graphicsFields.TabIndex = 0;
             this.graphicsFields.Text = "Scènes du jeu HD";
             this.graphicsFields.UseVisualStyleBackColor = false;
@@ -685,9 +689,9 @@
             this.graphicFrame2.Controls.Add(this.graphicsHelp);
             this.graphicFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame2.Location = new System.Drawing.Point(523, 4);
+            this.graphicFrame2.Location = new System.Drawing.Point(526, 4);
             this.graphicFrame2.Name = "graphicFrame2";
-            this.graphicFrame2.Size = new System.Drawing.Size(268, 266);
+            this.graphicFrame2.Size = new System.Drawing.Size(265, 266);
             this.graphicFrame2.TabIndex = 10;
             this.graphicFrame2.TabStop = false;
             this.graphicFrame2.Text = "Aide";
@@ -699,7 +703,7 @@
             this.graphicsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
             this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 231);
             this.graphicsHelpAuthor.Name = "graphicsHelpAuthor";
-            this.graphicsHelpAuthor.Size = new System.Drawing.Size(244, 22);
+            this.graphicsHelpAuthor.Size = new System.Drawing.Size(241, 22);
             this.graphicsHelpAuthor.TabIndex = 1;
             this.graphicsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -710,7 +714,8 @@
             this.graphicsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
             this.graphicsHelp.Location = new System.Drawing.Point(12, 21);
             this.graphicsHelp.Name = "graphicsHelp";
-            this.graphicsHelp.Size = new System.Drawing.Size(244, 210);
+            this.graphicsHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.graphicsHelp.Size = new System.Drawing.Size(241, 210);
             this.graphicsHelp.TabIndex = 0;
             // 
             // menuAboutPanel
@@ -1681,47 +1686,71 @@
             // 
             // menuSoundPanel
             // 
-            this.menuSoundPanel.Controls.Add(this.groupBox1);
+            this.menuSoundPanel.Controls.Add(this.soundFrame5);
+            this.menuSoundPanel.Controls.Add(this.soundFrame4);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
-            this.menuSoundPanel.Controls.Add(this.groupBox3);
+            this.menuSoundPanel.Controls.Add(this.soundFrame2);
             this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
             // 
-            // groupBox1
+            // soundFrame5
             // 
-            this.groupBox1.Controls.Add(this.soundsHelpAuthor);
-            this.groupBox1.Controls.Add(this.soundsHelp);
-            this.groupBox1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBox1.Location = new System.Drawing.Point(395, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(396, 342);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Aide";
+            this.soundFrame5.Controls.Add(this.soundPrevPic);
+            this.soundFrame5.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundFrame5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundFrame5.Location = new System.Drawing.Point(268, 352);
+            this.soundFrame5.Name = "soundFrame5";
+            this.soundFrame5.Size = new System.Drawing.Size(521, 351);
+            this.soundFrame5.TabIndex = 13;
+            this.soundFrame5.TabStop = false;
             // 
-            // soundsHelpAuthor
+            // soundPrevPic
             // 
-            this.soundsHelpAuthor.BackColor = System.Drawing.Color.Black;
-            this.soundsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.soundsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.soundsHelpAuthor.Location = new System.Drawing.Point(12, 308);
-            this.soundsHelpAuthor.Name = "soundsHelpAuthor";
-            this.soundsHelpAuthor.Size = new System.Drawing.Size(372, 22);
-            this.soundsHelpAuthor.TabIndex = 3;
-            this.soundsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.soundPrevPic.Location = new System.Drawing.Point(11, 22);
+            this.soundPrevPic.Name = "soundPrevPic";
+            this.soundPrevPic.Size = new System.Drawing.Size(500, 315);
+            this.soundPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.soundPrevPic.TabIndex = 1;
+            this.soundPrevPic.TabStop = false;
             // 
-            // soundsHelp
+            // soundFrame4
             // 
-            this.soundsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.soundsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.soundsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.soundsHelp.Location = new System.Drawing.Point(12, 22);
-            this.soundsHelp.Name = "soundsHelp";
-            this.soundsHelp.Size = new System.Drawing.Size(372, 286);
-            this.soundsHelp.TabIndex = 2;
+            this.soundFrame4.Controls.Add(this.soundsListHelp);
+            this.soundFrame4.Controls.Add(this.soundsList);
+            this.soundFrame4.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundFrame4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundFrame4.Location = new System.Drawing.Point(398, 4);
+            this.soundFrame4.Name = "soundFrame4";
+            this.soundFrame4.Size = new System.Drawing.Size(391, 342);
+            this.soundFrame4.TabIndex = 11;
+            this.soundFrame4.TabStop = false;
+            this.soundFrame4.Text = "Aperçu audio";
+            // 
+            // soundsListHelp
+            // 
+            this.soundsListHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsListHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsListHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsListHelp.Location = new System.Drawing.Point(11, 22);
+            this.soundsListHelp.Name = "soundsListHelp";
+            this.soundsListHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.soundsListHelp.Size = new System.Drawing.Size(370, 96);
+            this.soundsListHelp.TabIndex = 5;
+            // 
+            // soundsList
+            // 
+            this.soundsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsList.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundsList.FormattingEnabled = true;
+            this.soundsList.ItemHeight = 15;
+            this.soundsList.Location = new System.Drawing.Point(11, 127);
+            this.soundsList.Name = "soundsList";
+            this.soundsList.Size = new System.Drawing.Size(370, 199);
+            this.soundsList.TabIndex = 0;
+            this.soundsList.SelectedIndexChanged += new System.EventHandler(this.soundsList_SelectedIndexChanged);
             // 
             // soundFrame3
             // 
@@ -1879,26 +1908,40 @@
             this.soundsMusics.SelectedIndexChanged += new System.EventHandler(this.soundsMusics_SelectedIndexChanged);
             this.soundsMusics.Click += new System.EventHandler(this.getMousePos);
             // 
-            // groupBox3
+            // soundFrame2
             // 
-            this.groupBox3.Controls.Add(this.soundPrevPic);
-            this.groupBox3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBox3.Location = new System.Drawing.Point(3, 352);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(788, 351);
-            this.groupBox3.TabIndex = 9;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Aperçu";
+            this.soundFrame2.Controls.Add(this.soundsHelpAuthor);
+            this.soundFrame2.Controls.Add(this.soundsHelp);
+            this.soundFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundFrame2.Location = new System.Drawing.Point(3, 352);
+            this.soundFrame2.Name = "soundFrame2";
+            this.soundFrame2.Size = new System.Drawing.Size(256, 351);
+            this.soundFrame2.TabIndex = 9;
+            this.soundFrame2.TabStop = false;
+            this.soundFrame2.Text = "À propos du mod";
             // 
-            // soundPrevPic
+            // soundsHelpAuthor
             // 
-            this.soundPrevPic.Location = new System.Drawing.Point(14, 23);
-            this.soundPrevPic.Name = "soundPrevPic";
-            this.soundPrevPic.Size = new System.Drawing.Size(367, 311);
-            this.soundPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.soundPrevPic.TabIndex = 0;
-            this.soundPrevPic.TabStop = false;
+            this.soundsHelpAuthor.BackColor = System.Drawing.Color.Black;
+            this.soundsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsHelpAuthor.Location = new System.Drawing.Point(11, 318);
+            this.soundsHelpAuthor.Name = "soundsHelpAuthor";
+            this.soundsHelpAuthor.Size = new System.Drawing.Size(234, 22);
+            this.soundsHelpAuthor.TabIndex = 5;
+            this.soundsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // soundsHelp
+            // 
+            this.soundsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsHelp.Location = new System.Drawing.Point(11, 22);
+            this.soundsHelp.Name = "soundsHelp";
+            this.soundsHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.soundsHelp.Size = new System.Drawing.Size(234, 296);
+            this.soundsHelp.TabIndex = 4;
             // 
             // menuGameplayPanel
             // 
@@ -2026,15 +2069,16 @@
             this.aboutFrame1.PerformLayout();
             this.aboutFrame2.ResumeLayout(false);
             this.menuSoundPanel.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.soundFrame5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).EndInit();
+            this.soundFrame4.ResumeLayout(false);
             this.soundFrame3.ResumeLayout(false);
             this.soundsGroupVoices.ResumeLayout(false);
             this.soundsGroupFMV.ResumeLayout(false);
             this.soundsGroupAmbients.ResumeLayout(false);
             this.soundsGroupSfx.ResumeLayout(false);
             this.soundsGroupMusics.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).EndInit();
+            this.soundFrame2.ResumeLayout(false);
             this.menuGameplayPanel.ResumeLayout(false);
             this.menuFFNxPanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -2136,9 +2180,8 @@
         private GroupBox aboutFrame2;
         private Label packStory;
         private Panel menuSoundPanel;
-        private GroupBox groupBox1;
         private GroupBox soundFrame3;
-        private GroupBox groupBox3;
+        private GroupBox soundFrame2;
         private Panel menuGameplayPanel;
         private GroupBox gameplayFrame2;
         private GroupBox gameplayFrame1;
@@ -2177,8 +2220,12 @@
         private ComboBox soundsMusics;
         private GroupBox soundsGroupVoices;
         private ComboBox soundsVoices;
+        private GroupBox soundFrame4;
         private Label soundsHelpAuthor;
         private Label soundsHelp;
+        private GroupBox soundFrame5;
         private PictureBox soundPrevPic;
+        private ListBox soundsList;
+        private Label soundsListHelp;
     }
 }

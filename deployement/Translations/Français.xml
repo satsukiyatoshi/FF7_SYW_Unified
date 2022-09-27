@@ -289,8 +289,10 @@
 		<text>Voix du jeu</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>soundsListHelp</name>
+		<text>Vous trouverez ici la liste des fichiers audio du mod selectionné.
+		Il vous suffit de cliquer une fois sur le fichier de votre choix pour pourvoir l'écouter.
+		Cela peut prendre quelques instants pour ce lancer.</text>
 	</control>
 	<control>
 		<name></name>
@@ -323,16 +325,16 @@
 	</control>
 	<control>
 		<name>soundFrame1</name>
-		<text>Mods audio</text>
+		<text></text>
 	</control>
 	<control>
 		<name>soundFrame2</name>
-		<text>Aide</text>
+		<text>À propos du mod</text>
 	</control>
 	<control>
-		<name>soundFrame3</name>
-		<text>Aperçu</text>
-	</control>
+		<name>soundFrame4</name>
+		<text>Aperçu audio</text>
+	</control>	
 	<control>
 		<name>gameplayFrame1</name>
 		<text>Mods de gameplay</text>

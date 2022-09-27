@@ -33,6 +33,7 @@ namespace FF7_SYW_Unified
         private void menuClick(Control btn)
         {
             playAudioClose();
+            soundsList.Items.Clear();
 
             btn.BackColor = Globals.activButtonBolor;
             Globals.activMenuName = btn.Name;
