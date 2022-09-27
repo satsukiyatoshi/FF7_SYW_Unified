@@ -157,6 +157,7 @@
             this.soundsGroupMusics = new System.Windows.Forms.GroupBox();
             this.soundsMusics = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.soundPrevPic = new System.Windows.Forms.PictureBox();
             this.menuGameplayPanel = new System.Windows.Forms.Panel();
             this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
             this.gameplayFrame1 = new System.Windows.Forms.GroupBox();
@@ -191,6 +192,8 @@
             this.soundsGroupAmbients.SuspendLayout();
             this.soundsGroupSfx.SuspendLayout();
             this.soundsGroupMusics.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).BeginInit();
             this.menuGameplayPanel.SuspendLayout();
             this.menuFFNxPanel.SuspendLayout();
             this.SuspendLayout();
@@ -1748,6 +1751,7 @@
             this.soundsGroupVoices.TabIndex = 17;
             this.soundsGroupVoices.TabStop = false;
             this.soundsGroupVoices.Text = "Voix des personnages";
+            this.soundsGroupVoices.MouseEnter += new System.EventHandler(this.soundsGroupVoices_MouseEnter);
             // 
             // soundsVoices
             // 
@@ -1760,6 +1764,8 @@
             this.soundsVoices.Name = "soundsVoices";
             this.soundsVoices.Size = new System.Drawing.Size(346, 23);
             this.soundsVoices.TabIndex = 0;
+            this.soundsVoices.SelectedIndexChanged += new System.EventHandler(this.soundsVoices_SelectedIndexChanged);
+            this.soundsVoices.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundsGroupFMV
             // 
@@ -1773,6 +1779,7 @@
             this.soundsGroupFMV.TabIndex = 16;
             this.soundsGroupFMV.TabStop = false;
             this.soundsGroupFMV.Text = "Pistes audio des cinématiques";
+            this.soundsGroupFMV.MouseEnter += new System.EventHandler(this.soundsGroupFMV_MouseEnter);
             // 
             // soundsFMV
             // 
@@ -1785,6 +1792,8 @@
             this.soundsFMV.Name = "soundsFMV";
             this.soundsFMV.Size = new System.Drawing.Size(346, 23);
             this.soundsFMV.TabIndex = 0;
+            this.soundsFMV.SelectedIndexChanged += new System.EventHandler(this.soundsFMV_SelectedIndexChanged);
+            this.soundsFMV.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundsGroupAmbients
             // 
@@ -1798,6 +1807,7 @@
             this.soundsGroupAmbients.TabIndex = 15;
             this.soundsGroupAmbients.TabStop = false;
             this.soundsGroupAmbients.Text = "Sons d\'ambiance du jeu";
+            this.soundsGroupAmbients.MouseEnter += new System.EventHandler(this.soundsGroupAmbients_MouseEnter);
             // 
             // soundsAmbients
             // 
@@ -1810,6 +1820,8 @@
             this.soundsAmbients.Name = "soundsAmbients";
             this.soundsAmbients.Size = new System.Drawing.Size(346, 23);
             this.soundsAmbients.TabIndex = 0;
+            this.soundsAmbients.SelectedIndexChanged += new System.EventHandler(this.soundsAmbients_SelectedIndexChanged);
+            this.soundsAmbients.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundsGroupSfx
             // 
@@ -1823,6 +1835,7 @@
             this.soundsGroupSfx.TabIndex = 14;
             this.soundsGroupSfx.TabStop = false;
             this.soundsGroupSfx.Text = "Effets sonores du jeu";
+            this.soundsGroupSfx.MouseEnter += new System.EventHandler(this.soundsGroupSfx_MouseEnter);
             // 
             // soundsSfx
             // 
@@ -1835,6 +1848,8 @@
             this.soundsSfx.Name = "soundsSfx";
             this.soundsSfx.Size = new System.Drawing.Size(346, 23);
             this.soundsSfx.TabIndex = 0;
+            this.soundsSfx.SelectedIndexChanged += new System.EventHandler(this.soundsSfx_SelectedIndexChanged);
+            this.soundsSfx.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundsGroupMusics
             // 
@@ -1848,6 +1863,7 @@
             this.soundsGroupMusics.TabIndex = 13;
             this.soundsGroupMusics.TabStop = false;
             this.soundsGroupMusics.Text = "Musiques du jeu";
+            this.soundsGroupMusics.MouseEnter += new System.EventHandler(this.soundsGroupMusics_MouseEnter);
             // 
             // soundsMusics
             // 
@@ -1860,9 +1876,12 @@
             this.soundsMusics.Name = "soundsMusics";
             this.soundsMusics.Size = new System.Drawing.Size(346, 23);
             this.soundsMusics.TabIndex = 0;
+            this.soundsMusics.SelectedIndexChanged += new System.EventHandler(this.soundsMusics_SelectedIndexChanged);
+            this.soundsMusics.Click += new System.EventHandler(this.getMousePos);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.soundPrevPic);
             this.groupBox3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox3.Location = new System.Drawing.Point(3, 352);
@@ -1871,6 +1890,15 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Aperçu";
+            // 
+            // soundPrevPic
+            // 
+            this.soundPrevPic.Location = new System.Drawing.Point(14, 23);
+            this.soundPrevPic.Name = "soundPrevPic";
+            this.soundPrevPic.Size = new System.Drawing.Size(367, 311);
+            this.soundPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.soundPrevPic.TabIndex = 0;
+            this.soundPrevPic.TabStop = false;
             // 
             // menuGameplayPanel
             // 
@@ -2005,27 +2033,11 @@
             this.soundsGroupAmbients.ResumeLayout(false);
             this.soundsGroupSfx.ResumeLayout(false);
             this.soundsGroupMusics.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).EndInit();
             this.menuGameplayPanel.ResumeLayout(false);
             this.menuFFNxPanel.ResumeLayout(false);
             this.ResumeLayout(false);
-
-            this.soundsGroupMusics.MouseEnter += new System.EventHandler(this.soundsGroupMusics_MouseEnter);
-            this.soundsGroupAmbients.MouseEnter += new System.EventHandler(this.soundsGroupAmbients_MouseEnter);
-            this.soundsGroupSfx.MouseEnter += new System.EventHandler(this.soundsGroupSfx_MouseEnter);
-            this.soundsGroupFMV.MouseEnter += new System.EventHandler(this.soundsGroupFMV_MouseEnter);
-            this.soundsGroupVoices.MouseEnter += new System.EventHandler(this.soundsGroupVoices_MouseEnter);
-
-            this.soundsMusics.SelectedIndexChanged += new System.EventHandler(this.soundsMusics_SelectedIndexChanged);
-            this.soundsAmbients.SelectedIndexChanged += new System.EventHandler(this.soundsAmbients_SelectedIndexChanged);
-            this.soundsSfx.SelectedIndexChanged += new System.EventHandler(this.soundsSfx_SelectedIndexChanged);
-            this.soundsFMV.SelectedIndexChanged += new System.EventHandler(this.soundsFMV_SelectedIndexChanged);
-            this.soundsVoices.SelectedIndexChanged += new System.EventHandler(this.soundsVoices_SelectedIndexChanged);
-
-            this.soundsMusics.Click += new System.EventHandler(this.getMousePos);
-            this.soundsAmbients.Click += new System.EventHandler(this.getMousePos);
-            this.soundsSfx.Click += new System.EventHandler(this.getMousePos);
-            this.soundsFMV.Click += new System.EventHandler(this.getMousePos);
-            this.soundsVoices.Click += new System.EventHandler(this.getMousePos);
 
         }
 
@@ -2167,5 +2179,6 @@
         private ComboBox soundsVoices;
         private Label soundsHelpAuthor;
         private Label soundsHelp;
+        private PictureBox soundPrevPic;
     }
 }

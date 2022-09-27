@@ -35,15 +35,15 @@ namespace FF7_SYW_Unified
         private void graphicsAlphaBattles_MouseEnter(object sender, EventArgs e) { modShow("SYW", "alphabattles"); }
         private void graphicsLighting_MouseEnter(object sender, EventArgs e) { modShow("SYW", "lighting"); }
 
-        private void graphicsGroupModels3Df_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", "models.fields", graphicsHelp,graphicsHelpAuthor); }
-        private void graphicsGroupModels3Dc_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsModels3Dc, @"models\battle\", "models.battle", graphicsHelp, graphicsHelpAuthor); }
-        private void graphicsGroupMenu_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsMenu, @"uis\", "uis", graphicsHelp, graphicsHelpAuthor); }
-        private void graphicsGroupFMV_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", "movies", graphicsHelp, graphicsHelpAuthor); }
+        private void graphicsGroupModels3Df_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", "models.fields", graphicsHelp,graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsGroupModels3Dc_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsModels3Dc, @"models\battle\", "models.battle", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsGroupMenu_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsMenu, @"uis\", "uis", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsGroupFMV_MouseEnter(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", "movies", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
 
-        private void graphicsModels3Df_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", "models.fields", graphicsHelp, graphicsHelpAuthor); }
-        private void graphicsModels3Dc_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(graphicsModels3Dc, @"models\battle\", "models.battle", graphicsHelp, graphicsHelpAuthor); }      
-        private void graphicsMenu_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(graphicsMenu, @"uis\", "uis", graphicsHelp, graphicsHelpAuthor); }      
-        private void graphicsFMV_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", "movies", graphicsHelp, graphicsHelpAuthor); }
+        private void graphicsModels3Df_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", "models.fields", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsModels3Dc_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(graphicsModels3Dc, @"models\battle\", "models.battle", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }      
+        private void graphicsMenu_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(graphicsMenu, @"uis\", "uis", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }      
+        private void graphicsFMV_SelectedIndexChanged(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", "movies", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
 
         
     }
