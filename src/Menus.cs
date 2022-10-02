@@ -15,14 +15,15 @@ namespace FF7_SYW_Unified
             Globals.translateMod.Clear();
             graphicsClear();
             soundsClear();
+            gameplayClear();
 
             getTranslationXml(Application.StartupPath + @"\Translations\" + langInterface.Text + ".xml", Globals.translateUI);
             translateAll();
 
             graphicsSetDefaults();
             soundsSetDefaults();
+            gameplaySetDefaults();
         }
-
 
 
         /*
@@ -61,7 +62,6 @@ namespace FF7_SYW_Unified
         }
 
 
-
         //Change menu button color on mouse over
         private static void menuMouseOver(Control menuBtn, bool isActiv = true)
         {
@@ -72,7 +72,6 @@ namespace FF7_SYW_Unified
             }
             menuBtn.BackColor = Globals.activButtonBolor;
         }
-
 
 
         //menu buttons toogle call on mouve enter/leave

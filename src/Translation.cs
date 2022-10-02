@@ -29,7 +29,7 @@ namespace FF7_SYW_Unified
                     }
                     else
                     {
-                        MessageBox.Show("Error with mod : " + dir + " Need at least one english translation file");
+                        MessageBox.Show(translate("errorloadingmod", Globals.translateUI) + dir);
                         Process.GetCurrentProcess().Kill();
                     }
 
@@ -41,6 +41,7 @@ namespace FF7_SYW_Unified
                 }
 
         }
+
 
         //translate a text's control from its name
         static void translateCtrl(Control ctrl)
@@ -64,7 +65,6 @@ namespace FF7_SYW_Unified
         }
 
 
-
         //translate a text's control from a specific label
         static string translate(string name, List<(string name, string text)> trans)
         {
@@ -79,7 +79,6 @@ namespace FF7_SYW_Unified
         }
 
 
-
         //recusive control list
         static IEnumerable<Control> Flatten(Control c)
         {
@@ -91,7 +90,6 @@ namespace FF7_SYW_Unified
                     yield return oo;
             }
         }
-
 
 
         //translate all control of the UI
@@ -114,14 +112,19 @@ namespace FF7_SYW_Unified
         }
 
 
-
         //Read translation file to a static list
         static void getTranslationXml(string fileLang, List<(string name, string text)> trans, string modName = "")
         {
             string ctrlName = "" ;
             string ctrlText = "" ;
 
-            using (XmlReader reader = XmlReader.Create(fileLang))
+            if (!File.Exists(fileLang))
+            {
+                MessageBox.Show(translate("errorloadingtransfile", Globals.translateUI) + fileLang);
+                Process.GetCurrentProcess().Kill();
+            }
+
+                using (XmlReader reader = XmlReader.Create(fileLang))
             {
                 while (reader.Read())
                 {

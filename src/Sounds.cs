@@ -3,12 +3,37 @@ namespace FF7_SYW_Unified
 {
     partial class FF7U
     {
+        private void soundsHelpAuthor_Click(object sender, EventArgs e) { openUrlMod(); }
 
+
+        private void soundsClear()
+        {
+            soundsMusics.Items.Clear();
+            soundsAmbients.Items.Clear();
+            soundsSfx.Items.Clear();
+            soundsFMV.Items.Clear();
+            soundsVoices.Items.Clear();
+        }
+
+
+        private void soundsSetDefaults()
+        {
+            setModsItems(soundsMusics, @"audio\musics\", "audio.musics");
+            setModsItems(soundsAmbients, @"audio\ambients\", "audio.ambients");
+            setModsItems(soundsSfx, @"audio\sfxs\", "audio.sfxs");
+            setModsItems(soundsFMV, @"audio\movies\", "audio.movies");
+            setModsItems(soundsVoices, @"audio\voices\", "audio.voices");
+
+            soundsMusics.Text = soundsMusics.Items[0].ToString();
+            soundsAmbients.Text = soundsAmbients.Items[0].ToString();
+            soundsSfx.Text = soundsSfx.Items[0].ToString();
+            soundsFMV.Text = soundsFMV.Items[0].ToString();
+            soundsVoices.Text = soundsVoices.Items[0].ToString();
+        }
         private void soundsList_SelectedIndexChanged(object sender, EventArgs e)
         {
             playAudio(Globals.actualModFolder + soundsList.Items[soundsList.SelectedIndex]);
         }
-
 
 
         //stop playing of a previews audio file then launch the audio file
@@ -32,9 +57,8 @@ namespace FF7_SYW_Unified
         }
 
 
-
         //exit the audio player engine
-        private void playAudioClose ()
+        private void playAudioClose()
         {
             if (Globals.isFoobarRunning)
             {
@@ -48,7 +72,6 @@ namespace FF7_SYW_Unified
                 Globals.isFoobarRunning = false;
             }
         }
-
 
 
         //list audio files for the mod
@@ -68,105 +91,22 @@ namespace FF7_SYW_Unified
         }
 
 
-
-        private void soundsClear()
+        private void soundsChange(ComboBox soundCombo, string modFolder, string modIndex)
         {
-            soundsMusics.Items.Clear();
-            soundsAmbients.Items.Clear();
-            soundsSfx.Items.Clear();
-            soundsFMV.Items.Clear();
-            soundsVoices.Items.Clear();
+            if (Globals.actualModFolder != getModCustomFolder(soundCombo, modFolder) + @"\files\")
+            {
+                modShowCustom(soundsMusics, modFolder, modIndex, soundsHelp, soundsHelpAuthor, soundPrevPic);
+                Globals.actualModFolder = getModCustomFolder(soundCombo, modFolder) + @"\files\";
+                listAudioFiles(Globals.actualModFolder);
+            }
         }
 
 
-
-        private void soundsSetDefaults()
-        {
-            setModsItems(soundsMusics, @"audio\musics\", "audio.musics");
-            setModsItems(soundsAmbients, @"audio\ambients\", "audio.ambients");
-            setModsItems(soundsSfx, @"audio\sfxs\", "audio.sfxs");
-            setModsItems(soundsFMV, @"audio\movies\", "audio.movies");
-            setModsItems(soundsVoices, @"audio\voices\", "audio.voices");
-
-            soundsMusics.Text = soundsMusics.Items[0].ToString();
-            soundsAmbients.Text = soundsAmbients.Items[0].ToString();
-            soundsSfx.Text = soundsSfx.Items[0].ToString();
-            soundsFMV.Text = soundsFMV.Items[0].ToString();
-            soundsVoices.Text = soundsVoices.Items[0].ToString();
-        }
-
-
-
-        private void soundsGroupMusics_MouseEnter(object sender, EventArgs e)
-        {
-            modShowCustom(soundsMusics, @"audio\musics\", "audio.musics", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\musics\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-
-        private void soundsMusics_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            modShowCustom(soundsMusics, @"audio\musics\", "audio.musics", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\musics\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-
-        private void soundsGroupAmbients_MouseEnter(object sender, EventArgs e)
-        {
-            modShowCustom(soundsAmbients, @"audio\ambients\", "audio.ambients", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsAmbients, @"audio\ambients\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-
-        private void soundsAmbients_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            modShowCustom(soundsAmbients, @"audio\ambients\", "audio.ambients", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\ambients\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-
-        private void soundsGroupSfx_MouseEnter(object sender, EventArgs e)
-        {
-            modShowCustom(soundsSfx, @"audio\sfxs\", "audio.sfxs", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\sfxs\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-       
-        private void soundsSfx_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            modShowCustom(soundsSfx, @"audio\sfxs\", "audio.sfxs", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\sfxs\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-        
-        private void soundsGroupFMV_MouseEnter(object sender, EventArgs e)
-        {
-            modShowCustom(soundsFMV, @"audio\movies\", "audio.movies", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\movies\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-        
-        private void soundsFMV_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            modShowCustom(soundsFMV, @"audio\movies\", "audio.movies", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\movies\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-        
-        private void soundsGroupVoices_MouseEnter(object sender, EventArgs e)
-        {
-            modShowCustom(soundsVoices, @"audio\voices\", "audio.voices", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\voices\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
-       
-        private void soundsVoices_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            modShowCustom(soundsVoices, @"audio\voices\", "audio.voices", soundsHelp, soundsHelpAuthor, soundPrevPic);
-            Globals.actualModFolder = getModCustomFolder(soundsMusics, @"audio\voices\") + @"\files\";
-            listAudioFiles(Globals.actualModFolder);
-        }
+        private void soundsMusicsChange(object sender, EventArgs e) { soundsChange(soundsMusics, @"audio\musics\", "audio.musics"); }
+        private void soundsAmbiantChange(object sender, EventArgs e) { soundsChange(soundsAmbients, @"audio\ambients\", "audio.ambients"); }
+        private void soundsSfxChange(object sender, EventArgs e) { soundsChange(soundsSfx, @"audio\sfxs\", @"audio.sfxs"); }
+        private void soundsFMVChange(object sender, EventArgs e) { soundsChange(soundsFMV, @"audio\movies\", "audio.movies"); }
+        private void soundsVoicesChange(object sender, EventArgs e) { soundsChange(soundsVoices, @"audio\voices\", "audio.voices"); }
 
     }
-
 }

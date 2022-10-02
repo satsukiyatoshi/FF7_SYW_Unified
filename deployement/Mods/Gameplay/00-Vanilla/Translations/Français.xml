@@ -12,5 +12,9 @@
 		<name>author</name>
 		<text>Square</text>
 	</control>
+	<control>
+		<name>url</name>
+		<text>http://google.com</text>
+	</control>
 </translation>
 

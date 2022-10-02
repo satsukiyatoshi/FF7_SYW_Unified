@@ -1,6 +1,7 @@
 
 using System.Diagnostics;
 using System.IO;
+using System.Linq.Expressions;
 using System.Xml.Linq;
 
 namespace FF7_SYW_Unified
@@ -8,27 +9,34 @@ namespace FF7_SYW_Unified
     public partial class FF7U : Form
     {
 
-
         public FF7U()
         {
             InitializeComponent();
         }
 
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
             //get translations list
-            string[] translations = Directory.GetFiles(Application.StartupPath + @"\Translations\", "*.xml");
-            for (var i = 0; i < translations.Length; i += 1)
+            try
             {
-                langInterface.Items.Add(Path.GetFileName(translations[i]).Replace(".xml", ""));
+                string[] translations = Directory.GetFiles(Application.StartupPath + @"\Translations\", "*.xml");
+                for (var i = 0; i < translations.Length; i += 1)
+                {
+                    langInterface.Items.Add(Path.GetFileName(translations[i]).Replace(".xml", ""));
+                }
+
+                string[] langs = Directory.GetDirectories(Application.StartupPath + @"\Langs\");
+                for (var i = 0; i < langs.Length; i += 1)
+                {
+                    langGame.Items.Add(Path.GetFileName(langs[i]).Replace(".xml", ""));
+                }
             }
 
-            string[] langs = Directory.GetDirectories(Application.StartupPath + @"\Langs\");
-            for (var i = 0; i < langs.Length; i += 1)
+            catch
             {
-                langGame.Items.Add(Path.GetFileName(langs[i]).Replace(".xml", ""));
+                MessageBox.Show("Error while loading main translation file, please reinstall FF7 SYW Unified");
+                Environment.Exit(0);
             }
 
             langInterface.Text = langInterface.GetItemText(langInterface.Items[0]);
@@ -36,7 +44,6 @@ namespace FF7_SYW_Unified
             //set default menu status
             menuClick(menuAbout);
         }
-
 
 
         //display preview picture and description for SYW mods
@@ -48,10 +55,8 @@ namespace FF7_SYW_Unified
         }
 
 
-
         //Backup mouse Y position
         private void getMousePos(object sender, EventArgs e) { Globals.mouseY = Cursor.Position.Y; }
-
 
 
         //display preview picture and description for combobox mods
@@ -75,19 +80,26 @@ namespace FF7_SYW_Unified
 
             helpLabel.Text = translate("descriptionmod." + modType + "." + modDir, Globals.translateMod);
             authorLabel.Text = translate("authormod." + modType + "." + modDir, Globals.translateMod);
+            Globals.actualModUrl = translate("urlmod." + modType + "." + modDir, Globals.translateMod);
         }
-
 
 
         private string getModCustomFolder(ComboBox combo, string folderwSource)
         {
-            folderwSource = Application.StartupPath + @"mods\" + folderwSource;
-            //MessageBox.Show(folderwSource);
-            string[] dirs = Directory.GetDirectories(folderwSource, "*", SearchOption.TopDirectoryOnly);
+            try
+            {
+                folderwSource = Application.StartupPath + @"mods\" + folderwSource;
+                string[] dirs = Directory.GetDirectories(folderwSource, "*", SearchOption.TopDirectoryOnly);
+                return dirs[combo.SelectedIndex];
+            }
 
-            return dirs[combo.SelectedIndex];
+            catch
+            {
+                MessageBox.Show(translate("errorloadingmod", Globals.translateUI) + folderwSource);
+                Process.GetCurrentProcess().Kill();
+                return "";
+            }  
         }
-
 
 
         private void launchGame_Click(object sender, EventArgs e)

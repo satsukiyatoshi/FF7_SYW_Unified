@@ -5,6 +5,22 @@
 		<text>donation</text>
 	</control>
 	<control>
+		<name>errorloadingmod</name>
+		<text>Erreur lors du chargement du mod, vérifiez le dossier : </text>
+	</control>
+	<control>
+		<name>errorloadingmodtranslation</name>
+		<text>Erreur lors du chargement de la traduction du mod (la traduction anglaise est obligatoire), vérifiez le dossier : </text>
+	</control>
+	<control>
+		<name>errorloadingtransfile</name>
+		<text>Erreur lors du chargement du fichier : </text>
+	</control>
+	<control>
+		<name>norulmod</name>
+		<text>Pas de page web indiquée pour ce mod</text>
+	</control>
+	<control>
 		<name>vanilla</name>
 		<text>Jeu de base</text>
 	</control>
@@ -299,12 +315,8 @@
 		Cela peut prendre quelques instants pour ce lancer.</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
+		<name>gameplayGroupMods</name>
+		<text>Mod de gameplay</text>
 	</control>
 	<control>
 		<name></name>

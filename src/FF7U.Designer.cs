@@ -166,8 +166,13 @@
             this.soundsHelp = new System.Windows.Forms.Label();
             this.menuGameplayPanel = new System.Windows.Forms.Panel();
             this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
+            this.gameplayHelpAuthor = new System.Windows.Forms.Label();
+            this.gameplayHelp = new System.Windows.Forms.Label();
             this.gameplayFrame1 = new System.Windows.Forms.GroupBox();
+            this.gameplayGroupMods = new System.Windows.Forms.GroupBox();
+            this.gameplayMods = new System.Windows.Forms.ComboBox();
             this.gameplayFrame3 = new System.Windows.Forms.GroupBox();
+            this.gameplayPrevPic = new System.Windows.Forms.PictureBox();
             this.menuFFNxPanel = new System.Windows.Forms.Panel();
             this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
@@ -202,6 +207,11 @@
             this.soundsGroupMusics.SuspendLayout();
             this.soundFrame2.SuspendLayout();
             this.menuGameplayPanel.SuspendLayout();
+            this.gameplayFrame2.SuspendLayout();
+            this.gameplayFrame1.SuspendLayout();
+            this.gameplayGroupMods.SuspendLayout();
+            this.gameplayFrame3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).BeginInit();
             this.menuFFNxPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -451,7 +461,7 @@
             this.graphicsGroupMenu.TabIndex = 12;
             this.graphicsGroupMenu.TabStop = false;
             this.graphicsGroupMenu.Text = "Interface (menus et polices)";
-            this.graphicsGroupMenu.MouseEnter += new System.EventHandler(this.graphicsGroupMenu_MouseEnter);
+            this.graphicsGroupMenu.MouseEnter += new System.EventHandler(this.graphicsMenuChange);
             // 
             // graphicsMenu
             // 
@@ -464,7 +474,7 @@
             this.graphicsMenu.Name = "graphicsMenu";
             this.graphicsMenu.Size = new System.Drawing.Size(225, 23);
             this.graphicsMenu.TabIndex = 0;
-            this.graphicsMenu.SelectedIndexChanged += new System.EventHandler(this.graphicsMenu_SelectedIndexChanged);
+            this.graphicsMenu.SelectedIndexChanged += new System.EventHandler(this.graphicsMenuChange);
             this.graphicsMenu.Click += new System.EventHandler(this.getMousePos);
             // 
             // graphicsGroupFMV
@@ -479,7 +489,7 @@
             this.graphicsGroupFMV.TabIndex = 11;
             this.graphicsGroupFMV.TabStop = false;
             this.graphicsGroupFMV.Text = "Cinématiques";
-            this.graphicsGroupFMV.MouseEnter += new System.EventHandler(this.graphicsGroupFMV_MouseEnter);
+            this.graphicsGroupFMV.MouseEnter += new System.EventHandler(this.graphicsFMVChange);
             // 
             // graphicsFMV
             // 
@@ -492,7 +502,7 @@
             this.graphicsFMV.Name = "graphicsFMV";
             this.graphicsFMV.Size = new System.Drawing.Size(225, 23);
             this.graphicsFMV.TabIndex = 0;
-            this.graphicsFMV.SelectedIndexChanged += new System.EventHandler(this.graphicsFMV_SelectedIndexChanged);
+            this.graphicsFMV.SelectedIndexChanged += new System.EventHandler(this.graphicsFMVChange);
             this.graphicsFMV.Click += new System.EventHandler(this.getMousePos);
             // 
             // graphicsGroupModels3Dc
@@ -507,7 +517,7 @@
             this.graphicsGroupModels3Dc.TabIndex = 10;
             this.graphicsGroupModels3Dc.TabStop = false;
             this.graphicsGroupModels3Dc.Text = "Modèles 3D des combats";
-            this.graphicsGroupModels3Dc.MouseEnter += new System.EventHandler(this.graphicsGroupModels3Dc_MouseEnter);
+            this.graphicsGroupModels3Dc.MouseEnter += new System.EventHandler(this.graphicsModels3DcChange);
             // 
             // graphicsModels3Dc
             // 
@@ -520,7 +530,7 @@
             this.graphicsModels3Dc.Name = "graphicsModels3Dc";
             this.graphicsModels3Dc.Size = new System.Drawing.Size(225, 23);
             this.graphicsModels3Dc.TabIndex = 0;
-            this.graphicsModels3Dc.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3Dc_SelectedIndexChanged);
+            this.graphicsModels3Dc.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3DcChange);
             this.graphicsModels3Dc.Click += new System.EventHandler(this.getMousePos);
             // 
             // graphicsGroupModels3Df
@@ -535,7 +545,7 @@
             this.graphicsGroupModels3Df.TabIndex = 9;
             this.graphicsGroupModels3Df.TabStop = false;
             this.graphicsGroupModels3Df.Text = "Modèles 3D des scènes du jeu";
-            this.graphicsGroupModels3Df.MouseEnter += new System.EventHandler(this.graphicsGroupModels3Df_MouseEnter);
+            this.graphicsGroupModels3Df.MouseEnter += new System.EventHandler(this.graphicsModels3DfChange);
             // 
             // graphicsModels3Df
             // 
@@ -548,7 +558,7 @@
             this.graphicsModels3Df.Name = "graphicsModels3Df";
             this.graphicsModels3Df.Size = new System.Drawing.Size(225, 23);
             this.graphicsModels3Df.TabIndex = 0;
-            this.graphicsModels3Df.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3Df_SelectedIndexChanged);
+            this.graphicsModels3Df.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3DfChange);
             this.graphicsModels3Df.Click += new System.EventHandler(this.getMousePos);
             // 
             // graphicsAlphaBattles
@@ -702,6 +712,7 @@
             // graphicsHelpAuthor
             // 
             this.graphicsHelpAuthor.BackColor = System.Drawing.Color.Black;
+            this.graphicsHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.graphicsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
             this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 231);
@@ -709,6 +720,7 @@
             this.graphicsHelpAuthor.Size = new System.Drawing.Size(241, 22);
             this.graphicsHelpAuthor.TabIndex = 1;
             this.graphicsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.graphicsHelpAuthor.Click += new System.EventHandler(this.graphicsHelpAuthor_Click);
             // 
             // graphicsHelp
             // 
@@ -1821,7 +1833,7 @@
             this.soundsGroupVoices.TabIndex = 17;
             this.soundsGroupVoices.TabStop = false;
             this.soundsGroupVoices.Text = "Voix des personnages";
-            this.soundsGroupVoices.MouseEnter += new System.EventHandler(this.soundsGroupVoices_MouseEnter);
+            this.soundsGroupVoices.MouseEnter += new System.EventHandler(this.soundsVoicesChange);
             // 
             // soundsVoices
             // 
@@ -1834,7 +1846,7 @@
             this.soundsVoices.Name = "soundsVoices";
             this.soundsVoices.Size = new System.Drawing.Size(346, 23);
             this.soundsVoices.TabIndex = 0;
-            this.soundsVoices.SelectedIndexChanged += new System.EventHandler(this.soundsVoices_SelectedIndexChanged);
+            this.soundsVoices.SelectedIndexChanged += new System.EventHandler(this.soundsVoicesChange);
             this.soundsVoices.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundsGroupFMV
@@ -1849,7 +1861,7 @@
             this.soundsGroupFMV.TabIndex = 16;
             this.soundsGroupFMV.TabStop = false;
             this.soundsGroupFMV.Text = "Pistes audio des cinématiques";
-            this.soundsGroupFMV.MouseEnter += new System.EventHandler(this.soundsGroupFMV_MouseEnter);
+            this.soundsGroupFMV.MouseEnter += new System.EventHandler(this.soundsFMVChange);
             // 
             // soundsFMV
             // 
@@ -1862,7 +1874,7 @@
             this.soundsFMV.Name = "soundsFMV";
             this.soundsFMV.Size = new System.Drawing.Size(346, 23);
             this.soundsFMV.TabIndex = 0;
-            this.soundsFMV.SelectedIndexChanged += new System.EventHandler(this.soundsFMV_SelectedIndexChanged);
+            this.soundsFMV.SelectedIndexChanged += new System.EventHandler(this.soundsFMVChange);
             this.soundsFMV.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundsGroupAmbients
@@ -1877,7 +1889,7 @@
             this.soundsGroupAmbients.TabIndex = 15;
             this.soundsGroupAmbients.TabStop = false;
             this.soundsGroupAmbients.Text = "Sons d\'ambiance du jeu";
-            this.soundsGroupAmbients.MouseEnter += new System.EventHandler(this.soundsGroupAmbients_MouseEnter);
+            this.soundsGroupAmbients.MouseEnter += new System.EventHandler(this.soundsAmbiantChange);
             // 
             // soundsAmbients
             // 
@@ -1890,7 +1902,7 @@
             this.soundsAmbients.Name = "soundsAmbients";
             this.soundsAmbients.Size = new System.Drawing.Size(346, 23);
             this.soundsAmbients.TabIndex = 0;
-            this.soundsAmbients.SelectedIndexChanged += new System.EventHandler(this.soundsAmbients_SelectedIndexChanged);
+            this.soundsAmbients.SelectedIndexChanged += new System.EventHandler(this.soundsAmbiantChange);
             this.soundsAmbients.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundsGroupSfx
@@ -1905,7 +1917,7 @@
             this.soundsGroupSfx.TabIndex = 14;
             this.soundsGroupSfx.TabStop = false;
             this.soundsGroupSfx.Text = "Effets sonores du jeu";
-            this.soundsGroupSfx.MouseEnter += new System.EventHandler(this.soundsGroupSfx_MouseEnter);
+            this.soundsGroupSfx.MouseEnter += new System.EventHandler(this.soundsSfxChange);
             // 
             // soundsSfx
             // 
@@ -1918,7 +1930,7 @@
             this.soundsSfx.Name = "soundsSfx";
             this.soundsSfx.Size = new System.Drawing.Size(346, 23);
             this.soundsSfx.TabIndex = 0;
-            this.soundsSfx.SelectedIndexChanged += new System.EventHandler(this.soundsSfx_SelectedIndexChanged);
+            this.soundsSfx.SelectedIndexChanged += new System.EventHandler(this.soundsSfxChange);
             this.soundsSfx.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundsGroupMusics
@@ -1933,7 +1945,7 @@
             this.soundsGroupMusics.TabIndex = 13;
             this.soundsGroupMusics.TabStop = false;
             this.soundsGroupMusics.Text = "Musiques du jeu";
-            this.soundsGroupMusics.MouseEnter += new System.EventHandler(this.soundsGroupMusics_MouseEnter);
+            this.soundsGroupMusics.MouseEnter += new System.EventHandler(this.soundsMusicsChange);
             // 
             // soundsMusics
             // 
@@ -1946,7 +1958,7 @@
             this.soundsMusics.Name = "soundsMusics";
             this.soundsMusics.Size = new System.Drawing.Size(346, 23);
             this.soundsMusics.TabIndex = 0;
-            this.soundsMusics.SelectedIndexChanged += new System.EventHandler(this.soundsMusics_SelectedIndexChanged);
+            this.soundsMusics.SelectedIndexChanged += new System.EventHandler(this.soundsMusicsChange);
             this.soundsMusics.Click += new System.EventHandler(this.getMousePos);
             // 
             // soundFrame2
@@ -1965,6 +1977,7 @@
             // soundsHelpAuthor
             // 
             this.soundsHelpAuthor.BackColor = System.Drawing.Color.Black;
+            this.soundsHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.soundsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
             this.soundsHelpAuthor.Location = new System.Drawing.Point(11, 318);
@@ -1972,6 +1985,7 @@
             this.soundsHelpAuthor.Size = new System.Drawing.Size(234, 22);
             this.soundsHelpAuthor.TabIndex = 5;
             this.soundsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.soundsHelpAuthor.Click += new System.EventHandler(this.soundsHelpAuthor_Click);
             // 
             // soundsHelp
             // 
@@ -1996,6 +2010,8 @@
             // 
             // gameplayFrame2
             // 
+            this.gameplayFrame2.Controls.Add(this.gameplayHelpAuthor);
+            this.gameplayFrame2.Controls.Add(this.gameplayHelp);
             this.gameplayFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gameplayFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gameplayFrame2.Location = new System.Drawing.Point(523, 4);
@@ -2005,8 +2021,33 @@
             this.gameplayFrame2.TabStop = false;
             this.gameplayFrame2.Text = "Aide";
             // 
+            // gameplayHelpAuthor
+            // 
+            this.gameplayHelpAuthor.BackColor = System.Drawing.Color.Black;
+            this.gameplayHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gameplayHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gameplayHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.gameplayHelpAuthor.Location = new System.Drawing.Point(12, 231);
+            this.gameplayHelpAuthor.Name = "gameplayHelpAuthor";
+            this.gameplayHelpAuthor.Size = new System.Drawing.Size(241, 22);
+            this.gameplayHelpAuthor.TabIndex = 3;
+            this.gameplayHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gameplayHelpAuthor.Click += new System.EventHandler(this.gameplayHelpAuthor_Click);
+            // 
+            // gameplayHelp
+            // 
+            this.gameplayHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.gameplayHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gameplayHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.gameplayHelp.Location = new System.Drawing.Point(12, 21);
+            this.gameplayHelp.Name = "gameplayHelp";
+            this.gameplayHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gameplayHelp.Size = new System.Drawing.Size(241, 210);
+            this.gameplayHelp.TabIndex = 2;
+            // 
             // gameplayFrame1
             // 
+            this.gameplayFrame1.Controls.Add(this.gameplayGroupMods);
             this.gameplayFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gameplayFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gameplayFrame1.Location = new System.Drawing.Point(3, 4);
@@ -2016,8 +2057,37 @@
             this.gameplayFrame1.TabStop = false;
             this.gameplayFrame1.Text = "Mods de gameplay";
             // 
+            // gameplayGroupMods
+            // 
+            this.gameplayGroupMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.gameplayGroupMods.Controls.Add(this.gameplayMods);
+            this.gameplayGroupMods.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gameplayGroupMods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gameplayGroupMods.Location = new System.Drawing.Point(135, 110);
+            this.gameplayGroupMods.Name = "gameplayGroupMods";
+            this.gameplayGroupMods.Size = new System.Drawing.Size(245, 59);
+            this.gameplayGroupMods.TabIndex = 10;
+            this.gameplayGroupMods.TabStop = false;
+            this.gameplayGroupMods.Text = "Mod de gameplay";
+            this.gameplayGroupMods.MouseEnter += new System.EventHandler(this.gameplayModsChange);
+            // 
+            // gameplayMods
+            // 
+            this.gameplayMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.gameplayMods.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gameplayMods.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gameplayMods.ForeColor = System.Drawing.Color.White;
+            this.gameplayMods.FormattingEnabled = true;
+            this.gameplayMods.Location = new System.Drawing.Point(9, 23);
+            this.gameplayMods.Name = "gameplayMods";
+            this.gameplayMods.Size = new System.Drawing.Size(225, 23);
+            this.gameplayMods.TabIndex = 0;
+            this.gameplayMods.SelectedIndexChanged += new System.EventHandler(this.gameplayModsChange);
+            this.gameplayMods.Click += new System.EventHandler(this.getMousePos);
+            // 
             // gameplayFrame3
             // 
+            this.gameplayFrame3.Controls.Add(this.gameplayPrevPic);
             this.gameplayFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gameplayFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gameplayFrame3.Location = new System.Drawing.Point(3, 289);
@@ -2026,6 +2096,15 @@
             this.gameplayFrame3.TabIndex = 9;
             this.gameplayFrame3.TabStop = false;
             this.gameplayFrame3.Text = "Aperçu";
+            // 
+            // gameplayPrevPic
+            // 
+            this.gameplayPrevPic.Location = new System.Drawing.Point(8, 22);
+            this.gameplayPrevPic.Name = "gameplayPrevPic";
+            this.gameplayPrevPic.Size = new System.Drawing.Size(756, 376);
+            this.gameplayPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gameplayPrevPic.TabIndex = 1;
+            this.gameplayPrevPic.TabStop = false;
             // 
             // menuFFNxPanel
             // 
@@ -2121,6 +2200,11 @@
             this.soundsGroupMusics.ResumeLayout(false);
             this.soundFrame2.ResumeLayout(false);
             this.menuGameplayPanel.ResumeLayout(false);
+            this.gameplayFrame2.ResumeLayout(false);
+            this.gameplayFrame1.ResumeLayout(false);
+            this.gameplayGroupMods.ResumeLayout(false);
+            this.gameplayFrame3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).EndInit();
             this.menuFFNxPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -2271,5 +2355,10 @@
         private Label authorUrl20;
         private Label author20;
         private Label authorName20;
+        private Label gameplayHelpAuthor;
+        private Label gameplayHelp;
+        private PictureBox gameplayPrevPic;
+        private GroupBox gameplayGroupMods;
+        private ComboBox gameplayMods;
     }
 }

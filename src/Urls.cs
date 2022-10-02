@@ -10,10 +10,25 @@ namespace FF7_SYW_Unified
 {
     partial class FF7U
     {
-        public static void openUrl(string url) 
+
+        public static void openUrl(string url)
         {
             Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
         }
+
+
+        public static void openUrlMod()
+        {
+            if (Globals.actualModUrl != "")
+            {
+                openUrl(Globals.actualModUrl);
+            }
+            else
+            {
+                MessageBox.Show(translate("norulmod", Globals.translateUI));
+            }
+        }
+
 
         //call url for each author
         private void authorUrl1_Click(object sender, EventArgs e) { openUrl("https://ff7.fr/forum/index.php?page=post&ids=445353");}
