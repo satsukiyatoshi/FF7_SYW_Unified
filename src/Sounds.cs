@@ -37,7 +37,7 @@ namespace FF7_SYW_Unified
 
 
         //stop playing of a previews audio file then launch the audio file
-        private void playAudio(string audioFile)
+        static void playAudio(string audioFile)
         {
             System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
             pProcess.StartInfo.FileName = Application.StartupPath + @"tools\f2k\foobar2000.exe";
@@ -58,7 +58,7 @@ namespace FF7_SYW_Unified
 
 
         //exit the audio player engine
-        private void playAudioClose()
+        static void playAudioClose()
         {
             if (Globals.isFoobarRunning)
             {

@@ -60,7 +60,7 @@ namespace FF7_SYW_Unified
 
 
         //display preview picture and description for combobox mods
-        private void modShowCustom(ComboBox combo, string folderwSource, string modType, Label helpLabel, Label authorLabel, PictureBox prevPic)
+        static void modShowCustom(ComboBox combo, string folderwSource, string modType, Label helpLabel, Label authorLabel, PictureBox prevPic)
         {
             string folderMod = "";
             string modDir = "";
@@ -84,7 +84,7 @@ namespace FF7_SYW_Unified
         }
 
 
-        private string getModCustomFolder(ComboBox combo, string folderwSource)
+        static string getModCustomFolder(ComboBox combo, string folderwSource)
         {
             try
             {
@@ -104,7 +104,7 @@ namespace FF7_SYW_Unified
 
         private void launchGame_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("placeholder");
         }
 
     }
