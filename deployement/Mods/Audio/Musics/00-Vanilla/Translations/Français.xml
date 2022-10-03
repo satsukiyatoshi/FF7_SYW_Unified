@@ -12,5 +12,9 @@
 		<name>author</name>
 		<text>Myst6re</text>
 	</control>
+	<control>
+		<name>compatibility</name>
+		<text>FEGS</text>
+	</control>
 </translation>
 

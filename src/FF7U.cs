@@ -1,6 +1,7 @@
 
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Xml.Linq;
 
@@ -49,7 +50,7 @@ namespace FF7_SYW_Unified
         //display preview picture and description for SYW mods
         private void modShow(string path, string name)
         {
-            graphicPrevPic.ImageLocation = Application.StartupPath + @"Prev\Mods\" + path + @"\" + name + ".jpg";
+            graphicPrevPic.ImageLocation = Application.StartupPath + @"Mods\SYW\Prev\" + name + ".jpg";
             graphicsHelp.Text = translate(name, Globals.translateUI);
             graphicsHelpAuthor.Text = translate(name + " author", Globals.translateUI);
         }
@@ -81,6 +82,7 @@ namespace FF7_SYW_Unified
             helpLabel.Text = translate("descriptionmod." + modType + "." + modDir, Globals.translateMod);
             authorLabel.Text = translate("authormod." + modType + "." + modDir, Globals.translateMod);
             Globals.actualModUrl = translate("urlmod." + modType + "." + modDir, Globals.translateMod);
+            Globals.actualModFlags = translate("compatibilymod." + modType + "." + modDir, Globals.translateMod);
         }
 
 
@@ -99,6 +101,20 @@ namespace FF7_SYW_Unified
                 Process.GetCurrentProcess().Kill();
                 return "";
             }  
+        }
+
+
+        private void setModFlags() 
+        {
+            flagFGameplay.ImageLocation = Application.StartupPath + @"\Ressources\french-off.png";
+            flagEGameplay.ImageLocation = Application.StartupPath + @"\Ressources\english-off.png";
+            flagGGameplay.ImageLocation = Application.StartupPath + @"\Ressources\german-off.png";
+            flagSGameplay.ImageLocation = Application.StartupPath + @"\Ressources\spain-off.png";
+
+            if (Globals.actualModFlags.ToLower().Contains("f")) { flagFGameplay.ImageLocation = Application.StartupPath + @"\Ressources\french.png";}
+            if (Globals.actualModFlags.ToLower().Contains("e")) { flagEGameplay.ImageLocation = Application.StartupPath + @"\Ressources\english.png"; }
+            if (Globals.actualModFlags.ToLower().Contains("g")) { flagGGameplay.ImageLocation = Application.StartupPath + @"\Ressources\german.png"; }
+            if (Globals.actualModFlags.ToLower().Contains("s")) { flagSGameplay.ImageLocation = Application.StartupPath + @"\Ressources\spain.png"; }
         }
 
 

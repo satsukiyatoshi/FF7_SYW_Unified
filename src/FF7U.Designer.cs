@@ -177,6 +177,10 @@
             this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
+            this.flagFGameplay = new System.Windows.Forms.PictureBox();
+            this.flagEGameplay = new System.Windows.Forms.PictureBox();
+            this.flagSGameplay = new System.Windows.Forms.PictureBox();
+            this.flagGGameplay = new System.Windows.Forms.PictureBox();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
@@ -213,6 +217,10 @@
             this.gameplayFrame3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).BeginInit();
             this.menuFFNxPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagFGameplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagEGameplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).BeginInit();
             this.SuspendLayout();
             // 
             // menuFrame
@@ -2014,9 +2022,9 @@
             this.gameplayFrame2.Controls.Add(this.gameplayHelp);
             this.gameplayFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gameplayFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gameplayFrame2.Location = new System.Drawing.Point(523, 4);
+            this.gameplayFrame2.Location = new System.Drawing.Point(3, 102);
             this.gameplayFrame2.Name = "gameplayFrame2";
-            this.gameplayFrame2.Size = new System.Drawing.Size(268, 279);
+            this.gameplayFrame2.Size = new System.Drawing.Size(788, 274);
             this.gameplayFrame2.TabIndex = 10;
             this.gameplayFrame2.TabStop = false;
             this.gameplayFrame2.Text = "Aide";
@@ -2027,9 +2035,9 @@
             this.gameplayHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gameplayHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gameplayHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.gameplayHelpAuthor.Location = new System.Drawing.Point(12, 231);
+            this.gameplayHelpAuthor.Location = new System.Drawing.Point(12, 240);
             this.gameplayHelpAuthor.Name = "gameplayHelpAuthor";
-            this.gameplayHelpAuthor.Size = new System.Drawing.Size(241, 22);
+            this.gameplayHelpAuthor.Size = new System.Drawing.Size(764, 22);
             this.gameplayHelpAuthor.TabIndex = 3;
             this.gameplayHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.gameplayHelpAuthor.Click += new System.EventHandler(this.gameplayHelpAuthor_Click);
@@ -2042,17 +2050,21 @@
             this.gameplayHelp.Location = new System.Drawing.Point(12, 21);
             this.gameplayHelp.Name = "gameplayHelp";
             this.gameplayHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gameplayHelp.Size = new System.Drawing.Size(241, 210);
+            this.gameplayHelp.Size = new System.Drawing.Size(764, 219);
             this.gameplayHelp.TabIndex = 2;
             // 
             // gameplayFrame1
             // 
+            this.gameplayFrame1.Controls.Add(this.flagSGameplay);
+            this.gameplayFrame1.Controls.Add(this.flagGGameplay);
+            this.gameplayFrame1.Controls.Add(this.flagFGameplay);
+            this.gameplayFrame1.Controls.Add(this.flagEGameplay);
             this.gameplayFrame1.Controls.Add(this.gameplayGroupMods);
             this.gameplayFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gameplayFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gameplayFrame1.Location = new System.Drawing.Point(3, 4);
             this.gameplayFrame1.Name = "gameplayFrame1";
-            this.gameplayFrame1.Size = new System.Drawing.Size(514, 279);
+            this.gameplayFrame1.Size = new System.Drawing.Size(788, 92);
             this.gameplayFrame1.TabIndex = 6;
             this.gameplayFrame1.TabStop = false;
             this.gameplayFrame1.Text = "Mods de gameplay";
@@ -2063,9 +2075,9 @@
             this.gameplayGroupMods.Controls.Add(this.gameplayMods);
             this.gameplayGroupMods.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gameplayGroupMods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gameplayGroupMods.Location = new System.Drawing.Point(135, 110);
+            this.gameplayGroupMods.Location = new System.Drawing.Point(11, 22);
             this.gameplayGroupMods.Name = "gameplayGroupMods";
-            this.gameplayGroupMods.Size = new System.Drawing.Size(245, 59);
+            this.gameplayGroupMods.Size = new System.Drawing.Size(646, 59);
             this.gameplayGroupMods.TabIndex = 10;
             this.gameplayGroupMods.TabStop = false;
             this.gameplayGroupMods.Text = "Mod de gameplay";
@@ -2080,7 +2092,7 @@
             this.gameplayMods.FormattingEnabled = true;
             this.gameplayMods.Location = new System.Drawing.Point(9, 23);
             this.gameplayMods.Name = "gameplayMods";
-            this.gameplayMods.Size = new System.Drawing.Size(225, 23);
+            this.gameplayMods.Size = new System.Drawing.Size(624, 23);
             this.gameplayMods.TabIndex = 0;
             this.gameplayMods.SelectedIndexChanged += new System.EventHandler(this.gameplayModsChange);
             this.gameplayMods.Click += new System.EventHandler(this.getMousePos);
@@ -2090,9 +2102,9 @@
             this.gameplayFrame3.Controls.Add(this.gameplayPrevPic);
             this.gameplayFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gameplayFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gameplayFrame3.Location = new System.Drawing.Point(3, 289);
+            this.gameplayFrame3.Location = new System.Drawing.Point(3, 382);
             this.gameplayFrame3.Name = "gameplayFrame3";
-            this.gameplayFrame3.Size = new System.Drawing.Size(788, 414);
+            this.gameplayFrame3.Size = new System.Drawing.Size(788, 318);
             this.gameplayFrame3.TabIndex = 9;
             this.gameplayFrame3.TabStop = false;
             this.gameplayFrame3.Text = "Aperçu";
@@ -2101,7 +2113,7 @@
             // 
             this.gameplayPrevPic.Location = new System.Drawing.Point(8, 22);
             this.gameplayPrevPic.Name = "gameplayPrevPic";
-            this.gameplayPrevPic.Size = new System.Drawing.Size(756, 376);
+            this.gameplayPrevPic.Size = new System.Drawing.Size(768, 283);
             this.gameplayPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gameplayPrevPic.TabIndex = 1;
             this.gameplayPrevPic.TabStop = false;
@@ -2148,6 +2160,42 @@
             this.FFNxFrame3.TabIndex = 9;
             this.FFNxFrame3.TabStop = false;
             this.FFNxFrame3.Text = "Configuration du pilote FFNx";
+            // 
+            // flagFGameplay
+            // 
+            this.flagFGameplay.Location = new System.Drawing.Point(724, 22);
+            this.flagFGameplay.Name = "flagFGameplay";
+            this.flagFGameplay.Size = new System.Drawing.Size(52, 26);
+            this.flagFGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagFGameplay.TabIndex = 12;
+            this.flagFGameplay.TabStop = false;
+            // 
+            // flagEGameplay
+            // 
+            this.flagEGameplay.Location = new System.Drawing.Point(667, 22);
+            this.flagEGameplay.Name = "flagEGameplay";
+            this.flagEGameplay.Size = new System.Drawing.Size(52, 26);
+            this.flagEGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagEGameplay.TabIndex = 11;
+            this.flagEGameplay.TabStop = false;
+            // 
+            // flagSGameplay
+            // 
+            this.flagSGameplay.Location = new System.Drawing.Point(724, 54);
+            this.flagSGameplay.Name = "flagSGameplay";
+            this.flagSGameplay.Size = new System.Drawing.Size(52, 26);
+            this.flagSGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagSGameplay.TabIndex = 14;
+            this.flagSGameplay.TabStop = false;
+            // 
+            // flagGGameplay
+            // 
+            this.flagGGameplay.Location = new System.Drawing.Point(667, 54);
+            this.flagGGameplay.Name = "flagGGameplay";
+            this.flagGGameplay.Size = new System.Drawing.Size(52, 26);
+            this.flagGGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagGGameplay.TabIndex = 13;
+            this.flagGGameplay.TabStop = false;
             // 
             // FF7U
             // 
@@ -2206,6 +2254,10 @@
             this.gameplayFrame3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).EndInit();
             this.menuFFNxPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.flagFGameplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagEGameplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2310,7 +2362,6 @@
         private Panel menuGameplayPanel;
         private GroupBox gameplayFrame2;
         private GroupBox gameplayFrame1;
-        private GroupBox gameplayFrame3;
         private Panel menuFFNxPanel;
         private GroupBox FFNxFrame2;
         public GroupBox FFNxFrame1;
@@ -2357,8 +2408,13 @@
         private Label authorName20;
         private Label gameplayHelpAuthor;
         private Label gameplayHelp;
-        private PictureBox gameplayPrevPic;
         private GroupBox gameplayGroupMods;
         private ComboBox gameplayMods;
+        private GroupBox gameplayFrame3;
+        private PictureBox gameplayPrevPic;
+        private PictureBox flagSGameplay;
+        private PictureBox flagGGameplay;
+        private PictureBox flagFGameplay;
+        private PictureBox flagEGameplay;
     }
 }
