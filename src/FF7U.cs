@@ -104,17 +104,21 @@ namespace FF7_SYW_Unified
         }
 
 
-        private void setModFlags() 
+        private void setModFlags(Control modgroup) 
         {
-            flagFGameplay.ImageLocation = Application.StartupPath + @"\Ressources\french-off.png";
-            flagEGameplay.ImageLocation = Application.StartupPath + @"\Ressources\english-off.png";
-            flagGGameplay.ImageLocation = Application.StartupPath + @"\Ressources\german-off.png";
-            flagSGameplay.ImageLocation = Application.StartupPath + @"\Ressources\spain-off.png";
+            string flagFsource = Globals.actualModFlags.ToLower().Contains("f") ? Application.StartupPath + @"\Ressources\french.png" : Application.StartupPath + @"\Ressources\french-off.png";
+            string flagEsource = Globals.actualModFlags.ToLower().Contains("e") ? Application.StartupPath + @"\Ressources\english.png" : Application.StartupPath + @"\Ressources\english-off.png";
+            string flagGsource = Globals.actualModFlags.ToLower().Contains("g") ? Application.StartupPath + @"\Ressources\german.png" : Application.StartupPath + @"\Ressources\german-off.png";
+            string flagSsource = Globals.actualModFlags.ToLower().Contains("s") ? Application.StartupPath + @"\Ressources\spain.png" : Application.StartupPath + @"\Ressources\spain-off.png";
 
-            if (Globals.actualModFlags.ToLower().Contains("f")) { flagFGameplay.ImageLocation = Application.StartupPath + @"\Ressources\french.png";}
-            if (Globals.actualModFlags.ToLower().Contains("e")) { flagEGameplay.ImageLocation = Application.StartupPath + @"\Ressources\english.png"; }
-            if (Globals.actualModFlags.ToLower().Contains("g")) { flagGGameplay.ImageLocation = Application.StartupPath + @"\Ressources\german.png"; }
-            if (Globals.actualModFlags.ToLower().Contains("s")) { flagSGameplay.ImageLocation = Application.StartupPath + @"\Ressources\spain.png"; }
+            foreach (PictureBox pict in modgroup.Controls.OfType<PictureBox>())
+            {
+                    if (pict.Name.Contains("flagF")) { pict.ImageLocation = flagFsource; }
+                    if (pict.Name.Contains("flagE")) { pict.ImageLocation = flagEsource; }
+                    if (pict.Name.Contains("flagG")) { pict.ImageLocation = flagGsource; }
+                    if (pict.Name.Contains("flagS")) { pict.ImageLocation = flagSsource; }
+            }
+
         }
 
 

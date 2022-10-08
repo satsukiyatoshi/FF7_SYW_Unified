@@ -49,6 +49,10 @@
             this.graphicsGroupModels3Dw = new System.Windows.Forms.GroupBox();
             this.graphicsModels3Dw = new System.Windows.Forms.ComboBox();
             this.graphicsGroupMenu = new System.Windows.Forms.GroupBox();
+            this.flagGGraphicsMenu = new System.Windows.Forms.PictureBox();
+            this.flagEGraphicsMenu = new System.Windows.Forms.PictureBox();
+            this.flagSGraphicsMenu = new System.Windows.Forms.PictureBox();
+            this.flagFGraphicsMenu = new System.Windows.Forms.PictureBox();
             this.graphicsMenu = new System.Windows.Forms.ComboBox();
             this.graphicsGroupFMV = new System.Windows.Forms.GroupBox();
             this.graphicsFMV = new System.Windows.Forms.ComboBox();
@@ -195,6 +199,10 @@
             this.graphicsGroupModels3Dm.SuspendLayout();
             this.graphicsGroupModels3Dw.SuspendLayout();
             this.graphicsGroupMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagGGraphicsMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagEGraphicsMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagSGraphicsMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagFGraphicsMenu)).BeginInit();
             this.graphicsGroupFMV.SuspendLayout();
             this.graphicsGroupModels3Dc.SuspendLayout();
             this.graphicsGroupModels3Df.SuspendLayout();
@@ -509,16 +517,56 @@
             // graphicsGroupMenu
             // 
             this.graphicsGroupMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupMenu.Controls.Add(this.flagGGraphicsMenu);
+            this.graphicsGroupMenu.Controls.Add(this.flagEGraphicsMenu);
+            this.graphicsGroupMenu.Controls.Add(this.flagSGraphicsMenu);
+            this.graphicsGroupMenu.Controls.Add(this.flagFGraphicsMenu);
             this.graphicsGroupMenu.Controls.Add(this.graphicsMenu);
             this.graphicsGroupMenu.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupMenu.Location = new System.Drawing.Point(260, 88);
+            this.graphicsGroupMenu.Location = new System.Drawing.Point(223, 88);
             this.graphicsGroupMenu.Name = "graphicsGroupMenu";
-            this.graphicsGroupMenu.Size = new System.Drawing.Size(245, 59);
+            this.graphicsGroupMenu.Size = new System.Drawing.Size(282, 59);
             this.graphicsGroupMenu.TabIndex = 12;
             this.graphicsGroupMenu.TabStop = false;
             this.graphicsGroupMenu.Text = "Interface (menus et polices)";
             this.graphicsGroupMenu.MouseEnter += new System.EventHandler(this.graphicsMenuChange);
+            // 
+            // flagGGraphicsMenu
+            // 
+            this.flagGGraphicsMenu.Location = new System.Drawing.Point(202, 35);
+            this.flagGGraphicsMenu.Name = "flagGGraphicsMenu";
+            this.flagGGraphicsMenu.Size = new System.Drawing.Size(36, 18);
+            this.flagGGraphicsMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagGGraphicsMenu.TabIndex = 19;
+            this.flagGGraphicsMenu.TabStop = false;
+            // 
+            // flagEGraphicsMenu
+            // 
+            this.flagEGraphicsMenu.Location = new System.Drawing.Point(202, 14);
+            this.flagEGraphicsMenu.Name = "flagEGraphicsMenu";
+            this.flagEGraphicsMenu.Size = new System.Drawing.Size(36, 18);
+            this.flagEGraphicsMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagEGraphicsMenu.TabIndex = 18;
+            this.flagEGraphicsMenu.TabStop = false;
+            // 
+            // flagSGraphicsMenu
+            // 
+            this.flagSGraphicsMenu.Location = new System.Drawing.Point(240, 35);
+            this.flagSGraphicsMenu.Name = "flagSGraphicsMenu";
+            this.flagSGraphicsMenu.Size = new System.Drawing.Size(36, 18);
+            this.flagSGraphicsMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagSGraphicsMenu.TabIndex = 17;
+            this.flagSGraphicsMenu.TabStop = false;
+            // 
+            // flagFGraphicsMenu
+            // 
+            this.flagFGraphicsMenu.Location = new System.Drawing.Point(240, 14);
+            this.flagFGraphicsMenu.Name = "flagFGraphicsMenu";
+            this.flagFGraphicsMenu.Size = new System.Drawing.Size(36, 18);
+            this.flagFGraphicsMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagFGraphicsMenu.TabIndex = 16;
+            this.flagFGraphicsMenu.TabStop = false;
             // 
             // graphicsMenu
             // 
@@ -529,7 +577,7 @@
             this.graphicsMenu.FormattingEnabled = true;
             this.graphicsMenu.Location = new System.Drawing.Point(9, 23);
             this.graphicsMenu.Name = "graphicsMenu";
-            this.graphicsMenu.Size = new System.Drawing.Size(225, 23);
+            this.graphicsMenu.Size = new System.Drawing.Size(188, 23);
             this.graphicsMenu.TabIndex = 0;
             this.graphicsMenu.SelectedIndexChanged += new System.EventHandler(this.graphicsMenuChange);
             this.graphicsMenu.Click += new System.EventHandler(this.getMousePos);
@@ -542,7 +590,7 @@
             this.graphicsGroupFMV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 88);
             this.graphicsGroupFMV.Name = "graphicsGroupFMV";
-            this.graphicsGroupFMV.Size = new System.Drawing.Size(245, 59);
+            this.graphicsGroupFMV.Size = new System.Drawing.Size(208, 59);
             this.graphicsGroupFMV.TabIndex = 11;
             this.graphicsGroupFMV.TabStop = false;
             this.graphicsGroupFMV.Text = "Cinématiques";
@@ -557,7 +605,7 @@
             this.graphicsFMV.FormattingEnabled = true;
             this.graphicsFMV.Location = new System.Drawing.Point(9, 23);
             this.graphicsFMV.Name = "graphicsFMV";
-            this.graphicsFMV.Size = new System.Drawing.Size(225, 23);
+            this.graphicsFMV.Size = new System.Drawing.Size(188, 23);
             this.graphicsFMV.TabIndex = 0;
             this.graphicsFMV.SelectedIndexChanged += new System.EventHandler(this.graphicsFMVChange);
             this.graphicsFMV.Click += new System.EventHandler(this.getMousePos);
@@ -1774,7 +1822,7 @@
             this.menuSoundPanel.Controls.Add(this.soundFrame4);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Controls.Add(this.soundFrame2);
-            this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
@@ -2183,7 +2231,7 @@
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
-            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 0);
             this.menuFFNxPanel.Name = "menuFFNxPanel";
             this.menuFFNxPanel.Size = new System.Drawing.Size(795, 703);
             this.menuFFNxPanel.TabIndex = 14;
@@ -2290,6 +2338,10 @@
             this.graphicsGroupModels3Dm.ResumeLayout(false);
             this.graphicsGroupModels3Dw.ResumeLayout(false);
             this.graphicsGroupMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.flagGGraphicsMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagEGraphicsMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagSGraphicsMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagFGraphicsMenu)).EndInit();
             this.graphicsGroupFMV.ResumeLayout(false);
             this.graphicsGroupModels3Dc.ResumeLayout(false);
             this.graphicsGroupModels3Df.ResumeLayout(false);
@@ -2486,5 +2538,9 @@
         private ComboBox graphicsModels3Dm;
         private GroupBox graphicsGroupModels3Dw;
         private ComboBox graphicsModels3Dw;
+        private PictureBox flagGGraphicsMenu;
+        private PictureBox flagEGraphicsMenu;
+        private PictureBox flagSGraphicsMenu;
+        private PictureBox flagFGraphicsMenu;
     }
 }

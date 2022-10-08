@@ -18,7 +18,7 @@
         private void gameplayModsChange(object sender, EventArgs e)
         {
             modShowCustom(gameplayMods, @"gameplay\", "gameplay", gameplayHelp, gameplayHelpAuthor, gameplayPrevPic);
-            setModFlags();
+            setModFlags(gameplayFrame1);
         }
 
     }
