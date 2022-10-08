@@ -77,6 +77,7 @@ namespace FF7_SYW_Unified
         //list audio files for the mod
         private void listAudioFiles(string Folder)
         {
+            
             soundsList.Items.Clear();
 
             string[] extensions = new[] { ".mp3", ".ogg", ".minipsf", ".aac", ".wav", ".flac" };
@@ -93,15 +94,20 @@ namespace FF7_SYW_Unified
 
         private void soundsChange(ComboBox soundCombo, string modFolder, string modIndex)
         {
+            
             if (Globals.actualModFolder != getModCustomFolder(soundCombo, modFolder) + @"\files\")
             {
-                modShowCustom(soundsMusics, modFolder, modIndex, soundsHelp, soundsHelpAuthor, soundPrevPic);
+                modShowCustom(soundCombo, modFolder, modIndex, soundsHelp, soundsHelpAuthor, soundPrevPic);
                 Globals.actualModFolder = getModCustomFolder(soundCombo, modFolder) + @"\files\";
+                
                 listAudioFiles(Globals.actualModFolder);
             }
+            
         }
 
 
+
+        private void soundFrame4_MouseLeave(object sender, EventArgs e){playAudioClose();}   
         private void soundsMusicsChange(object sender, EventArgs e) { soundsChange(soundsMusics, @"audio\musics\", "audio.musics"); }
         private void soundsAmbiantChange(object sender, EventArgs e) { soundsChange(soundsAmbients, @"audio\ambients\", "audio.ambients"); }
         private void soundsSfxChange(object sender, EventArgs e) { soundsChange(soundsSfx, @"audio\sfxs\", @"audio.sfxs"); }

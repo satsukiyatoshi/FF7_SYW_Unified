@@ -269,6 +269,14 @@
 		<text>Modèles 3D des combats</text>
 	</control>
 	<control>
+		<name>graphicsGroupModels3Dw</name>
+		<text>Modèles 3D de la mapemonde</text>
+	</control>
+	<control>
+		<name>graphicsGroupModels3Dm</name>
+		<text>Modèles 3D des mini-jeux</text>
+	</control>
+	<control>
 		<name>graphicsGroupFMV</name>
 		<text>Cinématiques</text>
 	</control>

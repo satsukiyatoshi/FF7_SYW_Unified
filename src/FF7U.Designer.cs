@@ -44,7 +44,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.graphicFrame1 = new System.Windows.Forms.GroupBox();
-            this.graphicsLighting = new System.Windows.Forms.CheckBox();
+            this.graphicsGroupModels3Dm = new System.Windows.Forms.GroupBox();
+            this.graphicsModels3Dm = new System.Windows.Forms.ComboBox();
+            this.graphicsGroupModels3Dw = new System.Windows.Forms.GroupBox();
+            this.graphicsModels3Dw = new System.Windows.Forms.ComboBox();
             this.graphicsGroupMenu = new System.Windows.Forms.GroupBox();
             this.graphicsMenu = new System.Windows.Forms.ComboBox();
             this.graphicsGroupFMV = new System.Windows.Forms.GroupBox();
@@ -53,8 +56,6 @@
             this.graphicsModels3Dc = new System.Windows.Forms.ComboBox();
             this.graphicsGroupModels3Df = new System.Windows.Forms.GroupBox();
             this.graphicsModels3Df = new System.Windows.Forms.ComboBox();
-            this.graphicsAlphaBattles = new System.Windows.Forms.CheckBox();
-            this.graphicsAlphaDialogs = new System.Windows.Forms.CheckBox();
             this.graphicsMagics = new System.Windows.Forms.CheckBox();
             this.graphicsBattles = new System.Windows.Forms.CheckBox();
             this.graphicsWorldMap = new System.Windows.Forms.CheckBox();
@@ -169,6 +170,10 @@
             this.gameplayHelpAuthor = new System.Windows.Forms.Label();
             this.gameplayHelp = new System.Windows.Forms.Label();
             this.gameplayFrame1 = new System.Windows.Forms.GroupBox();
+            this.flagSGameplay = new System.Windows.Forms.PictureBox();
+            this.flagGGameplay = new System.Windows.Forms.PictureBox();
+            this.flagFGameplay = new System.Windows.Forms.PictureBox();
+            this.flagEGameplay = new System.Windows.Forms.PictureBox();
             this.gameplayGroupMods = new System.Windows.Forms.GroupBox();
             this.gameplayMods = new System.Windows.Forms.ComboBox();
             this.gameplayFrame3 = new System.Windows.Forms.GroupBox();
@@ -177,10 +182,9 @@
             this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
             this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
-            this.flagFGameplay = new System.Windows.Forms.PictureBox();
-            this.flagEGameplay = new System.Windows.Forms.PictureBox();
-            this.flagSGameplay = new System.Windows.Forms.PictureBox();
-            this.flagGGameplay = new System.Windows.Forms.PictureBox();
+            this.graphicsLighting = new System.Windows.Forms.CheckBox();
+            this.graphicsAlphaBattles = new System.Windows.Forms.CheckBox();
+            this.graphicsAlphaDialogs = new System.Windows.Forms.CheckBox();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
@@ -188,6 +192,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.graphicFrame1.SuspendLayout();
+            this.graphicsGroupModels3Dm.SuspendLayout();
+            this.graphicsGroupModels3Dw.SuspendLayout();
             this.graphicsGroupMenu.SuspendLayout();
             this.graphicsGroupFMV.SuspendLayout();
             this.graphicsGroupModels3Dc.SuspendLayout();
@@ -213,14 +219,15 @@
             this.menuGameplayPanel.SuspendLayout();
             this.gameplayFrame2.SuspendLayout();
             this.gameplayFrame1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagFGameplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagEGameplay)).BeginInit();
             this.gameplayGroupMods.SuspendLayout();
             this.gameplayFrame3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).BeginInit();
             this.menuFFNxPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.flagFGameplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagEGameplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).BeginInit();
+            this.FFNxFrame3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuFrame
@@ -422,13 +429,12 @@
             // 
             // graphicFrame1
             // 
-            this.graphicFrame1.Controls.Add(this.graphicsLighting);
+            this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dm);
+            this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dw);
             this.graphicFrame1.Controls.Add(this.graphicsGroupMenu);
             this.graphicFrame1.Controls.Add(this.graphicsGroupFMV);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dc);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Df);
-            this.graphicFrame1.Controls.Add(this.graphicsAlphaBattles);
-            this.graphicFrame1.Controls.Add(this.graphicsAlphaDialogs);
             this.graphicFrame1.Controls.Add(this.graphicsMagics);
             this.graphicFrame1.Controls.Add(this.graphicsBattles);
             this.graphicFrame1.Controls.Add(this.graphicsWorldMap);
@@ -439,23 +445,66 @@
             this.graphicFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame1.Location = new System.Drawing.Point(3, 4);
             this.graphicFrame1.Name = "graphicFrame1";
-            this.graphicFrame1.Size = new System.Drawing.Size(514, 266);
+            this.graphicFrame1.Size = new System.Drawing.Size(514, 282);
             this.graphicFrame1.TabIndex = 6;
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
             // 
-            // graphicsLighting
+            // graphicsGroupModels3Dm
             // 
-            this.graphicsLighting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.graphicsLighting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.graphicsLighting.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.graphicsLighting.Location = new System.Drawing.Point(11, 110);
-            this.graphicsLighting.Name = "graphicsLighting";
-            this.graphicsLighting.Size = new System.Drawing.Size(245, 19);
-            this.graphicsLighting.TabIndex = 13;
-            this.graphicsLighting.Text = "Ombres dynamiques";
-            this.graphicsLighting.UseVisualStyleBackColor = false;
-            this.graphicsLighting.MouseEnter += new System.EventHandler(this.graphicsLighting_MouseEnter);
+            this.graphicsGroupModels3Dm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupModels3Dm.Controls.Add(this.graphicsModels3Dm);
+            this.graphicsGroupModels3Dm.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsGroupModels3Dm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicsGroupModels3Dm.Location = new System.Drawing.Point(260, 212);
+            this.graphicsGroupModels3Dm.Name = "graphicsGroupModels3Dm";
+            this.graphicsGroupModels3Dm.Size = new System.Drawing.Size(245, 59);
+            this.graphicsGroupModels3Dm.TabIndex = 14;
+            this.graphicsGroupModels3Dm.TabStop = false;
+            this.graphicsGroupModels3Dm.Text = "Modèles 3D des mini-jeux";
+            this.graphicsGroupModels3Dm.MouseEnter += new System.EventHandler(this.graphicsModels3DmChange);
+            // 
+            // graphicsModels3Dm
+            // 
+            this.graphicsModels3Dm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.graphicsModels3Dm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsModels3Dm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.graphicsModels3Dm.ForeColor = System.Drawing.Color.White;
+            this.graphicsModels3Dm.FormattingEnabled = true;
+            this.graphicsModels3Dm.Location = new System.Drawing.Point(9, 23);
+            this.graphicsModels3Dm.Name = "graphicsModels3Dm";
+            this.graphicsModels3Dm.Size = new System.Drawing.Size(225, 23);
+            this.graphicsModels3Dm.TabIndex = 0;
+            this.graphicsModels3Dm.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3DmChange);
+            this.graphicsModels3Dm.Click += new System.EventHandler(this.getMousePos);
+            // 
+            // graphicsGroupModels3Dw
+            // 
+            this.graphicsGroupModels3Dw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupModels3Dw.Controls.Add(this.graphicsModels3Dw);
+            this.graphicsGroupModels3Dw.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsGroupModels3Dw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicsGroupModels3Dw.Location = new System.Drawing.Point(11, 212);
+            this.graphicsGroupModels3Dw.Name = "graphicsGroupModels3Dw";
+            this.graphicsGroupModels3Dw.Size = new System.Drawing.Size(245, 59);
+            this.graphicsGroupModels3Dw.TabIndex = 13;
+            this.graphicsGroupModels3Dw.TabStop = false;
+            this.graphicsGroupModels3Dw.Text = "Modèles 3D de la mapemonde";
+            this.graphicsGroupModels3Dw.MouseEnter += new System.EventHandler(this.graphicsModels3DwChange);
+            // 
+            // graphicsModels3Dw
+            // 
+            this.graphicsModels3Dw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.graphicsModels3Dw.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsModels3Dw.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.graphicsModels3Dw.ForeColor = System.Drawing.Color.White;
+            this.graphicsModels3Dw.FormattingEnabled = true;
+            this.graphicsModels3Dw.Location = new System.Drawing.Point(9, 23);
+            this.graphicsModels3Dw.Name = "graphicsModels3Dw";
+            this.graphicsModels3Dw.Size = new System.Drawing.Size(225, 23);
+            this.graphicsModels3Dw.TabIndex = 0;
+            this.graphicsModels3Dw.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3DwChange);
+            this.graphicsModels3Dw.Click += new System.EventHandler(this.getMousePos);
             // 
             // graphicsGroupMenu
             // 
@@ -463,7 +512,7 @@
             this.graphicsGroupMenu.Controls.Add(this.graphicsMenu);
             this.graphicsGroupMenu.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupMenu.Location = new System.Drawing.Point(260, 194);
+            this.graphicsGroupMenu.Location = new System.Drawing.Point(260, 88);
             this.graphicsGroupMenu.Name = "graphicsGroupMenu";
             this.graphicsGroupMenu.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupMenu.TabIndex = 12;
@@ -491,7 +540,7 @@
             this.graphicsGroupFMV.Controls.Add(this.graphicsFMV);
             this.graphicsGroupFMV.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupFMV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 194);
+            this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 88);
             this.graphicsGroupFMV.Name = "graphicsGroupFMV";
             this.graphicsGroupFMV.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupFMV.TabIndex = 11;
@@ -519,7 +568,7 @@
             this.graphicsGroupModels3Dc.Controls.Add(this.graphicsModels3Dc);
             this.graphicsGroupModels3Dc.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupModels3Dc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupModels3Dc.Location = new System.Drawing.Point(260, 132);
+            this.graphicsGroupModels3Dc.Location = new System.Drawing.Point(260, 150);
             this.graphicsGroupModels3Dc.Name = "graphicsGroupModels3Dc";
             this.graphicsGroupModels3Dc.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupModels3Dc.TabIndex = 10;
@@ -547,7 +596,7 @@
             this.graphicsGroupModels3Df.Controls.Add(this.graphicsModels3Df);
             this.graphicsGroupModels3Df.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupModels3Df.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupModels3Df.Location = new System.Drawing.Point(11, 132);
+            this.graphicsGroupModels3Df.Location = new System.Drawing.Point(11, 150);
             this.graphicsGroupModels3Df.Name = "graphicsGroupModels3Df";
             this.graphicsGroupModels3Df.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupModels3Df.TabIndex = 9;
@@ -568,32 +617,6 @@
             this.graphicsModels3Df.TabIndex = 0;
             this.graphicsModels3Df.SelectedIndexChanged += new System.EventHandler(this.graphicsModels3DfChange);
             this.graphicsModels3Df.Click += new System.EventHandler(this.getMousePos);
-            // 
-            // graphicsAlphaBattles
-            // 
-            this.graphicsAlphaBattles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.graphicsAlphaBattles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.graphicsAlphaBattles.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.graphicsAlphaBattles.Location = new System.Drawing.Point(260, 88);
-            this.graphicsAlphaBattles.Name = "graphicsAlphaBattles";
-            this.graphicsAlphaBattles.Size = new System.Drawing.Size(245, 19);
-            this.graphicsAlphaBattles.TabIndex = 8;
-            this.graphicsAlphaBattles.Text = "Fenêtres de combat translusides";
-            this.graphicsAlphaBattles.UseVisualStyleBackColor = false;
-            this.graphicsAlphaBattles.MouseEnter += new System.EventHandler(this.graphicsAlphaBattles_MouseEnter);
-            // 
-            // graphicsAlphaDialogs
-            // 
-            this.graphicsAlphaDialogs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.graphicsAlphaDialogs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.graphicsAlphaDialogs.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.graphicsAlphaDialogs.Location = new System.Drawing.Point(11, 88);
-            this.graphicsAlphaDialogs.Name = "graphicsAlphaDialogs";
-            this.graphicsAlphaDialogs.Size = new System.Drawing.Size(245, 19);
-            this.graphicsAlphaDialogs.TabIndex = 7;
-            this.graphicsAlphaDialogs.Text = "Fenêtres de dialogue translusides";
-            this.graphicsAlphaDialogs.UseVisualStyleBackColor = false;
-            this.graphicsAlphaDialogs.MouseEnter += new System.EventHandler(this.graphicsAlphaDialogs_MouseEnter);
             // 
             // graphicsMagics
             // 
@@ -678,9 +701,9 @@
             this.graphicFrame3.Controls.Add(this.graphicPrevPic);
             this.graphicFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame3.Location = new System.Drawing.Point(3, 276);
+            this.graphicFrame3.Location = new System.Drawing.Point(3, 289);
             this.graphicFrame3.Name = "graphicFrame3";
-            this.graphicFrame3.Size = new System.Drawing.Size(788, 427);
+            this.graphicFrame3.Size = new System.Drawing.Size(788, 414);
             this.graphicFrame3.TabIndex = 9;
             this.graphicFrame3.TabStop = false;
             this.graphicFrame3.Text = "Aperçu";
@@ -689,7 +712,7 @@
             // 
             this.graphicPrevPic.Location = new System.Drawing.Point(11, 22);
             this.graphicPrevPic.Name = "graphicPrevPic";
-            this.graphicPrevPic.Size = new System.Drawing.Size(765, 389);
+            this.graphicPrevPic.Size = new System.Drawing.Size(765, 378);
             this.graphicPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.graphicPrevPic.TabIndex = 0;
             this.graphicPrevPic.TabStop = false;
@@ -712,7 +735,7 @@
             this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame2.Location = new System.Drawing.Point(526, 4);
             this.graphicFrame2.Name = "graphicFrame2";
-            this.graphicFrame2.Size = new System.Drawing.Size(265, 266);
+            this.graphicFrame2.Size = new System.Drawing.Size(265, 282);
             this.graphicFrame2.TabIndex = 10;
             this.graphicFrame2.TabStop = false;
             this.graphicFrame2.Text = "Aide";
@@ -723,7 +746,7 @@
             this.graphicsHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.graphicsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 231);
+            this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 249);
             this.graphicsHelpAuthor.Name = "graphicsHelpAuthor";
             this.graphicsHelpAuthor.Size = new System.Drawing.Size(241, 22);
             this.graphicsHelpAuthor.TabIndex = 1;
@@ -738,7 +761,7 @@
             this.graphicsHelp.Location = new System.Drawing.Point(12, 21);
             this.graphicsHelp.Name = "graphicsHelp";
             this.graphicsHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.graphicsHelp.Size = new System.Drawing.Size(241, 210);
+            this.graphicsHelp.Size = new System.Drawing.Size(241, 228);
             this.graphicsHelp.TabIndex = 0;
             // 
             // menuAboutPanel
@@ -1751,7 +1774,7 @@
             this.menuSoundPanel.Controls.Add(this.soundFrame4);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Controls.Add(this.soundFrame2);
-            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
@@ -1788,6 +1811,7 @@
             this.soundFrame4.TabIndex = 11;
             this.soundFrame4.TabStop = false;
             this.soundFrame4.Text = "Aperçu audio";
+            this.soundFrame4.MouseLeave += new System.EventHandler(this.soundFrame4_MouseLeave);
             // 
             // soundsListHelp
             // 
@@ -2011,7 +2035,7 @@
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame2);
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame1);
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame3);
-            this.menuGameplayPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuGameplayPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuGameplayPanel.Name = "menuGameplayPanel";
             this.menuGameplayPanel.Size = new System.Drawing.Size(795, 703);
             this.menuGameplayPanel.TabIndex = 13;
@@ -2068,6 +2092,42 @@
             this.gameplayFrame1.TabIndex = 6;
             this.gameplayFrame1.TabStop = false;
             this.gameplayFrame1.Text = "Mods de gameplay";
+            // 
+            // flagSGameplay
+            // 
+            this.flagSGameplay.Location = new System.Drawing.Point(724, 54);
+            this.flagSGameplay.Name = "flagSGameplay";
+            this.flagSGameplay.Size = new System.Drawing.Size(52, 26);
+            this.flagSGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagSGameplay.TabIndex = 14;
+            this.flagSGameplay.TabStop = false;
+            // 
+            // flagGGameplay
+            // 
+            this.flagGGameplay.Location = new System.Drawing.Point(667, 54);
+            this.flagGGameplay.Name = "flagGGameplay";
+            this.flagGGameplay.Size = new System.Drawing.Size(52, 26);
+            this.flagGGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagGGameplay.TabIndex = 13;
+            this.flagGGameplay.TabStop = false;
+            // 
+            // flagFGameplay
+            // 
+            this.flagFGameplay.Location = new System.Drawing.Point(724, 22);
+            this.flagFGameplay.Name = "flagFGameplay";
+            this.flagFGameplay.Size = new System.Drawing.Size(52, 26);
+            this.flagFGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagFGameplay.TabIndex = 12;
+            this.flagFGameplay.TabStop = false;
+            // 
+            // flagEGameplay
+            // 
+            this.flagEGameplay.Location = new System.Drawing.Point(667, 22);
+            this.flagEGameplay.Name = "flagEGameplay";
+            this.flagEGameplay.Size = new System.Drawing.Size(52, 26);
+            this.flagEGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagEGameplay.TabIndex = 11;
+            this.flagEGameplay.TabStop = false;
             // 
             // gameplayGroupMods
             // 
@@ -2152,6 +2212,9 @@
             // 
             // FFNxFrame3
             // 
+            this.FFNxFrame3.Controls.Add(this.graphicsLighting);
+            this.FFNxFrame3.Controls.Add(this.graphicsAlphaBattles);
+            this.FFNxFrame3.Controls.Add(this.graphicsAlphaDialogs);
             this.FFNxFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FFNxFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.FFNxFrame3.Location = new System.Drawing.Point(3, 289);
@@ -2161,41 +2224,41 @@
             this.FFNxFrame3.TabStop = false;
             this.FFNxFrame3.Text = "Configuration du pilote FFNx";
             // 
-            // flagFGameplay
+            // graphicsLighting
             // 
-            this.flagFGameplay.Location = new System.Drawing.Point(724, 22);
-            this.flagFGameplay.Name = "flagFGameplay";
-            this.flagFGameplay.Size = new System.Drawing.Size(52, 26);
-            this.flagFGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagFGameplay.TabIndex = 12;
-            this.flagFGameplay.TabStop = false;
+            this.graphicsLighting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsLighting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsLighting.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsLighting.Location = new System.Drawing.Point(6, 44);
+            this.graphicsLighting.Name = "graphicsLighting";
+            this.graphicsLighting.Size = new System.Drawing.Size(245, 19);
+            this.graphicsLighting.TabIndex = 16;
+            this.graphicsLighting.Text = "Ombres dynamiques";
+            this.graphicsLighting.UseVisualStyleBackColor = false;
             // 
-            // flagEGameplay
+            // graphicsAlphaBattles
             // 
-            this.flagEGameplay.Location = new System.Drawing.Point(667, 22);
-            this.flagEGameplay.Name = "flagEGameplay";
-            this.flagEGameplay.Size = new System.Drawing.Size(52, 26);
-            this.flagEGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagEGameplay.TabIndex = 11;
-            this.flagEGameplay.TabStop = false;
+            this.graphicsAlphaBattles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsAlphaBattles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsAlphaBattles.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsAlphaBattles.Location = new System.Drawing.Point(255, 22);
+            this.graphicsAlphaBattles.Name = "graphicsAlphaBattles";
+            this.graphicsAlphaBattles.Size = new System.Drawing.Size(245, 19);
+            this.graphicsAlphaBattles.TabIndex = 15;
+            this.graphicsAlphaBattles.Text = "Fenêtres de combat translusides";
+            this.graphicsAlphaBattles.UseVisualStyleBackColor = false;
             // 
-            // flagSGameplay
+            // graphicsAlphaDialogs
             // 
-            this.flagSGameplay.Location = new System.Drawing.Point(724, 54);
-            this.flagSGameplay.Name = "flagSGameplay";
-            this.flagSGameplay.Size = new System.Drawing.Size(52, 26);
-            this.flagSGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagSGameplay.TabIndex = 14;
-            this.flagSGameplay.TabStop = false;
-            // 
-            // flagGGameplay
-            // 
-            this.flagGGameplay.Location = new System.Drawing.Point(667, 54);
-            this.flagGGameplay.Name = "flagGGameplay";
-            this.flagGGameplay.Size = new System.Drawing.Size(52, 26);
-            this.flagGGameplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagGGameplay.TabIndex = 13;
-            this.flagGGameplay.TabStop = false;
+            this.graphicsAlphaDialogs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsAlphaDialogs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsAlphaDialogs.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsAlphaDialogs.Location = new System.Drawing.Point(6, 22);
+            this.graphicsAlphaDialogs.Name = "graphicsAlphaDialogs";
+            this.graphicsAlphaDialogs.Size = new System.Drawing.Size(245, 19);
+            this.graphicsAlphaDialogs.TabIndex = 14;
+            this.graphicsAlphaDialogs.Text = "Fenêtres de dialogue translusides";
+            this.graphicsAlphaDialogs.UseVisualStyleBackColor = false;
             // 
             // FF7U
             // 
@@ -2224,6 +2287,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.graphicFrame1.ResumeLayout(false);
+            this.graphicsGroupModels3Dm.ResumeLayout(false);
+            this.graphicsGroupModels3Dw.ResumeLayout(false);
             this.graphicsGroupMenu.ResumeLayout(false);
             this.graphicsGroupFMV.ResumeLayout(false);
             this.graphicsGroupModels3Dc.ResumeLayout(false);
@@ -2250,14 +2315,15 @@
             this.menuGameplayPanel.ResumeLayout(false);
             this.gameplayFrame2.ResumeLayout(false);
             this.gameplayFrame1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagFGameplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagEGameplay)).EndInit();
             this.gameplayGroupMods.ResumeLayout(false);
             this.gameplayFrame3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).EndInit();
             this.menuFFNxPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.flagFGameplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagEGameplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).EndInit();
+            this.FFNxFrame3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2370,8 +2436,6 @@
         private Label graphicsHelp;
         private PictureBox graphicPrevPic;
         private Label graphicsHelpAuthor;
-        private CheckBox graphicsAlphaBattles;
-        private CheckBox graphicsAlphaDialogs;
         private CheckBox graphicsMagics;
         private CheckBox graphicsBattles;
         private CheckBox graphicsWorldMap;
@@ -2385,7 +2449,6 @@
         private ComboBox graphicsMenu;
         private GroupBox graphicsGroupFMV;
         private ComboBox graphicsFMV;
-        private CheckBox graphicsLighting;
         private GroupBox soundsGroupFMV;
         private ComboBox soundsFMV;
         private GroupBox soundsGroupAmbients;
@@ -2416,5 +2479,12 @@
         private PictureBox flagGGameplay;
         private PictureBox flagFGameplay;
         private PictureBox flagEGameplay;
+        private CheckBox graphicsLighting;
+        private CheckBox graphicsAlphaBattles;
+        private CheckBox graphicsAlphaDialogs;
+        private GroupBox graphicsGroupModels3Dm;
+        private ComboBox graphicsModels3Dm;
+        private GroupBox graphicsGroupModels3Dw;
+        private ComboBox graphicsModels3Dw;
     }
 }
