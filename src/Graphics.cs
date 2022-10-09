@@ -35,12 +35,12 @@ namespace FF7_SYW_Unified
         }
 
 
-        private void graphicsFields_MouseEnter(object sender, EventArgs e) { modShow("fields"); }
-        private void graphicsAnimations_MouseEnter(object sender, EventArgs e) { modShow("animations"); }
-        private void graphicsBattles_MouseEnter(object sender, EventArgs e) { modShow("battles"); }
-        private void graphicsMagics_MouseEnter(object sender, EventArgs e) { modShow("magics"); }
-        private void graphicsWorldMap_MouseEnter(object sender, EventArgs e) { modShow("worldmap"); }
-        private void graphicsMiniGames_MouseEnter(object sender, EventArgs e) { modShow("minigames"); }
+        private void graphicsFields_MouseEnter(object sender, EventArgs e) { modShow("graphicsFields", graphicsHelp, graphicsHelpAuthor); }
+        private void graphicsAnimations_MouseEnter(object sender, EventArgs e) { modShow("graphicsAnimations", graphicsHelp, graphicsHelpAuthor); }
+        private void graphicsBattles_MouseEnter(object sender, EventArgs e) { modShow("graphicsBattles", graphicsHelp, graphicsHelpAuthor); }
+        private void graphicsMagics_MouseEnter(object sender, EventArgs e) { modShow("graphicsMagics", graphicsHelp, graphicsHelpAuthor); }
+        private void graphicsWorldMap_MouseEnter(object sender, EventArgs e) { modShow("graphicsWorldMap", graphicsHelp, graphicsHelpAuthor); }
+        private void graphicsMiniGames_MouseEnter(object sender, EventArgs e) { modShow("graphicsMiniGames", graphicsHelp, graphicsHelpAuthor); }
 
 
         private void graphicsModels3DfChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", "models.fields", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }

@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
+<!--  -->
+<!-- Generic worlds and GUI messages -->
+<!--  -->
 	<control>
 		<name>donation</name>
 		<text>donation</text>
@@ -24,6 +27,12 @@
 		<name>vanilla</name>
 		<text>Jeu de base</text>
 	</control>
+	
+	
+	
+<!--  -->
+<!-- Left menu  -->	
+<!--  -->
 	<control>
 		<name>interfaceLang</name>
 		<text>Langue de l'interface</text>
@@ -60,6 +69,12 @@
 		<name>launchGame</name>
 		<text>Jouer à FF7 SYW</text>
 	</control>
+	
+	
+	
+<!--  -->	
+<!-- About part -->	
+<!--  -->
 	<control>
 		<name>aboutFrame1</name>
 		<text>Auteurs</text>
@@ -158,6 +173,12 @@
 		
 		De plus, le pack contient diverses options de configuration poussées et patchs divers comme les fonctions de sauvegarde en tout lieu, se déplacer automatiquement en courant, désactiver les combats aléatoires, l’avance rapide, des défis et mods de difficulté en tout genre... tout ça pour offrir une expérience et un confort de jeu inédit.</text>
 	</control>	
+	
+	
+	
+<!--  -->	
+<!-- Graphical mods part -->
+<!--  -->	
 	<control>
 		<name>graphicFrame1</name>
 		<text>Mods graphiques</text>
@@ -165,76 +186,46 @@
 	<control>
 		<name>graphicsFields</name>
 		<text>Scènes du jeux HD</text>
-	</control>
-		<control>
-		<name>fields</name>
-		<text>Scènes du jeu refaites en HD.
+		<help>Scènes du jeu refaites en HD.
 		La base est traitée avec une IA ESRGan.
-		Beaucoup d'optimisations à la main</text>
+		Beaucoup d'optimisations à la main</help>
+		<author>Satsuki_Yatoshi et Aavock</author>
+		<url>https://ff7.fr/forum/</url>
 	</control>
 	<control>
-		<name>fields author</name>
-		<text>Satsuki_Yatoshi et Aavock</text>
-	</control>
-		<control>
 		<name>graphicsAnimations</name>
 		<text>Animations avancées</text>
-	</control>
-	<control>
-		<name>animations</name>
-		<text>description de animations avancées</text>
-	</control>
-	<control>
-		<name>animations author</name>
-		<text>Satsuki_Yatoshi</text>
+		<help>go!!!!!!!!!!!!!</help>
+		<author>Satsuki_Yatoshi et Aavock</author>
+		<url>https://ff7.fr/forum/</url>
 	</control>
 	<control>
 		<name>graphicsBattles</name>
 		<text>Scènes de combat HD</text>
-	</control>
-	<control>
-		<name>battles</name>
-		<text>battle description</text>
-	</control>
-	<control>
-		<name>battles author</name>
-		<text>Satsuki_Yatoshi</text>
+		<help>tout en hd</help>
+		<author>Satsuki_Yatoshi</author>
+		<url></url>
 	</control>
 	<control>
 		<name>graphicsMagics</name>
 		<text>Magies de combat HD</text>
-	</control>
-	<control>
-		<name>magics</name>
-		<text>magics description</text>
-	</control>
-	<control>
-		<name>magics author</name>
-		<text>Kela51 et Satsuki_Yatoshi</text>
+		<help>magies et sfx en hd</help>
+		<author>Kela51 et Satsuki_Yatoshi</author>
+		<url></url>
 	</control>
 	<control>
 		<name>graphicsWorldMap</name>
 		<text>Carte du monde HD</text>
-	</control>
-	<control>
-		<name>worldmap</name>
-		<text>worldmap description</text>
-	</control>
-	<control>
-		<name>worldmap author</name>
-		<text>Satsuki_Yatoshi</text>
+		<help>boffff</help>
+		<author>Satsuki_Yatoshi</author>
+		<url></url>
 	</control>
 	<control>
 		<name>graphicsMiniGames</name>
 		<text>Mini-jeux HD</text>
-	</control>
-	<control>
-		<name>minigames</name>
-		<text>mini jeu description</text>
-	</control>
-	<control>
-		<name>minigames author</name>
-		<text>Aavock et Satsuki_Yatoshi</text>
+		<author>Aavock</author>
+		<help>mini jeu description</help>
+		<url>http://google.fr</url>
 	</control>
 	<control>
 		<name>graphicsGroupModels3Df</name>
@@ -260,6 +251,21 @@
 		<name>graphicsGroupMenu</name>
 		<text>Interface (menus et polices)</text>
 	</control>
+		<control>
+		<name>graphicFrame2</name>
+		<text>Informations</text>
+	</control>
+	<control>
+		<name>graphicFrame3</name>
+		<text>Aperçu</text>
+	</control>
+	<control>
+		
+	
+	
+<!--  -->	
+<!-- Audio mods part -->
+<!--  -->
 	<control>
 		<name>soundsGroupMusics</name>
 		<text>Musiques du jeu</text>
@@ -286,19 +292,6 @@
 		Il vous suffit de cliquer une fois sur le fichier de votre choix pour pourvoir l'écouter.
 		Cela peut prendre quelques instants pour ce lancer.</text>
 	</control>
-	<control>
-		<name>gameplayGroupMods</name>
-		<text>Mod de gameplay</text>
-	</control>
-	<control>
-		<name>graphicFrame2</name>
-		<text>Informations</text>
-	</control>
-	<control>
-		<name>graphicFrame3</name>
-		<text>Aperçu</text>
-	</control>
-	<control>
 		<name>soundFrame1</name>
 		<text></text>
 	</control>
@@ -309,7 +302,17 @@
 	<control>
 		<name>soundFrame4</name>
 		<text>Aperçu audio</text>
-	</control>	
+	</control>
+	
+	
+	
+<!--  -->	
+<!-- Gameplay mods part -->
+<!--  -->	
+	<control>
+		<name>gameplayGroupMods</name>
+		<text>Mod de gameplay</text>
+	</control>
 	<control>
 		<name>gameplayFrame1</name>
 		<text>Mods de gameplay</text>
@@ -322,6 +325,12 @@
 		<name>gameplayFrame3</name>
 		<text>Aperçu</text>
 	<control>
+	
+	
+	
+<!--  -->	
+<!-- FFNx mods part -->
+<!--  -->
 	</control>
 		<name>FFNxFrame1</name>
 		<text>Patchs mémoire</text>
@@ -338,98 +347,156 @@
 	<control>
 		<name>FFNxGroup3dEngine</name>
 		<text>Moteur de rendu</text>
+		<author></author>
+		<help>D3d ou vulkan</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupScreen</name>
 		<text>Affichage</text>
+		<author>TO</author>
+		<help>Plein écran ou fenetré ou sans bordure</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupResolution</name>
 		<text>Résolution d'écran</text>
+		<author></author>
+		<help>bah c'est ça</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupRatio</name>
 		<text>Format d'affichage</text>
+		<author>TO</author>
+		<help>16/9 ou wide ou 4/3</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>
 		<text>Résolution interne</text>
-	</control>
-	<control>
-		<name>FFNxAlphaDialogs</name>
-		<text>Fenêtres de dialogue translucides</text>
-	</control>
-	<control>
-		<name>FFNxAlphaBattles</name>
-		<text>Fenêtres de combat translucides</text>
+		<author></author>
+		<help>internal resolution</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxLightingLighting</name>
 		<text>Ombres dynamiques</text>
+		<author></author>
+		<help>ça light des ombres</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxVsync</name>
 		<text>Synchronisation verticale</text>
+		<author></author>
+		<help>Vsych</help>
+		<url>ecran</url>
 	</control>
 	<control>
 		<name>FFNxGroupAA</name>
 		<text>Anti-Aliasing</text>
+		<author>checkurtl</author>
+		<help>haha</help>
+		<url>ff7.fr</url>
 	</control>
 	<control>
 		<name>FFNxAnisotropic</name>
 		<text>Filtrage anisotrope</text>
+		<author></author>
+		<help>anisott</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupHDR</name>
 		<text>HDR Nits</text>
+		<author>not me</author>
+		<help>hdr</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupAudioChannels</name>
 		<text>Canaux audio</text>
+		<author>le lourdingue</author>
+		<help>5.1</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupAudioSample</name>
 		<text>Taux d'échantillonnage audio</text>
+		<author>1 bit system</author>
+		<help>44.1k</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNXMusicResume</name>
 		<text>Reprendre les musiques</text>
+		<author>lo</author>
+		<help>résumé</help>
+		<url></url>
 	</control>
 	<control>
-		<name>FFNxAnalogControler</name>
+		<name>FFNxAnalogController</name>
 		<text>Contôleur analogique</text>
+		<author>Sifr</author>
+		<help>Analogg</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNXSteamSucces</name>
 		<text>Succès Steam</text>
+		<author>frt</author>
+		<help>steam succ</help>
+		<url></url>
 	</control>
 	<control>
-		<name>FFNxGroupContolerDeathzones</name>
+		<name>FFNxGroupControllerDeathzones</name>
 		<text>Zone morte de la manette (stick, LT, RT)</text>
+		<author>joy</author>
+		<help>deathZ</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupSpeedhack</name>
 		<text>Speedhack (step, minimum, maximum)</text>
+		<author>fast</author>
+		<help>speedhack</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupFps</name>
 		<text>Fluidité du jeu (fps)</text>
+		<author>smooth</author>
+		<help>60fps</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxShowStats</name>
 		<text>Afficher les informations de FFNx</text>
+		<author>TO</author>
+		<help>ffnx details</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxDebugTool</name>
 		<text>Outil de debug</text>
+		<author>dbg</author>
+		<help>f12</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxLogs</name>
 		<text>Logs complets</text>
+		<author>logs</author>
+		<help>full log slow</help>
+		<url></url>
 	</control>
 	<control>
 		<name>FFNxFootSteps</name>
 		<text>Activer les bruits de pas</text>
+		<author>cosmo</author>
+		<help>in the night footsteps...</help>
+		<url></url>
 	</control>
 	<control>
 		<name></name>

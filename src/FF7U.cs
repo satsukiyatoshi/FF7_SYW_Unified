@@ -47,12 +47,13 @@ namespace FF7_SYW_Unified
         }
 
 
-        //display preview picture and description for SYW mods
-        private void modShow(string name)
+        //display preview picture and description for SYW mods and FFNx options
+        private void modShow(string name, Label help, Label author)
         {
             graphicPrevPic.ImageLocation = Application.StartupPath + @"Mods\SYW\Prev\" + name + ".jpg";
-            graphicsHelp.Text = translate(name, Globals.translateUI);
-            graphicsHelpAuthor.Text = translate(name + " author", Globals.translateUI);
+            help.Text = translate(name + "help", Globals.translateUI);
+            author.Text = translate(name + "author", Globals.translateUI);
+            Globals.actualModUrl = translate(name + "url", Globals.translateUI);
         }
 
 
@@ -60,13 +61,24 @@ namespace FF7_SYW_Unified
         private void getMousePos(object sender, EventArgs e) { Globals.mouseY = Cursor.Position.Y; }
 
 
-        //display preview picture and description for combobox mods
+        //restore mouse Y postion
+        private void restoreMouse()
+        {
+            if (Globals.mouseY != 0)
+            {
+                Cursor.Position = new System.Drawing.Point(Cursor.Position.X, Globals.mouseY);
+                Globals.mouseY = 0;
+            }
+        }
+
+
+        //display preview picture and description for combobox custom mods
         static void modShowCustom(ComboBox combo, string folderwSource, string modType, Label helpLabel, Label authorLabel, PictureBox prevPic)
         {
             string folderMod = "";
             string modDir = "";
 
-            //resore mouse Y postion on combo before display mods information to avoid to display other mods information on-hover
+            //restore mouse Y postion on combo before display mods information to avoid to display other mods information on-hover
             if (Globals.mouseY != 0)
             {
                 Cursor.Position = new System.Drawing.Point (Cursor.Position.X, Globals.mouseY);

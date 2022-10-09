@@ -117,6 +117,10 @@ namespace FF7_SYW_Unified
         {
             string ctrlName = "" ;
             string ctrlText = "" ;
+            string ctrlHelp = "";
+            string ctrlUrl = "";
+            string ctrlAuthor = "";
+            Boolean isendelement = false;
 
             if (!File.Exists(fileLang))
             {
@@ -138,19 +142,35 @@ namespace FF7_SYW_Unified
                             case "text":
                                 ctrlText = reader.ReadString();
                                 break;
+                            case "help":
+                                ctrlHelp = reader.ReadString();
+                                break;
+                            case "url":
+                                ctrlUrl = reader.ReadString();
+                                break;
+                            case "author":
+                                ctrlAuthor = reader.ReadString();
+                                break;
                             case "control":
-                                ctrlName = "";
-                                ctrlText = "";
+                                isendelement = true;
                                 break;
                         }
                     }
 
-                    if (ctrlName != "" && ctrlText != "")
+                    if (isendelement)
                     {
                         trans.Add((ctrlName + modName, ctrlText));
+                        trans.Add((ctrlName + modName + "help", ctrlHelp));
+                        trans.Add((ctrlName + modName + "url", ctrlUrl));
+                        trans.Add((ctrlName + modName + "author", ctrlAuthor));
                         ctrlName = "";
                         ctrlText = "";
+                        ctrlHelp = "";
+                        ctrlUrl = "";
+                        ctrlAuthor = "";
+                        isendelement = false;
                     }
+
                 }
 
             }

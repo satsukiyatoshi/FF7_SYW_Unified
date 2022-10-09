@@ -204,7 +204,7 @@
             this.FFNxSpeedhackMax = new System.Windows.Forms.ComboBox();
             this.FFNxSpeedhackMin = new System.Windows.Forms.ComboBox();
             this.FFNxSpeedhackStep = new System.Windows.Forms.ComboBox();
-            this.FFNxGroupContolerDeathzones = new System.Windows.Forms.GroupBox();
+            this.FFNxGroupControllerDeathzones = new System.Windows.Forms.GroupBox();
             this.FFNxContolerDeathzoneRT = new System.Windows.Forms.ComboBox();
             this.FFNxContolerDeathzoneLT = new System.Windows.Forms.ComboBox();
             this.FFNxContolerDeathzoneStick = new System.Windows.Forms.ComboBox();
@@ -227,7 +227,7 @@
             this.FFNxVsync = new System.Windows.Forms.CheckBox();
             this.FFNXMusicResume = new System.Windows.Forms.CheckBox();
             this.FFNxAnisotropic = new System.Windows.Forms.CheckBox();
-            this.FFNxAnalogControler = new System.Windows.Forms.CheckBox();
+            this.FFNxAnalogController = new System.Windows.Forms.CheckBox();
             this.FFNXSteamSucces = new System.Windows.Forms.CheckBox();
             this.FFNxGroup3dEngine = new System.Windows.Forms.GroupBox();
             this.FFNx3dEngine = new System.Windows.Forms.ComboBox();
@@ -287,7 +287,7 @@
             this.FFNxFrame3.SuspendLayout();
             this.FFNxGroupFps.SuspendLayout();
             this.FFNxGroupSpeedhack.SuspendLayout();
-            this.FFNxGroupContolerDeathzones.SuspendLayout();
+            this.FFNxGroupControllerDeathzones.SuspendLayout();
             this.FFNxGroupAudioSample.SuspendLayout();
             this.FFNxGroupIR.SuspendLayout();
             this.FFNxGroupAudioChannels.SuspendLayout();
@@ -2321,6 +2321,7 @@
             this.FFNxHelpAuthor.Size = new System.Drawing.Size(244, 22);
             this.FFNxHelpAuthor.TabIndex = 3;
             this.FFNxHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FFNxHelpAuthor.Click += new System.EventHandler(this.FFNxHelpAuthor_Click);
             // 
             // FFNxHelp
             // 
@@ -2418,7 +2419,7 @@
             this.FFNxFrame3.Controls.Add(this.FFNxFootSteps);
             this.FFNxFrame3.Controls.Add(this.FFNxLogs);
             this.FFNxFrame3.Controls.Add(this.FFNxGroupSpeedhack);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupContolerDeathzones);
+            this.FFNxFrame3.Controls.Add(this.FFNxGroupControllerDeathzones);
             this.FFNxFrame3.Controls.Add(this.FFNxGroupAudioSample);
             this.FFNxFrame3.Controls.Add(this.FFNxGroupIR);
             this.FFNxFrame3.Controls.Add(this.FFNxGroupAudioChannels);
@@ -2430,7 +2431,7 @@
             this.FFNxFrame3.Controls.Add(this.FFNxVsync);
             this.FFNxFrame3.Controls.Add(this.FFNXMusicResume);
             this.FFNxFrame3.Controls.Add(this.FFNxAnisotropic);
-            this.FFNxFrame3.Controls.Add(this.FFNxAnalogControler);
+            this.FFNxFrame3.Controls.Add(this.FFNxAnalogController);
             this.FFNxFrame3.Controls.Add(this.FFNXSteamSucces);
             this.FFNxFrame3.Controls.Add(this.FFNxGroup3dEngine);
             this.FFNxFrame3.Controls.Add(this.FFNxLighting);
@@ -2567,20 +2568,20 @@
             this.FFNxSpeedhackStep.Size = new System.Drawing.Size(76, 23);
             this.FFNxSpeedhackStep.TabIndex = 0;
             // 
-            // FFNxGroupContolerDeathzones
+            // FFNxGroupControllerDeathzones
             // 
-            this.FFNxGroupContolerDeathzones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.FFNxGroupContolerDeathzones.Controls.Add(this.FFNxContolerDeathzoneRT);
-            this.FFNxGroupContolerDeathzones.Controls.Add(this.FFNxContolerDeathzoneLT);
-            this.FFNxGroupContolerDeathzones.Controls.Add(this.FFNxContolerDeathzoneStick);
-            this.FFNxGroupContolerDeathzones.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FFNxGroupContolerDeathzones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.FFNxGroupContolerDeathzones.Location = new System.Drawing.Point(525, 84);
-            this.FFNxGroupContolerDeathzones.Name = "FFNxGroupContolerDeathzones";
-            this.FFNxGroupContolerDeathzones.Size = new System.Drawing.Size(252, 59);
-            this.FFNxGroupContolerDeathzones.TabIndex = 32;
-            this.FFNxGroupContolerDeathzones.TabStop = false;
-            this.FFNxGroupContolerDeathzones.Text = "Zône morte de la manette (stick, LT, RT)";
+            this.FFNxGroupControllerDeathzones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxGroupControllerDeathzones.Controls.Add(this.FFNxContolerDeathzoneRT);
+            this.FFNxGroupControllerDeathzones.Controls.Add(this.FFNxContolerDeathzoneLT);
+            this.FFNxGroupControllerDeathzones.Controls.Add(this.FFNxContolerDeathzoneStick);
+            this.FFNxGroupControllerDeathzones.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxGroupControllerDeathzones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.FFNxGroupControllerDeathzones.Location = new System.Drawing.Point(525, 84);
+            this.FFNxGroupControllerDeathzones.Name = "FFNxGroupControllerDeathzones";
+            this.FFNxGroupControllerDeathzones.Size = new System.Drawing.Size(252, 59);
+            this.FFNxGroupControllerDeathzones.TabIndex = 32;
+            this.FFNxGroupControllerDeathzones.TabStop = false;
+            this.FFNxGroupControllerDeathzones.Text = "Zône morte de la manette (stick, LT, RT)";
             // 
             // FFNxContolerDeathzoneRT
             // 
@@ -2854,17 +2855,17 @@
             this.FFNxAnisotropic.Text = "Filtrage anisotrope";
             this.FFNxAnisotropic.UseVisualStyleBackColor = false;
             // 
-            // FFNxAnalogControler
+            // FFNxAnalogController
             // 
-            this.FFNxAnalogControler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.FFNxAnalogControler.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FFNxAnalogControler.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FFNxAnalogControler.Location = new System.Drawing.Point(525, 270);
-            this.FFNxAnalogControler.Name = "FFNxAnalogControler";
-            this.FFNxAnalogControler.Size = new System.Drawing.Size(252, 19);
-            this.FFNxAnalogControler.TabIndex = 19;
-            this.FFNxAnalogControler.Text = "Contôleur analogique";
-            this.FFNxAnalogControler.UseVisualStyleBackColor = false;
+            this.FFNxAnalogController.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxAnalogController.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FFNxAnalogController.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxAnalogController.Location = new System.Drawing.Point(525, 270);
+            this.FFNxAnalogController.Name = "FFNxAnalogController";
+            this.FFNxAnalogController.Size = new System.Drawing.Size(252, 19);
+            this.FFNxAnalogController.TabIndex = 19;
+            this.FFNxAnalogController.Text = "Contôleur analogique";
+            this.FFNxAnalogController.UseVisualStyleBackColor = false;
             // 
             // FFNXSteamSucces
             // 
@@ -2914,6 +2915,41 @@
             this.FFNxLighting.TabIndex = 16;
             this.FFNxLighting.Text = "Ombres dynamiques";
             this.FFNxLighting.UseVisualStyleBackColor = false;
+            //
+            this.FFNxGroupFps.MouseEnter += new System.EventHandler(this.FFNxGroupFps_MouseEnter);
+            this.FFNxShowStats.MouseEnter += new System.EventHandler(this.FFNxShowStats_MouseEnter);
+            this.FFNxDebugTool.MouseEnter += new System.EventHandler(this.FFNxDebugTool_MouseEnter);
+            this.FFNxFootSteps.MouseEnter += new System.EventHandler(this.FFNxFootSteps_MouseEnter);
+            this.FFNxLogs.MouseEnter += new System.EventHandler(this.FFNxLogs_MouseEnter);
+            this.FFNxGroupSpeedhack.MouseEnter += new System.EventHandler(this.FFNxGroupSpeedhack_MouseEnter);
+            this.FFNxGroupControllerDeathzones.MouseEnter += new System.EventHandler(this.FFNxGroupControllerDeathzones_MouseEnter);
+            this.FFNxGroupAudioSample.MouseEnter += new System.EventHandler(this.FFNxGroupAudioSample_MouseEnter);
+            this.FFNxGroupIR.MouseEnter += new System.EventHandler(this.FFNxGroupIR_MouseEnter);
+            this.FFNxGroupAudioChannels.MouseEnter += new System.EventHandler(this.FFNxGroupAudioChannels_MouseEnter);
+            this.FFNxGroupAA.MouseEnter += new System.EventHandler(this.FFNxGroupAA_MouseEnter);
+            this.FFNxGroupResolution.MouseEnter += new System.EventHandler(this.FFNxGroupResolution_MouseEnter);
+            this.FFNxGroupHDR.MouseEnter += new System.EventHandler(this.FFNxGroupHDR_MouseEnter);
+            this.FFNxGroupRatio.MouseEnter += new System.EventHandler(this.FFNxGroupRatio_MouseEnter);
+            this.FFNxGroupScreen.MouseEnter += new System.EventHandler(this.FFNxGroupScreen_MouseEnter);
+            this.FFNxVsync.MouseEnter += new System.EventHandler(this.FFNxVsync_MouseEnter);
+            this.FFNXMusicResume.MouseEnter += new System.EventHandler(this.FFNXMusicResume_MouseEnter);
+            this.FFNxAnisotropic.MouseEnter += new System.EventHandler(this.FFNxAnisotropic_MouseEnter);
+            this.FFNxAnalogController.MouseEnter += new System.EventHandler(this.FFNxAnalogController_MouseEnter);
+            this.FFNXSteamSucces.MouseEnter += new System.EventHandler(this.FFNXSteamSucces_MouseEnter);
+            this.FFNxGroup3dEngine.MouseEnter += new System.EventHandler(this.FFNxGroup3dEngine_MouseEnter);
+            this.FFNxLighting.MouseEnter += new System.EventHandler(this.FFNxLighting_MouseEnter);
+            this.FFNxGroupFps.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupSpeedhack.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupControllerDeathzones.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupAudioSample.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupIR.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupAudioChannels.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupAA.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupResolution.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupHDR.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupRatio.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupScreen.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroup3dEngine.Click += new System.EventHandler(this.getMousePos);
             // 
             // FF7U
             // 
@@ -2991,7 +3027,7 @@
             this.FFNxFrame3.ResumeLayout(false);
             this.FFNxGroupFps.ResumeLayout(false);
             this.FFNxGroupSpeedhack.ResumeLayout(false);
-            this.FFNxGroupContolerDeathzones.ResumeLayout(false);
+            this.FFNxGroupControllerDeathzones.ResumeLayout(false);
             this.FFNxGroupAudioSample.ResumeLayout(false);
             this.FFNxGroupIR.ResumeLayout(false);
             this.FFNxGroupAudioChannels.ResumeLayout(false);
@@ -3182,7 +3218,7 @@
         private CheckBox FFNxVsync;
         private CheckBox FFNXMusicResume;
         private CheckBox FFNxAnisotropic;
-        private CheckBox FFNxAnalogControler;
+        private CheckBox FFNxAnalogController;
         private CheckBox FFNXSteamSucces;
         private GroupBox FFNxGroupIR;
         private ComboBox FFNxIR;
@@ -3196,7 +3232,7 @@
         private ComboBox FFNxSpeedhackMax;
         private ComboBox FFNxSpeedhackMin;
         private ComboBox FFNxSpeedhackStep;
-        private GroupBox FFNxGroupContolerDeathzones;
+        private GroupBox FFNxGroupControllerDeathzones;
         private ComboBox FFNxContolerDeathzoneRT;
         private ComboBox FFNxContolerDeathzoneLT;
         private ComboBox FFNxContolerDeathzoneStick;
