@@ -18,11 +18,11 @@ namespace FF7_SYW_Unified
 
         private void soundsSetDefaults()
         {
-            setModsItems(soundsMusics, @"audio\musics\", "audio.musics");
-            setModsItems(soundsAmbients, @"audio\ambients\", "audio.ambients");
-            setModsItems(soundsSfx, @"audio\sfxs\", "audio.sfxs");
-            setModsItems(soundsFMV, @"audio\movies\", "audio.movies");
-            setModsItems(soundsVoices, @"audio\voices\", "audio.voices");
+            setModsItems(soundsMusics, @"audio\musics\");
+            setModsItems(soundsAmbients, @"audio\ambients\");
+            setModsItems(soundsSfx, @"audio\sfxs\");
+            setModsItems(soundsFMV, @"audio\movies\");
+            setModsItems(soundsVoices, @"audio\voices\");
 
             soundsMusics.Text = soundsMusics.Items[0].ToString();
             soundsAmbients.Text = soundsAmbients.Items[0].ToString();
@@ -92,12 +92,12 @@ namespace FF7_SYW_Unified
         }
 
 
-        private void soundsChange(ComboBox soundCombo, string modFolder, string modIndex)
+        private void soundsChange(ComboBox soundCombo, string modFolder)
         {
             
             if (Globals.actualModFolder != getModCustomFolder(soundCombo, modFolder) + @"\files\")
             {
-                modShowCustom(soundCombo, modFolder, modIndex, soundsHelp, soundsHelpAuthor, soundPrevPic);
+                modShowCustom(soundCombo, modFolder, soundsHelp, soundsHelpAuthor, soundPrevPic);
                 Globals.actualModFolder = getModCustomFolder(soundCombo, modFolder) + @"\files\";
                 
                 listAudioFiles(Globals.actualModFolder);
@@ -108,11 +108,11 @@ namespace FF7_SYW_Unified
 
 
         private void soundFrame4_MouseLeave(object sender, EventArgs e){playAudioClose();}   
-        private void soundsMusicsChange(object sender, EventArgs e) { soundsChange(soundsMusics, @"audio\musics\", "audio.musics"); }
-        private void soundsAmbiantChange(object sender, EventArgs e) { soundsChange(soundsAmbients, @"audio\ambients\", "audio.ambients"); }
-        private void soundsSfxChange(object sender, EventArgs e) { soundsChange(soundsSfx, @"audio\sfxs\", @"audio.sfxs"); }
-        private void soundsFMVChange(object sender, EventArgs e) { soundsChange(soundsFMV, @"audio\movies\", "audio.movies"); }
-        private void soundsVoicesChange(object sender, EventArgs e) { soundsChange(soundsVoices, @"audio\voices\", "audio.voices"); }
+        private void soundsMusicsChange(object sender, EventArgs e) { soundsChange(soundsMusics, @"audio\musics"); }
+        private void soundsAmbiantChange(object sender, EventArgs e) { soundsChange(soundsAmbients, @"audio\ambients"); }
+        private void soundsSfxChange(object sender, EventArgs e) { soundsChange(soundsSfx, @"audio\sfxs"); }
+        private void soundsFMVChange(object sender, EventArgs e) { soundsChange(soundsFMV, @"audio\movies"); }
+        private void soundsVoicesChange(object sender, EventArgs e) { soundsChange(soundsVoices, @"audio\voices"); }
 
     }
 }

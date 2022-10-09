@@ -73,7 +73,7 @@ namespace FF7_SYW_Unified
 
 
         //display preview picture and description for combobox custom mods
-        static void modShowCustom(ComboBox combo, string folderwSource, string modType, Label helpLabel, Label authorLabel, PictureBox prevPic)
+        static void modShowCustom(ComboBox combo, string folderwSource, Label helpLabel, Label authorLabel, PictureBox prevPic)
         {
             string folderMod = "";
             string modDir = "";
@@ -91,10 +91,10 @@ namespace FF7_SYW_Unified
 
             modDir = Path.GetFileName(folderMod);
 
-            helpLabel.Text = translate("descriptionmod." + modType + "." + modDir, Globals.translateMod);
-            authorLabel.Text = translate("authormod." + modType + "." + modDir, Globals.translateMod);
-            Globals.actualModUrl = translate("urlmod." + modType + "." + modDir, Globals.translateMod);
-            Globals.actualModFlags = translate("compatibilymod." + modType + "." + modDir, Globals.translateMod);
+            helpLabel.Text = translate(combo.Name + "." + modDir + "help", Globals.translateMod);
+            authorLabel.Text = translate(combo.Name + "." + modDir + "author", Globals.translateMod);
+            Globals.actualModUrl = translate(combo.Name + "." + modDir + "url", Globals.translateMod);
+            Globals.actualModFlags = translate(combo.Name + "." + modDir + "compatibily", Globals.translateMod);
         }
 
 

@@ -11,13 +11,13 @@
 
         private void gameplaySetDefaults()
         {
-            setModsItems(gameplayMods, @"gameplay\", "gameplay");
+            setModsItems(gameplayMods, @"gameplay\");
             gameplayMods.Text = gameplayMods.Items[0].ToString();
         }
 
         private void gameplayModsChange(object sender, EventArgs e)
         {
-            modShowCustom(gameplayMods, @"gameplay\", "gameplay", gameplayHelp, gameplayHelpAuthor, gameplayPrevPic);
+            modShowCustom(gameplayMods, @"gameplay\", gameplayHelp, gameplayHelpAuthor, gameplayPrevPic);
             setModFlags(gameplayFrame1);
         }
 

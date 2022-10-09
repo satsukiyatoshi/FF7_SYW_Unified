@@ -19,12 +19,12 @@ namespace FF7_SYW_Unified
 
         private void graphicsSetDefaults()
         {
-            setModsItems(graphicsModels3Dc, @"models\battles\", "models.battles");
-            setModsItems(graphicsModels3Df, @"models\fields\", "models.fields");
-            setModsItems(graphicsModels3Dw, @"models\worldmap\", "models.worldmap");
-            setModsItems(graphicsModels3Dm, @"models\minigames\", "models.minigames");
-            setModsItems(graphicsFMV, @"movies\", "movies");
-            setModsItems(graphicsMenu, @"uis\", "uis");
+            setModsItems(graphicsModels3Dc, @"models\battles\");
+            setModsItems(graphicsModels3Df, @"models\fields\");
+            setModsItems(graphicsModels3Dw, @"models\worldmap\");
+            setModsItems(graphicsModels3Dm, @"models\minigames\");
+            setModsItems(graphicsFMV, @"movies\");
+            setModsItems(graphicsMenu, @"uis\");
 
             graphicsModels3Df.Text = graphicsModels3Df.Items[0].ToString();
             graphicsModels3Dc.Text = graphicsModels3Dc.Items[0].ToString();
@@ -43,12 +43,12 @@ namespace FF7_SYW_Unified
         private void graphicsMiniGames_MouseEnter(object sender, EventArgs e) { modShow("graphicsMiniGames", graphicsHelp, graphicsHelpAuthor); }
 
 
-        private void graphicsModels3DfChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", "models.fields", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
-        private void graphicsModels3DcChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dc, @"models\battles\", "models.battles", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
-        private void graphicsModels3DwChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dw, @"models\worldmap\", "models.worldmap", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
-        private void graphicsModels3DmChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dm, @"models\minigames\", "models.minigames", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
-        private void graphicsMenuChange(object sender, EventArgs e) { modShowCustom(graphicsMenu, @"uis\", "uis", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); setModFlags(graphicsGroupMenu); }
-        private void graphicsFMVChange(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", "movies", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); setModFlags(graphicsGroupFMV); }
+        private void graphicsModels3DfChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsModels3DcChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dc, @"models\battles\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsModels3DwChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dw, @"models\worldmap\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsModels3DmChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dm, @"models\minigames\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsMenuChange(object sender, EventArgs e) { modShowCustom(graphicsMenu, @"uis\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); setModFlags(graphicsGroupMenu); }
+        private void graphicsFMVChange(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); setModFlags(graphicsGroupFMV); }
 
     }
 }

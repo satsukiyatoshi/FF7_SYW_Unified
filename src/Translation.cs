@@ -9,7 +9,7 @@ namespace FF7_SYW_Unified
     {
 
         //set items of combos mods option and put their translation to Globals.translateMod
-        private void setModsItems(ComboBox combo, string folderwSource, string modType)
+        private void setModsItems(ComboBox combo, string folderwSource)
         {
             string translationFile = "";
             string modDir = "";
@@ -36,11 +36,11 @@ namespace FF7_SYW_Unified
 
                     modDir = Path.GetFileName(dir);
 
-                    getTranslationXml(translationFile, Globals.translateMod, "mod." + modType+ "." + modDir);
+                getTranslationXml(translationFile, Globals.translateMod, combo.Name + "." + modDir);
+                combo.Items.Add(translate(combo.Name + "." + modDir, Globals.translateMod));
 
-                    combo.Items.Add(translate("namemod." + modType +"." + modDir, Globals.translateMod));
                 }
-            
+
         }
 
 
@@ -122,7 +122,6 @@ namespace FF7_SYW_Unified
             string ctrlUrl = "";
             string ctrlAuthor = "";
             string ctrtCompatibility = "";
-            Boolean isendelement = false;
 
             if (!File.Exists(fileLang))
             {
@@ -157,27 +156,35 @@ namespace FF7_SYW_Unified
                                 ctrtCompatibility = reader.ReadString();
                                 break;
                             case "control":
-                                isendelement = true;
+                                if (ctrlText != "")
+                                {
+                                    trans.Add((ctrlName + modName, ctrlText));
+                                    trans.Add((ctrlName + modName + "help", ctrlHelp));
+                                    trans.Add((ctrlName + modName + "url", ctrlUrl));
+                                    trans.Add((ctrlName + modName + "author", ctrlAuthor));
+                                    trans.Add((ctrlName + modName + "compatibily", ctrtCompatibility));
+                                }
+                                ctrlName = "";
+                                ctrlText = "";
+                                ctrlHelp = "";
+                                ctrlUrl = "";
+                                ctrlAuthor = "";
+                                ctrtCompatibility = "";
                                 break;
                         }
+
                     }
 
-                    if (isendelement)
-                    {
-                        trans.Add((ctrlName + modName, ctrlText));
-                        trans.Add((ctrlName + modName + "help", ctrlHelp));
-                        trans.Add((ctrlName + modName + "url", ctrlUrl));
-                        trans.Add((ctrlName + modName + "author", ctrlAuthor));
-                        trans.Add((ctrlName + modName + "compatibily", ctrtCompatibility));
-                        ctrlName = "";
-                        ctrlText = "";
-                        ctrlHelp = "";
-                        ctrlUrl = "";
-                        ctrlAuthor = "";
-                        ctrtCompatibility = "";
-                        isendelement = false;
-                    }
+                }
 
+                // avoid the last value to be ignored
+                if (ctrlText != "")
+                {
+                    trans.Add((ctrlName + modName, ctrlText));
+                    trans.Add((ctrlName + modName + "help", ctrlHelp));
+                    trans.Add((ctrlName + modName + "url", ctrlUrl));
+                    trans.Add((ctrlName + modName + "author", ctrlAuthor));
+                    trans.Add((ctrlName + modName + "compatibily", ctrtCompatibility));
                 }
 
             }
