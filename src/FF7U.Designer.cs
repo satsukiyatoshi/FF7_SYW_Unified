@@ -1883,7 +1883,7 @@
             this.menuSoundPanel.Controls.Add(this.soundFrame4);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Controls.Add(this.soundFrame2);
-            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
@@ -2292,7 +2292,7 @@
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
-            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuFFNxPanel.Name = "menuFFNxPanel";
             this.menuFFNxPanel.Size = new System.Drawing.Size(795, 703);
             this.menuFFNxPanel.TabIndex = 14;
@@ -2456,6 +2456,8 @@
             this.FFNxGroupFps.TabIndex = 38;
             this.FFNxGroupFps.TabStop = false;
             this.FFNxGroupFps.Text = "Fluidité du jeu (fps)";
+            this.FFNxGroupFps.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupFps.MouseEnter += new System.EventHandler(this.FFNxGroupFps_MouseEnter);
             // 
             // FFNxFps
             // 
@@ -2480,6 +2482,7 @@
             this.FFNxShowStats.TabIndex = 37;
             this.FFNxShowStats.Text = "Afficher les informations de FFNx";
             this.FFNxShowStats.UseVisualStyleBackColor = false;
+            this.FFNxShowStats.MouseEnter += new System.EventHandler(this.FFNxShowStats_MouseEnter);
             // 
             // FFNxDebugTool
             // 
@@ -2492,6 +2495,7 @@
             this.FFNxDebugTool.TabIndex = 36;
             this.FFNxDebugTool.Text = "Outil de debug";
             this.FFNxDebugTool.UseVisualStyleBackColor = false;
+            this.FFNxDebugTool.MouseEnter += new System.EventHandler(this.FFNxDebugTool_MouseEnter);
             // 
             // FFNxFootSteps
             // 
@@ -2504,6 +2508,7 @@
             this.FFNxFootSteps.TabIndex = 35;
             this.FFNxFootSteps.Text = "Activer les bruits de pas";
             this.FFNxFootSteps.UseVisualStyleBackColor = false;
+            this.FFNxFootSteps.MouseEnter += new System.EventHandler(this.FFNxFootSteps_MouseEnter);
             // 
             // FFNxLogs
             // 
@@ -2516,6 +2521,7 @@
             this.FFNxLogs.TabIndex = 34;
             this.FFNxLogs.Text = "Logs complets";
             this.FFNxLogs.UseVisualStyleBackColor = false;
+            this.FFNxLogs.MouseEnter += new System.EventHandler(this.FFNxLogs_MouseEnter);
             // 
             // FFNxGroupSpeedhack
             // 
@@ -2531,6 +2537,8 @@
             this.FFNxGroupSpeedhack.TabIndex = 33;
             this.FFNxGroupSpeedhack.TabStop = false;
             this.FFNxGroupSpeedhack.Text = "Speedhack (step, minimum, maximum)";
+            this.FFNxGroupSpeedhack.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupSpeedhack.MouseEnter += new System.EventHandler(this.FFNxGroupSpeedhack_MouseEnter);
             // 
             // FFNxSpeedhackMax
             // 
@@ -2582,6 +2590,8 @@
             this.FFNxGroupControllerDeathzones.TabIndex = 32;
             this.FFNxGroupControllerDeathzones.TabStop = false;
             this.FFNxGroupControllerDeathzones.Text = "Zône morte de la manette (stick, LT, RT)";
+            this.FFNxGroupControllerDeathzones.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupControllerDeathzones.MouseEnter += new System.EventHandler(this.FFNxGroupControllerDeathzones_MouseEnter);
             // 
             // FFNxContolerDeathzoneRT
             // 
@@ -2631,6 +2641,8 @@
             this.FFNxGroupAudioSample.TabIndex = 31;
             this.FFNxGroupAudioSample.TabStop = false;
             this.FFNxGroupAudioSample.Text = "taux d\'échantillonnage audio";
+            this.FFNxGroupAudioSample.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupAudioSample.MouseEnter += new System.EventHandler(this.FFNxGroupAudioSample_MouseEnter);
             // 
             // FFNxAudioSample
             // 
@@ -2656,6 +2668,8 @@
             this.FFNxGroupIR.TabIndex = 30;
             this.FFNxGroupIR.TabStop = false;
             this.FFNxGroupIR.Text = "Résolution interne";
+            this.FFNxGroupIR.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupIR.MouseEnter += new System.EventHandler(this.FFNxGroupIR_MouseEnter);
             // 
             // FFNxIR
             // 
@@ -2681,6 +2695,8 @@
             this.FFNxGroupAudioChannels.TabIndex = 29;
             this.FFNxGroupAudioChannels.TabStop = false;
             this.FFNxGroupAudioChannels.Text = "Canaux audio";
+            this.FFNxGroupAudioChannels.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupAudioChannels.MouseEnter += new System.EventHandler(this.FFNxGroupAudioChannels_MouseEnter);
             // 
             // FFNxAudioChannels
             // 
@@ -2706,6 +2722,8 @@
             this.FFNxGroupAA.TabIndex = 28;
             this.FFNxGroupAA.TabStop = false;
             this.FFNxGroupAA.Text = "Anti-Aliasing";
+            this.FFNxGroupAA.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupAA.MouseEnter += new System.EventHandler(this.FFNxGroupAA_MouseEnter);
             // 
             // FFNxAA
             // 
@@ -2731,6 +2749,8 @@
             this.FFNxGroupResolution.TabIndex = 27;
             this.FFNxGroupResolution.TabStop = false;
             this.FFNxGroupResolution.Text = "Résolution d\'écran";
+            this.FFNxGroupResolution.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupResolution.MouseEnter += new System.EventHandler(this.FFNxGroupResolution_MouseEnter);
             // 
             // FFNxResolution
             // 
@@ -2756,6 +2776,8 @@
             this.FFNxGroupHDR.TabIndex = 26;
             this.FFNxGroupHDR.TabStop = false;
             this.FFNxGroupHDR.Text = "HDR Nits";
+            this.FFNxGroupHDR.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupHDR.MouseEnter += new System.EventHandler(this.FFNxGroupHDR_MouseEnter);
             // 
             // FFNxHDR
             // 
@@ -2781,6 +2803,8 @@
             this.FFNxGroupRatio.TabIndex = 25;
             this.FFNxGroupRatio.TabStop = false;
             this.FFNxGroupRatio.Text = "Format d\'affichage";
+            this.FFNxGroupRatio.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupRatio.MouseEnter += new System.EventHandler(this.FFNxGroupRatio_MouseEnter);
             // 
             // FFNxRatio
             // 
@@ -2806,6 +2830,8 @@
             this.FFNxGroupScreen.TabIndex = 24;
             this.FFNxGroupScreen.TabStop = false;
             this.FFNxGroupScreen.Text = "Affichage";
+            this.FFNxGroupScreen.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroupScreen.MouseEnter += new System.EventHandler(this.FFNxGroupScreen_MouseEnter);
             // 
             // FFNxScreen
             // 
@@ -2830,6 +2856,7 @@
             this.FFNxVsync.TabIndex = 23;
             this.FFNxVsync.Text = "Synchronisation verticale";
             this.FFNxVsync.UseVisualStyleBackColor = false;
+            this.FFNxVsync.MouseEnter += new System.EventHandler(this.FFNxVsync_MouseEnter);
             // 
             // FFNXMusicResume
             // 
@@ -2842,6 +2869,7 @@
             this.FFNXMusicResume.TabIndex = 22;
             this.FFNXMusicResume.Text = "Reprendre les musiques";
             this.FFNXMusicResume.UseVisualStyleBackColor = false;
+            this.FFNXMusicResume.MouseEnter += new System.EventHandler(this.FFNXMusicResume_MouseEnter);
             // 
             // FFNxAnisotropic
             // 
@@ -2854,6 +2882,7 @@
             this.FFNxAnisotropic.TabIndex = 21;
             this.FFNxAnisotropic.Text = "Filtrage anisotrope";
             this.FFNxAnisotropic.UseVisualStyleBackColor = false;
+            this.FFNxAnisotropic.MouseEnter += new System.EventHandler(this.FFNxAnisotropic_MouseEnter);
             // 
             // FFNxAnalogController
             // 
@@ -2866,6 +2895,7 @@
             this.FFNxAnalogController.TabIndex = 19;
             this.FFNxAnalogController.Text = "Contôleur analogique";
             this.FFNxAnalogController.UseVisualStyleBackColor = false;
+            this.FFNxAnalogController.MouseEnter += new System.EventHandler(this.FFNxAnalogController_MouseEnter);
             // 
             // FFNXSteamSucces
             // 
@@ -2878,6 +2908,7 @@
             this.FFNXSteamSucces.TabIndex = 18;
             this.FFNXSteamSucces.Text = "Succès Steam";
             this.FFNXSteamSucces.UseVisualStyleBackColor = false;
+            this.FFNXSteamSucces.MouseEnter += new System.EventHandler(this.FFNXSteamSucces_MouseEnter);
             // 
             // FFNxGroup3dEngine
             // 
@@ -2891,6 +2922,8 @@
             this.FFNxGroup3dEngine.TabIndex = 17;
             this.FFNxGroup3dEngine.TabStop = false;
             this.FFNxGroup3dEngine.Text = "Moteur de rendu";
+            this.FFNxGroup3dEngine.Click += new System.EventHandler(this.getMousePos);
+            this.FFNxGroup3dEngine.MouseEnter += new System.EventHandler(this.FFNxGroup3dEngine_MouseEnter);
             // 
             // FFNx3dEngine
             // 
@@ -2915,41 +2948,7 @@
             this.FFNxLighting.TabIndex = 16;
             this.FFNxLighting.Text = "Ombres dynamiques";
             this.FFNxLighting.UseVisualStyleBackColor = false;
-            //
-            this.FFNxGroupFps.MouseEnter += new System.EventHandler(this.FFNxGroupFps_MouseEnter);
-            this.FFNxShowStats.MouseEnter += new System.EventHandler(this.FFNxShowStats_MouseEnter);
-            this.FFNxDebugTool.MouseEnter += new System.EventHandler(this.FFNxDebugTool_MouseEnter);
-            this.FFNxFootSteps.MouseEnter += new System.EventHandler(this.FFNxFootSteps_MouseEnter);
-            this.FFNxLogs.MouseEnter += new System.EventHandler(this.FFNxLogs_MouseEnter);
-            this.FFNxGroupSpeedhack.MouseEnter += new System.EventHandler(this.FFNxGroupSpeedhack_MouseEnter);
-            this.FFNxGroupControllerDeathzones.MouseEnter += new System.EventHandler(this.FFNxGroupControllerDeathzones_MouseEnter);
-            this.FFNxGroupAudioSample.MouseEnter += new System.EventHandler(this.FFNxGroupAudioSample_MouseEnter);
-            this.FFNxGroupIR.MouseEnter += new System.EventHandler(this.FFNxGroupIR_MouseEnter);
-            this.FFNxGroupAudioChannels.MouseEnter += new System.EventHandler(this.FFNxGroupAudioChannels_MouseEnter);
-            this.FFNxGroupAA.MouseEnter += new System.EventHandler(this.FFNxGroupAA_MouseEnter);
-            this.FFNxGroupResolution.MouseEnter += new System.EventHandler(this.FFNxGroupResolution_MouseEnter);
-            this.FFNxGroupHDR.MouseEnter += new System.EventHandler(this.FFNxGroupHDR_MouseEnter);
-            this.FFNxGroupRatio.MouseEnter += new System.EventHandler(this.FFNxGroupRatio_MouseEnter);
-            this.FFNxGroupScreen.MouseEnter += new System.EventHandler(this.FFNxGroupScreen_MouseEnter);
-            this.FFNxVsync.MouseEnter += new System.EventHandler(this.FFNxVsync_MouseEnter);
-            this.FFNXMusicResume.MouseEnter += new System.EventHandler(this.FFNXMusicResume_MouseEnter);
-            this.FFNxAnisotropic.MouseEnter += new System.EventHandler(this.FFNxAnisotropic_MouseEnter);
-            this.FFNxAnalogController.MouseEnter += new System.EventHandler(this.FFNxAnalogController_MouseEnter);
-            this.FFNXSteamSucces.MouseEnter += new System.EventHandler(this.FFNXSteamSucces_MouseEnter);
-            this.FFNxGroup3dEngine.MouseEnter += new System.EventHandler(this.FFNxGroup3dEngine_MouseEnter);
             this.FFNxLighting.MouseEnter += new System.EventHandler(this.FFNxLighting_MouseEnter);
-            this.FFNxGroupFps.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupSpeedhack.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupControllerDeathzones.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupAudioSample.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupIR.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupAudioChannels.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupAA.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupResolution.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupHDR.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupRatio.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroupScreen.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxGroup3dEngine.Click += new System.EventHandler(this.getMousePos);
             // 
             // FF7U
             // 

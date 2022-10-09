@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Scènes du jeux HD</text>
+		<help>Scènes du jeu refaites en HD.
+		La base est traitée avec une IA ESRGan.
+		Beaucoup d'optimisations à la main</help>
+		<author>Satsuki_Yatoshi -- Aavock</author>
+		<url>https://ff7.fr/forum/</url>
+		<compatibily>FE</compatibily>
+	</control>
+</translation>
+

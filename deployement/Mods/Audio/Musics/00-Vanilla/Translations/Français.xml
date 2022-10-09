@@ -1,20 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<name>name</name>
-		<text>Musiques psx émulées</text>
-	</control>
-	<control>
-		<name>description</name>
-		<text>musiques en psf</text>
-	</control>
-	<control>
-		<name>author</name>
-		<text>Myst6re</text>
-	</control>
-	<control>
-		<name>compatibility</name>
-		<text>FEGS</text>
+		<text>Musiques midi d'origine</text>
+		<help>C'est tout moisi !</help>
+		<author>enix</author>
+		<url></url>
+		<compatibily></compatibily>
 	</control>
 </translation>
 

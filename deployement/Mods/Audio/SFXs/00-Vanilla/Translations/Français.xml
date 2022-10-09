@@ -1,16 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<name>name</name>
-		<text>ambient SFX</text>
-	</control>
-	<control>
-		<name>description</name>
-		<text>sfx de base</text>
-	</control>
-	<control>
-		<name>author</name>
-		<text>bof</text>
-	</control>
+		<text>SFX originaux</text>
+		<help>en midi encore</help>
+		<author>elmidguy</author>
+		<url></url>
+		<compatibily></compatibily>
+			</control>
 </translation>
 

@@ -1,16 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<name>name</name>
-		<text>jeu de base</text>
-	</control>
-	<control>
-		<name>description</name>
-		<text>pistes musicales standard dans les cinématiques</text>
-	</control>
-	<control>
-		<name>author</name>
-		<text>square</text>
-	</control>
+		<text>Pistes originales</text>
+		<help>Les cinématiques ont leurs pistes audio d'origne</help>
+		<author>Squaresoft</author>
+		<url>google.fr</url>
+		<compatibily></compatibily>
+			</control>
 </translation>
 

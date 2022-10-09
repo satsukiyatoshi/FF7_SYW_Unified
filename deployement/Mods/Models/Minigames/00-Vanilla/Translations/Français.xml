@@ -1,16 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<name>name</name>
-		<text>Modèles de base</text>
-	</control>
-	<control>
-		<name>description</name>
-		<text>Modèles de base du jeu.</text>
-	</control>
-	<control>
-		<name>author</name>
-		<text>SquareSoft</text>
-	</control>
+		<text>Modèles d'origine</text>
+		<help>Tout carré</help>
+		<author></author>
+		<url></url>
+		<compatibily></compatibily>
+			</control>
 </translation>
 

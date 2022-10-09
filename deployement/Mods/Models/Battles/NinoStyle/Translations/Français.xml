@@ -1,20 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<name>name</name>
-		<text>NynoStyle</text>
-	</control>
-	<control>
-		<name>description</name>
-		<text>Modèles chibi de haute qualité.</text>
-	</control>
-	<control>
-		<name>author</name>
 		<text>Nyno</text>
-	</control>
-	<control>
-		<name>url</name>
-		<text>doom9.org</text>
-	</control>
+		<help>Chibi powa!</help>
+		<author>ElGringo</author>
+		<url></url>
+		<compatibily></compatibily>
+			</control>
 </translation>
 

@@ -1,24 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-	<control>
-		<name>name</name>
-		<text>Gameplay original</text>
-	</control>
-	<control>
-		<name>description</name>
-		<text>Gameplay original</text>
-	</control>
-	<control>
-		<name>author</name>
-		<text>Square</text>
-	</control>
-	<control>
-		<name>url</name>
-		<text>http://google.com</text>
-	</control>
-	<control>
-		<name>compatibily</name>
-		<text>FESG</text>
-	</control>
+<control>
+		<text>Gameplay orginal</text>
+		<help>de retour en 1997</help>
+		<author>SE</author>
+		<url></url>
+		<compatibily>FESG</compatibily>
+</control>
 </translation>
 
