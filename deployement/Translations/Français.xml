@@ -291,19 +291,6 @@
 		<text>Mod de gameplay</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>
-	<control>
-		<name></name>
-		<text></text>
-	</control>	
-
-	<control>
 		<name>graphicFrame2</name>
 		<text>Informations</text>
 	</control>

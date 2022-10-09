@@ -2437,7 +2437,7 @@
             this.FFNxFps.FormattingEnabled = true;
             this.FFNxFps.Location = new System.Drawing.Point(9, 23);
             this.FFNxFps.Name = "FFNxFps";
-            this.FFNxFps.Size = new System.Drawing.Size(222, 23);
+            this.FFNxFps.Size = new System.Drawing.Size(232, 23);
             this.FFNxFps.TabIndex = 0;
             // 
             // FFNxShowStats
@@ -2510,9 +2510,9 @@
             this.FFNxSpeedhackMax.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FFNxSpeedhackMax.ForeColor = System.Drawing.Color.White;
             this.FFNxSpeedhackMax.FormattingEnabled = true;
-            this.FFNxSpeedhackMax.Location = new System.Drawing.Point(161, 23);
+            this.FFNxSpeedhackMax.Location = new System.Drawing.Point(165, 23);
             this.FFNxSpeedhackMax.Name = "FFNxSpeedhackMax";
-            this.FFNxSpeedhackMax.Size = new System.Drawing.Size(73, 23);
+            this.FFNxSpeedhackMax.Size = new System.Drawing.Size(76, 23);
             this.FFNxSpeedhackMax.TabIndex = 2;
             // 
             // FFNxSpeedhackMin
@@ -2522,9 +2522,9 @@
             this.FFNxSpeedhackMin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FFNxSpeedhackMin.ForeColor = System.Drawing.Color.White;
             this.FFNxSpeedhackMin.FormattingEnabled = true;
-            this.FFNxSpeedhackMin.Location = new System.Drawing.Point(85, 23);
+            this.FFNxSpeedhackMin.Location = new System.Drawing.Point(87, 23);
             this.FFNxSpeedhackMin.Name = "FFNxSpeedhackMin";
-            this.FFNxSpeedhackMin.Size = new System.Drawing.Size(73, 23);
+            this.FFNxSpeedhackMin.Size = new System.Drawing.Size(76, 23);
             this.FFNxSpeedhackMin.TabIndex = 1;
             // 
             // FFNxSpeedhackStep
@@ -2536,7 +2536,7 @@
             this.FFNxSpeedhackStep.FormattingEnabled = true;
             this.FFNxSpeedhackStep.Location = new System.Drawing.Point(9, 23);
             this.FFNxSpeedhackStep.Name = "FFNxSpeedhackStep";
-            this.FFNxSpeedhackStep.Size = new System.Drawing.Size(73, 23);
+            this.FFNxSpeedhackStep.Size = new System.Drawing.Size(76, 23);
             this.FFNxSpeedhackStep.TabIndex = 0;
             // 
             // FFNxGroupContolerDeathzones
@@ -2561,9 +2561,9 @@
             this.FFNxContolerDeathzoneRT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FFNxContolerDeathzoneRT.ForeColor = System.Drawing.Color.White;
             this.FFNxContolerDeathzoneRT.FormattingEnabled = true;
-            this.FFNxContolerDeathzoneRT.Location = new System.Drawing.Point(161, 23);
+            this.FFNxContolerDeathzoneRT.Location = new System.Drawing.Point(165, 23);
             this.FFNxContolerDeathzoneRT.Name = "FFNxContolerDeathzoneRT";
-            this.FFNxContolerDeathzoneRT.Size = new System.Drawing.Size(73, 23);
+            this.FFNxContolerDeathzoneRT.Size = new System.Drawing.Size(76, 23);
             this.FFNxContolerDeathzoneRT.TabIndex = 2;
             // 
             // FFNxContolerDeathzoneLT
@@ -2573,9 +2573,9 @@
             this.FFNxContolerDeathzoneLT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FFNxContolerDeathzoneLT.ForeColor = System.Drawing.Color.White;
             this.FFNxContolerDeathzoneLT.FormattingEnabled = true;
-            this.FFNxContolerDeathzoneLT.Location = new System.Drawing.Point(85, 23);
+            this.FFNxContolerDeathzoneLT.Location = new System.Drawing.Point(87, 23);
             this.FFNxContolerDeathzoneLT.Name = "FFNxContolerDeathzoneLT";
-            this.FFNxContolerDeathzoneLT.Size = new System.Drawing.Size(73, 23);
+            this.FFNxContolerDeathzoneLT.Size = new System.Drawing.Size(76, 23);
             this.FFNxContolerDeathzoneLT.TabIndex = 1;
             // 
             // FFNxContolerDeathzoneStick
@@ -2587,7 +2587,7 @@
             this.FFNxContolerDeathzoneStick.FormattingEnabled = true;
             this.FFNxContolerDeathzoneStick.Location = new System.Drawing.Point(9, 23);
             this.FFNxContolerDeathzoneStick.Name = "FFNxContolerDeathzoneStick";
-            this.FFNxContolerDeathzoneStick.Size = new System.Drawing.Size(73, 23);
+            this.FFNxContolerDeathzoneStick.Size = new System.Drawing.Size(76, 23);
             this.FFNxContolerDeathzoneStick.TabIndex = 0;
             // 
             // FFNxGroupAudioSample
@@ -2612,7 +2612,7 @@
             this.FFNxAudioSample.FormattingEnabled = true;
             this.FFNxAudioSample.Location = new System.Drawing.Point(9, 23);
             this.FFNxAudioSample.Name = "FFNxAudioSample";
-            this.FFNxAudioSample.Size = new System.Drawing.Size(222, 23);
+            this.FFNxAudioSample.Size = new System.Drawing.Size(232, 23);
             this.FFNxAudioSample.TabIndex = 0;
             // 
             // FFNxGroupIR
@@ -2637,7 +2637,7 @@
             this.FFNxIR.FormattingEnabled = true;
             this.FFNxIR.Location = new System.Drawing.Point(9, 23);
             this.FFNxIR.Name = "FFNxIR";
-            this.FFNxIR.Size = new System.Drawing.Size(222, 23);
+            this.FFNxIR.Size = new System.Drawing.Size(232, 23);
             this.FFNxIR.TabIndex = 0;
             // 
             // FFNxGroupAudioChannels
@@ -2662,7 +2662,7 @@
             this.FFNxAudioChannels.FormattingEnabled = true;
             this.FFNxAudioChannels.Location = new System.Drawing.Point(9, 23);
             this.FFNxAudioChannels.Name = "FFNxAudioChannels";
-            this.FFNxAudioChannels.Size = new System.Drawing.Size(222, 23);
+            this.FFNxAudioChannels.Size = new System.Drawing.Size(232, 23);
             this.FFNxAudioChannels.TabIndex = 0;
             // 
             // FFNxGroupAA
@@ -2687,7 +2687,7 @@
             this.FFNxAA.FormattingEnabled = true;
             this.FFNxAA.Location = new System.Drawing.Point(9, 23);
             this.FFNxAA.Name = "FFNxAA";
-            this.FFNxAA.Size = new System.Drawing.Size(222, 23);
+            this.FFNxAA.Size = new System.Drawing.Size(232, 23);
             this.FFNxAA.TabIndex = 0;
             // 
             // FFNxGroupResolution
@@ -2712,7 +2712,7 @@
             this.FFNxResolution.FormattingEnabled = true;
             this.FFNxResolution.Location = new System.Drawing.Point(9, 23);
             this.FFNxResolution.Name = "FFNxResolution";
-            this.FFNxResolution.Size = new System.Drawing.Size(222, 23);
+            this.FFNxResolution.Size = new System.Drawing.Size(232, 23);
             this.FFNxResolution.TabIndex = 0;
             // 
             // FFNxGroupHDR
@@ -2737,7 +2737,7 @@
             this.FFNxHDR.FormattingEnabled = true;
             this.FFNxHDR.Location = new System.Drawing.Point(9, 23);
             this.FFNxHDR.Name = "FFNxHDR";
-            this.FFNxHDR.Size = new System.Drawing.Size(222, 23);
+            this.FFNxHDR.Size = new System.Drawing.Size(232, 23);
             this.FFNxHDR.TabIndex = 0;
             // 
             // FFNxGroupRatio
@@ -2762,7 +2762,7 @@
             this.FFNxRatio.FormattingEnabled = true;
             this.FFNxRatio.Location = new System.Drawing.Point(9, 23);
             this.FFNxRatio.Name = "FFNxRatio";
-            this.FFNxRatio.Size = new System.Drawing.Size(222, 23);
+            this.FFNxRatio.Size = new System.Drawing.Size(232, 23);
             this.FFNxRatio.TabIndex = 0;
             // 
             // FFNxGroupScreen
@@ -2787,7 +2787,7 @@
             this.FFNxScreen.FormattingEnabled = true;
             this.FFNxScreen.Location = new System.Drawing.Point(9, 23);
             this.FFNxScreen.Name = "FFNxScreen";
-            this.FFNxScreen.Size = new System.Drawing.Size(222, 23);
+            this.FFNxScreen.Size = new System.Drawing.Size(232, 23);
             this.FFNxScreen.TabIndex = 0;
             // 
             // FFNxVsync
@@ -2872,7 +2872,7 @@
             this.FFNx3dEngine.FormattingEnabled = true;
             this.FFNx3dEngine.Location = new System.Drawing.Point(9, 23);
             this.FFNx3dEngine.Name = "FFNx3dEngine";
-            this.FFNx3dEngine.Size = new System.Drawing.Size(222, 23);
+            this.FFNx3dEngine.Size = new System.Drawing.Size(232, 23);
             this.FFNx3dEngine.TabIndex = 0;
             // 
             // FFNxLighting
