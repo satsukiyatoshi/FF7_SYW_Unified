@@ -237,30 +237,6 @@
 		<text>Aavock et Satsuki_Yatoshi</text>
 	</control>
 	<control>
-		<name>graphicsAlphaDialogs</name>
-		<text>Fenêtres de dialogue translucides</text>
-	</control>
-	<control>
-		<name>alphadialogs</name>
-		<text>description des fenetres de dialog</text>
-	</control>
-	<control>
-		<name>alphadialogs author</name>
-		<text>TrueOdin et Chrysalis</text>
-	</control>
-	<control>
-		<name>graphicsAlphaBattles</name>
-		<text>Fenêtres de combat translucides</text>
-	</control>
-	<control>
-		<name>alphabattles</name>
-		<text>description des fenetres de combat</text>
-	</control>
-	<control>
-		<name>alphabattles author</name>
-		<text>TrueOdin et Chrysalis</text>
-	</control>
-	<control>
 		<name>graphicsGroupModels3Df</name>
 		<text>Modèles 3D des scènes du jeu</text>
 	</control>
@@ -283,18 +259,6 @@
 	<control>
 		<name>graphicsGroupMenu</name>
 		<text>Interface (menus et polices)</text>
-	</control>
-	<control>
-		<name>graphicsLighting</name>
-		<text>Ombres dynamiques</text>
-	</control>
-	<control>
-		<name>lighting</name>
-		<text>description des ombres dyn</text>
-	</control>
-	<control>
-		<name>lighting author</name>
-		<text>TrueOdin et Cosmos</text>
 	</control>
 	<control>
 		<name>soundsGroupMusics</name>
@@ -373,7 +337,7 @@
 	<control>
 	</control>
 		<name>FFNxFrame1</name>
-		<text>Patchs de gameplay</text>
+		<text>Patchs mémoire</text>
 	</control>	
 	<control>
 		<name>FFNxFrame2</name>
@@ -385,88 +349,100 @@
 	</control>
 
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroup3dEngine</name>
+		<text>Moteur de rendu</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupScreen</name>
+		<text>Affichage</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupResolution</name>
+		<text>Résolution d'écran</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupRatio</name>
+		<text>Format d'affichage</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupIR</name>
+		<text>Résolution interne</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxAlphaDialogs</name>
+		<text>Fenêtres de dialogue translucides</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxAlphaBattles</name>
+		<text>Fenêtres de combat translucides</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxLightingLighting</name>
+		<text>Ombres dynamiques</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxVsync</name>
+		<text>Synchronisation verticale</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupAA</name>
+		<text>Anti-Aliasing</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxAnisotropic</name>
+		<text>Filtrage anisotrope</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupHDR</name>
+		<text>HDR Nits</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupAudioChannels</name>
+		<text>Canaux audio</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupAudioSample</name>
+		<text>Taux d'échantillonnage audio</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNXMusicResume</name>
+		<text>Reprendre les musiques</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxAnalogControler</name>
+		<text>Contôleur analogique</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNXSteamSucces</name>
+		<text>Succès Steam</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupContolerDeathzones</name>
+		<text>Zone morte de la manette (stick, LT, RT)</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupSpeedhack</name>
+		<text>Speedhack (step, minimum, maximum)</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxGroupFps</name>
+		<text>Fluidité du jeu (fps)</text>
 	</control>
 	<control>
-		<name></name>
-		<text></text>
+		<name>FFNxShowStats</name>
+		<text>Afficher les informations de FFNx</text>
+	</control>
+	<control>
+		<name>FFNxDebugTool</name>
+		<text>Outil de debug</text>
+	</control>
+	<control>
+		<name>FFNxLogs</name>
+		<text>Logs complets</text>
+	</control>
+	<control>
+		<name>FFNxFootSteps</name>
+		<text>Activer les bruits de pas</text>
 	</control>
 	<control>
 		<name></name>

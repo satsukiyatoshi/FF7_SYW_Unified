@@ -48,7 +48,7 @@ namespace FF7_SYW_Unified
 
 
         //display preview picture and description for SYW mods
-        private void modShow(string path, string name)
+        private void modShow(string name)
         {
             graphicPrevPic.ImageLocation = Application.StartupPath + @"Mods\SYW\Prev\" + name + ".jpg";
             graphicsHelp.Text = translate(name, Globals.translateUI);

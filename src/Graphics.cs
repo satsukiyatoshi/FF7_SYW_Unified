@@ -35,15 +35,12 @@ namespace FF7_SYW_Unified
         }
 
 
-        private void graphicsFields_MouseEnter(object sender, EventArgs e) { modShow("SYW","fields"); }
-        private void graphicsAnimations_MouseEnter(object sender, EventArgs e) { modShow("SYW", "animations"); }
-        private void graphicsBattles_MouseEnter(object sender, EventArgs e) { modShow("SYW", "battles"); }
-        private void graphicsMagics_MouseEnter(object sender, EventArgs e) { modShow("SYW", "magics"); }
-        private void graphicsWorldMap_MouseEnter(object sender, EventArgs e) { modShow("SYW", "worldmap"); }
-        private void graphicsMiniGames_MouseEnter(object sender, EventArgs e) { modShow("SYW", "minigames"); }
-       //private void graphicsAlphaDialogs_MouseEnter(object sender, EventArgs e) { modShow("SYW", "alphadialogs"); }
-       //private void graphicsAlphaBattles_MouseEnter(object sender, EventArgs e) { modShow("SYW", "alphabattles"); }
-       //private void graphicsLighting_MouseEnter(object sender, EventArgs e) { modShow("SYW", "lighting"); }
+        private void graphicsFields_MouseEnter(object sender, EventArgs e) { modShow("fields"); }
+        private void graphicsAnimations_MouseEnter(object sender, EventArgs e) { modShow("animations"); }
+        private void graphicsBattles_MouseEnter(object sender, EventArgs e) { modShow("battles"); }
+        private void graphicsMagics_MouseEnter(object sender, EventArgs e) { modShow("magics"); }
+        private void graphicsWorldMap_MouseEnter(object sender, EventArgs e) { modShow("worldmap"); }
+        private void graphicsMiniGames_MouseEnter(object sender, EventArgs e) { modShow("minigames"); }
 
 
         private void graphicsModels3DfChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", "models.fields", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
