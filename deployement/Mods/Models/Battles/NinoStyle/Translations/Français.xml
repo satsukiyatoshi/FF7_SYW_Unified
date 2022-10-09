@@ -10,7 +10,11 @@
 	</control>
 	<control>
 		<name>author</name>
-		<text>NynoStyle</text>
+		<text>Nyno</text>
+	</control>
+	<control>
+		<name>url</name>
+		<text>doom9.org</text>
 	</control>
 </translation>
 

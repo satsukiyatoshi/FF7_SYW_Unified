@@ -81,7 +81,7 @@ namespace FF7_SYW_Unified
             //restore mouse Y postion on combo before display mods information to avoid to display other mods information on-hover
             if (Globals.mouseY != 0)
             {
-                Cursor.Position = new System.Drawing.Point (Cursor.Position.X, Globals.mouseY);
+                Cursor.Position = new System.Drawing.Point(Cursor.Position.X, Globals.mouseY);
                 Globals.mouseY = 0;
             }
 
@@ -98,7 +98,7 @@ namespace FF7_SYW_Unified
         }
 
 
-        static string getModCustomFolder(ComboBox combo, string folderwSource)
+            static string getModCustomFolder(ComboBox combo, string folderwSource)
         {
             try
             {
@@ -136,7 +136,21 @@ namespace FF7_SYW_Unified
 
         private void launchGame_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("placeholder");
+            TextWriter tw = new StreamWriter(@"d:\translateUI.txt");
+                for (var i = 0; i < Globals.translateUI.Count; i += 1)
+                {
+                tw.WriteLine(Globals.translateUI[i].name + " -- " + Globals.translateUI[i].text);
+                }
+            tw.Close();
+
+            TextWriter tw2 = new StreamWriter(@"d:\translateMod.txt");
+            for (var i = 0; i < Globals.translateMod.Count; i += 1)
+            {
+                tw2.WriteLine(Globals.translateMod[i].name + " -- " + Globals.translateMod[i].text);
+            }
+            tw2.Close();
+
+            MessageBox.Show("ok");
         }
 
     }

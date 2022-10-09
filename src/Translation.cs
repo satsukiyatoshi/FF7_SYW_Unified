@@ -1,6 +1,7 @@
 ﻿
 using System.Diagnostics;
 using System.Xml;
+using static System.Windows.Forms.LinkLabel;
 
 namespace FF7_SYW_Unified
 {
@@ -39,7 +40,7 @@ namespace FF7_SYW_Unified
 
                     combo.Items.Add(translate("namemod." + modType +"." + modDir, Globals.translateMod));
                 }
-
+            
         }
 
 
@@ -120,6 +121,7 @@ namespace FF7_SYW_Unified
             string ctrlHelp = "";
             string ctrlUrl = "";
             string ctrlAuthor = "";
+            string ctrtCompatibility = "";
             Boolean isendelement = false;
 
             if (!File.Exists(fileLang))
@@ -151,6 +153,9 @@ namespace FF7_SYW_Unified
                             case "author":
                                 ctrlAuthor = reader.ReadString();
                                 break;
+                            case "compatibily":
+                                ctrtCompatibility = reader.ReadString();
+                                break;
                             case "control":
                                 isendelement = true;
                                 break;
@@ -163,11 +168,13 @@ namespace FF7_SYW_Unified
                         trans.Add((ctrlName + modName + "help", ctrlHelp));
                         trans.Add((ctrlName + modName + "url", ctrlUrl));
                         trans.Add((ctrlName + modName + "author", ctrlAuthor));
+                        trans.Add((ctrlName + modName + "compatibily", ctrtCompatibility));
                         ctrlName = "";
                         ctrlText = "";
                         ctrlHelp = "";
                         ctrlUrl = "";
                         ctrlAuthor = "";
+                        ctrtCompatibility = "";
                         isendelement = false;
                     }
 
