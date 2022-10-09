@@ -184,6 +184,8 @@
             this.gameplayPrevPic = new System.Windows.Forms.PictureBox();
             this.menuFFNxPanel = new System.Windows.Forms.Panel();
             this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
+            this.FFNxHelpAuthor = new System.Windows.Forms.Label();
+            this.FFNxHelp = new System.Windows.Forms.Label();
             this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
             this.FFNxAlphaBattles = new System.Windows.Forms.CheckBox();
             this.FFNxAlphaDialogs = new System.Windows.Forms.CheckBox();
@@ -276,6 +278,7 @@
             this.gameplayFrame3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).BeginInit();
             this.menuFFNxPanel.SuspendLayout();
+            this.FFNxFrame2.SuspendLayout();
             this.FFNxFrame1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flagGFFNxPatch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagSFFNxPatch)).BeginInit();
@@ -2296,6 +2299,8 @@
             // 
             // FFNxFrame2
             // 
+            this.FFNxFrame2.Controls.Add(this.FFNxHelpAuthor);
+            this.FFNxFrame2.Controls.Add(this.FFNxHelp);
             this.FFNxFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FFNxFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.FFNxFrame2.Location = new System.Drawing.Point(523, 4);
@@ -2304,6 +2309,29 @@
             this.FFNxFrame2.TabIndex = 10;
             this.FFNxFrame2.TabStop = false;
             this.FFNxFrame2.Text = "Aide";
+            // 
+            // FFNxHelpAuthor
+            // 
+            this.FFNxHelpAuthor.BackColor = System.Drawing.Color.Black;
+            this.FFNxHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FFNxHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FFNxHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.FFNxHelpAuthor.Location = new System.Drawing.Point(11, 310);
+            this.FFNxHelpAuthor.Name = "FFNxHelpAuthor";
+            this.FFNxHelpAuthor.Size = new System.Drawing.Size(244, 22);
+            this.FFNxHelpAuthor.TabIndex = 3;
+            this.FFNxHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FFNxHelp
+            // 
+            this.FFNxHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.FFNxHelp.Location = new System.Drawing.Point(11, 22);
+            this.FFNxHelp.Name = "FFNxHelp";
+            this.FFNxHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FFNxHelp.Size = new System.Drawing.Size(244, 288);
+            this.FFNxHelp.TabIndex = 2;
             // 
             // FFNxFrame1
             // 
@@ -2954,6 +2982,7 @@
             this.gameplayFrame3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).EndInit();
             this.menuFFNxPanel.ResumeLayout(false);
+            this.FFNxFrame2.ResumeLayout(false);
             this.FFNxFrame1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flagGFFNxPatch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagSFFNxPatch)).EndInit();
@@ -3179,5 +3208,7 @@
         private CheckBox FFNxLogs;
         private CheckBox FFNxAlphaBattles;
         private CheckBox FFNxAlphaDialogs;
+        private Label FFNxHelpAuthor;
+        private Label FFNxHelp;
     }
 }
