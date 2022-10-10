@@ -39,8 +39,8 @@ namespace FF7_SYW_Unified
             if (index > -1)
             {
                 FFNxComboPatchs.Text = FFNxPatchsList.Items[index].ToString();
-                modShowCustom(FFNxComboPatchs, @"Hacks\", FFNxHelp, FFNxHelpAuthor, gameplayPrevPic);
-                setModFlags(FFNxFrame2);
+                modShowCustom(FFNxComboPatchs, @"Hacks\", FFNxHelp, FFNxHelpAuthor, FFNxPrevPic);
+                setModFlags(FFNxFrame1);
             }
 
             // use 25 ms sleep to avoid overkill cpu usage with the mousemove check

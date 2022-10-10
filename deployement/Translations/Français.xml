@@ -347,7 +347,10 @@
 		<name>FFNxFrame3</name>
 		<text>Configuration du pilote FFNx</text>
 	</control>
-
+	<control>
+		<name>FFNxFrame4</name>
+		<text>Aperçu</text>
+	</control>
 	<control>
 		<name>FFNxGroup3dEngine</name>
 		<text>Moteur de rendu</text>
