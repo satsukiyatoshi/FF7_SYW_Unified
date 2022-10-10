@@ -4,8 +4,20 @@
 <!-- Generic worlds and GUI messages -->
 <!--  -->
 	<control>
+		<name>vanilla</name>
+		<text>Jeu original</text>
+	</control>
+	<control>
 		<name>donation</name>
 		<text>donation</text>
+	</control>
+	<control>
+		<name>automatic</name>
+		<text>Automatique</text>
+	</control>
+	<control>
+		<name>disabled</name>
+		<text>Désactivé</text>
 	</control>
 	<control>
 		<name>errorloadingmod</name>
@@ -22,10 +34,6 @@
 	<control>
 		<name>norulmod</name>
 		<text>Pas de page web indiquée pour ce mod</text>
-	</control>
-	<control>
-		<name>vanilla</name>
-		<text>Jeu de base</text>
 	</control>
 	
 	
@@ -355,6 +363,18 @@
 		<url></url>
 	</control>
 	<control>
+		<name>fullscreen</name>
+		<text>Plein écran</text>
+	</control>
+	<control>
+		<name>windowed</name>
+		<text>Fenêtré</text>
+	</control>
+	<control>
+		<name>windowedborderless</name>
+		<text>Fenêtré sans bordure</text>
+	</control>
+	<control>
 		<name>FFNxGroupResolution</name>
 		<text>Résolution d'écran</text>
 		<author></author>
@@ -367,6 +387,14 @@
 		<author>TO</author>
 		<help>16/9 ou wide ou 4/3</help>
 		<url></url>
+	</control>
+	<control>
+		<name>strechedwidescreen</name>
+		<text>16/9 Étiré (déformé)</text>
+	</control>
+	<control>
+		<name>realwidescreen</name>
+		<text>16/9 réel (béta)</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>
@@ -465,6 +493,14 @@
 		<author>smooth</author>
 		<help>60fps</help>
 		<url></url>
+	</control>
+	<control>
+		<name>gamefpsbattle30</name>
+		<text>Combats en 30 fps</text>
+	</control>
+	<control>
+		<name>gamefull60fps</name>
+		<text>Jeu complet en 60fps</text>
 	</control>
 	<control>
 		<name>FFNxShowStats</name>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Boites de dialogue translusides à 70%</text>
+		<help>Rend les boites de dialogue partiellement transparentes</help>
+		<author>Satsuki</author>
+		<url></url>
+		<compatibily>FE</compatibily>
+			</control>
+</translation>
+

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Courri par défaut</text>
+		<help>permet de courir au lieu de marcher par defaut</help>
+		<author>Satsuki</author>
+		<url></url>
+		<compatibily>FE</compatibily>
+			</control>
+</translation>
+

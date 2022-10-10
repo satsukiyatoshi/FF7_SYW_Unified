@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Sauvegarder n'importe où</text>
+		<help>permet de save n'importe où
+		Attention de bugs sont possible, gardez toujours une save classique</help>
+		<author>Satsuki</author>
+		<url></url>
+		<compatibily>F</compatibily>
+			</control>
+</translation>
+
