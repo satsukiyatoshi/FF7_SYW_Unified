@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace FF7_SYW_Unified
 {
     partial class FF7U
@@ -6,24 +8,46 @@ namespace FF7_SYW_Unified
 
         private void FFNxHelpAuthor_Click(object sender, EventArgs e) { openUrlMod(); }
 
+
         private void FFNxClear()
         {
             FFNxComboPatchs.Items.Clear();
             FFNxPatchsList.Items.Clear();
         }
 
+
         private void FFNxSetDefaults()
         {
             setModsItems(FFNxComboPatchs, @"Hacks\");
+            foreach (var item in FFNxComboPatchs.Items)
+            {
+                FFNxPatchsList.Items.Add(item);
+            }
         }
 
-        /*
-        private void FFNxHacksChange(object sender, EventArgs e)
+
+        private void FFNxPatchsList_MouseMove(object sender, MouseEventArgs e)
         {
-            modShowCustom(FFNxComboPatchs, @"Hacks\", FFNxHelp, FFNxHelpAuthor, gameplayPrevPic);
-            setModFlags(FFNxFrame2);
+
+            Point pos = FFNxPatchsList.PointToClient(MousePosition);
+
+            int index = FFNxPatchsList.IndexFromPoint(pos);
+
+            if (index > -1)
+            {
+                pos = this.PointToClient(MousePosition);
+
+                FFNxComboPatchs.Text = FFNxPatchsList.Items[index].ToString();
+                modShowCustom(FFNxComboPatchs, @"Hacks\", FFNxHelp, FFNxHelpAuthor, gameplayPrevPic);
+                setModFlags(FFNxFrame2);
+
+            }
+
+            // use 25 ms sleep to avoid overkill cpu usage with the mousemove check
+            Thread.Sleep(25);
+
         }
-        */
+
 
 
         private void FFNxGroupFps_MouseEnter(object sender, EventArgs e) { modShow("FFNxGroupFps", FFNxHelp, FFNxHelpAuthor); }

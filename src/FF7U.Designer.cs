@@ -191,8 +191,8 @@
             this.FFNxHelpAuthor = new System.Windows.Forms.Label();
             this.FFNxHelp = new System.Windows.Forms.Label();
             this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
+            this.FFNxPatchsList = new System.Windows.Forms.CheckedListBox();
             this.FFNxComboPatchs = new System.Windows.Forms.ComboBox();
-            this.FFNxPatchsList = new System.Windows.Forms.ListBox();
             this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
             this.FFNxGroupFps = new System.Windows.Forms.GroupBox();
             this.FFNxFps = new System.Windows.Forms.ComboBox();
@@ -595,6 +595,7 @@
             // 
             // flagGGraphicsMenu
             // 
+            this.flagGGraphicsMenu.Image = global::FF7_SYW_Unified.Properties.Resources.german_off;
             this.flagGGraphicsMenu.Location = new System.Drawing.Point(202, 35);
             this.flagGGraphicsMenu.Name = "flagGGraphicsMenu";
             this.flagGGraphicsMenu.Size = new System.Drawing.Size(36, 18);
@@ -604,6 +605,7 @@
             // 
             // flagEGraphicsMenu
             // 
+            this.flagEGraphicsMenu.Image = global::FF7_SYW_Unified.Properties.Resources.english_off;
             this.flagEGraphicsMenu.Location = new System.Drawing.Point(202, 14);
             this.flagEGraphicsMenu.Name = "flagEGraphicsMenu";
             this.flagEGraphicsMenu.Size = new System.Drawing.Size(36, 18);
@@ -613,6 +615,7 @@
             // 
             // flagSGraphicsMenu
             // 
+            this.flagSGraphicsMenu.Image = global::FF7_SYW_Unified.Properties.Resources.spain_off;
             this.flagSGraphicsMenu.Location = new System.Drawing.Point(240, 35);
             this.flagSGraphicsMenu.Name = "flagSGraphicsMenu";
             this.flagSGraphicsMenu.Size = new System.Drawing.Size(36, 18);
@@ -622,6 +625,7 @@
             // 
             // flagFGraphicsMenu
             // 
+            this.flagFGraphicsMenu.Image = global::FF7_SYW_Unified.Properties.Resources.french_off;
             this.flagFGraphicsMenu.Location = new System.Drawing.Point(240, 14);
             this.flagFGraphicsMenu.Name = "flagFGraphicsMenu";
             this.flagFGraphicsMenu.Size = new System.Drawing.Size(36, 18);
@@ -1936,13 +1940,15 @@
             // soundsList
             // 
             this.soundsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.soundsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundsList.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.soundsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.soundsList.FormattingEnabled = true;
             this.soundsList.ItemHeight = 15;
             this.soundsList.Location = new System.Drawing.Point(11, 127);
             this.soundsList.Name = "soundsList";
-            this.soundsList.Size = new System.Drawing.Size(370, 199);
+            this.soundsList.Size = new System.Drawing.Size(370, 197);
             this.soundsList.TabIndex = 0;
             this.soundsList.SelectedIndexChanged += new System.EventHandler(this.soundsList_SelectedIndexChanged);
             // 
@@ -2204,6 +2210,7 @@
             // 
             // flagSGameplay
             // 
+            this.flagSGameplay.Image = global::FF7_SYW_Unified.Properties.Resources.spain_off;
             this.flagSGameplay.Location = new System.Drawing.Point(724, 54);
             this.flagSGameplay.Name = "flagSGameplay";
             this.flagSGameplay.Size = new System.Drawing.Size(52, 26);
@@ -2213,6 +2220,7 @@
             // 
             // flagGGameplay
             // 
+            this.flagGGameplay.Image = global::FF7_SYW_Unified.Properties.Resources.german_off;
             this.flagGGameplay.Location = new System.Drawing.Point(667, 54);
             this.flagGGameplay.Name = "flagGGameplay";
             this.flagGGameplay.Size = new System.Drawing.Size(52, 26);
@@ -2222,6 +2230,7 @@
             // 
             // flagFGameplay
             // 
+            this.flagFGameplay.Image = global::FF7_SYW_Unified.Properties.Resources.french_off;
             this.flagFGameplay.Location = new System.Drawing.Point(724, 22);
             this.flagFGameplay.Name = "flagFGameplay";
             this.flagFGameplay.Size = new System.Drawing.Size(52, 26);
@@ -2231,6 +2240,7 @@
             // 
             // flagEGameplay
             // 
+            this.flagEGameplay.Image = global::FF7_SYW_Unified.Properties.Resources.english_off;
             this.flagEGameplay.Location = new System.Drawing.Point(667, 22);
             this.flagEGameplay.Name = "flagEGameplay";
             this.flagEGameplay.Size = new System.Drawing.Size(52, 26);
@@ -2316,6 +2326,7 @@
             // 
             // flagGFFNxPatch
             // 
+            this.flagGFFNxPatch.Image = global::FF7_SYW_Unified.Properties.Resources.german_off;
             this.flagGFFNxPatch.Location = new System.Drawing.Point(198, 22);
             this.flagGFFNxPatch.Name = "flagGFFNxPatch";
             this.flagGFFNxPatch.Size = new System.Drawing.Size(56, 28);
@@ -2325,6 +2336,7 @@
             // 
             // flagSFFNxPatch
             // 
+            this.flagSFFNxPatch.Image = global::FF7_SYW_Unified.Properties.Resources.spain_off;
             this.flagSFFNxPatch.Location = new System.Drawing.Point(136, 22);
             this.flagSFFNxPatch.Name = "flagSFFNxPatch";
             this.flagSFFNxPatch.Size = new System.Drawing.Size(56, 28);
@@ -2334,6 +2346,7 @@
             // 
             // flagFFFNxPatch
             // 
+            this.flagFFFNxPatch.Image = global::FF7_SYW_Unified.Properties.Resources.french_off;
             this.flagFFFNxPatch.Location = new System.Drawing.Point(74, 22);
             this.flagFFFNxPatch.Name = "flagFFFNxPatch";
             this.flagFFFNxPatch.Size = new System.Drawing.Size(56, 28);
@@ -2343,6 +2356,7 @@
             // 
             // flagEFFNxPatch
             // 
+            this.flagEFFNxPatch.Image = global::FF7_SYW_Unified.Properties.Resources.english_off;
             this.flagEFFNxPatch.Location = new System.Drawing.Point(11, 22);
             this.flagEFFNxPatch.Name = "flagEFFNxPatch";
             this.flagEFFNxPatch.Size = new System.Drawing.Size(56, 28);
@@ -2376,8 +2390,8 @@
             // 
             // FFNxFrame1
             // 
-            this.FFNxFrame1.Controls.Add(this.FFNxComboPatchs);
             this.FFNxFrame1.Controls.Add(this.FFNxPatchsList);
+            this.FFNxFrame1.Controls.Add(this.FFNxComboPatchs);
             this.FFNxFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FFNxFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.FFNxFrame1.Location = new System.Drawing.Point(3, 4);
@@ -2387,6 +2401,21 @@
             this.FFNxFrame1.TabStop = false;
             this.FFNxFrame1.Text = "Patchs mémoire";
             // 
+            // FFNxPatchsList
+            // 
+            this.FFNxPatchsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxPatchsList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FFNxPatchsList.CheckOnClick = true;
+            this.FFNxPatchsList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FFNxPatchsList.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxPatchsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.FFNxPatchsList.FormattingEnabled = true;
+            this.FFNxPatchsList.Location = new System.Drawing.Point(13, 22);
+            this.FFNxPatchsList.Name = "FFNxPatchsList";
+            this.FFNxPatchsList.Size = new System.Drawing.Size(412, 272);
+            this.FFNxPatchsList.TabIndex = 29;
+            this.FFNxPatchsList.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FFNxPatchsList_MouseMove);
+            // 
             // FFNxComboPatchs
             // 
             this.FFNxComboPatchs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
@@ -2394,22 +2423,11 @@
             this.FFNxComboPatchs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FFNxComboPatchs.ForeColor = System.Drawing.Color.White;
             this.FFNxComboPatchs.FormattingEnabled = true;
-            this.FFNxComboPatchs.Location = new System.Drawing.Point(20, 256);
+            this.FFNxComboPatchs.Location = new System.Drawing.Point(232, 309);
             this.FFNxComboPatchs.Name = "FFNxComboPatchs";
             this.FFNxComboPatchs.Size = new System.Drawing.Size(239, 23);
             this.FFNxComboPatchs.TabIndex = 28;
-            // 
-            // FFNxPatchsList
-            // 
-            this.FFNxPatchsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.FFNxPatchsList.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FFNxPatchsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.FFNxPatchsList.FormattingEnabled = true;
-            this.FFNxPatchsList.ItemHeight = 15;
-            this.FFNxPatchsList.Location = new System.Drawing.Point(11, 22);
-            this.FFNxPatchsList.Name = "FFNxPatchsList";
-            this.FFNxPatchsList.Size = new System.Drawing.Size(275, 274);
-            this.FFNxPatchsList.TabIndex = 26;
+            this.FFNxComboPatchs.Visible = false;
             // 
             // FFNxFrame3
             // 
@@ -3243,7 +3261,7 @@
         private PictureBox flagSFFNxPatch;
         private PictureBox flagFFFNxPatch;
         private PictureBox flagEFFNxPatch;
-        private ListBox FFNxPatchsList;
         private ComboBox FFNxComboPatchs;
+        private CheckedListBox FFNxPatchsList;
     }
 }
