@@ -184,15 +184,15 @@
             this.gameplayPrevPic = new System.Windows.Forms.PictureBox();
             this.menuFFNxPanel = new System.Windows.Forms.Panel();
             this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
-            this.FFNxHelpAuthor = new System.Windows.Forms.Label();
-            this.FFNxHelp = new System.Windows.Forms.Label();
-            this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
-            this.FFNxAlphaBattles = new System.Windows.Forms.CheckBox();
-            this.FFNxAlphaDialogs = new System.Windows.Forms.CheckBox();
             this.flagGFFNxPatch = new System.Windows.Forms.PictureBox();
             this.flagSFFNxPatch = new System.Windows.Forms.PictureBox();
             this.flagFFFNxPatch = new System.Windows.Forms.PictureBox();
             this.flagEFFNxPatch = new System.Windows.Forms.PictureBox();
+            this.FFNxHelpAuthor = new System.Windows.Forms.Label();
+            this.FFNxHelp = new System.Windows.Forms.Label();
+            this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
+            this.FFNxComboPatchs = new System.Windows.Forms.ComboBox();
+            this.FFNxPatchsList = new System.Windows.Forms.ListBox();
             this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
             this.FFNxGroupFps = new System.Windows.Forms.GroupBox();
             this.FFNxFps = new System.Windows.Forms.ComboBox();
@@ -279,11 +279,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).BeginInit();
             this.menuFFNxPanel.SuspendLayout();
             this.FFNxFrame2.SuspendLayout();
-            this.FFNxFrame1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flagGFFNxPatch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagSFFNxPatch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagFFFNxPatch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagEFFNxPatch)).BeginInit();
+            this.FFNxFrame1.SuspendLayout();
             this.FFNxFrame3.SuspendLayout();
             this.FFNxGroupFps.SuspendLayout();
             this.FFNxGroupSpeedhack.SuspendLayout();
@@ -2299,6 +2299,10 @@
             // 
             // FFNxFrame2
             // 
+            this.FFNxFrame2.Controls.Add(this.flagGFFNxPatch);
+            this.FFNxFrame2.Controls.Add(this.flagSFFNxPatch);
+            this.FFNxFrame2.Controls.Add(this.flagFFFNxPatch);
+            this.FFNxFrame2.Controls.Add(this.flagEFFNxPatch);
             this.FFNxFrame2.Controls.Add(this.FFNxHelpAuthor);
             this.FFNxFrame2.Controls.Add(this.FFNxHelp);
             this.FFNxFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -2309,6 +2313,42 @@
             this.FFNxFrame2.TabIndex = 10;
             this.FFNxFrame2.TabStop = false;
             this.FFNxFrame2.Text = "Aide";
+            // 
+            // flagGFFNxPatch
+            // 
+            this.flagGFFNxPatch.Location = new System.Drawing.Point(198, 22);
+            this.flagGFFNxPatch.Name = "flagGFFNxPatch";
+            this.flagGFFNxPatch.Size = new System.Drawing.Size(56, 28);
+            this.flagGFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagGFFNxPatch.TabIndex = 26;
+            this.flagGFFNxPatch.TabStop = false;
+            // 
+            // flagSFFNxPatch
+            // 
+            this.flagSFFNxPatch.Location = new System.Drawing.Point(136, 22);
+            this.flagSFFNxPatch.Name = "flagSFFNxPatch";
+            this.flagSFFNxPatch.Size = new System.Drawing.Size(56, 28);
+            this.flagSFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagSFFNxPatch.TabIndex = 25;
+            this.flagSFFNxPatch.TabStop = false;
+            // 
+            // flagFFFNxPatch
+            // 
+            this.flagFFFNxPatch.Location = new System.Drawing.Point(74, 22);
+            this.flagFFFNxPatch.Name = "flagFFFNxPatch";
+            this.flagFFFNxPatch.Size = new System.Drawing.Size(56, 28);
+            this.flagFFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagFFFNxPatch.TabIndex = 24;
+            this.flagFFFNxPatch.TabStop = false;
+            // 
+            // flagEFFNxPatch
+            // 
+            this.flagEFFNxPatch.Location = new System.Drawing.Point(11, 22);
+            this.flagEFFNxPatch.Name = "flagEFFNxPatch";
+            this.flagEFFNxPatch.Size = new System.Drawing.Size(56, 28);
+            this.flagEFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagEFFNxPatch.TabIndex = 23;
+            this.flagEFFNxPatch.TabStop = false;
             // 
             // FFNxHelpAuthor
             // 
@@ -2328,20 +2368,16 @@
             this.FFNxHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
             this.FFNxHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FFNxHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.FFNxHelp.Location = new System.Drawing.Point(11, 22);
+            this.FFNxHelp.Location = new System.Drawing.Point(11, 58);
             this.FFNxHelp.Name = "FFNxHelp";
             this.FFNxHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.FFNxHelp.Size = new System.Drawing.Size(244, 288);
+            this.FFNxHelp.Size = new System.Drawing.Size(244, 252);
             this.FFNxHelp.TabIndex = 2;
             // 
             // FFNxFrame1
             // 
-            this.FFNxFrame1.Controls.Add(this.FFNxAlphaBattles);
-            this.FFNxFrame1.Controls.Add(this.FFNxAlphaDialogs);
-            this.FFNxFrame1.Controls.Add(this.flagGFFNxPatch);
-            this.FFNxFrame1.Controls.Add(this.flagSFFNxPatch);
-            this.FFNxFrame1.Controls.Add(this.flagFFFNxPatch);
-            this.FFNxFrame1.Controls.Add(this.flagEFFNxPatch);
+            this.FFNxFrame1.Controls.Add(this.FFNxComboPatchs);
+            this.FFNxFrame1.Controls.Add(this.FFNxPatchsList);
             this.FFNxFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FFNxFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.FFNxFrame1.Location = new System.Drawing.Point(3, 4);
@@ -2351,65 +2387,29 @@
             this.FFNxFrame1.TabStop = false;
             this.FFNxFrame1.Text = "Patchs mémoire";
             // 
-            // FFNxAlphaBattles
+            // FFNxComboPatchs
             // 
-            this.FFNxAlphaBattles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.FFNxAlphaBattles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FFNxAlphaBattles.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FFNxAlphaBattles.Location = new System.Drawing.Point(259, 130);
-            this.FFNxAlphaBattles.Name = "FFNxAlphaBattles";
-            this.FFNxAlphaBattles.Size = new System.Drawing.Size(245, 19);
-            this.FFNxAlphaBattles.TabIndex = 27;
-            this.FFNxAlphaBattles.Text = "Fenêtres de combat translusides";
-            this.FFNxAlphaBattles.UseVisualStyleBackColor = false;
+            this.FFNxComboPatchs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.FFNxComboPatchs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FFNxComboPatchs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FFNxComboPatchs.ForeColor = System.Drawing.Color.White;
+            this.FFNxComboPatchs.FormattingEnabled = true;
+            this.FFNxComboPatchs.Location = new System.Drawing.Point(20, 256);
+            this.FFNxComboPatchs.Name = "FFNxComboPatchs";
+            this.FFNxComboPatchs.Size = new System.Drawing.Size(239, 23);
+            this.FFNxComboPatchs.TabIndex = 28;
             // 
-            // FFNxAlphaDialogs
+            // FFNxPatchsList
             // 
-            this.FFNxAlphaDialogs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.FFNxAlphaDialogs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FFNxAlphaDialogs.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FFNxAlphaDialogs.Location = new System.Drawing.Point(10, 130);
-            this.FFNxAlphaDialogs.Name = "FFNxAlphaDialogs";
-            this.FFNxAlphaDialogs.Size = new System.Drawing.Size(245, 19);
-            this.FFNxAlphaDialogs.TabIndex = 26;
-            this.FFNxAlphaDialogs.Text = "Fenêtres de dialogue translusides";
-            this.FFNxAlphaDialogs.UseVisualStyleBackColor = false;
-            // 
-            // flagGFFNxPatch
-            // 
-            this.flagGFFNxPatch.Location = new System.Drawing.Point(456, 51);
-            this.flagGFFNxPatch.Name = "flagGFFNxPatch";
-            this.flagGFFNxPatch.Size = new System.Drawing.Size(52, 26);
-            this.flagGFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagGFFNxPatch.TabIndex = 25;
-            this.flagGFFNxPatch.TabStop = false;
-            // 
-            // flagSFFNxPatch
-            // 
-            this.flagSFFNxPatch.Location = new System.Drawing.Point(399, 51);
-            this.flagSFFNxPatch.Name = "flagSFFNxPatch";
-            this.flagSFFNxPatch.Size = new System.Drawing.Size(52, 26);
-            this.flagSFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagSFFNxPatch.TabIndex = 24;
-            this.flagSFFNxPatch.TabStop = false;
-            // 
-            // flagFFFNxPatch
-            // 
-            this.flagFFFNxPatch.Location = new System.Drawing.Point(456, 19);
-            this.flagFFFNxPatch.Name = "flagFFFNxPatch";
-            this.flagFFFNxPatch.Size = new System.Drawing.Size(52, 26);
-            this.flagFFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagFFFNxPatch.TabIndex = 23;
-            this.flagFFFNxPatch.TabStop = false;
-            // 
-            // flagEFFNxPatch
-            // 
-            this.flagEFFNxPatch.Location = new System.Drawing.Point(399, 19);
-            this.flagEFFNxPatch.Name = "flagEFFNxPatch";
-            this.flagEFFNxPatch.Size = new System.Drawing.Size(52, 26);
-            this.flagEFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagEFFNxPatch.TabIndex = 22;
-            this.flagEFFNxPatch.TabStop = false;
+            this.FFNxPatchsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxPatchsList.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxPatchsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.FFNxPatchsList.FormattingEnabled = true;
+            this.FFNxPatchsList.ItemHeight = 15;
+            this.FFNxPatchsList.Location = new System.Drawing.Point(11, 22);
+            this.FFNxPatchsList.Name = "FFNxPatchsList";
+            this.FFNxPatchsList.Size = new System.Drawing.Size(275, 274);
+            this.FFNxPatchsList.TabIndex = 26;
             // 
             // FFNxFrame3
             // 
@@ -3018,11 +3018,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).EndInit();
             this.menuFFNxPanel.ResumeLayout(false);
             this.FFNxFrame2.ResumeLayout(false);
-            this.FFNxFrame1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flagGFFNxPatch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagSFFNxPatch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagFFFNxPatch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagEFFNxPatch)).EndInit();
+            this.FFNxFrame1.ResumeLayout(false);
             this.FFNxFrame3.ResumeLayout(false);
             this.FFNxGroupFps.ResumeLayout(false);
             this.FFNxGroupSpeedhack.ResumeLayout(false);
@@ -3200,10 +3200,6 @@
         private PictureBox flagEGraphicsMenu;
         private PictureBox flagSGraphicsMenu;
         private PictureBox flagFGraphicsMenu;
-        private PictureBox flagGFFNxPatch;
-        private PictureBox flagSFFNxPatch;
-        private PictureBox flagFFFNxPatch;
-        private PictureBox flagEFFNxPatch;
         private GroupBox FFNxGroup3dEngine;
         private ComboBox FFNx3dEngine;
         private GroupBox FFNxGroupResolution;
@@ -3241,9 +3237,13 @@
         private CheckBox FFNxDebugTool;
         private CheckBox FFNxFootSteps;
         private CheckBox FFNxLogs;
-        private CheckBox FFNxAlphaBattles;
-        private CheckBox FFNxAlphaDialogs;
         private Label FFNxHelpAuthor;
         private Label FFNxHelp;
+        private PictureBox flagGFFNxPatch;
+        private PictureBox flagSFFNxPatch;
+        private PictureBox flagFFFNxPatch;
+        private PictureBox flagEFFNxPatch;
+        private ListBox FFNxPatchsList;
+        private ComboBox FFNxComboPatchs;
     }
 }

@@ -6,6 +6,24 @@ namespace FF7_SYW_Unified
 
         private void FFNxHelpAuthor_Click(object sender, EventArgs e) { openUrlMod(); }
 
+        private void FFNxClear()
+        {
+            FFNxComboPatchs.Items.Clear();
+            FFNxPatchsList.Items.Clear();
+        }
+
+        private void FFNxSetDefaults()
+        {
+            setModsItems(FFNxComboPatchs, @"Hacks\");
+        }
+
+        /*
+        private void FFNxHacksChange(object sender, EventArgs e)
+        {
+            modShowCustom(FFNxComboPatchs, @"Hacks\", FFNxHelp, FFNxHelpAuthor, gameplayPrevPic);
+            setModFlags(FFNxFrame2);
+        }
+        */
 
 
         private void FFNxGroupFps_MouseEnter(object sender, EventArgs e) { modShow("FFNxGroupFps", FFNxHelp, FFNxHelpAuthor); }

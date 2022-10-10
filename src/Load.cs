@@ -127,6 +127,34 @@
             FFNxFps.Items.Add(translate("gamefpsbattle30", Globals.translateUI));
             FFNxFps.Items.Add(translate("gamefull60fps", Globals.translateUI));
             FFNxFps.Text = translate("vanilla", Globals.translateUI);
+
+            FFNxAudioChannels.Items.Add(translate("automatic", Globals.translateUI));
+            FFNxAudioChannels.Items.Add("1.0");
+            FFNxAudioChannels.Items.Add("2.0");
+            FFNxAudioChannels.Items.Add("2.1");
+            FFNxAudioChannels.Items.Add("3.0");
+            FFNxAudioChannels.Items.Add("3.1");
+            FFNxAudioChannels.Items.Add("4.0");
+            FFNxAudioChannels.Items.Add("4.1");
+            FFNxAudioChannels.Items.Add("5.0");
+            FFNxAudioChannels.Items.Add("5.1");
+            FFNxAudioChannels.Items.Add("6.0");
+            FFNxAudioChannels.Items.Add("6.1");
+            FFNxAudioChannels.Items.Add("7.0");
+            FFNxAudioChannels.Items.Add("7.1");
+            FFNxAudioChannels.Text = translate("automatic", Globals.translateUI);
+
+            FFNxAudioSample.Items.Add("8000");
+            FFNxAudioSample.Items.Add("11025");
+            FFNxAudioSample.Items.Add("22050");
+            FFNxAudioSample.Items.Add("32000");
+            FFNxAudioSample.Items.Add("44100");
+            FFNxAudioSample.Items.Add("48000");
+            FFNxAudioSample.Items.Add("88200");
+            FFNxAudioSample.Items.Add("96000");
+            FFNxAudioSample.Items.Add("174000");
+            FFNxAudioSample.Items.Add("192000");
+            FFNxAudioSample.Text = "44100";
         }
 
 
