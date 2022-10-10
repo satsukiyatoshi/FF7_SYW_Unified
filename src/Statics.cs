@@ -14,7 +14,6 @@ namespace FF7_SYW_Unified
             public static string actualModFolder { get; set; } = "";
             public static string actualModUrl { get; set; } = "";
             public static string actualModFlags { get; set; } = "";
-            public static int hacksListOverIndex { get; set; } = 0;
             public static Boolean isFoobarRunning { get; set; } = false;
             public static int mouseY { get; set; } = 0;
             public static System.Drawing.Point mousePos { get; set; } = new System.Drawing.Point(0, 0);

@@ -16,6 +16,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //get translations list
@@ -50,6 +51,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         //display preview picture and description for SYW mods and FFNx options
         private void modShow(string name, Label help, Label author)
         {
@@ -60,19 +62,10 @@ namespace FF7_SYW_Unified
         }
 
 
+
         //Backup mouse Y position
         private void getMousePos(object sender, EventArgs e) { Globals.mouseY = Cursor.Position.Y; }
 
-
-        //restore mouse Y postion
-        private void restoreMouse()
-        {
-            if (Globals.mouseY != 0)
-            {
-                Cursor.Position = new System.Drawing.Point(Cursor.Position.X, Globals.mouseY);
-                Globals.mouseY = 0;
-            }
-        }
 
 
         //display preview picture and description for combobox custom mods
@@ -101,6 +94,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
             static string getModCustomFolder(ComboBox combo, string folderwSource)
         {
             try
@@ -119,7 +113,8 @@ namespace FF7_SYW_Unified
         }
 
 
-        private void setModFlags(Control modgroup) 
+
+        static void setModFlags(Control modgroup) 
         {
             string flagFsource = Globals.actualModFlags.ToLower().Contains("f") ? Application.StartupPath + @"\Ressources\french.png" : Application.StartupPath + @"\Ressources\french-off.png";
             string flagEsource = Globals.actualModFlags.ToLower().Contains("e") ? Application.StartupPath + @"\Ressources\english.png" : Application.StartupPath + @"\Ressources\english-off.png";
@@ -137,23 +132,10 @@ namespace FF7_SYW_Unified
         }
 
 
+
         private void launchGame_Click(object sender, EventArgs e)
         {
-            TextWriter tw = new StreamWriter(@"d:\translateUI.txt");
-                for (var i = 0; i < Globals.translateUI.Count; i += 1)
-                {
-                tw.WriteLine(Globals.translateUI[i].name + " -- " + Globals.translateUI[i].text);
-                }
-            tw.Close();
 
-            TextWriter tw2 = new StreamWriter(@"d:\translateMod.txt");
-            for (var i = 0; i < Globals.translateMod.Count; i += 1)
-            {
-                tw2.WriteLine(Globals.translateMod[i].name + " -- " + Globals.translateMod[i].text);
-            }
-            tw2.Close();
-
-            MessageBox.Show("ok");
         }
 
     }

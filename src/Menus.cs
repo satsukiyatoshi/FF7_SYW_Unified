@@ -28,6 +28,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         /*
          *close audio preview
          *Set menu button color on click
@@ -64,6 +65,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         //Change menu button color on mouse over
         private static void menuMouseOver(Control menuBtn, bool isActiv = true)
         {
@@ -74,6 +76,7 @@ namespace FF7_SYW_Unified
             }
             menuBtn.BackColor = Globals.activButtonBolor;
         }
+
 
 
         //menu buttons toogle call on mouve enter/leave

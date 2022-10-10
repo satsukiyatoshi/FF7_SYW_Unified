@@ -6,6 +6,7 @@ namespace FF7_SYW_Unified
         private void soundsHelpAuthor_Click(object sender, EventArgs e) { openUrlMod(); }
 
 
+
         private void soundsClear()
         {
             soundsMusics.Items.Clear();
@@ -14,6 +15,7 @@ namespace FF7_SYW_Unified
             soundsFMV.Items.Clear();
             soundsVoices.Items.Clear();
         }
+
 
 
         private void soundsSetDefaults()
@@ -30,10 +32,14 @@ namespace FF7_SYW_Unified
             soundsFMV.Text = soundsFMV.Items[0].ToString();
             soundsVoices.Text = soundsVoices.Items[0].ToString();
         }
+
+
+
         private void soundsList_SelectedIndexChanged(object sender, EventArgs e)
         {
             playAudio(Globals.actualModFolder + soundsList.Items[soundsList.SelectedIndex]);
         }
+
 
 
         //stop playing of a previews audio file then launch the audio file
@@ -57,6 +63,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         //exit the audio player engine
         static void playAudioClose()
         {
@@ -72,6 +79,7 @@ namespace FF7_SYW_Unified
                 Globals.isFoobarRunning = false;
             }
         }
+
 
 
         //list audio files for the mod
@@ -90,6 +98,7 @@ namespace FF7_SYW_Unified
                 soundsList.Items.Add(file.Name);
             }
         }
+
 
 
         private void soundsChange(ComboBox soundCombo, string modFolder)

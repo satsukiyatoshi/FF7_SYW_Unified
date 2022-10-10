@@ -9,11 +9,13 @@ namespace FF7_SYW_Unified
         private void FFNxHelpAuthor_Click(object sender, EventArgs e) { openUrlMod(); }
 
 
+
         private void FFNxClear()
         {
             FFNxComboPatchs.Items.Clear();
             FFNxPatchsList.Items.Clear();
         }
+
 
 
         private void FFNxSetDefaults()
@@ -26,6 +28,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         private void FFNxPatchsList_MouseMove(object sender, MouseEventArgs e)
         {
 
@@ -35,12 +38,9 @@ namespace FF7_SYW_Unified
 
             if (index > -1)
             {
-                pos = this.PointToClient(MousePosition);
-
                 FFNxComboPatchs.Text = FFNxPatchsList.Items[index].ToString();
                 modShowCustom(FFNxComboPatchs, @"Hacks\", FFNxHelp, FFNxHelpAuthor, gameplayPrevPic);
                 setModFlags(FFNxFrame2);
-
             }
 
             // use 25 ms sleep to avoid overkill cpu usage with the mousemove check

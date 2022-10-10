@@ -6,6 +6,7 @@ namespace FF7_SYW_Unified
         private void graphicsHelpAuthor_Click(object sender, EventArgs e) { openUrlMod(); }
 
 
+
         private void graphicsClear()
         {
             graphicsModels3Df.Items.Clear();
@@ -15,6 +16,7 @@ namespace FF7_SYW_Unified
             graphicsFMV.Items.Clear();
             graphicsMenu.Items.Clear();
         }
+
 
 
         private void graphicsSetDefaults()
@@ -35,14 +37,13 @@ namespace FF7_SYW_Unified
         }
 
 
+
         private void graphicsFields_MouseEnter(object sender, EventArgs e) { modShow("graphicsFields", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsAnimations_MouseEnter(object sender, EventArgs e) { modShow("graphicsAnimations", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsBattles_MouseEnter(object sender, EventArgs e) { modShow("graphicsBattles", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsMagics_MouseEnter(object sender, EventArgs e) { modShow("graphicsMagics", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsWorldMap_MouseEnter(object sender, EventArgs e) { modShow("graphicsWorldMap", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsMiniGames_MouseEnter(object sender, EventArgs e) { modShow("graphicsMiniGames", graphicsHelp, graphicsHelpAuthor); }
-
-
         private void graphicsModels3DfChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Df, @"models\fields\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
         private void graphicsModels3DcChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dc, @"models\battles\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
         private void graphicsModels3DwChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dw, @"models\worldmap\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }

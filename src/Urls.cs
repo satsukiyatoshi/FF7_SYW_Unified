@@ -17,6 +17,7 @@ namespace FF7_SYW_Unified
         }
 
 
+
         public static void openUrlMod()
         {
             if (Globals.actualModUrl != "")
@@ -28,6 +29,7 @@ namespace FF7_SYW_Unified
                 MessageBox.Show(translate("norulmod", Globals.translateUI));
             }
         }
+
 
 
         //call url for each author

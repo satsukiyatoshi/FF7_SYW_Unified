@@ -158,6 +158,7 @@
         }
 
 
+
         private void getScreenResolutions()
         {
             var scope = new System.Management.ManagementScope();
@@ -178,7 +179,9 @@
             }
         }
 
-        private void loadSavedValues()
+
+
+        static void loadSavedValues()
         {
             
         }
