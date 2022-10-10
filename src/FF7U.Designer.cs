@@ -1883,7 +1883,7 @@
             this.menuSoundPanel.Controls.Add(this.soundFrame4);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Controls.Add(this.soundFrame2);
-            this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
@@ -2292,7 +2292,7 @@
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
-            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 0);
             this.menuFFNxPanel.Name = "menuFFNxPanel";
             this.menuFFNxPanel.Size = new System.Drawing.Size(795, 703);
             this.menuFFNxPanel.TabIndex = 14;
