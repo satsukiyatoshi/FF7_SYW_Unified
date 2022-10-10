@@ -7,7 +7,10 @@
     <Compile Update="Gameplay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Load.cs">
+    <Compile Update="LoadSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Mods.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Sounds.cs">

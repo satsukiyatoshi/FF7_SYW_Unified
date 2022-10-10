@@ -8,43 +8,6 @@ namespace FF7_SYW_Unified
     partial class FF7U
     {
 
-        //set items of combos mods option and put their translation to Globals.translateMod
-        private void setModsItems(ComboBox combo, string folderwSource)
-        {
-            string translationFile = "";
-            string modDir = "";
-
-            folderwSource = Application.StartupPath + @"mods\" + folderwSource;
-
-                string[] dirs = Directory.GetDirectories(folderwSource, "*", SearchOption.TopDirectoryOnly);
-
-                foreach (string dir in dirs)
-                {
-                    if (File.Exists(dir + @"\translations\" + langInterface.Text + ".xml"))
-                    {
-                        translationFile = dir + @"\translations\" + langInterface.Text + ".xml";
-                    }
-                    else if (File.Exists(dir + @"\translations\english.xml"))
-                    {
-                        translationFile = dir + @"\translations\english.xml";
-                    }
-                    else
-                    {
-                        MessageBox.Show(translate("errorloadingmod", Globals.translateUI) + dir);
-                        Process.GetCurrentProcess().Kill();
-                    }
-
-                    modDir = Path.GetFileName(dir);
-
-                getTranslationXml(translationFile, Globals.translateMod, combo.Name + "." + modDir);
-                combo.Items.Add(translate(combo.Name + "." + modDir, Globals.translateMod));
-
-                }
-
-        }
-
-
-
         //translate a text's control from its name
         static void translateCtrl(Control ctrl)
         {
