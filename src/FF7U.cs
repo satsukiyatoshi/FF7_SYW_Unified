@@ -44,6 +44,7 @@ namespace FF7_SYW_Unified
             langInterface.Text = langInterface.GetItemText(langInterface.Items[0]);
 
             setDefaultUIValues();
+            loadValues();
 
             //set default menu status
             menuClick(menuAbout);

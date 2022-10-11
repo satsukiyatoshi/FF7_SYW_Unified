@@ -1,5 +1,9 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Devices;
+using System;
+using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using ComboBox = System.Windows.Forms.ComboBox;
 
 namespace FF7_SYW_Unified
 {
@@ -198,7 +202,7 @@ namespace FF7_SYW_Unified
 
             foreach (ComboBox co in Flatten(this).OfType<ComboBox>())
             {
-                tw.WriteLine(co.Name + "::::" + co.Text + "####");
+                tw.WriteLine(";;;;" + co.Name + "::::" + co.Text + "####");
             }
 
             foreach(int indexChecked in FFNxPatchsList.CheckedIndices)
@@ -207,6 +211,79 @@ namespace FF7_SYW_Unified
             }
 
             tw.Close();
+        }
+
+
+
+        private void loadValues()
+        {
+            string patchname;
+
+            if (File.Exists(Application.StartupPath + @"\settings.ini"))
+            {
+                string[] lines = File.ReadAllLines(Application.StartupPath + @"\settings.ini");
+                foreach (string line in lines)
+                {
+                    if (line.Contains("::::") == true && line.Contains(";;;;") == true && line.Contains("####") == true)
+                    {
+                        GetComboboxByName(Between(line, ";;;;", "::::")).Text = Between(line, "::::", "####");
+                    }
+
+                    else if (line.Contains("Patchslist;;;;") == true && line.Contains("####") == true)
+                    {
+                        patchname = Between(line, "Patchslist;;;;", "####");
+
+                        for (int patchvalue = 0; patchvalue < FFNxPatchsList.Items.Count; patchvalue++)
+                        {
+                            if (FFNxPatchsList.Items[patchvalue].ToString() == patchname)
+                            {
+                                FFNxPatchsList.SetItemChecked(patchvalue, true);
+                            }
+                        }
+                    }
+
+                    else
+                    {
+                        GetCheckboxByName(line).Checked = true;
+                    }
+                }
+            }
+        }
+
+
+
+        CheckBox GetCheckboxByName(string Name)
+        {
+            foreach (CheckBox c in Flatten(this).OfType<CheckBox>())
+            {
+                if (c.Name == Name)
+                    return c;
+            }
+                return null;
+        }
+
+
+
+        ComboBox GetComboboxByName(string Name)
+        {
+            foreach (ComboBox c in Flatten(this).OfType<ComboBox>())
+            {
+                if (c.Name == Name)
+                    return c;
+            }
+            return null;
+        }
+
+
+
+        public string Between(string STR, string FirstString, string LastString)
+        {
+            string FinalString;
+            int Pos1 = STR.IndexOf(FirstString) + FirstString.Length;
+            int Pos2 = STR.IndexOf(LastString);
+            FinalString = STR.Substring(Pos1, Pos2 - Pos1);
+
+            return FinalString;
         }
 
     }
