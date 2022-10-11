@@ -1,4 +1,7 @@
-﻿namespace FF7_SYW_Unified
+﻿using System;
+using System.Windows.Forms;
+
+namespace FF7_SYW_Unified
 {
     partial class FF7U
     {
@@ -181,9 +184,29 @@
 
 
 
-        static void saveValues()
+        private void saveValues()
         {
-            
+            TextWriter tw = new StreamWriter(@Application.StartupPath + @"\settings.ini");
+
+            foreach (CheckBox ce in Flatten(this).OfType<CheckBox>())
+            {
+                if(ce.Checked == true)
+                {
+                    tw.WriteLine(ce.Name);
+                }
+            }
+
+            foreach (ComboBox co in Flatten(this).OfType<ComboBox>())
+            {
+                tw.WriteLine(co.Name + "::::" + co.Text + "####");
+            }
+
+            foreach(int indexChecked in FFNxPatchsList.CheckedIndices)
+            {
+                tw.WriteLine("Patchslist;;;;" + FFNxPatchsList.Items[indexChecked].ToString()+"####");
+            }
+
+            tw.Close();
         }
 
     }

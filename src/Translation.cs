@@ -46,23 +46,10 @@ namespace FF7_SYW_Unified
 
 
 
-        //recusive control list
-        static IEnumerable<Control> Flatten(Control c)
-        {
-            yield return c;
-
-            foreach (Control o in c.Controls)
-            {
-                foreach (var oo in Flatten(o))
-                    yield return oo;
-            }
-        }
-
-
-
         //translate all control of the UI
         private void translateAll()
         {
+
             //apply translation list to each controls
             foreach (Control x in Flatten(this))
             {

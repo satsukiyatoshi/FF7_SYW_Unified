@@ -53,7 +53,7 @@ namespace FF7_SYW_Unified
 
         private void launchGame_Click(object sender, EventArgs e)
         {
-
+            saveValues();
         }
 
     }

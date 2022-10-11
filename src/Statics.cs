@@ -20,5 +20,20 @@ namespace FF7_SYW_Unified
             public static List<(string name, string text)> translateUI { get; set; } = new List<(string name, string text)> { }; //global UI translation list
             public static List<(string name, string text)> translateMod { get; set; } = new List<(string name, string text)> { }; //temp list to store mods translations files
         }
+
+
+
+        //recusive control list
+        static IEnumerable<Control> Flatten(Control c)
+        {
+            yield return c;
+
+            foreach (Control o in c.Controls)
+            {
+                foreach (var oo in Flatten(o))
+                    yield return oo;
+            }
+        }
+
     }
 }
