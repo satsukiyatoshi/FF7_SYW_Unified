@@ -3044,7 +3044,7 @@
             this.Name = "FF7U";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FF7_SYW_Unified";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.FF7U_Load);
             this.menuFrame.ResumeLayout(false);
             this.settingsGroup.ResumeLayout(false);
             this.ff7Lang.ResumeLayout(false);

@@ -149,8 +149,9 @@ namespace FF7_SYW_Unified
             FFNxAudioChannels.Items.Add("6.1");
             FFNxAudioChannels.Items.Add("7.0");
             FFNxAudioChannels.Items.Add("7.1");
-            FFNxAudioChannels.Text = translate("automatic", Globals.translateUI);
+            FFNxAudioChannels.Text = "2.0";
 
+            FFNxAudioSample.Items.Add(translate("automatic", Globals.translateUI));
             FFNxAudioSample.Items.Add("8000");
             FFNxAudioSample.Items.Add("11025");
             FFNxAudioSample.Items.Add("22050");
@@ -219,35 +220,43 @@ namespace FF7_SYW_Unified
         {
             string patchname;
 
-            if (File.Exists(Application.StartupPath + @"\settings.ini"))
+            try
             {
-                string[] lines = File.ReadAllLines(Application.StartupPath + @"\settings.ini");
-                foreach (string line in lines)
+                if (File.Exists(Application.StartupPath + @"\settings.ini"))
                 {
-                    if (line.Contains("::::") == true && line.Contains(";;;;") == true && line.Contains("####") == true)
+                    string[] lines = File.ReadAllLines(Application.StartupPath + @"\settings.ini");
+                    foreach (string line in lines)
                     {
-                        GetComboboxByName(Between(line, ";;;;", "::::")).Text = Between(line, "::::", "####");
-                    }
-
-                    else if (line.Contains("Patchslist;;;;") == true && line.Contains("####") == true)
-                    {
-                        patchname = Between(line, "Patchslist;;;;", "####");
-
-                        for (int patchvalue = 0; patchvalue < FFNxPatchsList.Items.Count; patchvalue++)
+                        if (line.Contains("::::") == true && line.Contains(";;;;") == true && line.Contains("####") == true)
                         {
-                            if (FFNxPatchsList.Items[patchvalue].ToString() == patchname)
+                            GetComboboxByName(Between(line, ";;;;", "::::")).Text = Between(line, "::::", "####");
+                        }
+
+                        else if (line.Contains("Patchslist;;;;") == true && line.Contains("####") == true)
+                        {
+                            patchname = Between(line, "Patchslist;;;;", "####");
+
+                            for (int patchvalue = 0; patchvalue < FFNxPatchsList.Items.Count; patchvalue++)
                             {
-                                FFNxPatchsList.SetItemChecked(patchvalue, true);
+                                if (FFNxPatchsList.Items[patchvalue].ToString() == patchname)
+                                {
+                                    FFNxPatchsList.SetItemChecked(patchvalue, true);
+                                }
                             }
                         }
-                    }
 
-                    else
-                    {
-                        GetCheckboxByName(line).Checked = true;
+                        else
+                        {
+                            GetCheckboxByName(line).Checked = true;
+                        }
                     }
                 }
             }
+            catch
+            {
+                MessageBox.Show("Error while loading setting, it may appens if you added or removed mods or patchs, please check settings");
+            }
+
         }
 
 
