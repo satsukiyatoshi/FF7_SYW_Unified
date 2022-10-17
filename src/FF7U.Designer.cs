@@ -1891,7 +1891,7 @@
             this.menuSoundPanel.Controls.Add(this.soundFrame4);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Controls.Add(this.soundFrame2);
-            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
@@ -2307,7 +2307,7 @@
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
-            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuFFNxPanel.Name = "menuFFNxPanel";
             this.menuFFNxPanel.Size = new System.Drawing.Size(795, 703);
             this.menuFFNxPanel.TabIndex = 14;
@@ -2514,6 +2514,8 @@
             this.FFNxFps.Name = "FFNxFps";
             this.FFNxFps.Size = new System.Drawing.Size(232, 23);
             this.FFNxFps.TabIndex = 0;
+            this.FFNxFps.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxFps.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxShowStats
             // 
@@ -2595,6 +2597,8 @@
             this.FFNxSpeedhackMax.Name = "FFNxSpeedhackMax";
             this.FFNxSpeedhackMax.Size = new System.Drawing.Size(76, 23);
             this.FFNxSpeedhackMax.TabIndex = 2;
+            this.FFNxSpeedhackMax.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxSpeedhackMax.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxSpeedhackMin
             // 
@@ -2607,6 +2611,8 @@
             this.FFNxSpeedhackMin.Name = "FFNxSpeedhackMin";
             this.FFNxSpeedhackMin.Size = new System.Drawing.Size(76, 23);
             this.FFNxSpeedhackMin.TabIndex = 1;
+            this.FFNxSpeedhackMin.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxSpeedhackMin.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxSpeedhackStep
             // 
@@ -2619,6 +2625,8 @@
             this.FFNxSpeedhackStep.Name = "FFNxSpeedhackStep";
             this.FFNxSpeedhackStep.Size = new System.Drawing.Size(76, 23);
             this.FFNxSpeedhackStep.TabIndex = 0;
+            this.FFNxSpeedhackStep.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxSpeedhackStep.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupControllerDeathzones
             // 
@@ -2648,6 +2656,8 @@
             this.FFNxContolerDeathzoneRT.Name = "FFNxContolerDeathzoneRT";
             this.FFNxContolerDeathzoneRT.Size = new System.Drawing.Size(76, 23);
             this.FFNxContolerDeathzoneRT.TabIndex = 2;
+            this.FFNxContolerDeathzoneRT.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxContolerDeathzoneRT.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxContolerDeathzoneLT
             // 
@@ -2660,6 +2670,8 @@
             this.FFNxContolerDeathzoneLT.Name = "FFNxContolerDeathzoneLT";
             this.FFNxContolerDeathzoneLT.Size = new System.Drawing.Size(76, 23);
             this.FFNxContolerDeathzoneLT.TabIndex = 1;
+            this.FFNxContolerDeathzoneLT.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxContolerDeathzoneLT.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxContolerDeathzoneStick
             // 
@@ -2672,6 +2684,8 @@
             this.FFNxContolerDeathzoneStick.Name = "FFNxContolerDeathzoneStick";
             this.FFNxContolerDeathzoneStick.Size = new System.Drawing.Size(76, 23);
             this.FFNxContolerDeathzoneStick.TabIndex = 0;
+            this.FFNxContolerDeathzoneStick.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxContolerDeathzoneStick.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupAudioSample
             // 
@@ -2699,6 +2713,8 @@
             this.FFNxAudioSample.Name = "FFNxAudioSample";
             this.FFNxAudioSample.Size = new System.Drawing.Size(232, 23);
             this.FFNxAudioSample.TabIndex = 0;
+            this.FFNxAudioSample.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxAudioSample.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupIR
             // 
@@ -2726,6 +2742,8 @@
             this.FFNxIR.Name = "FFNxIR";
             this.FFNxIR.Size = new System.Drawing.Size(232, 23);
             this.FFNxIR.TabIndex = 0;
+            this.FFNxIR.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxIR.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupAudioChannels
             // 
@@ -2753,6 +2771,8 @@
             this.FFNxAudioChannels.Name = "FFNxAudioChannels";
             this.FFNxAudioChannels.Size = new System.Drawing.Size(232, 23);
             this.FFNxAudioChannels.TabIndex = 0;
+            this.FFNxAudioChannels.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxAudioChannels.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupAA
             // 
@@ -2780,6 +2800,8 @@
             this.FFNxAA.Name = "FFNxAA";
             this.FFNxAA.Size = new System.Drawing.Size(232, 23);
             this.FFNxAA.TabIndex = 0;
+            this.FFNxAA.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxAA.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupResolution
             // 
@@ -2807,6 +2829,8 @@
             this.FFNxResolution.Name = "FFNxResolution";
             this.FFNxResolution.Size = new System.Drawing.Size(232, 23);
             this.FFNxResolution.TabIndex = 0;
+            this.FFNxResolution.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxResolution.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupHDR
             // 
@@ -2834,6 +2858,8 @@
             this.FFNxHDR.Name = "FFNxHDR";
             this.FFNxHDR.Size = new System.Drawing.Size(232, 23);
             this.FFNxHDR.TabIndex = 0;
+            this.FFNxHDR.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxHDR.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupRatio
             // 
@@ -2861,6 +2887,8 @@
             this.FFNxRatio.Name = "FFNxRatio";
             this.FFNxRatio.Size = new System.Drawing.Size(232, 23);
             this.FFNxRatio.TabIndex = 0;
+            this.FFNxRatio.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxRatio.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxGroupScreen
             // 
@@ -2888,6 +2916,8 @@
             this.FFNxScreen.Name = "FFNxScreen";
             this.FFNxScreen.Size = new System.Drawing.Size(232, 23);
             this.FFNxScreen.TabIndex = 0;
+            this.FFNxScreen.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNxScreen.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxVsync
             // 
@@ -2979,6 +3009,8 @@
             this.FFNx3dEngine.Name = "FFNx3dEngine";
             this.FFNx3dEngine.Size = new System.Drawing.Size(232, 23);
             this.FFNx3dEngine.TabIndex = 0;
+            this.FFNx3dEngine.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
+            this.FFNx3dEngine.Click += new System.EventHandler(this.getMousePos);
             // 
             // FFNxLighting
             // 
@@ -2994,38 +3026,6 @@
             this.FFNxLighting.MouseEnter += new System.EventHandler(this.FFNxLighting_MouseEnter);
             // 
             // FF7U
-            this.FFNx3dEngine.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxResolution.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxHDR.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxRatio.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxScreen.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxIR.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxAudioChannels.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxAA.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxAudioSample.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxSpeedhackMax.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxSpeedhackMin.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxSpeedhackStep.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxContolerDeathzoneRT.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxContolerDeathzoneLT.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxContolerDeathzoneStick.Click += new System.EventHandler(this.getMousePos);
-            this.FFNxFps.Click += new System.EventHandler(this.getMousePos);
-            this.FFNx3dEngine.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxResolution.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxHDR.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxRatio.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxScreen.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxIR.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxAudioChannels.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxAA.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxAudioSample.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxSpeedhackMax.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxSpeedhackMin.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxSpeedhackStep.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxContolerDeathzoneRT.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxContolerDeathzoneLT.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxContolerDeathzoneStick.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
-            this.FFNxFps.SelectedIndexChanged += new System.EventHandler(this.setMousePos);
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
