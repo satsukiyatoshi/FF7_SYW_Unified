@@ -1,5 +1,6 @@
 
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
@@ -54,6 +55,8 @@ namespace FF7_SYW_Unified
 
         private void tomlGenerate()
         {
+            string soundsFolder;
+
             TextWriter twx = new StreamWriter(Application.StartupPath + @"\FFNx.toml", false);
 
                 twx.WriteLine("renderer_backend = " + FFNx3dEngine.SelectedIndex.ToString());
@@ -123,15 +126,16 @@ namespace FF7_SYW_Unified
                     twx.WriteLine("trace_all = false");
                 }
 
-            if (soundsMusics.SelectedIndex == 0)
-            {
-                twx.WriteLine("use_external_music = false");
-            } else
-            {
-                twx.WriteLine("use_external_music = true");
-                twx.WriteLine("external_music_ext = \"ogg\""); //TODO check mod audio extention
-                twx.WriteLine("external_music_path = \"" + getModCustomFolder(soundsMusics, @"audio\musics").Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
-            }
+                if (soundsMusics.SelectedIndex == 0)
+                {
+                    twx.WriteLine("use_external_music = false");
+                } else
+                {
+                    soundsFolder = getModCustomFolder(soundsMusics, @"audio\musics");
+                    twx.WriteLine("use_external_music = true");
+                    twx.WriteLine("external_music_ext = " + getSoundExts(soundsFolder)); //TODO check mod audio extention
+                    twx.WriteLine("external_music_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                }
 
             twx.Close();
         }

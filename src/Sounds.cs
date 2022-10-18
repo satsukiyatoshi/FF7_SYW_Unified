@@ -88,10 +88,10 @@ namespace FF7_SYW_Unified
             
             soundsList.Items.Clear();
 
-            string[] extensions = new[] { ".mp3", ".ogg", ".minipsf", ".aac", ".wav", ".flac" };
+            string[] extensions = new[] { ".ini", ".psflib", ".bin", ".dll", ".txt", ".xml", ".jpg", ".jpeg", ".png", ".bmp", ".gif", ".toml" };
             DirectoryInfo dInfo = new DirectoryInfo(Folder);
 
-            FileInfo[] files = dInfo.GetFiles().Where(f => extensions.Contains(f.Extension.ToLower())).ToArray();
+            FileInfo[] files = dInfo.GetFiles().Where(f => !extensions.Contains(f.Extension.ToLower())).ToArray();
 
             foreach (FileInfo file in files)
             {
@@ -112,6 +112,31 @@ namespace FF7_SYW_Unified
                 listAudioFiles(Globals.actualModFolder);
             }
             
+        }
+
+
+
+        private string getSoundExts(string modFolder)
+        {
+            string soundsExt = "[\"minipsf\",\"ogg\",\"wav\",\"mp3\",\"aac\",\"mp4\",\"flac\"]";
+
+            if (File.Exists(modFolder + @"\exts.ini"))
+            {
+                if (File.ReadLines(modFolder + @"\exts.ini").Count() > 0)
+                {
+                    soundsExt = "[";
+                    foreach (string line in System.IO.File.ReadLines(modFolder + @"\exts.ini"))
+                    {
+                        soundsExt = soundsExt + "\"" + line + "\",";
+                    }
+                    soundsExt = soundsExt.Trim(',');
+                    soundsExt = soundsExt + "]";
+
+                    return soundsExt;
+                }
+            }
+
+            return soundsExt;
         }
 
 
