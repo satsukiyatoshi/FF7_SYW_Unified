@@ -53,13 +53,15 @@ namespace FF7_SYW_Unified
 
 
 
-        private void tomlGenerate()
+        private void ffnxTomlGenerate()
         {
             string soundsFolder;
 
             TextWriter twx = new StreamWriter(Application.StartupPath + @"\FFNx.toml", false);
 
                 twx.WriteLine("renderer_backend = " + FFNx3dEngine.SelectedIndex.ToString());
+                twx.WriteLine(@"mod_path = Mods\SYW\Textures");
+                twx.WriteLine(@"mod_ext = [""dds"", ""png"", ""tga"", ""tiff"", ""bmp"", ""jpg""]");
                 if (FFNxScreen.SelectedIndex == 0) { twx.WriteLine("fullscreen = true"); }
                 if (FFNxScreen.SelectedIndex == 1) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = false"); }
                 if (FFNxScreen.SelectedIndex == 2) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = true"); }
@@ -129,13 +131,50 @@ namespace FF7_SYW_Unified
                 if (soundsMusics.SelectedIndex == 0)
                 {
                     twx.WriteLine("use_external_music = false");
-                } else
+                } 
+                else
                 {
                     soundsFolder = getModCustomFolder(soundsMusics, @"audio\musics");
                     twx.WriteLine("use_external_music = true");
-                    twx.WriteLine("external_music_ext = " + getSoundExts(soundsFolder)); //TODO check mod audio extention
+                    twx.WriteLine("he_bios_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                    twx.WriteLine("external_music_ext = " + getSoundExts(soundsFolder));
                     twx.WriteLine("external_music_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
                 }
+
+                if (soundsSfx.SelectedIndex == 0)
+                {
+                    twx.WriteLine("use_external_sfx = false");
+                } 
+                else
+                {
+                    soundsFolder = getModCustomFolder(soundsMusics, @"audio\sfxs");
+                    twx.WriteLine("use_external_sfx = true");
+                    twx.WriteLine("external_music_ext = " + getSoundExts(soundsFolder));
+                    twx.WriteLine("external_sfx_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                }
+
+                if (soundsVoices.SelectedIndex != 0)
+                {
+                    soundsFolder = getModCustomFolder(soundsMusics, @"audio\voices");
+                    twx.WriteLine("external_voice_ext = " + getSoundExts(soundsFolder));
+                    twx.WriteLine("external_voice_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                }
+
+                if (soundsAmbients.SelectedIndex == 0)
+                {
+                    soundsFolder = getModCustomFolder(soundsMusics, @"audio\ambients");
+                    twx.WriteLine("external_ambient_ext = " + getSoundExts(soundsFolder));
+                    twx.WriteLine("external_ambient_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                }
+
+                if (soundsFMV.SelectedIndex == 0)
+                {
+                    soundsFolder = getModCustomFolder(soundsMusics, @"audio\movies");
+                    twx.WriteLine("external_movie_audio_ext = " + getSoundExts(soundsFolder));
+                }
+
+            // override_path = "override" pour mods textures
+            // save_path = "save" pour mod gameplay
 
             twx.Close();
         }
@@ -145,7 +184,7 @@ namespace FF7_SYW_Unified
         private void launchGame_Click(object sender, EventArgs e)
         {
             playAudioClose();
-            tomlGenerate();
+            ffnxTomlGenerate();
             saveValues();
         }
 
