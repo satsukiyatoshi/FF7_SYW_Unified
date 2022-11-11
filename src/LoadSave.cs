@@ -10,6 +10,7 @@ namespace FF7_SYW_Unified
     partial class FF7U
     {
 
+        //set default values for FFNx settings
         private void setDefaultUIValues ()
         {
             FFNx3dEngine.Items.Add(translate("automatic", Globals.translateUI));
@@ -167,6 +168,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //get all possible resolutions for current diplay
         private void getScreenResolutions()
         {
             var scope = new System.Management.ManagementScope();
@@ -189,6 +191,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //save all form controls values to a settings file
         private void saveValues()
         {
             TextWriter tw = new StreamWriter(@Application.StartupPath + @"\settings.ini");
@@ -216,6 +219,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //load all form controls value from a setting file
         private void loadValues()
         {
             string patchname;
@@ -261,6 +265,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //Get a checkbox control by its name
         CheckBox GetCheckboxByName(string Name)
         {
             foreach (CheckBox c in Flatten(this).OfType<CheckBox>())
@@ -273,6 +278,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //Get a combobox control by its name
         ComboBox GetComboboxByName(string Name)
         {
             foreach (ComboBox c in Flatten(this).OfType<ComboBox>())
@@ -285,6 +291,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //get string between 2 strings
         public string Between(string STR, string FirstString, string LastString)
         {
             string FinalString;

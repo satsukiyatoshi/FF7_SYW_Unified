@@ -1,10 +1,12 @@
 
+using Microsoft.VisualBasic.FileIO;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Xml.Linq;
+using SearchOption = System.IO.SearchOption;
 
 namespace FF7_SYW_Unified
 {
@@ -17,7 +19,7 @@ namespace FF7_SYW_Unified
         }
 
 
-
+        //initialize form and load settings
         private void FF7U_Load(object sender, EventArgs e)
         {
             //get translations list
@@ -52,16 +54,16 @@ namespace FF7_SYW_Unified
         }
 
 
-
+        //generate FFNx config file
         private void ffnxTomlGenerate()
         {
             string soundsFolder;
 
-            TextWriter twx = new StreamWriter(Application.StartupPath + @"\FFNx.toml", false);
+            TextWriter twx = new StreamWriter(Application.StartupPath + @"\Game\FFNx.toml", false);
 
                 twx.WriteLine("renderer_backend = " + FFNx3dEngine.SelectedIndex.ToString());
                 twx.WriteLine(@"mod_path = Mods\SYW\Textures");
-                twx.WriteLine(@"mod_ext = [""dds"", ""png"", ""tga"", ""tiff"", ""bmp"", ""jpg""]");
+                twx.WriteLine(@"mod_ext = dds");
                 if (FFNxScreen.SelectedIndex == 0) { twx.WriteLine("fullscreen = true"); }
                 if (FFNxScreen.SelectedIndex == 1) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = false"); }
                 if (FFNxScreen.SelectedIndex == 2) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = true"); }
@@ -180,12 +182,91 @@ namespace FF7_SYW_Unified
         }
 
 
+        //restore all dds files and delete the currently used mods file
+        private void restoreFiles()
+        {
+            List<string> disabledFiles = Directory.GetFiles(Application.StartupPath + @"mods\SYW\Textures", "*.SYWD", SearchOption.AllDirectories).ToList();
+            List<string> currentFiles = Directory.GetFiles(Application.StartupPath + @"mods\Current", "*", SearchOption.AllDirectories).ToList();
 
+            foreach (string file in disabledFiles)
+            {
+                File.Move(file, Path.ChangeExtension(file, ".dds"));
+            }
+
+            foreach (string file in currentFiles)
+            {
+                File.Delete(file);
+            }
+        }
+
+
+        //disable texture file by renaming them to SYWD extention
+        private void disableFiles (string textureFolder, Boolean subfolder = true)
+        {
+            List<string> files = Directory.GetFiles(Application.StartupPath + textureFolder, "*.dds", subfolder ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly).ToList();
+
+            foreach (string file in files)
+            {
+                File.Move(file, Path.ChangeExtension(file, ".SYWD"));
+            }
+        }
+
+
+        //disable SYW textures depending choosen options
+        private void applySywTextures()
+        {
+            if(!graphicsFields.Checked)
+            {
+                disableFiles(@"mods\SYW\Textures\char");
+                disableFiles(@"mods\SYW\Textures\field");
+                disableFiles(@"mods\SYW\Textures\flevel");
+            }
+
+            if(!graphicsBattles.Checked){ disableFiles(@"mods\SYW\battle"); }
+
+            if (!graphicsMagics.Checked)
+            {
+                disableFiles(@"mods\SYW\Textures\magic");
+                disableFiles(@"mods\SYW\Textures", false);
+            }
+
+            if (!graphicsWorldMap.Checked) { disableFiles(@"mods\SYW\world"); }
+
+            if (!graphicsMiniGames.Checked)
+            {
+                disableFiles(@"mods\SYW\Textures\Chocobo");
+                disableFiles(@"mods\SYW\Textures\coaster");
+                disableFiles(@"mods\SYW\Textures\condor");
+                disableFiles(@"mods\SYW\Textures\high");
+                disableFiles(@"mods\SYW\Textures\snowboard");
+                disableFiles(@"mods\SYW\Textures\sub");
+            }
+
+            //disable some texture files if no animation used to avoid bug in certains fields
+            if (!graphicsAnimations.Checked && graphicsFields.Checked)
+            {
+                string file = "";
+
+                var lines = File.ReadLines(Application.StartupPath + @"\Mods\SYW\disable.for.animation");
+                foreach (var line in lines)
+                {
+                    file = Application.StartupPath + @"\Mods\SYW\Textures\field\" + line;
+                    File.Move(file, Path.ChangeExtension(file, ".SYWD"));
+                }
+            }
+
+        }
+
+
+        //apply settings and launch the game
         private void launchGame_Click(object sender, EventArgs e)
         {
             playAudioClose();
+            restoreFiles();
+            applySywTextures();
             ffnxTomlGenerate();
             saveValues();
+            MessageBox.Show("launch");
         }
 
 

@@ -35,6 +35,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //play audio on click in list
         private void soundsList_SelectedIndexChanged(object sender, EventArgs e)
         {
             playAudio(Globals.actualModFolder + soundsList.Items[soundsList.SelectedIndex]);
@@ -101,6 +102,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //list audio files when chaing audio mod
         private void soundsChange(ComboBox soundCombo, string modFolder)
         {
             
@@ -116,6 +118,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //get sound extention(s) of the current audio mod
         private string getSoundExts(string modFolder)
         {
             string soundsExt = "[\"minipsf\",\"ogg\",\"wav\",\"mp3\",\"aac\",\"mp4\",\"flac\"]";

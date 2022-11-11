@@ -97,6 +97,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //get selected mod folder
         static string getModCustomFolder(ComboBox combo, string folderwSource)
         {
             try
@@ -116,6 +117,7 @@ namespace FF7_SYW_Unified
 
 
 
+        //set flag depending mod compatibility
         static void setModFlags(Control modgroup)
         {
             string flagFsource = Globals.actualModFlags.ToLower().Contains("f") ? Application.StartupPath + @"\Ressources\french.png" : Application.StartupPath + @"\Ressources\french-off.png";
