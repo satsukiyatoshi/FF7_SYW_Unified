@@ -5,6 +5,7 @@ using System.Diagnostics.Metrics;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Xml.Linq;
 using SearchOption = System.IO.SearchOption;
 
@@ -174,11 +175,37 @@ namespace FF7_SYW_Unified
                     soundsFolder = getModCustomFolder(soundsMusics, @"audio\movies");
                     twx.WriteLine("external_movie_audio_ext = " + getSoundExts(soundsFolder));
                 }
-
             // override_path = "override" pour mods textures
             // save_path = "save" pour mod gameplay
-
             twx.Close();
+        }
+
+
+        //copy mod folder content to current mod folder recusively and overwrite
+        public void folderModCopy(string modFolder)
+        {
+            folderCopyAll(new DirectoryInfo(modFolder), new DirectoryInfo(Application.StartupPath + @"Files" + @"\Mods\Current"));
+
+            //if 60fps mod is activated then copy 60 fps file of the mod too
+            if (FFNxFps.SelectedIndex == 2) { folderCopyAll(new DirectoryInfo(modFolder), new DirectoryInfo(Application.StartupPath + @"Files60fps" + @"\Mods\Current")); ; }
+        }
+
+
+        //copy folder content to another folder recusively and overwrite
+        public static void folderCopyAll(DirectoryInfo source, DirectoryInfo target)
+        {
+            Directory.CreateDirectory(target.FullName);
+
+            foreach (FileInfo fi in source.GetFiles())
+            {
+                fi.CopyTo(Path.Combine(target.FullName, fi.Name), true);
+            }
+            foreach (DirectoryInfo diSourceSubDir in source.GetDirectories())
+            {
+                DirectoryInfo nextTargetSubDir =
+                target.CreateSubdirectory(diSourceSubDir.Name);
+                folderCopyAll(diSourceSubDir, nextTargetSubDir);
+            }
         }
 
 
@@ -258,12 +285,26 @@ namespace FF7_SYW_Unified
         }
 
 
+        //apply current mods of a groupbox's comboboxs
+        private void applyMods()
+        {
+            folderModCopy(getModCustomFolder(graphicsModels3Df, @"models\fields\"));
+            folderModCopy(getModCustomFolder(graphicsModels3Dc, @"models\battles\"));
+            folderModCopy(getModCustomFolder(graphicsModels3Dw, @"models\worldmap\"));
+            folderModCopy(getModCustomFolder(graphicsModels3Dm, @"models\minigames\"));
+            folderModCopy(getModCustomFolder(graphicsMenu, @"uis\"));
+            folderModCopy(getModCustomFolder(graphicsFMV, @"movies\"));
+            folderModCopy(getModCustomFolder(gameplayMods, @"gameplay\"));
+        }
+
+
         //apply settings and launch the game
         private void launchGame_Click(object sender, EventArgs e)
         {
             playAudioClose();
             restoreFiles();
             applySywTextures();
+            applyMods();
             ffnxTomlGenerate();
             saveValues();
             MessageBox.Show("launch");
