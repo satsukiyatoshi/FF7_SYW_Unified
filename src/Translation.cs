@@ -145,5 +145,17 @@ namespace FF7_SYW_Unified
             }
         }
 
+
+
+        //set the gamelang var on game language change
+        private void langGame_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (langGame.Text == "Français") { Globals.gameLang = "F"; }
+            if (langGame.Text == "English") { Globals.gameLang = "E"; }
+            if (langGame.Text == "Deutsch") { Globals.gameLang = "D"; }
+            if (langGame.Text == "Español") { Globals.gameLang = "S"; }
+        }
+
+
     }
 }

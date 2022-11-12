@@ -456,6 +456,7 @@
             this.langGame.Name = "langGame";
             this.langGame.Size = new System.Drawing.Size(272, 23);
             this.langGame.TabIndex = 0;
+            this.langGame.SelectedIndexChanged += new System.EventHandler(this.langGame_SelectedIndexChanged);
             // 
             // interfaceLang
             // 

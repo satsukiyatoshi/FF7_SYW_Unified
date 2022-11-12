@@ -9,6 +9,7 @@ namespace FF7_SYW_Unified
         {
             public static readonly Color activButtonBolor = Color.FromArgb(240, 240, 240);
             public static readonly Color inactivButtonBolor = Color.FromArgb(180, 180, 180);
+            public static string gameLang { get; set; } = "F";
             public static string activMenuName { get; set; } = "menuAbout";
             public static string vanilla { get; set; } = "";
             public static string actualModFolder { get; set; } = "";

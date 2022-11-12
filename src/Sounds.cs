@@ -102,7 +102,7 @@ namespace FF7_SYW_Unified
 
 
 
-        //list audio files when chaing audio mod
+        //list audio files when changing audio mod
         private void soundsChange(ComboBox soundCombo, string modFolder)
         {
             

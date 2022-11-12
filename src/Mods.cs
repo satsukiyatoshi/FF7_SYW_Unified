@@ -53,23 +53,6 @@ namespace FF7_SYW_Unified
 
 
 
-        //Backup mouse Y position
-        private void getMousePos(object sender, EventArgs e) { Globals.mouseY = Cursor.Position.Y; }
-
-
-
-        //Restore pouse Y position
-        private void setMousePos(object sender, EventArgs e)
-        {
-            if (Globals.mouseY != 0)
-            {
-                Cursor.Position = new System.Drawing.Point(Cursor.Position.X, Globals.mouseY);
-                Globals.mouseY = 0;
-            }
-        }
-
-
-
         //display preview picture and description for combobox custom mods
         private void modShowCustom(ComboBox combo, string folderwSource, Label helpLabel, Label authorLabel, PictureBox prevPic)
         {
@@ -133,6 +116,129 @@ namespace FF7_SYW_Unified
                 if (pict.Name.Contains("flagS")) { pict.ImageLocation = flagSsource; }
             }
 
+        }
+
+
+
+        //copy mod folder content to current mod folder recusively and overwrite
+        public void folderModCopy(string modFolder)
+        {
+            if (Directory.Exists(modFolder + @"Files"))
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"Files"), new DirectoryInfo(Application.StartupPath + @"\Mods\Current"));
+            }
+
+            //if 60fps mod is activated then copy 60 fps file of the mod too
+            if (FFNxFps.SelectedIndex == 2 && Directory.Exists(modFolder + @"Files60fps"))
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"Files60fps"), new DirectoryInfo(Application.StartupPath + @"\Mods\Current"));
+            }
+
+            //if language specific mod files exists then copy then overwriting default mod files
+            //Globals.gameLang
+            if (Directory.Exists(modFolder + @"Files" + Globals.gameLang))
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"Files" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Mods\Current"));
+            }
+
+            //replace ff7.exe with the gameplay's ff7 mod (used with vanilla exe option too)
+            if (File.Exists(Application.StartupPath + @"Mods\Current\ff7.exe"))
+            {
+                File.Copy(Application.StartupPath + @"Mods\Current\ff7.exe", Application.StartupPath + @"Game\ff7.exe", true);
+            }
+        }
+
+
+
+        //restore all dds files and delete the currently used mods file
+        private void restoreFiles()
+        {
+            List<string> disabledFiles = Directory.GetFiles(Application.StartupPath + @"mods\SYW\Textures", "*.SYWD", SearchOption.AllDirectories).ToList();
+            List<string> currentFiles = Directory.GetFiles(Application.StartupPath + @"mods\Current", "*", SearchOption.AllDirectories).ToList();
+
+            foreach (string file in disabledFiles)
+            {
+                File.Move(file, Path.ChangeExtension(file, ".dds"));
+            }
+
+            foreach (string file in currentFiles)
+            {
+                File.Delete(file);
+            }
+        }
+
+
+
+        //disable texture file by renaming them to SYWD extention
+        private void disableFiles(string textureFolder, Boolean subfolder = true)
+        {
+            List<string> files = Directory.GetFiles(Application.StartupPath + textureFolder, "*.dds", subfolder ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly).ToList();
+
+            foreach (string file in files)
+            {
+                File.Move(file, Path.ChangeExtension(file, ".SYWD"));
+            }
+        }
+
+
+
+        //disable SYW textures depending choosen options
+        private void applySywTextures()
+        {
+            if (!graphicsFields.Checked)
+            {
+                disableFiles(@"mods\SYW\Textures\char");
+                disableFiles(@"mods\SYW\Textures\field");
+                disableFiles(@"mods\SYW\Textures\flevel");
+            }
+
+            if (!graphicsBattles.Checked) { disableFiles(@"mods\SYW\battle"); }
+
+            if (!graphicsMagics.Checked)
+            {
+                disableFiles(@"mods\SYW\Textures\magic");
+                disableFiles(@"mods\SYW\Textures", false);
+            }
+
+            if (!graphicsWorldMap.Checked) { disableFiles(@"mods\SYW\world"); }
+
+            if (!graphicsMiniGames.Checked)
+            {
+                disableFiles(@"mods\SYW\Textures\Chocobo");
+                disableFiles(@"mods\SYW\Textures\coaster");
+                disableFiles(@"mods\SYW\Textures\condor");
+                disableFiles(@"mods\SYW\Textures\high");
+                disableFiles(@"mods\SYW\Textures\snowboard");
+                disableFiles(@"mods\SYW\Textures\sub");
+            }
+
+            //disable some texture files if no animation used to avoid bug in certains fields
+            if (!graphicsAnimations.Checked && graphicsFields.Checked)
+            {
+                string file = "";
+
+                var lines = File.ReadLines(Application.StartupPath + @"\Mods\SYW\disable.for.animation");
+                foreach (var line in lines)
+                {
+                    file = Application.StartupPath + @"\Mods\SYW\Textures\field\" + line;
+                    File.Move(file, Path.ChangeExtension(file, ".SYWD"));
+                }
+            }
+
+        }
+
+
+
+        //apply current mods of a groupbox's comboboxs
+        private void applyMods()
+        {
+            folderModCopy(getModCustomFolder(graphicsModels3Df, @"models\fields\"));
+            folderModCopy(getModCustomFolder(graphicsModels3Dc, @"models\battles\"));
+            folderModCopy(getModCustomFolder(graphicsModels3Dw, @"models\worldmap\"));
+            folderModCopy(getModCustomFolder(graphicsModels3Dm, @"models\minigames\"));
+            folderModCopy(getModCustomFolder(graphicsMenu, @"uis\"));
+            folderModCopy(getModCustomFolder(graphicsFMV, @"movies\"));
+            folderModCopy(getModCustomFolder(gameplayMods, @"gameplay\"));
         }
 
     }
