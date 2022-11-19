@@ -90,12 +90,17 @@ namespace FF7_SYW_Unified
         private void menuGameplay_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuGameplay, false); }
         private void menuFFNx_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuFFNx); }
         private void menuFFNx_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuFFNx, false); }
+        private void menuHelp_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuHelp); }
+        private void menuHelp_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuHelp, false); }
+
 
         private void menuAbout_Click(object sender, EventArgs e) { menuClick(menuAbout); }
         private void menuGraphic_Click(object sender, EventArgs e) { menuClick(menuGraphic); }
         private void menuSound_Click(object sender, EventArgs e) { menuClick(menuSound); }
         private void menuGameplay_Click(object sender, EventArgs e) { menuClick(menuGameplay); }
         private void menuFFNx_Click(object sender, EventArgs e) { menuClick(menuFFNx); }
+        private void menuHelp_Click(object sender, EventArgs e) { menuClick(menuHelp); }
+
 
         private void launchGame_MouseEnter(object sender, EventArgs e) { launchGame.BackColor = Globals.activButtonBolor; }
         private void launchGame_MouseLeave(object sender, EventArgs e) { launchGame.BackColor = Globals.inactivButtonBolor; }

@@ -32,6 +32,7 @@
             this.menuFrame = new System.Windows.Forms.GroupBox();
             this.launchGame = new System.Windows.Forms.Label();
             this.settingsGroup = new System.Windows.Forms.GroupBox();
+            this.menuHelp = new System.Windows.Forms.Label();
             this.menuFFNx = new System.Windows.Forms.Label();
             this.menuGameplay = new System.Windows.Forms.Label();
             this.menuSound = new System.Windows.Forms.Label();
@@ -44,6 +45,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.graphicFrame1 = new System.Windows.Forms.GroupBox();
+            this.graphicsGroupAddTextures = new System.Windows.Forms.GroupBox();
+            this.graphicsAddTextures = new System.Windows.Forms.ComboBox();
             this.graphicsGroupModels3Dm = new System.Windows.Forms.GroupBox();
             this.graphicsModels3Dm = new System.Windows.Forms.ComboBox();
             this.graphicsGroupModels3Dw = new System.Windows.Forms.GroupBox();
@@ -234,6 +237,9 @@
             this.FFNxGroup3dEngine = new System.Windows.Forms.GroupBox();
             this.FFNx3dEngine = new System.Windows.Forms.ComboBox();
             this.FFNxLighting = new System.Windows.Forms.CheckBox();
+            this.menuHelpPanel = new System.Windows.Forms.Panel();
+            this.HelpFrame2 = new System.Windows.Forms.GroupBox();
+            this.HelpFrame1 = new System.Windows.Forms.GroupBox();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
@@ -241,6 +247,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.graphicFrame1.SuspendLayout();
+            this.graphicsGroupAddTextures.SuspendLayout();
             this.graphicsGroupModels3Dm.SuspendLayout();
             this.graphicsGroupModels3Dw.SuspendLayout();
             this.graphicsGroupMenu.SuspendLayout();
@@ -301,6 +308,7 @@
             this.FFNxGroupRatio.SuspendLayout();
             this.FFNxGroupScreen.SuspendLayout();
             this.FFNxGroup3dEngine.SuspendLayout();
+            this.menuHelpPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuFrame
@@ -327,9 +335,9 @@
             this.launchGame.Cursor = System.Windows.Forms.Cursors.Hand;
             this.launchGame.Font = new System.Drawing.Font("Roboto Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.launchGame.ForeColor = System.Drawing.Color.Black;
-            this.launchGame.Location = new System.Drawing.Point(10, 637);
+            this.launchGame.Location = new System.Drawing.Point(10, 653);
             this.launchGame.Name = "launchGame";
-            this.launchGame.Size = new System.Drawing.Size(290, 46);
+            this.launchGame.Size = new System.Drawing.Size(290, 32);
             this.launchGame.TabIndex = 10;
             this.launchGame.Text = "Jouer à FF7 SYW";
             this.launchGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -339,6 +347,7 @@
             // 
             // settingsGroup
             // 
+            this.settingsGroup.Controls.Add(this.menuHelp);
             this.settingsGroup.Controls.Add(this.menuFFNx);
             this.settingsGroup.Controls.Add(this.menuGameplay);
             this.settingsGroup.Controls.Add(this.menuSound);
@@ -346,12 +355,28 @@
             this.settingsGroup.Controls.Add(this.menuAbout);
             this.settingsGroup.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.settingsGroup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.settingsGroup.Location = new System.Drawing.Point(10, 225);
+            this.settingsGroup.Location = new System.Drawing.Point(10, 278);
             this.settingsGroup.Name = "settingsGroup";
-            this.settingsGroup.Size = new System.Drawing.Size(290, 208);
+            this.settingsGroup.Size = new System.Drawing.Size(290, 244);
             this.settingsGroup.TabIndex = 9;
             this.settingsGroup.TabStop = false;
             this.settingsGroup.Text = "Réglages";
+            // 
+            // menuHelp
+            // 
+            this.menuHelp.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.menuHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuHelp.Font = new System.Drawing.Font("Roboto Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.menuHelp.ForeColor = System.Drawing.Color.Black;
+            this.menuHelp.Location = new System.Drawing.Point(6, 202);
+            this.menuHelp.Name = "menuHelp";
+            this.menuHelp.Size = new System.Drawing.Size(278, 32);
+            this.menuHelp.TabIndex = 6;
+            this.menuHelp.Text = "Aide générale";
+            this.menuHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menuHelp.Click += new System.EventHandler(this.menuHelp_Click);
+            this.menuHelp.MouseEnter += new System.EventHandler(this.menuHelp_MouseEnter);
+            this.menuHelp.MouseLeave += new System.EventHandler(this.menuHelp_MouseLeave);
             // 
             // menuFFNx
             // 
@@ -438,7 +463,7 @@
             this.ff7Lang.Controls.Add(this.langGame);
             this.ff7Lang.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ff7Lang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ff7Lang.Location = new System.Drawing.Point(10, 439);
+            this.ff7Lang.Location = new System.Drawing.Point(10, 216);
             this.ff7Lang.Name = "ff7Lang";
             this.ff7Lang.Size = new System.Drawing.Size(290, 59);
             this.ff7Lang.TabIndex = 8;
@@ -454,7 +479,7 @@
             this.langGame.FormattingEnabled = true;
             this.langGame.Location = new System.Drawing.Point(9, 23);
             this.langGame.Name = "langGame";
-            this.langGame.Size = new System.Drawing.Size(272, 23);
+            this.langGame.Size = new System.Drawing.Size(275, 23);
             this.langGame.TabIndex = 0;
             this.langGame.SelectedIndexChanged += new System.EventHandler(this.langGame_SelectedIndexChanged);
             // 
@@ -463,7 +488,7 @@
             this.interfaceLang.Controls.Add(this.langInterface);
             this.interfaceLang.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.interfaceLang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.interfaceLang.Location = new System.Drawing.Point(10, 160);
+            this.interfaceLang.Location = new System.Drawing.Point(10, 154);
             this.interfaceLang.Name = "interfaceLang";
             this.interfaceLang.Size = new System.Drawing.Size(290, 59);
             this.interfaceLang.TabIndex = 7;
@@ -479,14 +504,14 @@
             this.langInterface.FormattingEnabled = true;
             this.langInterface.Location = new System.Drawing.Point(9, 23);
             this.langInterface.Name = "langInterface";
-            this.langInterface.Size = new System.Drawing.Size(272, 23);
+            this.langInterface.Size = new System.Drawing.Size(275, 23);
             this.langInterface.TabIndex = 0;
             this.langInterface.SelectedIndexChanged += new System.EventHandler(this.langInterface_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::FF7_SYW_Unified.Properties.Resources.logoff7;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 506);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 527);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(290, 126);
             this.pictureBox2.TabIndex = 6;
@@ -503,6 +528,7 @@
             // 
             // graphicFrame1
             // 
+            this.graphicFrame1.Controls.Add(this.graphicsGroupAddTextures);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dm);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dw);
             this.graphicFrame1.Controls.Add(this.graphicsGroupMenu);
@@ -519,10 +545,38 @@
             this.graphicFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame1.Location = new System.Drawing.Point(3, 4);
             this.graphicFrame1.Name = "graphicFrame1";
-            this.graphicFrame1.Size = new System.Drawing.Size(514, 282);
+            this.graphicFrame1.Size = new System.Drawing.Size(514, 344);
             this.graphicFrame1.TabIndex = 6;
             this.graphicFrame1.TabStop = false;
             this.graphicFrame1.Text = "Mods graphiques";
+            // 
+            // graphicsGroupAddTextures
+            // 
+            this.graphicsGroupAddTextures.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsGroupAddTextures.Controls.Add(this.graphicsAddTextures);
+            this.graphicsGroupAddTextures.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsGroupAddTextures.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.graphicsGroupAddTextures.Location = new System.Drawing.Point(260, 274);
+            this.graphicsGroupAddTextures.Name = "graphicsGroupAddTextures";
+            this.graphicsGroupAddTextures.Size = new System.Drawing.Size(245, 59);
+            this.graphicsGroupAddTextures.TabIndex = 15;
+            this.graphicsGroupAddTextures.TabStop = false;
+            this.graphicsGroupAddTextures.Text = "Textures additionnelles";
+            this.graphicsGroupAddTextures.MouseEnter += new System.EventHandler(this.graphicsAddTexturesChange);
+            // 
+            // graphicsAddTextures
+            // 
+            this.graphicsAddTextures.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.graphicsAddTextures.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.graphicsAddTextures.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.graphicsAddTextures.ForeColor = System.Drawing.Color.White;
+            this.graphicsAddTextures.FormattingEnabled = true;
+            this.graphicsAddTextures.Location = new System.Drawing.Point(9, 23);
+            this.graphicsAddTextures.Name = "graphicsAddTextures";
+            this.graphicsAddTextures.Size = new System.Drawing.Size(225, 23);
+            this.graphicsAddTextures.TabIndex = 0;
+            this.graphicsAddTextures.SelectedIndexChanged += new System.EventHandler(this.graphicsAddTexturesChange);
+            this.graphicsAddTextures.Click += new System.EventHandler(this.getMousePos);
             // 
             // graphicsGroupModels3Dm
             // 
@@ -590,9 +644,9 @@
             this.graphicsGroupMenu.Controls.Add(this.graphicsMenu);
             this.graphicsGroupMenu.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupMenu.Location = new System.Drawing.Point(223, 88);
+            this.graphicsGroupMenu.Location = new System.Drawing.Point(11, 88);
             this.graphicsGroupMenu.Name = "graphicsGroupMenu";
-            this.graphicsGroupMenu.Size = new System.Drawing.Size(282, 59);
+            this.graphicsGroupMenu.Size = new System.Drawing.Size(494, 59);
             this.graphicsGroupMenu.TabIndex = 12;
             this.graphicsGroupMenu.TabStop = false;
             this.graphicsGroupMenu.Text = "Interface (menus et polices)";
@@ -601,7 +655,7 @@
             // flagGGraphicsMenu
             // 
             this.flagGGraphicsMenu.Image = global::FF7_SYW_Unified.Properties.Resources.german_off;
-            this.flagGGraphicsMenu.Location = new System.Drawing.Point(202, 35);
+            this.flagGGraphicsMenu.Location = new System.Drawing.Point(409, 35);
             this.flagGGraphicsMenu.Name = "flagGGraphicsMenu";
             this.flagGGraphicsMenu.Size = new System.Drawing.Size(36, 18);
             this.flagGGraphicsMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -611,7 +665,7 @@
             // flagEGraphicsMenu
             // 
             this.flagEGraphicsMenu.Image = global::FF7_SYW_Unified.Properties.Resources.english_off;
-            this.flagEGraphicsMenu.Location = new System.Drawing.Point(202, 14);
+            this.flagEGraphicsMenu.Location = new System.Drawing.Point(409, 14);
             this.flagEGraphicsMenu.Name = "flagEGraphicsMenu";
             this.flagEGraphicsMenu.Size = new System.Drawing.Size(36, 18);
             this.flagEGraphicsMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -621,7 +675,7 @@
             // flagSGraphicsMenu
             // 
             this.flagSGraphicsMenu.Image = global::FF7_SYW_Unified.Properties.Resources.spain_off;
-            this.flagSGraphicsMenu.Location = new System.Drawing.Point(240, 35);
+            this.flagSGraphicsMenu.Location = new System.Drawing.Point(447, 35);
             this.flagSGraphicsMenu.Name = "flagSGraphicsMenu";
             this.flagSGraphicsMenu.Size = new System.Drawing.Size(36, 18);
             this.flagSGraphicsMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -631,7 +685,7 @@
             // flagFGraphicsMenu
             // 
             this.flagFGraphicsMenu.Image = global::FF7_SYW_Unified.Properties.Resources.french_off;
-            this.flagFGraphicsMenu.Location = new System.Drawing.Point(240, 14);
+            this.flagFGraphicsMenu.Location = new System.Drawing.Point(447, 14);
             this.flagFGraphicsMenu.Name = "flagFGraphicsMenu";
             this.flagFGraphicsMenu.Size = new System.Drawing.Size(36, 18);
             this.flagFGraphicsMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -647,7 +701,7 @@
             this.graphicsMenu.FormattingEnabled = true;
             this.graphicsMenu.Location = new System.Drawing.Point(9, 23);
             this.graphicsMenu.Name = "graphicsMenu";
-            this.graphicsMenu.Size = new System.Drawing.Size(188, 23);
+            this.graphicsMenu.Size = new System.Drawing.Size(390, 23);
             this.graphicsMenu.TabIndex = 0;
             this.graphicsMenu.SelectedIndexChanged += new System.EventHandler(this.graphicsMenuChange);
             this.graphicsMenu.Click += new System.EventHandler(this.getMousePos);
@@ -658,9 +712,9 @@
             this.graphicsGroupFMV.Controls.Add(this.graphicsFMV);
             this.graphicsGroupFMV.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.graphicsGroupFMV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 88);
+            this.graphicsGroupFMV.Location = new System.Drawing.Point(11, 274);
             this.graphicsGroupFMV.Name = "graphicsGroupFMV";
-            this.graphicsGroupFMV.Size = new System.Drawing.Size(208, 59);
+            this.graphicsGroupFMV.Size = new System.Drawing.Size(245, 59);
             this.graphicsGroupFMV.TabIndex = 11;
             this.graphicsGroupFMV.TabStop = false;
             this.graphicsGroupFMV.Text = "Cinématiques";
@@ -675,7 +729,7 @@
             this.graphicsFMV.FormattingEnabled = true;
             this.graphicsFMV.Location = new System.Drawing.Point(9, 23);
             this.graphicsFMV.Name = "graphicsFMV";
-            this.graphicsFMV.Size = new System.Drawing.Size(188, 23);
+            this.graphicsFMV.Size = new System.Drawing.Size(225, 23);
             this.graphicsFMV.TabIndex = 0;
             this.graphicsFMV.SelectedIndexChanged += new System.EventHandler(this.graphicsFMVChange);
             this.graphicsFMV.Click += new System.EventHandler(this.getMousePos);
@@ -819,18 +873,18 @@
             this.graphicFrame3.Controls.Add(this.graphicPrevPic);
             this.graphicFrame3.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.graphicFrame3.Location = new System.Drawing.Point(3, 289);
+            this.graphicFrame3.Location = new System.Drawing.Point(3, 350);
             this.graphicFrame3.Name = "graphicFrame3";
-            this.graphicFrame3.Size = new System.Drawing.Size(788, 414);
+            this.graphicFrame3.Size = new System.Drawing.Size(788, 353);
             this.graphicFrame3.TabIndex = 9;
             this.graphicFrame3.TabStop = false;
             this.graphicFrame3.Text = "Aperçu";
             // 
             // graphicPrevPic
             // 
-            this.graphicPrevPic.Location = new System.Drawing.Point(11, 22);
+            this.graphicPrevPic.Location = new System.Drawing.Point(11, 21);
             this.graphicPrevPic.Name = "graphicPrevPic";
-            this.graphicPrevPic.Size = new System.Drawing.Size(765, 378);
+            this.graphicPrevPic.Size = new System.Drawing.Size(765, 314);
             this.graphicPrevPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.graphicPrevPic.TabIndex = 0;
             this.graphicPrevPic.TabStop = false;
@@ -853,7 +907,7 @@
             this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame2.Location = new System.Drawing.Point(526, 4);
             this.graphicFrame2.Name = "graphicFrame2";
-            this.graphicFrame2.Size = new System.Drawing.Size(265, 282);
+            this.graphicFrame2.Size = new System.Drawing.Size(265, 344);
             this.graphicFrame2.TabIndex = 10;
             this.graphicFrame2.TabStop = false;
             this.graphicFrame2.Text = "Aide";
@@ -864,7 +918,7 @@
             this.graphicsHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.graphicsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 249);
+            this.graphicsHelpAuthor.Location = new System.Drawing.Point(12, 311);
             this.graphicsHelpAuthor.Name = "graphicsHelpAuthor";
             this.graphicsHelpAuthor.Size = new System.Drawing.Size(241, 22);
             this.graphicsHelpAuthor.TabIndex = 1;
@@ -879,7 +933,7 @@
             this.graphicsHelp.Location = new System.Drawing.Point(12, 21);
             this.graphicsHelp.Name = "graphicsHelp";
             this.graphicsHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.graphicsHelp.Size = new System.Drawing.Size(241, 228);
+            this.graphicsHelp.Size = new System.Drawing.Size(241, 290);
             this.graphicsHelp.TabIndex = 0;
             // 
             // menuAboutPanel
@@ -3026,6 +3080,37 @@
             this.FFNxLighting.UseVisualStyleBackColor = false;
             this.FFNxLighting.MouseEnter += new System.EventHandler(this.FFNxLighting_MouseEnter);
             // 
+            // menuHelpPanel
+            // 
+            this.menuHelpPanel.Controls.Add(this.HelpFrame2);
+            this.menuHelpPanel.Controls.Add(this.HelpFrame1);
+            this.menuHelpPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuHelpPanel.Name = "menuHelpPanel";
+            this.menuHelpPanel.Size = new System.Drawing.Size(795, 703);
+            this.menuHelpPanel.TabIndex = 15;
+            // 
+            // HelpFrame2
+            // 
+            this.HelpFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.HelpFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.HelpFrame2.Location = new System.Drawing.Point(3, 220);
+            this.HelpFrame2.Name = "HelpFrame2";
+            this.HelpFrame2.Size = new System.Drawing.Size(788, 483);
+            this.HelpFrame2.TabIndex = 10;
+            this.HelpFrame2.TabStop = false;
+            this.HelpFrame2.Text = "Aide générale";
+            // 
+            // HelpFrame1
+            // 
+            this.HelpFrame1.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.HelpFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.HelpFrame1.Location = new System.Drawing.Point(3, 4);
+            this.HelpFrame1.Name = "HelpFrame1";
+            this.HelpFrame1.Size = new System.Drawing.Size(788, 213);
+            this.HelpFrame1.TabIndex = 6;
+            this.HelpFrame1.TabStop = false;
+            this.HelpFrame1.Text = "Fonctions spéciales";
+            // 
             // FF7U
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3033,6 +3118,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1128, 711);
+            this.Controls.Add(this.menuHelpPanel);
             this.Controls.Add(this.menuFFNxPanel);
             this.Controls.Add(this.menuGameplayPanel);
             this.Controls.Add(this.menuSoundPanel);
@@ -3053,6 +3139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.graphicFrame1.ResumeLayout(false);
+            this.graphicsGroupAddTextures.ResumeLayout(false);
             this.graphicsGroupModels3Dm.ResumeLayout(false);
             this.graphicsGroupModels3Dw.ResumeLayout(false);
             this.graphicsGroupMenu.ResumeLayout(false);
@@ -3114,6 +3201,7 @@
             this.FFNxGroupRatio.ResumeLayout(false);
             this.FFNxGroupScreen.ResumeLayout(false);
             this.FFNxGroup3dEngine.ResumeLayout(false);
+            this.menuHelpPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3325,5 +3413,11 @@
         private CheckedListBox FFNxPatchsList;
         private GroupBox FFNxFrame4;
         private PictureBox FFNxPrevPic;
+        private Label menuHelp;
+        private Panel menuHelpPanel;
+        private GroupBox HelpFrame2;
+        private GroupBox HelpFrame1;
+        private GroupBox graphicsGroupAddTextures;
+        private ComboBox graphicsAddTextures;
     }
 }

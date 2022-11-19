@@ -13,6 +13,7 @@ namespace FF7_SYW_Unified
             graphicsModels3Dc.Items.Clear();
             graphicsModels3Dw.Items.Clear();
             graphicsModels3Dm.Items.Clear();
+            graphicsAddTextures.Items.Clear();
             graphicsFMV.Items.Clear();
             graphicsMenu.Items.Clear();
         }
@@ -27,6 +28,7 @@ namespace FF7_SYW_Unified
             setModsItems(graphicsModels3Dm, @"models\minigames\");
             setModsItems(graphicsFMV, @"movies\");
             setModsItems(graphicsMenu, @"uis\");
+            setModsItems(graphicsAddTextures, @"textures\");
 
             graphicsModels3Df.Text = graphicsModels3Df.Items[0].ToString();
             graphicsModels3Dc.Text = graphicsModels3Dc.Items[0].ToString();
@@ -34,6 +36,7 @@ namespace FF7_SYW_Unified
             graphicsModels3Dm.Text = graphicsModels3Dm.Items[0].ToString();
             graphicsFMV.Text = graphicsFMV.Items[0].ToString();
             graphicsMenu.Text = graphicsMenu.Items[0].ToString();
+            graphicsAddTextures.Text = graphicsAddTextures.Items[0].ToString();
         }
 
 
@@ -49,7 +52,8 @@ namespace FF7_SYW_Unified
         private void graphicsModels3DwChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dw, @"models\worldmap\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
         private void graphicsModels3DmChange(object sender, EventArgs e) { modShowCustom(graphicsModels3Dm, @"models\minigames\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
         private void graphicsMenuChange(object sender, EventArgs e) { modShowCustom(graphicsMenu, @"uis\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); setModFlags(graphicsGroupMenu); }
-        private void graphicsFMVChange(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); setModFlags(graphicsGroupFMV); }
+        private void graphicsFMVChange(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
+        private void graphicsAddTexturesChange(object sender, EventArgs e) { modShowCustom(graphicsAddTextures, @"textures\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
 
     }
 }

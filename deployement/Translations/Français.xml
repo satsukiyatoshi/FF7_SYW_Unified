@@ -47,7 +47,7 @@
 	</control>
 	<control>
 		<name>settingsGroup</name>
-		<text>Réglages</text>
+		<text>Menu</text>
 	</control>	
 	<control>
 		<name>menuAbout</name>
@@ -70,8 +70,12 @@
 		<text>Configuration du pilote</text>
 	</control>
 	<control>
+		<name>menuHelp</name>
+		<text>Aide générale</text>
+	</control>
+	<control>
 		<name>ff7Lang</name>
-		<text>Langue de FF7</text>
+		<text>Langue du jeu</text>
 	</control>
 	<control>
 		<name>launchGame</name>
@@ -267,6 +271,11 @@
 		<name>graphicFrame3</name>
 		<text>Aperçu</text>
 	</control>
+	<control>
+		<name>graphicsGroupAddTextures</name>
+		<text>Textures additionnelles</text>
+	</control>
+	
 		
 	
 	
@@ -532,6 +541,20 @@
 		<author>cosmo</author>
 		<help>in the night footsteps...</help>
 		<url></url>
+	</control>
+		
+	
+	
+<!--  -->	
+<!-- Help part -->
+<!--  -->	
+	<control>
+		<name>helpFrame1</name>
+		<text>Raccourcis des fonctions spéciales</text>
+	</control>
+	<control>
+		<name>HelpFrame2</name>
+		<text>Aide</text>
 	</control>
 </translation>
 
