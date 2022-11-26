@@ -37,5 +37,8 @@
     <Compile Update="Urls.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="VCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

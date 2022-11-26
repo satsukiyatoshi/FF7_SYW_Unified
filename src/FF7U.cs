@@ -60,12 +60,16 @@ namespace FF7_SYW_Unified
         private void launchGame_Click(object sender, EventArgs e)
         {
             playAudioClose();
-            restoreFiles();
-            applySywTextures();
-            applyMods();
+            //restoreFiles();
+            //applySywTextures();
+            //applyMods();
             ffnxTomlGenerate();
             saveValues();
+            Globals.isodrive = getLastAvailableDriveLetter();
+            mountIso(Globals.isodrive);
+            regFF7(Globals.isodrive);
             MessageBox.Show("launch");
+            unmountIso();
         }
 
 
