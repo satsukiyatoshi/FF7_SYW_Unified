@@ -542,6 +542,14 @@
 		<help>in the night footsteps...</help>
 		<url></url>
 	</control>
+	<control>
+		<name>FFNxNoCd</name>
+		<text>No-CD</text>
+		<author>Satsuki_Yatoshi</author>
+		<help>Monte une mini-image virtuelle d'un cd de FF7
+		Cela permet de ne pas avoir besoin d'un vrai CD de FF7 pour jouer</help>
+		<url></url>
+	</control>
 		
 	
 	

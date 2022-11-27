@@ -59,34 +59,24 @@ namespace FF7_SYW_Unified
         //apply settings and launch the game
         private void launchGame_Click(object sender, EventArgs e)
         {
+            if (FFNxNoCd.Checked)
+            {
+                Globals.isodrive = getLastAvailableDriveLetter();
+                mountIso(Globals.isodrive);
+                regFF7(Globals.isodrive);
+            }
+
             playAudioClose();
             //restoreFiles();
             //applySywTextures();
             //applyMods();
             ffnxTomlGenerate();
             saveValues();
-            Globals.isodrive = getLastAvailableDriveLetter();
-            mountIso(Globals.isodrive);
-            regFF7(Globals.isodrive);
             MessageBox.Show("launch");
-            unmountIso();
-        }
 
+            if (FFNxNoCd.Checked) { unmountIso(); }
 
-        /*
-        protected virtual void OnFormClosing(System.Windows.Forms.FormClosingEventArgs e)
-        {
-            playAudioClose();
-            Application.DoEvents();
-            System.Text.StringBuilder messageBoxCS = new System.Text.StringBuilder();
-            messageBoxCS.AppendFormat("{0} = {1}", "CloseReason", e.CloseReason);
-            messageBoxCS.AppendLine();
-            messageBoxCS.AppendFormat("{0} = {1}", "Cancel", e.Cancel);
-            messageBoxCS.AppendLine();
-            MessageBox.Show(messageBoxCS.ToString(), "FormClosing Event");
-            
         }
-        */
 
     }
 

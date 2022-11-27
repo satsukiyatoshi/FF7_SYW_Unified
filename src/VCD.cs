@@ -7,6 +7,7 @@ namespace FF7_SYW_Unified
     partial class FF7U
     {
 
+        //Used to run an emulated cd drive
         private void runWinCdemu(string arguments, int timeoutInSeconds = 10)
         {
             string winCdeEmuPath = Application.StartupPath + @"\Tools\WinCDEmu\PortableWinCDEmu.exe";
@@ -27,17 +28,24 @@ namespace FF7_SYW_Unified
             }
         }
 
+
+
         private void installWinCdeDriver()
         {
             runWinCdemu("/install");
         }
 
+
+
         private void unmountIso()
         {
             installWinCdeDriver();
+            // use 1000 ms sleep to avoid vcd driver not 100% ready
+            Thread.Sleep(1000);
             runWinCdemu($"/unmount \"{Application.StartupPath + @"\Tools\WinCDEmu\FF7DISC1.ISO"}\"");
-
         }
+
+
 
         private void mountIso(string drive)
         {
@@ -45,6 +53,9 @@ namespace FF7_SYW_Unified
             runWinCdemu($"\"{Application.StartupPath + @"\Tools\WinCDEmu\FF7DISC1.ISO"}\"" + " " + drive);
         }
 
+
+
+        //get last avaibleletter for mounting iso
         public string getLastAvailableDriveLetter()
         {
             ArrayList driveLetters = new ArrayList(26);
@@ -63,6 +74,8 @@ namespace FF7_SYW_Unified
         }
 
 
+
+        //register FF7 for using withg FFNx and iso letter
         private void regFF7(string drive, int timeoutInSeconds = 10)
         {
             File.Copy(Application.StartupPath + @"Tools\FF7reg.exe", Application.StartupPath + @"Game\FF7reg.exe", true);

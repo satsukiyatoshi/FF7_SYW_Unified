@@ -199,6 +199,7 @@
             this.flagFFFNxPatch = new System.Windows.Forms.PictureBox();
             this.flagEFFNxPatch = new System.Windows.Forms.PictureBox();
             this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
+            this.FFNxNoCd = new System.Windows.Forms.CheckBox();
             this.FFNxGroupFps = new System.Windows.Forms.GroupBox();
             this.FFNxFps = new System.Windows.Forms.ComboBox();
             this.FFNxShowStats = new System.Windows.Forms.CheckBox();
@@ -894,7 +895,7 @@
             this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame3);
-            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuGraphicPanel.Name = "menuGraphicPanel";
             this.menuGraphicPanel.Size = new System.Drawing.Size(795, 703);
             this.menuGraphicPanel.TabIndex = 10;
@@ -2362,7 +2363,7 @@
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
-            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 0);
             this.menuFFNxPanel.Name = "menuFFNxPanel";
             this.menuFFNxPanel.Size = new System.Drawing.Size(795, 703);
             this.menuFFNxPanel.TabIndex = 14;
@@ -2512,6 +2513,7 @@
             // 
             // FFNxFrame3
             // 
+            this.FFNxFrame3.Controls.Add(this.FFNxNoCd);
             this.FFNxFrame3.Controls.Add(this.FFNxGroupFps);
             this.FFNxFrame3.Controls.Add(this.FFNxShowStats);
             this.FFNxFrame3.Controls.Add(this.FFNxDebugTool);
@@ -2542,6 +2544,21 @@
             this.FFNxFrame3.TabIndex = 9;
             this.FFNxFrame3.TabStop = false;
             this.FFNxFrame3.Text = "Configuration du pilote FFNx";
+            // 
+            // FFNxNoCd
+            // 
+            this.FFNxNoCd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxNoCd.Checked = true;
+            this.FFNxNoCd.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.FFNxNoCd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FFNxNoCd.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxNoCd.Location = new System.Drawing.Point(414, 314);
+            this.FFNxNoCd.Name = "FFNxNoCd";
+            this.FFNxNoCd.Size = new System.Drawing.Size(106, 19);
+            this.FFNxNoCd.TabIndex = 39;
+            this.FFNxNoCd.Text = "No-CD";
+            this.FFNxNoCd.UseVisualStyleBackColor = false;
+            this.FFNxNoCd.MouseEnter += new System.EventHandler(this.FFNxNoCd_MouseEnter);
             // 
             // FFNxGroupFps
             // 
@@ -3033,7 +3050,7 @@
             this.FFNXSteamSucces.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FFNXSteamSucces.Location = new System.Drawing.Point(268, 314);
             this.FFNXSteamSucces.Name = "FFNXSteamSucces";
-            this.FFNXSteamSucces.Size = new System.Drawing.Size(252, 19);
+            this.FFNXSteamSucces.Size = new System.Drawing.Size(142, 19);
             this.FFNXSteamSucces.TabIndex = 18;
             this.FFNXSteamSucces.Text = "Succès Steam";
             this.FFNXSteamSucces.UseVisualStyleBackColor = false;
@@ -3419,5 +3436,6 @@
         private GroupBox HelpFrame1;
         private GroupBox graphicsGroupAddTextures;
         private ComboBox graphicsAddTextures;
+        private CheckBox FFNxNoCd;
     }
 }
