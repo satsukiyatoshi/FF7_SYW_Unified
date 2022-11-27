@@ -105,11 +105,17 @@ namespace FF7_SYW_Unified
         //list audio files when changing audio mod
         private void soundsChange(ComboBox soundCombo, string modFolder)
         {
-            
-            if (Globals.actualModFolder != getModCustomFolder(soundCombo, modFolder) + @"\files\")
+            string currentModFOlder = getModCustomFolder(soundCombo, modFolder) + @"\files\";
+
+            if (!Directory.Exists(currentModFOlder))
+            {
+                System.IO.Directory.CreateDirectory(currentModFOlder);
+            }
+
+            if (Globals.actualModFolder != currentModFOlder)
             {
                 modShowCustom(soundCombo, modFolder, soundsHelp, soundsHelpAuthor, soundPrevPic);
-                Globals.actualModFolder = getModCustomFolder(soundCombo, modFolder) + @"\files\";
+                Globals.actualModFolder = currentModFOlder;
                 
                 listAudioFiles(Globals.actualModFolder);
             }
