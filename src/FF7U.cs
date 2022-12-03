@@ -66,7 +66,6 @@ namespace FF7_SYW_Unified
                 regFF7(Globals.isodrive);
             }
 
-            MessageBox.Show("iso");
             playAudioClose();
             restoreFiles();
             applySywTextures();
@@ -80,16 +79,14 @@ namespace FF7_SYW_Unified
             ProcessStartInfo ff7Launch = new ProcessStartInfo(ff7Path)
             {
                 WorkingDirectory = Path.GetDirectoryName(ff7Path),
-                UseShellExecute = false,
+                UseShellExecute = true,
                 CreateNoWindow = false,
                 WindowStyle = ProcessWindowStyle.Normal,
-                RedirectStandardOutput = true,
-                RedirectStandardError = true,
             };
 
             using (Process ff7 = Process.Start(ff7Launch))
             {
-                ff7.WaitForExit(1000);
+                ff7.WaitForExit();
             }
 
 
