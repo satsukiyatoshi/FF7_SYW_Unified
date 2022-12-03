@@ -123,6 +123,11 @@ namespace FF7_SYW_Unified
         //copy mod folder content to current mod folder recusively and overwrite
         public void folderModCopy(string modFolder)
         {
+            if(!(modFolder.Length - 1).Equals(@"\"))
+            {
+                modFolder = modFolder + @"\";
+            }
+
             if (Directory.Exists(modFolder + @"Files"))
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"Files"), new DirectoryInfo(Application.StartupPath + @"\Mods\Current"));
@@ -192,7 +197,7 @@ namespace FF7_SYW_Unified
                 disableFiles(@"mods\SYW\Textures\flevel");
             }
 
-            if (!graphicsBattles.Checked) { disableFiles(@"mods\SYW\battle"); }
+            if (!graphicsBattles.Checked) { disableFiles(@"mods\SYW\Textures\battle"); }
 
             if (!graphicsMagics.Checked)
             {
@@ -200,7 +205,7 @@ namespace FF7_SYW_Unified
                 disableFiles(@"mods\SYW\Textures", false);
             }
 
-            if (!graphicsWorldMap.Checked) { disableFiles(@"mods\SYW\world"); }
+            if (!graphicsWorldMap.Checked) { disableFiles(@"mods\SYW\Textures\world"); }
 
             if (!graphicsMiniGames.Checked)
             {

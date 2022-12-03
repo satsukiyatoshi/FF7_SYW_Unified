@@ -20,7 +20,7 @@ namespace FF7_SYW_Unified
 
         private void FFNxSetDefaults()
         {
-            setModsItems(FFNxComboPatchs, @"Hacks\");
+            setModsItems(FFNxComboPatchs, @"Patchs\");
             foreach (var item in FFNxComboPatchs.Items)
             {
                 FFNxPatchsList.Items.Add(item);
@@ -39,13 +39,29 @@ namespace FF7_SYW_Unified
             if (index > -1)
             {
                 FFNxComboPatchs.Text = FFNxPatchsList.Items[index].ToString();
-                modShowCustom(FFNxComboPatchs, @"Hacks\", FFNxHelp, FFNxHelpAuthor, FFNxPrevPic);
+                modShowCustom(FFNxComboPatchs, @"Patchs\", FFNxHelp, FFNxHelpAuthor, FFNxPrevPic);
                 setModFlags(FFNxFrame1);
             }
 
             // use 25 ms sleep to avoid overkill cpu usage with the mousemove check
             Thread.Sleep(25);
 
+        }
+
+
+
+        private void applyPatchs()
+        {
+            int i;
+
+            for (i = 0; i <= (FFNxPatchsList.Items.Count - 1); i++)
+            {
+                if (FFNxPatchsList.GetItemChecked(i))
+                {
+                    string[] dirs = Directory.GetDirectories(Application.StartupPath + @"mods\Patchs", "*", SearchOption.TopDirectoryOnly);
+                    folderModCopy(dirs[i]);
+                }
+            }
         }
 
 
@@ -80,16 +96,17 @@ namespace FF7_SYW_Unified
         private void ffnxTomlGenerate()
         {
             string soundsFolder;
+            string quote = "\"";
 
             TextWriter twx = new StreamWriter(Application.StartupPath + @"\Game\FFNx.toml", false);
 
             twx.WriteLine("renderer_backend = " + FFNx3dEngine.SelectedIndex.ToString());
-            twx.WriteLine(@"mod_path = Mods\SYW\Textures");
-            twx.WriteLine(@"mod_ext = dds");
-            twx.WriteLine(@"hext_patching_path = Mods\Current\Hext");
-            twx.WriteLine(@"direct_mode_path = Mods\Current\Direct");
-            twx.WriteLine(@"override_path = Mods\Current\Data");
-            twx.WriteLine(@"override_mod_path = Mods\Current\Textures");
+            twx.WriteLine("mod_path = " + quote + @"..\Mods\SYW\Textures" + quote);
+            twx.WriteLine("mod_ext = " + quote + "dds" + quote);
+            twx.WriteLine("hext_patching_path = " + quote + @"..\Mods\Current\Hext" + quote);
+            twx.WriteLine("direct_mode_path = " + quote + @"..\Mods\Current\Direct" + quote);
+            twx.WriteLine("override_path = " + quote + @"..\Mods\Current\Data" + quote);
+            twx.WriteLine("override_mod_path = " + quote + @"..\Mods\Current\Textures" + quote);
             if (FFNxScreen.SelectedIndex == 0) { twx.WriteLine("fullscreen = true"); }
             if (FFNxScreen.SelectedIndex == 1) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = false"); }
             if (FFNxScreen.SelectedIndex == 2) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = true"); }
@@ -164,9 +181,9 @@ namespace FF7_SYW_Unified
             {
                 soundsFolder = getModCustomFolder(soundsMusics, @"audio\musics");
                 twx.WriteLine("use_external_music = true");
-                twx.WriteLine("he_bios_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                twx.WriteLine("he_bios_path = " + quote + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
                 twx.WriteLine("external_music_ext = " + getSoundExts(soundsFolder));
-                twx.WriteLine("external_music_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                twx.WriteLine("external_music_path = " + quote + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
             }
 
             if (soundsSfx.SelectedIndex == 0)
@@ -178,21 +195,21 @@ namespace FF7_SYW_Unified
                 soundsFolder = getModCustomFolder(soundsMusics, @"audio\sfxs");
                 twx.WriteLine("use_external_sfx = true");
                 twx.WriteLine("external_music_ext = " + getSoundExts(soundsFolder));
-                twx.WriteLine("external_sfx_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                twx.WriteLine("external_sfx_path = " + quote + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
             }
 
             if (soundsVoices.SelectedIndex != 0)
             {
                 soundsFolder = getModCustomFolder(soundsMusics, @"audio\voices");
                 twx.WriteLine("external_voice_ext = " + getSoundExts(soundsFolder));
-                twx.WriteLine("external_voice_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                twx.WriteLine("external_voice_path = " + quote + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
             }
 
             if (soundsAmbients.SelectedIndex == 0)
             {
                 soundsFolder = getModCustomFolder(soundsMusics, @"audio\ambients");
                 twx.WriteLine("external_ambient_ext = " + getSoundExts(soundsFolder));
-                twx.WriteLine("external_ambient_path = \"" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + "\"");
+                twx.WriteLine("external_ambient_path = " + quote + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
             }
 
             if (soundsFMV.SelectedIndex == 0)
@@ -200,8 +217,14 @@ namespace FF7_SYW_Unified
                 soundsFolder = getModCustomFolder(soundsMusics, @"audio\movies");
                 twx.WriteLine("external_movie_audio_ext = " + getSoundExts(soundsFolder));
             }
+
             // save_path = "save" pour mod gameplay
             twx.Close();
+
+            //convert '\' in '/' for  FFNx use
+            string tomlFile = File.ReadAllText(Application.StartupPath + @"\Game\FFNx.toml");
+            tomlFile = tomlFile.Replace(@"\", "/");
+            File.WriteAllText(Application.StartupPath + @"\Game\FFNx.toml", tomlFile);
         }
     }
 }

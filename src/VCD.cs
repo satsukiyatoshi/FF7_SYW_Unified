@@ -20,7 +20,7 @@ namespace FF7_SYW_Unified
                 WindowStyle = ProcessWindowStyle.Hidden,
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
-        };
+            };
 
             using (Process winCd = Process.Start(startInfo))
             {

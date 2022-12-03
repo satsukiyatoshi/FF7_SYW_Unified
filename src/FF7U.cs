@@ -66,13 +66,32 @@ namespace FF7_SYW_Unified
                 regFF7(Globals.isodrive);
             }
 
+            MessageBox.Show("iso");
             playAudioClose();
-            //restoreFiles();
-            //applySywTextures();
-            //applyMods();
+            restoreFiles();
+            applySywTextures();
+            applyMods();
+            applyPatchs();
             ffnxTomlGenerate();
             saveValues();
-            MessageBox.Show("launch");
+
+            string ff7Path = Application.StartupPath + @"\Game\ff7.exe";
+
+            ProcessStartInfo ff7Launch = new ProcessStartInfo(ff7Path)
+            {
+                WorkingDirectory = Path.GetDirectoryName(ff7Path),
+                UseShellExecute = false,
+                CreateNoWindow = false,
+                WindowStyle = ProcessWindowStyle.Normal,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+            };
+
+            using (Process ff7 = Process.Start(ff7Launch))
+            {
+                ff7.WaitForExit(1000);
+            }
+
 
             if (FFNxNoCd.Checked) { unmountIso(); }
 
