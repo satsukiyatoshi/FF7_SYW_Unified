@@ -158,6 +158,8 @@ namespace FF7_SYW_Unified
         //restore all dds files and delete the currently used mods file
         private void restoreFiles()
         {
+            loadingLog(translate("restoreFiles", Globals.translateUI));
+
             List<string> disabledFiles = Directory.GetFiles(Application.StartupPath + @"mods\SYW\Textures", "*.SYWD", SearchOption.AllDirectories).ToList();
             List<string> currentFiles = Directory.GetFiles(Application.StartupPath + @"mods\Current", "*", SearchOption.AllDirectories).ToList();
 
@@ -187,9 +189,20 @@ namespace FF7_SYW_Unified
 
 
 
+        private void loadingLog(string modDescription)
+        {
+            translateCtrl(loadingWaitDetails);
+            loadingWaitDetails.Text = loadingWaitDetails.Text + " : " + modDescription;
+            Application.DoEvents();
+        }
+
+
+
         //disable SYW textures depending choosen options
         private void applySywTextures()
         {
+
+            loadingLog(graphicsFields.Text);
             if (!graphicsFields.Checked)
             {
                 disableFiles(@"mods\SYW\Textures\char");
@@ -197,16 +210,20 @@ namespace FF7_SYW_Unified
                 disableFiles(@"mods\SYW\Textures\flevel");
             }
 
+            loadingLog(graphicsBattles.Text);
             if (!graphicsBattles.Checked) { disableFiles(@"mods\SYW\Textures\battle"); }
 
+            loadingLog(graphicsMagics.Text);
             if (!graphicsMagics.Checked)
             {
                 disableFiles(@"mods\SYW\Textures\magic");
                 disableFiles(@"mods\SYW\Textures", false);
             }
 
+            loadingLog(graphicsWorldMap.Text);
             if (!graphicsWorldMap.Checked) { disableFiles(@"mods\SYW\Textures\world"); }
 
+            loadingLog(graphicsMiniGames.Text);
             if (!graphicsMiniGames.Checked)
             {
                 disableFiles(@"mods\SYW\Textures\Chocobo");
@@ -218,6 +235,7 @@ namespace FF7_SYW_Unified
             }
 
             //disable some texture files if no animation used to avoid bug in certains fields
+            loadingLog(graphicsAnimations.Text);
             if (!graphicsAnimations.Checked && graphicsFields.Checked)
             {
                 string file = "";
@@ -237,13 +255,29 @@ namespace FF7_SYW_Unified
         //apply current mods of a groupbox's comboboxs
         private void applyMods()
         {
+            loadingLog(graphicsModels3Df.Text);
             folderModCopy(getModCustomFolder(graphicsModels3Df, @"models\fields\"));
+
+            loadingLog(graphicsModels3Dc.Text);
             folderModCopy(getModCustomFolder(graphicsModels3Dc, @"models\battles\"));
+
+            loadingLog(graphicsModels3Dw.Text);
             folderModCopy(getModCustomFolder(graphicsModels3Dw, @"models\worldmap\"));
+
+            loadingLog(graphicsModels3Dm.Text);
             folderModCopy(getModCustomFolder(graphicsModels3Dm, @"models\minigames\"));
+
+            loadingLog(graphicsMenu.Text);
             folderModCopy(getModCustomFolder(graphicsMenu, @"uis\"));
+
+            loadingLog(graphicsFMV.Text);
             folderModCopy(getModCustomFolder(graphicsFMV, @"movies\"));
+
+            loadingLog(gameplayMods.Text);
             folderModCopy(getModCustomFolder(gameplayMods, @"gameplay\"));
+
+            loadingLog(graphicsAddTextures.Text);
+            folderModCopy(getModCustomFolder(graphicsAddTextures, @"textures\"));
         }
 
     }

@@ -52,6 +52,9 @@ namespace FF7_SYW_Unified
 
         private void applyPatchs()
         {
+
+            loadingLog(FFNxFrame1.Text);
+
             int i;
 
             for (i = 0; i <= (FFNxPatchsList.Items.Count - 1); i++)
@@ -95,6 +98,8 @@ namespace FF7_SYW_Unified
         //generate FFNx config file
         private void ffnxTomlGenerate()
         {
+            loadingLog(translate("ffnxConfigFile", Globals.translateUI));
+
             string soundsFolder;
             string quote = "\"";
 

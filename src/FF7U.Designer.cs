@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FF7U));
             this.menuFrame = new System.Windows.Forms.GroupBox();
-            this.launchGame = new System.Windows.Forms.Label();
+            this.menuLaunchGame = new System.Windows.Forms.Label();
             this.settingsGroup = new System.Windows.Forms.GroupBox();
             this.menuHelp = new System.Windows.Forms.Label();
             this.menuFFNx = new System.Windows.Forms.Label();
@@ -241,6 +241,11 @@
             this.menuHelpPanel = new System.Windows.Forms.Panel();
             this.HelpFrame2 = new System.Windows.Forms.GroupBox();
             this.HelpFrame1 = new System.Windows.Forms.GroupBox();
+            this.menuLaunchGamePanel = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.loadingAnimation = new System.Windows.Forms.PictureBox();
+            this.loadingWaitDetails = new System.Windows.Forms.Label();
+            this.loadingWait = new System.Windows.Forms.Label();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
@@ -310,13 +315,16 @@
             this.FFNxGroupScreen.SuspendLayout();
             this.FFNxGroup3dEngine.SuspendLayout();
             this.menuHelpPanel.SuspendLayout();
+            this.menuLaunchGamePanel.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).BeginInit();
             this.SuspendLayout();
             // 
             // menuFrame
             // 
             this.menuFrame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.menuFrame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menuFrame.Controls.Add(this.launchGame);
+            this.menuFrame.Controls.Add(this.menuLaunchGame);
             this.menuFrame.Controls.Add(this.settingsGroup);
             this.menuFrame.Controls.Add(this.ff7Lang);
             this.menuFrame.Controls.Add(this.interfaceLang);
@@ -330,21 +338,21 @@
             this.menuFrame.TabIndex = 0;
             this.menuFrame.TabStop = false;
             // 
-            // launchGame
+            // menuLaunchGame
             // 
-            this.launchGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            this.launchGame.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.launchGame.Font = new System.Drawing.Font("Roboto Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.launchGame.ForeColor = System.Drawing.Color.Black;
-            this.launchGame.Location = new System.Drawing.Point(10, 653);
-            this.launchGame.Name = "launchGame";
-            this.launchGame.Size = new System.Drawing.Size(290, 32);
-            this.launchGame.TabIndex = 10;
-            this.launchGame.Text = "Jouer à FF7 SYW";
-            this.launchGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.launchGame.Click += new System.EventHandler(this.launchGame_Click);
-            this.launchGame.MouseEnter += new System.EventHandler(this.launchGame_MouseEnter);
-            this.launchGame.MouseLeave += new System.EventHandler(this.launchGame_MouseLeave);
+            this.menuLaunchGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.menuLaunchGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuLaunchGame.Font = new System.Drawing.Font("Roboto Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.menuLaunchGame.ForeColor = System.Drawing.Color.Black;
+            this.menuLaunchGame.Location = new System.Drawing.Point(10, 653);
+            this.menuLaunchGame.Name = "menuLaunchGame";
+            this.menuLaunchGame.Size = new System.Drawing.Size(290, 32);
+            this.menuLaunchGame.TabIndex = 10;
+            this.menuLaunchGame.Text = "Jouer à FF7 SYW";
+            this.menuLaunchGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.menuLaunchGame.Click += new System.EventHandler(this.menuLaunchGame_Click);
+            this.menuLaunchGame.MouseEnter += new System.EventHandler(this.menuLaunchGame_MouseEnter);
+            this.menuLaunchGame.MouseLeave += new System.EventHandler(this.menuLaunchGame_MouseLeave);
             // 
             // settingsGroup
             // 
@@ -3128,6 +3136,63 @@
             this.HelpFrame1.TabStop = false;
             this.HelpFrame1.Text = "Fonctions spéciales";
             // 
+            // menuLaunchGamePanel
+            // 
+            this.menuLaunchGamePanel.Controls.Add(this.groupBox2);
+            this.menuLaunchGamePanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuLaunchGamePanel.Name = "menuLaunchGamePanel";
+            this.menuLaunchGamePanel.Size = new System.Drawing.Size(795, 703);
+            this.menuLaunchGamePanel.TabIndex = 16;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.loadingAnimation);
+            this.groupBox2.Controls.Add(this.loadingWaitDetails);
+            this.groupBox2.Controls.Add(this.loadingWait);
+            this.groupBox2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox2.Location = new System.Drawing.Point(3, 4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(788, 699);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            // 
+            // loadingAnimation
+            // 
+            this.loadingAnimation.Image = ((System.Drawing.Image)(resources.GetObject("loadingAnimation.Image")));
+            this.loadingAnimation.Location = new System.Drawing.Point(18, 19);
+            this.loadingAnimation.Name = "loadingAnimation";
+            this.loadingAnimation.Size = new System.Drawing.Size(752, 529);
+            this.loadingAnimation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.loadingAnimation.TabIndex = 70;
+            this.loadingAnimation.TabStop = false;
+            // 
+            // loadingWaitDetails
+            // 
+            this.loadingWaitDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.loadingWaitDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loadingWaitDetails.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.loadingWaitDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.loadingWaitDetails.Location = new System.Drawing.Point(18, 626);
+            this.loadingWaitDetails.Name = "loadingWaitDetails";
+            this.loadingWaitDetails.Size = new System.Drawing.Size(752, 46);
+            this.loadingWaitDetails.TabIndex = 69;
+            this.loadingWaitDetails.Text = "Chargement en cours";
+            this.loadingWaitDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // loadingWait
+            // 
+            this.loadingWait.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.loadingWait.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loadingWait.Font = new System.Drawing.Font("Roboto", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.loadingWait.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.loadingWait.Location = new System.Drawing.Point(18, 551);
+            this.loadingWait.Name = "loadingWait";
+            this.loadingWait.Size = new System.Drawing.Size(752, 65);
+            this.loadingWait.TabIndex = 68;
+            this.loadingWait.Text = "Chargement en cours";
+            this.loadingWait.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FF7U
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3135,6 +3200,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1128, 711);
+            this.Controls.Add(this.menuLaunchGamePanel);
             this.Controls.Add(this.menuHelpPanel);
             this.Controls.Add(this.menuFFNxPanel);
             this.Controls.Add(this.menuGameplayPanel);
@@ -3219,8 +3285,11 @@
             this.FFNxGroupScreen.ResumeLayout(false);
             this.FFNxGroup3dEngine.ResumeLayout(false);
             this.menuHelpPanel.ResumeLayout(false);
+            this.menuLaunchGamePanel.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).EndInit();
             this.ResumeLayout(false);
-
+            this.Closing += OnClosing;
         }
 
         #endregion
@@ -3228,7 +3297,7 @@
         private GroupBox menuFrame;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Label launchGame;
+        private Label menuLaunchGame;
         private GroupBox settingsGroup;
         private Label menuFFNx;
         private Label menuGameplay;
@@ -3437,5 +3506,10 @@
         private GroupBox graphicsGroupAddTextures;
         private ComboBox graphicsAddTextures;
         private CheckBox FFNxNoCd;
+        private Panel menuLaunchGamePanel;
+        private GroupBox groupBox2;
+        private PictureBox loadingAnimation;
+        private Label loadingWaitDetails;
+        private Label loadingWait;
     }
 }

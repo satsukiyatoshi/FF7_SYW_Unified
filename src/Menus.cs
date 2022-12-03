@@ -102,7 +102,7 @@ namespace FF7_SYW_Unified
         private void menuHelp_Click(object sender, EventArgs e) { menuClick(menuHelp); }
 
 
-        private void launchGame_MouseEnter(object sender, EventArgs e) { launchGame.BackColor = Globals.activButtonBolor; }
-        private void launchGame_MouseLeave(object sender, EventArgs e) { launchGame.BackColor = Globals.inactivButtonBolor; }
+        private void menuLaunchGame_MouseEnter(object sender, EventArgs e) { menuLaunchGame.BackColor = Globals.activButtonBolor; }
+        private void menuLaunchGame_MouseLeave(object sender, EventArgs e) { menuLaunchGame.BackColor = Globals.inactivButtonBolor; }
     }
 }

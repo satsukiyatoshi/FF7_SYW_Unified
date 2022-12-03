@@ -1,5 +1,6 @@
 
 using Microsoft.VisualBasic.FileIO;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.IO;
@@ -57,8 +58,14 @@ namespace FF7_SYW_Unified
 
 
         //apply settings and launch the game
-        private void launchGame_Click(object sender, EventArgs e)
+        private void menuLaunchGame_Click(object sender, EventArgs e)
         {
+
+            menuFrame.Enabled = false;
+            menuClick(menuLaunchGame);
+
+            loadingLog(translate("isoMount", Globals.translateUI));
+
             if (FFNxNoCd.Checked)
             {
                 Globals.isodrive = getLastAvailableDriveLetter();
@@ -74,6 +81,8 @@ namespace FF7_SYW_Unified
             ffnxTomlGenerate();
             saveValues();
 
+            this.Visible = false;   
+            
             string ff7Path = Application.StartupPath + @"\Game\ff7.exe";
 
             ProcessStartInfo ff7Launch = new ProcessStartInfo(ff7Path)
@@ -92,6 +101,29 @@ namespace FF7_SYW_Unified
 
             if (FFNxNoCd.Checked) { unmountIso(); }
 
+            this.Close();
+
+        }
+
+
+
+
+        private void OnClosing(object sender, CancelEventArgs cancelEventArgs)
+        {
+            //if loading + translation a faire
+
+            string msg = "voulez vous quiter ?";
+
+            DialogResult result = MessageBox.Show(msg, "sur ?",
+                MessageBoxButtons.YesNo/*Cancel*/, MessageBoxIcon.Question);
+
+            if (result == DialogResult.No)
+            {
+                cancelEventArgs.Cancel = true;
+                return;
+            }
+
+            playAudioClose();
         }
 
     }
