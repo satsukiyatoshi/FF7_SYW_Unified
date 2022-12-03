@@ -166,6 +166,7 @@ namespace FF7_SYW_Unified
             foreach (string file in disabledFiles)
             {
                 File.Move(file, Path.ChangeExtension(file, ".dds"));
+                Application.DoEvents();
             }
 
             foreach (string file in currentFiles)
@@ -184,6 +185,7 @@ namespace FF7_SYW_Unified
             foreach (string file in files)
             {
                 File.Move(file, Path.ChangeExtension(file, ".SYWD"));
+                Application.DoEvents();
             }
         }
 

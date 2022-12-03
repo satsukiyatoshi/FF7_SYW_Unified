@@ -11,6 +11,7 @@
             foreach (FileInfo fi in source.GetFiles())
             {
                 fi.CopyTo(Path.Combine(target.FullName, fi.Name), true);
+                Application.DoEvents();
             }
             foreach (DirectoryInfo diSourceSubDir in source.GetDirectories())
             {

@@ -64,6 +64,9 @@ namespace FF7_SYW_Unified
             menuFrame.Enabled = false;
             menuClick(menuLaunchGame);
 
+            loadingAnimation.Visible = true;
+            Application.DoEvents();
+
             loadingLog(translate("isoMount", Globals.translateUI));
 
             if (FFNxNoCd.Checked)
@@ -104,7 +107,6 @@ namespace FF7_SYW_Unified
             this.Close();
 
         }
-
 
 
 

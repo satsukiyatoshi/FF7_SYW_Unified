@@ -576,11 +576,11 @@
 	</control>
 	<control>
 		<name>loadingWaitDetails</name>
-		<text>Application du mod</text>
+		<text>Application de</text>
 	</control>
 	<control>
 		<name>restoreFiles</name>
-		<text>Restore les fichiers d'origine</text>
+		<text>Restoration des fichiers d'origine</text>
 	</control>
 	<control>
 		<name>isoMount</name>

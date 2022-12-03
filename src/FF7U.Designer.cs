@@ -2371,7 +2371,7 @@
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
-            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuFFNxPanel.Name = "menuFFNxPanel";
             this.menuFFNxPanel.Size = new System.Drawing.Size(795, 703);
             this.menuFFNxPanel.TabIndex = 14;
@@ -3139,7 +3139,7 @@
             // menuLaunchGamePanel
             // 
             this.menuLaunchGamePanel.Controls.Add(this.groupBox2);
-            this.menuLaunchGamePanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuLaunchGamePanel.Location = new System.Drawing.Point(327, 0);
             this.menuLaunchGamePanel.Name = "menuLaunchGamePanel";
             this.menuLaunchGamePanel.Size = new System.Drawing.Size(795, 703);
             this.menuLaunchGamePanel.TabIndex = 16;
@@ -3166,6 +3166,7 @@
             this.loadingAnimation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.loadingAnimation.TabIndex = 70;
             this.loadingAnimation.TabStop = false;
+            this.loadingAnimation.Visible = false;
             // 
             // loadingWaitDetails
             // 
@@ -3289,7 +3290,7 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).EndInit();
             this.ResumeLayout(false);
-            this.Closing += OnClosing;
+
         }
 
         #endregion
