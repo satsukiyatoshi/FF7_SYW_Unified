@@ -319,7 +319,6 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).BeginInit();
             this.SuspendLayout();
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(FormClosingCheck);
             // 
             // menuFrame
             // 
@@ -876,6 +875,7 @@
             this.graphicsFields.TabIndex = 0;
             this.graphicsFields.Text = "Scènes du jeu HD";
             this.graphicsFields.UseVisualStyleBackColor = false;
+            this.graphicsFields.CheckedChanged += new System.EventHandler(this.graphicsFields_CheckedChanged);
             this.graphicsFields.MouseEnter += new System.EventHandler(this.graphicsFields_MouseEnter);
             // 
             // graphicFrame3
@@ -904,7 +904,7 @@
             this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame3);
-            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuGraphicPanel.Location = new System.Drawing.Point(327, 0);
             this.menuGraphicPanel.Name = "menuGraphicPanel";
             this.menuGraphicPanel.Size = new System.Drawing.Size(795, 703);
             this.menuGraphicPanel.TabIndex = 10;
@@ -3140,7 +3140,7 @@
             // menuLaunchGamePanel
             // 
             this.menuLaunchGamePanel.Controls.Add(this.groupBox2);
-            this.menuLaunchGamePanel.Location = new System.Drawing.Point(327, 0);
+            this.menuLaunchGamePanel.Location = new System.Drawing.Point(327, 1600);
             this.menuLaunchGamePanel.Name = "menuLaunchGamePanel";
             this.menuLaunchGamePanel.Size = new System.Drawing.Size(795, 703);
             this.menuLaunchGamePanel.TabIndex = 16;
@@ -3216,6 +3216,7 @@
             this.Name = "FF7U";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FF7_SYW_Unified";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingCheck);
             this.Load += new System.EventHandler(this.FF7U_Load);
             this.menuFrame.ResumeLayout(false);
             this.settingsGroup.ResumeLayout(false);

@@ -121,6 +121,7 @@ namespace FF7_SYW_Unified
 
             if (FFNxNoCd.Checked) { unmountIso(); }
             playAudioClose();
+            Process.GetCurrentProcess().Kill();
         }
 
     }

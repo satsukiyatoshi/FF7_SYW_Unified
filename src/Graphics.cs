@@ -41,6 +41,20 @@ namespace FF7_SYW_Unified
 
 
 
+        private void graphicsFields_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!graphicsFields.Checked)
+            {
+                graphicsAnimations.Checked = false;
+                graphicsAnimations.Enabled = false;
+                return;
+            }
+
+            graphicsAnimations.Enabled = true;
+        }
+
+
+
         private void graphicsFields_MouseEnter(object sender, EventArgs e) { modShow("graphicsFields", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsAnimations_MouseEnter(object sender, EventArgs e) { modShow("graphicsAnimations", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsBattles_MouseEnter(object sender, EventArgs e) { modShow("graphicsBattles", graphicsHelp, graphicsHelpAuthor); }
