@@ -130,26 +130,26 @@ namespace FF7_SYW_Unified
 
             if (Directory.Exists(modFolder + @"Files"))
             {
-                folderCopyAll(new DirectoryInfo(modFolder + @"Files"), new DirectoryInfo(Application.StartupPath + @"\Mods\Current"));
+                folderCopyAll(new DirectoryInfo(modFolder + @"Files"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
             //if 60fps mod is activated then copy 60 fps file of the mod too
             if (FFNxFps.SelectedIndex == 2 && Directory.Exists(modFolder + @"Files60fps"))
             {
-                folderCopyAll(new DirectoryInfo(modFolder + @"Files60fps"), new DirectoryInfo(Application.StartupPath + @"\Mods\Current"));
+                folderCopyAll(new DirectoryInfo(modFolder + @"Files60fps"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
             //if language specific mod files exists then copy then overwriting default mod files
             //Globals.gameLang
             if (Directory.Exists(modFolder + @"Files" + Globals.gameLang))
             {
-                folderCopyAll(new DirectoryInfo(modFolder + @"Files" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Mods\Current"));
+                folderCopyAll(new DirectoryInfo(modFolder + @"Files" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
             //replace ff7.exe with the gameplay's ff7 mod (used with vanilla exe option too)
-            if (File.Exists(Application.StartupPath + @"Mods\Current\ff7.exe"))
+            if (File.Exists(Application.StartupPath + @"Game\current\ff7.exe"))
             {
-                File.Copy(Application.StartupPath + @"Mods\Current\ff7.exe", Application.StartupPath + @"Game\ff7.exe", true);
+                File.Copy(Application.StartupPath + @"Game\current\ff7.exe", Application.StartupPath + @"Game\ff7.exe", true);
             }
         }
 
@@ -161,7 +161,7 @@ namespace FF7_SYW_Unified
             loadingLog(translate("restoreFiles", Globals.translateUI));
 
             List<string> disabledFiles = Directory.GetFiles(Application.StartupPath + @"mods\SYW\Textures", "*.SYWD", SearchOption.AllDirectories).ToList();
-            List<string> currentFiles = Directory.GetFiles(Application.StartupPath + @"mods\Current", "*", SearchOption.AllDirectories).ToList();
+            List<string> currentFiles = Directory.GetFiles(Application.StartupPath + @"Game\current", "*", SearchOption.AllDirectories).ToList();
 
             foreach (string file in disabledFiles)
             {

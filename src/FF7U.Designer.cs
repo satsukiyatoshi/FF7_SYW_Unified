@@ -319,6 +319,7 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).BeginInit();
             this.SuspendLayout();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(FormClosingCheck);
             // 
             // menuFrame
             // 

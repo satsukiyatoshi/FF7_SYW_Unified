@@ -108,10 +108,10 @@ namespace FF7_SYW_Unified
             twx.WriteLine("renderer_backend = " + FFNx3dEngine.SelectedIndex.ToString());
             twx.WriteLine("mod_path = " + quote + @"..\Mods\SYW\Textures" + quote);
             twx.WriteLine("mod_ext = " + quote + "dds" + quote);
-            twx.WriteLine("hext_patching_path = " + quote + @"..\Mods\Current\Hext" + quote);
-            twx.WriteLine("direct_mode_path = " + quote + @"..\Mods\Current\Direct" + quote);
-            twx.WriteLine("override_path = " + quote + @"..\Mods\Current\Data" + quote);
-            twx.WriteLine("override_mod_path = " + quote + @"..\Mods\Current\Textures" + quote);
+            twx.WriteLine("hext_patching_path = " + quote + @"current\Hext" + quote);
+            twx.WriteLine("direct_mode_path = " + quote + @"current\Direct" + quote);
+            twx.WriteLine("override_path = " + quote + @"current\Data" + quote);
+            twx.WriteLine("override_mod_path = " + quote + @"current\Textures" + quote);
             if (FFNxScreen.SelectedIndex == 0) { twx.WriteLine("fullscreen = true"); }
             if (FFNxScreen.SelectedIndex == 1) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = false"); }
             if (FFNxScreen.SelectedIndex == 2) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = true"); }

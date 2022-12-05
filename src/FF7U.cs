@@ -1,14 +1,8 @@
 
-using Microsoft.VisualBasic.FileIO;
+
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Diagnostics.Metrics;
-using System.IO;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Xml.Linq;
-using SearchOption = System.IO.SearchOption;
+
 
 namespace FF7_SYW_Unified
 {
@@ -60,7 +54,7 @@ namespace FF7_SYW_Unified
         //apply settings and launch the game
         private void menuLaunchGame_Click(object sender, EventArgs e)
         {
-
+            Globals.isGameLoading = true;
             menuFrame.Enabled = false;
             menuClick(menuLaunchGame);
 
@@ -101,6 +95,7 @@ namespace FF7_SYW_Unified
                 ff7.WaitForExit();
             }
 
+            Globals.isGameLoading = false;
 
             if (FFNxNoCd.Checked) { unmountIso(); }
 
@@ -108,23 +103,23 @@ namespace FF7_SYW_Unified
 
         }
 
-
-
-        private void OnClosing(object sender, CancelEventArgs cancelEventArgs)
+        private void FormClosingCheck(Object sender, FormClosingEventArgs e)
         {
-            //if loading + translation a faire
-
-            string msg = "voulez vous quiter ?";
-
-            DialogResult result = MessageBox.Show(msg, "sur ?",
-                MessageBoxButtons.YesNo/*Cancel*/, MessageBoxIcon.Question);
-
-            if (result == DialogResult.No)
+            if(Globals.isGameLoading)
             {
-                cancelEventArgs.Cancel = true;
-                return;
+                string msg = translate("quit", Globals.translateUI);
+
+                DialogResult result = MessageBox.Show(msg, "",
+                    MessageBoxButtons.YesNo/*Cancel*/, MessageBoxIcon.Question);
+
+                if (result == DialogResult.No)
+                {
+                    e.Cancel = true;
+                    return;
+                }
             }
 
+            if (FFNxNoCd.Checked) { unmountIso(); }
             playAudioClose();
         }
 

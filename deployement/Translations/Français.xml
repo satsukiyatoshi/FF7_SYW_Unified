@@ -183,7 +183,7 @@
 		<name>packStory</name>
 		<text>Le projet FF7 SYW est un pack comprenant le jeu Final Fantasy VII retraduit intégralement avec retraitement graphique grâce à de l'intelligence artificielle avancée sur les images de fonds, combats, mappemonde, mini-jeux et séquences vidéos, d’autres éléments ont également été recréés tout en préservant l'essence originelle du jeu.
 		
-		De plus, le pack contient diverses options de configuration poussées et patchs divers comme les fonctions de sauvegarde en tout lieu, se déplacer automatiquement en courant, désactiver les combats aléatoires, l’avance rapide, des défis et mods de difficulté en tout genre... tout ça pour offrir une expérience et un confort de jeu inédit.</text>
+De plus, le pack contient diverses options de configuration poussées et patchs divers comme les fonctions de sauvegarde en tout lieu, se déplacer automatiquement en courant, désactiver les combats aléatoires, l’avance rapide, des défis et mods de difficulté en tout genre... tout ça pour offrir une expérience et un confort de jeu inédit.</text>
 	</control>	
 	
 	
@@ -199,8 +199,8 @@
 		<name>graphicsFields</name>
 		<text>Scènes du jeux HD</text>
 		<help>Scènes du jeu refaites en HD.
-		La base est traitée avec une IA ESRGan.
-		Beaucoup d'optimisations à la main</help>
+La base est traitée avec une IA ESRGan.
+Beaucoup d'optimisations à la main</help>
 		<author>Satsuki_Yatoshi et Aavock</author>
 		<url>https://ff7.fr/forum/</url>
 	</control>
@@ -305,8 +305,8 @@
 	<control>
 		<name>soundsListHelp</name>
 		<text>Vous trouverez ici la liste des fichiers audio du mod selectionné.
-		Il vous suffit de cliquer une fois sur le fichier de votre choix pour pourvoir l'écouter.
-		Cela peut prendre quelques instants pour ce lancer.</text>
+Il vous suffit de cliquer une fois sur le fichier de votre choix pour pourvoir l'écouter.
+Cela peut prendre quelques instants pour ce lancer.</text>
 	</control>
 	<control>
 		<name>soundFrame2</name>
@@ -547,7 +547,7 @@
 		<text>No-CD</text>
 		<author>Satsuki_Yatoshi</author>
 		<help>Monte une mini-image virtuelle d'un cd de FF7
-		Cela permet de ne pas avoir besoin d'un vrai CD de FF7 pour jouer</help>
+Cela permet de ne pas avoir besoin d'un vrai CD de FF7 pour jouer</help>
 		<url></url>
 	</control>
 		
@@ -589,6 +589,11 @@
 	<control>
 		<name>ffnxConfigFile</name>
 		<text>Génère la configuration de FFNx</text>
+	</control>
+		<control>
+		<name>quit</name>
+		<text>Le chargement peut prendre du temps selon les options choisies et la puissance de l'ordinateur
+Êtes vous sur vouloir quitter ?</text>
 	</control>
 </translation>
 

@@ -22,7 +22,7 @@ namespace FF7_SYW_Unified
 
             using (Process winCd = Process.Start(mountIso))
             {
-                winCd.WaitForExit();
+                winCd.WaitForExit(10000);
             }
         }
 
@@ -38,8 +38,6 @@ namespace FF7_SYW_Unified
         private void unmountIso()
         {
             installWinCdeDriver();
-            // use 1000 ms sleep to avoid vcd driver not 100% ready
-            Thread.Sleep(1000);
             runWinCdemu($"/unmount \"{Application.StartupPath + @"\Tools\WinCDEmu\FF7DISC1.ISO"}\"");
         }
 
@@ -90,8 +88,10 @@ namespace FF7_SYW_Unified
 
             using (Process reg = Process.Start(registerFF7))
             {
-                reg.WaitForExit();
+                reg.WaitForExit(10000);
             }
+
+            File.Delete(ff7Reg);
         }
 
     }
