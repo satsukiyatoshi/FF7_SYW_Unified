@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Scènes du jeux HD</text>
-		<help>Scènes du jeu refaites en HD.
-		La base est traitée avec une IA ESRGan.
-		Beaucoup d'optimisations à la main</help>
-		<author>Satsuki_Yatoshi -- Aavock</author>
-		<url>https://ff7.fr/forum/</url>
+		<text>Menus, Polices, et icones HD</text>
+		<help>Textures des menus, Polices, et icones refaites en HD.
+
+Ces textures respectent le jeu d'origine tout en corrigeant les alignements de certaines lettres.
+
+Le menu de combat est également ré-aligné.</help>
+		<author>Aavock et Satsuki_Yatoshi</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=445353</url>
 		<compatibily>FE</compatibily>
 	</control>
 </translation>

@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Scènes du jeux de base</text>
-		<help>Le jeux d'origine</help>
-		<author>Squarek</author>
-		<url></url>
+		<text>Menu et polices du jeu d'origine</text>
+		<help>Menu et polices du jeu d'origine.
+
+Faible qualité, il est consillé d'utiliser des textures HD à la place.		
+		</help>
+		<author>Squaresoft</author>
+		<url>https://finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily>FEGS</compatibily>
 	</control>
 </translation>

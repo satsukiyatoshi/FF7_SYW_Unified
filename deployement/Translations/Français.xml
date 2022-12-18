@@ -198,46 +198,82 @@ De plus, le pack contient diverses options de configuration poussées et patchs 
 	<control>
 		<name>graphicsFields</name>
 		<text>Scènes du jeux HD</text>
-		<help>Scènes du jeu refaites en HD.
+		<help>Textures des scènes du jeu retraités en HD.
+		
 La base est traitée avec une IA ESRGan.
-Beaucoup d'optimisations à la main</help>
+
+Beaucoup d'optimisations à la main.
+
+Cela améliore grandement les textures du jeu d'origine.
+
+Il est conseillé d'activer cette option.</help>
 		<author>Satsuki_Yatoshi et Aavock</author>
-		<url>https://ff7.fr/forum/</url>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsAnimations</name>
 		<text>Animations avancées</text>
-		<help>go!!!!!!!!!!!!!</help>
+		<help>Permet de rétablir les animations d'origine des scènes du jeu avec des textures HD.
+		
+Par exemple la cascade de la maison de Aérith et pas mal d'effets de lumières.
+
+Cela prend pas mal de puissance, si vous constatez des ralentissements en jeu, il est conseillé de désactiver cette option.
+</help>
 		<author>Satsuki_Yatoshi et Aavock</author>
-		<url>https://ff7.fr/forum/</url>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsBattles</name>
 		<text>Scènes de combat HD</text>
-		<help>tout en hd</help>
+		<help>Textures des scènes de combat retraités en HD.
+		
+La base est traitée avec une IA ESRGan plus des optimisations à la main.
+
+Cela améliore grandement les textures du jeu d'origine.
+
+Il est conseillé d'activer cette option.</help>
 		<author>Satsuki_Yatoshi</author>
-		<url></url>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsMagics</name>
 		<text>Magies de combat HD</text>
-		<help>magies et sfx en hd</help>
+		<help>Textures des magies et effets en combat refaites en 3D.
+		
+La grande majorité des textures est refaire de zéro mais certains éléments ont été retraités en HD avec une IA ESRGan.
+
+Cela modernise le jeu d'origine sans le dénaturer.
+
+Il est conseillé d'activer cette option.
+</help>
 		<author>Kela51 et Satsuki_Yatoshi</author>
-		<url></url>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsWorldMap</name>
 		<text>Carte du monde HD</text>
-		<help>boffff</help>
+		<help>Textures de la carte du monde retraités en HD.
+		
+La base est traitée avec une IA ESRGan plus des optimisations à la main.
+
+Cela améliore grandement les textures du jeu d'origine.
+
+Il est conseillé d'activer cette option.</help>
 		<author>Satsuki_Yatoshi</author>
-		<url></url>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsMiniGames</name>
 		<text>Mini-jeux HD</text>
-		<author>Aavock</author>
-		<help>mini jeu description</help>
-		<url>http://google.fr</url>
+		<author>Aavock et Satsuki_Yatoshi</author>
+		<help>Textures des mini-jeux refaites en HD.
+		
+La grande majorité des textures est refaire de zéro mais certains éléments ont été retraités en HD avec une IA ESRGan.
+
+Cela modernise le jeu d'origine sans le dénaturer.
+
+Il est conseillé d'activer cette option.</help>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsGroupModels3Df</name>
