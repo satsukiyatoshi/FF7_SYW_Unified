@@ -72,6 +72,7 @@ namespace FF7_SYW_Unified
 
             playAudioClose();
             restoreFiles();
+            ApplyGameLang();
             applySywTextures();
             applyMods();
             applyPatchs();
