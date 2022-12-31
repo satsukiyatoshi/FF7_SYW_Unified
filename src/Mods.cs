@@ -141,9 +141,9 @@ namespace FF7_SYW_Unified
 
             //if language specific mod files exists then copy then overwriting default mod files
             //Globals.gameLang
-            if (Directory.Exists(modFolder + @"Files" + Globals.gameLang))
+            if (Directory.Exists(modFolder + @"FilesLang\" + Globals.gameLang))
             {
-                folderCopyAll(new DirectoryInfo(modFolder + @"Files" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesLang\" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
             //replace ff7.exe with the gameplay's ff7 mod (used with vanilla exe option too)
@@ -200,6 +200,19 @@ namespace FF7_SYW_Unified
 
 
 
+        //apply SYW specific language textures 
+        private void applySywLangTextures(string texFolder)
+        {
+            string sourceFolderd = Application.StartupPath + @"Mods\SYW\FilesLang\" + Globals.gameLang + @"\" + texFolder;
+
+            if (Directory.Exists(sourceFolderd))
+            {
+               folderCopyAll(new DirectoryInfo(sourceFolderd), new DirectoryInfo(Application.StartupPath + @"\Mods\SYW\Textures\" + texFolder));
+            }
+        }
+
+
+
         //disable SYW textures depending choosen options
         private void applySywTextures()
         {
@@ -210,10 +223,22 @@ namespace FF7_SYW_Unified
                 disableFiles(@"mods\SYW\Textures\char");
                 disableFiles(@"mods\SYW\Textures\field");
                 disableFiles(@"mods\SYW\Textures\flevel");
+            } else
+            {
+                applySywLangTextures("char");
+                applySywLangTextures("field");
+                applySywLangTextures("flevel");
             }
 
             loadingLog(graphicsBattles.Text);
-            if (!graphicsBattles.Checked) { disableFiles(@"mods\SYW\Textures\battle"); }
+            if (!graphicsBattles.Checked)
+            {
+                disableFiles(@"mods\SYW\Textures\battle");
+            }
+            else
+            {
+                applySywLangTextures("battle");
+            }
 
             loadingLog(graphicsMagics.Text);
             if (!graphicsMagics.Checked)
@@ -221,9 +246,20 @@ namespace FF7_SYW_Unified
                 disableFiles(@"mods\SYW\Textures\magic");
                 disableFiles(@"mods\SYW\Textures", false);
             }
+            else
+            {
+                applySywLangTextures("magic");
+            }
 
             loadingLog(graphicsWorldMap.Text);
-            if (!graphicsWorldMap.Checked) { disableFiles(@"mods\SYW\Textures\world"); }
+            if (!graphicsWorldMap.Checked)
+            { 
+                disableFiles(@"mods\SYW\Textures\world");
+            }
+            else
+            {
+                applySywLangTextures("world");
+            }
 
             loadingLog(graphicsMiniGames.Text);
             if (!graphicsMiniGames.Checked)
@@ -234,6 +270,15 @@ namespace FF7_SYW_Unified
                 disableFiles(@"mods\SYW\Textures\high");
                 disableFiles(@"mods\SYW\Textures\snowboard");
                 disableFiles(@"mods\SYW\Textures\sub");
+            }
+            else
+            {
+                applySywLangTextures("Chocobo");
+                applySywLangTextures("coaster");
+                applySywLangTextures("condor");
+                applySywLangTextures("high");
+                applySywLangTextures("snowboard");
+                applySywLangTextures("sub");
             }
 
             //disable some texture files if no animation used to avoid bug in certains fields
