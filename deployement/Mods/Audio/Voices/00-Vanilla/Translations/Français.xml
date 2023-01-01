@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Aucun</text>
+		<text>Aucunes</text>
 		<help>Le jeux d'origine n'a pas de voix</help>
-		<author></author>
-		<url></url>
+		<author>Squaresoft</author>
+		<url>https://finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
 			</control>
 </translation>

@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>SFX originaux</text>
-		<help>en midi encore</help>
-		<author>elmidguy</author>
-		<url></url>
+		<text>Effets sonores d'origine</text>
+		<help>Effets sonores d'origine.
+Qualité limité mais très proche du jeu psx d'origine</help>
+		<author>Squaresoft</author>
+		<url>https://finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
 			</control>
 </translation>

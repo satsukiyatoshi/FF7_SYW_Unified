@@ -2,8 +2,8 @@
 <translation>
 	<control>
 		<text>Courrir par défaut</text>
-		<help>permet de courir au lieu de marcher par défaut</help>
-		<author>Satsuki</author>
+		<help>Permet de courir au lieu de marcher par défaut dans les scènes du jeu.</help>
+		<author>Chysalis</author>
 		<url></url>
 		<compatibily>FE</compatibily>
 			</control>

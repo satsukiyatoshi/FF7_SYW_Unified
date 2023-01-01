@@ -2,9 +2,10 @@
 <translation>
 	<control>
 		<text>Modèles d'origine</text>
-		<help>Tout carré</help>
-		<author></author>
-		<url></url>
+		<help>Les modèles d'origine du jeu.
+De style réaliste en base qualité</help>
+		<author>Squaresoft</author>
+		<url>https://finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
 			</control>
 </translation>
