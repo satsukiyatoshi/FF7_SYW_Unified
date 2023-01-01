@@ -45,6 +45,11 @@ namespace FF7_SYW_Unified
             setDefaultUIValues();
             loadValues();
 
+            //set default placeholder pictures
+            gameplayPrevPic.ImageLocation = Application.StartupPath + @"\Ressources\phgameplay.jpg";
+            graphicPrevPic.ImageLocation = Application.StartupPath + @"\Ressources\phgaphics.jpg";
+            soundPrevPic.ImageLocation = Application.StartupPath + @"\Ressources\phaudio.jpg";
+
             //set default menu status
             menuClick(menuAbout);
         }

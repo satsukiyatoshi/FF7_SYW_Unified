@@ -54,8 +54,8 @@ namespace FF7_SYW_Unified
                     if (cpanel.Name.Contains(btn.Name)) {
                         cpanel.Location = new Point(327, 0);
                         cpanel.Visible = true;
-
-                    } else
+                    }
+                    else
                     {
                         cpanel.Location = new Point(1600, 0);
                         cpanel.Visible = false;

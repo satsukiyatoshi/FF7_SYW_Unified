@@ -2,9 +2,11 @@
 <translation>
 	<control>
 		<text>Sauvegarder n'importe où</text>
-		<help>Permet de sauvegarder n'importe où, là où le jeu ne le permet pas normalement.
+		<help>Sauvegarder n'importe où:
 		
-Attention des bugs sont possible sur certains séquences, gardez toujours une sauvegarde classique à part au cas où.</help>
+Permet de sauvegarder n'importe où, là où le jeu ne le permet pas normalement.
+		
+Attention des bugs sont possibles sur certaines séquences, gardez toujours une sauvegarde classique à part au cas où.</help>
 		<author>Satsuki</author>
 		<url></url>
 		<compatibily>F</compatibily>

@@ -2,8 +2,10 @@
 <translation>
 	<control>
 		<text>Musiques midi d'origine</text>
-		<help>Les musiques du jeu pc original.
+		<help>Musiques midi d'origine:
+		
 La qualité est très limitée (bien plus que sur la version psx).
+
 Il est préférable d'utiliser un pack de musique à la place.</help>
 		<author>Squaresoft</author>
 		<url>https://finalfantasyviipc.square-enix-games.com/</url>

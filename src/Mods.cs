@@ -54,7 +54,7 @@ namespace FF7_SYW_Unified
 
 
         //display preview picture and description for combobox custom mods
-        private void modShowCustom(ComboBox combo, string folderwSource, Label helpLabel, Label authorLabel, PictureBox prevPic)
+        private void modShowCustom(ComboBox combo, string folderwSource, Label helpLabel, Label authorLabel, PictureBox prevPic = null)
         {
             string folderMod = "";
             string modDir = "";
@@ -68,7 +68,7 @@ namespace FF7_SYW_Unified
 
             folderMod = getModCustomFolder(combo, folderwSource);
 
-            prevPic.ImageLocation = folderMod + @"\prev.jpg";
+            if (prevPic != null) { prevPic.ImageLocation = folderMod + @"\prev.jpg"; }
 
             modDir = Path.GetFileName(folderMod);
 

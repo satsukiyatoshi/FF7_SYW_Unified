@@ -39,7 +39,7 @@ namespace FF7_SYW_Unified
             if (index > -1)
             {
                 FFNxComboPatchs.Text = FFNxPatchsList.Items[index].ToString();
-                modShowCustom(FFNxComboPatchs, @"Patchs\", FFNxHelp, FFNxHelpAuthor, FFNxPrevPic);
+                modShowCustom(FFNxComboPatchs, @"Patchs\", FFNxHelp, FFNxHelpAuthor);
                 setModFlags(FFNxFrame1);
             }
 

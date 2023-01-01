@@ -2,8 +2,12 @@
 <translation>
 <control>
 		<text>Vidéos HD en 30 fps</text>
-		<help>Vu leurs faibles qualités les vidéos d'origine du jeu ne sont pas proposées dans ce pack.
+		<help>Vidéos HD en 30 fps:
+		
+Vu leurs faibles qualités les vidéos d'origine du jeu ne sont pas proposées dans ce pack.
+
 Les vidéos ont été interpolées en 30fps au lieu de 15fps et upscalées directement depuis la version psx.
+
 Ce n'est pas 100% parfait mais c'est le meilleur compromis pour avoir des vidéos fluides et de qualité suffisante pour ne pas casser l'immersion en jeu.</help>
 		<author>Satsuki_Yatoshi</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
