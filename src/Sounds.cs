@@ -127,11 +127,11 @@ namespace FF7_SYW_Unified
         //get sound extention(s) of the current audio mod
         private string getSoundExts(string modFolder)
         {
-            string soundsExt = "[\"minipsf\",\"ogg\",\"wav\",\"mp3\",\"aac\",\"mp4\",\"flac\"]";
+            string soundsExt = "[\"minipsf\",\"ogg\",\"wav\",\"mp3\",\"aac\",\"mp4\",\"flac\",\"mid\"]";
 
             if (File.Exists(modFolder + @"\exts.ini"))
             {
-                if (File.ReadLines(modFolder + @"\exts.ini").Count() > 0)
+            if (File.ReadLines(modFolder + @"\exts.ini").Count() > 0)
                 {
                     soundsExt = "[";
                     foreach (string line in System.IO.File.ReadLines(modFolder + @"\exts.ini"))
