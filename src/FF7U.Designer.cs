@@ -158,6 +158,9 @@
             this.soundFrame4 = new System.Windows.Forms.GroupBox();
             this.soundsListHelp = new System.Windows.Forms.Label();
             this.soundsList = new System.Windows.Forms.ListBox();
+            this.soundFrame2 = new System.Windows.Forms.GroupBox();
+            this.soundsHelpAuthor = new System.Windows.Forms.Label();
+            this.soundsHelp = new System.Windows.Forms.Label();
             this.soundFrame3 = new System.Windows.Forms.GroupBox();
             this.soundsGroupVoices = new System.Windows.Forms.GroupBox();
             this.soundsVoices = new System.Windows.Forms.ComboBox();
@@ -169,9 +172,6 @@
             this.soundsSfx = new System.Windows.Forms.ComboBox();
             this.soundsGroupMusics = new System.Windows.Forms.GroupBox();
             this.soundsMusics = new System.Windows.Forms.ComboBox();
-            this.soundFrame2 = new System.Windows.Forms.GroupBox();
-            this.soundsHelpAuthor = new System.Windows.Forms.Label();
-            this.soundsHelp = new System.Windows.Forms.Label();
             this.menuGameplayPanel = new System.Windows.Forms.Panel();
             this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
             this.gameplayHelpAuthor = new System.Windows.Forms.Label();
@@ -273,13 +273,13 @@
             this.soundFrame5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).BeginInit();
             this.soundFrame4.SuspendLayout();
+            this.soundFrame2.SuspendLayout();
             this.soundFrame3.SuspendLayout();
             this.soundsGroupVoices.SuspendLayout();
             this.soundsGroupFMV.SuspendLayout();
             this.soundsGroupAmbients.SuspendLayout();
             this.soundsGroupSfx.SuspendLayout();
             this.soundsGroupMusics.SuspendLayout();
-            this.soundFrame2.SuspendLayout();
             this.menuGameplayPanel.SuspendLayout();
             this.gameplayFrame2.SuspendLayout();
             this.gameplayFrame1.SuspendLayout();
@@ -1950,8 +1950,8 @@
             // 
             this.menuSoundPanel.Controls.Add(this.soundFrame5);
             this.menuSoundPanel.Controls.Add(this.soundFrame4);
-            this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Controls.Add(this.soundFrame2);
+            this.menuSoundPanel.Controls.Add(this.soundFrame3);
             this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
@@ -1983,9 +1983,9 @@
             this.soundFrame4.Controls.Add(this.soundsList);
             this.soundFrame4.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.soundFrame4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.soundFrame4.Location = new System.Drawing.Point(398, 4);
+            this.soundFrame4.Location = new System.Drawing.Point(3, 352);
             this.soundFrame4.Name = "soundFrame4";
-            this.soundFrame4.Size = new System.Drawing.Size(391, 342);
+            this.soundFrame4.Size = new System.Drawing.Size(259, 351);
             this.soundFrame4.TabIndex = 11;
             this.soundFrame4.TabStop = false;
             this.soundFrame4.Text = "Aperçu audio";
@@ -1999,7 +1999,7 @@
             this.soundsListHelp.Location = new System.Drawing.Point(11, 22);
             this.soundsListHelp.Name = "soundsListHelp";
             this.soundsListHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.soundsListHelp.Size = new System.Drawing.Size(370, 96);
+            this.soundsListHelp.Size = new System.Drawing.Size(238, 96);
             this.soundsListHelp.TabIndex = 5;
             // 
             // soundsList
@@ -2013,9 +2013,46 @@
             this.soundsList.ItemHeight = 15;
             this.soundsList.Location = new System.Drawing.Point(11, 127);
             this.soundsList.Name = "soundsList";
-            this.soundsList.Size = new System.Drawing.Size(370, 197);
+            this.soundsList.Size = new System.Drawing.Size(238, 212);
             this.soundsList.TabIndex = 0;
             this.soundsList.SelectedIndexChanged += new System.EventHandler(this.soundsList_SelectedIndexChanged);
+            // 
+            // soundFrame2
+            // 
+            this.soundFrame2.Controls.Add(this.soundsHelpAuthor);
+            this.soundFrame2.Controls.Add(this.soundsHelp);
+            this.soundFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.soundFrame2.Location = new System.Drawing.Point(395, 4);
+            this.soundFrame2.Name = "soundFrame2";
+            this.soundFrame2.Size = new System.Drawing.Size(394, 342);
+            this.soundFrame2.TabIndex = 9;
+            this.soundFrame2.TabStop = false;
+            this.soundFrame2.Text = "À propos du mod";
+            // 
+            // soundsHelpAuthor
+            // 
+            this.soundsHelpAuthor.BackColor = System.Drawing.Color.Black;
+            this.soundsHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soundsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsHelpAuthor.Location = new System.Drawing.Point(11, 308);
+            this.soundsHelpAuthor.Name = "soundsHelpAuthor";
+            this.soundsHelpAuthor.Size = new System.Drawing.Size(372, 22);
+            this.soundsHelpAuthor.TabIndex = 5;
+            this.soundsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.soundsHelpAuthor.Click += new System.EventHandler(this.soundsHelpAuthor_Click);
+            // 
+            // soundsHelp
+            // 
+            this.soundsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsHelp.Location = new System.Drawing.Point(11, 22);
+            this.soundsHelp.Name = "soundsHelp";
+            this.soundsHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.soundsHelp.Size = new System.Drawing.Size(372, 286);
+            this.soundsHelp.TabIndex = 4;
             // 
             // soundFrame3
             // 
@@ -2172,43 +2209,6 @@
             this.soundsMusics.TabIndex = 0;
             this.soundsMusics.SelectedIndexChanged += new System.EventHandler(this.soundsMusicsChange);
             this.soundsMusics.Click += new System.EventHandler(this.getMousePos);
-            // 
-            // soundFrame2
-            // 
-            this.soundFrame2.Controls.Add(this.soundsHelpAuthor);
-            this.soundFrame2.Controls.Add(this.soundsHelp);
-            this.soundFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.soundFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.soundFrame2.Location = new System.Drawing.Point(3, 352);
-            this.soundFrame2.Name = "soundFrame2";
-            this.soundFrame2.Size = new System.Drawing.Size(256, 351);
-            this.soundFrame2.TabIndex = 9;
-            this.soundFrame2.TabStop = false;
-            this.soundFrame2.Text = "À propos du mod";
-            // 
-            // soundsHelpAuthor
-            // 
-            this.soundsHelpAuthor.BackColor = System.Drawing.Color.Black;
-            this.soundsHelpAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.soundsHelpAuthor.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.soundsHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.soundsHelpAuthor.Location = new System.Drawing.Point(11, 318);
-            this.soundsHelpAuthor.Name = "soundsHelpAuthor";
-            this.soundsHelpAuthor.Size = new System.Drawing.Size(234, 22);
-            this.soundsHelpAuthor.TabIndex = 5;
-            this.soundsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.soundsHelpAuthor.Click += new System.EventHandler(this.soundsHelpAuthor_Click);
-            // 
-            // soundsHelp
-            // 
-            this.soundsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.soundsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.soundsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.soundsHelp.Location = new System.Drawing.Point(11, 22);
-            this.soundsHelp.Name = "soundsHelp";
-            this.soundsHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.soundsHelp.Size = new System.Drawing.Size(234, 296);
-            this.soundsHelp.TabIndex = 4;
             // 
             // menuGameplayPanel
             // 
@@ -3222,13 +3222,13 @@
             this.soundFrame5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).EndInit();
             this.soundFrame4.ResumeLayout(false);
+            this.soundFrame2.ResumeLayout(false);
             this.soundFrame3.ResumeLayout(false);
             this.soundsGroupVoices.ResumeLayout(false);
             this.soundsGroupFMV.ResumeLayout(false);
             this.soundsGroupAmbients.ResumeLayout(false);
             this.soundsGroupSfx.ResumeLayout(false);
             this.soundsGroupMusics.ResumeLayout(false);
-            this.soundFrame2.ResumeLayout(false);
             this.menuGameplayPanel.ResumeLayout(false);
             this.gameplayFrame2.ResumeLayout(false);
             this.gameplayFrame1.ResumeLayout(false);
