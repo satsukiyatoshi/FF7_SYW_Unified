@@ -325,6 +325,9 @@ namespace FF7_SYW_Unified
 
             loadingLog(graphicsAddTextures.Text);
             folderModCopy(getModCustomFolder(graphicsAddTextures, @"textures\"));
+
+            loadingLog(soundsFMV.Text);
+            folderModCopy(getModCustomFolder(soundsFMV, @"audio\movies"));
         }
 
     }
