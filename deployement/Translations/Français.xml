@@ -340,8 +340,10 @@ Il est conseillé d'activer cette option.</help>
 	</control>
 	<control>
 		<name>soundsListHelp</name>
-		<text>Vous trouverez ici la liste des fichiers audio du mod selectionné.
-Il vous suffit de cliquer une fois sur le fichier de votre choix pour pourvoir l'écouter.
+		<text>Cliquez sur un haut-parleur pour charger les pistes audios du mod.
+		
+Ensuite cliquez sur une piste dans la liste pour l'écouter.
+
 Cela peut prendre quelques instants pour ce lancer.</text>
 	</control>
 	<control>

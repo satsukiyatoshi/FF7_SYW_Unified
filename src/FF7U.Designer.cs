@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.PictureBox musicsPrev;
+            System.Windows.Forms.PictureBox ambiantPrev;
+            System.Windows.Forms.PictureBox sfxPrev;
+            System.Windows.Forms.PictureBox fmvPrev;
+            System.Windows.Forms.PictureBox voicesPrev;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FF7U));
             this.menuFrame = new System.Windows.Forms.GroupBox();
             this.menuLaunchGame = new System.Windows.Forms.Label();
@@ -244,6 +249,16 @@
             this.loadingAnimation = new System.Windows.Forms.PictureBox();
             this.loadingWaitDetails = new System.Windows.Forms.Label();
             this.loadingWait = new System.Windows.Forms.Label();
+            musicsPrev = new System.Windows.Forms.PictureBox();
+            ambiantPrev = new System.Windows.Forms.PictureBox();
+            sfxPrev = new System.Windows.Forms.PictureBox();
+            fmvPrev = new System.Windows.Forms.PictureBox();
+            voicesPrev = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(musicsPrev)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ambiantPrev)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sfxPrev)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(fmvPrev)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(voicesPrev)).BeginInit();
             this.menuFrame.SuspendLayout();
             this.settingsGroup.SuspendLayout();
             this.ff7Lang.SuspendLayout();
@@ -315,6 +330,61 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).BeginInit();
             this.SuspendLayout();
+            // 
+            // musicsPrev
+            // 
+            musicsPrev.Image = global::FF7_SYW_Unified.Properties.Resources.speak3;
+            musicsPrev.Location = new System.Drawing.Point(330, 20);
+            musicsPrev.Name = "musicsPrev";
+            musicsPrev.Size = new System.Drawing.Size(28, 28);
+            musicsPrev.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            musicsPrev.TabIndex = 7;
+            musicsPrev.TabStop = false;
+            musicsPrev.Click += new System.EventHandler(this.musicsPrev_Click);
+            // 
+            // ambiantPrev
+            // 
+            ambiantPrev.Image = global::FF7_SYW_Unified.Properties.Resources.speak3;
+            ambiantPrev.Location = new System.Drawing.Point(330, 20);
+            ambiantPrev.Name = "ambiantPrev";
+            ambiantPrev.Size = new System.Drawing.Size(28, 28);
+            ambiantPrev.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            ambiantPrev.TabIndex = 8;
+            ambiantPrev.TabStop = false;
+            ambiantPrev.Click += new System.EventHandler(this.ambiantPrev_Click);
+            // 
+            // sfxPrev
+            // 
+            sfxPrev.Image = global::FF7_SYW_Unified.Properties.Resources.speak3;
+            sfxPrev.Location = new System.Drawing.Point(330, 20);
+            sfxPrev.Name = "sfxPrev";
+            sfxPrev.Size = new System.Drawing.Size(28, 28);
+            sfxPrev.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            sfxPrev.TabIndex = 8;
+            sfxPrev.TabStop = false;
+            sfxPrev.Click += new System.EventHandler(this.sfxPrev_Click);
+            // 
+            // fmvPrev
+            // 
+            fmvPrev.Image = global::FF7_SYW_Unified.Properties.Resources.speak3;
+            fmvPrev.Location = new System.Drawing.Point(330, 20);
+            fmvPrev.Name = "fmvPrev";
+            fmvPrev.Size = new System.Drawing.Size(28, 28);
+            fmvPrev.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            fmvPrev.TabIndex = 8;
+            fmvPrev.TabStop = false;
+            fmvPrev.Click += new System.EventHandler(this.fmvPrev_Click);
+            // 
+            // voicesPrev
+            // 
+            voicesPrev.Image = global::FF7_SYW_Unified.Properties.Resources.speak3;
+            voicesPrev.Location = new System.Drawing.Point(330, 20);
+            voicesPrev.Name = "voicesPrev";
+            voicesPrev.Size = new System.Drawing.Size(28, 28);
+            voicesPrev.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            voicesPrev.TabIndex = 8;
+            voicesPrev.TabStop = false;
+            voicesPrev.Click += new System.EventHandler(this.voicesPrev_Click);
             // 
             // menuFrame
             // 
@@ -1999,7 +2069,7 @@
             this.soundsListHelp.Location = new System.Drawing.Point(11, 22);
             this.soundsListHelp.Name = "soundsListHelp";
             this.soundsListHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.soundsListHelp.Size = new System.Drawing.Size(238, 96);
+            this.soundsListHelp.Size = new System.Drawing.Size(238, 142);
             this.soundsListHelp.TabIndex = 5;
             // 
             // soundsList
@@ -2011,9 +2081,9 @@
             this.soundsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.soundsList.FormattingEnabled = true;
             this.soundsList.ItemHeight = 15;
-            this.soundsList.Location = new System.Drawing.Point(11, 127);
+            this.soundsList.Location = new System.Drawing.Point(11, 172);
             this.soundsList.Name = "soundsList";
-            this.soundsList.Size = new System.Drawing.Size(238, 212);
+            this.soundsList.Size = new System.Drawing.Size(238, 167);
             this.soundsList.TabIndex = 0;
             this.soundsList.SelectedIndexChanged += new System.EventHandler(this.soundsList_SelectedIndexChanged);
             // 
@@ -2073,6 +2143,7 @@
             // soundsGroupVoices
             // 
             this.soundsGroupVoices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupVoices.Controls.Add(voicesPrev);
             this.soundsGroupVoices.Controls.Add(this.soundsVoices);
             this.soundsGroupVoices.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.soundsGroupVoices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -2093,7 +2164,7 @@
             this.soundsVoices.FormattingEnabled = true;
             this.soundsVoices.Location = new System.Drawing.Point(9, 23);
             this.soundsVoices.Name = "soundsVoices";
-            this.soundsVoices.Size = new System.Drawing.Size(346, 23);
+            this.soundsVoices.Size = new System.Drawing.Size(315, 23);
             this.soundsVoices.TabIndex = 0;
             this.soundsVoices.SelectedIndexChanged += new System.EventHandler(this.soundsVoicesChange);
             this.soundsVoices.Click += new System.EventHandler(this.getMousePos);
@@ -2101,6 +2172,7 @@
             // soundsGroupFMV
             // 
             this.soundsGroupFMV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupFMV.Controls.Add(fmvPrev);
             this.soundsGroupFMV.Controls.Add(this.soundsFMV);
             this.soundsGroupFMV.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.soundsGroupFMV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -2121,7 +2193,7 @@
             this.soundsFMV.FormattingEnabled = true;
             this.soundsFMV.Location = new System.Drawing.Point(9, 23);
             this.soundsFMV.Name = "soundsFMV";
-            this.soundsFMV.Size = new System.Drawing.Size(346, 23);
+            this.soundsFMV.Size = new System.Drawing.Size(315, 23);
             this.soundsFMV.TabIndex = 0;
             this.soundsFMV.SelectedIndexChanged += new System.EventHandler(this.soundsFMVChange);
             this.soundsFMV.Click += new System.EventHandler(this.getMousePos);
@@ -2129,6 +2201,7 @@
             // soundsGroupAmbients
             // 
             this.soundsGroupAmbients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupAmbients.Controls.Add(ambiantPrev);
             this.soundsGroupAmbients.Controls.Add(this.soundsAmbients);
             this.soundsGroupAmbients.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.soundsGroupAmbients.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -2149,7 +2222,7 @@
             this.soundsAmbients.FormattingEnabled = true;
             this.soundsAmbients.Location = new System.Drawing.Point(9, 23);
             this.soundsAmbients.Name = "soundsAmbients";
-            this.soundsAmbients.Size = new System.Drawing.Size(346, 23);
+            this.soundsAmbients.Size = new System.Drawing.Size(315, 23);
             this.soundsAmbients.TabIndex = 0;
             this.soundsAmbients.SelectedIndexChanged += new System.EventHandler(this.soundsAmbiantChange);
             this.soundsAmbients.Click += new System.EventHandler(this.getMousePos);
@@ -2157,6 +2230,7 @@
             // soundsGroupSfx
             // 
             this.soundsGroupSfx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupSfx.Controls.Add(sfxPrev);
             this.soundsGroupSfx.Controls.Add(this.soundsSfx);
             this.soundsGroupSfx.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.soundsGroupSfx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -2175,9 +2249,9 @@
             this.soundsSfx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.soundsSfx.ForeColor = System.Drawing.Color.White;
             this.soundsSfx.FormattingEnabled = true;
-            this.soundsSfx.Location = new System.Drawing.Point(9, 23);
+            this.soundsSfx.Location = new System.Drawing.Point(9, 22);
             this.soundsSfx.Name = "soundsSfx";
-            this.soundsSfx.Size = new System.Drawing.Size(346, 23);
+            this.soundsSfx.Size = new System.Drawing.Size(315, 23);
             this.soundsSfx.TabIndex = 0;
             this.soundsSfx.SelectedIndexChanged += new System.EventHandler(this.soundsSfxChange);
             this.soundsSfx.Click += new System.EventHandler(this.getMousePos);
@@ -2185,6 +2259,7 @@
             // soundsGroupMusics
             // 
             this.soundsGroupMusics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsGroupMusics.Controls.Add(musicsPrev);
             this.soundsGroupMusics.Controls.Add(this.soundsMusics);
             this.soundsGroupMusics.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.soundsGroupMusics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -2205,7 +2280,7 @@
             this.soundsMusics.FormattingEnabled = true;
             this.soundsMusics.Location = new System.Drawing.Point(9, 23);
             this.soundsMusics.Name = "soundsMusics";
-            this.soundsMusics.Size = new System.Drawing.Size(346, 23);
+            this.soundsMusics.Size = new System.Drawing.Size(315, 23);
             this.soundsMusics.TabIndex = 0;
             this.soundsMusics.SelectedIndexChanged += new System.EventHandler(this.soundsMusicsChange);
             this.soundsMusics.Click += new System.EventHandler(this.getMousePos);
@@ -3192,6 +3267,11 @@
             this.Text = "FF7_SYW_Unified";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingCheck);
             this.Load += new System.EventHandler(this.FF7U_Load);
+            ((System.ComponentModel.ISupportInitialize)(musicsPrev)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ambiantPrev)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sfxPrev)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(fmvPrev)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(voicesPrev)).EndInit();
             this.menuFrame.ResumeLayout(false);
             this.settingsGroup.ResumeLayout(false);
             this.ff7Lang.ResumeLayout(false);
