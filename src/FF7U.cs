@@ -129,6 +129,7 @@ namespace FF7_SYW_Unified
             playAudioClose();
             Process.GetCurrentProcess().Kill();
         }
+
     }
 
   }

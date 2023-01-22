@@ -92,6 +92,7 @@ namespace FF7_SYW_Unified
         private void FFNxGroup3dEngine_MouseEnter(object sender, EventArgs e) { modShow("FFNxGroup3dEngine", FFNxHelp, FFNxHelpAuthor); }
         private void FFNxLighting_MouseEnter(object sender, EventArgs e) { modShow("FFNxLighting", FFNxHelp, FFNxHelpAuthor); }
         private void FFNxNoCd_MouseEnter(object sender, EventArgs e) { modShow("FFNxNoCd", FFNxHelp, FFNxHelpAuthor); }
+        private void FFNxDayNight_MouseEnter(object sender, EventArgs e) { modShow("FFNxDayNight", FFNxHelp, FFNxHelpAuthor); }
 
 
 
@@ -137,6 +138,8 @@ namespace FF7_SYW_Unified
             if (FFNXSteamSucces.Checked) { twx.WriteLine("enable_steam_achievements = true"); } else { twx.WriteLine("enable_steam_achievements = false"); }
             if (FFNxAnalogController.Checked) { twx.WriteLine("enable_analogue_controls = true"); } else { twx.WriteLine("enable_analogue_controls = false"); }
             if (graphicsAnimations.Checked) { twx.WriteLine("enable_animated_textures = true"); } else { twx.WriteLine("enable_animated_textures = false"); }
+            if (FFNxDayNight.Checked) { twx.WriteLine("enable_time_cycle = true"); } else { twx.WriteLine("enable_time_cycle = false"); }
+            twx.WriteLine("save_path = " + quote + @"..\" + (getModCustomFolder(gameplayMods, @"gameplay\")).Remove(0, Application.StartupPath.Length) + @"\save" + quote);
 
             if (FFNxShowStats.Checked)
             {
@@ -223,8 +226,6 @@ namespace FF7_SYW_Unified
                 twx.WriteLine("external_movie_audio_ext = " + getSoundExts(soundsFolder));
                 twx.WriteLine("ff7_external_opening_music = true ");
             }
-
-            // save_path = "save" pour mod gameplay
             twx.Close();
 
             //convert '\' in '/' for  FFNx use

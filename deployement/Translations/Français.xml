@@ -375,14 +375,23 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 	<control>
 		<name>gameplayFrame3</name>
 		<text>Aperçu</text>
+	</control>
 	<control>
+		<name>saveByMod</name>
+		<text>Sauvegardes</text>
+	</control>
+	<control>
+		<name>documentsFolder</name>
+		<text>Documentation</text>
+	</control>
+	
 	
 	
 	
 <!--  -->	
 <!-- FFNx mods part -->
 <!--  -->
-	</control>
+	<control>
 		<name>FFNxFrame1</name>
 		<text>Patchs mémoire</text>
 	</control>	
@@ -455,7 +464,7 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 	</control>
 	<control>
 		<name>FFNxLighting</name>
-		<text>Ombres dynamiques</text>
+		<text>Ombres 3D</text>
 		<author></author>
 		<help>ça light des ombres</help>
 		<url></url>
@@ -584,8 +593,16 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 		<name>FFNxNoCd</name>
 		<text>No-CD</text>
 		<author>Satsuki_Yatoshi</author>
-		<help>Monte une mini-image virtuelle d'un cd de FF7
-Cela permet de ne pas avoir besoin d'un vrai CD de FF7 pour jouer</help>
+		<help>Monte une mini-image virtuelle d'un cd de FF7.
+Cela permet de ne pas avoir besoin d'un vrai CD de FF7 pour jouer.</help>
+		<url></url>
+	</control>
+	<control>
+		<name>FFNxDayNight</name>
+		<text>Cycle jour/nuit</text>
+		<author>Team FFNx</author>
+		<help>Béta - Ajoute un cycle jour/nuit dans FF7 en fonction de l'heure réelle.
+Certains mods de gameplay peuvent utiliser cela.</help>
 		<url></url>
 	</control>
 		

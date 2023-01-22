@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 
 namespace FF7_SYW_Unified
 {
@@ -160,12 +161,19 @@ namespace FF7_SYW_Unified
         {
             loadingLog(translate("restoreFiles", Globals.translateUI));
 
-            List<string> disabledFiles = Directory.GetFiles(Application.StartupPath + @"mods\SYW\Textures", "*.SYWD", SearchOption.AllDirectories).ToList();
+            List<string> disabledFiles = Directory.GetFiles(Application.StartupPath + @"mods\SYW\Textures", "*.SYWT", SearchOption.AllDirectories).ToList();
+            List<string> disabledFolders = Directory.GetDirectories(Application.StartupPath + @"mods\SYW\Textures", "*SYWF", SearchOption.AllDirectories).ToList();
             List<string> currentFiles = Directory.GetFiles(Application.StartupPath + @"Game\current", "*", SearchOption.AllDirectories).ToList();
 
             foreach (string file in disabledFiles)
             {
                 File.Move(file, Path.ChangeExtension(file, ".dds"));
+                Application.DoEvents();
+            }
+
+            foreach (string folder in disabledFolders)
+            {
+                Directory.Move(folder, folder.Remove(folder.Length - 4));
                 Application.DoEvents();
             }
 
@@ -178,15 +186,23 @@ namespace FF7_SYW_Unified
 
 
         //disable texture file by renaming them to SYWD extention
-        private void disableFiles(string textureFolder, Boolean subfolder = true)
+        private void disableFiles(string textureFolder, Boolean subfolder = false)
         {
             List<string> files = Directory.GetFiles(Application.StartupPath + textureFolder, "*.dds", subfolder ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly).ToList();
 
             foreach (string file in files)
             {
-                File.Move(file, Path.ChangeExtension(file, ".SYWD"));
+                File.Move(file, Path.ChangeExtension(file, ".SYWT"));
                 Application.DoEvents();
             }
+        }
+
+
+
+        //disable folder by renaming it to SYWD extention
+        private void disableFolder(string folder)
+        {
+            Directory.Move(folder, folder + ".SYWF");
         }
 
 
@@ -220,9 +236,9 @@ namespace FF7_SYW_Unified
             loadingLog(graphicsFields.Text);
             if (!graphicsFields.Checked)
             {
-                disableFiles(@"mods\SYW\Textures\char");
-                disableFiles(@"mods\SYW\Textures\field");
-                disableFiles(@"mods\SYW\Textures\flevel");
+                disableFolder(@"mods\SYW\Textures\char");
+                disableFolder(@"mods\SYW\Textures\field");
+                disableFolder(@"mods\SYW\Textures\flevel");
             } else
             {
                 applySywLangTextures("char");
@@ -233,7 +249,7 @@ namespace FF7_SYW_Unified
             loadingLog(graphicsBattles.Text);
             if (!graphicsBattles.Checked)
             {
-                disableFiles(@"mods\SYW\Textures\battle");
+                disableFolder(@"mods\SYW\Textures\battle");
             }
             else
             {
@@ -243,8 +259,8 @@ namespace FF7_SYW_Unified
             loadingLog(graphicsMagics.Text);
             if (!graphicsMagics.Checked)
             {
-                disableFiles(@"mods\SYW\Textures\magic");
-                disableFiles(@"mods\SYW\Textures", false);
+                disableFolder(@"mods\SYW\Textures\magic");
+                disableFiles(@"mods\SYW\Textures");
             }
             else
             {
@@ -253,8 +269,8 @@ namespace FF7_SYW_Unified
 
             loadingLog(graphicsWorldMap.Text);
             if (!graphicsWorldMap.Checked)
-            { 
-                disableFiles(@"mods\SYW\Textures\world");
+            {
+                disableFolder(@"mods\SYW\Textures\world");
             }
             else
             {
@@ -264,12 +280,12 @@ namespace FF7_SYW_Unified
             loadingLog(graphicsMiniGames.Text);
             if (!graphicsMiniGames.Checked)
             {
-                disableFiles(@"mods\SYW\Textures\Chocobo");
-                disableFiles(@"mods\SYW\Textures\coaster");
-                disableFiles(@"mods\SYW\Textures\condor");
-                disableFiles(@"mods\SYW\Textures\high");
-                disableFiles(@"mods\SYW\Textures\snowboard");
-                disableFiles(@"mods\SYW\Textures\sub");
+                disableFolder(@"mods\SYW\Textures\Chocobo");
+                disableFolder(@"mods\SYW\Textures\coaster");
+                disableFolder(@"mods\SYW\Textures\condor");
+                disableFolder(@"mods\SYW\Textures\high");
+                disableFolder(@"mods\SYW\Textures\snowboard");
+                disableFolder(@"mods\SYW\Textures\sub");
             }
             else
             {

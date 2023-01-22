@@ -179,6 +179,7 @@
             this.soundsMusics = new System.Windows.Forms.ComboBox();
             this.menuGameplayPanel = new System.Windows.Forms.Panel();
             this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
+            this.documentsFolder = new System.Windows.Forms.Label();
             this.gameplayHelpAuthor = new System.Windows.Forms.Label();
             this.gameplayHelp = new System.Windows.Forms.Label();
             this.gameplayFrame1 = new System.Windows.Forms.GroupBox();
@@ -187,6 +188,7 @@
             this.flagFGameplay = new System.Windows.Forms.PictureBox();
             this.flagEGameplay = new System.Windows.Forms.PictureBox();
             this.gameplayGroupMods = new System.Windows.Forms.GroupBox();
+            this.saveByMod = new System.Windows.Forms.Label();
             this.gameplayMods = new System.Windows.Forms.ComboBox();
             this.gameplayFrame3 = new System.Windows.Forms.GroupBox();
             this.gameplayPrevPic = new System.Windows.Forms.PictureBox();
@@ -249,6 +251,7 @@
             this.loadingAnimation = new System.Windows.Forms.PictureBox();
             this.loadingWaitDetails = new System.Windows.Forms.Label();
             this.loadingWait = new System.Windows.Forms.Label();
+            this.FFNxDayNight = new System.Windows.Forms.CheckBox();
             musicsPrev = new System.Windows.Forms.PictureBox();
             ambiantPrev = new System.Windows.Forms.PictureBox();
             sfxPrev = new System.Windows.Forms.PictureBox();
@@ -2022,7 +2025,7 @@
             this.menuSoundPanel.Controls.Add(this.soundFrame4);
             this.menuSoundPanel.Controls.Add(this.soundFrame2);
             this.menuSoundPanel.Controls.Add(this.soundFrame3);
-            this.menuSoundPanel.Location = new System.Drawing.Point(327, 0);
+            this.menuSoundPanel.Location = new System.Drawing.Point(327, 1600);
             this.menuSoundPanel.Name = "menuSoundPanel";
             this.menuSoundPanel.Size = new System.Drawing.Size(795, 703);
             this.menuSoundPanel.TabIndex = 12;
@@ -2297,6 +2300,7 @@
             // 
             // gameplayFrame2
             // 
+            this.gameplayFrame2.Controls.Add(this.documentsFolder);
             this.gameplayFrame2.Controls.Add(this.gameplayHelpAuthor);
             this.gameplayFrame2.Controls.Add(this.gameplayHelp);
             this.gameplayFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -2307,6 +2311,23 @@
             this.gameplayFrame2.TabIndex = 10;
             this.gameplayFrame2.TabStop = false;
             this.gameplayFrame2.Text = "Aide";
+            // 
+            // documentsFolder
+            // 
+            this.documentsFolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.documentsFolder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.documentsFolder.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.documentsFolder.ForeColor = System.Drawing.Color.Black;
+            this.documentsFolder.Location = new System.Drawing.Point(604, 21);
+            this.documentsFolder.Name = "documentsFolder";
+            this.documentsFolder.Size = new System.Drawing.Size(172, 23);
+            this.documentsFolder.TabIndex = 18;
+            this.documentsFolder.Text = "Documentation";
+            this.documentsFolder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.documentsFolder.Visible = false;
+            this.documentsFolder.Click += new System.EventHandler(this.documentsFolder_Click);
+            this.documentsFolder.MouseEnter += new System.EventHandler(this.documentsFolder_MouseEnter);
+            this.documentsFolder.MouseLeave += new System.EventHandler(this.documentsFolder_MouseLeave);
             // 
             // gameplayHelpAuthor
             // 
@@ -2391,6 +2412,7 @@
             // gameplayGroupMods
             // 
             this.gameplayGroupMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.gameplayGroupMods.Controls.Add(this.saveByMod);
             this.gameplayGroupMods.Controls.Add(this.gameplayMods);
             this.gameplayGroupMods.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gameplayGroupMods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -2402,6 +2424,22 @@
             this.gameplayGroupMods.Text = "Mod de gameplay";
             this.gameplayGroupMods.MouseEnter += new System.EventHandler(this.gameplayModsChange);
             // 
+            // saveByMod
+            // 
+            this.saveByMod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.saveByMod.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveByMod.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.saveByMod.ForeColor = System.Drawing.Color.Black;
+            this.saveByMod.Location = new System.Drawing.Point(462, 23);
+            this.saveByMod.Name = "saveByMod";
+            this.saveByMod.Size = new System.Drawing.Size(176, 23);
+            this.saveByMod.TabIndex = 17;
+            this.saveByMod.Text = "Dossier save";
+            this.saveByMod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.saveByMod.Click += new System.EventHandler(this.saveByMod_Click);
+            this.saveByMod.MouseEnter += new System.EventHandler(this.saveByMod_MouseEnter);
+            this.saveByMod.MouseLeave += new System.EventHandler(this.saveByMod_MouseLeave);
+            // 
             // gameplayMods
             // 
             this.gameplayMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
@@ -2411,7 +2449,7 @@
             this.gameplayMods.FormattingEnabled = true;
             this.gameplayMods.Location = new System.Drawing.Point(9, 23);
             this.gameplayMods.Name = "gameplayMods";
-            this.gameplayMods.Size = new System.Drawing.Size(624, 23);
+            this.gameplayMods.Size = new System.Drawing.Size(447, 23);
             this.gameplayMods.TabIndex = 0;
             this.gameplayMods.SelectedIndexChanged += new System.EventHandler(this.gameplayModsChange);
             this.gameplayMods.Click += new System.EventHandler(this.getMousePos);
@@ -2442,7 +2480,7 @@
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
             this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
-            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 1600);
+            this.menuFFNxPanel.Location = new System.Drawing.Point(327, 0);
             this.menuFFNxPanel.Name = "menuFFNxPanel";
             this.menuFFNxPanel.Size = new System.Drawing.Size(795, 703);
             this.menuFFNxPanel.TabIndex = 14;
@@ -2571,6 +2609,7 @@
             // 
             // FFNxFrame3
             // 
+            this.FFNxFrame3.Controls.Add(this.FFNxDayNight);
             this.FFNxFrame3.Controls.Add(this.FFNxNoCd);
             this.FFNxFrame3.Controls.Add(this.FFNxGroupFps);
             this.FFNxFrame3.Controls.Add(this.FFNxShowStats);
@@ -3149,9 +3188,9 @@
             this.FFNxLighting.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FFNxLighting.Location = new System.Drawing.Point(11, 314);
             this.FFNxLighting.Name = "FFNxLighting";
-            this.FFNxLighting.Size = new System.Drawing.Size(252, 19);
+            this.FFNxLighting.Size = new System.Drawing.Size(98, 19);
             this.FFNxLighting.TabIndex = 16;
-            this.FFNxLighting.Text = "Ombres dynamiques";
+            this.FFNxLighting.Text = "Ombres 3D";
             this.FFNxLighting.UseVisualStyleBackColor = false;
             this.FFNxLighting.MouseEnter += new System.EventHandler(this.FFNxLighting_MouseEnter);
             // 
@@ -3243,6 +3282,19 @@
             this.loadingWait.TabIndex = 68;
             this.loadingWait.Text = "Chargement en cours";
             this.loadingWait.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FFNxDayNight
+            // 
+            this.FFNxDayNight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxDayNight.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FFNxDayNight.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxDayNight.Location = new System.Drawing.Point(113, 314);
+            this.FFNxDayNight.Name = "FFNxDayNight";
+            this.FFNxDayNight.Size = new System.Drawing.Size(150, 19);
+            this.FFNxDayNight.TabIndex = 40;
+            this.FFNxDayNight.Text = "Jour/nuit";
+            this.FFNxDayNight.UseVisualStyleBackColor = false;
+            this.FFNxDayNight.MouseEnter += new System.EventHandler(this.FFNxDayNight_MouseEnter);
             // 
             // FF7U
             // 
@@ -3564,5 +3616,8 @@
         private PictureBox loadingAnimation;
         private Label loadingWaitDetails;
         private Label loadingWait;
+        private Label saveByMod;
+        private Label documentsFolder;
+        private CheckBox FFNxDayNight;
     }
 }
