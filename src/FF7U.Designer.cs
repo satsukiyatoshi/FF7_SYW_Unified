@@ -78,8 +78,8 @@
             this.graphicPrevPic = new System.Windows.Forms.PictureBox();
             this.menuGraphicPanel = new System.Windows.Forms.Panel();
             this.graphicFrame2 = new System.Windows.Forms.GroupBox();
+            this.graphicsHelp = new System.Windows.Forms.TextBox();
             this.graphicsHelpAuthor = new System.Windows.Forms.Label();
-            this.graphicsHelp = new System.Windows.Forms.Label();
             this.menuAboutPanel = new System.Windows.Forms.Panel();
             this.aboutFrame1 = new System.Windows.Forms.GroupBox();
             this.authorUrl20 = new System.Windows.Forms.Label();
@@ -164,8 +164,8 @@
             this.soundsListHelp = new System.Windows.Forms.Label();
             this.soundsList = new System.Windows.Forms.ListBox();
             this.soundFrame2 = new System.Windows.Forms.GroupBox();
+            this.soundsHelp = new System.Windows.Forms.TextBox();
             this.soundsHelpAuthor = new System.Windows.Forms.Label();
-            this.soundsHelp = new System.Windows.Forms.Label();
             this.soundFrame3 = new System.Windows.Forms.GroupBox();
             this.soundsGroupVoices = new System.Windows.Forms.GroupBox();
             this.soundsVoices = new System.Windows.Forms.ComboBox();
@@ -180,8 +180,8 @@
             this.menuGameplayPanel = new System.Windows.Forms.Panel();
             this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
             this.documentsFolder = new System.Windows.Forms.Label();
+            this.gameplayHelp = new System.Windows.Forms.TextBox();
             this.gameplayHelpAuthor = new System.Windows.Forms.Label();
-            this.gameplayHelp = new System.Windows.Forms.Label();
             this.gameplayFrame1 = new System.Windows.Forms.GroupBox();
             this.flagSGameplay = new System.Windows.Forms.PictureBox();
             this.flagGGameplay = new System.Windows.Forms.PictureBox();
@@ -194,8 +194,8 @@
             this.gameplayPrevPic = new System.Windows.Forms.PictureBox();
             this.menuFFNxPanel = new System.Windows.Forms.Panel();
             this.FFNxFrame2 = new System.Windows.Forms.GroupBox();
+            this.FFNxHelp = new System.Windows.Forms.TextBox();
             this.FFNxHelpAuthor = new System.Windows.Forms.Label();
-            this.FFNxHelp = new System.Windows.Forms.Label();
             this.FFNxFrame1 = new System.Windows.Forms.GroupBox();
             this.flagGFFNxPatch = new System.Windows.Forms.PictureBox();
             this.FFNxPatchsList = new System.Windows.Forms.CheckedListBox();
@@ -204,6 +204,7 @@
             this.flagFFFNxPatch = new System.Windows.Forms.PictureBox();
             this.flagEFFNxPatch = new System.Windows.Forms.PictureBox();
             this.FFNxFrame3 = new System.Windows.Forms.GroupBox();
+            this.FFNxDayNight = new System.Windows.Forms.CheckBox();
             this.FFNxNoCd = new System.Windows.Forms.CheckBox();
             this.FFNxGroupFps = new System.Windows.Forms.GroupBox();
             this.FFNxFps = new System.Windows.Forms.ComboBox();
@@ -251,7 +252,6 @@
             this.loadingAnimation = new System.Windows.Forms.PictureBox();
             this.loadingWaitDetails = new System.Windows.Forms.Label();
             this.loadingWait = new System.Windows.Forms.Label();
-            this.FFNxDayNight = new System.Windows.Forms.CheckBox();
             musicsPrev = new System.Windows.Forms.PictureBox();
             ambiantPrev = new System.Windows.Forms.PictureBox();
             sfxPrev = new System.Windows.Forms.PictureBox();
@@ -980,8 +980,8 @@
             // 
             // graphicFrame2
             // 
-            this.graphicFrame2.Controls.Add(this.graphicsHelpAuthor);
             this.graphicFrame2.Controls.Add(this.graphicsHelp);
+            this.graphicFrame2.Controls.Add(this.graphicsHelpAuthor);
             this.graphicFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.graphicFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.graphicFrame2.Location = new System.Drawing.Point(526, 4);
@@ -990,6 +990,20 @@
             this.graphicFrame2.TabIndex = 10;
             this.graphicFrame2.TabStop = false;
             this.graphicFrame2.Text = "Aide";
+            // 
+            // graphicsHelp
+            // 
+            this.graphicsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.graphicsHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.graphicsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.graphicsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.graphicsHelp.HideSelection = false;
+            this.graphicsHelp.Location = new System.Drawing.Point(12, 19);
+            this.graphicsHelp.Multiline = true;
+            this.graphicsHelp.Name = "graphicsHelp";
+            this.graphicsHelp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.graphicsHelp.Size = new System.Drawing.Size(240, 291);
+            this.graphicsHelp.TabIndex = 20;
             // 
             // graphicsHelpAuthor
             // 
@@ -1003,17 +1017,6 @@
             this.graphicsHelpAuthor.TabIndex = 1;
             this.graphicsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.graphicsHelpAuthor.Click += new System.EventHandler(this.graphicsHelpAuthor_Click);
-            // 
-            // graphicsHelp
-            // 
-            this.graphicsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.graphicsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.graphicsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.graphicsHelp.Location = new System.Drawing.Point(12, 21);
-            this.graphicsHelp.Name = "graphicsHelp";
-            this.graphicsHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.graphicsHelp.Size = new System.Drawing.Size(241, 290);
-            this.graphicsHelp.TabIndex = 0;
             // 
             // menuAboutPanel
             // 
@@ -2092,8 +2095,8 @@
             // 
             // soundFrame2
             // 
-            this.soundFrame2.Controls.Add(this.soundsHelpAuthor);
             this.soundFrame2.Controls.Add(this.soundsHelp);
+            this.soundFrame2.Controls.Add(this.soundsHelpAuthor);
             this.soundFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.soundFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.soundFrame2.Location = new System.Drawing.Point(395, 4);
@@ -2102,6 +2105,20 @@
             this.soundFrame2.TabIndex = 9;
             this.soundFrame2.TabStop = false;
             this.soundFrame2.Text = "À propos du mod";
+            // 
+            // soundsHelp
+            // 
+            this.soundsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.soundsHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.soundsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.soundsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.soundsHelp.Location = new System.Drawing.Point(11, 22);
+            this.soundsHelp.Multiline = true;
+            this.soundsHelp.Name = "soundsHelp";
+            this.soundsHelp.ReadOnly = true;
+            this.soundsHelp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.soundsHelp.Size = new System.Drawing.Size(371, 285);
+            this.soundsHelp.TabIndex = 21;
             // 
             // soundsHelpAuthor
             // 
@@ -2115,17 +2132,6 @@
             this.soundsHelpAuthor.TabIndex = 5;
             this.soundsHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.soundsHelpAuthor.Click += new System.EventHandler(this.soundsHelpAuthor_Click);
-            // 
-            // soundsHelp
-            // 
-            this.soundsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.soundsHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.soundsHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.soundsHelp.Location = new System.Drawing.Point(11, 22);
-            this.soundsHelp.Name = "soundsHelp";
-            this.soundsHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.soundsHelp.Size = new System.Drawing.Size(372, 286);
-            this.soundsHelp.TabIndex = 4;
             // 
             // soundFrame3
             // 
@@ -2301,8 +2307,8 @@
             // gameplayFrame2
             // 
             this.gameplayFrame2.Controls.Add(this.documentsFolder);
-            this.gameplayFrame2.Controls.Add(this.gameplayHelpAuthor);
             this.gameplayFrame2.Controls.Add(this.gameplayHelp);
+            this.gameplayFrame2.Controls.Add(this.gameplayHelpAuthor);
             this.gameplayFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gameplayFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gameplayFrame2.Location = new System.Drawing.Point(3, 102);
@@ -2318,9 +2324,9 @@
             this.documentsFolder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.documentsFolder.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.documentsFolder.ForeColor = System.Drawing.Color.Black;
-            this.documentsFolder.Location = new System.Drawing.Point(604, 21);
+            this.documentsFolder.Location = new System.Drawing.Point(604, 20);
             this.documentsFolder.Name = "documentsFolder";
-            this.documentsFolder.Size = new System.Drawing.Size(172, 23);
+            this.documentsFolder.Size = new System.Drawing.Size(171, 23);
             this.documentsFolder.TabIndex = 18;
             this.documentsFolder.Text = "Documentation";
             this.documentsFolder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2328,6 +2334,20 @@
             this.documentsFolder.Click += new System.EventHandler(this.documentsFolder_Click);
             this.documentsFolder.MouseEnter += new System.EventHandler(this.documentsFolder_MouseEnter);
             this.documentsFolder.MouseLeave += new System.EventHandler(this.documentsFolder_MouseLeave);
+            // 
+            // gameplayHelp
+            // 
+            this.gameplayHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.gameplayHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gameplayHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gameplayHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.gameplayHelp.Location = new System.Drawing.Point(12, 20);
+            this.gameplayHelp.Multiline = true;
+            this.gameplayHelp.Name = "gameplayHelp";
+            this.gameplayHelp.ReadOnly = true;
+            this.gameplayHelp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.gameplayHelp.Size = new System.Drawing.Size(763, 219);
+            this.gameplayHelp.TabIndex = 19;
             // 
             // gameplayHelpAuthor
             // 
@@ -2341,17 +2361,6 @@
             this.gameplayHelpAuthor.TabIndex = 3;
             this.gameplayHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.gameplayHelpAuthor.Click += new System.EventHandler(this.gameplayHelpAuthor_Click);
-            // 
-            // gameplayHelp
-            // 
-            this.gameplayHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.gameplayHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gameplayHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.gameplayHelp.Location = new System.Drawing.Point(12, 21);
-            this.gameplayHelp.Name = "gameplayHelp";
-            this.gameplayHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gameplayHelp.Size = new System.Drawing.Size(764, 219);
-            this.gameplayHelp.TabIndex = 2;
             // 
             // gameplayFrame1
             // 
@@ -2487,16 +2496,30 @@
             // 
             // FFNxFrame2
             // 
-            this.FFNxFrame2.Controls.Add(this.FFNxHelpAuthor);
             this.FFNxFrame2.Controls.Add(this.FFNxHelp);
+            this.FFNxFrame2.Controls.Add(this.FFNxHelpAuthor);
             this.FFNxFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FFNxFrame2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.FFNxFrame2.Location = new System.Drawing.Point(297, 357);
+            this.FFNxFrame2.Location = new System.Drawing.Point(406, 357);
             this.FFNxFrame2.Name = "FFNxFrame2";
-            this.FFNxFrame2.Size = new System.Drawing.Size(495, 346);
+            this.FFNxFrame2.Size = new System.Drawing.Size(386, 346);
             this.FFNxFrame2.TabIndex = 10;
             this.FFNxFrame2.TabStop = false;
             this.FFNxFrame2.Text = "Aide";
+            // 
+            // FFNxHelp
+            // 
+            this.FFNxHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FFNxHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.FFNxHelp.Location = new System.Drawing.Point(11, 22);
+            this.FFNxHelp.Multiline = true;
+            this.FFNxHelp.Name = "FFNxHelp";
+            this.FFNxHelp.ReadOnly = true;
+            this.FFNxHelp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.FFNxHelp.Size = new System.Drawing.Size(363, 289);
+            this.FFNxHelp.TabIndex = 22;
             // 
             // FFNxHelpAuthor
             // 
@@ -2506,21 +2529,10 @@
             this.FFNxHelpAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
             this.FFNxHelpAuthor.Location = new System.Drawing.Point(11, 312);
             this.FFNxHelpAuthor.Name = "FFNxHelpAuthor";
-            this.FFNxHelpAuthor.Size = new System.Drawing.Size(472, 22);
+            this.FFNxHelpAuthor.Size = new System.Drawing.Size(363, 22);
             this.FFNxHelpAuthor.TabIndex = 3;
             this.FFNxHelpAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.FFNxHelpAuthor.Click += new System.EventHandler(this.FFNxHelpAuthor_Click);
-            // 
-            // FFNxHelp
-            // 
-            this.FFNxHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.FFNxHelp.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FFNxHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.FFNxHelp.Location = new System.Drawing.Point(11, 22);
-            this.FFNxHelp.Name = "FFNxHelp";
-            this.FFNxHelp.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.FFNxHelp.Size = new System.Drawing.Size(472, 290);
-            this.FFNxHelp.TabIndex = 2;
             // 
             // FFNxFrame1
             // 
@@ -2534,7 +2546,7 @@
             this.FFNxFrame1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.FFNxFrame1.Location = new System.Drawing.Point(3, 356);
             this.FFNxFrame1.Name = "FFNxFrame1";
-            this.FFNxFrame1.Size = new System.Drawing.Size(288, 347);
+            this.FFNxFrame1.Size = new System.Drawing.Size(397, 347);
             this.FFNxFrame1.TabIndex = 6;
             this.FFNxFrame1.TabStop = false;
             this.FFNxFrame1.Text = "Patchs mémoire";
@@ -2542,7 +2554,7 @@
             // flagGFFNxPatch
             // 
             this.flagGFFNxPatch.Image = global::FF7_SYW_Unified.Properties.Resources.german_off;
-            this.flagGFFNxPatch.Location = new System.Drawing.Point(221, 305);
+            this.flagGFFNxPatch.Location = new System.Drawing.Point(329, 305);
             this.flagGFFNxPatch.Name = "flagGFFNxPatch";
             this.flagGFFNxPatch.Size = new System.Drawing.Size(56, 28);
             this.flagGFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2560,14 +2572,14 @@
             this.FFNxPatchsList.FormattingEnabled = true;
             this.FFNxPatchsList.Location = new System.Drawing.Point(11, 22);
             this.FFNxPatchsList.Name = "FFNxPatchsList";
-            this.FFNxPatchsList.Size = new System.Drawing.Size(266, 272);
+            this.FFNxPatchsList.Size = new System.Drawing.Size(375, 272);
             this.FFNxPatchsList.TabIndex = 29;
             this.FFNxPatchsList.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FFNxPatchsList_MouseMove);
             // 
             // flagSFFNxPatch
             // 
             this.flagSFFNxPatch.Image = global::FF7_SYW_Unified.Properties.Resources.spain_off;
-            this.flagSFFNxPatch.Location = new System.Drawing.Point(151, 305);
+            this.flagSFFNxPatch.Location = new System.Drawing.Point(223, 305);
             this.flagSFFNxPatch.Name = "flagSFFNxPatch";
             this.flagSFFNxPatch.Size = new System.Drawing.Size(56, 28);
             this.flagSFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2590,7 +2602,7 @@
             // flagFFFNxPatch
             // 
             this.flagFFFNxPatch.Image = global::FF7_SYW_Unified.Properties.Resources.french_off;
-            this.flagFFFNxPatch.Location = new System.Drawing.Point(81, 305);
+            this.flagFFFNxPatch.Location = new System.Drawing.Point(117, 305);
             this.flagFFFNxPatch.Name = "flagFFFNxPatch";
             this.flagFFFNxPatch.Size = new System.Drawing.Size(56, 28);
             this.flagFFFNxPatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2641,6 +2653,19 @@
             this.FFNxFrame3.TabIndex = 9;
             this.FFNxFrame3.TabStop = false;
             this.FFNxFrame3.Text = "Configuration du pilote FFNx";
+            // 
+            // FFNxDayNight
+            // 
+            this.FFNxDayNight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.FFNxDayNight.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FFNxDayNight.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FFNxDayNight.Location = new System.Drawing.Point(113, 314);
+            this.FFNxDayNight.Name = "FFNxDayNight";
+            this.FFNxDayNight.Size = new System.Drawing.Size(150, 19);
+            this.FFNxDayNight.TabIndex = 40;
+            this.FFNxDayNight.Text = "Jour/nuit";
+            this.FFNxDayNight.UseVisualStyleBackColor = false;
+            this.FFNxDayNight.MouseEnter += new System.EventHandler(this.FFNxDayNight_MouseEnter);
             // 
             // FFNxNoCd
             // 
@@ -3283,19 +3308,6 @@
             this.loadingWait.Text = "Chargement en cours";
             this.loadingWait.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FFNxDayNight
-            // 
-            this.FFNxDayNight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.FFNxDayNight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FFNxDayNight.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FFNxDayNight.Location = new System.Drawing.Point(113, 314);
-            this.FFNxDayNight.Name = "FFNxDayNight";
-            this.FFNxDayNight.Size = new System.Drawing.Size(150, 19);
-            this.FFNxDayNight.TabIndex = 40;
-            this.FFNxDayNight.Text = "Jour/nuit";
-            this.FFNxDayNight.UseVisualStyleBackColor = false;
-            this.FFNxDayNight.MouseEnter += new System.EventHandler(this.FFNxDayNight_MouseEnter);
-            // 
             // FF7U
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3346,6 +3358,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.graphicPrevPic)).EndInit();
             this.menuGraphicPanel.ResumeLayout(false);
             this.graphicFrame2.ResumeLayout(false);
+            this.graphicFrame2.PerformLayout();
             this.menuAboutPanel.ResumeLayout(false);
             this.aboutFrame1.ResumeLayout(false);
             this.aboutFrame1.PerformLayout();
@@ -3355,6 +3368,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).EndInit();
             this.soundFrame4.ResumeLayout(false);
             this.soundFrame2.ResumeLayout(false);
+            this.soundFrame2.PerformLayout();
             this.soundFrame3.ResumeLayout(false);
             this.soundsGroupVoices.ResumeLayout(false);
             this.soundsGroupFMV.ResumeLayout(false);
@@ -3363,6 +3377,7 @@
             this.soundsGroupMusics.ResumeLayout(false);
             this.menuGameplayPanel.ResumeLayout(false);
             this.gameplayFrame2.ResumeLayout(false);
+            this.gameplayFrame2.PerformLayout();
             this.gameplayFrame1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).EndInit();
@@ -3373,6 +3388,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).EndInit();
             this.menuFFNxPanel.ResumeLayout(false);
             this.FFNxFrame2.ResumeLayout(false);
+            this.FFNxFrame2.PerformLayout();
             this.FFNxFrame1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flagGFFNxPatch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagSFFNxPatch)).EndInit();
@@ -3504,7 +3520,6 @@
         public GroupBox FFNxFrame1;
         private GroupBox FFNxFrame3;
         private CheckBox graphicsFields;
-        private Label graphicsHelp;
         private PictureBox graphicPrevPic;
         private Label graphicsHelpAuthor;
         private CheckBox graphicsMagics;
@@ -3532,7 +3547,6 @@
         private ComboBox soundsVoices;
         private GroupBox soundFrame4;
         private Label soundsHelpAuthor;
-        private Label soundsHelp;
         private GroupBox soundFrame5;
         private PictureBox soundPrevPic;
         private ListBox soundsList;
@@ -3541,7 +3555,6 @@
         private Label author20;
         private Label authorName20;
         private Label gameplayHelpAuthor;
-        private Label gameplayHelp;
         private GroupBox gameplayGroupMods;
         private ComboBox gameplayMods;
         private GroupBox gameplayFrame3;
@@ -3597,7 +3610,6 @@
         private CheckBox FFNxFootSteps;
         private CheckBox FFNxLogs;
         private Label FFNxHelpAuthor;
-        private Label FFNxHelp;
         private PictureBox flagGFFNxPatch;
         private PictureBox flagSFFNxPatch;
         private PictureBox flagFFFNxPatch;
@@ -3619,5 +3631,9 @@
         private Label saveByMod;
         private Label documentsFolder;
         private CheckBox FFNxDayNight;
+        private TextBox gameplayHelp;
+        private TextBox graphicsHelp;
+        private TextBox soundsHelp;
+        private TextBox FFNxHelp;
     }
 }

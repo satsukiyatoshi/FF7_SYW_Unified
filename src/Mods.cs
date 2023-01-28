@@ -44,10 +44,11 @@ namespace FF7_SYW_Unified
 
 
         //display preview picture and description for SYW mods and FFNx options
-        private void modShow(string name, Label help, Label author)
+        private void modShow(string name, TextBox help, Label author)
         {
             graphicPrevPic.ImageLocation = Application.StartupPath + @"Mods\SYW\Prev\" + name + ".jpg";
-            help.Text = translate(name + "help", Globals.translateUI);
+            help.Text = translate(name + "help", Globals.translateUI).ReplaceLineEndings();
+
             author.Text = translate(name + "author", Globals.translateUI);
             Globals.actualModUrl = translate(name + "url", Globals.translateUI);
         }
@@ -55,7 +56,7 @@ namespace FF7_SYW_Unified
 
 
         //display preview picture and description for combobox custom mods
-        private void modShowCustom(ComboBox combo, string folderwSource, Label helpLabel, Label authorLabel, PictureBox prevPic = null)
+        private void modShowCustom(ComboBox combo, string folderwSource, TextBox help, Label authorLabel, PictureBox prevPic = null)
         {
             string folderMod = "";
             string modDir = "";
@@ -73,7 +74,7 @@ namespace FF7_SYW_Unified
 
             modDir = Path.GetFileName(folderMod);
 
-            helpLabel.Text = translate(combo.Name + "." + modDir + "help", Globals.translateMod);
+            help.Text = translate(combo.Name + "." + modDir + "help", Globals.translateMod).ReplaceLineEndings();
             authorLabel.Text = translate(combo.Name + "." + modDir + "author", Globals.translateMod);
             Globals.actualModUrl = translate(combo.Name + "." + modDir + "url", Globals.translateMod);
             Globals.actualModFlags = translate(combo.Name + "." + modDir + "compatibily", Globals.translateMod);
