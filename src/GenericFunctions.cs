@@ -1,4 +1,6 @@
-﻿namespace FF7_SYW_Unified
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace FF7_SYW_Unified
 {
     partial class FF7U
     {
@@ -35,6 +37,22 @@
             {
                 Cursor.Position = new System.Drawing.Point(Cursor.Position.X, Globals.mouseY);
                 Globals.mouseY = 0;
+            }
+        }
+
+
+
+
+        //Hide or show vertical scrollbars in textborx if needed
+        private void scrollHelper (TextBox helpBox)
+        {
+            if (helpBox.GetPositionFromCharIndex(helpBox.Text.Length - 1).Y < helpBox.ClientSize.Height)
+            {
+                helpBox.ScrollBars = ScrollBars.None;
+            }
+            else
+            {
+                helpBox.ScrollBars = ScrollBars.Vertical;
             }
         }
 

@@ -48,9 +48,10 @@ namespace FF7_SYW_Unified
         {
             graphicPrevPic.ImageLocation = Application.StartupPath + @"Mods\SYW\Prev\" + name + ".jpg";
             help.Text = translate(name + "help", Globals.translateUI).ReplaceLineEndings();
-
             author.Text = translate(name + "author", Globals.translateUI);
             Globals.actualModUrl = translate(name + "url", Globals.translateUI);
+
+            scrollHelper(help);
         }
 
 
@@ -78,6 +79,8 @@ namespace FF7_SYW_Unified
             authorLabel.Text = translate(combo.Name + "." + modDir + "author", Globals.translateMod);
             Globals.actualModUrl = translate(combo.Name + "." + modDir + "url", Globals.translateMod);
             Globals.actualModFlags = translate(combo.Name + "." + modDir + "compatibily", Globals.translateMod);
+
+            scrollHelper(help);
         }
 
 
