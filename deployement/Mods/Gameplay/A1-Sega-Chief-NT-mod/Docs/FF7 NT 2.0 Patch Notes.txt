@@ -1,0 +1,466 @@
+2.09991
+-) 2x-Cut altered to avoid a softlock issue when used by weapons with innate All targeting
+-) Reverted change to 3D-Battler (matches decided after 10 hits instead of 5) due to softlock
+-) Fixed coords of Gongaga 1/35 soldier (credit to Vdain for spotting it)
+-) Disabled use of flowers key item due to collision problems
+-) IRO Only; char.lgp had vanilla files removed which affected mod compatibility
+
+2.0999
+-) Fixed Red Materia Cave Boss HP
+
+2.0998
+-) Disabled encounters during Church barrels scene
+-) Tweaked save option pre-Bizarro boss (can save after each party reorganisation instead of once only)
+-) Improved scene handling in final area (saving, fade transitions, character placement)
+-) Fixed party leader support for secret event (North Crater, Type B)
+-) Added minor visual use for Flowers key item during two potential scenes
+-) Added logic to check for escape during Red Materia cave boss battle (was unable to replicate exploit but added anyway)
+-) Adjustment to Hojo dialogue (Mako Cannon, Disc 2)
+-) Fixed toggle for No Exp at Kalm Savepoint
+-) Reverted change to Ultimate weapons (special formulas, 0 base power)
+
+2.0997
+-) Fixed Comet placement in the North Crater's Left-Down path (if missed in Whirlwind Maze)
+-) Removed some fight scripts from merchant on Highwind (added for quick debugging, forgot to remove)
+
+2.0996
+-) Adjusted Shadow Flare chance for Zombie Dragon from 50% on Turn 4/5 to 100%
+-) Script handling in Icicle Inn & Great Glacier to prevent a character appearing at the wrong time
+-) Fixed dialogue for Barret in Mideel Clinic scene (exterior)
+-) Removed 1/35 Soldier duplicate from Gold Saucer Jockey room (this was a duplicate of the one in Gongaga)
+-) Great Glacier: Sets battle music back to default after defeating a certain enemy
+-) Updated sleeping man's dialogue
+-) Added music back to the final cave of the Ancient Forest
+-) Updated some text strings in Emerald Weapon's AI referring to 1.5's Carmine Weapon
+-) Adjusted Ultimate Weapons; removed special formulas and gave them high base power instead (+30 ahead regular weapons)
+-) Adjusted Cait's restorative weapons to have 255% accuracy (may still miss due to Luck/4 check)
+-) Reverted change to X-Potion; it fully restores HP for one party member as before
+
+2.0995
+-) Fixed looping issue in North Crater script
+-) Fort Condor: Multiple item reward issue & changed to a clean variable
+-) Removed an old flag-altering AI fragment from an enemy
+-) Corrected flag for a Hard-mode only drop that wasn't resetting for another drop if on Game Type B
+-) Updated Shinra HQ Floor 68 Boss to have same drops/steals/morphs as Type A Boss (had none previously)
+-) Fix for receiving EXP & Gil when under No-Exp and Hard Mode for a certain enemy
+-) Updated conditions for Cait Sith to appear in Costa Del Sol (prevent appearing too early)
+-) Updated ability name for Cactuar's 'escape' ability
+-) Removed test battle BG (replaced the train chase battle BG and snuck its way into a release)
+-) Issue where multiple Bahamut ZERO Materia could be dug up in Bone Village
+-) Adjusted condition needed for alternate scene on the hill with Tifa (Disc 2)
+-) Da Chao Type A/B dialogue for Tifa was flipped around
+-) Adjusted Type B Junon scene to prevent dialogue showing if a certain character isn't present
+-) 3D-Battler minigame in Gold Saucer changed to be first to 5 hits instead of 10
+-) Adjusted seating positions for characters on the Submarine (both variants)
+-) Improved Save Point position for Whirlwind Maze & SP Upgrade teleport coordinates
+-) Added a Triangle ID check for picking up HP Plus Materia to prevent it being picked up from below
+
+2.0994
+-) Added many missing button prompts to in-game text
+-) Added missing model files for 7th Heaven & Reunion versions (Great Glacier enemy affected)
+-) Ruby Weapon EXP/Gil/AP values set to match Emerald Weapon EXP/Gil/AP values
+-) Chocobo Ranch: Updated conditions so that characters do not appear early before visiting Kalm
+-) Added Long Range pickup if it is missed during Disc 1/2
+-) Adjusted drops for Eligor (increased chance for Mute Mask & Dream Powder, X-Potion drop removed)
+-) Issue where enemy would give EXP under No Exp mode
+-) Jenova DEATH: HP reduced by 4000 to 36,000, defence deterioration when attacked increased
+-) KO immunity added to Shinra Mansion mini-boss (Type B); Morphs added to both parts to make consistent with Type A boss drops
+-) Battle Square: Updated prize text where Fire Veil was listed but was actually 8-Inch Cannon
+-) Added No EXP toggle to Game Start menu
+-) Adjustment to item 'Synthesis Cell' (removed most of the detrimental effects)
+-) Masamune adjustment: base power decreased to 55, defence ignore property removed
+-) Minor text revision to Mystile and Curse Ring descriptions
+-) Added a random prize-set of items to replace Megalixir 'catch-all' prize used for various Fort Condor battles:
+	Astral Curtain
+	Lucky Pill
+	Hero Drink Classic
+	Dragon Fang
+	Dragon Scales
+-) Added minor easter egg when beating the game under the following conditions (must be activated at New Game and left enabled throughout):
+	Hard Mode
+	No Source Upgrades
+	No EXP
+-) Tweaks made to a Disc 3 boss; rewards added and game no longer proceeds to ending scenes after the battle
+
+2.0993
+-) Issue with Enemy Away & Morph Materia pickups
+
+2.0992
+-) Removed rename function during a scene that caused Cait's name to also change
+-) Typo on train conductor's dialogue
+-) Removed rename functions from Silver Chocobo due to unintended side-effects
+-) Reactor 5 Type B: Save Point allowed use of SP Upgrades prematurely
+-) Champion Belt: Vit+20 raised to Vit+45
+-) Barret's Limit Break 'Mindblow' now deals Magic damage as intended instead of MP damage
+-) X-Potion adjusted: In-battle, can be used on a single target for a focused heal or spread across party
+-) Updated text for Cid's special items in his innate descriptions in Beginner's Hall & Respectable Inn
+-) Type B: Scene fixed when exiting the elevator if Jessie not helped on the way out
+-) Type B: Tifa line change in Sector 7 prior to Reactor 5 mission departure
+-) Type B: Missing camera data for Sector 7 scene re-added
+-) Type B: Sewer boss cleanup handling of the water treatment machine when KO'd
+-) Type B: Reactor 5 boss reduced number of enemies in 2nd wave by 1
+-) Disabled PHS from Save Point near Ropeway station when about to meet Cait Sith to prevent softlock
+-) Iron Bangle: Materia slot added
+-) Hard Mode description updated; EXP given is 1.25x higher rather than 0.5x lower
+-) Boss in Great Glacier was using a placeholder model and has been updated to the intended model
+-) Gi Nattak: Rekindle set to 1 target instead of all to avoid an issue where he could heal himself with it
+-) Issue where Tifa could softlock during movement at the Sector 7 train station on Type B route
+-) Conditions for playing Tifa's Piano for Final Heaven extended to include other party leaders (Tifa must be in active party)
+-) Rebalancing for a boss fight on Disc 3 (and script/AI stability check)
+-) Harpy is now more likely to use Aqualung (chance increases as HP decreases; can only cast Aqualung once)
+-) Removed walkmesh deactivation on the dog in the cupboard in Kalm which could result in the character being softlocked if in the wrong place
+-) Updated documentation for some erroneous information and leftover notes
+-) Enemy Away unequipped from Aeris' starting equipment; this is now placed in Sector 5 Slum (outside entrance to junkyard)
+-) Great Glacier: Moved location of Slash-All Materia from Mountain \ trail to Hot Springs area
+-) North Crater: Added Comet Materia (only present if it was missed in the Whirlwind Maze)
+-) Icicle Inn: Moves Save Point indoors
+
+v2.0991
+*) AI fix for Jenova DEATH in Whirlwind Maze
+*) Blue Materia Cave boss adjusted
+*) Removed var checks for 1/32 Soldier collection (just checks for 12 in stock now)
+*) Added scripts to handle party leaders for Barret scene in Kalm (Disc 3)
+*) Fixed script relating to key in Junon Weapon Raid (Type B)
+*) Corrected slots for Gigas Armlet to No Growth
+*) Added failsafe to the Save Point in Holzoff's House
+*) Corrected typo on Cosmo Canyon repairman's line
+
+v2.099
+*) AI fixes for Jersey, Death Dealer, and Jenova SYNTHESIS
+*) Schizo HP was restored to intended values
+*) 1/32 Soldier in Cosmo Canyon could be picked up repeatedly
+*) 1/32 Soldier NPC hand-in check was adjusted to account for above
+*) Added a line of dialogue to Cosmo NPC who fixes the car and offers advice when paid
+*) North Corel: Text box for buying Materia from boy was fixed (if train crashes)
+*) Dragon Force: Effect and targeting changed
+*) Touph Ring: Elemental resistance flags added
+
+v2.098
+*) Repaired toggle for Hard Mode on Fort Condor and Kalm save points
+*) Battle during a Flashback scene was adjusted to prevent a crash
+
+v2.097
+*) Lowered HP and Defences for a Crater enemy
+*) Fixed a missing teleport jump for the Kalm Save Point when using the SP System
+*) Removed some rename OpCodes from the Zack Flashback
+*) Removed some Hard Mode on flags from Condor and Kalm save points
+*) Fixed New Game turning Hard Mode on when selecting standard difficulty
+
+v2.096
+*) Fixed an issue where Hard Mode was the wrong way round when starting a New Game
+
+v2.095
+*) Toggle flags for Hard mode, Battle Music, and No EXP fixed
+*) Hard Mode: Parameters adjusted
+*) Moved Tifa dialogue boxes in old woman's house in Under Junon
+*) Removed a 17th Field model from Junon Parade
+*) Tifa & Cid were invisible when entering the Slums Park on Type B
+*) Reference to Type A events removed from Type B Wall Market
+*) 1/35 Soldier in Midgar Raid was giving Vaccine instead of the item
+*) Yuffie Innate text updated in-game and in documentation
+*) Ahriman in North Crater now carries the Mustard Bomb enemy skill (Manipulate)
+*) Mt. Nibel Flashback, Fountain SFX wasn't being played
+*) Name change function on a certain Chocobo disabled for Cloud, Cait, and Vincent
+*) Magic Counter in Desert Prison was hidden on Type B
+*) Grimguard (Forgotten City, canyon in the back) now carries Javelin as a Steal
+*) Guard Ring & Relic Ring Steal location corrected in documentation
+*) Changed Mideel Materia shop inventory (post-collapse) to keep Osmose available
+*) Risk Ring added as a Morph to Goblin enemy (Goblin Islands)
+*) Four Slots added as a Steal to Ying enemy (Shinra Mansion Basement)
+*) Reactor 5 Type B boss downtuned
+*) OPTs in Underwater Reactor boss downtuned
+*) Carry Armour: Counter chance on torso halved for each HP increment
+*) Cargo Ship: Sound issue where ladders/invisible alpha cancelled sea spray SFX
+*) Nerosuferoth: AI mistake caused Beak attack to be unreachable
+*) Sector 7 Slums: Typo after picking up Sense Materia
+*) Contact flag handler added for character in Junon Weapon Raid
+*) Sephiroth & Young Cloud erroneously made unequippable during the Nibelheim Flashback
+*) Adjusted Mako Cannon scene script that was locked to Type A only
+*) North Crater script fixed
+*) Gold Saucer: Save Point at Battle Square was set to disable PHS before entering Desert Prison
+*) 1/35 Soldiers: Placements of permanently missable soldiers adjusted to be unmissable
+*) Ruby Weapon: Corrected Bolt weakness to Earth weakness
+*) X-Attack now exchanged for Desert Rose
+*) Long Range now part of the 3 Materia set for completing Kalm Traveller sidequest
+
+v2.0.94
+*) Shinra Mansion: A boss wasn't dropping its item.
+*) North Crater: A script trigger was fixed.
+*) Updated Drain adjustment in Installer EXEs.
+
+v2.0.93
+*) Temple of the Ancients: A chest would be flagged as opened during Type B scenario.
+*) Ruby uses homing ray counter on Self instead of Self.PreviousAttacker
+*) Shin Godo invalid attack ID set to a var under certain conditions
+*) Lich GT: Drop, Steal, and Morph added.
+*) Boss: Cure3 & L4 Holy Targeting issue + ???? Absorption added.
+*) Hyper Jump and Dragon swapped back to original placements as anim for former wouldn't play.
+*) Type B Shinra Mansion Boss: MP Increased
+*) Cargo Ship: Type B boss battle was using Type A boss instead
+*) Shinra HQ F59: One of the fight triggers gives a Type A encounter instead of Type B
+*) Highwind: NPC added close to other crewmen on the bridge, with information on locations for sidecontent (appears on Disc 3)
+*) Wonder Square: Multiple Speed Plus could be bought.
+*) Junon: Softlock on E-Junction when returning as Cloud after Weapon Raid + blocking access to back rooms.
+*) Midgar Raid: Save Point line was firing in wrong place in tunnels.
+*) North Crater: Shield and EXP Plus Materia locations swapped for visiblity.
+*) Zack Flashback: When completing this event, Cait Sith would be re-initialised resulting in a loss of sources and equipment.
+*) Reactor 5: Type B boss has small magic reduction.
+*) Type B: Boss didn't have AI set for 0 EXP.
+*) Added patched .EXEs for the Installer version.
+
+v2.0.92
+*) Osmose description updated
+*) Temple of the Ancients: leftover debug script was adding Chainsaws to inventory
+*) Highwind: Line of dialogue was playing under the wrong circumstances.
+*) Sister Ray: Typo on Hojo's line.
+*) Midgar Raid: NPC was appearing under incorrect circumstances.
+*) Kalm: Depending on where player is when talking to Barret for Catastrophe, a softlock could occur.
+*) Corneo's Mansion: If entering on Type B, the Type A events would occur and disrupt game progression.
+*) Wutai: Altered some dialogue for Type B on Da Chao.
+*) Temple of the Ancients: A button prompt was updated.
+*) Satans Gate: Boss respecced, Powersoul drop moved to field script.
+*) Red Materia Cave: Adjusted parameters of Zombie Breath, AI script change.
+*) Chokhmabo: Unset attack in death script, resulting in softlock.
+*) Chokhmabo: Initial Defence stats were not at correct values.
+*) Curator: Increased MaxMP of torso to 400.
+*) Cobalt XIV: Rearranged order of combatants for an AI trigger from opt to use Laser + Matra Magic.
+*) Using other party leaders for Temple of the Ancients on Disc 3 results in softlock on jump.
+*) Text Box alignment: Sector 7 slums.
+*) Lucrecia Cave: Issue where a different party leader with Cloud/Tifa present would disrupt the script.
+*) Documentation: Changed wording of Zenogias Plate placement from Shinra Villa to Costa Villa.
+*) Temple of the Ancients: Issue where a special chest could be opened from platform above, causing a softlock.
+*) Temple of the Ancients: Issue where Cid couldn't 
+*) Armored Golem: Updated some attacks for the AI.
+*) Da Chao Spirit: HP boost.
+*) Ruby Weapon & Emerald Weapon: HP boost.
+*) Green Hero: Changed buff given by an ability from Regen to Auto-Crits.
+*) Ruby Weapon could be refought after killing him due to a missing flag toggle on his Death Script.
+*) Added KO check for Yuffie and Cid's innate abilities.
+
+v2.0.91
+*) 7h IRO: Added chunks that handle the triggers for gateways etc. allowing access to Save Point in Icicle Inn.
+*) Da Chao: 1/35 Soldier was misplaced.
+*) Wutai Pagoda: Issue where Disc 3 Pagoda couldn't be completed if not finished on Disc 1/2.
+*) 3 typos with Ester's lines when explaining Chocobo controls.
+
+*Going forward, the versioning is abandoning the semantic approach of Major.Minor.Patch (2.X.X) as the 7th Heaven
+auto-update function reads for decimal and not strings; version from here will be 2.091. Apologies for confusion.
+
+v2.0.11 - 11/08/2020
+*) 1/35 Soldier on Sister Ray was incorrectly placed
+*) Battle Square Museum; bug during editing prevented the field from loading.
+*) Adjusted positioning for Type B Boss in Temple of the Ancients.
+
+v2.0.10 - 10/08/2020
+*) Mt. Nibel: Boss could be fought twice due to a script conflict.
+*) Battle Square: Dio appearing when not intended.
+*) Temple of the Ancients: Battle ID for Type B boss corrected.
+*) Land Worm: Was incorrectly targeting itself with a certain attack.
+*) Icicle Inn: Snowboarding instructions had overlapping windows.
+*) Dragon Force: Target flag prevented it from being used on party when attempting to learn it.
+*) Crater Dragon: Trine had no animation set.
+*) North Crater: 3 Save Points added to SP Upgrade Jump list & 1 Save Point on Left-Up Path was marked as hidden.
+*) Documentation: Corrected error that reported 1/35 location as east cave instead of west cave.
+*) Sea Worm: Attacks had incorrect base power.
+*) Great Glacier: Wrong BattleID was corrected.
+*) Steal Gil property was removed from some Type B enemies in Wall Market.
+*) Priscilla's House: Collision deactivated with Priscilla as it obstructed obtaining the Slow Materia later in the game.
+*) Kalm: Dog in the closet no longer deactivates player movement to prevent possible softlock (base game issue).
+*) Cave of the Gi: A script jump was missing, meaning that the boss from Type B and Type A was being fought on Type B.
+*) Shinra Mansion: Zack Flashback can now be triggered once Cloud returns to the party instead of Disc 3 only.
+*) Gelnika: Turks reinstated for Type B.
+*) Great Glacier: Variable was double-booked, preventing acquisition of a Materia here.
+*) Great Glacier: Variable was double-booked, preventing acquisition of an item in North Crater.
+*) Purple Materia Cave: Crash could occur as a variable decremented.
+*) Nibelheim: Reassigned variable to handle Final Heaven (acquired when Tifa is party leader).
+*) Kalm: Issue with Barret & Marlene's scripts.
+*) Forgotten City: An event could trigger at an unintended time.
+*) Fort Condor: Adjusted battle camera with Ultimate Weapon.
+*) Weaponsmith: Dialogue boxes misaligned for Cloud.
+*) Mustard Bomb: Changed Camera
+*) Mideel: Dialogue box misaligned
+*) Rocket Town: Collision disabled for two guards.
+*) Temple of the Ancients: Dark Matter Key Item wasn't being acquired.
+*) Drain Damage buffed to 25% of damage dealt
+*) Osmose: Adjusted to deal 1/2 the target's MP as damage, draining 25% of damage dealt for the caster's MP.
+*) Midgar Raid: Tweak to Turks scene so that screen is darkened/models set to invisible directly after the battle.
+*) HP Shout: Removed from boss drop, can only be acquired through Wonder Square (Disc 3); documentation updated.
+*) Elena: Midgar Raid appearance, AI adjusted to only use Turk Antidote once.
+*) Reflect Materia: Issue where selling price was giving close to max gil for Master.
+
+v2.0.9 - 7/08/2020
+*) PC Button Prompts added alongside the Controller button prompts.
+*) Yuffie: Fixed issue where Throwlette would only trigger if she was Defending prior to its charge.
+*) Updated innate text for Yuffie and Red XIII.
+*) Mt. Nibel: Some field models intended for later were visible during the flashback.
+*) Oversight where Hard Mode and Standard Mode were flipped at the start.
+*) Weapon Raid: Type B continuity corrected.
+*) Beginner's Hall: Menu Selection had extra blank options set.
+*) Kalm Traveller: W-Attack was being given instead of W-Magic.
+*) Nibelheim Flashback: Mt. Nibel music was playing earlier than intended.
+*) Sephiroth: Changed Odin to Bahamut in Flashback.
+
+v2.0.8 - 5/08/2020
+*) Icicle Inn: Innkeeper had Barret name on one of his dialogue lines.
+*) Mt. Nibel: Chests visible during Cloud's Memory Flashback.
+*) Chocobo Ranch: Chocobos being moved into stable would fade to black during selection screen.
+*) Submarine: Aeris position was overlaying Yuffie's.
+*) Shinra HQ: Vending Machine price check fixed.
+*) Shinra HQ: An issue where the script would jump players to the wrong Floor 67 after a Type B scene.
+*) Sector 5 Slums: Cloud could clip through the Sector 7 gates under certain conditions in Type B.
+*) Shinra HQ: Cloud mixes up character names in the stairwell.
+*) Cargo Ship: Barret would say two sets of lines which are intended to differ from Type A to Type B.
+*) Church: Altered scene when re-entering the Church early on Type B.
+*) Sector 7: Tifa's lines change on Type B when saying she'll come along this time.
+*) Train: Cloud line changes on Type B.
+*) Save Point: Corrected a variable trigger for Hard Mode toggle.
+*) Wall Market: Corneo's Mansion sealed off during certain parts of Type B.
+*) Mt. Nibel: The boss on Mt. Nibel would not vanish after being defeated under certain conditions.
+*) Kalm: Some dialogue with Red XIII would not match events on Type B.
+*) Wall Market: An unused Cait Sith was visible in the diner on Disc 2/3.
+*) Ancient Forest: Resized text at entrance.
+*) Blue Materia Cave: Changed text when picking up the Materia.
+*) Ultimate Weapon: Corel Reactor encounter had some attacks not set with an animation.
+*) Cactuar: Added check for decrementing run chance + deactivation AI.
+*) Cobalt XIV: Fixed AI target for Ice2.
+*) COMMANDO: Text for an attack name had REDBOX in it.
+*) Gondola: An issue where a 2nd Cloud could appear.
+*) Cait Sith: Can no longe regen MP past his maximum when not defending.
+*) Yuffie: Innate altered, now has a Defend-activated ability called Throwlette.
+*) Red XIII: Innate altered, max stat gain is now +45 instead of +35.
+*) Documentation: Item location for a 1/35 Soldier updated.
+*) Hard Mode: Toggle on field screens was opposite to the one reported in-battle (actual setting).
+*) Elfadunk: Morph added (Tent).
+*) Mythril Mines: Dialogue altered for Type B continuity.
+*) Ghost Hotel: Dialogue altered for Type B continuity.
+
+v2.0.7 - 4/08/2020
+*) Shinra HQ: Party Composition was off, resulting in Barret running into a wall during a scene.
+*) Church: Typo on Aeris' line.
+*) Cloud's Memory: Window resized for text.
+*) Mideel: Window resized for text.
+*) Changed reference to Mega-Materia to Huge Materia in some scenes.
+*) Cloud: Starting MP was adjusted to match his max MP.
+*) Reactor 5: Shinra Troopers given AI.
+*) Ultimate Weapon: AI report strings removed (Debug).
+
+Appended
+*) Shinra HQ: Fixed issue where player was being placed on the wrong field for a certain scene.
+*) COMMANDO: Adjusted to use Fire and Quake for a certain battle.
+
+V2.0.6 - 3/08/2020
+*) Game Type B Enabled
+*) Midgar Raid: Placement of Rude could cause a sotflock under certain conditions.
+*) Costa Del Sol: Vincent was visible before his recruitment in the Villa basement.
+*) Aeris: Added some animation files to the char.lgp for Installer version.
+*) Shinra HQ: Some text box alignments & animation speed settings.
+*) Sector 5 Slums: Shorten Wait on scripts for Sector 5 Slum vendors.
+*) Wonder Square: If you buy Materia before weapon then weapon can't be bought.
+*) Source System: Randomiser toggle would lose sources when checking stats in menu.
+*) Fort Condor: Teleport NPC wasn't being enabled at start of Disc 2 under certain conditions.
+*) Respectable Inn: Tetx updated with accurate kill count needed for 2-1, 3-1 Limit Breaks.
+*) Ying/Yang: Softlock when attacking Ying with Magic.
+*) Unknown2: ???? Needle set to reduce target's HP to 1 instead of MHP - HP difference of Unknown2
+*) Unknown3: Creepy Touch set to inflict Paralysis instead of Imprisoned/Ejected.
+*) Materia Cave: Changed Gold Flare animation.
+*) Sample HO512: Can now be hit with Gravity-based attacks
+*) Sample HO512: Changed animation of cloying breath
+*) Aeris: Healing staves have been given the ignore-defence property.
+*) White M-Phone: Extra slot added, Triple Growth set.
+*) Black M-Phone: Extra slots added.
+
+v2.0.5 - 01/08/2020
+*) Beginner's Hall: Field loading problem.
+
+v2.0.4 - 31/07/2020
+*) Highwind: Issue wherein a softlock could occur when Tifa talks to Red XIII under certain conditions.
+*) Beginner's Hall: Innate List wasn't being drawn as a question box on some of the NPCs.
+*) Temple of the Ancients: Reverted Cloud positioning during the final scene.
+*) Jumping: A targeting issue in which Jumping could attack itself or allies.
+*) SOLDIER 2nd: An issue where 2x-Cut was playing an altered animation.
+*) Crater Dragon: Added Manipulate as an available status, to allow for Dragon Force to be learned.
+*) Crater Dragon: Trine added to list of usable moves while under Manipulate
+*) Death Dealer: One entry of Death Dealer was not vulnerable to Manipulate as intended.
+*) Documentation: Updated locations list with Enemy Skill list.
+
+Appended
+*) Reactor 1: The item sitting on the catwalk could be made impassable under certain conditions.
+*) Beginner's Hall: Issue with Save Point tutorial script in which it could be escaped.
+*) Rocket Town: Materia flag corrected.
+*) Mt. Corel: Encounter probability corrected on the Rope Bridge area to prevent Encounter 0.
+
+Appended
+*) Costa Del Sol: Issue where scene would not trigger in Mt. Corel if Villa was purchased and items were acquired.
+*) Shinra HQ: Vending machine wouldn't accept payment if Gil was above 255.
+
+v2.0.3 - 30/07/2020
+*) Versioning for the IRO's mod.xml updated.
+*) Forgotten City: PHS was staying available when moving away from the Save Point close to the Altar.
+*) Forgotten City: Adjusted parameters for a scene that may not occur under certain conditions.
+*) Forgotten City: An issue where the Fort Condor teleport NPC was not returning the player.
+*) Cargo Ship: Text for 'Invisible Alpha' drink price corrected to 250gil.
+*) Great Glacier: Magic Plus moved to the log-bridge area.
+*) Icicle Inn: Save Point set up and walkmesh accessibility
+*) Cait Sith: Black M-Phone was draining MP instead of HP.
+*) EXP & Gil values for Hard Mode weren't being reduced correctly.
+*) Kernel: Updated some item names.
+*) Attack Squad: An animation issue with grenades.
+*) COMMANDO Captain: Parameters adjusted for appearance in Special Battle of Battle Square.
+
+Appended
+*) Documentation: Corrected Eligor's Steal and Morph, to Striking Staff and Silver Glasses respectively.
+*) Yuffie: Innate now returns a small amount of gil per battle on Hard Mode (First enemy's level * Yuffie's Level).
+*) Highwind: Fixed a crash on Merchant (debugging routine) for a test battle that has been deleted.
+
+*) Spells: The following adjustments were made
+Fire2: Base 30 > 32
+Fire3: MP 39 > 44
+Ice2: Base 20 > 28, MP 9 > 12
+Ice3: Base 46 > 54, MP 15 > 20
+Bolt2: Base 25 > 30, MP 23 > 24
+Bolt3: Base 54 > 56, MP 36 > 40
+Quake: Base 14 > 15
+Quake2: Base 35 > 36, MP 27 > 31
+Quake3: Base 63 > 66, MP 45 > 49
+Bio2: Base 22 > 29
+Bio3: Base 50 > 55
+Trine: Base 24 > 22
+Magic Breath: Base 46 > 50, MP 64 > 54
+
+v2.0.2 - 29/07/2020
+*) Reactor 5: Steal rates adjusted
+*) Yuffie Innate: Flag set to counter the previous physical attacker
+*) Gorki: Adjusted parameters of the fight; can now be targeted with Magic, and is not immune to Gravity
+*) Tonadu: Defined a var at start of fight for random checks, re-checked attacks are set
+*) Enemies: Added Hard Mode AI script to several world map enemies
+*) Beginner's Hall: A loop error on one of the kid's scripts was removed.
+*) Shinra HQ: Added a gil check to the vending machine on floor 64.
+*) Kalm: When opening the closet, the dog can become trapped on the player causing a softlock (vanilla).
+*) Jenova LIFE: Fixed a check that the Hard Mode toggle interferes with.
+*) MP Turbo: Location corrected in the documentation.
+*) Sector 5 Slums: Adjusted dialogue of NPC.
+
+v2.0.1 - 28/07/2020
+*) Corrected Battle ID for Security Captain
+*) Fixed a hext offset that caused Aps to crash on use of Sewer Tsunami (likely other problems)
+*) Fixed 'Matera Menu' typo
+*) Fixed missing word in Reno line
+*) Removed name of Cloud's innate for consistency with other unnamed innates
+*) Removed a label loop error on Train Guard in Sector 7
+
+Appended
+*) Beginner's Hall: Save Point NPC could break under certain conditions
+*) Junon Heli-taxi: Options fixed
+*) Text box resizing: Under Junon
+*) Yin/Yang: Pause on text lines in battle AI caused anim desynch
+*) Stinger: Removed use of Sting Bomb counter from its Main attack pattern
+*) Security Captain: Duplicate ID on attacks and mis-referenced in AI
+
+Appended
+*) Security Captain: Checked Model & Attack IDs
+*) Junon T-Junction: Alarm script fixed
+*) Heli Taxi NPC: Lock when declining
+
+
+v2.0.0 - 27/07/2020
+*) Initial Release

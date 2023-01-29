@@ -411,15 +411,19 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 		<name>FFNxGroup3dEngine</name>
 		<text>Moteur de rendu</text>
 		<author></author>
-		<help>D3d ou vulkan</help>
-		<url></url>
+		<help>Le type de moteur de rendu optimal dépend de la carte graphique du pc et des options du jeu.
+		
+Il est fortement conseillé de laisser sur automatique.
+
+Certaines carte graphiques ATI/AMD sont plus stables en D3D12.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupScreen</name>
 		<text>Affichage</text>
-		<author>TO</author>
-		<help>Plein écran ou fenetré ou sans bordure</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Choisissez le type d'affichage du jeu.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>fullscreen</name>
@@ -436,16 +440,24 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 	<control>
 		<name>FFNxGroupResolution</name>
 		<text>Résolution d'écran</text>
-		<author></author>
-		<help>bah c'est ça</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Permet de choisir la résolution d'écran.
+		
+Surtout utile en jeu fenêtré.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupRatio</name>
 		<text>Format d'affichage</text>
-		<author>TO</author>
-		<help>16/9 ou wide ou 4/3</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Vous pouvez choisir différent formats (ratio) d'affichage) du jeu:
+		
+-4/3 comme le jeu d'origine.
+
+-16/9 étiré, pas de bug connu mais l'image est verticalement écrasée.
+
+-16/9 réel, modifie le moteur du jeu afin d'avoir un vrai 16/9 partout ou cela est possible, quelques bugs (non bloquants) peuvent apparaitre.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>strechedwidescreen</name>
@@ -458,100 +470,147 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 	<control>
 		<name>FFNxGroupIR</name>
 		<text>Résolution interne</text>
-		<author></author>
-		<help>internal resolution</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Utilise un supersampling du jeu afin de rendre l'image bien plus nette.
+		
+x4 est un bon réglage sur un pc de puissance correcte.
+
+Si vous voyez des lignes parasites sur certains éléments du jeu (rare mais peu arriver avec certaines configurations), tentez un réglage en x4 ou x2.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxLighting</name>
 		<text>Ombres 3D</text>
-		<author></author>
-		<help>ça light des ombres</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Cette option ajoute des ombres sur les modèles 3D du jeu.
+		
+Cela donne une vrai présence aux modèles 3D, que ce soit ceux d'origines ou les modèles tiers.
+
+Il faut un pc correct pour ne pas subir de ralentissement en jeu avec cette option.
+
+Quelques rares bug d'ombrages sont possibles mais la qualité apporté par cette option vaux vraiment le coup.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxVsync</name>
 		<text>Synchronisation verticale</text>
-		<author></author>
-		<help>Vsych</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Active la synchronisation verticale de l'écran.
+		
+Permet d'éviter les déchirements d'images en jeu, mais limite la vitesse du speedhack au taux de refraichissement de l'écran.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupAA</name>
 		<text>Anti-Aliasing</text>
-		<author>checkurtl</author>
-		<help>haha</help>
-		<url>ff7.fr</url>
+		<author>FFNx team</author>
+		<help>L'anti-aliasing permet un lisage des arrêtes des modèles 3d du jeu.
+		
+En réalité si vous utilisez une résolution interne de x4, ce n'est pas utile.
+
+Je conseille de ne pas dépasser x4 sur L'anti-aliasing également</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxAnisotropic</name>
 		<text>Filtrage anisotrope</text>
-		<author></author>
-		<help>anisott</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Le filtrage anisotrope permet un meilleur rendu des textures 3D très lointaine.
+		
+La différence de rendu en jeu est plus ou moins flagrante selon les mods utilisés.
+
+Je vous conseille d'activer cette option par defaut.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupHDR</name>
 		<text>HDR Nits</text>
-		<author>not me</author>
-		<help>hdr</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Permet de préciser la valeur maximale du HDR de votre écran au cas où le rendu automatique ne soit pas optimal.
+		
+Cette option est ignorée si votre écran ne supporte pas le HDR (ou qu'il n'est pas activé dans windows).</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupAudioChannels</name>
 		<text>Canaux audio</text>
-		<author>le lourdingue</author>
-		<help>5.1</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Vous pouvez choisir le nombre de canaux audio pour le jeu.
+
+Ce n'est pas parce-que vous choisissez du multicanaux qu'ils seront tous utilisés, cela depends des mods audios et de leurs configurations. 
+		
+Si vous n'êtes pas sûr laissez sur automatique.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupAudioSample</name>
 		<text>Taux d'échantillonnage audio</text>
-		<author>1 bit system</author>
-		<help>44.1k</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Il est consillé de laisser cette option sur automatique sauf si vous savez ce que vous faites.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNXMusicResume</name>
 		<text>Reprendre les musiques</text>
-		<author>lo</author>
-		<help>résumé</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Permet d'avoir une continuité dans les musiques du jeu.
+		
+Cela permet de ne pas avoir la musique qui reprends de zéro après chaque combat par exemple.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxAnalogController</name>
 		<text>Contôleur analogique</text>
-		<author>Sifr</author>
-		<help>Analogg</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Si vous avec une manette de jeu avec un stick analogique, celle option permet de l'utiliser dans les menus et pour les déplacements (en plus de la crois directionnelle).
+		
+Cela ajoute également certains contrôles dans les combats (voir l'aide générale).</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNXSteamSucces</name>
 		<text>Succès Steam</text>
-		<author>frt</author>
-		<help>steam succ</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Vous permet d'obtenir les succès steam de FF7 avec ce pack.
+		
+Il faut que steam soit lancé également sinon ça ne marchera pas.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupControllerDeathzones</name>
 		<text>Zone morte de la manette (stick, LT, RT)</text>
-		<author>joy</author>
-		<help>deathZ</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Permet de définir les zones mortes des contrôles analogiques de la manette.
+		
+Cela est pris en compte uniquement si l'option "contrôleur analogique" est activée.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupSpeedhack</name>
 		<text>Speedhack (step, minimum, maximum)</text>
-		<author>fast</author>
-		<help>speedhack</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Vous pouvez utiliser un speedhack (avance rapide) en jeu (voir l'aide générale).
+
+Si vous utilisez l'option de synchronisation verticale, la vitesse du speedheck sera limité par la taux de rafraichissement de l'écran (par exemple, le jeu de base est en 30fps, si votre écran est en 60hz, le speedhack pourra accélérer le jeu en 2x maximum).
+
+La vitesse maximale du speedhack est également limité par la puissance du pc.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupFps</name>
 		<text>Fluidité du jeu (fps)</text>
-		<author>smooth</author>
-		<help>60fps</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>D'origine la fluidité de FF7 est limité, les menus sont en 60fps, mais les scènes de jeu sont en 30fps et les combats en 15fps.
+		
+Grâce à cette option vous pouvez choisir de fluidifier les combats en 30fps ou d'avoir le jeu complet en 60fps.
+		
+L'option d'avoir les combats en 30fps nécéssite d'avoir des modèles de combats interpolés.
+		
+L'option du jeu en 60fps necessite également des modèles interpolés (ceux des scènes du jeu) mais également quelques patch du jeu pour éviter des bugs (mineurs) dans certaines scènes.
+		
+les modèles 3D inclus dans le pack sont déjà interpolés, attention si vous utilisez des modèles tiers.
+Les scènes du jeu sont patchées également, attention avec les mods de gameplay tiers.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>gamefpsbattle30</name>
@@ -564,36 +623,47 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 	<control>
 		<name>FFNxShowStats</name>
 		<text>Afficher les informations de FFNx</text>
-		<author>TO</author>
-		<help>ffnx details</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Affiche des informations diverses (a gauche en plein écran et dans la barre de titre en fenêtré).
+
+On y trouve les fps, la version du pilote, l'utilisation mémoire ...</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxDebugTool</name>
 		<text>Outil de debug</text>
-		<author>dbg</author>
-		<help>f12</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Permet d'activer l'outil de débug dans une fenêtre en surimpression du jeu.
+		
+Cette fenêtre peut être affichée ou masquée à l'aide de la touche F12 du clavier.
+
+On y trouve entre autre un outil de téléportation, des information sur l'écran et la gestion des ombres des modèles 3D.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxLogs</name>
 		<text>Logs complets</text>
-		<author>logs</author>
-		<help>full log slow</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>A n'utiliser que en cas de bug important et uniquement si l'auteur du pack ou de FFNx vous le demande.
+		
+Cela consomme enormement de ressources mais permet de logguer toutes les information du pilote du jeu.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxFootSteps</name>
 		<text>Activer les bruits de pas</text>
-		<author>cosmo</author>
-		<help>in the night footsteps...</help>
-		<url></url>
+		<author>FFNx team</author>
+		<help>Cette option active des bruits de pas sur les différents écrans du jeu.
+		
+Ces bruits peuvent être adaptés au type de sol si vous utilisez un mod audio qui le permet.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxNoCd</name>
 		<text>No-CD</text>
 		<author>Satsuki_Yatoshi</author>
 		<help>Monte une mini-image virtuelle d'un cd de FF7.
+		
 Cela permet de ne pas avoir besoin d'un vrai CD de FF7 pour jouer.</help>
 		<url></url>
 	</control>
@@ -602,6 +672,7 @@ Cela permet de ne pas avoir besoin d'un vrai CD de FF7 pour jouer.</help>
 		<text>Cycle jour/nuit</text>
 		<author>Team FFNx</author>
 		<help>Béta - Ajoute un cycle jour/nuit dans FF7 en fonction de l'heure réelle.
+		
 Certains mods de gameplay peuvent utiliser cela.</help>
 		<url></url>
 	</control>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>Final Parody VII Mexicaine</text>
+		<help>Final Parody VII Mexicaine:
+		
+e projet est le mode parodique de azertyuiop2 auquel on ajoute la difficulté du hard mode de mexico.
+
+Donc il propose une expérience humoristique unique sur base du jeu officiel et de la retraduction Néo-Midgar (en français uniquement) tout en étant très difficile.  
+Le patch parodie la plupart des textes du jeu: dialogues, menus, textes en combat et sur la carte du monde, noms par défaut des personnages et des lieux, noms de matérias, etc.  
+
+Le niveau des ennemis est fixé à l'avance.  
+Les ennemis sont bien plus puissants que ceux du jeu de base.  
+Les attaques des ennemis ne sont pas les mêmes et n'ont pas les mêmes effets.  
+Les capacités des ennemis sont également modifiées. 
+
+Il est conseillé d'utiliser la bande sonore remixée par son auteur (dans le choix du pack de musique).
+
+Il est compatible avec toutes les versions de FF7 mais le jeu sera 100% en français.</help>
+		<author>azertyuiop2</author>
+		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=378595</url>
+		<compatibily>F</compatibily>
+</control>
+</translation>
+

@@ -1,0 +1,586 @@
+!!This document contains spoilers!!
+
+//Command//
+Steal - Sewers
+Sense - Sector 7 Park
+Throw - Yuffie Initial
+Morph - Aeris' House
+Deathblow - Tifa Initial
+Manipulate - Cait Initial
+Mime - Yellow Cave
+Enemy Skill - Red Initial
+Slash-All - Great Glacier
+Flash - Gelnika
+W-Magic - Kalm Traveller
+W-Summon - Ancient Forest
+W-Item - Glacier Chocobo
+W-Attack - Sacred Cave
+X-Attack(4x) - Kalm Traveller
+Master Command - Bugenhagen's Observatory
+
+//Independent//
+HP Plus - Temple of the Ancients
+MP Plus - Ziegfried/Temple of the Ancients
+Speed Plus - Wonder Square, 2000GP
+Magic Plus - Great Glacier Central-Tree-Bridge
+Luck Plus - Mideel Chocobo
+Omni Plus - 1/35 Soldier full set of 12 Turn-In
+HP-MP Swap - Kalm Traveller
+EXP Plus - North Crater: Left-Down Path
+Gil Plus - Gold Saucer Snowboard Prize #2
+Enemy Away - Sector 5 Slums
+Enemy Lure - Mythril Mines
+Chocobo Lure - Ranch
+Pre-emptive - Forgotten City (Canyon)
+Long Range - Rocket Town, Kalm Traveller (part of 3-piece bonus reward when all 3 items are turned in)
+Mega-All - Purple Materia Cave
+Counter Attack - Mt. Nibel
+Cover - Barret Initial/Wall Market Shop
+
+//Support//
+All - Cloud Initial, Various
+Cmd.Counter - Mt. Corel, Chocobo Racing, Cosmo Shop
+Magic Counter - Desert Prison, Chococo Racing, Cosmo Shop
+MP Turbo - Gaea's Cliff
+HP Absorb - Sector 7, Wutai Cathouse
+MP Absorb - Ancient Forest
+Added Cut - Gongaga
+Elemental - Red Initial, Mayor Domino, Great Glacier
+Added Effect - Mt. Nibel, Great Glacier, Nibelheim Piano (as Tifa)
+Sneak Attack - Shinra Mansion Basement, Chocobo Racing
+Final Attack - Special Battle
+Added Steal - Wutai
+Quadra Magic - Blue Cave
+
+//Magic//
+Fire - Cloud Initial
+Ice - Cloud Initial
+Bolt - Cloud Initial
+Earth - Kalm Shop
+Poison - Shinra HQ F67
+Gravity - Red Initial
+Restore - Reactor No.1
+Regen - Forgotten City
+Heal - Kalm Shop
+Revive - Aeris Initial
+Seal - Junon Shop
+Mystify - Gongaga Shop
+Transform - Cait Initial
+Exit - Yuffie Initial
+Barrier - Aeris Initial
+Reflect - Cosmo Canyon Item Shop Sideroom, Disc #2/3
+Time - Yuffie Initial
+MBarrier - North Crater: Left-Down Path
+Slow - Priscilla's House
+Core - Kalm Traveller (part of bonus reward when all 3 items are turned in)
+Destruct - Red Initial
+Dispel - North Crater: Left-Down Path
+Osmose - Shop: Costa (Disc 1), Mideel (Disc 2/3), Mideel Post-Collapse (Disc 2/3)
+Contain - North Crater: Right Path
+Break - Midgar Raid Train Tunnel/Bone Village Dig (Disc 3)
+Tornado - Sister Ray Cannon: Base
+Comet - Whirlwind Maze
+Renew - Corel Train/North Corel Aftermath
+Shield - North Crater: 2nd Screen, left-side
+Hydro - Junon Docks (Disc 2/3)
+Pearl - North Crater: Left-Down Path
+Ultima - North Crater: Left-Up Path
+Master Magic - Bugenhagen's Observatory
+
+//Summon//
+Choco-Mog - Ranch
+Shiva - Under Junon
+Ifrit - Cargo Ship
+Ramuh - Gold Saucer
+Titan - Gongaga
+Odin - Nibelheim
+Leviathan - Wutai
+Bahamut - Temple
+Kjata - Sleeping Forest
+Alexander - Great Glacier
+Phoenix - Fort Condor
+Neo-Bahamut - Whirlwind Maze
+Hades - Gelnika
+Typhon - Ancient Forest
+Bahamut Zero - Huge Materia
+Knights of Round - Red Cave
+Master Summon - Bugenhagen's Observatory
+
+*Master Magic/Comman/Summon can be generated without consuming the required Materia
+but only one of each can be made; new Materia added is not required for the process.
+
+
+//Enemy Skill//
+Frog Song: Touch Me, Gongaga Area Forest
+	Conditions: Will use it at intervals (4 or so turns at most) if no opponents are Frogs.
+
+LV Suicide: Mu, Chocobo Ranch Area (try the dark green areas)
+	Conditions: 1/4 chance to use it per turn, is only used once per Mu.
+
+Magic Hammer: Razor Weed, Wutai Area
+	Conditions: Manipulate
+
+White Wind: Zemzellet, Junon Area
+	Conditions: Manipulate
+
+Big Guard: Beach Plug, Costa Area Beaches
+	Conditions: Manipulate
+
+Mustard Bomb: Ahriman, North Crater
+	Conditions: Can be used under Manipulate status
+
+Dragon Force: Crater Dragon, North Crater
+	Conditions: Manipulate
+
+Death Force: Adamantaimai, Wutai Area Beaches
+	Conditions: Manipulate
+
+Antipode: Ark Dragon, Mythril Mines
+	Conditions: 1/2 chance to be used after 2 turns, will prioritise non-Slowed targets.
+
+Laser: Sample Opt, Shinra HQ F68
+	Conditions: Will be used on Red XIII as one of the opening attacks of the fight.
+
+Matra Magic: Sample Opt, Shinra HQ F68
+	Conditions: Will be used on the party as one of the early attacks of the fight.
+
+Bad Breath: Icy Oscar, Gaea's Cliffs Exterior (or Marlboro, North Crater)
+	Conditions: Chance to be used increases as Oscar's HP decreases.
+
+Beta: Midgar Zolom, Marshland
+	Conditions: Used at 3/4 HP, after rising up on its tail, as a counter-attack.
+
+Aqualung: Harpy, Gold Saucer Area
+	Conditions: Chance to be used increases as Harpy's HP decreases.
+
+Trine: Materia Keeper, Mt. Nibel (or Crater Dragon, North Crater via Manipulate)
+	Conditions: Chance to be used increases as HP decreases.
+
+Magic Breath: Stilva, Gaea's Cliffs Interior (or Parasite, North Crater)
+	Conditions: 1/2 chance to be used on the 4th turn of attack cycle.
+
+????: Jersey, Shinra Mansion
+	Conditions: Chance to be used when in 'Magic Immune' stance; chance increases at low HP.
+
+Goblin Song: Goblin, Goblin Island
+	Conditions: 1/3 chance to be used on the 2nd turn.
+
+Chocobuckle: Chocobo, Various
+	Conditions: Feed any Chocobo Sylkis, Reagan, or Mimett Greens, then use the LV Suicide skill.
+
+Virus: Parasite, North Crater
+	Conditions: Used on the third turn.
+
+Death Sentence: Sneaky Step, Cave of the Gi (Tricky Step on Disc 3)
+	Conditions: 1/4 chance to be used.
+
+Chronocure: Death Dealer, North Crater
+	Conditions: Manipulate
+
+Shadow Flare: Dragon Zombie, North Crater
+	Conditions: Chance to be used on the 5th turn, chance increases at low HP.
+
+Pandora's Box: Chokhmabo, Great Glacier
+	Conditions: Used as the final attack when killed.
+
+
+Key
+D = Drop
+S = Steal
+M = Morph
+
+//Weapon//
+Buster Sword - Initial Equip.
+Mythril Saber - Sector 4 Underpass, Kalm Shop
+Hardedge - Junon Shop
+Butterfly Edge - Cosmo Shop
+Murasame - Wutai Shop
+Organics - Icicle Inn Shop
+Crystal Sword - Mideel Shop
+Force Stealer - North Corel Shop
+Rune Blade - Mt. Nibel
+Yoshiyuki - Rocket Town
+Nail Bat - Battle Square #1, Temple of the Ancients
+Enhance Sword - Gaea's Cliffs, Highwind Shop
+Apocalypse - Gelnika
+Heaven's Cloud - SOLDIER:2nd(S)
+Ragnarok - Wolfmeister(S/M), Iron Giant(S), SOLDIER:1st(S)
+Ultima Weapon - Ultimate Weapon(D)
+
+Leather Glove - Initial Equip.
+Metal Knuckle - Sector 7 Shop, Wall Market Shop
+Mythril Claw - Kalm Shop
+Grand Glove - Prowler(M), Junon Shop, Gongaga Shop
+Tiger Fang - Cosmo Shop
+Dragon Claw - Icicle Inn Shop
+Diamond Knuckle - Icicle Inn Shop
+Crystal Glove - Mideel Shop
+Motor Drive - Corel Reactor
+Platinum Knuckle - Nibelheim
+Powersoul - Demons Gate(D)
+Work Glove - Temple of the Ancients
+Kaiser Knuckle - Gaea's Cliffs, Highwind Shop
+Master Glove - Carry Armour(D), Mover(S)
+God's Hand - Midgar Raid Event
+Premium Heart - Wall Market Automated Shop, Disc 3
+
+Gatling Gun - Initial Equip.
+Assault Gun - Sector 7 Shop
+Cannon Ball - X-ATM Scorpion Shinra HQ(D), Kalm Shop
+Atomic Scissor - Custom Sweeper(M), Junon Shop, Gongaga Shop
+Heavy Vulcan - Cosmo Shop
+Chainsaw - Wutai Shop
+Solid Bazooka - Icicle Shop
+AM Cannon - Mideel Shop
+W-Machine Gun - Mt. Corel
+Drill Arm - Rocket Town
+Enemy Launcher - Shinra Mansion
+Rocket Punch - Temple of the Ancients
+Microlaser - Ice Golem(M), Highwind Shop
+Pilebunker - Carry Armour(S), Maximum Chimera(S), Ahriman(S)
+Max Ray - Train Driver(S), Armored Golem(S)
+Missing Score - X-ATM Scorpion(D)
+
+Cosmo Clip - Initial Equip.
+Diamond Pin - Junon Shop, Gongaga Shop
+Silver Barette - Cosmo Shop
+Gold Barette - Wutai Shop
+Adaman Clip - Icicle Shop
+Crystal Comb - Mideel Shop
+Magic Comb - Fort Condor
+Plus Barrette - Mt. Nibel
+Centclip - Wutai, Highwind Shop
+Hairpin - Temple of the Ancients
+Seraph Comb - Cosmo Canyon (Disc 3)
+Behemoth Horn - Battle Square #2, King Behemoth(S)
+Spring Gun Clip - X-ATM Junon(S), Scissors(S)
+Limited Moon - Gi Django(D)
+
+Guard Stick - Initial Equip.
+Mythril Rod - Wall Market Shop
+Full Metal Staff - Hell House(M), Kalm Shop
+Striking Staff - Eligor(S), Junon Shop, Gongaga Shop
+Prism Staff - Cosmo Shop
+Aurora Rod - Wutai Shop
+Wizer Staff - Mt. Corel
+Wizard Staff - Cave of the Gi
+Umbrella - Speed Square 5000pts (Disc 1, 2, 3), Diver Nest(M)
+Fairy Tale - Forgotten City
+Princess Guard - Ancient Forest Cave
+
+4-Point Shuriken - Initial Equip.
+Boomerang - Formula(S), Junon Shop, Gongaga Shop
+Pinwheel - Cosmo Shop
+Razor Ring - Wutai Shop
+Hawkeye - Icicle Shop
+Crystal Cross - Mideel Shop
+Wind Slash - Cargo Ship
+Twin Viper - Shinra Mansion
+Spiral Shuriken - Staniv(D)
+Superball - Temple of the Ancients
+Magic Shuriken - Magnade(S)
+Rising Sun - Gelnika
+Oritsuru - Eagle Gun(S/M), Dragon Zombie(S)
+Conformer - Shin-Godo(D)
+
+Yellow M-Phone - Initial Equip.
+Green M-Phone - Cosmo Shop
+Blue M-Phone - Wutai Shop
+Red M-Phone - Icicle Shop
+Crystal M-Phone - Mideel
+White M-Phone - Gongaga Mayor's House
+Black M-Phone - Cave of the Gi
+Silver M-Phone - Weaponsmith's House
+Trumpet Shell - Temple of the Ancients
+Gold M-Phone - Highwind Shop
+Battle Trumpet - X-ATM Junon(D), Christopher(S)
+Starlight Phone - Shinra HQ F64 Locker, Master Tonberry(S)
+HP Shout - Wonder Square, 10,000GP
+
+Quicksilver - Initial Equip.
+Shotgun - Rocket Town Shop
+Shortbarrel - Wutai Shop
+Lariat - Icicle Shop
+Winchester - Mideel Shop
+Peacemaker - Shinra Mansion
+Sniper CR - Mt. Nibel
+Buntline - Bone Village Dig
+Lightgun - Temple of the Ancients
+Long Barrel R - Highwind Shop
+Supershot ST - Gelnika
+Outsider - Tseng(S), Malboro(S)
+Death Penalty - Lucrecia(D)
+
+Spear - Initial Equip.
+Slash Lance - Wutai Shop
+Mast Ax - Icicle Shop
+Partisan - Mideel Shop
+Trident - Da Chao Cave
+Viper Halberd - Wutai Hidden Room
+Javelin - Weaponsmith House, Grimguard(S)
+Mop - Temple of the Ancients
+Dragoon Lance - Bone Village Dig
+Grow Lance - Cosmo Canyon Item Shop Sideroom, Disc #2/3
+Flayer - Gelnika
+Scimitar - Gaea's Cliffs, Submarine Dock
+Spirit Lance - Old Man Rocket Town, Crater Dragon(S)
+Venus Gospel - Battle Square #3 (48,000 BP)
+
+
+//Armour//
+Bronze Bangle - Initial Equipment (all characters)
+Iron Bangle - Sector 7 Shop
+Titan Bangle - Sector 5 Shop, Junon Send-off
+Mythril Armlet - Wall Market Shop
+Carbon Bangle - Junon Shop, North Corel Shop
+Silver Armlet - Junon Send-off, Gongaga Shop
+Gold Armlet - Battle Square #1, Rocket Town Shop
+Diamond Bangle - Icicle Shop
+Crystal Bangle - Mideel Shop
+Platinum Bangle - Costa Shop, Junon Shop (Disc 2)
+Rune Armlet - Mt. Nibel (New), Icicle Inn Shop
+Edincoat - Materia Keeper(D), Rocket Town Shop (Disc 2)
+Wizard Bracelet - Wonder Square, Temple of the Ancients, Killbin(M), Junon Shop(Disc 2)
+Adaman Bangle - Adamantaimai(M)
+Gigas Armlet - Gigas(M), Sand Worm(M), Tifa North Crater (if alt path)
+Imperial Guard - Presidential Guard(M), Proud Clod(D), Iron Giant(M)
+Aegis Armlet - Diamond Weapon(D), Master Tonberry(M)
+Fourth Bracelet - Shinra HQ F2 Shop (Disc 2), Cid North Crater (if alt path), Pollensalta(M)
+Warrior Bangle - Shinra HQ F2 Shop (Disc 2), Red XIII North Crater (if alt path), King Behemoth(M)
+Shinra Beta - Shinra HQ F3, Marine/Attack Squad(S)
+Shinra Alpha - Presidential Guard(S), Death Machine(M), SHinra HQ F63 (Disc 2)
+Four Slots - Shinra HQ F63, Ying(S)
+Solar Armlet - Battle Square #1, Da Chao Cave (Leviathan Scales Req.), Midgar Raid Chest
+Aurora Armlet - Gaea Cliffs, Diablo(M)
+Voltaic Armlet - Battle Square #2, North Crater: Left-Up Path
+Dragon Armlet - Gaea Dragon(M), Crater Dragon(M)
+Minerva Band - Gaea's Cliffs, Ancient Forest, Elena Midgar Raid(S)
+Escort Guard - Whirlwind Maze, X-ATM Junon(M), Midgar Raid
+Mystile - Special Battle
+Ziedrich - Fort Condor 0 Losses, Rude Midgar Raid(S), Omega(D)
+Precious Watch - Choco-Racing Win-Streak
+Chocobracelet - Sector 4 Train Tunnels, Choco-Racing Win-Streak
+
+
+//Accessory//
+Power Wrist - Gi Giant(S), Nibel Reactor, Rocket Town Shop(Meteorfall)
+Protect Vest - Shinra HQ F63, Rocket Town Shop(Meteorfall)
+Earring - Gi Nattak(S), Mt. Nibel, Rocket Town Shop(Meteorfall)
+Talisman - SampleH0512(D), Harpy(M), Rocket Town Shop(Meteorfall)
+Choco Feather - Wutai Shop
+Gaea Amulet - Jemnezmy(D), Mideel Shop
+Champion Belt - SOLDIER:1st(M), Battle Square #3
+Relic Ring - Sleeping Forest Canyon, Ultimate Weapon:Gongaga/Crater(S), Bad Rap(M)
+Touph Ring - Schizo-R(S), Battle Square
+Circlet - Holzoff, Serpent(M), North Crater
+Star Pendant - Reactor No.5, Gongaga Shop
+Silver Glasses - Eligor(M), Bottomswell(S), Gongaga Shop
+Headband - Bottomswell(S), Gongaga Shop
+Fairy Ring - Cave of the Gi, Fort Condor, Mideel Shop
+Jem Ring - Mt. Nibel, Mideel Shop
+White Cape - Gi Nattak(D), Gongaga Shop
+Sprint Shoes - Shake, Choco-Racing Win-Streak
+Peace Ring - Battle Square #1, Rapps(D), Rocket Town Shop(Post-Meteor)
+Ribbon - ????(D)
+Phoenix Ring - Nibel Dragon(M), Mideel Shop
+Glacier Ring - Furybaba(D), Mideel Shop
+Storm Ring - Sleeping Man, Mideel Shop
+Guard Ring - Whirlwind Maze, Ultimate Weapon:Corel(S), North Crater: Left-Up Path, Ahriman(M)
+Safety Bit - Fort Condor #?, Great Glacier - Island, Rocket Town Shop(Post-Meteor)
+Fury Ring - Gongaga Shop
+Curse Ring - Mideel Fake Door, Ultimate Weapon:Forest(S), Rilfsak(M), Vincent North Crater (if alt path)
+Protect Ring - Jenova DEATH(S), Guardian(D), Poodler(M)
+Cat's Bell - Mt. Corel, Choco-Racing Win-Streak
+Reflect Ring - Mirage(M), Ultimate Weapon:Highwind(S), Ancient Forest
+Risk Ring - Goblin(M)
+Sneak Glove - Wall Market Battery NPC (Disc2/3), Mover(M)
+Hypnocrown - North Crater, Christopher(M)
+
+
+//Items//
+Potion - Shop
+Hi-Potion - Shop
+X-Potion - Guard System Quick-Machine Gun(M)
+Ether - Shop
+Turbo Ether - Guard System Rocket Launcher(M)
+Elixir - Battle Square #2, Armored Golem(M)
+Megalixir - Tonberry(M), Ho-chu(M)
+Phoenix Down - Shop
+Antidote - Shop
+Soft - Shop
+Maiden's Grace - Shop
+Cornucopia - Shop
+Echo Drops - Shop
+Hyper - Shop
+Tranquilizer - Shop
+Remedy - Gagighandi(M), Epiolnis(D), Shop
+Smoke Bomb - Twin Brain(S)
+Speed Drink - Prowler(S)
+Hero Drink II - Junon March 50% Ratings, Icicle Inn, Midgar Raid Tunnels, Chocobo Racing
+Vaccine - Touch Me(M)
+Grenade - Shop
+Shrapnel - Bloatfloat(S)
+Right Arm - Bloatfloat(M), Highwind Shop
+Hourglass - Kimara Bug(M)
+Kiss of Death - Joker(S)
+Spider Web - Kimara Bug(S)
+Dream Powder - Crown Lance(S)
+Mute Mask - Bahba Velamyu(D)
+War Gong - Grand Horn(D)
+Loco Weed - Griffin(S)
+Fire Fang - Nerosuferoth(M)
+Fire Veil - Foulander(M)
+Antarctic Wind - Crawler(M)
+Ice Crystal - Snow(D)
+Bolt Plume - Zemzelett(M)
+Swift Bolt - Thunderbird(M)
+Earth Drum - Grand Horn(M)
+Earth Mallet - Stilva(D)
+Deadly Waste - Bizarre Bug(M)
+M-Tentacles - Icy Oscar(M), Epiolnis(M), Malboro(D)
+Stardust - Gaea's Cliffs, North Crater, Behemoth(M), Gighee(M)
+Vampire Fang - Kalm Fang(M)
+Ghost Hand - Ghost Ship(S)
+Vagyrisk Claw - Cokatolis(M)
+Light Curtain - Beach Plug(D)
+Lunar Curtain - Beach Plug(D)
+Mirror - Mirage(S)
+Holy Torch - Wonder Square
+Bird Wing - Zuu(M)
+Dragon Scales - Godo(D) (2nd Encounter, Disc 3)
+Impaler - Shop
+Shrivel - Shop
+Dirty Bomb - Shop
+Molotov - Shop
+S-Mine - Roulette Cannon(D)
+8-Inch Cannon - Presidential Guard(M)
+Graviball - Flapbeat(D)
+T/S Bomb - Flapbeat(M)
+Ink - Devil Ride(M)
+Dazers - Battery Cap(M)
+Dragon Fang - Crater Dragon(D)
+Cauldron - Gold Saucer Sub Minigame Prize #4, Malboro(M)
+Sylkis Greens - Shop
+Reagan Greens - Shop
+Mimette Greens - Shop
+Curiel Greens - Shop
+Pahsana Greens - Shop
+Tantal Greens - Shop
+Krakka Greens - Shop
+Gysahl Greens - Shop
+Tent - Shop
+Power Source - SP System
+Guard Source - SP System
+Magic Source - SP System
+Mind Source - SP System
+Speed Source - SP System
+Luck Source - SP System
+Zeio Nut - Goblin(D/S)
+Carob Nut - Vlakorados(D/S)
+Porov Nut - Trickplay(D)
+Pram Nut - Nibel Wolf(D)
+Lasan Nut - Jumping(D)
+Saraha Nut - Spencer(D)
+Pepio Nut - Mu(D)
+Battery - Wall Market
+Mako Stone - Unplaced/Unused
+Omnislash - Shinra Mansion, Disc 3
+Catastrophe - Kalm, Disc 3
+Final Heaven - Nibelheim Tifa's House, Disc 3
+Great Gospel - Shinra Mansion, Disc 3
+Cosmo Memory - Cave of the Gi, Disc 3
+All Creation - Da Chao Fire Cavern, Disc 3
+Chaos - Lucrecia's Cave, Disc 2/3
+Highwind - Disc 3 Start
+1/35 Soldier - Various*
+Cactuar Gun - Gold Saucer
+Zenogias Plate - Costa Villa Basement
+Moonstone - Cosmo Canyon
+Lucky Pill - Battle Square (Dio's Keystone Challenge), Cait Sith North Crater (if alt path)
+???? - Defeat ???? in Shinra Mansion (Disc 3, unmissable)
+Desert Rose - Ruby Weapon(D)
+Earth Harp - Emerald Weapon(D)
+Guidebook -  Ghost Ship(M)
+Star Curtain - Battle Square, Unknown 2(M)
+Astral Curtain - Wutai Turtles Paradise, Shinra HQ F63 (Disc 2), 
+Gospel Spark - North Crater: Left-Up Path
+Black Veil - Junon, Unknown (M), Death Dealer(M)
+Hero Drink Classic - Battle Square(NPC, beat 8 rounds on Disc3), Shinra  HQ F64(Vending Machine, Disc 2)
+Rotten Elixir - Mideel House, Unknown 3(M)
+7778 Needles - Cactuer(D/S/M)
+Synthesis Cell - Jenova-DEATH(M)
+Reactor Bomb - Game Start (Used for Kernel Initial State check)
+
+
+//Key Items//
+Cotton Dress - Wall Market, choose 'Clean' when asked by the Dressmaker about preferences
+Satin Dress - Wall Market, choose Soft & Shiny when asked by the Dressmaker about preferences
+Silk Dress - Wall Market, choose Soft & Shimmers when asked by the Dressmaker about preferences
+Dirty Wig - Wall Market, lose the Squats contest
+Dyed Wig - Wall Market, draw the Squats contest
+Blonde Wig - Wall Market, win the Squats contest
+Glass Tiara - Wall Market, buy the cheap item from the vending machine for the shopowner
+Ruby Tiara - Wall Market, buy the middling item from the vending machine for the shopowner
+Diamond Tiara - Wall Market, buy the expensive item from the vending machine for the shopowner
+Watery Cologne - Wall Market, trade Disinfectant to the sick patron in the restaurant
+Flowery Cologne - Wall Market, trade Deodorant to the sick patron in the restaurant
+Sexy Cologne - Wall Market, trade Digestive to the sick patron in the restaurant
+Member's Card - Wall Market, given by man on screen next to Honeybee Inn after getting a wig
+Lingerie - Wall Market, choose the %@&* room in Honeybee Inn
+Bikini Briefs - Wall Market, choose the Group room in Honeybee Inn
+Flowers - Sector 5, in the flowergarden outside Aeris' house
+Pharmacy Coupons - Wall Market, eat a meal in the diner and answer 'It was all right'
+Disinfectant - Wall Market, trade for Pharmacy Coupons at the Pharmacy
+Deodorant - Wall Market, trade for Pharmacy Coupons at the Pharmacy
+Digestive - Wall Market, trade for Pharmacy Coupons at the Pharmacy
+Snow King - Earn 100 Points on Crazy Course in Gold Saucer's Snowboard Minigame
+Huge-Materia A - Fort Condor, fend off the Shinra in the last battle on Disc 2
+Huge Materia B - Mt. Corel, stop the train before time runs out
+Huge Materia C - Underwater Reactor, shoot down the red sub in the minigame then investigate it
+Huge Materia D - Shinra No.26, open the passcode-locked safe before leaving the rocket
+Ancient Key - Submarine, retrieved from an underwater cave under Gongaga area
+Dark Matter - Temple of the Ancients, Disc 3
+Eleanor's Pendant - Desert Prison, after defeating Dyne
+Lunar Harp - Bone Village, dug up from spot close to where steam overlaps ground on upper level
+Basement Key - Shinra Mansion, on the lid of Vincent's coffin
+Key to Sector 5 - Bone Village, dug up from spot close to where Lunar Harp was found
+Keycard 60 - Shinra HQ, dropped by guards on Floor 59
+Keycard 62 - Shinra HQ, given by a grey NPC who mistakes you for maintenance when replying '...'
+Keycard 65 - Shinra HQ, given by Mayor Domino after guessing his password
+Keycard 66 - Shinra HQ, retrieved from a chest on Floor 65
+Keycard 68 - Shinra HQ, given by a grey NPC on Floor 68 after finding Aeris
+Mini X-ATM - Corel Reactor, Disc 3
+Red Dragon DS - Gold Saucer, beat 3D Battler minigame
+Cool Boarder - Gold Saucer, get 100 points on Crazy Course of Snowboard minigame
+Gi Cave Key - From Bugenhagen, Disc 3
+PHS - Midgar, given to you by Barret before entering World Map for first time
+Gold Ticket - Gold Saucer, buy for 30,000 gil at entrance
+Keystone - Gold Saucer, get from Dio after participating in a Battle Square event
+Leviathan Scales - Pagoda Disc 3, Defeat Godo
+Glacier Map - Icicle Inn, found in old woman's house on the wall
+A Coupon - Shinra HQ, found in door puzzle on F63
+B Coupon - Shinra HQ, found in door puzzle on F63
+C Coupon - Shinra HQ, found in door puzzle on F63
+Black Materia - Temple of the Ancients/Whirlwind Maze, taken automatically
+Mythril - Junon Area, given by sleeping old man in cave across river in Junon Area
+Snowboard - Icicle Inn, taken from boy in central house after Elena event
+
+
+1/35 Soldier Locations - 12 in total
+Turn these in to the black-caped NPC in the Mythril Mines
+1) Mythril Mines
+2) Junon
+3) Gold Saucer, Dio's Museum
+4) Gongaga, 2nd floor of General Store
+5) Da Chao
+6) Great Glacier, Far-West Cave
+7) Cosmo Canyon: Bugenhagen's House (3rd Floor)
+8) Gold Saucer Sub Prize #5
+9) Icicle Inn, Hotel 2nd Floor
+10) Gelnika Hallway
+11) Nibelheim: Right-hand house, upstairs
+12) North Crater: Left-Up Path
+
+
+
+

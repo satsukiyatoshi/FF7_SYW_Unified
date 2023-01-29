@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>No regen mod</text>
+		<help>No regen mod:
+		
+Ce mod a pour but de rendre le jeu plus difficile sans pour autant changer les ennemis.
+
+Le principe est simple, les objets, et équipements qui permettent de regagner des Hp ou des Mp on été modifiés en dehors des exceptions suivantes:
+-Les super tentes.
+-Les auberges et autres lieux du même genre.
+
+À noter qu'il n'est pas possible d'acheter les super tentes, elles sont à la place des mégalixirs.
+Les super tentes sont utilisables en dehors des points de sauvegarde mais pas en combat.
+
+Il est donc globalement difficile de se soigner en combat et hors combat.
+
+Il est aussi impossible de fuir les combats (sauf contre les pots magiques pour éviter un blocage), sinon c'est trop simple ^^.
+Il est conseillé de ne pas désactiver les combats aléatoires sinon le mod n'a plus d'intérêt.
+
+Il est compatible avec toutes les versions de FF7 mais certains éléments de combats et de menus seront en français uniquement.</help>
+		<author>Mexico et Satsuki_yatoshi</author>
+		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=440337</url>
+		<compatibily>F</compatibily>
+</control>
+</translation>
+

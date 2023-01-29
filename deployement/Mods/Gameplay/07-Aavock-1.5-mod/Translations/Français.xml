@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>1.5 mod</text>
+		<help>1.5 mod:
+		
+Ce mod a pour but de rendre le jeu légèrement plus difficile sans pour autant altérer le jeu original.
+
+La force et la magie de la totalité des ennemis est multipliée par un facteur 1.5.
+
+Il est compatible avec toutes les versions de FF7 mais certains éléments de combats seront en français uniquement.
+</help>
+		<author>Aavock</author>
+		<url>https://ff7.fr/forum/index.php</url>
+		<compatibily>F</compatibily>
+</control>
+</translation>
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>Hard mod</text>
+		<help>Hard mod:
+		
+C'est un mode de jeu difficile.  
+
+Le niveau des ennemis est fixé à l'avance.  
+Les ennemis sont bien plus puissants que ceux du jeu de base.  
+Les attaques des ennemis ne sont pas les mêmes et n'ont pas les mêmes effets.  
+Les capacités des ennemis sont également modifiées.  
+
+Je conseille ce réglage si vous voulez un vrai défi car les combats n'ont plus la même logique, c'est presque un jeu différent.
+
+Vous pouvez utiliser ce mod avec toutes les langues de FF7 mais seules les traductions française et anglaise sont diponibles.
+Certains textes seront en anglais pour les langues non supportées.</help>
+		<author>Mexico</author>
+		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=319186</url>
+		<compatibily>FE</compatibily>
+</control>
+</translation>
+

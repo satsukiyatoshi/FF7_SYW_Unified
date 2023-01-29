@@ -2,10 +2,10 @@
 <translation>
 	<control>
 		<text>Courrir par défaut</text>
-		<help>Permet de courir au lieu de marcher par défaut dans les scènes du jeu.</help>
+		<help>Permet de courir au lieu de marcher par défaut dans les séquences du jeu.</help>
 		<author>Chysalis</author>
 		<url></url>
 		<compatibily>FE</compatibily>
-			</control>
+	</control>
 </translation>
 
