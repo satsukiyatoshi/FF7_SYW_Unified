@@ -30,11 +30,11 @@ namespace FF7_SYW_Unified
 
             if (Directory.Exists(getModCustomFolder(gameplayMods, @"gameplay\") + @"\docs"))
             {
-                documentsFolder.Visible = true;
+                documentsFolder.Enabled = true;
             }
             else
             {
-                documentsFolder.Visible = false;
+                documentsFolder.Enabled = false;
             }
 
             if (!Directory.Exists(getModCustomFolder(gameplayMods, @"gameplay\") + @"\save"))

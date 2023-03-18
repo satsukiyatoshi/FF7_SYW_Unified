@@ -14,11 +14,18 @@ namespace FF7_SYW_Unified
             InitializeComponent();
         }
 
-
-
         //initialize form and load settings
         private void FF7U_Load(object sender, EventArgs e)
         {
+            string[] args = Environment.GetCommandLineArgs();
+            foreach (string arg in args)
+            {
+                if (arg == "direct")
+                {
+                    Globals.directLaunch = true;
+                }
+            }
+
             //get translations list
             try
             {
@@ -52,6 +59,12 @@ namespace FF7_SYW_Unified
 
             //set default menu status
             menuClick(menuAbout);
+
+            //if "direct" is used as argument, then launch the game without any changes
+            if(Globals.directLaunch == true)
+            {
+                menuLaunchGame_Click(sender, e);
+            }
         }
 
 
@@ -75,14 +88,18 @@ namespace FF7_SYW_Unified
                 regFF7(Globals.isodrive);
             }
 
-            playAudioClose();
-            restoreFiles();
-            ApplyGameLang();
-            applySywTextures();
-            applyMods();
-            applyPatchs();
-            ffnxTomlGenerate();
-            saveValues();
+            //Apply mods only if not a direct launch
+            if (Globals.directLaunch == false)
+            {
+                playAudioClose();
+                restoreFiles();
+                ApplyGameLang();
+                applySywTextures();
+                applyMods();
+                applyPatchs();
+                ffnxTomlGenerate();
+                saveValues();
+            }
 
             this.Visible = false;   
             

@@ -87,6 +87,7 @@ namespace FF7_SYW_Unified
         private void listAudioFiles(string Folder)
         {
             
+            playAudioClose();
             soundsList.Items.Clear();
 
             string[] extensions = new[] { ".ini", ".psflib", ".bin", ".dll", ".txt", ".xml", ".jpg", ".jpeg", ".png", ".bmp", ".gif", ".toml" };
@@ -105,6 +106,7 @@ namespace FF7_SYW_Unified
         //list audio files when changing audio mod
         private void soundsLoad(ComboBox soundCombo, string modFolder, string subfolder = @"\files\")
         {
+
             string currentModFOlder = getModCustomFolder(soundCombo, modFolder) + subfolder;
 
             if (!Directory.Exists(currentModFOlder))
@@ -149,7 +151,7 @@ namespace FF7_SYW_Unified
 
 
 
-        private void soundFrame4_MouseLeave(object sender, EventArgs e){playAudioClose();}
+        private void soundFrame4_MouseLeave(object sender, EventArgs e){ playAudioClose(); }
         private void soundsMusicsChange(object sender, EventArgs e) { modShowCustom(soundsMusics, @"audio\musics", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsAmbiantChange(object sender, EventArgs e) {modShowCustom(soundsAmbients, @"audio\ambients", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsSfxChange(object sender, EventArgs e) { modShowCustom(soundsSfx, @"audio\sfxs", soundsHelp, soundsHelpAuthor, soundPrevPic); }

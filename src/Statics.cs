@@ -13,6 +13,7 @@ namespace FF7_SYW_Unified
             public static string isodrive { get; set; } = "";
             public static string activMenuName { get; set; } = "menuAbout";
             public static string vanilla { get; set; } = "";
+            public static Boolean directLaunch { get; set; } = false;
             public static string actualModFolder { get; set; } = "";
             public static string actualModUrl { get; set; } = "";
             public static string actualModFlags { get; set; } = "";

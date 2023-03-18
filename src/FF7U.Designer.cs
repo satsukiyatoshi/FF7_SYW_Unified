@@ -179,7 +179,6 @@
             this.soundsMusics = new System.Windows.Forms.ComboBox();
             this.menuGameplayPanel = new System.Windows.Forms.Panel();
             this.gameplayFrame2 = new System.Windows.Forms.GroupBox();
-            this.documentsFolder = new System.Windows.Forms.Label();
             this.gameplayHelp = new System.Windows.Forms.TextBox();
             this.gameplayHelpAuthor = new System.Windows.Forms.Label();
             this.gameplayFrame1 = new System.Windows.Forms.GroupBox();
@@ -188,6 +187,7 @@
             this.flagFGameplay = new System.Windows.Forms.PictureBox();
             this.flagEGameplay = new System.Windows.Forms.PictureBox();
             this.gameplayGroupMods = new System.Windows.Forms.GroupBox();
+            this.documentsFolder = new System.Windows.Forms.Label();
             this.saveByMod = new System.Windows.Forms.Label();
             this.gameplayMods = new System.Windows.Forms.ComboBox();
             this.gameplayFrame3 = new System.Windows.Forms.GroupBox();
@@ -2306,7 +2306,6 @@
             // 
             // gameplayFrame2
             // 
-            this.gameplayFrame2.Controls.Add(this.documentsFolder);
             this.gameplayFrame2.Controls.Add(this.gameplayHelp);
             this.gameplayFrame2.Controls.Add(this.gameplayHelpAuthor);
             this.gameplayFrame2.Font = new System.Drawing.Font("Roboto Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -2317,23 +2316,6 @@
             this.gameplayFrame2.TabIndex = 10;
             this.gameplayFrame2.TabStop = false;
             this.gameplayFrame2.Text = "Aide";
-            // 
-            // documentsFolder
-            // 
-            this.documentsFolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            this.documentsFolder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.documentsFolder.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.documentsFolder.ForeColor = System.Drawing.Color.Black;
-            this.documentsFolder.Location = new System.Drawing.Point(604, 20);
-            this.documentsFolder.Name = "documentsFolder";
-            this.documentsFolder.Size = new System.Drawing.Size(171, 23);
-            this.documentsFolder.TabIndex = 18;
-            this.documentsFolder.Text = "Documentation";
-            this.documentsFolder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.documentsFolder.Visible = false;
-            this.documentsFolder.Click += new System.EventHandler(this.documentsFolder_Click);
-            this.documentsFolder.MouseEnter += new System.EventHandler(this.documentsFolder_MouseEnter);
-            this.documentsFolder.MouseLeave += new System.EventHandler(this.documentsFolder_MouseLeave);
             // 
             // gameplayHelp
             // 
@@ -2421,6 +2403,7 @@
             // gameplayGroupMods
             // 
             this.gameplayGroupMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
+            this.gameplayGroupMods.Controls.Add(this.documentsFolder);
             this.gameplayGroupMods.Controls.Add(this.saveByMod);
             this.gameplayGroupMods.Controls.Add(this.gameplayMods);
             this.gameplayGroupMods.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -2433,13 +2416,29 @@
             this.gameplayGroupMods.Text = "Mod de gameplay";
             this.gameplayGroupMods.MouseEnter += new System.EventHandler(this.gameplayModsChange);
             // 
+            // documentsFolder
+            // 
+            this.documentsFolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.documentsFolder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.documentsFolder.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.documentsFolder.ForeColor = System.Drawing.Color.Black;
+            this.documentsFolder.Location = new System.Drawing.Point(467, 23);
+            this.documentsFolder.Name = "documentsFolder";
+            this.documentsFolder.Size = new System.Drawing.Size(171, 23);
+            this.documentsFolder.TabIndex = 18;
+            this.documentsFolder.Text = "Documentation";
+            this.documentsFolder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.documentsFolder.Click += new System.EventHandler(this.documentsFolder_Click);
+            this.documentsFolder.MouseEnter += new System.EventHandler(this.documentsFolder_MouseEnter);
+            this.documentsFolder.MouseLeave += new System.EventHandler(this.documentsFolder_MouseLeave);
+            // 
             // saveByMod
             // 
             this.saveByMod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.saveByMod.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveByMod.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.saveByMod.ForeColor = System.Drawing.Color.Black;
-            this.saveByMod.Location = new System.Drawing.Point(462, 23);
+            this.saveByMod.Location = new System.Drawing.Point(285, 23);
             this.saveByMod.Name = "saveByMod";
             this.saveByMod.Size = new System.Drawing.Size(176, 23);
             this.saveByMod.TabIndex = 17;
@@ -2458,7 +2457,7 @@
             this.gameplayMods.FormattingEnabled = true;
             this.gameplayMods.Location = new System.Drawing.Point(9, 23);
             this.gameplayMods.Name = "gameplayMods";
-            this.gameplayMods.Size = new System.Drawing.Size(447, 23);
+            this.gameplayMods.Size = new System.Drawing.Size(270, 23);
             this.gameplayMods.TabIndex = 0;
             this.gameplayMods.SelectedIndexChanged += new System.EventHandler(this.gameplayModsChange);
             this.gameplayMods.Click += new System.EventHandler(this.getMousePos);
