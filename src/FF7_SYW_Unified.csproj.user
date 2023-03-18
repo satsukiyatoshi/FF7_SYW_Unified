@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>D:\Docs\Programation\Csharp\Sources\FF7Unified\FF7_SYW_Unified\src\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="FF7U.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FFNx.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -13,7 +16,13 @@
     <Compile Update="GenericFunctions.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Graphics.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LoadSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Menus.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Mods.cs">
@@ -22,19 +31,10 @@
     <Compile Update="Sounds.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Graphics.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Statics.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Translation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FF7U.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Menus.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Urls.cs">

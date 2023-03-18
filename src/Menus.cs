@@ -20,6 +20,7 @@ namespace FF7_SYW_Unified
 
             getTranslationXml(Application.StartupPath + @"\Translations\" + langInterface.Text + ".xml", Globals.translateUI);
             translateAll();
+            InitializeAsync(Application.StartupPath + @"\Help\" + langInterface.Text + ".html");
 
             graphicsSetDefaults();
             soundsSetDefaults();

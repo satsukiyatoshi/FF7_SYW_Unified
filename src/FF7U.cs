@@ -1,7 +1,9 @@
 
 
+using Microsoft.Web.WebView2.Core;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Security.Policy;
 
 
 namespace FF7_SYW_Unified
@@ -61,13 +63,17 @@ namespace FF7_SYW_Unified
             menuClick(menuAbout);
 
             //if "direct" is used as argument, then launch the game without any changes
-            if(Globals.directLaunch == true)
+            if (Globals.directLaunch == true)
             {
                 menuLaunchGame_Click(sender, e);
             }
         }
 
-
+        async void InitializeAsync(string helpUrl)
+        {
+            await helpWeb.EnsureCoreWebView2Async(null);
+            helpWeb.CoreWebView2.Navigate(helpUrl);
+        }
 
         //apply settings and launch the game
         private void menuLaunchGame_Click(object sender, EventArgs e)
@@ -101,8 +107,8 @@ namespace FF7_SYW_Unified
                 saveValues();
             }
 
-            this.Visible = false;   
-            
+            this.Visible = false;
+
             string ff7Path = Application.StartupPath + @"\Game\ff7.exe";
 
             ProcessStartInfo ff7Launch = new ProcessStartInfo(ff7Path)
@@ -128,7 +134,7 @@ namespace FF7_SYW_Unified
 
         private void FormClosingCheck(Object sender, FormClosingEventArgs e)
         {
-            if(Globals.isGameLoading)
+            if (Globals.isGameLoading)
             {
                 string msg = translate("quit", Globals.translateUI);
 
@@ -149,4 +155,4 @@ namespace FF7_SYW_Unified
 
     }
 
-  }
+}

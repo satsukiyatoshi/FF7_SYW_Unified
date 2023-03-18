@@ -2,11 +2,13 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>ico.ico</ApplicationIcon>
+    <UseWPF>False</UseWPF>
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,7 +37,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="System.Management" Version="6.0.0" />
+	  <PackageReference Include="System.Management" Version="7.0.0" />
+	  <PackageReference Include="WebView2.Runtime.X86" Version="111.0.1661.43" />
 	</ItemGroup>
 
 </Project>
