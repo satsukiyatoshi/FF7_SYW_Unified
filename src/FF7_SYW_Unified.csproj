@@ -9,6 +9,8 @@
     <ApplicationIcon>ico.ico</ApplicationIcon>
     <UseWPF>False</UseWPF>
     <Platforms>AnyCPU;x86</Platforms>
+    <StartupObject>FF7_SYW_Unified.Program</StartupObject>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
@@ -38,7 +40,6 @@
 
 	<ItemGroup>
 	  <PackageReference Include="System.Management" Version="7.0.0" />
-	  <PackageReference Include="WebView2.Runtime.X86" Version="111.0.1661.43" />
 	</ItemGroup>
 
 </Project>

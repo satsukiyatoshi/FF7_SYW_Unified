@@ -246,7 +246,6 @@
             FFNxLighting = new CheckBox();
             menuHelpPanel = new Panel();
             HelpFrame2 = new GroupBox();
-            helpWeb = new Microsoft.Web.WebView2.WinForms.WebView2();
             menuLaunchGamePanel = new Panel();
             groupBox2 = new GroupBox();
             loadingAnimation = new PictureBox();
@@ -331,7 +330,6 @@
             FFNxGroup3dEngine.SuspendLayout();
             menuHelpPanel.SuspendLayout();
             HelpFrame2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)helpWeb).BeginInit();
             menuLaunchGamePanel.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)loadingAnimation).BeginInit();
@@ -3231,7 +3229,6 @@
             // 
             // HelpFrame2
             // 
-            HelpFrame2.Controls.Add(helpWeb);
             HelpFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             HelpFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             HelpFrame2.Location = new Point(3, 4);
@@ -3240,17 +3237,6 @@
             HelpFrame2.TabIndex = 10;
             HelpFrame2.TabStop = false;
             HelpFrame2.Text = "Aide générale";
-            // 
-            // helpWeb
-            // 
-            helpWeb.AllowExternalDrop = true;
-            helpWeb.CreationProperties = null;
-            helpWeb.DefaultBackgroundColor = Color.White;
-            helpWeb.Location = new Point(11, 22);
-            helpWeb.Name = "helpWeb";
-            helpWeb.Size = new Size(767, 663);
-            helpWeb.TabIndex = 0;
-            helpWeb.ZoomFactor = 1D;
             // 
             // menuLaunchGamePanel
             // 
@@ -3411,7 +3397,6 @@
             FFNxGroup3dEngine.ResumeLayout(false);
             menuHelpPanel.ResumeLayout(false);
             HelpFrame2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)helpWeb).EndInit();
             menuLaunchGamePanel.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)loadingAnimation).EndInit();
@@ -3638,6 +3623,5 @@
         private TextBox soundsHelp;
         private TextBox FFNxHelp;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Microsoft.Web.WebView2.WinForms.WebView2 helpWeb;
     }
 }

@@ -1,9 +1,9 @@
 
 
-using Microsoft.Web.WebView2.Core;
-using System.ComponentModel;
+//using Microsoft.Web.WebView2.Core;
+//using System.ComponentModel;
 using System.Diagnostics;
-using System.Security.Policy;
+//using System.Security.Policy;
 
 
 namespace FF7_SYW_Unified
@@ -67,12 +67,6 @@ namespace FF7_SYW_Unified
             {
                 menuLaunchGame_Click(sender, e);
             }
-        }
-
-        async void InitializeAsync(string helpUrl)
-        {
-            await helpWeb.EnsureCoreWebView2Async(null);
-            helpWeb.CoreWebView2.Navigate(helpUrl);
         }
 
         //apply settings and launch the game
