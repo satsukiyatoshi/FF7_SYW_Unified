@@ -252,6 +252,7 @@
             loadingWaitDetails = new Label();
             loadingWait = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            GeneralHelp = new RichTextBox();
             musicsPrev = new PictureBox();
             ambiantPrev = new PictureBox();
             sfxPrev = new PictureBox();
@@ -3229,6 +3230,7 @@
             // 
             // HelpFrame2
             // 
+            HelpFrame2.Controls.Add(GeneralHelp);
             HelpFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             HelpFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             HelpFrame2.Location = new Point(3, 4);
@@ -3295,6 +3297,14 @@
             loadingWait.TabIndex = 68;
             loadingWait.Text = "Chargement en cours";
             loadingWait.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // GeneralHelp
+            // 
+            GeneralHelp.Location = new Point(14, 23);
+            GeneralHelp.Name = "GeneralHelp";
+            GeneralHelp.Size = new Size(762, 662);
+            GeneralHelp.TabIndex = 0;
+            GeneralHelp.Text = "";
             // 
             // FF7U
             // 
@@ -3623,5 +3633,6 @@
         private TextBox soundsHelp;
         private TextBox FFNxHelp;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private RichTextBox GeneralHelp;
     }
 }
