@@ -1,6 +1,5 @@
 
 using System.Diagnostics;
-using System.Drawing.Text;
 
 namespace FF7_SYW_Unified
 {
@@ -10,8 +9,8 @@ namespace FF7_SYW_Unified
         public FF7U()
         {
             InitializeComponent();
-            //fontsLoad(); TODO make memory error on some over function
         }
+
 
         //initialize form and load settings
         private void FF7U_Load(object sender, EventArgs e)
@@ -68,30 +67,6 @@ namespace FF7_SYW_Unified
             }
         }
 
-        private void fontsLoad()
-        {
-            //Load local fonts
-            PrivateFontCollection pfc = new PrivateFontCollection();
-
-            pfc.AddFontFile(Application.StartupPath + @"\Ressources\" + "Roboto-Regular.ttf");
-            pfc.AddFontFile(Application.StartupPath + @"\Ressources\" + "Roboto-Black.ttf");
-
-            //Apply font to form's controls
-            foreach (Control control in Flatten(this))
-            {
-                if (control is Label || control is Button || control is RadioButton || control is GroupBox || control is ListBox)
-                {
-                    if (control.Font.Bold)
-                    {
-                        control.Font = new Font(pfc.Families[1], control.Font.Size);
-                    }
-                    else
-                    {
-                        control.Font = new Font(pfc.Families[0], control.Font.Size);
-                    }
-                }
-            }
-        }
 
         //apply settings and launch the game
         private void menuLaunchGame_Click(object sender, EventArgs e)
@@ -149,6 +124,7 @@ namespace FF7_SYW_Unified
             this.Close();
 
         }
+
 
         private void FormClosingCheck(Object sender, FormClosingEventArgs e)
         {

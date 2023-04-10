@@ -1,10 +1,49 @@
-﻿using System.Runtime.InteropServices;
-
+﻿using System.Drawing.Text;
+using System.Runtime.InteropServices;
 
 namespace FF7_SYW_Unified
 {
     partial class FF7U
     {
+        private PrivateFontCollection pfc;
+
+        protected override void OnLoad(EventArgs e)
+        {
+            pfc = new PrivateFontCollection();
+            pfc.AddFontFile(Application.StartupPath + @"\Ressources\" + "Roboto-Regular.ttf");
+            pfc.AddFontFile(Application.StartupPath + @"\Ressources\" + "Roboto-Black.ttf");
+
+            base.OnLoad(e);
+
+            ApplyFonts(this);
+        }
+
+
+
+        private void ApplyFonts(Control control)
+        {
+            //Apply fonts to controls
+            if (control is Label || control is ComboBox || control is CheckBox || control is GroupBox || control is ListBox)
+            {
+                if (control.Font.Bold)
+                {
+                    control.Font = new Font(pfc.Families[1], control.Font.Size);
+                }
+                else
+                {
+                    control.Font = new Font(pfc.Families[0], control.Font.Size);
+                }
+            }
+
+            // Appliquer la police aux contrôles enfants du contrôle actuel
+            foreach (Control childControl in control.Controls)
+            {
+                ApplyFonts(childControl);
+            }
+        }
+
+
+
         //private declaration for SetPadding function
         private const int EM_SETRECT = 0xB3;
 
