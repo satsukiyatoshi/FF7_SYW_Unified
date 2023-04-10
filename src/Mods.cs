@@ -27,8 +27,15 @@ namespace FF7_SYW_Unified
                 }
                 else
                 {
-                    MessageBox.Show(translate("errorloadingmod", Globals.translateUI) + dir);
-                    Process.GetCurrentProcess().Kill();
+                    string[] translations = Directory.GetFiles(dir + @"\Translations\", "*.xml");
+                    if(translations.Length > 0)
+                    {
+                        translationFile = dir + @"\Translations\" + Path.GetFileName(translations[0]);
+                    } else
+                    {
+                        MessageBox.Show(translate("errorloadingmod", Globals.translateUI) + dir);
+                        Process.GetCurrentProcess().Kill();
+                    }
                 }
 
                 modDir = Path.GetFileName(dir);

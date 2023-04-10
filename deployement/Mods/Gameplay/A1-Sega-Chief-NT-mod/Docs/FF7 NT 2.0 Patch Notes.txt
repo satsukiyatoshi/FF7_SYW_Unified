@@ -394,7 +394,8 @@ Appended
 *) Shinra HQ: Vending machine wouldn't accept payment if Gil was above 255.
 
 v2.0.3 - 30/07/2020
-*) Versioning for the IRO's mod.xml updated.
+*) Versioning for the IRO's mod
+updated.
 *) Forgotten City: PHS was staying available when moving away from the Save Point close to the Altar.
 *) Forgotten City: Adjusted parameters for a scene that may not occur under certain conditions.
 *) Forgotten City: An issue where the Fort Condor teleport NPC was not returning the player.

@@ -21,8 +21,8 @@ namespace FF7_SYW_Unified
             {
                 if (arg == "direct")
                 {
-                    //TODO vérifier que fichier config du soft + toml ffnx existe sinon message erreur et lancement de la GUI 
-                    Globals.directLaunch = true;
+                    if(File.Exists(Application.StartupPath + @"\Game\FFNx.toml") && File.Exists(Application.StartupPath + @"\settings.ini"))
+                        Globals.directLaunch = true;
                 }
             }
 
