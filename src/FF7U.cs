@@ -10,7 +10,7 @@ namespace FF7_SYW_Unified
         public FF7U()
         {
             InitializeComponent();
-            fontsLoad();
+            //fontsLoad(); TODO make memory error on some over function
         }
 
         //initialize form and load settings
@@ -84,7 +84,8 @@ namespace FF7_SYW_Unified
                     if (control.Font.Bold)
                     {
                         control.Font = new Font(pfc.Families[1], control.Font.Size);
-                    } else
+                    }
+                    else
                     {
                         control.Font = new Font(pfc.Families[0], control.Font.Size);
                     }

@@ -246,13 +246,13 @@
             FFNxLighting = new CheckBox();
             menuHelpPanel = new Panel();
             HelpFrame2 = new GroupBox();
+            GeneralHelp = new RichTextBox();
             menuLaunchGamePanel = new Panel();
             groupBox2 = new GroupBox();
             loadingAnimation = new PictureBox();
             loadingWaitDetails = new Label();
             loadingWait = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            GeneralHelp = new RichTextBox();
             musicsPrev = new PictureBox();
             ambiantPrev = new PictureBox();
             sfxPrev = new PictureBox();
@@ -413,7 +413,7 @@
             // 
             menuLaunchGame.BackColor = Color.FromArgb(210, 210, 210);
             menuLaunchGame.Cursor = Cursors.Hand;
-            menuLaunchGame.Font = new Font("Roboto Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuLaunchGame.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             menuLaunchGame.ForeColor = Color.Black;
             menuLaunchGame.Location = new Point(10, 653);
             menuLaunchGame.Name = "menuLaunchGame";
@@ -433,7 +433,7 @@
             settingsGroup.Controls.Add(menuSound);
             settingsGroup.Controls.Add(menuGraphic);
             settingsGroup.Controls.Add(menuAbout);
-            settingsGroup.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            settingsGroup.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             settingsGroup.ForeColor = Color.FromArgb(224, 224, 224);
             settingsGroup.Location = new Point(10, 278);
             settingsGroup.Name = "settingsGroup";
@@ -446,7 +446,7 @@
             // 
             menuHelp.BackColor = SystemColors.ScrollBar;
             menuHelp.Cursor = Cursors.Hand;
-            menuHelp.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuHelp.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             menuHelp.ForeColor = Color.Black;
             menuHelp.Location = new Point(6, 202);
             menuHelp.Name = "menuHelp";
@@ -462,7 +462,7 @@
             // 
             menuFFNx.BackColor = SystemColors.ScrollBar;
             menuFFNx.Cursor = Cursors.Hand;
-            menuFFNx.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuFFNx.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             menuFFNx.ForeColor = Color.Black;
             menuFFNx.Location = new Point(6, 166);
             menuFFNx.Name = "menuFFNx";
@@ -478,7 +478,7 @@
             // 
             menuGameplay.BackColor = SystemColors.ScrollBar;
             menuGameplay.Cursor = Cursors.Hand;
-            menuGameplay.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuGameplay.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             menuGameplay.ForeColor = Color.Black;
             menuGameplay.Location = new Point(6, 130);
             menuGameplay.Name = "menuGameplay";
@@ -494,7 +494,7 @@
             // 
             menuSound.BackColor = SystemColors.ScrollBar;
             menuSound.Cursor = Cursors.Hand;
-            menuSound.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuSound.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             menuSound.ForeColor = Color.Black;
             menuSound.Location = new Point(6, 94);
             menuSound.Name = "menuSound";
@@ -510,7 +510,7 @@
             // 
             menuGraphic.BackColor = SystemColors.ScrollBar;
             menuGraphic.Cursor = Cursors.Hand;
-            menuGraphic.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuGraphic.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             menuGraphic.ForeColor = Color.Black;
             menuGraphic.Location = new Point(6, 58);
             menuGraphic.Name = "menuGraphic";
@@ -526,7 +526,7 @@
             // 
             menuAbout.BackColor = SystemColors.ScrollBar;
             menuAbout.Cursor = Cursors.Hand;
-            menuAbout.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuAbout.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             menuAbout.ForeColor = Color.Black;
             menuAbout.Location = new Point(6, 22);
             menuAbout.Name = "menuAbout";
@@ -541,7 +541,7 @@
             // ff7Lang
             // 
             ff7Lang.Controls.Add(langGame);
-            ff7Lang.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            ff7Lang.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             ff7Lang.ForeColor = Color.FromArgb(224, 224, 224);
             ff7Lang.Location = new Point(10, 216);
             ff7Lang.Name = "ff7Lang";
@@ -559,14 +559,14 @@
             langGame.FormattingEnabled = true;
             langGame.Location = new Point(9, 23);
             langGame.Name = "langGame";
-            langGame.Size = new Size(275, 23);
+            langGame.Size = new Size(275, 24);
             langGame.TabIndex = 0;
             langGame.SelectedIndexChanged += langGame_SelectedIndexChanged;
             // 
             // interfaceLang
             // 
             interfaceLang.Controls.Add(langInterface);
-            interfaceLang.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            interfaceLang.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             interfaceLang.ForeColor = Color.FromArgb(224, 224, 224);
             interfaceLang.Location = new Point(10, 154);
             interfaceLang.Name = "interfaceLang";
@@ -584,7 +584,7 @@
             langInterface.FormattingEnabled = true;
             langInterface.Location = new Point(9, 23);
             langInterface.Name = "langInterface";
-            langInterface.Size = new Size(275, 23);
+            langInterface.Size = new Size(275, 24);
             langInterface.TabIndex = 0;
             langInterface.SelectedIndexChanged += langInterface_SelectedIndexChanged;
             // 
@@ -621,7 +621,7 @@
             graphicFrame1.Controls.Add(graphicsAnimations);
             graphicFrame1.Controls.Add(graphicsMiniGames);
             graphicFrame1.Controls.Add(graphicsFields);
-            graphicFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             graphicFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             graphicFrame1.Location = new Point(3, 4);
             graphicFrame1.Name = "graphicFrame1";
@@ -634,7 +634,7 @@
             // 
             graphicsGroupAddTextures.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupAddTextures.Controls.Add(graphicsAddTextures);
-            graphicsGroupAddTextures.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupAddTextures.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsGroupAddTextures.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupAddTextures.Location = new Point(260, 274);
             graphicsGroupAddTextures.Name = "graphicsGroupAddTextures";
@@ -653,7 +653,7 @@
             graphicsAddTextures.FormattingEnabled = true;
             graphicsAddTextures.Location = new Point(9, 23);
             graphicsAddTextures.Name = "graphicsAddTextures";
-            graphicsAddTextures.Size = new Size(225, 23);
+            graphicsAddTextures.Size = new Size(225, 24);
             graphicsAddTextures.TabIndex = 0;
             graphicsAddTextures.SelectedIndexChanged += graphicsAddTexturesChange;
             graphicsAddTextures.Click += getMousePos;
@@ -662,7 +662,7 @@
             // 
             graphicsGroupModels3Dm.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupModels3Dm.Controls.Add(graphicsModels3Dm);
-            graphicsGroupModels3Dm.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dm.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsGroupModels3Dm.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupModels3Dm.Location = new Point(260, 212);
             graphicsGroupModels3Dm.Name = "graphicsGroupModels3Dm";
@@ -681,7 +681,7 @@
             graphicsModels3Dm.FormattingEnabled = true;
             graphicsModels3Dm.Location = new Point(9, 23);
             graphicsModels3Dm.Name = "graphicsModels3Dm";
-            graphicsModels3Dm.Size = new Size(225, 23);
+            graphicsModels3Dm.Size = new Size(225, 24);
             graphicsModels3Dm.TabIndex = 0;
             graphicsModels3Dm.SelectedIndexChanged += graphicsModels3DmChange;
             graphicsModels3Dm.Click += getMousePos;
@@ -690,7 +690,7 @@
             // 
             graphicsGroupModels3Dw.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupModels3Dw.Controls.Add(graphicsModels3Dw);
-            graphicsGroupModels3Dw.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dw.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsGroupModels3Dw.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupModels3Dw.Location = new Point(11, 212);
             graphicsGroupModels3Dw.Name = "graphicsGroupModels3Dw";
@@ -709,7 +709,7 @@
             graphicsModels3Dw.FormattingEnabled = true;
             graphicsModels3Dw.Location = new Point(9, 23);
             graphicsModels3Dw.Name = "graphicsModels3Dw";
-            graphicsModels3Dw.Size = new Size(225, 23);
+            graphicsModels3Dw.Size = new Size(225, 24);
             graphicsModels3Dw.TabIndex = 0;
             graphicsModels3Dw.SelectedIndexChanged += graphicsModels3DwChange;
             graphicsModels3Dw.Click += getMousePos;
@@ -722,7 +722,7 @@
             graphicsGroupMenu.Controls.Add(flagSGraphicsMenu);
             graphicsGroupMenu.Controls.Add(flagFGraphicsMenu);
             graphicsGroupMenu.Controls.Add(graphicsMenu);
-            graphicsGroupMenu.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupMenu.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsGroupMenu.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupMenu.Location = new Point(11, 88);
             graphicsGroupMenu.Name = "graphicsGroupMenu";
@@ -781,7 +781,7 @@
             graphicsMenu.FormattingEnabled = true;
             graphicsMenu.Location = new Point(9, 23);
             graphicsMenu.Name = "graphicsMenu";
-            graphicsMenu.Size = new Size(390, 23);
+            graphicsMenu.Size = new Size(390, 24);
             graphicsMenu.TabIndex = 0;
             graphicsMenu.SelectedIndexChanged += graphicsMenuChange;
             graphicsMenu.Click += getMousePos;
@@ -790,7 +790,7 @@
             // 
             graphicsGroupFMV.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupFMV.Controls.Add(graphicsFMV);
-            graphicsGroupFMV.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupFMV.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsGroupFMV.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupFMV.Location = new Point(11, 274);
             graphicsGroupFMV.Name = "graphicsGroupFMV";
@@ -809,7 +809,7 @@
             graphicsFMV.FormattingEnabled = true;
             graphicsFMV.Location = new Point(9, 23);
             graphicsFMV.Name = "graphicsFMV";
-            graphicsFMV.Size = new Size(225, 23);
+            graphicsFMV.Size = new Size(225, 24);
             graphicsFMV.TabIndex = 0;
             graphicsFMV.SelectedIndexChanged += graphicsFMVChange;
             graphicsFMV.Click += getMousePos;
@@ -818,7 +818,7 @@
             // 
             graphicsGroupModels3Dc.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupModels3Dc.Controls.Add(graphicsModels3Dc);
-            graphicsGroupModels3Dc.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dc.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsGroupModels3Dc.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupModels3Dc.Location = new Point(260, 150);
             graphicsGroupModels3Dc.Name = "graphicsGroupModels3Dc";
@@ -837,7 +837,7 @@
             graphicsModels3Dc.FormattingEnabled = true;
             graphicsModels3Dc.Location = new Point(9, 23);
             graphicsModels3Dc.Name = "graphicsModels3Dc";
-            graphicsModels3Dc.Size = new Size(225, 23);
+            graphicsModels3Dc.Size = new Size(225, 24);
             graphicsModels3Dc.TabIndex = 0;
             graphicsModels3Dc.SelectedIndexChanged += graphicsModels3DcChange;
             graphicsModels3Dc.Click += getMousePos;
@@ -846,7 +846,7 @@
             // 
             graphicsGroupModels3Df.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupModels3Df.Controls.Add(graphicsModels3Df);
-            graphicsGroupModels3Df.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Df.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsGroupModels3Df.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupModels3Df.Location = new Point(11, 150);
             graphicsGroupModels3Df.Name = "graphicsGroupModels3Df";
@@ -865,7 +865,7 @@
             graphicsModels3Df.FormattingEnabled = true;
             graphicsModels3Df.Location = new Point(9, 23);
             graphicsModels3Df.Name = "graphicsModels3Df";
-            graphicsModels3Df.Size = new Size(225, 23);
+            graphicsModels3Df.Size = new Size(225, 24);
             graphicsModels3Df.TabIndex = 0;
             graphicsModels3Df.SelectedIndexChanged += graphicsModels3DfChange;
             graphicsModels3Df.Click += getMousePos;
@@ -874,7 +874,7 @@
             // 
             graphicsMagics.BackColor = Color.FromArgb(89, 98, 111);
             graphicsMagics.Cursor = Cursors.Hand;
-            graphicsMagics.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsMagics.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsMagics.Location = new Point(260, 44);
             graphicsMagics.Name = "graphicsMagics";
             graphicsMagics.Size = new Size(245, 19);
@@ -887,7 +887,7 @@
             // 
             graphicsBattles.BackColor = Color.FromArgb(89, 98, 111);
             graphicsBattles.Cursor = Cursors.Hand;
-            graphicsBattles.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsBattles.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsBattles.Location = new Point(11, 44);
             graphicsBattles.Name = "graphicsBattles";
             graphicsBattles.Size = new Size(245, 19);
@@ -900,7 +900,7 @@
             // 
             graphicsWorldMap.BackColor = Color.FromArgb(89, 98, 111);
             graphicsWorldMap.Cursor = Cursors.Hand;
-            graphicsWorldMap.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsWorldMap.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsWorldMap.Location = new Point(11, 66);
             graphicsWorldMap.Name = "graphicsWorldMap";
             graphicsWorldMap.Size = new Size(245, 19);
@@ -913,7 +913,7 @@
             // 
             graphicsAnimations.BackColor = Color.FromArgb(89, 98, 111);
             graphicsAnimations.Cursor = Cursors.Hand;
-            graphicsAnimations.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsAnimations.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsAnimations.Location = new Point(260, 22);
             graphicsAnimations.Name = "graphicsAnimations";
             graphicsAnimations.Size = new Size(245, 19);
@@ -926,7 +926,7 @@
             // 
             graphicsMiniGames.BackColor = Color.FromArgb(89, 98, 111);
             graphicsMiniGames.Cursor = Cursors.Hand;
-            graphicsMiniGames.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsMiniGames.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsMiniGames.Location = new Point(260, 66);
             graphicsMiniGames.Name = "graphicsMiniGames";
             graphicsMiniGames.Size = new Size(245, 19);
@@ -939,7 +939,7 @@
             // 
             graphicsFields.BackColor = Color.FromArgb(89, 98, 111);
             graphicsFields.Cursor = Cursors.Hand;
-            graphicsFields.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsFields.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsFields.Location = new Point(11, 22);
             graphicsFields.Name = "graphicsFields";
             graphicsFields.Size = new Size(245, 19);
@@ -952,7 +952,7 @@
             // graphicFrame3
             // 
             graphicFrame3.Controls.Add(graphicPrevPic);
-            graphicFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             graphicFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             graphicFrame3.Location = new Point(3, 350);
             graphicFrame3.Name = "graphicFrame3";
@@ -984,7 +984,7 @@
             // 
             graphicFrame2.Controls.Add(graphicsHelp);
             graphicFrame2.Controls.Add(graphicsHelpAuthor);
-            graphicFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             graphicFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             graphicFrame2.Location = new Point(526, 4);
             graphicFrame2.Name = "graphicFrame2";
@@ -997,7 +997,7 @@
             // 
             graphicsHelp.BackColor = Color.FromArgb(89, 98, 111);
             graphicsHelp.BorderStyle = BorderStyle.None;
-            graphicsHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsHelp.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsHelp.ForeColor = Color.FromArgb(32, 225, 229);
             graphicsHelp.HideSelection = false;
             graphicsHelp.Location = new Point(12, 19);
@@ -1011,7 +1011,7 @@
             // 
             graphicsHelpAuthor.BackColor = Color.Black;
             graphicsHelpAuthor.Cursor = Cursors.Hand;
-            graphicsHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicsHelpAuthor.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             graphicsHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             graphicsHelpAuthor.Location = new Point(12, 311);
             graphicsHelpAuthor.Name = "graphicsHelpAuthor";
@@ -1105,7 +1105,7 @@
             aboutFrame1.Controls.Add(authorName2);
             aboutFrame1.Controls.Add(authorName42);
             aboutFrame1.Controls.Add(authorName12);
-            aboutFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            aboutFrame1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             aboutFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             aboutFrame1.Location = new Point(3, 4);
             aboutFrame1.Name = "aboutFrame1";
@@ -1119,11 +1119,11 @@
             authorUrl20.AutoSize = true;
             authorUrl20.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl20.Cursor = Cursors.Hand;
-            authorUrl20.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl20.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl20.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl20.Location = new Point(648, 344);
             authorUrl20.Name = "authorUrl20";
-            authorUrl20.Size = new Size(93, 15);
+            authorUrl20.Size = new Size(97, 16);
             authorUrl20.TabIndex = 75;
             authorUrl20.Text = "foobar2000.org";
             authorUrl20.TextAlign = ContentAlignment.TopRight;
@@ -1132,7 +1132,7 @@
             // author20
             // 
             author20.BackColor = Color.Transparent;
-            author20.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author20.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author20.ForeColor = Color.FromArgb(32, 225, 229);
             author20.Location = new Point(118, 344);
             author20.Name = "author20";
@@ -1154,11 +1154,11 @@
             authorUrl12.AutoSize = true;
             authorUrl12.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl12.Cursor = Cursors.Hand;
-            authorUrl12.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl12.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl12.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl12.Location = new Point(648, 209);
             authorUrl12.Name = "authorUrl12";
-            authorUrl12.Size = new Size(36, 15);
+            authorUrl12.Size = new Size(30, 16);
             authorUrl12.TabIndex = 72;
             authorUrl12.Text = "ff7.fr";
             authorUrl12.TextAlign = ContentAlignment.TopRight;
@@ -1169,11 +1169,11 @@
             authorUrl12b.AutoSize = true;
             authorUrl12b.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl12b.Cursor = Cursors.Hand;
-            authorUrl12b.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl12b.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl12b.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl12b.Location = new Point(682, 209);
             authorUrl12b.Name = "authorUrl12b";
-            authorUrl12b.Size = new Size(74, 15);
+            authorUrl12b.Size = new Size(76, 16);
             authorUrl12b.TabIndex = 71;
             authorUrl12b.Text = "qhimm.com";
             authorUrl12b.TextAlign = ContentAlignment.TopRight;
@@ -1184,11 +1184,11 @@
             authorUrl99.AutoSize = true;
             authorUrl99.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl99.Cursor = Cursors.Hand;
-            authorUrl99.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl99.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl99.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl99.Location = new Point(648, 477);
             authorUrl99.Name = "authorUrl99";
-            authorUrl99.Size = new Size(116, 15);
+            authorUrl99.Size = new Size(123, 16);
             authorUrl99.TabIndex = 70;
             authorUrl99.Text = "square-enix-games";
             authorUrl99.TextAlign = ContentAlignment.TopRight;
@@ -1199,11 +1199,11 @@
             author42UrlD.AutoSize = true;
             author42UrlD.BackColor = Color.FromArgb(6, 60, 60);
             author42UrlD.Cursor = Cursors.Hand;
-            author42UrlD.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            author42UrlD.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             author42UrlD.ForeColor = Color.FromArgb(224, 224, 224);
             author42UrlD.Location = new Point(648, 398);
             author42UrlD.Name = "author42UrlD";
-            author42UrlD.Size = new Size(108, 15);
+            author42UrlD.Size = new Size(110, 16);
             author42UrlD.TabIndex = 69;
             author42UrlD.Text = "discord (français)";
             author42UrlD.TextAlign = ContentAlignment.TopRight;
@@ -1214,11 +1214,11 @@
             author42UrlD2.AutoSize = true;
             author42UrlD2.BackColor = Color.FromArgb(6, 60, 60);
             author42UrlD2.Cursor = Cursors.Hand;
-            author42UrlD2.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            author42UrlD2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             author42UrlD2.ForeColor = Color.FromArgb(224, 224, 224);
             author42UrlD2.Location = new Point(648, 415);
             author42UrlD2.Name = "author42UrlD2";
-            author42UrlD2.Size = new Size(102, 15);
+            author42UrlD2.Size = new Size(106, 16);
             author42UrlD2.TabIndex = 68;
             author42UrlD2.Text = "discord (english)";
             author42UrlD2.TextAlign = ContentAlignment.TopRight;
@@ -1229,11 +1229,11 @@
             donation42.AutoSize = true;
             donation42.BackColor = Color.FromArgb(12, 120, 120);
             donation42.Cursor = Cursors.Hand;
-            donation42.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            donation42.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             donation42.ForeColor = Color.FromArgb(224, 224, 224);
             donation42.Location = new Point(720, 432);
             donation42.Name = "donation42";
-            donation42.Size = new Size(58, 15);
+            donation42.Size = new Size(61, 16);
             donation42.TabIndex = 67;
             donation42.Text = "Donation";
             donation42.TextAlign = ContentAlignment.TopRight;
@@ -1244,11 +1244,11 @@
             authorUrl42.AutoSize = true;
             authorUrl42.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl42.Cursor = Cursors.Hand;
-            authorUrl42.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl42.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl42.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl42.Location = new Point(648, 381);
             authorUrl42.Name = "authorUrl42";
-            authorUrl42.Size = new Size(36, 15);
+            authorUrl42.Size = new Size(30, 16);
             authorUrl42.TabIndex = 66;
             authorUrl42.Text = "ff7.fr";
             authorUrl42.TextAlign = ContentAlignment.TopRight;
@@ -1259,11 +1259,11 @@
             authorUrl42b.AutoSize = true;
             authorUrl42b.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl42b.Cursor = Cursors.Hand;
-            authorUrl42b.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl42b.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl42b.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl42b.Location = new Point(682, 381);
             authorUrl42b.Name = "authorUrl42b";
-            authorUrl42b.Size = new Size(74, 15);
+            authorUrl42b.Size = new Size(76, 16);
             authorUrl42b.TabIndex = 65;
             authorUrl42b.Text = "qhimm.com";
             authorUrl42b.TextAlign = ContentAlignment.TopRight;
@@ -1274,11 +1274,11 @@
             authorUrl17.AutoSize = true;
             authorUrl17.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl17.Cursor = Cursors.Hand;
-            authorUrl17.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl17.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl17.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl17.Location = new Point(648, 294);
             authorUrl17.Name = "authorUrl17";
-            authorUrl17.Size = new Size(74, 15);
+            authorUrl17.Size = new Size(76, 16);
             authorUrl17.TabIndex = 64;
             authorUrl17.Text = "qhimm.com";
             authorUrl17.TextAlign = ContentAlignment.TopRight;
@@ -1289,11 +1289,11 @@
             donation16.AutoSize = true;
             donation16.BackColor = Color.FromArgb(12, 120, 120);
             donation16.Cursor = Cursors.Hand;
-            donation16.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            donation16.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             donation16.ForeColor = Color.FromArgb(224, 224, 224);
             donation16.Location = new Point(720, 277);
             donation16.Name = "donation16";
-            donation16.Size = new Size(58, 15);
+            donation16.Size = new Size(61, 16);
             donation16.TabIndex = 63;
             donation16.Text = "Donation";
             donation16.TextAlign = ContentAlignment.TopRight;
@@ -1304,11 +1304,11 @@
             authorUrl16.AutoSize = true;
             authorUrl16.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl16.Cursor = Cursors.Hand;
-            authorUrl16.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl16.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl16.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl16.Location = new Point(648, 277);
             authorUrl16.Name = "authorUrl16";
-            authorUrl16.Size = new Size(74, 15);
+            authorUrl16.Size = new Size(76, 16);
             authorUrl16.TabIndex = 62;
             authorUrl16.Text = "qhimm.com";
             authorUrl16.TextAlign = ContentAlignment.TopRight;
@@ -1319,11 +1319,11 @@
             donation13.AutoSize = true;
             donation13.BackColor = Color.FromArgb(12, 120, 120);
             donation13.Cursor = Cursors.Hand;
-            donation13.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            donation13.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             donation13.ForeColor = Color.FromArgb(224, 224, 224);
             donation13.Location = new Point(720, 226);
             donation13.Name = "donation13";
-            donation13.Size = new Size(58, 15);
+            donation13.Size = new Size(61, 16);
             donation13.TabIndex = 61;
             donation13.Text = "Donation";
             donation13.TextAlign = ContentAlignment.TopRight;
@@ -1334,11 +1334,11 @@
             authorUrl13.AutoSize = true;
             authorUrl13.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl13.Cursor = Cursors.Hand;
-            authorUrl13.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl13.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl13.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl13.Location = new Point(648, 226);
             authorUrl13.Name = "authorUrl13";
-            authorUrl13.Size = new Size(73, 15);
+            authorUrl13.Size = new Size(76, 16);
             authorUrl13.TabIndex = 60;
             authorUrl13.Text = "nexusmods";
             authorUrl13.TextAlign = ContentAlignment.TopRight;
@@ -1349,11 +1349,11 @@
             authorUrl11.AutoSize = true;
             authorUrl11.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl11.Cursor = Cursors.Hand;
-            authorUrl11.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl11.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl11.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl11.Location = new Point(648, 192);
             authorUrl11.Name = "authorUrl11";
-            authorUrl11.Size = new Size(36, 15);
+            authorUrl11.Size = new Size(30, 16);
             authorUrl11.TabIndex = 58;
             authorUrl11.Text = "ff7.fr";
             authorUrl11.TextAlign = ContentAlignment.TopRight;
@@ -1364,11 +1364,11 @@
             authorUrl11b.AutoSize = true;
             authorUrl11b.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl11b.Cursor = Cursors.Hand;
-            authorUrl11b.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl11b.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl11b.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl11b.Location = new Point(682, 193);
             authorUrl11b.Name = "authorUrl11b";
-            authorUrl11b.Size = new Size(74, 15);
+            authorUrl11b.Size = new Size(76, 16);
             authorUrl11b.TabIndex = 57;
             authorUrl11b.Text = "qhimm.com";
             authorUrl11b.TextAlign = ContentAlignment.TopRight;
@@ -1379,11 +1379,11 @@
             authorUrl10.AutoSize = true;
             authorUrl10.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl10.Cursor = Cursors.Hand;
-            authorUrl10.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl10.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl10.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl10.Location = new Point(648, 175);
             authorUrl10.Name = "authorUrl10";
-            authorUrl10.Size = new Size(74, 15);
+            authorUrl10.Size = new Size(76, 16);
             authorUrl10.TabIndex = 56;
             authorUrl10.Text = "qhimm.com";
             authorUrl10.TextAlign = ContentAlignment.TopRight;
@@ -1394,11 +1394,11 @@
             authorUrl8.AutoSize = true;
             authorUrl8.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl8.Cursor = Cursors.Hand;
-            authorUrl8.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl8.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl8.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl8.Location = new Point(648, 141);
             authorUrl8.Name = "authorUrl8";
-            authorUrl8.Size = new Size(74, 15);
+            authorUrl8.Size = new Size(76, 16);
             authorUrl8.TabIndex = 55;
             authorUrl8.Text = "qhimm.com";
             authorUrl8.TextAlign = ContentAlignment.TopRight;
@@ -1409,11 +1409,11 @@
             authorUrl7.AutoSize = true;
             authorUrl7.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl7.Cursor = Cursors.Hand;
-            authorUrl7.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl7.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl7.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl7.Location = new Point(648, 124);
             authorUrl7.Name = "authorUrl7";
-            authorUrl7.Size = new Size(74, 15);
+            authorUrl7.Size = new Size(76, 16);
             authorUrl7.TabIndex = 54;
             authorUrl7.Text = "qhimm.com";
             authorUrl7.TextAlign = ContentAlignment.TopRight;
@@ -1424,11 +1424,11 @@
             donation6.AutoSize = true;
             donation6.BackColor = Color.FromArgb(12, 120, 120);
             donation6.Cursor = Cursors.Hand;
-            donation6.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            donation6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             donation6.ForeColor = Color.FromArgb(224, 224, 224);
             donation6.Location = new Point(720, 107);
             donation6.Name = "donation6";
-            donation6.Size = new Size(58, 15);
+            donation6.Size = new Size(61, 16);
             donation6.TabIndex = 53;
             donation6.Text = "Donation";
             donation6.TextAlign = ContentAlignment.TopRight;
@@ -1439,11 +1439,11 @@
             authorUrl6.AutoSize = true;
             authorUrl6.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl6.Cursor = Cursors.Hand;
-            authorUrl6.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl6.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl6.Location = new Point(648, 107);
             authorUrl6.Name = "authorUrl6";
-            authorUrl6.Size = new Size(74, 15);
+            authorUrl6.Size = new Size(76, 16);
             authorUrl6.TabIndex = 52;
             authorUrl6.Text = "qhimm.com";
             authorUrl6.TextAlign = ContentAlignment.TopRight;
@@ -1454,11 +1454,11 @@
             donation5.AutoSize = true;
             donation5.BackColor = Color.FromArgb(12, 120, 120);
             donation5.Cursor = Cursors.Hand;
-            donation5.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            donation5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             donation5.ForeColor = Color.FromArgb(224, 224, 224);
             donation5.Location = new Point(720, 90);
             donation5.Name = "donation5";
-            donation5.Size = new Size(58, 15);
+            donation5.Size = new Size(61, 16);
             donation5.TabIndex = 51;
             donation5.Text = "Donation";
             donation5.TextAlign = ContentAlignment.TopRight;
@@ -1469,11 +1469,11 @@
             authorUrl5.AutoSize = true;
             authorUrl5.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl5.Cursor = Cursors.Hand;
-            authorUrl5.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl5.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl5.Location = new Point(648, 90);
             authorUrl5.Name = "authorUrl5";
-            authorUrl5.Size = new Size(74, 15);
+            authorUrl5.Size = new Size(76, 16);
             authorUrl5.TabIndex = 50;
             authorUrl5.Text = "qhimm.com";
             authorUrl5.TextAlign = ContentAlignment.TopRight;
@@ -1484,11 +1484,11 @@
             donation4.AutoSize = true;
             donation4.BackColor = Color.FromArgb(12, 120, 120);
             donation4.Cursor = Cursors.Hand;
-            donation4.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            donation4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             donation4.ForeColor = Color.FromArgb(224, 224, 224);
             donation4.Location = new Point(720, 73);
             donation4.Name = "donation4";
-            donation4.Size = new Size(58, 15);
+            donation4.Size = new Size(61, 16);
             donation4.TabIndex = 49;
             donation4.Text = "Donation";
             donation4.TextAlign = ContentAlignment.TopRight;
@@ -1499,11 +1499,11 @@
             authorUrl4.AutoSize = true;
             authorUrl4.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl4.Cursor = Cursors.Hand;
-            authorUrl4.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl4.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl4.Location = new Point(648, 73);
             authorUrl4.Name = "authorUrl4";
-            authorUrl4.Size = new Size(74, 15);
+            authorUrl4.Size = new Size(76, 16);
             authorUrl4.TabIndex = 48;
             authorUrl4.Text = "qhimm.com";
             authorUrl4.TextAlign = ContentAlignment.TopRight;
@@ -1514,11 +1514,11 @@
             donation2.AutoSize = true;
             donation2.BackColor = Color.FromArgb(12, 120, 120);
             donation2.Cursor = Cursors.Hand;
-            donation2.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            donation2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             donation2.ForeColor = Color.FromArgb(224, 224, 224);
             donation2.Location = new Point(720, 56);
             donation2.Name = "donation2";
-            donation2.Size = new Size(58, 15);
+            donation2.Size = new Size(61, 16);
             donation2.TabIndex = 47;
             donation2.Text = "Donation";
             donation2.TextAlign = ContentAlignment.TopRight;
@@ -1529,11 +1529,11 @@
             authorUrl3.AutoSize = true;
             authorUrl3.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl3.Cursor = Cursors.Hand;
-            authorUrl3.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl3.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl3.Location = new Point(648, 56);
             authorUrl3.Name = "authorUrl3";
-            authorUrl3.Size = new Size(36, 15);
+            authorUrl3.Size = new Size(30, 16);
             authorUrl3.TabIndex = 46;
             authorUrl3.Text = "ff7.fr";
             authorUrl3.TextAlign = ContentAlignment.TopRight;
@@ -1544,11 +1544,11 @@
             donation1.AutoSize = true;
             donation1.BackColor = Color.FromArgb(12, 120, 120);
             donation1.Cursor = Cursors.Hand;
-            donation1.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            donation1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             donation1.ForeColor = Color.FromArgb(224, 224, 224);
             donation1.Location = new Point(720, 39);
             donation1.Name = "donation1";
-            donation1.Size = new Size(58, 15);
+            donation1.Size = new Size(61, 16);
             donation1.TabIndex = 45;
             donation1.Text = "Donation";
             donation1.TextAlign = ContentAlignment.TopRight;
@@ -1559,11 +1559,11 @@
             authorUrl2.AutoSize = true;
             authorUrl2.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl2.Cursor = Cursors.Hand;
-            authorUrl2.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl2.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl2.Location = new Point(648, 39);
             authorUrl2.Name = "authorUrl2";
-            authorUrl2.Size = new Size(36, 15);
+            authorUrl2.Size = new Size(30, 16);
             authorUrl2.TabIndex = 44;
             authorUrl2.Text = "ff7.fr";
             authorUrl2.TextAlign = ContentAlignment.TopRight;
@@ -1574,11 +1574,11 @@
             authorUrl1.AutoSize = true;
             authorUrl1.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl1.Cursor = Cursors.Hand;
-            authorUrl1.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl1.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl1.Location = new Point(648, 22);
             authorUrl1.Name = "authorUrl1";
-            authorUrl1.Size = new Size(36, 15);
+            authorUrl1.Size = new Size(30, 16);
             authorUrl1.TabIndex = 43;
             authorUrl1.Text = "ff7.fr";
             authorUrl1.TextAlign = ContentAlignment.TopRight;
@@ -1589,11 +1589,11 @@
             authorUrl1b.AutoSize = true;
             authorUrl1b.BackColor = Color.FromArgb(6, 60, 60);
             authorUrl1b.Cursor = Cursors.Hand;
-            authorUrl1b.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
+            authorUrl1b.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl1b.ForeColor = Color.FromArgb(224, 224, 224);
             authorUrl1b.Location = new Point(682, 22);
             authorUrl1b.Name = "authorUrl1b";
-            authorUrl1b.Size = new Size(74, 15);
+            authorUrl1b.Size = new Size(76, 16);
             authorUrl1b.TabIndex = 42;
             authorUrl1b.Text = "qhimm.com";
             authorUrl1b.TextAlign = ContentAlignment.TopRight;
@@ -1602,7 +1602,7 @@
             // author99
             // 
             author99.BackColor = Color.Transparent;
-            author99.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            author99.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             author99.ForeColor = Color.FromArgb(32, 225, 229);
             author99.Location = new Point(103, 462);
             author99.Name = "author99";
@@ -1612,7 +1612,7 @@
             // authorName99
             // 
             authorName99.BackColor = Color.Transparent;
-            authorName99.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            authorName99.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             authorName99.ForeColor = Color.White;
             authorName99.Location = new Point(11, 462);
             authorName99.Name = "authorName99";
@@ -1623,7 +1623,7 @@
             // author18
             // 
             author18.BackColor = Color.Transparent;
-            author18.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author18.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author18.ForeColor = Color.FromArgb(32, 225, 229);
             author18.Location = new Point(93, 311);
             author18.Name = "author18";
@@ -1633,7 +1633,7 @@
             // author17
             // 
             author17.BackColor = Color.Transparent;
-            author17.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author17.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author17.ForeColor = Color.FromArgb(32, 225, 229);
             author17.Location = new Point(75, 294);
             author17.Name = "author17";
@@ -1643,7 +1643,7 @@
             // author16
             // 
             author16.BackColor = Color.Transparent;
-            author16.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author16.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author16.ForeColor = Color.FromArgb(32, 225, 229);
             author16.Location = new Point(84, 277);
             author16.Name = "author16";
@@ -1653,7 +1653,7 @@
             // author42
             // 
             author42.BackColor = Color.Transparent;
-            author42.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            author42.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             author42.ForeColor = Color.FromArgb(32, 225, 229);
             author42.Location = new Point(140, 381);
             author42.Name = "author42";
@@ -1663,7 +1663,7 @@
             // author15
             // 
             author15.BackColor = Color.Transparent;
-            author15.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author15.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author15.ForeColor = Color.FromArgb(32, 225, 229);
             author15.Location = new Point(107, 260);
             author15.Name = "author15";
@@ -1673,7 +1673,7 @@
             // author14
             // 
             author14.BackColor = Color.Transparent;
-            author14.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author14.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author14.ForeColor = Color.FromArgb(32, 225, 229);
             author14.Location = new Point(84, 243);
             author14.Name = "author14";
@@ -1683,7 +1683,7 @@
             // author13
             // 
             author13.BackColor = Color.Transparent;
-            author13.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author13.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author13.ForeColor = Color.FromArgb(32, 225, 229);
             author13.Location = new Point(77, 226);
             author13.Name = "author13";
@@ -1693,7 +1693,7 @@
             // author12
             // 
             author12.BackColor = Color.Transparent;
-            author12.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author12.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author12.ForeColor = Color.FromArgb(32, 225, 229);
             author12.Location = new Point(69, 209);
             author12.Name = "author12";
@@ -1703,7 +1703,7 @@
             // author11
             // 
             author11.BackColor = Color.Transparent;
-            author11.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author11.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author11.ForeColor = Color.FromArgb(32, 225, 229);
             author11.Location = new Point(64, 192);
             author11.Name = "author11";
@@ -1713,7 +1713,7 @@
             // author10
             // 
             author10.BackColor = Color.Transparent;
-            author10.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author10.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author10.ForeColor = Color.FromArgb(32, 225, 229);
             author10.Location = new Point(67, 175);
             author10.Name = "author10";
@@ -1723,7 +1723,7 @@
             // author9
             // 
             author9.BackColor = Color.Transparent;
-            author9.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author9.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author9.ForeColor = Color.FromArgb(32, 225, 229);
             author9.Location = new Point(63, 158);
             author9.Name = "author9";
@@ -1733,7 +1733,7 @@
             // author8
             // 
             author8.BackColor = Color.Transparent;
-            author8.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author8.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author8.ForeColor = Color.FromArgb(32, 225, 229);
             author8.Location = new Point(87, 141);
             author8.Name = "author8";
@@ -1743,7 +1743,7 @@
             // author7
             // 
             author7.BackColor = Color.Transparent;
-            author7.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author7.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author7.ForeColor = Color.FromArgb(32, 225, 229);
             author7.Location = new Point(68, 124);
             author7.Name = "author7";
@@ -1753,7 +1753,7 @@
             // author6
             // 
             author6.BackColor = Color.Transparent;
-            author6.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author6.ForeColor = Color.FromArgb(32, 225, 229);
             author6.Location = new Point(77, 107);
             author6.Name = "author6";
@@ -1763,7 +1763,7 @@
             // author5
             // 
             author5.BackColor = Color.Transparent;
-            author5.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author5.ForeColor = Color.FromArgb(32, 225, 229);
             author5.Location = new Point(94, 90);
             author5.Name = "author5";
@@ -1773,7 +1773,7 @@
             // author4
             // 
             author4.BackColor = Color.Transparent;
-            author4.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author4.ForeColor = Color.FromArgb(32, 225, 229);
             author4.Location = new Point(58, 73);
             author4.Name = "author4";
@@ -1783,7 +1783,7 @@
             // author3
             // 
             author3.BackColor = Color.Transparent;
-            author3.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author3.ForeColor = Color.FromArgb(32, 225, 229);
             author3.Location = new Point(91, 56);
             author3.Name = "author3";
@@ -1793,7 +1793,7 @@
             // author2
             // 
             author2.BackColor = Color.Transparent;
-            author2.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author2.ForeColor = Color.FromArgb(32, 225, 229);
             author2.Location = new Point(50, 39);
             author2.Name = "author2";
@@ -1803,7 +1803,7 @@
             // author1
             // 
             author1.BackColor = Color.Transparent;
-            author1.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            author1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author1.ForeColor = Color.FromArgb(32, 225, 229);
             author1.Location = new Point(64, 22);
             author1.Name = "author1";
@@ -1983,7 +1983,7 @@
             // authorName42
             // 
             authorName42.BackColor = Color.Transparent;
-            authorName42.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            authorName42.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             authorName42.ForeColor = Color.White;
             authorName42.Location = new Point(11, 381);
             authorName42.Name = "authorName42";
@@ -2004,7 +2004,7 @@
             // aboutFrame2
             // 
             aboutFrame2.Controls.Add(packStory);
-            aboutFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            aboutFrame2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             aboutFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             aboutFrame2.Location = new Point(3, 523);
             aboutFrame2.Name = "aboutFrame2";
@@ -2016,7 +2016,7 @@
             // packStory
             // 
             packStory.BackColor = Color.FromArgb(89, 98, 111);
-            packStory.Font = new Font("Roboto", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
+            packStory.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             packStory.ForeColor = Color.White;
             packStory.Location = new Point(11, 24);
             packStory.Name = "packStory";
@@ -2030,7 +2030,7 @@
             menuSoundPanel.Controls.Add(soundFrame4);
             menuSoundPanel.Controls.Add(soundFrame2);
             menuSoundPanel.Controls.Add(soundFrame3);
-            menuSoundPanel.Location = new Point(327, 1600);
+            menuSoundPanel.Location = new Point(327, 0);
             menuSoundPanel.Name = "menuSoundPanel";
             menuSoundPanel.Size = new Size(795, 703);
             menuSoundPanel.TabIndex = 12;
@@ -2038,7 +2038,7 @@
             // soundFrame5
             // 
             soundFrame5.Controls.Add(soundPrevPic);
-            soundFrame5.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             soundFrame5.ForeColor = Color.FromArgb(224, 224, 224);
             soundFrame5.Location = new Point(268, 352);
             soundFrame5.Name = "soundFrame5";
@@ -2059,7 +2059,7 @@
             // 
             soundFrame4.Controls.Add(soundsListHelp);
             soundFrame4.Controls.Add(soundsList);
-            soundFrame4.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             soundFrame4.ForeColor = Color.FromArgb(224, 224, 224);
             soundFrame4.Location = new Point(3, 352);
             soundFrame4.Name = "soundFrame4";
@@ -2072,7 +2072,7 @@
             // soundsListHelp
             // 
             soundsListHelp.BackColor = Color.FromArgb(89, 98, 111);
-            soundsListHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsListHelp.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             soundsListHelp.ForeColor = Color.FromArgb(32, 225, 229);
             soundsListHelp.Location = new Point(11, 22);
             soundsListHelp.Name = "soundsListHelp";
@@ -2085,13 +2085,13 @@
             soundsList.BackColor = Color.FromArgb(89, 98, 111);
             soundsList.BorderStyle = BorderStyle.FixedSingle;
             soundsList.Cursor = Cursors.Hand;
-            soundsList.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsList.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             soundsList.ForeColor = Color.FromArgb(224, 224, 224);
             soundsList.FormattingEnabled = true;
-            soundsList.ItemHeight = 15;
+            soundsList.ItemHeight = 16;
             soundsList.Location = new Point(11, 172);
             soundsList.Name = "soundsList";
-            soundsList.Size = new Size(238, 167);
+            soundsList.Size = new Size(238, 162);
             soundsList.TabIndex = 0;
             soundsList.SelectedIndexChanged += soundsList_SelectedIndexChanged;
             // 
@@ -2099,7 +2099,7 @@
             // 
             soundFrame2.Controls.Add(soundsHelp);
             soundFrame2.Controls.Add(soundsHelpAuthor);
-            soundFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             soundFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             soundFrame2.Location = new Point(395, 4);
             soundFrame2.Name = "soundFrame2";
@@ -2112,7 +2112,7 @@
             // 
             soundsHelp.BackColor = Color.FromArgb(89, 98, 111);
             soundsHelp.BorderStyle = BorderStyle.None;
-            soundsHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsHelp.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             soundsHelp.ForeColor = Color.FromArgb(32, 225, 229);
             soundsHelp.Location = new Point(11, 22);
             soundsHelp.Multiline = true;
@@ -2126,7 +2126,7 @@
             // 
             soundsHelpAuthor.BackColor = Color.Black;
             soundsHelpAuthor.Cursor = Cursors.Hand;
-            soundsHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundsHelpAuthor.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             soundsHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             soundsHelpAuthor.Location = new Point(11, 308);
             soundsHelpAuthor.Name = "soundsHelpAuthor";
@@ -2142,7 +2142,7 @@
             soundFrame3.Controls.Add(soundsGroupAmbients);
             soundFrame3.Controls.Add(soundsGroupSfx);
             soundFrame3.Controls.Add(soundsGroupMusics);
-            soundFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             soundFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             soundFrame3.Location = new Point(3, 4);
             soundFrame3.Name = "soundFrame3";
@@ -2156,7 +2156,7 @@
             soundsGroupVoices.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupVoices.Controls.Add(voicesPrev);
             soundsGroupVoices.Controls.Add(soundsVoices);
-            soundsGroupVoices.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupVoices.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             soundsGroupVoices.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupVoices.Location = new Point(11, 271);
             soundsGroupVoices.Name = "soundsGroupVoices";
@@ -2175,7 +2175,7 @@
             soundsVoices.FormattingEnabled = true;
             soundsVoices.Location = new Point(9, 23);
             soundsVoices.Name = "soundsVoices";
-            soundsVoices.Size = new Size(315, 23);
+            soundsVoices.Size = new Size(315, 24);
             soundsVoices.TabIndex = 0;
             soundsVoices.SelectedIndexChanged += soundsVoicesChange;
             soundsVoices.Click += getMousePos;
@@ -2185,7 +2185,7 @@
             soundsGroupFMV.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupFMV.Controls.Add(fmvPrev);
             soundsGroupFMV.Controls.Add(soundsFMV);
-            soundsGroupFMV.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupFMV.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             soundsGroupFMV.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupFMV.Location = new Point(11, 208);
             soundsGroupFMV.Name = "soundsGroupFMV";
@@ -2204,7 +2204,7 @@
             soundsFMV.FormattingEnabled = true;
             soundsFMV.Location = new Point(9, 23);
             soundsFMV.Name = "soundsFMV";
-            soundsFMV.Size = new Size(315, 23);
+            soundsFMV.Size = new Size(315, 24);
             soundsFMV.TabIndex = 0;
             soundsFMV.SelectedIndexChanged += soundsFMVChange;
             soundsFMV.Click += getMousePos;
@@ -2214,7 +2214,7 @@
             soundsGroupAmbients.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupAmbients.Controls.Add(ambiantPrev);
             soundsGroupAmbients.Controls.Add(soundsAmbients);
-            soundsGroupAmbients.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupAmbients.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             soundsGroupAmbients.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupAmbients.Location = new Point(11, 84);
             soundsGroupAmbients.Name = "soundsGroupAmbients";
@@ -2233,7 +2233,7 @@
             soundsAmbients.FormattingEnabled = true;
             soundsAmbients.Location = new Point(9, 23);
             soundsAmbients.Name = "soundsAmbients";
-            soundsAmbients.Size = new Size(315, 23);
+            soundsAmbients.Size = new Size(315, 24);
             soundsAmbients.TabIndex = 0;
             soundsAmbients.SelectedIndexChanged += soundsAmbiantChange;
             soundsAmbients.Click += getMousePos;
@@ -2243,7 +2243,7 @@
             soundsGroupSfx.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupSfx.Controls.Add(sfxPrev);
             soundsGroupSfx.Controls.Add(soundsSfx);
-            soundsGroupSfx.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupSfx.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             soundsGroupSfx.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupSfx.Location = new Point(11, 146);
             soundsGroupSfx.Name = "soundsGroupSfx";
@@ -2262,7 +2262,7 @@
             soundsSfx.FormattingEnabled = true;
             soundsSfx.Location = new Point(9, 22);
             soundsSfx.Name = "soundsSfx";
-            soundsSfx.Size = new Size(315, 23);
+            soundsSfx.Size = new Size(315, 24);
             soundsSfx.TabIndex = 0;
             soundsSfx.SelectedIndexChanged += soundsSfxChange;
             soundsSfx.Click += getMousePos;
@@ -2272,7 +2272,7 @@
             soundsGroupMusics.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupMusics.Controls.Add(musicsPrev);
             soundsGroupMusics.Controls.Add(soundsMusics);
-            soundsGroupMusics.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupMusics.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             soundsGroupMusics.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupMusics.Location = new Point(11, 22);
             soundsGroupMusics.Name = "soundsGroupMusics";
@@ -2291,7 +2291,7 @@
             soundsMusics.FormattingEnabled = true;
             soundsMusics.Location = new Point(9, 23);
             soundsMusics.Name = "soundsMusics";
-            soundsMusics.Size = new Size(315, 23);
+            soundsMusics.Size = new Size(315, 24);
             soundsMusics.TabIndex = 0;
             soundsMusics.SelectedIndexChanged += soundsMusicsChange;
             soundsMusics.Click += getMousePos;
@@ -2310,7 +2310,7 @@
             // 
             gameplayFrame2.Controls.Add(gameplayHelp);
             gameplayFrame2.Controls.Add(gameplayHelpAuthor);
-            gameplayFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             gameplayFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayFrame2.Location = new Point(3, 102);
             gameplayFrame2.Name = "gameplayFrame2";
@@ -2323,7 +2323,7 @@
             // 
             gameplayHelp.BackColor = Color.FromArgb(89, 98, 111);
             gameplayHelp.BorderStyle = BorderStyle.None;
-            gameplayHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            gameplayHelp.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             gameplayHelp.ForeColor = Color.FromArgb(32, 225, 229);
             gameplayHelp.Location = new Point(12, 20);
             gameplayHelp.Multiline = true;
@@ -2337,7 +2337,7 @@
             // 
             gameplayHelpAuthor.BackColor = Color.Black;
             gameplayHelpAuthor.Cursor = Cursors.Hand;
-            gameplayHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayHelpAuthor.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             gameplayHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             gameplayHelpAuthor.Location = new Point(12, 240);
             gameplayHelpAuthor.Name = "gameplayHelpAuthor";
@@ -2353,7 +2353,7 @@
             gameplayFrame1.Controls.Add(flagFGameplay);
             gameplayFrame1.Controls.Add(flagEGameplay);
             gameplayFrame1.Controls.Add(gameplayGroupMods);
-            gameplayFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             gameplayFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayFrame1.Location = new Point(3, 4);
             gameplayFrame1.Name = "gameplayFrame1";
@@ -2408,7 +2408,7 @@
             gameplayGroupMods.Controls.Add(documentsFolder);
             gameplayGroupMods.Controls.Add(saveByMod);
             gameplayGroupMods.Controls.Add(gameplayMods);
-            gameplayGroupMods.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            gameplayGroupMods.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             gameplayGroupMods.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayGroupMods.Location = new Point(11, 22);
             gameplayGroupMods.Name = "gameplayGroupMods";
@@ -2422,7 +2422,7 @@
             // 
             documentsFolder.BackColor = Color.FromArgb(210, 210, 210);
             documentsFolder.Cursor = Cursors.Hand;
-            documentsFolder.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            documentsFolder.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             documentsFolder.ForeColor = Color.Black;
             documentsFolder.Location = new Point(467, 23);
             documentsFolder.Name = "documentsFolder";
@@ -2438,7 +2438,7 @@
             // 
             saveByMod.BackColor = Color.FromArgb(210, 210, 210);
             saveByMod.Cursor = Cursors.Hand;
-            saveByMod.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            saveByMod.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             saveByMod.ForeColor = Color.Black;
             saveByMod.Location = new Point(285, 23);
             saveByMod.Name = "saveByMod";
@@ -2459,7 +2459,7 @@
             gameplayMods.FormattingEnabled = true;
             gameplayMods.Location = new Point(9, 23);
             gameplayMods.Name = "gameplayMods";
-            gameplayMods.Size = new Size(270, 23);
+            gameplayMods.Size = new Size(270, 24);
             gameplayMods.TabIndex = 0;
             gameplayMods.SelectedIndexChanged += gameplayModsChange;
             gameplayMods.Click += getMousePos;
@@ -2467,7 +2467,7 @@
             // gameplayFrame3
             // 
             gameplayFrame3.Controls.Add(gameplayPrevPic);
-            gameplayFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             gameplayFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayFrame3.Location = new Point(3, 382);
             gameplayFrame3.Name = "gameplayFrame3";
@@ -2499,7 +2499,7 @@
             // 
             FFNxFrame2.Controls.Add(FFNxHelp);
             FFNxFrame2.Controls.Add(FFNxHelpAuthor);
-            FFNxFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             FFNxFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxFrame2.Location = new Point(406, 357);
             FFNxFrame2.Name = "FFNxFrame2";
@@ -2512,7 +2512,7 @@
             // 
             FFNxHelp.BackColor = Color.FromArgb(89, 98, 111);
             FFNxHelp.BorderStyle = BorderStyle.None;
-            FFNxHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxHelp.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxHelp.ForeColor = Color.FromArgb(32, 225, 229);
             FFNxHelp.Location = new Point(11, 22);
             FFNxHelp.Multiline = true;
@@ -2526,7 +2526,7 @@
             // 
             FFNxHelpAuthor.BackColor = Color.Black;
             FFNxHelpAuthor.Cursor = Cursors.Hand;
-            FFNxHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxHelpAuthor.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             FFNxHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             FFNxHelpAuthor.Location = new Point(11, 312);
             FFNxHelpAuthor.Name = "FFNxHelpAuthor";
@@ -2543,7 +2543,7 @@
             FFNxFrame1.Controls.Add(FFNxComboPatchs);
             FFNxFrame1.Controls.Add(flagFFFNxPatch);
             FFNxFrame1.Controls.Add(flagEFFNxPatch);
-            FFNxFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             FFNxFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxFrame1.Location = new Point(3, 356);
             FFNxFrame1.Name = "FFNxFrame1";
@@ -2568,12 +2568,12 @@
             FFNxPatchsList.BorderStyle = BorderStyle.FixedSingle;
             FFNxPatchsList.CheckOnClick = true;
             FFNxPatchsList.Cursor = Cursors.Hand;
-            FFNxPatchsList.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxPatchsList.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxPatchsList.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxPatchsList.FormattingEnabled = true;
             FFNxPatchsList.Location = new Point(11, 22);
             FFNxPatchsList.Name = "FFNxPatchsList";
-            FFNxPatchsList.Size = new Size(375, 272);
+            FFNxPatchsList.Size = new Size(375, 257);
             FFNxPatchsList.TabIndex = 29;
             FFNxPatchsList.MouseMove += FFNxPatchsList_MouseMove;
             // 
@@ -2596,7 +2596,7 @@
             FFNxComboPatchs.FormattingEnabled = true;
             FFNxComboPatchs.Location = new Point(12, 144);
             FFNxComboPatchs.Name = "FFNxComboPatchs";
-            FFNxComboPatchs.Size = new Size(239, 23);
+            FFNxComboPatchs.Size = new Size(239, 24);
             FFNxComboPatchs.TabIndex = 28;
             FFNxComboPatchs.Visible = false;
             // 
@@ -2646,7 +2646,7 @@
             FFNxFrame3.Controls.Add(FFNXSteamSucces);
             FFNxFrame3.Controls.Add(FFNxGroup3dEngine);
             FFNxFrame3.Controls.Add(FFNxLighting);
-            FFNxFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             FFNxFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxFrame3.Location = new Point(3, 4);
             FFNxFrame3.Name = "FFNxFrame3";
@@ -2659,7 +2659,7 @@
             // 
             FFNxDayNight.BackColor = Color.FromArgb(89, 98, 111);
             FFNxDayNight.Cursor = Cursors.Hand;
-            FFNxDayNight.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxDayNight.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxDayNight.Location = new Point(113, 314);
             FFNxDayNight.Name = "FFNxDayNight";
             FFNxDayNight.Size = new Size(150, 19);
@@ -2674,7 +2674,7 @@
             FFNxNoCd.Checked = true;
             FFNxNoCd.CheckState = CheckState.Checked;
             FFNxNoCd.Cursor = Cursors.Hand;
-            FFNxNoCd.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxNoCd.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxNoCd.Location = new Point(414, 314);
             FFNxNoCd.Name = "FFNxNoCd";
             FFNxNoCd.Size = new Size(106, 19);
@@ -2687,7 +2687,7 @@
             // 
             FFNxGroupFps.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupFps.Controls.Add(FFNxFps);
-            FFNxGroupFps.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupFps.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupFps.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupFps.Location = new Point(525, 146);
             FFNxGroupFps.Name = "FFNxGroupFps";
@@ -2707,7 +2707,7 @@
             FFNxFps.FormattingEnabled = true;
             FFNxFps.Location = new Point(9, 23);
             FFNxFps.Name = "FFNxFps";
-            FFNxFps.Size = new Size(232, 23);
+            FFNxFps.Size = new Size(232, 24);
             FFNxFps.TabIndex = 0;
             FFNxFps.SelectedIndexChanged += setMousePos;
             FFNxFps.Click += getMousePos;
@@ -2716,7 +2716,7 @@
             // 
             FFNxShowStats.BackColor = Color.FromArgb(89, 98, 111);
             FFNxShowStats.Cursor = Cursors.Hand;
-            FFNxShowStats.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxShowStats.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxShowStats.Location = new Point(525, 292);
             FFNxShowStats.Name = "FFNxShowStats";
             FFNxShowStats.Size = new Size(252, 19);
@@ -2729,7 +2729,7 @@
             // 
             FFNxDebugTool.BackColor = Color.FromArgb(89, 98, 111);
             FFNxDebugTool.Cursor = Cursors.Hand;
-            FFNxDebugTool.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxDebugTool.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxDebugTool.Location = new Point(525, 314);
             FFNxDebugTool.Name = "FFNxDebugTool";
             FFNxDebugTool.Size = new Size(124, 19);
@@ -2742,7 +2742,7 @@
             // 
             FFNxFootSteps.BackColor = Color.FromArgb(89, 98, 111);
             FFNxFootSteps.Cursor = Cursors.Hand;
-            FFNxFootSteps.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxFootSteps.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxFootSteps.Location = new Point(268, 292);
             FFNxFootSteps.Name = "FFNxFootSteps";
             FFNxFootSteps.Size = new Size(252, 19);
@@ -2755,7 +2755,7 @@
             // 
             FFNxLogs.BackColor = Color.FromArgb(89, 98, 111);
             FFNxLogs.Cursor = Cursors.Hand;
-            FFNxLogs.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxLogs.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxLogs.Location = new Point(653, 314);
             FFNxLogs.Name = "FFNxLogs";
             FFNxLogs.Size = new Size(124, 19);
@@ -2770,7 +2770,7 @@
             FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackMax);
             FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackMin);
             FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackStep);
-            FFNxGroupSpeedhack.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupSpeedhack.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupSpeedhack.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupSpeedhack.Location = new Point(525, 22);
             FFNxGroupSpeedhack.Name = "FFNxGroupSpeedhack";
@@ -2790,7 +2790,7 @@
             FFNxSpeedhackMax.FormattingEnabled = true;
             FFNxSpeedhackMax.Location = new Point(165, 23);
             FFNxSpeedhackMax.Name = "FFNxSpeedhackMax";
-            FFNxSpeedhackMax.Size = new Size(76, 23);
+            FFNxSpeedhackMax.Size = new Size(76, 24);
             FFNxSpeedhackMax.TabIndex = 2;
             FFNxSpeedhackMax.SelectedIndexChanged += setMousePos;
             FFNxSpeedhackMax.Click += getMousePos;
@@ -2804,7 +2804,7 @@
             FFNxSpeedhackMin.FormattingEnabled = true;
             FFNxSpeedhackMin.Location = new Point(87, 23);
             FFNxSpeedhackMin.Name = "FFNxSpeedhackMin";
-            FFNxSpeedhackMin.Size = new Size(76, 23);
+            FFNxSpeedhackMin.Size = new Size(76, 24);
             FFNxSpeedhackMin.TabIndex = 1;
             FFNxSpeedhackMin.SelectedIndexChanged += setMousePos;
             FFNxSpeedhackMin.Click += getMousePos;
@@ -2818,7 +2818,7 @@
             FFNxSpeedhackStep.FormattingEnabled = true;
             FFNxSpeedhackStep.Location = new Point(9, 23);
             FFNxSpeedhackStep.Name = "FFNxSpeedhackStep";
-            FFNxSpeedhackStep.Size = new Size(76, 23);
+            FFNxSpeedhackStep.Size = new Size(76, 24);
             FFNxSpeedhackStep.TabIndex = 0;
             FFNxSpeedhackStep.SelectedIndexChanged += setMousePos;
             FFNxSpeedhackStep.Click += getMousePos;
@@ -2829,7 +2829,7 @@
             FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneRT);
             FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneLT);
             FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneStick);
-            FFNxGroupControllerDeathzones.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupControllerDeathzones.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupControllerDeathzones.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupControllerDeathzones.Location = new Point(525, 84);
             FFNxGroupControllerDeathzones.Name = "FFNxGroupControllerDeathzones";
@@ -2849,7 +2849,7 @@
             FFNxContolerDeathzoneRT.FormattingEnabled = true;
             FFNxContolerDeathzoneRT.Location = new Point(165, 23);
             FFNxContolerDeathzoneRT.Name = "FFNxContolerDeathzoneRT";
-            FFNxContolerDeathzoneRT.Size = new Size(76, 23);
+            FFNxContolerDeathzoneRT.Size = new Size(76, 24);
             FFNxContolerDeathzoneRT.TabIndex = 2;
             FFNxContolerDeathzoneRT.SelectedIndexChanged += setMousePos;
             FFNxContolerDeathzoneRT.Click += getMousePos;
@@ -2863,7 +2863,7 @@
             FFNxContolerDeathzoneLT.FormattingEnabled = true;
             FFNxContolerDeathzoneLT.Location = new Point(87, 23);
             FFNxContolerDeathzoneLT.Name = "FFNxContolerDeathzoneLT";
-            FFNxContolerDeathzoneLT.Size = new Size(76, 23);
+            FFNxContolerDeathzoneLT.Size = new Size(76, 24);
             FFNxContolerDeathzoneLT.TabIndex = 1;
             FFNxContolerDeathzoneLT.SelectedIndexChanged += setMousePos;
             FFNxContolerDeathzoneLT.Click += getMousePos;
@@ -2877,7 +2877,7 @@
             FFNxContolerDeathzoneStick.FormattingEnabled = true;
             FFNxContolerDeathzoneStick.Location = new Point(9, 23);
             FFNxContolerDeathzoneStick.Name = "FFNxContolerDeathzoneStick";
-            FFNxContolerDeathzoneStick.Size = new Size(76, 23);
+            FFNxContolerDeathzoneStick.Size = new Size(76, 24);
             FFNxContolerDeathzoneStick.TabIndex = 0;
             FFNxContolerDeathzoneStick.SelectedIndexChanged += setMousePos;
             FFNxContolerDeathzoneStick.Click += getMousePos;
@@ -2886,7 +2886,7 @@
             // 
             FFNxGroupAudioSample.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupAudioSample.Controls.Add(FFNxAudioSample);
-            FFNxGroupAudioSample.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAudioSample.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupAudioSample.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAudioSample.Location = new Point(268, 208);
             FFNxGroupAudioSample.Name = "FFNxGroupAudioSample";
@@ -2906,7 +2906,7 @@
             FFNxAudioSample.FormattingEnabled = true;
             FFNxAudioSample.Location = new Point(9, 23);
             FFNxAudioSample.Name = "FFNxAudioSample";
-            FFNxAudioSample.Size = new Size(232, 23);
+            FFNxAudioSample.Size = new Size(232, 24);
             FFNxAudioSample.TabIndex = 0;
             FFNxAudioSample.SelectedIndexChanged += setMousePos;
             FFNxAudioSample.Click += getMousePos;
@@ -2915,7 +2915,7 @@
             // 
             FFNxGroupIR.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupIR.Controls.Add(FFNxIR);
-            FFNxGroupIR.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupIR.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupIR.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupIR.Location = new Point(268, 22);
             FFNxGroupIR.Name = "FFNxGroupIR";
@@ -2935,7 +2935,7 @@
             FFNxIR.FormattingEnabled = true;
             FFNxIR.Location = new Point(9, 23);
             FFNxIR.Name = "FFNxIR";
-            FFNxIR.Size = new Size(232, 23);
+            FFNxIR.Size = new Size(232, 24);
             FFNxIR.TabIndex = 0;
             FFNxIR.SelectedIndexChanged += setMousePos;
             FFNxIR.Click += getMousePos;
@@ -2944,7 +2944,7 @@
             // 
             FFNxGroupAudioChannels.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupAudioChannels.Controls.Add(FFNxAudioChannels);
-            FFNxGroupAudioChannels.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAudioChannels.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupAudioChannels.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAudioChannels.Location = new Point(268, 146);
             FFNxGroupAudioChannels.Name = "FFNxGroupAudioChannels";
@@ -2964,7 +2964,7 @@
             FFNxAudioChannels.FormattingEnabled = true;
             FFNxAudioChannels.Location = new Point(9, 23);
             FFNxAudioChannels.Name = "FFNxAudioChannels";
-            FFNxAudioChannels.Size = new Size(232, 23);
+            FFNxAudioChannels.Size = new Size(232, 24);
             FFNxAudioChannels.TabIndex = 0;
             FFNxAudioChannels.SelectedIndexChanged += setMousePos;
             FFNxAudioChannels.Click += getMousePos;
@@ -2973,7 +2973,7 @@
             // 
             FFNxGroupAA.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupAA.Controls.Add(FFNxAA);
-            FFNxGroupAA.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAA.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupAA.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAA.Location = new Point(268, 84);
             FFNxGroupAA.Name = "FFNxGroupAA";
@@ -2993,7 +2993,7 @@
             FFNxAA.FormattingEnabled = true;
             FFNxAA.Location = new Point(9, 23);
             FFNxAA.Name = "FFNxAA";
-            FFNxAA.Size = new Size(232, 23);
+            FFNxAA.Size = new Size(232, 24);
             FFNxAA.TabIndex = 0;
             FFNxAA.SelectedIndexChanged += setMousePos;
             FFNxAA.Click += getMousePos;
@@ -3002,7 +3002,7 @@
             // 
             FFNxGroupResolution.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupResolution.Controls.Add(FFNxResolution);
-            FFNxGroupResolution.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupResolution.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupResolution.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupResolution.Location = new Point(11, 146);
             FFNxGroupResolution.Name = "FFNxGroupResolution";
@@ -3022,7 +3022,7 @@
             FFNxResolution.FormattingEnabled = true;
             FFNxResolution.Location = new Point(9, 23);
             FFNxResolution.Name = "FFNxResolution";
-            FFNxResolution.Size = new Size(232, 23);
+            FFNxResolution.Size = new Size(232, 24);
             FFNxResolution.TabIndex = 0;
             FFNxResolution.SelectedIndexChanged += setMousePos;
             FFNxResolution.Click += getMousePos;
@@ -3031,7 +3031,7 @@
             // 
             FFNxGroupHDR.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupHDR.Controls.Add(FFNxHDR);
-            FFNxGroupHDR.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupHDR.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupHDR.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupHDR.Location = new Point(525, 208);
             FFNxGroupHDR.Name = "FFNxGroupHDR";
@@ -3051,7 +3051,7 @@
             FFNxHDR.FormattingEnabled = true;
             FFNxHDR.Location = new Point(9, 23);
             FFNxHDR.Name = "FFNxHDR";
-            FFNxHDR.Size = new Size(232, 23);
+            FFNxHDR.Size = new Size(232, 24);
             FFNxHDR.TabIndex = 0;
             FFNxHDR.SelectedIndexChanged += setMousePos;
             FFNxHDR.Click += getMousePos;
@@ -3060,7 +3060,7 @@
             // 
             FFNxGroupRatio.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupRatio.Controls.Add(FFNxRatio);
-            FFNxGroupRatio.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupRatio.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupRatio.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupRatio.Location = new Point(11, 208);
             FFNxGroupRatio.Name = "FFNxGroupRatio";
@@ -3080,7 +3080,7 @@
             FFNxRatio.FormattingEnabled = true;
             FFNxRatio.Location = new Point(9, 23);
             FFNxRatio.Name = "FFNxRatio";
-            FFNxRatio.Size = new Size(232, 23);
+            FFNxRatio.Size = new Size(232, 24);
             FFNxRatio.TabIndex = 0;
             FFNxRatio.SelectedIndexChanged += setMousePos;
             FFNxRatio.Click += getMousePos;
@@ -3089,7 +3089,7 @@
             // 
             FFNxGroupScreen.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupScreen.Controls.Add(FFNxScreen);
-            FFNxGroupScreen.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupScreen.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupScreen.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupScreen.Location = new Point(11, 84);
             FFNxGroupScreen.Name = "FFNxGroupScreen";
@@ -3109,7 +3109,7 @@
             FFNxScreen.FormattingEnabled = true;
             FFNxScreen.Location = new Point(9, 23);
             FFNxScreen.Name = "FFNxScreen";
-            FFNxScreen.Size = new Size(232, 23);
+            FFNxScreen.Size = new Size(232, 24);
             FFNxScreen.TabIndex = 0;
             FFNxScreen.SelectedIndexChanged += setMousePos;
             FFNxScreen.Click += getMousePos;
@@ -3118,7 +3118,7 @@
             // 
             FFNxVsync.BackColor = Color.FromArgb(89, 98, 111);
             FFNxVsync.Cursor = Cursors.Hand;
-            FFNxVsync.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxVsync.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxVsync.Location = new Point(11, 270);
             FFNxVsync.Name = "FFNxVsync";
             FFNxVsync.Size = new Size(252, 19);
@@ -3131,7 +3131,7 @@
             // 
             FFNXMusicResume.BackColor = Color.FromArgb(89, 98, 111);
             FFNXMusicResume.Cursor = Cursors.Hand;
-            FFNXMusicResume.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNXMusicResume.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNXMusicResume.Location = new Point(268, 270);
             FFNXMusicResume.Name = "FFNXMusicResume";
             FFNXMusicResume.Size = new Size(252, 19);
@@ -3144,7 +3144,7 @@
             // 
             FFNxAnisotropic.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAnisotropic.Cursor = Cursors.Hand;
-            FFNxAnisotropic.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAnisotropic.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxAnisotropic.Location = new Point(11, 292);
             FFNxAnisotropic.Name = "FFNxAnisotropic";
             FFNxAnisotropic.Size = new Size(252, 19);
@@ -3157,7 +3157,7 @@
             // 
             FFNxAnalogController.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAnalogController.Cursor = Cursors.Hand;
-            FFNxAnalogController.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAnalogController.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxAnalogController.Location = new Point(525, 270);
             FFNxAnalogController.Name = "FFNxAnalogController";
             FFNxAnalogController.Size = new Size(252, 19);
@@ -3170,7 +3170,7 @@
             // 
             FFNXSteamSucces.BackColor = Color.FromArgb(89, 98, 111);
             FFNXSteamSucces.Cursor = Cursors.Hand;
-            FFNXSteamSucces.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNXSteamSucces.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNXSteamSucces.Location = new Point(268, 314);
             FFNXSteamSucces.Name = "FFNXSteamSucces";
             FFNXSteamSucces.Size = new Size(142, 19);
@@ -3183,7 +3183,7 @@
             // 
             FFNxGroup3dEngine.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroup3dEngine.Controls.Add(FFNx3dEngine);
-            FFNxGroup3dEngine.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroup3dEngine.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroup3dEngine.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroup3dEngine.Location = new Point(11, 22);
             FFNxGroup3dEngine.Name = "FFNxGroup3dEngine";
@@ -3202,7 +3202,7 @@
             FFNx3dEngine.FormattingEnabled = true;
             FFNx3dEngine.Location = new Point(9, 23);
             FFNx3dEngine.Name = "FFNx3dEngine";
-            FFNx3dEngine.Size = new Size(232, 23);
+            FFNx3dEngine.Size = new Size(232, 24);
             FFNx3dEngine.TabIndex = 0;
             FFNx3dEngine.SelectedIndexChanged += setMousePos;
             FFNx3dEngine.Click += getMousePos;
@@ -3211,7 +3211,7 @@
             // 
             FFNxLighting.BackColor = Color.FromArgb(89, 98, 111);
             FFNxLighting.Cursor = Cursors.Hand;
-            FFNxLighting.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxLighting.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxLighting.Location = new Point(11, 314);
             FFNxLighting.Name = "FFNxLighting";
             FFNxLighting.Size = new Size(98, 19);
@@ -3223,7 +3223,7 @@
             // menuHelpPanel
             // 
             menuHelpPanel.Controls.Add(HelpFrame2);
-            menuHelpPanel.Location = new Point(327, 0);
+            menuHelpPanel.Location = new Point(327, 1600);
             menuHelpPanel.Name = "menuHelpPanel";
             menuHelpPanel.Size = new Size(795, 703);
             menuHelpPanel.TabIndex = 15;
@@ -3231,7 +3231,7 @@
             // HelpFrame2
             // 
             HelpFrame2.Controls.Add(GeneralHelp);
-            HelpFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            HelpFrame2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             HelpFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             HelpFrame2.Location = new Point(3, 4);
             HelpFrame2.Name = "HelpFrame2";
@@ -3239,6 +3239,14 @@
             HelpFrame2.TabIndex = 10;
             HelpFrame2.TabStop = false;
             HelpFrame2.Text = "Aide générale";
+            // 
+            // GeneralHelp
+            // 
+            GeneralHelp.Location = new Point(14, 23);
+            GeneralHelp.Name = "GeneralHelp";
+            GeneralHelp.Size = new Size(762, 662);
+            GeneralHelp.TabIndex = 0;
+            GeneralHelp.Text = "";
             // 
             // menuLaunchGamePanel
             // 
@@ -3253,7 +3261,7 @@
             groupBox2.Controls.Add(loadingAnimation);
             groupBox2.Controls.Add(loadingWaitDetails);
             groupBox2.Controls.Add(loadingWait);
-            groupBox2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox2.ForeColor = Color.FromArgb(224, 224, 224);
             groupBox2.Location = new Point(3, 4);
             groupBox2.Name = "groupBox2";
@@ -3276,7 +3284,7 @@
             // 
             loadingWaitDetails.BackColor = Color.FromArgb(12, 120, 120);
             loadingWaitDetails.Cursor = Cursors.Hand;
-            loadingWaitDetails.Font = new Font("Roboto", 21.75F, FontStyle.Italic, GraphicsUnit.Point);
+            loadingWaitDetails.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Italic, GraphicsUnit.Point);
             loadingWaitDetails.ForeColor = Color.FromArgb(224, 224, 224);
             loadingWaitDetails.Location = new Point(18, 626);
             loadingWaitDetails.Name = "loadingWaitDetails";
@@ -3289,7 +3297,7 @@
             // 
             loadingWait.BackColor = Color.FromArgb(6, 60, 60);
             loadingWait.Cursor = Cursors.Hand;
-            loadingWait.Font = new Font("Roboto", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            loadingWait.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point);
             loadingWait.ForeColor = Color.FromArgb(224, 224, 224);
             loadingWait.Location = new Point(18, 551);
             loadingWait.Name = "loadingWait";
@@ -3297,14 +3305,6 @@
             loadingWait.TabIndex = 68;
             loadingWait.Text = "Chargement en cours";
             loadingWait.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // GeneralHelp
-            // 
-            GeneralHelp.Location = new Point(14, 23);
-            GeneralHelp.Name = "GeneralHelp";
-            GeneralHelp.Size = new Size(762, 662);
-            GeneralHelp.TabIndex = 0;
-            GeneralHelp.Text = "";
             // 
             // FF7U
             // 

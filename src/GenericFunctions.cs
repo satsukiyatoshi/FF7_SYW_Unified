@@ -1,9 +1,47 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using System.Runtime.InteropServices;
+
 
 namespace FF7_SYW_Unified
 {
     partial class FF7U
     {
+        //private declaration for SetPadding function
+        private const int EM_SETRECT = 0xB3;
+
+        [DllImport(@"User32.dll", EntryPoint = @"SendMessage", CharSet = CharSet.Auto)]
+        private static extern int SendMessageRefRect(IntPtr hWnd, uint msg, int wParam, ref RECT rect);
+
+        [StructLayout(LayoutKind.Sequential)]
+        private struct RECT
+        {
+            public readonly int Left;
+            public readonly int Top;
+            public readonly int Right;
+            public readonly int Bottom;
+
+            private RECT(int left, int top, int right, int bottom)
+            {
+                Left = left;
+                Top = top;
+                Right = right;
+                Bottom = bottom;
+            }
+
+            public RECT(Rectangle r) : this(r.Left, r.Top, r.Right, r.Bottom)
+            {
+            }
+        }
+
+
+
+        public void SetPadding(System.Windows.Forms.TextBox textBox, Padding padding)
+        {
+            var rect = new Rectangle(padding.Left, padding.Top, textBox.ClientSize.Width - padding.Left - padding.Right, textBox.ClientSize.Height - padding.Top - padding.Bottom);
+            RECT rc = new RECT(rect);
+            SendMessageRefRect(textBox.Handle, EM_SETRECT, 0, ref rc);
+        }
+
+
 
         //copy folder content to another folder recusively and overwrite
         public static void folderCopyAll(DirectoryInfo source, DirectoryInfo target)
@@ -44,15 +82,17 @@ namespace FF7_SYW_Unified
 
 
         //Hide or show vertical scrollbars in textborx if needed
-        private void scrollHelper (TextBox helpBox)
+        private void scrollHelper (System.Windows.Forms.TextBox helpBox)
         {
             if (helpBox.GetPositionFromCharIndex(helpBox.Text.Length - 1).Y < helpBox.ClientSize.Height)
             {
                 helpBox.ScrollBars = ScrollBars.None;
+                SetPadding(helpBox, new Padding(5, 4, 5, 4));
             }
             else
             {
                 helpBox.ScrollBars = ScrollBars.Vertical;
+                SetPadding(helpBox, new Padding(5, 4, 5, 4));
             }
         }
 

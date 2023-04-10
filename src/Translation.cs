@@ -1,7 +1,6 @@
 ﻿
 using System.Diagnostics;
 using System.Xml;
-using static System.Windows.Forms.LinkLabel;
 
 namespace FF7_SYW_Unified
 {

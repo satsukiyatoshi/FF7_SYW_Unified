@@ -1,9 +1,4 @@
-﻿using Microsoft.VisualBasic.Devices;
-using System;
-using System.Linq;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using ComboBox = System.Windows.Forms.ComboBox;
+﻿using ComboBox = System.Windows.Forms.ComboBox;
 
 namespace FF7_SYW_Unified
 {
