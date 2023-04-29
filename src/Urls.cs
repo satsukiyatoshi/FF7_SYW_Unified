@@ -59,6 +59,7 @@ namespace FF7_SYW_Unified
         private void authorUrl99_Click(object sender, EventArgs e) { openUrl("https://finalfantasyviipc.square-enix-games.com/");}
         private void authorUrl12b_Click(object sender, EventArgs e) { openUrl("https://forums.qhimm.com/index.php?topic=19967.0/");}
         private void authorUrl12_Click(object sender, EventArgs e) { openUrl("https://ff7.fr/forum/index.php?page=post&ids=38303");}
-
+        private void authorUrl21_Click(object sender, EventArgs e) { openUrl("https://forums.qhimm.com/index.php?topic=21357.0"); }
+        private void donation21_Click(object sender, EventArgs e) { openUrl("https://www.paypal.com/donate/?hosted_button_id=FTA38UUZJ5QAN"); }
     }
 }

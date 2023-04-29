@@ -21,7 +21,7 @@ namespace FF7_SYW_Unified
             {
                 if (arg == "direct")
                 {
-                    if(File.Exists(Application.StartupPath + @"\Game\FFNx.toml") && File.Exists(Application.StartupPath + @"\settings.ini"))
+                    if (File.Exists(Application.StartupPath + @"\Game\FFNx.toml") && File.Exists(Application.StartupPath + @"\settings.ini"))
                         Globals.directLaunch = true;
                 }
             }
@@ -146,7 +146,6 @@ namespace FF7_SYW_Unified
             playAudioClose();
             Process.GetCurrentProcess().Kill();
         }
-
     }
 
 }
