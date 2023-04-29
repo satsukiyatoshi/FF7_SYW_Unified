@@ -548,7 +548,7 @@ Si vous n'êtes pas sûr laissez sur automatique.</help>
 	</control>
 	<control>
 		<name>FFNxGroupAudioSample</name>
-		<text>Taux d'échantillonnage audio</text>
+		<text>Échantillonnage audio</text>
 		<author>FFNx team</author>
 		<help>Il est consillé de laisser cette option sur automatique sauf si vous savez ce que vous faites.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
@@ -566,9 +566,16 @@ Cela permet de ne pas avoir la musique qui reprends de zéro après chaque comba
 		<name>FFNxAnalogController</name>
 		<text>Contôleur analogique</text>
 		<author>FFNx team</author>
-		<help>Si vous avec une manette de jeu avec un stick analogique, celle option permet de l'utiliser dans les menus et pour les déplacements (en plus de la crois directionnelle).
+		<help>Si vous jouez avec une manette de jeu avec un stick analogique, celle option permet de l'utiliser dans les menus et pour les déplacements (en plus de la crois directionnelle).
 		
 Cela ajoute également certains contrôles dans les combats (voir l'aide générale).</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxAnalogControllerArun</name>
+		<text>Contôleur analogique, course automatique</text>
+		<author>FFNx team</author>
+		<help>Si vous jouez avec une manette de jeu avec un stick analogique, celle option permet de courrir ou de marcher selon l'inclinaison du stick.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>

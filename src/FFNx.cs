@@ -86,14 +86,11 @@ namespace FF7_SYW_Unified
         private void FFNXMusicResume_MouseEnter(object sender, EventArgs e) { modShow("FFNXMusicResume", FFNxHelp, FFNxHelpAuthor); }
         private void FFNxAnisotropic_MouseEnter(object sender, EventArgs e) { modShow("FFNxAnisotropic", FFNxHelp, FFNxHelpAuthor); }
         private void FFNxAnalogController_MouseEnter(object sender, EventArgs e) { modShow("FFNxAnalogController", FFNxHelp, FFNxHelpAuthor); }
+        private void FFNxAnalogControllerArun_MouseEnter(object sender, EventArgs e) { modShow("FFNxAnalogControllerArun", FFNxHelp, FFNxHelpAuthor); }
         private void FFNXSteamSucces_MouseEnter(object sender, EventArgs e) { modShow("FFNXSteamSucces", FFNxHelp, FFNxHelpAuthor); }
         private void FFNxGroup3dEngine_MouseEnter(object sender, EventArgs e) { modShow("FFNxGroup3dEngine", FFNxHelp, FFNxHelpAuthor); }
-        private void FFNxLighting_MouseEnter(object sender, EventArgs e) { modShow("FFNxLighting", FFNxHelp, FFNxHelpAuthor); }
         private void FFNxNoCd_MouseEnter(object sender, EventArgs e) { modShow("FFNxNoCd", FFNxHelp, FFNxHelpAuthor); }
-        private void FFNxDayNight_MouseEnter(object sender, EventArgs e) { modShow("FFNxDayNight", FFNxHelp, FFNxHelpAuthor); }
-
-
-
+        
         //generate FFNx config file
         private void ffnxTomlGenerate()
         {
@@ -135,6 +132,7 @@ namespace FF7_SYW_Unified
             if (FFNxFootSteps.Checked) { twx.WriteLine("ff7_footsteps = true"); } else { twx.WriteLine("ff7_footsteps = false"); }
             if (FFNXSteamSucces.Checked) { twx.WriteLine("enable_steam_achievements = true"); } else { twx.WriteLine("enable_steam_achievements = false"); }
             if (FFNxAnalogController.Checked) { twx.WriteLine("enable_analogue_controls = true"); } else { twx.WriteLine("enable_analogue_controls = false"); }
+            if (FFNxAnalogControllerArun.Checked) { twx.WriteLine("enable_auto_run = true"); } else { twx.WriteLine("enable_auto_run = false"); }
             if (graphicsAnimations.Checked) { twx.WriteLine("enable_animated_textures = true"); } else { twx.WriteLine("enable_animated_textures = false"); }
             if (FFNxDayNight.Checked) { twx.WriteLine("enable_time_cycle = true"); } else { twx.WriteLine("enable_time_cycle = false"); }
             twx.WriteLine("save_path = " + quote + @"..\" + (getModCustomFolder(gameplayMods, @"gameplay\")).Remove(0, Application.StartupPath.Length) + @"\save" + quote);
