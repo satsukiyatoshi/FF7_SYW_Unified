@@ -560,6 +560,7 @@
             langGame.BackColor = Color.FromArgb(53, 60, 70);
             langGame.Cursor = Cursors.Hand;
             langGame.DropDownStyle = ComboBoxStyle.DropDownList;
+            langGame.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             langGame.ForeColor = Color.White;
             langGame.FormattingEnabled = true;
             langGame.Location = new Point(9, 23);
@@ -585,6 +586,7 @@
             langInterface.BackColor = Color.FromArgb(53, 60, 70);
             langInterface.Cursor = Cursors.Hand;
             langInterface.DropDownStyle = ComboBoxStyle.DropDownList;
+            langInterface.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             langInterface.ForeColor = Color.White;
             langInterface.FormattingEnabled = true;
             langInterface.Location = new Point(9, 23);
@@ -1057,7 +1059,7 @@
             // 
             menuAboutPanel.Controls.Add(aboutFrame1);
             menuAboutPanel.Controls.Add(aboutFrame2);
-            menuAboutPanel.Location = new Point(327, 1600);
+            menuAboutPanel.Location = new Point(327, 0);
             menuAboutPanel.Name = "menuAboutPanel";
             menuAboutPanel.Size = new Size(799, 715);
             menuAboutPanel.TabIndex = 11;
@@ -1187,7 +1189,6 @@
             author21.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author21.ForeColor = Color.FromArgb(32, 225, 229);
             author21.Location = new Point(69, 56);
-            author21.Margin = new Padding(2, 0, 2, 0);
             author21.Name = "author21";
             author21.Size = new Size(573, 16);
             author21.TabIndex = 77;
@@ -1195,6 +1196,7 @@
             // authorName21
             // 
             authorName21.BackColor = Color.Transparent;
+            authorName21.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName21.ForeColor = Color.White;
             authorName21.Location = new Point(11, 56);
             authorName21.Name = "authorName21";
@@ -1209,7 +1211,7 @@
             authorUrl20.Cursor = Cursors.Hand;
             authorUrl20.Font = new Font("Roboto", 9.75F, FontStyle.Underline, GraphicsUnit.Point);
             authorUrl20.ForeColor = Color.FromArgb(224, 224, 224);
-            authorUrl20.Location = new Point(648, 348);
+            authorUrl20.Location = new Point(648, 354);
             authorUrl20.Name = "authorUrl20";
             authorUrl20.Size = new Size(93, 15);
             authorUrl20.TabIndex = 75;
@@ -1222,8 +1224,7 @@
             author20.BackColor = Color.Transparent;
             author20.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author20.ForeColor = Color.FromArgb(32, 225, 229);
-            author20.Location = new Point(118, 348);
-            author20.Margin = new Padding(2, 0, 2, 0);
+            author20.Location = new Point(118, 354);
             author20.Name = "author20";
             author20.Size = new Size(524, 16);
             author20.TabIndex = 74;
@@ -1231,8 +1232,9 @@
             // authorName20
             // 
             authorName20.BackColor = Color.Transparent;
+            authorName20.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName20.ForeColor = Color.White;
-            authorName20.Location = new Point(11, 348);
+            authorName20.Location = new Point(11, 354);
             authorName20.Name = "authorName20";
             authorName20.Size = new Size(150, 16);
             authorName20.TabIndex = 73;
@@ -1715,7 +1717,6 @@
             author18.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author18.ForeColor = Color.FromArgb(32, 225, 229);
             author18.Location = new Point(93, 328);
-            author18.Margin = new Padding(2, 0, 2, 0);
             author18.Name = "author18";
             author18.Size = new Size(549, 16);
             author18.TabIndex = 39;
@@ -1726,7 +1727,6 @@
             author17.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author17.ForeColor = Color.FromArgb(32, 225, 229);
             author17.Location = new Point(75, 311);
-            author17.Margin = new Padding(2, 0, 2, 0);
             author17.Name = "author17";
             author17.Size = new Size(567, 16);
             author17.TabIndex = 38;
@@ -1737,7 +1737,6 @@
             author16.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author16.ForeColor = Color.FromArgb(32, 225, 229);
             author16.Location = new Point(84, 294);
-            author16.Margin = new Padding(2, 0, 2, 0);
             author16.Name = "author16";
             author16.Size = new Size(558, 16);
             author16.TabIndex = 37;
@@ -1758,7 +1757,6 @@
             author15.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author15.ForeColor = Color.FromArgb(32, 225, 229);
             author15.Location = new Point(107, 277);
-            author15.Margin = new Padding(2, 0, 2, 0);
             author15.Name = "author15";
             author15.Size = new Size(535, 16);
             author15.TabIndex = 35;
@@ -1769,7 +1767,6 @@
             author14.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author14.ForeColor = Color.FromArgb(32, 225, 229);
             author14.Location = new Point(84, 260);
-            author14.Margin = new Padding(2, 0, 2, 0);
             author14.Name = "author14";
             author14.Size = new Size(558, 16);
             author14.TabIndex = 34;
@@ -1780,7 +1777,6 @@
             author13.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author13.ForeColor = Color.FromArgb(32, 225, 229);
             author13.Location = new Point(77, 243);
-            author13.Margin = new Padding(2, 0, 2, 0);
             author13.Name = "author13";
             author13.Size = new Size(565, 16);
             author13.TabIndex = 33;
@@ -1791,7 +1787,6 @@
             author12.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author12.ForeColor = Color.FromArgb(32, 225, 229);
             author12.Location = new Point(69, 226);
-            author12.Margin = new Padding(2, 0, 2, 0);
             author12.Name = "author12";
             author12.Size = new Size(573, 16);
             author12.TabIndex = 32;
@@ -1802,7 +1797,6 @@
             author11.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author11.ForeColor = Color.FromArgb(32, 225, 229);
             author11.Location = new Point(64, 209);
-            author11.Margin = new Padding(2, 0, 2, 0);
             author11.Name = "author11";
             author11.Size = new Size(578, 16);
             author11.TabIndex = 31;
@@ -1813,7 +1807,6 @@
             author10.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author10.ForeColor = Color.FromArgb(32, 225, 229);
             author10.Location = new Point(67, 192);
-            author10.Margin = new Padding(2, 0, 2, 0);
             author10.Name = "author10";
             author10.Size = new Size(575, 16);
             author10.TabIndex = 30;
@@ -1824,7 +1817,6 @@
             author9.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author9.ForeColor = Color.FromArgb(32, 225, 229);
             author9.Location = new Point(63, 175);
-            author9.Margin = new Padding(2, 0, 2, 0);
             author9.Name = "author9";
             author9.Size = new Size(579, 16);
             author9.TabIndex = 29;
@@ -1835,7 +1827,6 @@
             author8.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author8.ForeColor = Color.FromArgb(32, 225, 229);
             author8.Location = new Point(87, 158);
-            author8.Margin = new Padding(2, 0, 2, 0);
             author8.Name = "author8";
             author8.Size = new Size(555, 16);
             author8.TabIndex = 28;
@@ -1846,7 +1837,6 @@
             author7.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author7.ForeColor = Color.FromArgb(32, 225, 229);
             author7.Location = new Point(68, 141);
-            author7.Margin = new Padding(2, 0, 2, 0);
             author7.Name = "author7";
             author7.Size = new Size(574, 16);
             author7.TabIndex = 27;
@@ -1857,7 +1847,6 @@
             author6.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author6.ForeColor = Color.FromArgb(32, 225, 229);
             author6.Location = new Point(77, 124);
-            author6.Margin = new Padding(2, 0, 2, 0);
             author6.Name = "author6";
             author6.Size = new Size(565, 16);
             author6.TabIndex = 26;
@@ -1868,7 +1857,6 @@
             author5.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author5.ForeColor = Color.FromArgb(32, 225, 229);
             author5.Location = new Point(94, 107);
-            author5.Margin = new Padding(2, 0, 2, 0);
             author5.Name = "author5";
             author5.Size = new Size(548, 16);
             author5.TabIndex = 25;
@@ -1879,7 +1867,6 @@
             author4.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author4.ForeColor = Color.FromArgb(32, 225, 229);
             author4.Location = new Point(58, 90);
-            author4.Margin = new Padding(2, 0, 2, 0);
             author4.Name = "author4";
             author4.Size = new Size(584, 16);
             author4.TabIndex = 24;
@@ -1890,7 +1877,6 @@
             author3.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author3.ForeColor = Color.FromArgb(32, 225, 229);
             author3.Location = new Point(91, 73);
-            author3.Margin = new Padding(2, 0, 2, 0);
             author3.Name = "author3";
             author3.Size = new Size(551, 16);
             author3.TabIndex = 23;
@@ -1901,7 +1887,6 @@
             author2.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author2.ForeColor = Color.FromArgb(32, 225, 229);
             author2.Location = new Point(50, 39);
-            author2.Margin = new Padding(2, 0, 2, 0);
             author2.Name = "author2";
             author2.Size = new Size(592, 16);
             author2.TabIndex = 22;
@@ -1912,7 +1897,6 @@
             author1.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             author1.ForeColor = Color.FromArgb(32, 225, 229);
             author1.Location = new Point(64, 22);
-            author1.Margin = new Padding(2, 0, 2, 0);
             author1.Name = "author1";
             author1.Size = new Size(578, 16);
             author1.TabIndex = 21;
@@ -1920,6 +1904,7 @@
             // authorName16
             // 
             authorName16.BackColor = Color.Transparent;
+            authorName16.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName16.ForeColor = Color.White;
             authorName16.Location = new Point(11, 294);
             authorName16.Name = "authorName16";
@@ -1930,6 +1915,7 @@
             // authorName18
             // 
             authorName18.BackColor = Color.Transparent;
+            authorName18.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName18.ForeColor = Color.White;
             authorName18.Location = new Point(11, 328);
             authorName18.Name = "authorName18";
@@ -1940,6 +1926,7 @@
             // authorName4
             // 
             authorName4.BackColor = Color.Transparent;
+            authorName4.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName4.ForeColor = Color.White;
             authorName4.Location = new Point(11, 90);
             authorName4.Name = "authorName4";
@@ -1950,6 +1937,7 @@
             // authorName11
             // 
             authorName11.BackColor = Color.Transparent;
+            authorName11.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName11.ForeColor = Color.White;
             authorName11.Location = new Point(11, 209);
             authorName11.Name = "authorName11";
@@ -1960,6 +1948,7 @@
             // authorName3
             // 
             authorName3.BackColor = Color.Transparent;
+            authorName3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName3.ForeColor = Color.White;
             authorName3.Location = new Point(11, 73);
             authorName3.Name = "authorName3";
@@ -1970,6 +1959,7 @@
             // authorName5
             // 
             authorName5.BackColor = Color.Transparent;
+            authorName5.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName5.ForeColor = Color.White;
             authorName5.Location = new Point(11, 107);
             authorName5.Name = "authorName5";
@@ -1980,6 +1970,7 @@
             // authorName13
             // 
             authorName13.BackColor = Color.Transparent;
+            authorName13.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName13.ForeColor = Color.White;
             authorName13.Location = new Point(11, 243);
             authorName13.Name = "authorName13";
@@ -1990,6 +1981,7 @@
             // authorName8
             // 
             authorName8.BackColor = Color.Transparent;
+            authorName8.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName8.ForeColor = Color.White;
             authorName8.Location = new Point(11, 158);
             authorName8.Name = "authorName8";
@@ -2000,6 +1992,7 @@
             // authorName9
             // 
             authorName9.BackColor = Color.Transparent;
+            authorName9.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName9.ForeColor = Color.White;
             authorName9.Location = new Point(11, 175);
             authorName9.Name = "authorName9";
@@ -2010,6 +2003,7 @@
             // authorName1
             // 
             authorName1.BackColor = Color.Transparent;
+            authorName1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName1.ForeColor = Color.White;
             authorName1.Location = new Point(11, 22);
             authorName1.Name = "authorName1";
@@ -2020,6 +2014,7 @@
             // authorName14
             // 
             authorName14.BackColor = Color.Transparent;
+            authorName14.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName14.ForeColor = Color.White;
             authorName14.Location = new Point(11, 260);
             authorName14.Name = "authorName14";
@@ -2030,6 +2025,7 @@
             // authorName15
             // 
             authorName15.BackColor = Color.Transparent;
+            authorName15.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName15.ForeColor = Color.White;
             authorName15.Location = new Point(11, 277);
             authorName15.Name = "authorName15";
@@ -2040,6 +2036,7 @@
             // authorName7
             // 
             authorName7.BackColor = Color.Transparent;
+            authorName7.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName7.ForeColor = Color.White;
             authorName7.Location = new Point(11, 141);
             authorName7.Name = "authorName7";
@@ -2050,6 +2047,7 @@
             // authorName6
             // 
             authorName6.BackColor = Color.Transparent;
+            authorName6.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName6.ForeColor = Color.White;
             authorName6.Location = new Point(11, 124);
             authorName6.Name = "authorName6";
@@ -2060,6 +2058,7 @@
             // authorName10
             // 
             authorName10.BackColor = Color.Transparent;
+            authorName10.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName10.ForeColor = Color.White;
             authorName10.Location = new Point(11, 192);
             authorName10.Name = "authorName10";
@@ -2070,6 +2069,7 @@
             // authorName17
             // 
             authorName17.BackColor = Color.Transparent;
+            authorName17.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName17.ForeColor = Color.White;
             authorName17.Location = new Point(11, 311);
             authorName17.Name = "authorName17";
@@ -2080,6 +2080,7 @@
             // authorName2
             // 
             authorName2.BackColor = Color.Transparent;
+            authorName2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName2.ForeColor = Color.White;
             authorName2.Location = new Point(11, 39);
             authorName2.Name = "authorName2";
@@ -2101,6 +2102,7 @@
             // authorName12
             // 
             authorName12.BackColor = Color.Transparent;
+            authorName12.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             authorName12.ForeColor = Color.White;
             authorName12.Location = new Point(11, 226);
             authorName12.Name = "authorName12";
@@ -2597,7 +2599,7 @@
             menuFFNxPanel.Controls.Add(FFNxFrame2);
             menuFFNxPanel.Controls.Add(FFNxFrame1);
             menuFFNxPanel.Controls.Add(FFNxFrame3);
-            menuFFNxPanel.Location = new Point(327, 0);
+            menuFFNxPanel.Location = new Point(327, 1600);
             menuFFNxPanel.Name = "menuFFNxPanel";
             menuFFNxPanel.Size = new Size(795, 703);
             menuFFNxPanel.TabIndex = 14;
