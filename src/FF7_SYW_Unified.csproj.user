@@ -40,7 +40,7 @@
     <Compile Update="Urls.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="VCD.cs">
+    <Compile Update="NoCD.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

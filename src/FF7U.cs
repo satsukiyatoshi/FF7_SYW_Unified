@@ -74,17 +74,23 @@ namespace FF7_SYW_Unified
             Globals.isGameLoading = true;
             menuFrame.Enabled = false;
             menuClick(menuLaunchGame);
+            string exeVersion = checkExeVersion();
 
             loadingAnimation.Visible = true;
             Application.DoEvents();
 
-            loadingLog(translate("isoMount", Globals.translateUI));
+            loadingLog(translate("noCdExe", Globals.translateUI));
 
             if (FFNxNoCd.Checked)
             {
-                Globals.isodrive = getLastAvailableDriveLetter();
-                mountIso(Globals.isodrive);
-                regFF7(Globals.isodrive);
+                if(exeVersion == "")
+                {
+                    MessageBox.Show(translate("unknownExe", Globals.translateUI));
+                } else
+                {
+                    //noCd(exeVersion); //need to do offset for nocd
+                }
+
             }
 
             //Apply mods only if not a direct launch
@@ -119,8 +125,6 @@ namespace FF7_SYW_Unified
 
             Globals.isGameLoading = false;
 
-            if (FFNxNoCd.Checked) { unmountIso(); }
-
             this.Close();
 
         }
@@ -142,7 +146,6 @@ namespace FF7_SYW_Unified
                 }
             }
 
-            if (FFNxNoCd.Checked) { unmountIso(); }
             playAudioClose();
             Process.GetCurrentProcess().Kill();
         }

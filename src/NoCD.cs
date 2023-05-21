@@ -24,7 +24,7 @@ namespace FF7_SYW_Unified
         {
             string exeVersion = "";
             string filePath = Application.StartupPath + @"\Game\ff7.exe";
-            int offset = 0x10; // Offset where check the ff7 version
+            int offset = 0x404; // Offset where check the ff7 version
 
             using (FileStream fs = new FileStream(filePath, FileMode.Open))
             {
@@ -38,17 +38,17 @@ namespace FF7_SYW_Unified
                     string hexValue = value.ToString("X"); // convert to hext
 
                     //TODO need to fin exe offset to check version (check lang & version, if not 1.02 version based, output error)
-                    if (hexValue == "") { exeVersion = "F"; }
-                    if (hexValue == "") { exeVersion = "E"; }
-                    if (hexValue == "") { exeVersion = "G"; }
-                    if (hexValue == "") { exeVersion = "S"; }
+                    if (hexValue == "99EBF805") { exeVersion = "F"; }
+                    if (hexValue == "99CE0805") { exeVersion = "E"; }
+                    if (hexValue == "99DBC805") { exeVersion = "G"; }
+                    if (hexValue == "99F65805") { exeVersion = "S"; }
                 }
             }
 
             return exeVersion;
         }
 
-        private void NoCd(string exeVersion)
+        private void noCd(string exeVersion)
         {
             string filePath = Application.StartupPath + @"\Game\ff7.exe";
 
@@ -78,78 +78,14 @@ namespace FF7_SYW_Unified
         }
 
 
-        //Used to run an emulated cd drive
-        private void runWinCdemu(string arguments)
-        {
-            string winCdeEmuPath = Application.StartupPath + @"\Tools\WinCDEmu\PortableWinCDEmu.exe";
-
-            ProcessStartInfo mountIso = new ProcessStartInfo(winCdeEmuPath, arguments)
-            {
-                WorkingDirectory = Path.GetDirectoryName(winCdeEmuPath),
-                UseShellExecute = true,
-                CreateNoWindow = true,
-                WindowStyle = ProcessWindowStyle.Hidden,
-            };
-
-            using (Process winCd = Process.Start(mountIso))
-            {
-                winCd.WaitForExit(10000);
-            }
-        }
-
-
-
-        private void installWinCdeDriver()
-        {
-            runWinCdemu("/install");
-        }
-
-
-
-        private void unmountIso()
-        {
-            installWinCdeDriver();
-            runWinCdemu($"/unmount \"{Application.StartupPath + @"\Tools\WinCDEmu\FF7DISC1.ISO"}\"");
-        }
-
-
-
-        private void mountIso(string drive)
-        {
-            installWinCdeDriver();
-            runWinCdemu($"\"{Application.StartupPath + @"\Tools\WinCDEmu\FF7DISC1.ISO"}\"" + " " + drive);
-        }
-
-
-
-        //get last avaibleletter for mounting iso
-        public string getLastAvailableDriveLetter()
-        {
-            ArrayList driveLetters = new ArrayList(26);
-
-            for (int i = 67; i < 91; i++)
-            {
-                driveLetters.Add(Convert.ToChar(i));
-            }
-
-            foreach (string drive in Directory.GetLogicalDrives())
-            {
-                driveLetters.Remove(drive[0]);
-            }
-
-            return driveLetters[^1].ToString();
-        }
-
-
-
-        //register FF7 for using withg FFNx and iso letter
+        //register FF7 for using withg FFNx
         private void regFF7(string drive)
         {
             File.Copy(Application.StartupPath + @"Tools\FF7reg.exe", Application.StartupPath + @"Game\FF7reg.exe", true);
 
             string ff7Reg = Application.StartupPath + @"Game\FF7reg.exe";
 
-            ProcessStartInfo registerFF7 = new ProcessStartInfo(ff7Reg, "/ISO=" + drive)
+            ProcessStartInfo registerFF7 = new ProcessStartInfo(ff7Reg)
             {
                 WorkingDirectory = Path.GetDirectoryName(ff7Reg),
                 UseShellExecute = true,

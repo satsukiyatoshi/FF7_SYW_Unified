@@ -235,8 +235,10 @@ La base est traitée avec une IA ESRGan plus des optimisations à la main.
 
 Cela améliore grandement les textures du jeu d'origine.
 
+La géométrie et les bug d'éclairages du jeu d'origine ont été corrigé par AxlRose. 
+
 Il est conseillé d'activer cette option.</help>
-		<author>Satsuki_Yatoshi</author>
+		<author>Satsuki_Yatoshi et AxlRose</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
@@ -573,7 +575,7 @@ Cela ajoute également certains contrôles dans les combats (voir l'aide génér
 	</control>
 	<control>
 		<name>FFNxAnalogControllerArun</name>
-		<text>Contôleur analogique, course automatique</text>
+		<text>Course automatique</text>
 		<author>FFNx team</author>
 		<help>Si vous jouez avec une manette de jeu avec un stick analogique, celle option permet de courrir ou de marcher selon l'inclinaison du stick.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
@@ -673,9 +675,9 @@ Ces bruits peuvent être adaptés au type de sol si vous utilisez un mod audio q
 		<name>FFNxNoCd</name>
 		<text>No-CD</text>
 		<author>Satsuki_Yatoshi</author>
-		<help>Monte une mini-image virtuelle d'un cd de FF7.
+		<help>Applique un patch no-cd a l'executable du jeu avant son lancement.
 		
-Cela permet de ne pas avoir besoin d'un vrai CD de FF7 pour jouer.</help>
+Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
 		<url></url>
 	</control>
 	<control>
@@ -720,8 +722,12 @@ Certains mods de gameplay peuvent utiliser cela.</help>
 		<text>Restoration des fichiers d'origine</text>
 	</control>
 	<control>
-		<name>isoMount</name>
+		<name>noCdExe</name>
 		<text>Montage du mini-iso de FF7</text>
+	</control>
+	<control>
+		<name>unknownExe</name>
+		<text>Cet executable de FF7 n'est pas reconnu, impossible d'utiliser un patch noCd</text>
 	</control>
 	<control>
 		<name>ffnxConfigFile</name>
