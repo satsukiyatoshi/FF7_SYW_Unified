@@ -75,7 +75,6 @@ namespace FF7_SYW_Unified
             Globals.isGameLoading = true;
             menuFrame.Enabled = false;
             menuClick(menuLaunchGame);
-            string exeVersion = checkExeVersion();
 
             loadingAnimation.Visible = true;
             Application.DoEvents();
@@ -94,6 +93,8 @@ namespace FF7_SYW_Unified
                 ffnxTomlGenerate();
                 saveValues();
             }
+
+            string exeVersion = checkExeVersion();
 
             if (FFNxNoCd.Checked)
             {

@@ -75,6 +75,8 @@ namespace FF7_SYW_Unified
                     fileStream.Seek(address, SeekOrigin.Begin);
 
                     fileStream.Write(value, 0, value.Length);
+
+                    fileStream.Flush();
                 }
             }
 
