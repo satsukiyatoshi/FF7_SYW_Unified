@@ -703,7 +703,11 @@ Certains mods de gameplay peuvent utiliser cela.</help>
 		<name>HelpFrame2</name>
 		<text>Aide</text>
 	</control>
-
+	<control>
+		<name>chooseHelp</name>
+		<text>Choisissez un fichier d'aide dans la liste déroulante</text>
+	</control>
+	
 	
 
 <!--  -->	

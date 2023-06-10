@@ -19,6 +19,9 @@
     <Compile Update="Graphics.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LoadSave.cs">
       <SubType>Form</SubType>
     </Compile>
