@@ -81,30 +81,5 @@ namespace FF7_SYW_Unified
             }
 
         }
-
-
-        //register FF7 for using withg FFNx
-        private void regFF7(string drive)
-        {
-            File.Copy(Application.StartupPath + @"Tools\FF7reg.exe", Application.StartupPath + @"Game\FF7reg.exe", true);
-
-            string ff7Reg = Application.StartupPath + @"Game\FF7reg.exe";
-
-            ProcessStartInfo registerFF7 = new ProcessStartInfo(ff7Reg)
-            {
-                WorkingDirectory = Path.GetDirectoryName(ff7Reg),
-                UseShellExecute = true,
-                CreateNoWindow = true,
-                WindowStyle = ProcessWindowStyle.Hidden,
-            };
-
-            using (Process reg = Process.Start(registerFF7))
-            {
-                reg.WaitForExit(10000);
-            }
-
-            File.Delete(ff7Reg);
-        }
-
     }
 }

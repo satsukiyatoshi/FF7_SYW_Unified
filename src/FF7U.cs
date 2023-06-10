@@ -92,22 +92,24 @@ namespace FF7_SYW_Unified
                 applyPatchs();
                 ffnxTomlGenerate();
                 saveValues();
+
+                string exeVersion = checkExeVersion();
+
+                if (FFNxNoCd.Checked)
+                {
+                    if (exeVersion == "")
+                    {
+                        MessageBox.Show(translate("unknownExe", Globals.translateUI));
+                    }
+                    else
+                    {
+                        noCd(exeVersion);
+                    }
+
+                }
             }
 
-            string exeVersion = checkExeVersion();
-
-            if (FFNxNoCd.Checked)
-            {
-                if (exeVersion == "")
-                {
-                    MessageBox.Show(translate("unknownExe", Globals.translateUI));
-                }
-                else
-                {
-                    noCd(exeVersion);
-                }
-
-            }
+            regFF7();
 
             this.Visible = false;
 
