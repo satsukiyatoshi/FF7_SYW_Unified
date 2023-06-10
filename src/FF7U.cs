@@ -71,6 +71,7 @@ namespace FF7_SYW_Unified
         //apply settings and launch the game
         private void menuLaunchGame_Click(object sender, EventArgs e)
         {
+
             Globals.isGameLoading = true;
             menuFrame.Enabled = false;
             menuClick(menuLaunchGame);
@@ -80,18 +81,6 @@ namespace FF7_SYW_Unified
             Application.DoEvents();
 
             loadingLog(translate("noCdExe", Globals.translateUI));
-
-            if (FFNxNoCd.Checked)
-            {
-                if(exeVersion == "")
-                {
-                    MessageBox.Show(translate("unknownExe", Globals.translateUI));
-                } else
-                {
-                    //noCd(exeVersion); //need to do offset for nocd
-                }
-
-            }
 
             //Apply mods only if not a direct launch
             if (Globals.directLaunch == false)
@@ -104,6 +93,19 @@ namespace FF7_SYW_Unified
                 applyPatchs();
                 ffnxTomlGenerate();
                 saveValues();
+            }
+
+            if (FFNxNoCd.Checked)
+            {
+                if (exeVersion == "")
+                {
+                    MessageBox.Show(translate("unknownExe", Globals.translateUI));
+                }
+                else
+                {
+                    noCd(exeVersion);
+                }
+
             }
 
             this.Visible = false;

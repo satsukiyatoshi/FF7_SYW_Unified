@@ -37,7 +37,6 @@ namespace FF7_SYW_Unified
                     uint value = BitConverter.ToUInt32(bytes, 0);
                     string hexValue = value.ToString("X"); // convert to hext
 
-                    //TODO need to fin exe offset to check version (check lang & version, if not 1.02 version based, output error)
                     if (hexValue == "99EBF805") { exeVersion = "F"; }
                     if (hexValue == "99CE0805") { exeVersion = "E"; }
                     if (hexValue == "99DBC805") { exeVersion = "G"; }
@@ -52,29 +51,33 @@ namespace FF7_SYW_Unified
         {
             string filePath = Application.StartupPath + @"\Game\ff7.exe";
 
-            string[] hexValues = new string[4] { "9090", "EB17", "EB3A", "EB22" }; //Hexts values to write
-            int[] offsets = new int[4];
+            int[] addresses = new int[4];
 
-            //todo need to fin exacts offset for each exe version
-            if (exeVersion == "F") {offsets = new int[] { 0x10, 0x10, 0x10, 0x10 }; }//Hexts offset where to write}
-            if (exeVersion == "E") {offsets = new int[] { 0x10, 0x10, 0x10, 0x10 }; }
-            if (exeVersion == "G") {offsets = new int[] { 0x10, 0x10, 0x10, 0x10 }; }
-            if (exeVersion == "S") {offsets = new int[] { 0x10, 0x10, 0x10, 0x10 }; }
+            // nocd exe's offsets
+            if (exeVersion == "F" || exeVersion == "S") { addresses = new int[] { 0x3F75, 0x8408, 0x887C, 0x9765 }; }
+            if (exeVersion == "E" || exeVersion == "G") { addresses = new int[] { 0x3F65, 0x83F8, 0x886C, 0x9755 }; }
 
-            using (FileStream fs = new FileStream(filePath, FileMode.Open))
+            // nocd value's
+            byte[][] data = {
+                            new byte[] { 0x90, 0x90 },
+                            new byte[] { 0xEB, 0x17 },
+                            new byte[] { 0xEB, 0x3A },
+                            new byte[] { 0xEB, 0x22 }
+                            };
+
+            using (FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite))
             {
-
-                foreach (int i in offsets)
+                for (int i = 0; i < addresses.Length; i++)
                 {
-                    fs.Seek(offsets[i], SeekOrigin.Begin); // go to hext offset where to write
+                    long address = addresses[i];
+                    byte[] value = data[i];
 
-                    using (BinaryWriter bw = new BinaryWriter(fs))
-                    {
-                        byte[] bytes = StringToByteArray(hexValues[i]); //hexValue = hext string value to write
-                        bw.Write(bytes); //Write bytes
-                    }
+                    fileStream.Seek(address, SeekOrigin.Begin);
+
+                    fileStream.Write(value, 0, value.Length);
                 }
             }
+
         }
 
 
