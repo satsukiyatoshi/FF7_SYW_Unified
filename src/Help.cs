@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace FF7_SYW_Unified
 {
     partial class FF7U
@@ -22,8 +24,24 @@ namespace FF7_SYW_Unified
 
         private void HelpList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            GeneralHelp.LoadFile(Application.StartupPath + @"\Translations\Help\" + langInterface.Text + @"\" + HelpList.Text + ".rtf", RichTextBoxStreamType.RichText);
-            chooseHelp.Visible = false;
+            string helpFile = Application.StartupPath + @"\Translations\Help\" + langInterface.Text + @"\" + HelpList.Text + ".rtf";
+
+            try
+            {
+                GeneralHelp.LoadFile(helpFile, RichTextBoxStreamType.RichText);
+                chooseHelp.Visible = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(translate("errorFile", Globals.translateUI) + Environment.NewLine + Environment.NewLine + helpFile + Environment.NewLine + Environment.NewLine + ex.Message);
+                chooseHelp.Visible = true;
+                HelpList.Text = "";
+            }
+            
         }
+
+
+
+
     }
 }
