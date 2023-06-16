@@ -1012,7 +1012,7 @@
             this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame3);
-            this.menuGraphicPanel.Location = (new global::System.Drawing.Point(327, 1600));
+            this.menuGraphicPanel.Location = (new global::System.Drawing.Point(327, 0));
             this.menuGraphicPanel.Name = ("menuGraphicPanel");
             this.menuGraphicPanel.Size = (new global::System.Drawing.Size(795, 703));
             this.menuGraphicPanel.TabIndex = (10);
@@ -3320,7 +3320,7 @@
             // menuHelpPanel
             // 
             this.menuHelpPanel.Controls.Add(this.HelpFrame2);
-            this.menuHelpPanel.Location = (new global::System.Drawing.Point(327, 0));
+            this.menuHelpPanel.Location = (new global::System.Drawing.Point(327, 1600));
             this.menuHelpPanel.Name = ("menuHelpPanel");
             this.menuHelpPanel.Size = (new global::System.Drawing.Size(795, 703));
             this.menuHelpPanel.TabIndex = (15);

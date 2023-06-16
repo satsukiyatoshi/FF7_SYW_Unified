@@ -121,7 +121,7 @@
 	</control>
 	<control>
 		<name>author7</name>
-		<text>Codeur FFNx (Ombres dynamiques et mod 16/9)</text>
+		<text>Codeur FFNx (Ombres dynamiques, mod 16/9, et vidéos non chibi)</text>
 	</control>
 	<control>
 		<name>author8</name>
@@ -706,6 +706,10 @@ Certains mods de gameplay peuvent utiliser cela.</help>
 	<control>
 		<name>chooseHelp</name>
 		<text>Choisissez un fichier d'aide dans la liste déroulante</text>
+	</control>
+		<control>
+		<name>errorFile</name>
+		<text>Une erreur s'est produite lors du chargement du fichier suivant</text>
 	</control>
 	
 	
