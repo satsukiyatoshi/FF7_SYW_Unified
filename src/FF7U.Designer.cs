@@ -260,6 +260,13 @@
             this.loadingWaitDetails = (new global::System.Windows.Forms.Label());
             this.loadingWait = (new global::System.Windows.Forms.Label());
             this.backgroundWorker1 = (new global::System.ComponentModel.BackgroundWorker());
+            this.menuControls = (new global::System.Windows.Forms.Label());
+            this.menuControlsPanel = (new global::System.Windows.Forms.Panel());
+            this.controlsFrame1 = (new global::System.Windows.Forms.GroupBox());
+            this.groupBox1 = (new global::System.Windows.Forms.GroupBox());
+            this.groupBox3 = (new global::System.Windows.Forms.GroupBox());
+            this.label1 = (new global::System.Windows.Forms.Label());
+            this.label2 = (new global::System.Windows.Forms.Label());
             musicsPrev = (new global::System.Windows.Forms.PictureBox());
             ambiantPrev = (new global::System.Windows.Forms.PictureBox());
             sfxPrev = (new global::System.Windows.Forms.PictureBox());
@@ -341,6 +348,7 @@
             this.menuLaunchGamePanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((global::System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).BeginInit();
+            this.menuControlsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // musicsPrev
@@ -434,6 +442,7 @@
             // 
             // settingsGroup
             // 
+            this.settingsGroup.Controls.Add(this.menuControls);
             this.settingsGroup.Controls.Add(this.menuHelp);
             this.settingsGroup.Controls.Add(this.menuFFNx);
             this.settingsGroup.Controls.Add(this.menuGameplay);
@@ -455,9 +464,9 @@
             this.menuHelp.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.menuHelp.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.menuHelp.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuHelp.Location = (new global::System.Drawing.Point(6, 202));
+            this.menuHelp.Location = (new global::System.Drawing.Point(6, 208));
             this.menuHelp.Name = ("menuHelp");
-            this.menuHelp.Size = (new global::System.Drawing.Size(278, 32));
+            this.menuHelp.Size = (new global::System.Drawing.Size(278, 27));
             this.menuHelp.TabIndex = (6);
             this.menuHelp.Text = ("Aide générale");
             this.menuHelp.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
@@ -471,9 +480,9 @@
             this.menuFFNx.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.menuFFNx.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.menuFFNx.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuFFNx.Location = (new global::System.Drawing.Point(6, 166));
+            this.menuFFNx.Location = (new global::System.Drawing.Point(6, 146));
             this.menuFFNx.Name = ("menuFFNx");
-            this.menuFFNx.Size = (new global::System.Drawing.Size(278, 32));
+            this.menuFFNx.Size = (new global::System.Drawing.Size(278, 27));
             this.menuFFNx.TabIndex = (5);
             this.menuFFNx.Text = ("Configuration du pilote");
             this.menuFFNx.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
@@ -487,9 +496,9 @@
             this.menuGameplay.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.menuGameplay.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.menuGameplay.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuGameplay.Location = (new global::System.Drawing.Point(6, 130));
+            this.menuGameplay.Location = (new global::System.Drawing.Point(6, 115));
             this.menuGameplay.Name = ("menuGameplay");
-            this.menuGameplay.Size = (new global::System.Drawing.Size(278, 32));
+            this.menuGameplay.Size = (new global::System.Drawing.Size(278, 27));
             this.menuGameplay.TabIndex = (4);
             this.menuGameplay.Text = ("Mods de gameplay");
             this.menuGameplay.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
@@ -503,9 +512,9 @@
             this.menuSound.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.menuSound.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.menuSound.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuSound.Location = (new global::System.Drawing.Point(6, 94));
+            this.menuSound.Location = (new global::System.Drawing.Point(6, 84));
             this.menuSound.Name = ("menuSound");
-            this.menuSound.Size = (new global::System.Drawing.Size(278, 32));
+            this.menuSound.Size = (new global::System.Drawing.Size(278, 27));
             this.menuSound.TabIndex = (3);
             this.menuSound.Text = ("Mods audio");
             this.menuSound.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
@@ -519,9 +528,9 @@
             this.menuGraphic.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.menuGraphic.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.menuGraphic.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuGraphic.Location = (new global::System.Drawing.Point(6, 58));
+            this.menuGraphic.Location = (new global::System.Drawing.Point(6, 53));
             this.menuGraphic.Name = ("menuGraphic");
-            this.menuGraphic.Size = (new global::System.Drawing.Size(278, 32));
+            this.menuGraphic.Size = (new global::System.Drawing.Size(278, 27));
             this.menuGraphic.TabIndex = (2);
             this.menuGraphic.Text = ("Mods graphiques");
             this.menuGraphic.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
@@ -537,7 +546,7 @@
             this.menuAbout.ForeColor = (global::System.Drawing.Color.Black);
             this.menuAbout.Location = (new global::System.Drawing.Point(6, 22));
             this.menuAbout.Name = ("menuAbout");
-            this.menuAbout.Size = (new global::System.Drawing.Size(278, 32));
+            this.menuAbout.Size = (new global::System.Drawing.Size(278, 27));
             this.menuAbout.TabIndex = (1);
             this.menuAbout.Text = ("À propos du pack");
             this.menuAbout.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
@@ -618,7 +627,6 @@
             // graphicFrame1
             // 
             this.graphicFrame1.Controls.Add(this.graphicsGroupAddTextures);
-            this.graphicFrame1.Controls.Add(this.FFNxDayNight);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dm);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dw);
             this.graphicFrame1.Controls.Add(this.FFNxLighting);
@@ -674,7 +682,7 @@
             this.FFNxDayNight.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
             this.FFNxDayNight.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.FFNxDayNight.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxDayNight.Location = (new global::System.Drawing.Point(383, 66));
+            this.FFNxDayNight.Location = (new global::System.Drawing.Point(1289, 684));
             this.FFNxDayNight.Name = ("FFNxDayNight");
             this.FFNxDayNight.Size = (new global::System.Drawing.Size(122, 19));
             this.FFNxDayNight.TabIndex = (40);
@@ -743,9 +751,9 @@
             this.FFNxLighting.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
             this.FFNxLighting.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.FFNxLighting.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxLighting.Location = (new global::System.Drawing.Point(282, 66));
+            this.FFNxLighting.Location = (new global::System.Drawing.Point(344, 66));
             this.FFNxLighting.Name = ("FFNxLighting");
-            this.FFNxLighting.Size = (new global::System.Drawing.Size(98, 19));
+            this.FFNxLighting.Size = (new global::System.Drawing.Size(161, 19));
             this.FFNxLighting.TabIndex = (16);
             this.FFNxLighting.Text = ("Ombres 3D");
             this.FFNxLighting.UseVisualStyleBackColor = (false);
@@ -940,7 +948,7 @@
             this.graphicsWorldMap.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
             this.graphicsWorldMap.Location = (new global::System.Drawing.Point(11, 66));
             this.graphicsWorldMap.Name = ("graphicsWorldMap");
-            this.graphicsWorldMap.Size = (new global::System.Drawing.Size(150, 19));
+            this.graphicsWorldMap.Size = (new global::System.Drawing.Size(183, 19));
             this.graphicsWorldMap.TabIndex = (3);
             this.graphicsWorldMap.Text = ("Carte du monde HD");
             this.graphicsWorldMap.UseVisualStyleBackColor = (false);
@@ -964,9 +972,9 @@
             this.graphicsMiniGames.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
             this.graphicsMiniGames.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.graphicsMiniGames.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsMiniGames.Location = (new global::System.Drawing.Point(164, 66));
+            this.graphicsMiniGames.Location = (new global::System.Drawing.Point(197, 66));
             this.graphicsMiniGames.Name = ("graphicsMiniGames");
-            this.graphicsMiniGames.Size = (new global::System.Drawing.Size(115, 19));
+            this.graphicsMiniGames.Size = (new global::System.Drawing.Size(144, 19));
             this.graphicsMiniGames.TabIndex = (1);
             this.graphicsMiniGames.Text = ("Mini-jeux HD");
             this.graphicsMiniGames.UseVisualStyleBackColor = (false);
@@ -1012,7 +1020,7 @@
             this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
             this.menuGraphicPanel.Controls.Add(this.graphicFrame3);
-            this.menuGraphicPanel.Location = (new global::System.Drawing.Point(327, 0));
+            this.menuGraphicPanel.Location = (new global::System.Drawing.Point(327, 1600));
             this.menuGraphicPanel.Name = ("menuGraphicPanel");
             this.menuGraphicPanel.Size = (new global::System.Drawing.Size(795, 703));
             this.menuGraphicPanel.TabIndex = (10);
@@ -3432,6 +3440,93 @@
             this.loadingWait.Text = ("Chargement en cours");
             this.loadingWait.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
             // 
+            // menuControls
+            // 
+            this.menuControls.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
+            this.menuControls.Cursor = (global::System.Windows.Forms.Cursors.Hand);
+            this.menuControls.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.menuControls.ForeColor = (global::System.Drawing.Color.Black);
+            this.menuControls.Location = (new global::System.Drawing.Point(6, 177));
+            this.menuControls.Name = ("menuControls");
+            this.menuControls.Size = (new global::System.Drawing.Size(278, 27));
+            this.menuControls.TabIndex = (7);
+            this.menuControls.Text = ("Contrôles");
+            this.menuControls.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
+            this.menuControls.Click += (this.menuControls_Click);
+            this.menuControls.MouseEnter += (this.menuControls_MouseEnter);
+            this.menuControls.MouseLeave += (this.menuControls_MouseLeave);
+            // 
+            // menuControlsPanel
+            // 
+            this.menuControlsPanel.Controls.Add(this.label2);
+            this.menuControlsPanel.Controls.Add(this.label1);
+            this.menuControlsPanel.Controls.Add(this.groupBox3);
+            this.menuControlsPanel.Controls.Add(this.groupBox1);
+            this.menuControlsPanel.Controls.Add(this.controlsFrame1);
+            this.menuControlsPanel.Location = (new global::System.Drawing.Point(327, 0));
+            this.menuControlsPanel.Name = ("menuControlsPanel");
+            this.menuControlsPanel.Size = (new global::System.Drawing.Size(795, 703));
+            this.menuControlsPanel.TabIndex = (41);
+            // 
+            // controlsFrame1
+            // 
+            this.controlsFrame1.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.controlsFrame1.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
+            this.controlsFrame1.Location = (new global::System.Drawing.Point(3, 5));
+            this.controlsFrame1.Name = ("controlsFrame1");
+            this.controlsFrame1.Size = (new global::System.Drawing.Size(410, 326));
+            this.controlsFrame1.TabIndex = (10);
+            this.controlsFrame1.TabStop = (false);
+            this.controlsFrame1.Text = ("Manette");
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.groupBox1.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
+            this.groupBox1.Location = (new global::System.Drawing.Point(423, 5));
+            this.groupBox1.Name = ("groupBox1");
+            this.groupBox1.Size = (new global::System.Drawing.Size(369, 326));
+            this.groupBox1.TabIndex = (11);
+            this.groupBox1.TabStop = (false);
+            this.groupBox1.Text = ("Clavier");
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.groupBox3.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
+            this.groupBox3.Location = (new global::System.Drawing.Point(3, 337));
+            this.groupBox3.Name = ("groupBox3");
+            this.groupBox3.Size = (new global::System.Drawing.Size(789, 308));
+            this.groupBox3.TabIndex = (12);
+            this.groupBox3.TabStop = (false);
+            this.groupBox3.Text = ("Manette");
+            // 
+            // label1
+            // 
+            this.label1.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
+            this.label1.Cursor = (global::System.Windows.Forms.Cursors.Hand);
+            this.label1.Font = (new global::System.Drawing.Font("Roboto Black", 20.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.label1.ForeColor = (global::System.Drawing.Color.Black);
+            this.label1.Location = (new global::System.Drawing.Point(3, 660));
+            this.label1.Name = ("label1");
+            this.label1.Size = (new global::System.Drawing.Size(392, 32));
+            this.label1.TabIndex = (13);
+            this.label1.Text = ("Jouer à FF7 SYW");
+            this.label1.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
+            this.label2.Cursor = (global::System.Windows.Forms.Cursors.Hand);
+            this.label2.Font = (new global::System.Drawing.Font("Roboto Black", 20.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.label2.ForeColor = (global::System.Drawing.Color.Black);
+            this.label2.Location = (new global::System.Drawing.Point(400, 660));
+            this.label2.Name = ("label2");
+            this.label2.Size = (new global::System.Drawing.Size(392, 32));
+            this.label2.TabIndex = (14);
+            this.label2.Text = ("Jouer à FF7 SYW");
+            this.label2.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
+            // 
             // FF7U
             // 
             this.AutoScaleDimensions = (new global::System.Drawing.SizeF(7F, 15F));
@@ -3439,7 +3534,9 @@
             this.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(33)), (global::System.Int32)((global::System.Byte)(40)), (global::System.Int32)((global::System.Byte)(50))));
             this.BackgroundImageLayout = (global::System.Windows.Forms.ImageLayout.Center);
             this.ClientSize = (new global::System.Drawing.Size(1127, 711));
+            this.Controls.Add(this.menuControlsPanel);
             this.Controls.Add(this.menuLaunchGamePanel);
+            this.Controls.Add(this.FFNxDayNight);
             this.Controls.Add(this.menuHelpPanel);
             this.Controls.Add(this.menuFFNxPanel);
             this.Controls.Add(this.menuGameplayPanel);
@@ -3536,6 +3633,7 @@
             this.menuLaunchGamePanel.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((global::System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).EndInit();
+            this.menuControlsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
@@ -3767,5 +3865,12 @@
         private CheckBox FFNxAnalogControllerArun;
         private global::System.Windows.Forms.ComboBox HelpList;
         private global::System.Windows.Forms.Label chooseHelp;
+        private global::System.Windows.Forms.Label menuControls;
+        private global::System.Windows.Forms.Panel menuControlsPanel;
+        private global::System.Windows.Forms.Label label2;
+        private global::System.Windows.Forms.Label label1;
+        private global::System.Windows.Forms.GroupBox groupBox3;
+        private global::System.Windows.Forms.GroupBox groupBox1;
+        private global::System.Windows.Forms.GroupBox controlsFrame1;
     }
 }

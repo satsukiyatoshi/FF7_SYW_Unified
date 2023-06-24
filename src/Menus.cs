@@ -93,6 +93,8 @@ namespace FF7_SYW_Unified
         private void menuFFNx_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuFFNx, false); }
         private void menuHelp_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuHelp); }
         private void menuHelp_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuHelp, false); }
+        private void menuControls_MouseEnter(object sender, EventArgs e) { menuMouseOver(menuControls); }
+        private void menuControls_MouseLeave(object sender, EventArgs e) { menuMouseOver(menuControls, false); }
 
 
         private void menuAbout_Click(object sender, EventArgs e) { menuClick(menuAbout); }
@@ -101,6 +103,7 @@ namespace FF7_SYW_Unified
         private void menuGameplay_Click(object sender, EventArgs e) { menuClick(menuGameplay); }
         private void menuFFNx_Click(object sender, EventArgs e) { menuClick(menuFFNx); }
         private void menuHelp_Click(object sender, EventArgs e) { menuClick(menuHelp); }
+        private void menuControls_Click(object sender, EventArgs e) { menuClick(menuControls); }
 
 
         private void menuLaunchGame_MouseEnter(object sender, EventArgs e) { menuLaunchGame.BackColor = Globals.activButtonBolor; }
