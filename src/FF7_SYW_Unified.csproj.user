@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>D:\Docs\Programation\Csharp\Sources\FF7Unified\FF7_SYW_Unified\src\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Controls.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FF7U.cs">
       <SubType>Form</SubType>
     </Compile>
