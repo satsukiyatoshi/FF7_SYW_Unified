@@ -260,7 +260,6 @@
             this.loadingAnimation = (new global::System.Windows.Forms.PictureBox());
             this.loadingWaitDetails = (new global::System.Windows.Forms.Label());
             this.loadingWait = (new global::System.Windows.Forms.Label());
-            this.backgroundWorker1 = (new global::System.ComponentModel.BackgroundWorker());
             this.menuControlsPanel = (new global::System.Windows.Forms.Panel());
             this.controlsFrame2 = (new global::System.Windows.Forms.GroupBox());
             this.analogPadUse = (new global::System.Windows.Forms.Label());
@@ -313,6 +312,7 @@
             this.ctrlCancel = (new global::System.Windows.Forms.Label());
             this.ctrlMove = (new global::System.Windows.Forms.Label());
             this.controlsFrame3 = (new global::System.Windows.Forms.GroupBox());
+            this.specialShortcutHelp = (new global::System.Windows.Forms.RichTextBox());
             this.controleRestoreKb = (new global::System.Windows.Forms.Label());
             this.controleRestoreNp = (new global::System.Windows.Forms.Label());
             this.controlsFrame1 = (new global::System.Windows.Forms.GroupBox());
@@ -3448,6 +3448,7 @@
             // GeneralHelp
             // 
             this.GeneralHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.FixedSingle);
+            this.GeneralHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
             this.GeneralHelp.Location = (new global::System.Drawing.Point(14, 51));
             this.GeneralHelp.Name = ("GeneralHelp");
             this.GeneralHelp.ReadOnly = (true);
@@ -4124,6 +4125,7 @@
             // 
             // controlsFrame3
             // 
+            this.controlsFrame3.Controls.Add(this.specialShortcutHelp);
             this.controlsFrame3.Controls.Add(this.controleRestoreKb);
             this.controlsFrame3.Controls.Add(this.controleRestoreNp);
             this.controlsFrame3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
@@ -4135,15 +4137,25 @@
             this.controlsFrame3.TabStop = (false);
             this.controlsFrame3.Text = ("Fonctions spéciales");
             // 
+            // specialShortcutHelp
+            // 
+            this.specialShortcutHelp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(33)), (global::System.Int32)((global::System.Byte)(40)), (global::System.Int32)((global::System.Byte)(50))));
+            this.specialShortcutHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.specialShortcutHelp.Location = (new global::System.Drawing.Point(11, 22));
+            this.specialShortcutHelp.Name = ("specialShortcutHelp");
+            this.specialShortcutHelp.Size = (new global::System.Drawing.Size(767, 311));
+            this.specialShortcutHelp.TabIndex = (15);
+            this.specialShortcutHelp.Text = ("");
+            // 
             // controleRestoreKb
             // 
             this.controleRestoreKb.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
             this.controleRestoreKb.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.controleRestoreKb.Font = (new global::System.Drawing.Font("Roboto Black", 12.5F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.controleRestoreKb.ForeColor = (global::System.Drawing.Color.Black);
-            this.controleRestoreKb.Location = (new global::System.Drawing.Point(6, 346));
+            this.controleRestoreKb.Location = (new global::System.Drawing.Point(11, 346));
             this.controleRestoreKb.Name = ("controleRestoreKb");
-            this.controleRestoreKb.Size = (new global::System.Drawing.Size(386, 32));
+            this.controleRestoreKb.Size = (new global::System.Drawing.Size(381, 32));
             this.controleRestoreKb.TabIndex = (13);
             this.controleRestoreKb.Text = ("Rétablir les controles par défaut");
             this.controleRestoreKb.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
@@ -4157,7 +4169,7 @@
             this.controleRestoreNp.ForeColor = (global::System.Drawing.Color.Black);
             this.controleRestoreNp.Location = (new global::System.Drawing.Point(396, 346));
             this.controleRestoreNp.Name = ("controleRestoreNp");
-            this.controleRestoreNp.Size = (new global::System.Drawing.Size(386, 32));
+            this.controleRestoreNp.Size = (new global::System.Drawing.Size(382, 32));
             this.controleRestoreNp.TabIndex = (14);
             this.controleRestoreNp.Text = ("Rétablir les controles sans pavé numérique");
             this.controleRestoreNp.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
@@ -4517,7 +4529,6 @@
         private TextBox graphicsHelp;
         private TextBox soundsHelp;
         private TextBox FFNxHelp;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private RichTextBox GeneralHelp;
         private Label donation21;
         private Label authorUrl21;
@@ -4586,5 +4597,6 @@
         private global::System.Windows.Forms.Label ctrlGamepad;
         private global::System.Windows.Forms.Label ctrlControls;
         private global::System.Windows.Forms.Label analogPadUse;
+        private global::System.Windows.Forms.RichTextBox specialShortcutHelp;
     }
 }

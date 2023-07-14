@@ -41,6 +41,19 @@ namespace FF7_SYW_Unified
         }
 
 
+        private void shortcutsHelp()
+        {
+            string helpFile = Application.StartupPath + @"\Translations\Shortcuts\" + langInterface.Text + ".rtf";
+
+            try
+            {
+                specialShortcutHelp.LoadFile(helpFile, RichTextBoxStreamType.RichText);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(translate("errorFile", Globals.translateUI) + Environment.NewLine + Environment.NewLine + helpFile + Environment.NewLine + Environment.NewLine + ex.Message);
+            }
+        }
 
 
     }
