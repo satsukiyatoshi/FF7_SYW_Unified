@@ -3447,7 +3447,7 @@
             // 
             // GeneralHelp
             // 
-            this.GeneralHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.FixedSingle);
+            this.GeneralHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
             this.GeneralHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
             this.GeneralHelp.Location = (new global::System.Drawing.Point(14, 51));
             this.GeneralHelp.Name = ("GeneralHelp");
@@ -4140,10 +4140,13 @@
             // specialShortcutHelp
             // 
             this.specialShortcutHelp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(33)), (global::System.Int32)((global::System.Byte)(40)), (global::System.Int32)((global::System.Byte)(50))));
+            this.specialShortcutHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
             this.specialShortcutHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
             this.specialShortcutHelp.Location = (new global::System.Drawing.Point(11, 22));
             this.specialShortcutHelp.Name = ("specialShortcutHelp");
-            this.specialShortcutHelp.Size = (new global::System.Drawing.Size(767, 311));
+            this.specialShortcutHelp.ReadOnly = (true);
+            this.specialShortcutHelp.ScrollBars = (global::System.Windows.Forms.RichTextBoxScrollBars.Vertical);
+            this.specialShortcutHelp.Size = (new global::System.Drawing.Size(767, 314));
             this.specialShortcutHelp.TabIndex = (15);
             this.specialShortcutHelp.Text = ("");
             // 
