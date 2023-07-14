@@ -55,6 +55,7 @@
             this.graphicsAddTextures = (new global::System.Windows.Forms.ComboBox());
             this.graphicsGroupModels3Dm = (new global::System.Windows.Forms.GroupBox());
             this.graphicsModels3Dm = (new global::System.Windows.Forms.ComboBox());
+            this.FFNxGamutNtsc = (new global::System.Windows.Forms.CheckBox());
             this.graphicsGroupModels3Dw = (new global::System.Windows.Forms.GroupBox());
             this.graphicsModels3Dw = (new global::System.Windows.Forms.ComboBox());
             this.FFNxLighting = (new global::System.Windows.Forms.CheckBox());
@@ -76,7 +77,6 @@
             this.graphicsAnimations = (new global::System.Windows.Forms.CheckBox());
             this.graphicsMiniGames = (new global::System.Windows.Forms.CheckBox());
             this.graphicsFields = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxDayNight = (new global::System.Windows.Forms.CheckBox());
             this.graphicFrame3 = (new global::System.Windows.Forms.GroupBox());
             this.graphicPrevPic = (new global::System.Windows.Forms.PictureBox());
             this.menuGraphicPanel = (new global::System.Windows.Forms.Panel());
@@ -263,9 +263,58 @@
             this.backgroundWorker1 = (new global::System.ComponentModel.BackgroundWorker());
             this.menuControlsPanel = (new global::System.Windows.Forms.Panel());
             this.controlsFrame2 = (new global::System.Windows.Forms.GroupBox());
-            this.controleRestoreNp = (new global::System.Windows.Forms.Label());
-            this.controleRestoreKb = (new global::System.Windows.Forms.Label());
+            this.analogPadUse = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboard = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpad = (new global::System.Windows.Forms.Label());
+            this.ctrlGamepad = (new global::System.Windows.Forms.Label());
+            this.ctrlControls = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardStart = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardAssist = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardTarget = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardCam = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardPgDown = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardPgUp = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardChange = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardMenu = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardCancel = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardOk = (new global::System.Windows.Forms.Label());
+            this.ctrlKeyboardPad = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadStart = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadAssist = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadTarget = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadCam = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadPgDown = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadPgUp = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadChange = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadMenu = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadCancel = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadOk = (new global::System.Windows.Forms.Label());
+            this.ctrlNumpadPad = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadStart = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadAssist = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadTarget = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadCam = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadPgDown = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadPgUp = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadChange = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadMenu = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadCancel = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadOk = (new global::System.Windows.Forms.Label());
+            this.ctrlGpadPad = (new global::System.Windows.Forms.Label());
+            this.ctrlOk = (new global::System.Windows.Forms.Label());
+            this.ctrlStart = (new global::System.Windows.Forms.Label());
+            this.ctrlAssist = (new global::System.Windows.Forms.Label());
+            this.ctrlTarget = (new global::System.Windows.Forms.Label());
+            this.ctrlCam = (new global::System.Windows.Forms.Label());
+            this.ctrlPgDown = (new global::System.Windows.Forms.Label());
+            this.ctrlPgUp = (new global::System.Windows.Forms.Label());
+            this.ctrlChange = (new global::System.Windows.Forms.Label());
+            this.ctrlMenu = (new global::System.Windows.Forms.Label());
+            this.ctrlCancel = (new global::System.Windows.Forms.Label());
+            this.ctrlMove = (new global::System.Windows.Forms.Label());
             this.controlsFrame3 = (new global::System.Windows.Forms.GroupBox());
+            this.controleRestoreKb = (new global::System.Windows.Forms.Label());
+            this.controleRestoreNp = (new global::System.Windows.Forms.Label());
             this.controlsFrame1 = (new global::System.Windows.Forms.GroupBox());
             this.psxPict = (new global::System.Windows.Forms.PictureBox());
             musicsPrev = (new global::System.Windows.Forms.PictureBox());
@@ -350,6 +399,7 @@
             this.groupBox2.SuspendLayout();
             ((global::System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).BeginInit();
             this.menuControlsPanel.SuspendLayout();
+            this.controlsFrame2.SuspendLayout();
             this.controlsFrame3.SuspendLayout();
             this.controlsFrame1.SuspendLayout();
             ((global::System.ComponentModel.ISupportInitialize)(this.psxPict)).BeginInit();
@@ -648,6 +698,7 @@
             // 
             this.graphicFrame1.Controls.Add(this.graphicsGroupAddTextures);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dm);
+            this.graphicFrame1.Controls.Add(this.FFNxGamutNtsc);
             this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dw);
             this.graphicFrame1.Controls.Add(this.FFNxLighting);
             this.graphicFrame1.Controls.Add(this.graphicsGroupMenu);
@@ -725,6 +776,19 @@
             this.graphicsModels3Dm.SelectedIndexChanged += (this.graphicsModels3DmChange);
             this.graphicsModels3Dm.Click += (this.getMousePos);
             // 
+            // FFNxGamutNtsc
+            // 
+            this.FFNxGamutNtsc.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
+            this.FFNxGamutNtsc.Cursor = (global::System.Windows.Forms.Cursors.Hand);
+            this.FFNxGamutNtsc.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.FFNxGamutNtsc.Location = (new global::System.Drawing.Point(349, 66));
+            this.FFNxGamutNtsc.Name = ("FFNxGamutNtsc");
+            this.FFNxGamutNtsc.Size = (new global::System.Drawing.Size(156, 19));
+            this.FFNxGamutNtsc.TabIndex = (40);
+            this.FFNxGamutNtsc.Text = ("Gamut NTSC-J");
+            this.FFNxGamutNtsc.UseVisualStyleBackColor = (false);
+            this.FFNxGamutNtsc.MouseEnter += (this.FFNxGamutNtsc_MouseEnter);
+            // 
             // graphicsGroupModels3Dw
             // 
             this.graphicsGroupModels3Dw.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
@@ -758,9 +822,9 @@
             this.FFNxLighting.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
             this.FFNxLighting.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.FFNxLighting.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxLighting.Location = (new global::System.Drawing.Point(344, 66));
+            this.FFNxLighting.Location = (new global::System.Drawing.Point(197, 66));
             this.FFNxLighting.Name = ("FFNxLighting");
-            this.FFNxLighting.Size = (new global::System.Drawing.Size(161, 19));
+            this.FFNxLighting.Size = (new global::System.Drawing.Size(149, 19));
             this.FFNxLighting.TabIndex = (16);
             this.FFNxLighting.Text = ("Ombres 3D");
             this.FFNxLighting.UseVisualStyleBackColor = (false);
@@ -966,9 +1030,9 @@
             this.graphicsAnimations.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
             this.graphicsAnimations.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.graphicsAnimations.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsAnimations.Location = (new global::System.Drawing.Point(260, 22));
+            this.graphicsAnimations.Location = (new global::System.Drawing.Point(197, 22));
             this.graphicsAnimations.Name = ("graphicsAnimations");
-            this.graphicsAnimations.Size = (new global::System.Drawing.Size(245, 19));
+            this.graphicsAnimations.Size = (new global::System.Drawing.Size(180, 19));
             this.graphicsAnimations.TabIndex = (2);
             this.graphicsAnimations.Text = ("Animations avancées");
             this.graphicsAnimations.UseVisualStyleBackColor = (false);
@@ -979,9 +1043,9 @@
             this.graphicsMiniGames.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
             this.graphicsMiniGames.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.graphicsMiniGames.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsMiniGames.Location = (new global::System.Drawing.Point(197, 66));
+            this.graphicsMiniGames.Location = (new global::System.Drawing.Point(380, 22));
             this.graphicsMiniGames.Name = ("graphicsMiniGames");
-            this.graphicsMiniGames.Size = (new global::System.Drawing.Size(144, 19));
+            this.graphicsMiniGames.Size = (new global::System.Drawing.Size(125, 19));
             this.graphicsMiniGames.TabIndex = (1);
             this.graphicsMiniGames.Text = ("Mini-jeux HD");
             this.graphicsMiniGames.UseVisualStyleBackColor = (false);
@@ -994,25 +1058,12 @@
             this.graphicsFields.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
             this.graphicsFields.Location = (new global::System.Drawing.Point(11, 22));
             this.graphicsFields.Name = ("graphicsFields");
-            this.graphicsFields.Size = (new global::System.Drawing.Size(246, 19));
+            this.graphicsFields.Size = (new global::System.Drawing.Size(183, 19));
             this.graphicsFields.TabIndex = (0);
             this.graphicsFields.Text = ("Scènes du jeu HD");
             this.graphicsFields.UseVisualStyleBackColor = (false);
             this.graphicsFields.CheckedChanged += (this.graphicsFields_CheckedChanged);
             this.graphicsFields.MouseEnter += (this.graphicsFields_MouseEnter);
-            // 
-            // FFNxDayNight
-            // 
-            this.FFNxDayNight.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxDayNight.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxDayNight.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxDayNight.Location = (new global::System.Drawing.Point(1289, 684));
-            this.FFNxDayNight.Name = ("FFNxDayNight");
-            this.FFNxDayNight.Size = (new global::System.Drawing.Size(122, 19));
-            this.FFNxDayNight.TabIndex = (40);
-            this.FFNxDayNight.Text = ("Cycle Jour/nuit");
-            this.FFNxDayNight.UseVisualStyleBackColor = (false);
-            this.FFNxDayNight.MouseEnter += (this.FFNxDayNight_MouseEnter);
             // 
             // graphicFrame3
             // 
@@ -2797,6 +2848,7 @@
             // 
             this.FFNxAnalogControllerArun.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
             this.FFNxAnalogControllerArun.Cursor = (global::System.Windows.Forms.Cursors.Hand);
+            this.FFNxAnalogControllerArun.Enabled = (false);
             this.FFNxAnalogControllerArun.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
             this.FFNxAnalogControllerArun.Location = (new global::System.Drawing.Point(182, 553));
             this.FFNxAnalogControllerArun.Name = ("FFNxAnalogControllerArun");
@@ -3302,6 +3354,7 @@
             this.FFNxAnalogController.TabIndex = (19);
             this.FFNxAnalogController.Text = ("Contôleur analogique");
             this.FFNxAnalogController.UseVisualStyleBackColor = (false);
+            this.FFNxAnalogController.CheckedChanged += (this.FFNxAnalogController_CheckedChanged);
             this.FFNxAnalogController.MouseEnter += (this.FFNxAnalogController_MouseEnter);
             // 
             // FFNXSteamSucces
@@ -3472,6 +3525,55 @@
             // 
             // controlsFrame2
             // 
+            this.controlsFrame2.Controls.Add(this.analogPadUse);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboard);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpad);
+            this.controlsFrame2.Controls.Add(this.ctrlGamepad);
+            this.controlsFrame2.Controls.Add(this.ctrlControls);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardStart);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardAssist);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardTarget);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardCam);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardPgDown);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardPgUp);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardChange);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardMenu);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardCancel);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardOk);
+            this.controlsFrame2.Controls.Add(this.ctrlKeyboardPad);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadStart);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadAssist);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadTarget);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadCam);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadPgDown);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadPgUp);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadChange);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadMenu);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadCancel);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadOk);
+            this.controlsFrame2.Controls.Add(this.ctrlNumpadPad);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadStart);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadAssist);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadTarget);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadCam);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadPgDown);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadPgUp);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadChange);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadMenu);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadCancel);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadOk);
+            this.controlsFrame2.Controls.Add(this.ctrlGpadPad);
+            this.controlsFrame2.Controls.Add(this.ctrlOk);
+            this.controlsFrame2.Controls.Add(this.ctrlStart);
+            this.controlsFrame2.Controls.Add(this.ctrlAssist);
+            this.controlsFrame2.Controls.Add(this.ctrlTarget);
+            this.controlsFrame2.Controls.Add(this.ctrlCam);
+            this.controlsFrame2.Controls.Add(this.ctrlPgDown);
+            this.controlsFrame2.Controls.Add(this.ctrlPgUp);
+            this.controlsFrame2.Controls.Add(this.ctrlChange);
+            this.controlsFrame2.Controls.Add(this.ctrlMenu);
+            this.controlsFrame2.Controls.Add(this.ctrlCancel);
+            this.controlsFrame2.Controls.Add(this.ctrlMove);
             this.controlsFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.controlsFrame2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
             this.controlsFrame2.Location = (new global::System.Drawing.Point(402, 4));
@@ -3479,7 +3581,573 @@
             this.controlsFrame2.Size = (new global::System.Drawing.Size(390, 301));
             this.controlsFrame2.TabIndex = (11);
             this.controlsFrame2.TabStop = (false);
-            this.controlsFrame2.Text = ("Manette");
+            this.controlsFrame2.Text = ("Controles par defaut");
+            // 
+            // analogPadUse
+            // 
+            this.analogPadUse.BackColor = (global::System.Drawing.Color.Transparent);
+            this.analogPadUse.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.analogPadUse.ForeColor = (global::System.Drawing.Color.White);
+            this.analogPadUse.Location = (new global::System.Drawing.Point(9, 239));
+            this.analogPadUse.Name = ("analogPadUse");
+            this.analogPadUse.Size = (new global::System.Drawing.Size(370, 46));
+            this.analogPadUse.TabIndex = (61);
+            this.analogPadUse.Text = ("Pour utiliser le stick analogique (L3) pour les déplacements, il est obligatoire d'activer le contrôleur analogique dans la configuration du pilote.");
+            // 
+            // ctrlKeyboard
+            // 
+            this.ctrlKeyboard.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboard.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboard.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlKeyboard.Location = (new global::System.Drawing.Point(297, 25));
+            this.ctrlKeyboard.Name = ("ctrlKeyboard");
+            this.ctrlKeyboard.Size = (new global::System.Drawing.Size(82, 16));
+            this.ctrlKeyboard.TabIndex = (60);
+            this.ctrlKeyboard.Text = ("Clavier");
+            // 
+            // ctrlNumpad
+            // 
+            this.ctrlNumpad.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpad.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpad.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlNumpad.Location = (new global::System.Drawing.Point(207, 25));
+            this.ctrlNumpad.Name = ("ctrlNumpad");
+            this.ctrlNumpad.Size = (new global::System.Drawing.Size(84, 16));
+            this.ctrlNumpad.TabIndex = (59);
+            this.ctrlNumpad.Text = ("Pavé num");
+            // 
+            // ctrlGamepad
+            // 
+            this.ctrlGamepad.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGamepad.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGamepad.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlGamepad.Location = (new global::System.Drawing.Point(121, 25));
+            this.ctrlGamepad.Name = ("ctrlGamepad");
+            this.ctrlGamepad.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGamepad.TabIndex = (58);
+            this.ctrlGamepad.Text = ("Manette");
+            // 
+            // ctrlControls
+            // 
+            this.ctrlControls.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlControls.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlControls.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlControls.Location = (new global::System.Drawing.Point(8, 25));
+            this.ctrlControls.Name = ("ctrlControls");
+            this.ctrlControls.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlControls.TabIndex = (57);
+            this.ctrlControls.Text = ("Contrôles");
+            // 
+            // ctrlKeyboardStart
+            // 
+            this.ctrlKeyboardStart.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardStart.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardStart.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardStart.Location = (new global::System.Drawing.Point(297, 213));
+            this.ctrlKeyboardStart.Name = ("ctrlKeyboardStart");
+            this.ctrlKeyboardStart.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardStart.TabIndex = (56);
+            this.ctrlKeyboardStart.Text = ("Supprimer");
+            // 
+            // ctrlKeyboardAssist
+            // 
+            this.ctrlKeyboardAssist.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardAssist.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardAssist.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardAssist.Location = (new global::System.Drawing.Point(297, 197));
+            this.ctrlKeyboardAssist.Name = ("ctrlKeyboardAssist");
+            this.ctrlKeyboardAssist.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardAssist.TabIndex = (55);
+            this.ctrlKeyboardAssist.Text = ("Insertion");
+            // 
+            // ctrlKeyboardTarget
+            // 
+            this.ctrlKeyboardTarget.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardTarget.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardTarget.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardTarget.Location = (new global::System.Drawing.Point(297, 180));
+            this.ctrlKeyboardTarget.Name = ("ctrlKeyboardTarget");
+            this.ctrlKeyboardTarget.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardTarget.TabIndex = (54);
+            this.ctrlKeyboardTarget.Text = ("Fin");
+            // 
+            // ctrlKeyboardCam
+            // 
+            this.ctrlKeyboardCam.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardCam.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardCam.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardCam.Location = (new global::System.Drawing.Point(297, 163));
+            this.ctrlKeyboardCam.Name = ("ctrlKeyboardCam");
+            this.ctrlKeyboardCam.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardCam.TabIndex = (53);
+            this.ctrlKeyboardCam.Text = ("Début");
+            // 
+            // ctrlKeyboardPgDown
+            // 
+            this.ctrlKeyboardPgDown.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardPgDown.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardPgDown.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardPgDown.Location = (new global::System.Drawing.Point(297, 146));
+            this.ctrlKeyboardPgDown.Name = ("ctrlKeyboardPgDown");
+            this.ctrlKeyboardPgDown.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardPgDown.TabIndex = (52);
+            this.ctrlKeyboardPgDown.Text = ("Page bas");
+            // 
+            // ctrlKeyboardPgUp
+            // 
+            this.ctrlKeyboardPgUp.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardPgUp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardPgUp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardPgUp.Location = (new global::System.Drawing.Point(297, 129));
+            this.ctrlKeyboardPgUp.Name = ("ctrlKeyboardPgUp");
+            this.ctrlKeyboardPgUp.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardPgUp.TabIndex = (51);
+            this.ctrlKeyboardPgUp.Text = ("Page haut");
+            // 
+            // ctrlKeyboardChange
+            // 
+            this.ctrlKeyboardChange.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardChange.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardChange.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardChange.Location = (new global::System.Drawing.Point(297, 112));
+            this.ctrlKeyboardChange.Name = ("ctrlKeyboardChange");
+            this.ctrlKeyboardChange.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardChange.TabIndex = (50);
+            this.ctrlKeyboardChange.Text = ("Contrôle");
+            // 
+            // ctrlKeyboardMenu
+            // 
+            this.ctrlKeyboardMenu.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardMenu.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardMenu.Location = (new global::System.Drawing.Point(297, 95));
+            this.ctrlKeyboardMenu.Name = ("ctrlKeyboardMenu");
+            this.ctrlKeyboardMenu.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardMenu.TabIndex = (49);
+            this.ctrlKeyboardMenu.Text = ("Majuscule");
+            // 
+            // ctrlKeyboardCancel
+            // 
+            this.ctrlKeyboardCancel.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardCancel.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardCancel.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardCancel.Location = (new global::System.Drawing.Point(297, 78));
+            this.ctrlKeyboardCancel.Name = ("ctrlKeyboardCancel");
+            this.ctrlKeyboardCancel.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardCancel.TabIndex = (48);
+            this.ctrlKeyboardCancel.Text = ("Espace");
+            // 
+            // ctrlKeyboardOk
+            // 
+            this.ctrlKeyboardOk.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardOk.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardOk.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardOk.Location = (new global::System.Drawing.Point(297, 61));
+            this.ctrlKeyboardOk.Name = ("ctrlKeyboardOk");
+            this.ctrlKeyboardOk.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardOk.TabIndex = (47);
+            this.ctrlKeyboardOk.Text = ("Entrée");
+            // 
+            // ctrlKeyboardPad
+            // 
+            this.ctrlKeyboardPad.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlKeyboardPad.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlKeyboardPad.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlKeyboardPad.Location = (new global::System.Drawing.Point(297, 44));
+            this.ctrlKeyboardPad.Name = ("ctrlKeyboardPad");
+            this.ctrlKeyboardPad.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlKeyboardPad.TabIndex = (46);
+            this.ctrlKeyboardPad.Text = ("Flêches");
+            // 
+            // ctrlNumpadStart
+            // 
+            this.ctrlNumpadStart.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadStart.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadStart.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadStart.Location = (new global::System.Drawing.Point(208, 213));
+            this.ctrlNumpadStart.Name = ("ctrlNumpadStart");
+            this.ctrlNumpadStart.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadStart.TabIndex = (45);
+            this.ctrlNumpadStart.Text = ("-");
+            // 
+            // ctrlNumpadAssist
+            // 
+            this.ctrlNumpadAssist.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadAssist.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadAssist.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadAssist.Location = (new global::System.Drawing.Point(208, 197));
+            this.ctrlNumpadAssist.Name = ("ctrlNumpadAssist");
+            this.ctrlNumpadAssist.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadAssist.TabIndex = (44);
+            this.ctrlNumpadAssist.Text = ("5");
+            // 
+            // ctrlNumpadTarget
+            // 
+            this.ctrlNumpadTarget.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadTarget.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadTarget.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadTarget.Location = (new global::System.Drawing.Point(208, 180));
+            this.ctrlNumpadTarget.Name = ("ctrlNumpadTarget");
+            this.ctrlNumpadTarget.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadTarget.TabIndex = (43);
+            this.ctrlNumpadTarget.Text = ("1");
+            // 
+            // ctrlNumpadCam
+            // 
+            this.ctrlNumpadCam.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadCam.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadCam.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadCam.Location = (new global::System.Drawing.Point(208, 163));
+            this.ctrlNumpadCam.Name = ("ctrlNumpadCam");
+            this.ctrlNumpadCam.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadCam.TabIndex = (42);
+            this.ctrlNumpadCam.Text = ("7");
+            // 
+            // ctrlNumpadPgDown
+            // 
+            this.ctrlNumpadPgDown.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadPgDown.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadPgDown.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadPgDown.Location = (new global::System.Drawing.Point(208, 146));
+            this.ctrlNumpadPgDown.Name = ("ctrlNumpadPgDown");
+            this.ctrlNumpadPgDown.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadPgDown.TabIndex = (41);
+            this.ctrlNumpadPgDown.Text = ("3");
+            // 
+            // ctrlNumpadPgUp
+            // 
+            this.ctrlNumpadPgUp.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadPgUp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadPgUp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadPgUp.Location = (new global::System.Drawing.Point(208, 129));
+            this.ctrlNumpadPgUp.Name = ("ctrlNumpadPgUp");
+            this.ctrlNumpadPgUp.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadPgUp.TabIndex = (40);
+            this.ctrlNumpadPgUp.Text = ("9");
+            // 
+            // ctrlNumpadChange
+            // 
+            this.ctrlNumpadChange.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadChange.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadChange.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadChange.Location = (new global::System.Drawing.Point(208, 112));
+            this.ctrlNumpadChange.Name = ("ctrlNumpadChange");
+            this.ctrlNumpadChange.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadChange.TabIndex = (39);
+            this.ctrlNumpadChange.Text = (".");
+            // 
+            // ctrlNumpadMenu
+            // 
+            this.ctrlNumpadMenu.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadMenu.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadMenu.Location = (new global::System.Drawing.Point(208, 95));
+            this.ctrlNumpadMenu.Name = ("ctrlNumpadMenu");
+            this.ctrlNumpadMenu.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadMenu.TabIndex = (38);
+            this.ctrlNumpadMenu.Text = ("+");
+            // 
+            // ctrlNumpadCancel
+            // 
+            this.ctrlNumpadCancel.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadCancel.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadCancel.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadCancel.Location = (new global::System.Drawing.Point(208, 78));
+            this.ctrlNumpadCancel.Name = ("ctrlNumpadCancel");
+            this.ctrlNumpadCancel.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadCancel.TabIndex = (37);
+            this.ctrlNumpadCancel.Text = ("0");
+            // 
+            // ctrlNumpadOk
+            // 
+            this.ctrlNumpadOk.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadOk.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadOk.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadOk.Location = (new global::System.Drawing.Point(208, 61));
+            this.ctrlNumpadOk.Name = ("ctrlNumpadOk");
+            this.ctrlNumpadOk.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadOk.TabIndex = (36);
+            this.ctrlNumpadOk.Text = ("Entrée");
+            // 
+            // ctrlNumpadPad
+            // 
+            this.ctrlNumpadPad.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlNumpadPad.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlNumpadPad.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlNumpadPad.Location = (new global::System.Drawing.Point(208, 44));
+            this.ctrlNumpadPad.Name = ("ctrlNumpadPad");
+            this.ctrlNumpadPad.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlNumpadPad.TabIndex = (35);
+            this.ctrlNumpadPad.Text = ("Flêches");
+            // 
+            // ctrlGpadStart
+            // 
+            this.ctrlGpadStart.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadStart.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadStart.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadStart.Location = (new global::System.Drawing.Point(121, 213));
+            this.ctrlGpadStart.Name = ("ctrlGpadStart");
+            this.ctrlGpadStart.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadStart.TabIndex = (34);
+            this.ctrlGpadStart.Text = ("Start");
+            // 
+            // ctrlGpadAssist
+            // 
+            this.ctrlGpadAssist.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadAssist.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadAssist.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadAssist.Location = (new global::System.Drawing.Point(121, 197));
+            this.ctrlGpadAssist.Name = ("ctrlGpadAssist");
+            this.ctrlGpadAssist.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadAssist.TabIndex = (33);
+            this.ctrlGpadAssist.Text = ("Select");
+            // 
+            // ctrlGpadTarget
+            // 
+            this.ctrlGpadTarget.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadTarget.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadTarget.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadTarget.Location = (new global::System.Drawing.Point(121, 180));
+            this.ctrlGpadTarget.Name = ("ctrlGpadTarget");
+            this.ctrlGpadTarget.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadTarget.TabIndex = (32);
+            this.ctrlGpadTarget.Text = ("R2");
+            // 
+            // ctrlGpadCam
+            // 
+            this.ctrlGpadCam.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadCam.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadCam.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadCam.Location = (new global::System.Drawing.Point(121, 163));
+            this.ctrlGpadCam.Name = ("ctrlGpadCam");
+            this.ctrlGpadCam.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadCam.TabIndex = (31);
+            this.ctrlGpadCam.Text = ("L2");
+            // 
+            // ctrlGpadPgDown
+            // 
+            this.ctrlGpadPgDown.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadPgDown.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadPgDown.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadPgDown.Location = (new global::System.Drawing.Point(121, 146));
+            this.ctrlGpadPgDown.Name = ("ctrlGpadPgDown");
+            this.ctrlGpadPgDown.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadPgDown.TabIndex = (30);
+            this.ctrlGpadPgDown.Text = ("R1");
+            // 
+            // ctrlGpadPgUp
+            // 
+            this.ctrlGpadPgUp.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadPgUp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadPgUp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadPgUp.Location = (new global::System.Drawing.Point(121, 129));
+            this.ctrlGpadPgUp.Name = ("ctrlGpadPgUp");
+            this.ctrlGpadPgUp.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadPgUp.TabIndex = (29);
+            this.ctrlGpadPgUp.Text = ("L1");
+            // 
+            // ctrlGpadChange
+            // 
+            this.ctrlGpadChange.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadChange.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadChange.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadChange.Location = (new global::System.Drawing.Point(121, 112));
+            this.ctrlGpadChange.Name = ("ctrlGpadChange");
+            this.ctrlGpadChange.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadChange.TabIndex = (28);
+            this.ctrlGpadChange.Text = ("Carré");
+            // 
+            // ctrlGpadMenu
+            // 
+            this.ctrlGpadMenu.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadMenu.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadMenu.Location = (new global::System.Drawing.Point(121, 95));
+            this.ctrlGpadMenu.Name = ("ctrlGpadMenu");
+            this.ctrlGpadMenu.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadMenu.TabIndex = (27);
+            this.ctrlGpadMenu.Text = ("Triangle");
+            // 
+            // ctrlGpadCancel
+            // 
+            this.ctrlGpadCancel.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadCancel.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadCancel.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadCancel.Location = (new global::System.Drawing.Point(121, 78));
+            this.ctrlGpadCancel.Name = ("ctrlGpadCancel");
+            this.ctrlGpadCancel.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadCancel.TabIndex = (26);
+            this.ctrlGpadCancel.Text = ("Croix");
+            // 
+            // ctrlGpadOk
+            // 
+            this.ctrlGpadOk.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadOk.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadOk.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadOk.Location = (new global::System.Drawing.Point(121, 61));
+            this.ctrlGpadOk.Name = ("ctrlGpadOk");
+            this.ctrlGpadOk.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadOk.TabIndex = (25);
+            this.ctrlGpadOk.Text = ("Rond");
+            // 
+            // ctrlGpadPad
+            // 
+            this.ctrlGpadPad.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlGpadPad.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlGpadPad.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
+            this.ctrlGpadPad.Location = (new global::System.Drawing.Point(121, 44));
+            this.ctrlGpadPad.Name = ("ctrlGpadPad");
+            this.ctrlGpadPad.Size = (new global::System.Drawing.Size(80, 16));
+            this.ctrlGpadPad.TabIndex = (24);
+            this.ctrlGpadPad.Text = ("Pad/L3");
+            // 
+            // ctrlOk
+            // 
+            this.ctrlOk.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlOk.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlOk.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlOk.Location = (new global::System.Drawing.Point(8, 61));
+            this.ctrlOk.Name = ("ctrlOk");
+            this.ctrlOk.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlOk.TabIndex = (23);
+            this.ctrlOk.Text = ("[OK]");
+            // 
+            // ctrlStart
+            // 
+            this.ctrlStart.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlStart.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlStart.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlStart.Location = (new global::System.Drawing.Point(8, 213));
+            this.ctrlStart.Name = ("ctrlStart");
+            this.ctrlStart.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlStart.TabIndex = (22);
+            this.ctrlStart.Text = ("[DEMARRER]");
+            // 
+            // ctrlAssist
+            // 
+            this.ctrlAssist.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlAssist.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlAssist.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlAssist.Location = (new global::System.Drawing.Point(8, 197));
+            this.ctrlAssist.Name = ("ctrlAssist");
+            this.ctrlAssist.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlAssist.TabIndex = (21);
+            this.ctrlAssist.Text = ("[ASSISTER]");
+            // 
+            // ctrlTarget
+            // 
+            this.ctrlTarget.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlTarget.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlTarget.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlTarget.Location = (new global::System.Drawing.Point(8, 180));
+            this.ctrlTarget.Name = ("ctrlTarget");
+            this.ctrlTarget.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlTarget.TabIndex = (20);
+            this.ctrlTarget.Text = ("[CIBLE]");
+            // 
+            // ctrlCam
+            // 
+            this.ctrlCam.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlCam.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlCam.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlCam.Location = (new global::System.Drawing.Point(8, 163));
+            this.ctrlCam.Name = ("ctrlCam");
+            this.ctrlCam.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlCam.TabIndex = (19);
+            this.ctrlCam.Text = ("[CAMERA]");
+            // 
+            // ctrlPgDown
+            // 
+            this.ctrlPgDown.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlPgDown.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlPgDown.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlPgDown.Location = (new global::System.Drawing.Point(8, 146));
+            this.ctrlPgDown.Name = ("ctrlPgDown");
+            this.ctrlPgDown.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlPgDown.TabIndex = (18);
+            this.ctrlPgDown.Text = ("[PAGEBAS]");
+            // 
+            // ctrlPgUp
+            // 
+            this.ctrlPgUp.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlPgUp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlPgUp.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlPgUp.Location = (new global::System.Drawing.Point(8, 129));
+            this.ctrlPgUp.Name = ("ctrlPgUp");
+            this.ctrlPgUp.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlPgUp.TabIndex = (17);
+            this.ctrlPgUp.Text = ("[PAGEHAUT]");
+            // 
+            // ctrlChange
+            // 
+            this.ctrlChange.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlChange.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlChange.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlChange.Location = (new global::System.Drawing.Point(8, 112));
+            this.ctrlChange.Name = ("ctrlChange");
+            this.ctrlChange.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlChange.TabIndex = (16);
+            this.ctrlChange.Text = ("[CHANGER]");
+            // 
+            // ctrlMenu
+            // 
+            this.ctrlMenu.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlMenu.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlMenu.Location = (new global::System.Drawing.Point(8, 95));
+            this.ctrlMenu.Name = ("ctrlMenu");
+            this.ctrlMenu.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlMenu.TabIndex = (15);
+            this.ctrlMenu.Text = ("[MENU]");
+            // 
+            // ctrlCancel
+            // 
+            this.ctrlCancel.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlCancel.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlCancel.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlCancel.Location = (new global::System.Drawing.Point(8, 78));
+            this.ctrlCancel.Name = ("ctrlCancel");
+            this.ctrlCancel.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlCancel.TabIndex = (14);
+            this.ctrlCancel.Text = ("[ANNULER]");
+            // 
+            // ctrlMove
+            // 
+            this.ctrlMove.BackColor = (global::System.Drawing.Color.Transparent);
+            this.ctrlMove.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.ctrlMove.ForeColor = (global::System.Drawing.Color.White);
+            this.ctrlMove.Location = (new global::System.Drawing.Point(8, 44));
+            this.ctrlMove.Name = ("ctrlMove");
+            this.ctrlMove.Size = (new global::System.Drawing.Size(106, 16));
+            this.ctrlMove.TabIndex = (12);
+            this.ctrlMove.Text = ("[DIRECTIONS]");
+            // 
+            // controlsFrame3
+            // 
+            this.controlsFrame3.Controls.Add(this.controleRestoreKb);
+            this.controlsFrame3.Controls.Add(this.controleRestoreNp);
+            this.controlsFrame3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.controlsFrame3.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
+            this.controlsFrame3.Location = (new global::System.Drawing.Point(3, 311));
+            this.controlsFrame3.Name = ("controlsFrame3");
+            this.controlsFrame3.Size = (new global::System.Drawing.Size(788, 392));
+            this.controlsFrame3.TabIndex = (12);
+            this.controlsFrame3.TabStop = (false);
+            this.controlsFrame3.Text = ("Fonctions spéciales");
+            // 
+            // controleRestoreKb
+            // 
+            this.controleRestoreKb.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
+            this.controleRestoreKb.Cursor = (global::System.Windows.Forms.Cursors.Hand);
+            this.controleRestoreKb.Font = (new global::System.Drawing.Font("Roboto Black", 12.5F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.controleRestoreKb.ForeColor = (global::System.Drawing.Color.Black);
+            this.controleRestoreKb.Location = (new global::System.Drawing.Point(6, 346));
+            this.controleRestoreKb.Name = ("controleRestoreKb");
+            this.controleRestoreKb.Size = (new global::System.Drawing.Size(386, 32));
+            this.controleRestoreKb.TabIndex = (13);
+            this.controleRestoreKb.Text = ("Rétablir les controles par défaut");
+            this.controleRestoreKb.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
+            this.controleRestoreKb.Click += (this.controleRestoreKb_Click);
             // 
             // controleRestoreNp
             // 
@@ -3494,33 +4162,6 @@
             this.controleRestoreNp.Text = ("Rétablir les controles sans pavé numérique");
             this.controleRestoreNp.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
             this.controleRestoreNp.Click += (this.controleRestoreNp_Click);
-            // 
-            // controleRestoreKb
-            // 
-            this.controleRestoreKb.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
-            this.controleRestoreKb.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.controleRestoreKb.Font = (new global::System.Drawing.Font("Roboto Black", 12.5F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.controleRestoreKb.ForeColor = (global::System.Drawing.Color.Black);
-            this.controleRestoreKb.Location = (new global::System.Drawing.Point(6, 346));
-            this.controleRestoreKb.Name = ("controleRestoreKb");
-            this.controleRestoreKb.Size = (new global::System.Drawing.Size(386, 32));
-            this.controleRestoreKb.TabIndex = (13);
-            this.controleRestoreKb.Text = ("Rétablir les controles pas défaut");
-            this.controleRestoreKb.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.controleRestoreKb.Click += (this.controleRestoreKb_Click);
-            // 
-            // controlsFrame3
-            // 
-            this.controlsFrame3.Controls.Add(this.controleRestoreKb);
-            this.controlsFrame3.Controls.Add(this.controleRestoreNp);
-            this.controlsFrame3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.controlsFrame3.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.controlsFrame3.Location = (new global::System.Drawing.Point(3, 311));
-            this.controlsFrame3.Name = ("controlsFrame3");
-            this.controlsFrame3.Size = (new global::System.Drawing.Size(788, 392));
-            this.controlsFrame3.TabIndex = (12);
-            this.controlsFrame3.TabStop = (false);
-            this.controlsFrame3.Text = ("Manette");
             // 
             // controlsFrame1
             // 
@@ -3550,10 +4191,9 @@
             this.AutoScaleMode = (global::System.Windows.Forms.AutoScaleMode.Font);
             this.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(33)), (global::System.Int32)((global::System.Byte)(40)), (global::System.Int32)((global::System.Byte)(50))));
             this.BackgroundImageLayout = (global::System.Windows.Forms.ImageLayout.Center);
-            this.ClientSize = (new global::System.Drawing.Size(1127, 711));
+            this.ClientSize = (new global::System.Drawing.Size(1126, 711));
             this.Controls.Add(this.menuControlsPanel);
             this.Controls.Add(this.menuLaunchGamePanel);
-            this.Controls.Add(this.FFNxDayNight);
             this.Controls.Add(this.menuHelpPanel);
             this.Controls.Add(this.menuFFNxPanel);
             this.Controls.Add(this.menuGameplayPanel);
@@ -3651,6 +4291,7 @@
             this.groupBox2.ResumeLayout(false);
             ((global::System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).EndInit();
             this.menuControlsPanel.ResumeLayout(false);
+            this.controlsFrame2.ResumeLayout(false);
             this.controlsFrame3.ResumeLayout(false);
             this.controlsFrame1.ResumeLayout(false);
             ((global::System.ComponentModel.ISupportInitialize)(this.psxPict)).EndInit();
@@ -3871,7 +4512,7 @@
         private Label loadingWait;
         private Label saveByMod;
         private Label documentsFolder;
-        private CheckBox FFNxDayNight;
+        private CheckBox FFNxGamutNtsc;
         private TextBox gameplayHelp;
         private TextBox graphicsHelp;
         private TextBox soundsHelp;
@@ -3893,5 +4534,57 @@
         private global::System.Windows.Forms.GroupBox controlsFrame1;
         private global::System.Windows.Forms.GroupBox controlsFrame2;
         private global::System.Windows.Forms.PictureBox psxPict;
+        private global::System.Windows.Forms.GroupBox groupBox1;
+        private global::System.Windows.Forms.GroupBox groupBox3;
+        private global::System.Windows.Forms.GroupBox groupBox4;
+        private global::System.Windows.Forms.Label ctrlMove;
+        private global::System.Windows.Forms.Label ctrlStart;
+        private global::System.Windows.Forms.Label ctrlAssist;
+        private global::System.Windows.Forms.Label ctrlTarget;
+        private global::System.Windows.Forms.Label ctrlCam;
+        private global::System.Windows.Forms.Label ctrlPgDown;
+        private global::System.Windows.Forms.Label ctrlPgUp;
+        private global::System.Windows.Forms.Label ctrlChange;
+        private global::System.Windows.Forms.Label ctrlMenu;
+        private global::System.Windows.Forms.Label ctrlCancel;
+        private global::System.Windows.Forms.Label ctrlOk;
+        private global::System.Windows.Forms.Label ctrlGpadPad;
+        private global::System.Windows.Forms.Label ctrlGpadChange;
+        private global::System.Windows.Forms.Label ctrlGpadMenu;
+        private global::System.Windows.Forms.Label ctrlGpadCancel;
+        private global::System.Windows.Forms.Label ctrlGpadOk;
+        private global::System.Windows.Forms.Label ctrlGpadStart;
+        private global::System.Windows.Forms.Label ctrlGpadAssist;
+        private global::System.Windows.Forms.Label ctrlGpadTarget;
+        private global::System.Windows.Forms.Label ctrlGpadCam;
+        private global::System.Windows.Forms.Label ctrlGpadPgDown;
+        private global::System.Windows.Forms.Label ctrlGpadPgUp;
+        private global::System.Windows.Forms.Label ctrlNumpadStart;
+        private global::System.Windows.Forms.Label ctrlNumpadAssist;
+        private global::System.Windows.Forms.Label ctrlNumpadTarget;
+        private global::System.Windows.Forms.Label ctrlNumpadCam;
+        private global::System.Windows.Forms.Label ctrlNumpadPgDown;
+        private global::System.Windows.Forms.Label ctrlNumpadPgUp;
+        private global::System.Windows.Forms.Label ctrlNumpadChange;
+        private global::System.Windows.Forms.Label ctrlNumpadMenu;
+        private global::System.Windows.Forms.Label ctrlNumpadCancel;
+        private global::System.Windows.Forms.Label ctrlNumpadOk;
+        private global::System.Windows.Forms.Label ctrlNumpadPad;
+        private global::System.Windows.Forms.Label ctrlKeyboardStart;
+        private global::System.Windows.Forms.Label ctrlKeyboardAssist;
+        private global::System.Windows.Forms.Label ctrlKeyboardTarget;
+        private global::System.Windows.Forms.Label ctrlKeyboardCam;
+        private global::System.Windows.Forms.Label ctrlKeyboardPgDown;
+        private global::System.Windows.Forms.Label ctrlKeyboardPgUp;
+        private global::System.Windows.Forms.Label ctrlKeyboardChange;
+        private global::System.Windows.Forms.Label ctrlKeyboardMenu;
+        private global::System.Windows.Forms.Label ctrlKeyboardCancel;
+        private global::System.Windows.Forms.Label ctrlKeyboardOk;
+        private global::System.Windows.Forms.Label ctrlKeyboardPad;
+        private global::System.Windows.Forms.Label ctrlKeyboard;
+        private global::System.Windows.Forms.Label ctrlNumpad;
+        private global::System.Windows.Forms.Label ctrlGamepad;
+        private global::System.Windows.Forms.Label ctrlControls;
+        private global::System.Windows.Forms.Label analogPadUse;
     }
 }

@@ -72,6 +72,21 @@ namespace FF7_SYW_Unified
 
 
 
+        private void FFNxAnalogController_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FFNxAnalogController.Checked == false)
+            {
+                FFNxAnalogControllerArun.Checked = false;
+                FFNxAnalogControllerArun.Enabled = false;
+            }
+            else
+            {
+                FFNxAnalogControllerArun.Enabled = true;
+            }
+        }
+
+
+
         private void applyPatchs()
         {
 
@@ -158,7 +173,7 @@ namespace FF7_SYW_Unified
             if (FFNxAnalogController.Checked) { twx.WriteLine("enable_analogue_controls = true"); } else { twx.WriteLine("enable_analogue_controls = false"); }
             if (FFNxAnalogControllerArun.Checked) { twx.WriteLine("enable_auto_run = true"); } else { twx.WriteLine("enable_auto_run = false"); }
             if (graphicsAnimations.Checked) { twx.WriteLine("enable_animated_textures = true"); } else { twx.WriteLine("enable_animated_textures = false"); }
-            if (FFNxDayNight.Checked) { twx.WriteLine("enable_time_cycle = true"); } else { twx.WriteLine("enable_time_cycle = false"); }
+            if (FFNxGamutNtsc.Checked) { twx.WriteLine("enable_ntscj_gamut_mode = true"); } else { twx.WriteLine("enable_ntscj_gamut_mode = false"); }
             twx.WriteLine("save_path = " + quote + @"..\" + (getModCustomFolder(gameplayMods, @"gameplay\")).Remove(0, Application.StartupPath.Length) + @"\save" + quote);
 
             if (FFNxShowStats.Checked)

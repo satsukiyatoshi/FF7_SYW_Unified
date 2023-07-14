@@ -69,7 +69,7 @@ namespace FF7_SYW_Unified
         private void graphicsFMVChange(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
         private void graphicsAddTexturesChange(object sender, EventArgs e) { modShowCustom(graphicsAddTextures, @"textures\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
         private void FFNxLighting_MouseEnter(object sender, EventArgs e) { modShow("FFNxLighting", graphicsHelp, graphicsHelpAuthor); }
-        private void FFNxDayNight_MouseEnter(object sender, EventArgs e) { modShow("FFNxDayNight", graphicsHelp, graphicsHelpAuthor); }
+        private void FFNxGamutNtsc_MouseEnter(object sender, EventArgs e) { modShow("FFNxGamutNtsc", graphicsHelp, graphicsHelpAuthor); }
 
     }
 }

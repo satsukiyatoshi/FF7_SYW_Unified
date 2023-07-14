@@ -7,12 +7,24 @@ namespace FF7_SYW_Unified
     {
         private void controleRestoreKb_Click(object sender, EventArgs e)
         {
-            //todo
+            DialogResult resultat = MessageBox.Show(translate("restorekb", Globals.translateUI), "", MessageBoxButtons.YesNo);
+
+            if (resultat == DialogResult.Yes)
+            {
+                File.Copy(Application.StartupPath + @"Tools\Controls\cl\ff7input.cfg", Application.StartupPath + @"Game\ff7input.cfg", true);
+            }
+
+            
         }
 
         private void controleRestoreNp_Click(object sender, EventArgs e)
         {
-            //todo
+            DialogResult resultat = MessageBox.Show(translate("restorenp", Globals.translateUI), "", MessageBoxButtons.YesNo);
+
+            if (resultat == DialogResult.Yes)
+            {
+                File.Copy(Application.StartupPath + @"Tools\Controls\lap\ff7input.cfg", Application.StartupPath + @"Game\ff7input.cfg", true);
+            }
         }
     }
 }

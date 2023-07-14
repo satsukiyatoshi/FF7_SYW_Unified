@@ -35,7 +35,14 @@
 		<name>norulmod</name>
 		<text>Pas de page web indiquée pour ce mod</text>
 	</control>
-	
+	<control>
+		<name>restorekb</name>
+		<text>Êtes-vous sur de vouloir restaurer les contrôles par défaut ?</text>
+	</control>
+	<control>
+		<name>restorenp</name>
+		<text>Êtes-vous sur de vouloir restaurer les contrôles sans pavé numérique ?</text>
+	</control>
 	
 	
 <!--  -->
@@ -71,7 +78,11 @@
 	</control>
 	<control>
 		<name>menuHelp</name>
-		<text>Aide générale</text>
+		<text>Aide</text>
+	</control>
+	<control>
+		<name>menuControls</name>
+		<text>Contrôles</text>
 	</control>
 	<control>
 		<name>ff7Lang</name>
@@ -681,24 +692,246 @@ Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
 		<url></url>
 	</control>
 	<control>
-		<name>FFNxDayNight</name>
-		<text>Cycle jour/nuit</text>
-		<author>Team FFNx</author>
-		<help>Béta - Ajoute un cycle jour/nuit dans FF7 en fonction de l'heure réelle.
-		
-Certains mods de gameplay peuvent utiliser cela.</help>
+		<name>FFNxGamutNtsc</name>
+		<text>Gamut NTSC-J</text>
+		<author>ChthonVII</author>
+		<help>Permet de retrouver les vrais couleurs du jeu qui ont été mal converties sur la version Pc, les couleurs sont plus chaudes et plus vives.
+
+Cette option est conseillée que ce soit avec les textures originales ou les textures HD.
+
+Si vous utilisez des mods tiers qui ne sont pas des convertions HD du jeux original mais des textures faites de zéro, cette option peut fausser les couleurs.		
+		</help>
 		<url></url>
 	</control>
 		
+
+
+<!--  -->	
+<!-- Controls part -->
+<!--  -->	
+	<control>
+		<name>controlsFrame1</name>
+		<text>Manette</text>
+	</control>
+	<control>
+		<name>controlsFrame2</name>
+		<text>Contrôles généraux</text>
+	</control>
+	<control>
+		<name>controlsFrame3</name>
+		<text>Fonctions spéciales</text>
+	</control>	
+	<control>
+		<name>controleRestoreKb</name>
+		<text>Rétablir les contrôles par défaut</text>
+	</control>	
+	<control>
+		<name>controleRestoreNp</name>
+		<text>Rétablir les contrôles sans pavé numérique</text>
+	</control>	
+    <control>
+        <name>ctrlMove</name>
+        <text>[DIRECTIONS]</text>
+    </control>
+    <control>
+        <name>ctrlOk</name>
+        <text>[OK]</text>
+    </control>
+    <control>
+        <name>ctrlCancel</name>
+        <text>[ANNULER]</text>
+    </control>
+    <control>
+        <name>ctrlMenu</name>
+        <text>[MENU]</text>
+    </control>
+    <control>
+        <name>ctrlChange</name>
+        <text>[CHANGER]</text>
+    </control>
+    <control>
+        <name>ctrlPgUp</name>
+        <text>[PAGEHAUT]</text>
+    </control>
+    <control>
+        <name>ctrlPgDown</name>
+        <text>[PAGEBAS]</text>
+    </control>
+    <control>
+        <name>ctrlCam</name>
+        <text>[CAMERA]</text>
+    </control>
+    <control>
+        <name>ctrlTarget</name>
+        <text>[CIBLE]</text>
+    </control>
+    <control>
+        <name>ctrlAssist</name>
+        <text>[ASSISTER]</text>
+    </control>
+    <control>
+        <name>ctrlStart</name>
+        <text>[DEMARRER]</text>
+    </control>
+    <control>
+        <name>ctrlGpadPad</name>
+        <text>Pad/L3</text>
+    </control>
+    <control>
+        <name>ctrlGpadOk</name>
+        <text>Rond</text>
+    </control>
+    <control>
+        <name>ctrlGpadCancel</name>
+        <text>Croix</text>
+    </control>
+    <control>
+        <name>ctrlGpadMenu</name>
+        <text>Triangle</text>
+    </control>
+    <control>
+        <name>ctrlGpadChange</name>
+        <text>Carré</text>
+    </control>
+    <control>
+        <name>ctrlGpadPgUp</name>
+        <text>L1</text>
+    </control>
+    <control>
+        <name>ctrlGpadPgDown</name>
+        <text>R1</text>
+    </control>
+    <control>
+        <name>ctrlGpadCam</name>
+        <text>L2</text>
+    </control>
+    <control>
+        <name>ctrlGpadTarget</name>
+        <text>R2</text>
+    </control>
+    <control>
+        <name>ctrlGpadAssist</name>
+        <text>Select</text>
+    </control>
+    <control>
+        <name>ctrlGpadStart</name>
+        <text>Start</text>
+    </control>
+    <control>
+        <name>ctrlNumpadPad</name>
+        <text>Flêches</text>
+    </control>
+    <control>
+        <name>ctrlNumpadOk</name>
+        <text>Entrée</text>
+    </control>
+    <control>
+        <name>ctrlNumpadCancel</name>
+        <text>0</text>
+    </control>
+    <control>
+        <name>ctrlNumpadMenu</name>
+        <text>+</text>
+    </control>
+    <control>
+        <name>ctrlNumpadChange</name>
+        <text>.</text>
+    </control>
+    <control>
+        <name>ctrlNumpadPgUp</name>
+        <text>9</text>
+    </control>
+    <control>
+        <name>ctrlNumpadPgDown</name>
+        <text>3</text>
+    </control>
+    <control>
+        <name>ctrlNumpadCam</name>
+        <text>7</text>
+    </control>
+    <control>
+        <name>ctrlNumpadTarget</name>
+        <text>1</text>
+    </control>
+    <control>
+        <name>ctrlNumpadAssist</name>
+        <text>5</text>
+    </control>
+    <control>
+        <name>ctrlNumpadStart</name>
+        <text>-</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardPad</name>
+        <text>Flêches</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardOk</name>
+        <text>Entrée</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardCancel</name>
+        <text>Espace</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardMenu</name>
+        <text>Majuscule</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardChange</name>
+        <text>Contrôle</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardPgUp</name>
+        <text>Page haut</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardPgDown</name>
+        <text>Page Bas</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardCam</name>
+        <text>Début</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardTarget</name>
+        <text>Fin</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardAssist</name>
+        <text>Insertion</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardStart</name>
+        <text>Supprimer</text>
+    </control>
+    <control>
+        <name>ctrlControls</name>
+        <text>Contrôles</text>
+    </control>
+    <control>
+        <name>ctrlGamepad</name>
+        <text>Manette</text>
+    </control>
+    <control>
+        <name>ctrlNumpad</name>
+        <text>Pavé num.</text>
+    </control>
+    <control>
+        <name>ctrlKeyboard</name>
+        <text>Clavier</text>
+    </control>
+    <control>
+        <name>analogPadUse</name>
+        <text>Pour utiliser le stick analogique (L3) pour les déplacements, il est obligatoire d'activer le contrôleur analogique dans la configuration du pilote.</text>
+    </control>
+
+	
 	
 	
 <!--  -->	
 <!-- Help part -->
 <!--  -->	
-	<control>
-		<name>helpFrame1</name>
-		<text>Raccourcis des fonctions spéciales</text>
-	</control>
 	<control>
 		<name>HelpFrame2</name>
 		<text>Aide</text>
