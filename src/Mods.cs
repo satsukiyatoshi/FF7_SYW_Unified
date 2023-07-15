@@ -144,17 +144,23 @@ namespace FF7_SYW_Unified
                 folderCopyAll(new DirectoryInfo(modFolder + @"Files"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
+            //if language specific mod files exists then copy then overwriting default mod files
+            //Globals.gameLang
+            if (Directory.Exists(modFolder + @"FilesLang\" + Globals.gameLang))
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesLang\" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
             //if 60fps mod is activated then copy 60 fps file of the mod too
             if (FFNxFps.SelectedIndex == 2 && Directory.Exists(modFolder + @"Files60fps"))
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"Files60fps"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
-            //if language specific mod files exists then copy then overwriting default mod files
-            //Globals.gameLang
-            if (Directory.Exists(modFolder + @"FilesLang\" + Globals.gameLang))
+            //if 60fps mod is activated and specific langauge file exists then copy localised 60 fps file of the mod too
+            if (FFNxFps.SelectedIndex == 2 && Directory.Exists(modFolder + @"FilesLang60fps\" + Globals.gameLang))
             {
-                folderCopyAll(new DirectoryInfo(modFolder + @"FilesLang\" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesLang60fps\" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
             //replace ff7.exe with the gameplay's ff7 mod (used with vanilla exe option too)
