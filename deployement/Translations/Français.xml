@@ -630,10 +630,11 @@ Grâce à cette option vous pouvez choisir de fluidifier les combats en 30fps ou
 		
 L'option d'avoir les combats en 30fps nécéssite d'avoir des modèles de combats interpolés.
 		
-L'option du jeu en 60fps necessite également des modèles interpolés (ceux des scènes du jeu) mais également quelques patch du jeu pour éviter des bugs (mineurs) dans certaines scènes.
+L'option du jeu en 60fps necessite également des modèles interpolés (ceux des scènes du jeu) mais aussi quelques patch du jeu pour éviter des bugs (mineurs) dans certaines scènes.
 		
-les modèles 3D inclus dans le pack sont déjà interpolés, attention si vous utilisez des modèles tiers.
-Les scènes du jeu sont patchées également, attention avec les mods de gameplay tiers.</help>
+les modèles 3D inclus dans le pack sont déjà interpolés.
+
+Les scènes du jeu en français et en anglais sont patchées également.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>

@@ -1140,7 +1140,7 @@
             // 
             this.menuAboutPanel.Controls.Add(this.aboutFrame1);
             this.menuAboutPanel.Controls.Add(this.aboutFrame2);
-            this.menuAboutPanel.Location = (new global::System.Drawing.Point(327, 1600));
+            this.menuAboutPanel.Location = (new global::System.Drawing.Point(327, 0));
             this.menuAboutPanel.Name = ("menuAboutPanel");
             this.menuAboutPanel.Size = (new global::System.Drawing.Size(799, 715));
             this.menuAboutPanel.TabIndex = (11);
@@ -3519,7 +3519,7 @@
             this.menuControlsPanel.Controls.Add(this.controlsFrame2);
             this.menuControlsPanel.Controls.Add(this.controlsFrame3);
             this.menuControlsPanel.Controls.Add(this.controlsFrame1);
-            this.menuControlsPanel.Location = (new global::System.Drawing.Point(327, 0));
+            this.menuControlsPanel.Location = (new global::System.Drawing.Point(327, 1600));
             this.menuControlsPanel.Name = ("menuControlsPanel");
             this.menuControlsPanel.Size = (new global::System.Drawing.Size(795, 703));
             this.menuControlsPanel.TabIndex = (41);

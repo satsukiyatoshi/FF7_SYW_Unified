@@ -52,8 +52,8 @@ namespace FF7_SYW_Unified
             setDefaultUIValues();
             loadValues();
 
-            //set default placeholder pictures
-            gameplayPrevPic.ImageLocation = Application.StartupPath + @"\Ressources\phgameplay.jpg";
+            //set default mod/placeholder pictures
+            gameplayModsChange(this, EventArgs.Empty);
             graphicPrevPic.ImageLocation = Application.StartupPath + @"\Ressources\phgaphics.jpg";
             soundPrevPic.ImageLocation = Application.StartupPath + @"\Ressources\phaudio.jpg";
 
