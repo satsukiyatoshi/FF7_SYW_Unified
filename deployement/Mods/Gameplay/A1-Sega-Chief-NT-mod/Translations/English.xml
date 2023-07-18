@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>NT mod 2.09991</text>
+		<help>NT mod:
+		
+This mod is a complete overhaul of the FF7 game system.
+  
+Third-party 3D models (modern, or additional textures) are not recommended, they may cause bugs.
+The overall scenario is the same but there are many changes, side quests, new enemies... this mod is difficult to describe because it changes the game in depth.
+
+I recommend this mod if you have already done FF7 at least once and you are an English speaker.
+
+It is compatible with all versions of FF7 but the game will be 100% in English.
+</help>
+		<author>Sega Chief</author>
+		<url>http://forums.qhimm.com/index.php?topic=14938.0</url>
+		<compatibily>E</compatibily>
+</control>
+</translation>
+

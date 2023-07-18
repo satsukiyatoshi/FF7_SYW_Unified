@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Cosmo Memory</text>
+		<help>Cosmo Memory sound effects (v1.1):
+		
+Replaces in-game sound effects with a modernized version, including menus and battles.
+
+Can change the mood on some sequences.
+
+If you enable footsteps in the driver, these sounds will also be adapted to the type of ground surface.
+		</help>
+		<author>Bonez</author>
+		<url>https://forums.qhimm.com/index.php?topic=20475.0</url>
+		<compatibily></compatibily>
+	</control>
+</translation>
+

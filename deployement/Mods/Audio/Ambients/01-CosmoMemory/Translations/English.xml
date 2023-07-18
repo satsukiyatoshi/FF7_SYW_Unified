@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Cosmo Memory</text>
+		<help>Cosmo Memory ambient sound (v1.1):
+		
+Adds to each scene of the game ambient sounds in the form of background noise.
+
+For optimal quality, we recommend to play with headphones and set the volume of music to 60% in the game.	
+		</help>
+		<author>Bonez</author>
+		<url>https://forums.qhimm.com/index.php?topic=20475.0</url>
+		<compatibily></compatibily>
+	</control>
+</translation>
+

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>save anywhere</text>
+		<help>save anywhere:
+		
+Allows you to save anywhere, where the game does not normally allow it.
+
+Be careful, bugs are possible on certain sequences, always keep a classic backup aside just in case.</help>
+		<author>Satsuki</author>
+		<url></url>
+		<compatibily>FE</compatibily>
+			</control>
+</translation>
+

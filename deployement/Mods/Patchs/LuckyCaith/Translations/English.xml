@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Lucky Cait Sith</text>
+		<help>Lucky Cait Sith:
+		
+Allow manipulation of the cait sith limit break roulette.
+The MENU button allows you to stop the roulette, then you can then choose the values you want</help>
+		<author></author>
+		<url></url>
+		<compatibily>FE</compatibily>
+			</control>
+</translation>
+

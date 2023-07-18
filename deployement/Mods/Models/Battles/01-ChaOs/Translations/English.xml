@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>ChaOs</text>
+		<help>ChaOs:
+		
+It is a modernization of combat 3D models.
+
+They are more detailed than the original models, it is recommended to activate them if you also activate the ChaOs models for the game scenes. 		
+</help>
+		<author>Kaldarasha</author>
+		<url>https://forums.qhimm.com/index.php?topic=13960.0</url>
+		<compatibily></compatibily>
+			</control>
+</translation>
+

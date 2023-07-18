@@ -21,7 +21,8 @@ namespace FF7_SYW_Unified
             getTranslationXml(Application.StartupPath + @"\Translations\" + langInterface.Text + ".xml", Globals.translateUI);
             translateAll();
             helpList();
-            shortcutsHelp();
+            loadRtf(Application.StartupPath + @"\Translations\About\" + langInterface.Text + ".rtf", aboutContributors);
+            loadRtf(Application.StartupPath + @"\Translations\Shortcuts\" + langInterface.Text + ".rtf", specialShortcutHelp);
 
             graphicsSetDefaults();
             soundsSetDefaults();

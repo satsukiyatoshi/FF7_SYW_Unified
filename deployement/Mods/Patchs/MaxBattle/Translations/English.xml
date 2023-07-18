@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Maximum fights</text>
+		<help>Maximum fights:
+		
+Maximize the number of random fights.</help>
+		<author></author>
+		<url></url>
+		<compatibily>FE</compatibily>
+			</control>
+</translation>
+

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Cosmo Memory</text>
+		<help>Cosmo Memory cinematic sounds (v1.1):
+		
+Replaces cutscene audio tracks.
+
+This modernizes the cinematics but can change the atmosphere.
+		</help>
+		<author>Bonez</author>
+		<url>https://forums.qhimm.com/index.php?topic=20475.0</url>
+		<compatibily></compatibily>
+	</control>
+</translation>
+

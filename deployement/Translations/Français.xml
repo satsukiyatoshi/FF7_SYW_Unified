@@ -89,7 +89,7 @@
 		<text>Langue du jeu</text>
 	</control>
 	<control>
-		<name>launchGame</name>
+		<name>menuLaunchGame</name>
 		<text>Jouer à FF7 SYW</text>
 	</control>
 	

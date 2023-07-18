@@ -1,0 +1,897 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<!--  -->
+<!-- Generic worlds and GUI messages -->
+<!--  -->
+	<control>
+		<name>vanilla</name>
+		<text>Original game</text>
+	</control>
+	<control>
+		<name>donation</name>
+		<text>Donation</text>
+	</control>
+	<control>
+		<name>automatic</name>
+		<text>Automatic</text>
+	</control>
+	<control>
+		<name>disabled</name>
+		<text>Disabled</text>
+	</control>
+	<control>
+		<name>errorloadingmod</name>
+		<text>Error loading mod, check folder : </text>
+	</control>
+	<control>
+		<name>errorloadingmodtranslation</name>
+		<text>Error loading mod translation (English translation is required), check folder : </text>
+	</control>
+	<control>
+		<name>errorloadingtransfile</name>
+		<text>Error loading file : </text>
+	</control>
+	<control>
+		<name>norulmod</name>
+		<text>No webpage listed for this mod</text>
+	</control>
+	<control>
+		<name>restorekb</name>
+		<text>Are you sure you want to restore the default controls?</text>
+	</control>
+	<control>
+		<name>restorenp</name>
+		<text>Are you sure you want to restore controls without a numeric keypad?</text>
+	</control>
+	
+	
+<!--  -->
+<!-- Left menu  -->	
+<!--  -->
+	<control>
+		<name>interfaceLang</name>
+		<text>Interface language</text>
+	</control>
+	<control>
+		<name>settingsGroup</name>
+		<text>Menu</text>
+	</control>	
+	<control>
+		<name>menuAbout</name>
+		<text>About the pack</text>
+	</control>
+	<control>
+		<name>menuGraphic</name>
+		<text>Graphic mods</text>
+	</control>
+	<control>
+		<name>menuSound</name>
+		<text>Audio mods</text>
+	</control>
+	<control>
+		<name>menuGameplay</name>
+		<text>Gameplay mods</text>
+	</control>
+	<control>
+		<name>menuFFNx</name>
+		<text>Driver Setup</text>
+	</control>
+	<control>
+		<name>menuHelp</name>
+		<text>Help</text>
+	</control>
+	<control>
+		<name>menuControls</name>
+		<text>Controls</text>
+	</control>
+	<control>
+		<name>ff7Lang</name>
+		<text>Game language</text>
+	</control>
+	<control>
+		<name>menuLaunchGame</name>
+		<text>Play FF7 SYW</text>
+	</control>
+	
+	
+	
+<!--  -->	
+<!-- About part -->	
+<!--  -->
+	<control>
+		<name>aboutFrame1</name>
+		<text>Authors</text>
+	</control>
+	<control>
+		<name>aboutFrame2</name>
+		<text>About the pack</text>	
+	</control>
+	<control>
+		<name>packStory</name>
+		<text>The FF7 SYW project is a pack including Final Fantasy VII with graphical reprocessing thanks to advanced artificial intelligence on background images, fights, world map, mini-games and video sequences, other elements have also been recreated while preserving the original essence of the game.
+		
+In addition, the pack contains various advanced configuration options and various patches such as save-anywhere functions, autorun, disable random battles, fast forward, challenges and difficulty mods of all kinds...all this to offer an unprecedented gaming experience and comfort.</text>
+	</control>	
+	
+	
+	
+<!--  -->	
+<!-- Graphical mods part -->
+<!--  -->	
+	<control>
+		<name>graphicFrame1</name>
+		<text>Graphic Mods</text>
+	</control>
+	<control>
+		<name>graphicsFields</name>
+		<text>HD Game Scenes</text>
+		<help>Textures of the game scenes reprocessed in HD.
+		
+The database is processed with an ESRGan AI.
+
+Lots of optimizations by hand.
+
+This greatly improves the textures of the original game.
+
+It is recommended to activate this option.</help>
+		<author>Satsuki_Yatoshi and Aavock</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>graphicsAnimations</name>
+		<text>Advanced animations</text>
+		<help>Allow to restore the original animations of the scenes of the game with HD textures.
+
+For example the waterfall at Aerith's house and a lot of light effects.
+
+It takes a lot of power, if you notice slowdowns in game, it is recommended to disable this option.
+</help>
+		<author>Satsuki_Yatoshi and Aavock</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>graphicsBattles</name>
+		<text>HD fight scenes</text>
+		<help>Textures of combat scenes reprocessed in HD.
+
+The base is processed with an ESRGan AI plus hand optimizations.
+
+This greatly improves the textures of the original game.
+
+Geometry and lighting bugs from the original game have been fixed by AxlRose.
+
+It is recommended to activate this option.</help>
+		<author>Satsuki_Yatoshi and AxlRose</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>graphicsMagics</name>
+		<text>HD battle magics.</text>
+		<help>Textures of magic and combat effects done from scratch in 3D.
+
+The vast majority of textures are done from scratch but some elements have been reprocessed in HD with an ESRGan AI.
+
+This modernizes the original game without distorting it.
+
+It is recommended to activate this option.
+</help>
+		<author>Kela51 and Satsuki_Yatoshi</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>graphicsWorldMap</name>
+		<text>HD world map</text>
+		<help>World map textures reprocessed in HD.
+
+The base is processed with an ESRGan AI plus hand optimizations.
+
+This greatly improves the textures of the original game.
+
+It is recommended to activate this option.</help>
+		<author>Satsuki_Yatoshi</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>graphicsMiniGames</name>
+		<text>HD mini-games</text>
+		<author>Aavock and Satsuki_Yatoshi</author>
+		<help>Textures of the mini-games done from scratch in HD.
+
+The vast majority of textures are done from scratch but some elements have been reprocessed in HD with an ESRGan AI.
+
+This modernizes the original game without distorting it.
+
+It is recommended to activate this option.</help>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>graphicsGroupModels3Df</name>
+		<text>3D models in game scenes</text>
+	</control>
+	<control>
+		<name>graphicsGroupModels3Dc</name>
+		<text>3D models in battle</text>
+	</control>
+	<control>
+		<name>graphicsGroupModels3Dw</name>
+		<text>3D models of the world map</text>
+	</control>
+	<control>
+		<name>graphicsGroupModels3Dm</name>
+		<text>3D models in the minigames</text>
+	</control>
+	<control>
+		<name>graphicsGroupFMV</name>
+		<text>Cutscenes</text>
+	</control>
+	<control>
+		<name>graphicsGroupMenu</name>
+		<text>Interface (menus and fonts)</text>
+	</control>
+		<control>
+		<name>graphicFrame2</name>
+		<text>Informations</text>
+	</control>
+	<control>
+		<name>graphicFrame3</name>
+		<text>Preview</text>
+	</control>
+	<control>
+		<name>graphicsGroupAddTextures</name>
+		<text>Additional textures</text>
+	</control>
+	
+		
+	
+	
+<!--  -->	
+<!-- Audio mods part -->
+<!--  -->
+	<control>
+		<name>soundsGroupMusics</name>
+		<text>Game music</text>
+	</control>
+	<control>
+		<name>soundsGroupAmbients</name>
+		<text>Ambient game sounds</text>
+	</control>
+	<control>
+		<name>soundsGroupSfx</name>
+		<text>game sound effects</text>
+	</control>
+	<control>
+		<name>soundsGroupFMV</name>
+		<text>Cutscene audio tracks</text>
+	</control>
+	<control>
+		<name>soundsGroupVoices</name>
+		<text>Voices in game</text>
+	</control>
+	<control>
+		<name>soundsListHelp</name>
+		<text>Click on a speaker to load the mod's audio tracks.
+
+Then click on a track in the list to listen to it.
+
+It may take a few moments to launch.</text>
+	</control>
+	<control>
+		<name>soundFrame2</name>
+		<text>About the mod</text>
+	</control>
+	<control>
+		<name>soundFrame4</name>
+		<text>Audio Preview</text>
+	</control>
+	
+	
+	
+<!--  -->	
+<!-- Gameplay mods part -->
+<!--  -->	
+	<control>
+		<name>gameplayGroupMods</name>
+		<text>Gameplay mods</text>
+	</control>
+	<control>
+		<name>gameplayFrame1</name>
+		<text>Gameplay mods</text>
+	</control>
+	<control>
+		<name>gameplayFrame2</name>
+		<text>Help</text>
+	</control>
+	<control>
+		<name>gameplayFrame3</name>
+		<text>Preview</text>
+	</control>
+	<control>
+		<name>saveByMod</name>
+		<text>Saves</text>
+	</control>
+	<control>
+		<name>documentsFolder</name>
+		<text>Documentation</text>
+	</control>
+	
+	
+	
+	
+<!--  -->	
+<!-- FFNx mods part -->
+<!--  -->
+	<control>
+		<name>FFNxFrame1</name>
+		<text>Memory patches</text>
+	</control>	
+	<control>
+		<name>FFNxFrame2</name>
+		<text>Help</text>
+	</control>
+	<control>
+		<name>FFNxFrame3</name>
+		<text>FFNx Driver setup</text>
+	</control>
+	<control>
+		<name>FFNxFrame4</name>
+		<text>Preview</text>
+	</control>
+	<control>
+		<name>FFNxGroup3dEngine</name>
+		<text>rendering engine</text>
+		<author></author>
+		<help>The optimal type of render engine depends on the graphics card of the pc and the options of the game.
+
+It is strongly recommended to leave on automatic.
+
+Some ATI/AMD graphics cards are more stable in D3D12.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupScreen</name>
+		<text>Display</text>
+		<author>FFNx team</author>
+		<help>Choose the display type of the game.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>fullscreen</name>
+		<text>Fullscreen</text>
+	</control>
+	<control>
+		<name>windowed</name>
+		<text>Windowed</text>
+	</control>
+	<control>
+		<name>windowedborderless</name>
+		<text>Borderless windowed</text>
+	</control>
+	<control>
+		<name>FFNxGroupResolution</name>
+		<text>Screen resolution</text>
+		<author>FFNx team</author>
+		<help>Allow you to choose the screen resolution.
+		
+Especially useful in windowed play.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupRatio</name>
+		<text>Display size</text>
+		<author>FFNx team</author>
+		<help>You can choose different formats (ratio) of display) of the game:
+
+-4/3 like the original game.
+
+-16/9 stretched, no known bug but the image is vertically crushed.
+
+- real 16/9, modifies the game engine in order to have a real 16/9 wherever possible, some bugs (non-blocking) may appear.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>strechedwidescreen</name>
+		<text>16/9 Stretched (distorted)</text>
+	</control>
+	<control>
+		<name>realwidescreen</name>
+		<text>16/9 real (beta)</text>
+	</control>
+	<control>
+		<name>FFNxGroupIR</name>
+		<text>Internal resolution</text>
+		<author>FFNx team</author>
+		<help>Uses supersampling of the game to make the image much sharper.
+
+x4 is a good setting on a PC of decent power.
+
+If you see stray lines on certain elements of the game (rare but can happen with certain configurations), try a setting of x4 or x2.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxLighting</name>
+		<text>3D shadows</text>
+		<author>FFNx team</author>
+		<help>This option adds shadows to 3D models in the game.
+
+This gives a real presence to the 3D models, whether original ones or third-party models.
+
+You need a decent PC not to suffer from a slowdown in the game with this option.
+
+Some rare shading bugs are possible but the quality provided by this option is really worth it.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxVsync</name>
+		<text>V-Sync</text>
+		<author>FFNx team</author>
+		<help>Enables V-Sync.
+
+Allow you to avoid tearing of images in game, but limits the speed of the speedhack to the refresh rate of the screen.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupAA</name>
+		<text>Anti Aliasing</text>
+		<author>FFNx team</author>
+		<help>The anti aliasing allows to smoothing the edges of the 3d models of the game.
+
+If you use an internal resolution of x4, it is not useful.
+
+I advise not to exceed x4 on Anti-aliasing also</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxAnisotropic</name>
+		<text>Anisotropic filtering</text>
+		<author>FFNx team</author>
+		<help>Anisotropic filtering allows better rendering of very distant 3D textures.
+
+The difference in rendering in game is more or less obvious depending on the mods used.
+
+I advise you to activate this option by default.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupHDR</name>
+		<text>HDR Nits</text>
+		<author>FFNx team</author>
+		<help>Allows you to specify the maximum HDR value of your screen in case the automatic rendering is not optimal.
+
+This option is ignored if your display does not support HDR (or if it's not enabled in windows).</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupAudioChannels</name>
+		<text>Audio channels</text>
+		<author>FFNx team</author>
+		<help>you can choose the number of audio channels for the game.
+
+Just because you choose multichannel does not mean they will all be used, it depends on the audio mods and their configurations.
+
+If you are unsure leave on automatic.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupAudioSample</name>
+		<text>Audio sampling</text>
+		<author>FFNx team</author>
+		<help>It is advised to leave this option on automatic unless you know what you are doing.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNXMusicResume</name>
+		<text>Resume music</text>
+		<author>FFNx team</author>
+		<help>Allow you to have continuity in the music of the game.
+
+This allows you not to have the music start from the beginning after each fight, for example.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxAnalogController</name>
+		<text>Analog controller</text>
+		<author>FFNx team</author>
+		<help>If you play with a gamepad with an analog stick, this option allows you to use it in the menus and for movement (in addition to the directional cross).
+
+It also adds some controls in fights (see general help).</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxAnalogControllerArun</name>
+		<text>Auto run</text>
+		<author>FFNx team</author>
+		<help>If you play with a gamepad with an analog stick, this option allows you to run or walk depending on the inclination of the stick.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNXSteamSucces</name>
+		<text>Steam Achievements</text>
+		<author>FFNx team</author>
+		<help>Allows you to get FF7 steam achievements with this pack.
+
+Steam must also be running otherwise it will not work.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupControllerDeathzones</name>
+		<text>Gamepad dead zone (stick, LT, RT)</text>
+		<author>FFNx team</author>
+		<help>Allows you to set the dead zones of the analog controls of the gamepad.
+
+This is taken into account only if the "analog controller" option is activated.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupSpeedhack</name>
+		<text>Speedhack (step, minimum, maximum)</text>
+		<author>FFNx team</author>
+		<help>You can use a speedhack (fast forward) in game (see general help).
+
+If you use the V-Sync option, the speed of the speedhack will be limited by the refresh rate of the screen (for example, the base game is 30fps, if your screen is 60hz, the speedhack can speed up the game in 2x at most).
+
+The maximum speed is also limited by the power of the pc.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxGroupFps</name>
+		<text>Fluidity of the game (fps)</text>
+		<author>FFNx team</author>
+		<help>Originally the fluidity of FF7 is limited, the menus are in 60fps, but the game scenes are in 30fps and the fights in 15fps.
+
+Thanks to this option you can choose to make the fights more fluid in 30fps or to have the full game in 60fps.
+
+The option to have fights in 30fps requires having interpolated combat models.
+
+The 60fps game option also requires interpolated models (those of the game scenes) but also some game patches to avoid (minor) bugs in certain scenes.
+
+the 3D models included in the pack are already interpolated.
+
+The game scenes in french and english are also patched.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>gamefpsbattle30</name>
+		<text>30 fps figths</text>
+	</control>
+	<control>
+		<name>gamefull60fps</name>
+		<text>60fps full game</text>
+	</control>
+	<control>
+		<name>FFNxShowStats</name>
+		<text>View FFNx information</text>
+		<author>FFNx team</author>
+		<help>Display various information (on the left in full screen and in the windowed title bar).
+
+There are the fps, the driver version, the memory usage...</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxDebugTool</name>
+		<text>debug tool</text>
+		<author>FFNx team</author>
+		<help>Allow you to activate the debug tool in an overlay window of the game.
+
+This window can be displayed or hidden using the F12 key on the keyboard.
+
+Among other things, there is a teleportation tool, information on the screen and management of the shadows of 3D models.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxLogs</name>
+		<text>Complete logs</text>
+		<author>FFNx team</author>
+		<help>To be used only in the event of a major bug and only if the author of the pack or of FFNx asks you to.
+
+This consumes a lot of resources but allows to log all the information of the game driver.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxFootSteps</name>
+		<text>Enable Footsteps</text>
+		<author>FFNx team</author>
+		<help>This option activates footsteps on the various screens of the game.
+
+These noises can be adapted to the type of ground if you use an audio mod that allows it.</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx</url>
+	</control>
+	<control>
+		<name>FFNxNoCd</name>
+		<text>No-CD</text>
+		<author>Satsuki_Yatoshi</author>
+		<help>Applies a no-cd patch to the game executable before launching.
+
+This eliminates the need to insert an FF7 CD to play.</help>
+		<url></url>
+	</control>
+	<control>
+		<name>FFNxGamutNtsc</name>
+		<text>Gamut NTSC-J</text>
+		<author>ChthonVII</author>
+		<help>Allows you to find the true colors of the game which were badly converted on the PC version, the colors are warmer and more vivid.
+
+This option is recommended whether with the original textures or the HD textures.
+
+If you are using third party mods which are not HD conversions of the original game but textures made from scratch, this option may distort the colors.		
+		</help>
+		<url></url>
+	</control>
+		
+
+
+<!--  -->	
+<!-- Controls part -->
+<!--  -->	
+	<control>
+		<name>controlsFrame1</name>
+		<text>Controller</text>
+	</control>
+	<control>
+		<name>controlsFrame2</name>
+		<text>General controls</text>
+	</control>
+	<control>
+		<name>controlsFrame3</name>
+		<text>Special functions</text>
+	</control>	
+	<control>
+		<name>controleRestoreKb</name>
+		<text>Restore Default Controls</text>
+	</control>	
+	<control>
+		<name>controleRestoreNp</name>
+		<text>Reset controls without numeric keypad</text>
+	</control>	
+    <control>
+        <name>ctrlMove</name>
+        <text>[MOVE]</text>
+    </control>
+    <control>
+        <name>ctrlOk</name>
+        <text>[OK]</text>
+    </control>
+    <control>
+        <name>ctrlCancel</name>
+        <text>[CANCEL]</text>
+    </control>
+    <control>
+        <name>ctrlMenu</name>
+        <text>[MENU]</text>
+    </control>
+    <control>
+        <name>ctrlChange</name>
+        <text>[SWITCH]</text>
+    </control>
+    <control>
+        <name>ctrlPgUp</name>
+        <text>[PAGEUP]</text>
+    </control>
+    <control>
+        <name>ctrlPgDown</name>
+        <text>[PAGEDOWN]</text>
+    </control>
+    <control>
+        <name>ctrlCam</name>
+        <text>[CAMERA]</text>
+    </control>
+    <control>
+        <name>ctrlTarget</name>
+        <text>[TARGET]</text>
+    </control>
+    <control>
+        <name>ctrlAssist</name>
+        <text>[ASSIST]</text>
+    </control>
+    <control>
+        <name>ctrlStart</name>
+        <text>[START]</text>
+    </control>
+    <control>
+        <name>ctrlGpadPad</name>
+        <text>Pad/L3</text>
+    </control>
+    <control>
+        <name>ctrlGpadOk</name>
+        <text>Circle</text>
+    </control>
+    <control>
+        <name>ctrlGpadCancel</name>
+        <text>Cross</text>
+    </control>
+    <control>
+        <name>ctrlGpadMenu</name>
+        <text>Triangle</text>
+    </control>
+    <control>
+        <name>ctrlGpadChange</name>
+        <text>Square</text>
+    </control>
+    <control>
+        <name>ctrlGpadPgUp</name>
+        <text>L1</text>
+    </control>
+    <control>
+        <name>ctrlGpadPgDown</name>
+        <text>R1</text>
+    </control>
+    <control>
+        <name>ctrlGpadCam</name>
+        <text>L2</text>
+    </control>
+    <control>
+        <name>ctrlGpadTarget</name>
+        <text>R2</text>
+    </control>
+    <control>
+        <name>ctrlGpadAssist</name>
+        <text>Select</text>
+    </control>
+    <control>
+        <name>ctrlGpadStart</name>
+        <text>Start</text>
+    </control>
+    <control>
+        <name>ctrlNumpadPad</name>
+        <text>Arrows</text>
+    </control>
+    <control>
+        <name>ctrlNumpadOk</name>
+        <text>Enter</text>
+    </control>
+    <control>
+        <name>ctrlNumpadCancel</name>
+        <text>0</text>
+    </control>
+    <control>
+        <name>ctrlNumpadMenu</name>
+        <text>+</text>
+    </control>
+    <control>
+        <name>ctrlNumpadChange</name>
+        <text>.</text>
+    </control>
+    <control>
+        <name>ctrlNumpadPgUp</name>
+        <text>9</text>
+    </control>
+    <control>
+        <name>ctrlNumpadPgDown</name>
+        <text>3</text>
+    </control>
+    <control>
+        <name>ctrlNumpadCam</name>
+        <text>7</text>
+    </control>
+    <control>
+        <name>ctrlNumpadTarget</name>
+        <text>1</text>
+    </control>
+    <control>
+        <name>ctrlNumpadAssist</name>
+        <text>5</text>
+    </control>
+    <control>
+        <name>ctrlNumpadStart</name>
+        <text>-</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardPad</name>
+        <text>Arrows</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardOk</name>
+        <text>Enter</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardCancel</name>
+        <text>Space</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardMenu</name>
+        <text>Shift</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardChange</name>
+        <text>Control</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardPgUp</name>
+        <text>Page up</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardPgDown</name>
+        <text>Page down</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardCam</name>
+        <text>Home</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardTarget</name>
+        <text>End</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardAssist</name>
+        <text>Insert</text>
+    </control>
+    <control>
+        <name>ctrlKeyboardStart</name>
+        <text>Delete</text>
+    </control>
+    <control>
+        <name>ctrlControls</name>
+        <text>Control</text>
+    </control>
+    <control>
+        <name>ctrlGamepad</name>
+        <text>Controller</text>
+    </control>
+    <control>
+        <name>ctrlNumpad</name>
+        <text>Numpad</text>
+    </control>
+    <control>
+        <name>ctrlKeyboard</name>
+        <text>Keyboard</text>
+    </control>
+    <control>
+        <name>analogPadUse</name>
+        <text>To use the analog stick (L3) for movement, it is mandatory to activate the analog controller in the driver configuration.</text>
+    </control>
+
+	
+	
+	
+<!--  -->	
+<!-- Help part -->
+<!--  -->	
+	<control>
+		<name>HelpFrame2</name>
+		<text>Help</text>
+	</control>
+	<control>
+		<name>chooseHelp</name>
+		<text>Choose a help file from the drop-down list</text>
+	</control>
+		<control>
+		<name>errorFile</name>
+		<text>An error occurred while loading the following file</text>
+	</control>
+	
+	
+
+<!--  -->	
+<!-- Launch game part -->
+<!--  -->	
+	<control>
+		<name>loadingWait</name>
+		<text>Loading</text>
+	</control>
+	<control>
+		<name>loadingWaitDetails</name>
+		<text>Application of</text>
+	</control>
+	<control>
+		<name>restoreFiles</name>
+		<text>Restoring original files</text>
+	</control>
+	<control>
+		<name>noCdExe</name>
+		<text>Editing the FF7 mini-iso</text>
+	</control>
+	<control>
+		<name>unknownExe</name>
+		<text>this executable of FF7 is not recognized, impossible to use a noCd patch</text>
+	</control>
+	<control>
+		<name>ffnxConfigFile</name>
+		<text>Generate FFNx configuration</text>
+	</control>
+		<control>
+		<name>quit</name>
+		<text>Loading may take time depending on the options chosen and the power of the computer
+Are you sure you want to quit?</text>
+	</control>
+</translation>
+
+

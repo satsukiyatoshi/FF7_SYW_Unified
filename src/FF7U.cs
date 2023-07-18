@@ -60,9 +60,6 @@ namespace FF7_SYW_Unified
             //set default menu status
             menuClick(menuAbout);
 
-            //set special shortcut help file
-            shortcutsHelp();
-
             //if "direct" is used as argument, then launch the game without any changes
             if (Globals.directLaunch == true)
             {

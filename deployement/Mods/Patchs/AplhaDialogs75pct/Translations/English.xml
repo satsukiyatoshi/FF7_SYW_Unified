@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Transparent dialog windows (75%)</text>
+		<help>Transparent dialog windows (75%):
+		
+Make dialog windows 75% transparent to see the background better.</help>
+		<author></author>
+		<url></url>
+		<compatibily>FESG</compatibily>
+			</control>
+</translation>
+

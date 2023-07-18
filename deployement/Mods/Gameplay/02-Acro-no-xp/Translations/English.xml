@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>No xp mod</text>
+		<help>No xp mod:
+		
+This is a hard game mode.    
+
+Enemies don't grant experience, which means your characters never level up.
+The game won't be much harder in the beginning but the further you go, the harder it will be, it will even be very difficult at the end without a good strategy.
+
+I recommend this setting if you know the game and the enemies almost by heart.
+
+It is compatible with all versions of FF7 but some combat elements will be in French only.</help>
+		<author>Acro</author>
+		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=181430</url>
+		<compatibily>F</compatibily>
+</control>
+</translation>
+

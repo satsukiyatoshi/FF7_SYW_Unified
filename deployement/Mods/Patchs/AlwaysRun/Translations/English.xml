@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Run by default</text>
+		<help>Enable running instead of walking by default in game scenes.</help>
+		<author>Chysalis</author>
+		<url></url>
+		<compatibily>FEGS</compatibily>
+	</control>
+</translation>
+
