@@ -2,7 +2,7 @@
 <translation>
 <control>
 		<text>Hard mod</text>
-		<help>Hard mod:
+		<help>Hard mod : 
 		
 This is a hard game mode.
 
@@ -14,7 +14,7 @@ I recommend this setting if you want a real challenge because the fights no long
 You can use this mod with all FF7 languages but only French and English translations are available.
 Some texts will be in English for unsupported languages.</help>
 		<author>Mexico</author>
-		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=319186</url>
+		<url>http : //ff7.fr/forum/index.php?page=post&#38;ids=319186</url>
 		<compatibily>FE</compatibily>
 </control>
 </translation>

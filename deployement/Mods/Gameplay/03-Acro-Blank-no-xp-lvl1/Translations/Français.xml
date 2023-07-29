@@ -2,18 +2,18 @@
 <translation>
 <control>
 		<text>No xp niveau 1</text>
-		<help>No xp niveau 1:
+		<help>No xp niveau 1 : 
 		
-C'est un mode de jeu très difficile.  
+C'est un mod de jeu très difficile.  
 
-Les ennemis ne rapportent aucune expérience, ce qui fait que le niveau de vos personnages n'augmente jamais mais qu'en plus les personnages seront au niveau 1.  
+Les ennemis ne rapportent aucune expérience, ce qui fait que le niveau de vos personnages n'augmente jamais, mais qu'en plus les personnages seront au niveau 1.  
 Le jeu sera plus dur dès le début et plus vous avancerez, plus ce sera difficile, à la limite de l'impossible.  
 
 Je conseille ce réglage si vous connaissez le jeu et les ennemis par cœur, que vous aimez les tableaux de capacités et les stratégies intensives, ou si vous êtes fou.
 
 Il est compatible avec toutes les versions de FF7 mais certains éléments de combats seront en français uniquement.</help>
 		<author>Acro et Blank</author>
-		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=357743</url>
+		<url>http : //ff7.fr/forum/index.php?page=post&#38;ids=357743</url>
 		<compatibily>F</compatibily>
 </control>
 </translation>

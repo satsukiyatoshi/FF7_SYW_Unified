@@ -2,19 +2,19 @@
 <translation>
 <control>
 		<text>NT mod 2.09991</text>
-		<help>NT mod:
+		<help>NT mod : 
 		
 Ce mod est une refonte complète du système de jeu de FF7.  
   
 Les modèles 3D tiers (modernes, ou des textures additionelles) sont déconseillés, ils peuvent provoquer des bugs.  
-Le scénario global est le même mais il y a beaucoup de changements, des quêtes annexes, de nouveaux ennemis... ce mod est difficile à décrire car il change le jeu en profondeur.  
+Le scénario global est le même, mais il y a beaucoup de changements, des quêtes annexes, de nouveaux ennemis... Ce mod est difficile à décrire car il change le jeu en profondeur.  
 
 Je conseille ce mod si vous avez déjà fait FF7 au moins une fois et que vous êtes anglophone.  
 
 Il est compatible avec toutes les versions de FF7 mais le jeu sera 100% en anglais.
 </help>
 		<author>Sega Chief</author>
-		<url>http://forums.qhimm.com/index.php?topic=14938.0</url>
+		<url>http : //forums.qhimm.com/index.php?topic=14938.0</url>
 		<compatibily>E</compatibily>
 </control>
 </translation>

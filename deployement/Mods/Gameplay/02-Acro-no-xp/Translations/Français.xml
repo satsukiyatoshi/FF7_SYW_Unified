@@ -2,9 +2,9 @@
 <translation>
 <control>
 		<text>No xp mod</text>
-		<help>No xp mod:
+		<help>No xp mod : 
 		
-C'est un mode de jeu difficile.    
+C'est un mod de jeu difficile.    
 
 Les ennemis ne rapportent aucune expérience, ce qui veut dire que le niveau de vos personnages n'augmente jamais.  
 Le jeu ne sera pas beaucoup plus dur au début mais plus vous avancerez, plus ce sera difficile, ce sera même très difficile sur la fin sans une bonne stratégie.  
@@ -13,7 +13,7 @@ Je conseille ce réglage si vous connaissez le jeu et les ennemis presque par c�
 
 Il est compatible avec toutes les versions de FF7 mais certains éléments de combats seront en français uniquement.</help>
 		<author>Acro</author>
-		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=181430</url>
+		<url>http : //ff7.fr/forum/index.php?page=post&#38;ids=181430</url>
 		<compatibily>F</compatibily>
 </control>
 </translation>

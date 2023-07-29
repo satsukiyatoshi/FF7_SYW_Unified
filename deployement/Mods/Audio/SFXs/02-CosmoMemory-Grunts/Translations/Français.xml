@@ -2,18 +2,18 @@
 <translation>
 	<control>
 		<text>Cosmo Memory + voix de combat</text>
-		<help>Cosmo Memory effets sonores + voix de combat (v1.1):
+		<help>Cosmo Memory effets sonores + voix de combat (v1.1) : 
 		
 Remplace les effets sonores du jeu par une version modernisée, y compris ceux des menus.
 
-Dans les combat les attaques des personnages de l'équipe comportent également des son vocaux "d'effort".
+Dans les combats, les attaques des personnages de l'équipe comportent également des son vocaux "d'effort".
 
 Peux changer l'ambiance sur certaines séquences.
 
 Si vous activez les bruits de pas dans le pilote, ces bruits seront aussi adaptés au type de surface au sol.
 		</help>
 		<author>Bonez</author>
-		<url>https://forums.qhimm.com/index.php?topic=20475.0</url>
+		<url>https : //forums.qhimm.com/index.php?topic=20475.0</url>
 		<compatibily></compatibily>
 	</control>
 </translation>

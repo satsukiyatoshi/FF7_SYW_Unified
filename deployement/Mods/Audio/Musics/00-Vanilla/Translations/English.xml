@@ -2,13 +2,13 @@
 <translation>
 	<control>
 		<text>original midi music</text>
-		<help>original midi music:
+		<help>original midi music : 
 		
 The quality is very limited (much more than on the psx version).
 
 It's better to use a music pack instead.</help>
 		<author>Squaresoft</author>
-		<url>https://finalfantasyviipc.square-enix-games.com/</url>
+		<url>https : //finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
 	</control>
 </translation>

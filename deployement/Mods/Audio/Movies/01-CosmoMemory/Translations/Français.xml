@@ -2,14 +2,14 @@
 <translation>
 	<control>
 		<text>Cosmo Memory</text>
-		<help>Cosmo Memory sons des cinématiques (v1.1):
+		<help>Cosmo Memory sons des cinématiques (v1.1) : 
 		
 Remplace les pistes audio des cinématiques.
 
-Cela modernise les cinématique mais peut en changer l'ambiance.
+Cela modernise les cinématiques mais peut en changer l'ambiance.
 		</help>
 		<author>Bonez</author>
-		<url>https://forums.qhimm.com/index.php?topic=20475.0</url>
+		<url>https : //forums.qhimm.com/index.php?topic=20475.0</url>
 		<compatibily></compatibily>
 	</control>
 </translation>

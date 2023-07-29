@@ -2,7 +2,7 @@
 <translation>
 <control>
 		<text>1.5 mod</text>
-		<help>1.5 mod:
+		<help>1.5 mod : 
 		
 This mod aims to make the game slightly more difficult without altering the original game.
 
@@ -11,7 +11,7 @@ The strength and magic of all enemies is multiplied by a factor of 1.5.
 It is compatible with all versions of FF7 but some combat elements will be in French only.
 </help>
 		<author>Aavock</author>
-		<url>https://ff7.fr/forum/index.php</url>
+		<url>https : //ff7.fr/forum/index.php</url>
 		<compatibily>F</compatibily>
 </control>
 </translation>

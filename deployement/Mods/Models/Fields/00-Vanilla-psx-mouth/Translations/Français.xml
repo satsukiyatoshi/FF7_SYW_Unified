@@ -2,14 +2,14 @@
 <translation>
 	<control>
 		<text>Modèles d'origine (bouches psx)</text>
-		<help>Modèles d'origine:
+		<help>Modèles d'origine : 
 		
-Modèles des scènes de jeu de style chibi en base qualité.
+Modèles des scènes de jeu de style chibi en basse qualité.
 
-Les bouches sont au format psx (les personnage principaux ont une bouche en trait et les personnages secondaires n'ont pas de bouche).
+Les bouches sont au format psx (les personnages principaux ont une bouche en trait et les personnages secondaires n'ont pas de bouche).
 </help>
 		<author>Squaresoft</author>
-		<url>https://finalfantasyviipc.square-enix-games.com/</url>
+		<url>https : //finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
 			</control>
 </translation>

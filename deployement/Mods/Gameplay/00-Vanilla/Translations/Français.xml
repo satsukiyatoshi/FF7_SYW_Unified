@@ -2,13 +2,13 @@
 <translation>
 <control>
 		<text>Gameplay original</text>
-		<help>Gameplay original:
+		<help>Gameplay original : 
 		
 Pour une expérience du jeu à l'identique de la version de 1998.
 
-Certains bugs inhérents a la version Pc sont néanmoins réglés</help>
+Certains bugs inhérents a la version Pc sont néanmoins réglés.</help>
 		<author>Squaresoft</author>
-		<url>https://finalfantasyviipc.square-enix-games.com/</url>
+		<url>https : //finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily>FESG</compatibily>
 </control>
 </translation>

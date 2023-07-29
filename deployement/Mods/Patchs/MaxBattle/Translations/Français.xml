@@ -2,7 +2,7 @@
 <translation>
 	<control>
 		<text>Maximum de combats</text>
-		<help>Maximum de combats:
+		<help>Maximum de combats : 
 		
 Permet de maximiser le nombre de combats aléatoires.</help>
 		<author></author>

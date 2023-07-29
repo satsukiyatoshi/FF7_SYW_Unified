@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Aavock UI 1:1Remastered</text>
-		<help>Aavock UI 1:1Remastered:
+		<text>Aavock UI 1:1 Remastered</text>
+		<help>Aavock UI 1:1 Remastered : 
 		
 Menu textures, fonts, and icons in HD.
 
@@ -10,7 +10,7 @@ These textures respect the original game while correcting the alignments of cert
 
 The combat menu is also re-aligned.</help>
 		<author>Aavock et Satsuki_Yatoshi</author>
-		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=445353</url>
+		<url>https : //ff7.fr/forum/index.php?page=post&#38;ids=445353</url>
 		<compatibily>FE</compatibily>
 	</control>
 </translation>

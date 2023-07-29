@@ -2,11 +2,11 @@
 <translation>
 <control>
 		<text>No regen mod</text>
-		<help>No regen mod:
+		<help>No regen mod : 
 		
-Ce mod a pour but de rendre le jeu plus difficile sans pour autant changer les ennemis.
+Ce mod a pour but de rendre le jeu plus difficile, sans pour autant changer les ennemis.
 
-Le principe est simple, les objets, et équipements qui permettent de regagner des Hp ou des Mp on été modifiés en dehors des exceptions suivantes:
+Le principe est simple, les objets, et équipements qui permettent de regagner des Hp ou des Mp ont été modifiés en dehors des exceptions suivantes : 
 -Les super tentes.
 -Les auberges et autres lieux du même genre.
 
@@ -20,7 +20,7 @@ Il est conseillé de ne pas désactiver les combats aléatoires sinon le mod n'a
 
 Il est compatible avec toutes les versions de FF7 mais certains éléments de combats et de menus seront en français uniquement.</help>
 		<author>Mexico et Satsuki_yatoshi</author>
-		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=440337</url>
+		<url>http : //ff7.fr/forum/index.php?page=post&#38;ids=440337</url>
 		<compatibily>F</compatibily>
 </control>
 </translation>

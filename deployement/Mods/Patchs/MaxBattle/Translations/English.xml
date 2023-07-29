@@ -2,7 +2,7 @@
 <translation>
 	<control>
 		<text>Maximum fights</text>
-		<help>Maximum fights:
+		<help>Maximum fights : 
 		
 Maximize the number of random fights.</help>
 		<author></author>

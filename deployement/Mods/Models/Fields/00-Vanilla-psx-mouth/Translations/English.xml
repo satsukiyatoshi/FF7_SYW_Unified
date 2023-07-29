@@ -2,14 +2,14 @@
 <translation>
 	<control>
 		<text>Original models (psx mouths)</text>
-		<help>Original models:
+		<help>Original models : 
 		
 Models of chibi style game scenes in basic quality.
 
 The mouths are in psx format (the main characters have a lined mouth and the secondary characters don't have one).
 </help>
 		<author>Squaresoft</author>
-		<url>https://finalfantasyviipc.square-enix-games.com/</url>
+		<url>https : //finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
 			</control>
 </translation>

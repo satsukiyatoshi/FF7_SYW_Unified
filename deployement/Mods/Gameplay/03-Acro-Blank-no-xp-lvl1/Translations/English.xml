@@ -2,7 +2,7 @@
 <translation>
 <control>
 		<text>No xp level 1</text>
-		<help>No xp level 1:
+		<help>No xp level 1 : 
 		
 This is a very difficult game mode.
 
@@ -13,7 +13,7 @@ I recommend this setting if you know the game and the enemies by heart, if you l
 
 It is compatible with all versions of FF7 but some combat elements will be in French only.</help>
 		<author>Acro and Blank</author>
-		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=357743</url>
+		<url>http : //ff7.fr/forum/index.php?page=post&#38;ids=357743</url>
 		<compatibily>F</compatibily>
 </control>
 </translation>

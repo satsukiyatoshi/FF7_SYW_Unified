@@ -2,7 +2,7 @@
 <translation>
 	<control>
 		<text>Musiques symphoniques</text>
-		<help>Musiques symphoniques:
+		<help>Musiques symphoniques : 
 		
 Ces musiques sont une ré-orchestration des musiques du jeu d'une façon symphonique.
 
@@ -10,7 +10,7 @@ Cela donne une ambiance plus épique au jeu.
 
 L'ambiance du jeu semble plus moderne.</help>
 		<author>Captain Epic</author>
-		<url>http://forums.qhimm.com/index.php?topic=14541.0</url>
+		<url>http : //forums.qhimm.com/index.php?topic=14541.0</url>
 		<compatibily></compatibily>
 	</control>
 </translation>
