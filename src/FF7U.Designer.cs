@@ -110,6 +110,7 @@
             this.soundsMusics = (new global::System.Windows.Forms.ComboBox());
             this.menuGameplayPanel = (new global::System.Windows.Forms.Panel());
             this.gameplayFrame2 = (new global::System.Windows.Forms.GroupBox());
+            this.documentsFolder = (new global::System.Windows.Forms.Label());
             this.gameplayHelp = (new global::System.Windows.Forms.TextBox());
             this.gameplayHelpAuthor = (new global::System.Windows.Forms.Label());
             this.gameplayFrame1 = (new global::System.Windows.Forms.GroupBox());
@@ -118,7 +119,7 @@
             this.flagFGameplay = (new global::System.Windows.Forms.PictureBox());
             this.flagEGameplay = (new global::System.Windows.Forms.PictureBox());
             this.gameplayGroupMods = (new global::System.Windows.Forms.GroupBox());
-            this.documentsFolder = (new global::System.Windows.Forms.Label());
+            this.saveEdit = (new global::System.Windows.Forms.Label());
             this.saveByMod = (new global::System.Windows.Forms.Label());
             this.gameplayMods = (new global::System.Windows.Forms.ComboBox());
             this.gameplayFrame3 = (new global::System.Windows.Forms.GroupBox());
@@ -1064,7 +1065,7 @@
             // 
             this.menuAboutPanel.Controls.Add(this.aboutFrame1);
             this.menuAboutPanel.Controls.Add(this.aboutFrame2);
-            this.menuAboutPanel.Location = (new global::System.Drawing.Point(327, 0));
+            this.menuAboutPanel.Location = (new global::System.Drawing.Point(327, 1600));
             this.menuAboutPanel.Name = ("menuAboutPanel");
             this.menuAboutPanel.Size = (new global::System.Drawing.Size(799, 715));
             this.menuAboutPanel.TabIndex = (11);
@@ -1395,13 +1396,15 @@
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame2);
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame1);
             this.menuGameplayPanel.Controls.Add(this.gameplayFrame3);
-            this.menuGameplayPanel.Location = (new global::System.Drawing.Point(327, 1600));
+            this.menuGameplayPanel.Location = (new global::System.Drawing.Point(327, 0));
             this.menuGameplayPanel.Name = ("menuGameplayPanel");
             this.menuGameplayPanel.Size = (new global::System.Drawing.Size(795, 703));
             this.menuGameplayPanel.TabIndex = (13);
             // 
             // gameplayFrame2
             // 
+            this.gameplayFrame2.Controls.Add(this.saveByMod);
+            this.gameplayFrame2.Controls.Add(this.saveEdit);
             this.gameplayFrame2.Controls.Add(this.gameplayHelp);
             this.gameplayFrame2.Controls.Add(this.gameplayHelpAuthor);
             this.gameplayFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
@@ -1412,6 +1415,22 @@
             this.gameplayFrame2.TabIndex = (10);
             this.gameplayFrame2.TabStop = (false);
             this.gameplayFrame2.Text = ("Aide");
+            // 
+            // documentsFolder
+            // 
+            this.documentsFolder.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
+            this.documentsFolder.Cursor = (global::System.Windows.Forms.Cursors.Hand);
+            this.documentsFolder.Font = (new global::System.Drawing.Font("Roboto Black", 12F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.documentsFolder.ForeColor = (global::System.Drawing.Color.Black);
+            this.documentsFolder.Location = (new global::System.Drawing.Point(388, 23));
+            this.documentsFolder.Name = ("documentsFolder");
+            this.documentsFolder.Size = (new global::System.Drawing.Size(250, 23));
+            this.documentsFolder.TabIndex = (18);
+            this.documentsFolder.Text = ("Documentation");
+            this.documentsFolder.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
+            this.documentsFolder.Click += (this.documentsFolder_Click);
+            this.documentsFolder.MouseEnter += (this.documentsFolder_MouseEnter);
+            this.documentsFolder.MouseLeave += (this.documentsFolder_MouseLeave);
             // 
             // gameplayHelp
             // 
@@ -1500,7 +1519,6 @@
             // 
             this.gameplayGroupMods.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
             this.gameplayGroupMods.Controls.Add(this.documentsFolder);
-            this.gameplayGroupMods.Controls.Add(this.saveByMod);
             this.gameplayGroupMods.Controls.Add(this.gameplayMods);
             this.gameplayGroupMods.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
             this.gameplayGroupMods.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
@@ -1512,31 +1530,31 @@
             this.gameplayGroupMods.Text = ("Mod de gameplay");
             this.gameplayGroupMods.MouseEnter += (this.gameplayModsChange);
             // 
-            // documentsFolder
+            // saveEdit
             // 
-            this.documentsFolder.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
-            this.documentsFolder.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.documentsFolder.Font = (new global::System.Drawing.Font("Roboto Black", 12F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.documentsFolder.ForeColor = (global::System.Drawing.Color.Black);
-            this.documentsFolder.Location = (new global::System.Drawing.Point(467, 23));
-            this.documentsFolder.Name = ("documentsFolder");
-            this.documentsFolder.Size = (new global::System.Drawing.Size(171, 23));
-            this.documentsFolder.TabIndex = (18);
-            this.documentsFolder.Text = ("Documentation");
-            this.documentsFolder.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.documentsFolder.Click += (this.documentsFolder_Click);
-            this.documentsFolder.MouseEnter += (this.documentsFolder_MouseEnter);
-            this.documentsFolder.MouseLeave += (this.documentsFolder_MouseLeave);
+            this.saveEdit.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
+            this.saveEdit.Cursor = (global::System.Windows.Forms.Cursors.Hand);
+            this.saveEdit.Font = (new global::System.Drawing.Font("Roboto Black", 12F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
+            this.saveEdit.ForeColor = (global::System.Drawing.Color.Black);
+            this.saveEdit.Location = (new global::System.Drawing.Point(565, 239));
+            this.saveEdit.Name = ("saveEdit");
+            this.saveEdit.Size = (new global::System.Drawing.Size(210, 23));
+            this.saveEdit.TabIndex = (18);
+            this.saveEdit.Text = ("Edit save");
+            this.saveEdit.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
+            this.saveEdit.Click += (this.saveEdit_Click);
+            this.saveEdit.MouseEnter += (this.saveEdit_MouseEnter);
+            this.saveEdit.MouseLeave += (this.saveEdit_MouseLeave);
             // 
             // saveByMod
             // 
-            this.saveByMod.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
+            this.saveByMod.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
             this.saveByMod.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.saveByMod.Font = (new global::System.Drawing.Font("Roboto Black", 12F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.saveByMod.ForeColor = (global::System.Drawing.Color.Black);
-            this.saveByMod.Location = (new global::System.Drawing.Point(285, 23));
+            this.saveByMod.Location = (new global::System.Drawing.Point(12, 239));
             this.saveByMod.Name = ("saveByMod");
-            this.saveByMod.Size = (new global::System.Drawing.Size(176, 23));
+            this.saveByMod.Size = (new global::System.Drawing.Size(210, 23));
             this.saveByMod.TabIndex = (17);
             this.saveByMod.Text = ("Dossier save");
             this.saveByMod.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
@@ -1553,7 +1571,7 @@
             this.gameplayMods.FormattingEnabled = (true);
             this.gameplayMods.Location = (new global::System.Drawing.Point(9, 23));
             this.gameplayMods.Name = ("gameplayMods");
-            this.gameplayMods.Size = (new global::System.Drawing.Size(270, 23));
+            this.gameplayMods.Size = (new global::System.Drawing.Size(372, 23));
             this.gameplayMods.TabIndex = (0);
             this.gameplayMods.SelectedIndexChanged += (this.gameplayModsChange);
             this.gameplayMods.Click += (this.getMousePos);
@@ -3056,7 +3074,7 @@
             // 
             // controleRestoreKb
             // 
-            this.controleRestoreKb.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
+            this.controleRestoreKb.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
             this.controleRestoreKb.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.controleRestoreKb.Font = (new global::System.Drawing.Font("Roboto Black", 12.5F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.controleRestoreKb.ForeColor = (global::System.Drawing.Color.Black);
@@ -3067,10 +3085,12 @@
             this.controleRestoreKb.Text = ("Rétablir les controles par défaut");
             this.controleRestoreKb.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
             this.controleRestoreKb.Click += (this.controleRestoreKb_Click);
+            this.controleRestoreKb.MouseEnter += (this.controleRestoreKb_MouseEnter);
+            this.controleRestoreKb.MouseLeave += (this.controleRestoreKb_MouseLeave);
             // 
             // controleRestoreNp
             // 
-            this.controleRestoreNp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
+            this.controleRestoreNp.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
             this.controleRestoreNp.Cursor = (global::System.Windows.Forms.Cursors.Hand);
             this.controleRestoreNp.Font = (new global::System.Drawing.Font("Roboto Black", 12.5F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
             this.controleRestoreNp.ForeColor = (global::System.Drawing.Color.Black);
@@ -3081,6 +3101,8 @@
             this.controleRestoreNp.Text = ("Rétablir les controles sans pavé numérique");
             this.controleRestoreNp.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
             this.controleRestoreNp.Click += (this.controleRestoreNp_Click);
+            this.controleRestoreNp.MouseEnter += (this.controleRestoreNp_MouseEnter);
+            this.controleRestoreNp.MouseLeave += (this.controleRestoreNp_MouseLeave);
             // 
             // controlsFrame1
             // 
@@ -3428,5 +3450,6 @@
         private global::System.Windows.Forms.RichTextBox specialShortcutHelp;
         private global::System.Windows.Forms.GroupBox aboutFrame1;
         private global::System.Windows.Forms.RichTextBox aboutContributors;
+        private global::System.Windows.Forms.Label saveEdit;
     }
 }

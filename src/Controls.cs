@@ -26,5 +26,10 @@ namespace FF7_SYW_Unified
                 File.Copy(Application.StartupPath + @"Tools\Controls\lap\ff7input.cfg", Application.StartupPath + @"Game\ff7input.cfg", true);
             }
         }
+
+        private void controleRestoreKb_MouseEnter(object sender, EventArgs e) { controleRestoreKb.BackColor = Globals.activButtonBolor; }
+        private void controleRestoreKb_MouseLeave(object sender, EventArgs e) { controleRestoreKb.BackColor = Globals.inactivButtonBolor; }
+        private void controleRestoreNp_MouseEnter(object sender, EventArgs e) { controleRestoreNp.BackColor = Globals.activButtonBolor; }
+        private void controleRestoreNp_MouseLeave(object sender, EventArgs e) { controleRestoreNp.BackColor = Globals.inactivButtonBolor; }
     }
 }
