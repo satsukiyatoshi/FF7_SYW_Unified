@@ -16,7 +16,6 @@ namespace FF7_SYW_Unified
             graphicsClear();
             soundsClear();
             gameplayClear();
-            FFNxClear();
 
             getTranslationXml(Application.StartupPath + @"\Translations\" + langInterface.Text + ".xml", Globals.translateUI);
             translateAll();
@@ -27,7 +26,7 @@ namespace FF7_SYW_Unified
             graphicsSetDefaults();
             soundsSetDefaults();
             gameplaySetDefaults();
-            FFNxSetDefaults();
+            setDefaultFFNxValues();
         }
 
 

@@ -35,7 +35,7 @@ namespace FF7_SYW_Unified
             graphicsModels3Dw.Text = graphicsModels3Dw.Items[0].ToString();
             graphicsModels3Dm.Text = graphicsModels3Dm.Items[0].ToString();
             graphicsFMV.Text = graphicsFMV.Items[0].ToString();
-            graphicsMenu.Text = graphicsMenu.Items[0].ToString();
+            graphicsMenu.Text = graphicsMenu.Items[1].ToString();
             graphicsAddTextures.Text = graphicsAddTextures.Items[0].ToString();
         }
 

@@ -49,8 +49,9 @@ namespace FF7_SYW_Unified
 
             langInterface.Text = langInterface.GetItemText(langInterface.Items[0]);
 
-            setDefaultUIValues();
-            loadValues();
+            loadValues(Application.StartupPath + @"\lang.ini");
+            setDefaultFFNxValues();
+            loadValues(Application.StartupPath + @"\settings.ini");
 
             //set default mod/placeholder pictures
             gameplayModsChange(this, EventArgs.Empty);

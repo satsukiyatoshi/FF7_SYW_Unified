@@ -12,7 +12,7 @@
 		<text>Donation</text>
 	</control>
 	<control>
-		<name>automatic</name>
+		<name>auto</name>
 		<text>Automatic</text>
 	</control>
 	<control>

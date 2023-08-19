@@ -28,3214 +28,3224 @@
         /// </summary>
         private void InitializeComponent()
         {
-            global::System.Windows.Forms.PictureBox musicsPrev;
-            global::System.ComponentModel.ComponentResourceManager resources = new global::System.ComponentModel.ComponentResourceManager(typeof(global::FF7_SYW_Unified.FF7U));
-            global::System.Windows.Forms.PictureBox ambiantPrev;
-            global::System.Windows.Forms.PictureBox sfxPrev;
-            global::System.Windows.Forms.PictureBox fmvPrev;
-            global::System.Windows.Forms.PictureBox voicesPrev;
-            this.menuFrame = (new global::System.Windows.Forms.GroupBox());
-            this.menuLaunchGame = (new global::System.Windows.Forms.Label());
-            this.settingsGroup = (new global::System.Windows.Forms.GroupBox());
-            this.menuControls = (new global::System.Windows.Forms.Label());
-            this.menuHelp = (new global::System.Windows.Forms.Label());
-            this.menuFFNx = (new global::System.Windows.Forms.Label());
-            this.menuGameplay = (new global::System.Windows.Forms.Label());
-            this.menuSound = (new global::System.Windows.Forms.Label());
-            this.menuGraphic = (new global::System.Windows.Forms.Label());
-            this.menuAbout = (new global::System.Windows.Forms.Label());
-            this.ff7Lang = (new global::System.Windows.Forms.GroupBox());
-            this.langGame = (new global::System.Windows.Forms.ComboBox());
-            this.interfaceLang = (new global::System.Windows.Forms.GroupBox());
-            this.langInterface = (new global::System.Windows.Forms.ComboBox());
-            this.pictureBox2 = (new global::System.Windows.Forms.PictureBox());
-            this.pictureBox1 = (new global::System.Windows.Forms.PictureBox());
-            this.graphicFrame1 = (new global::System.Windows.Forms.GroupBox());
-            this.graphicsGroupAddTextures = (new global::System.Windows.Forms.GroupBox());
-            this.graphicsAddTextures = (new global::System.Windows.Forms.ComboBox());
-            this.graphicsGroupModels3Dm = (new global::System.Windows.Forms.GroupBox());
-            this.graphicsModels3Dm = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGamutNtsc = (new global::System.Windows.Forms.CheckBox());
-            this.graphicsGroupModels3Dw = (new global::System.Windows.Forms.GroupBox());
-            this.graphicsModels3Dw = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxLighting = (new global::System.Windows.Forms.CheckBox());
-            this.graphicsGroupMenu = (new global::System.Windows.Forms.GroupBox());
-            this.flagGGraphicsMenu = (new global::System.Windows.Forms.PictureBox());
-            this.flagEGraphicsMenu = (new global::System.Windows.Forms.PictureBox());
-            this.flagSGraphicsMenu = (new global::System.Windows.Forms.PictureBox());
-            this.flagFGraphicsMenu = (new global::System.Windows.Forms.PictureBox());
-            this.graphicsMenu = (new global::System.Windows.Forms.ComboBox());
-            this.graphicsGroupFMV = (new global::System.Windows.Forms.GroupBox());
-            this.graphicsFMV = (new global::System.Windows.Forms.ComboBox());
-            this.graphicsGroupModels3Dc = (new global::System.Windows.Forms.GroupBox());
-            this.graphicsModels3Dc = (new global::System.Windows.Forms.ComboBox());
-            this.graphicsGroupModels3Df = (new global::System.Windows.Forms.GroupBox());
-            this.graphicsModels3Df = (new global::System.Windows.Forms.ComboBox());
-            this.graphicsMagics = (new global::System.Windows.Forms.CheckBox());
-            this.graphicsBattles = (new global::System.Windows.Forms.CheckBox());
-            this.graphicsWorldMap = (new global::System.Windows.Forms.CheckBox());
-            this.graphicsAnimations = (new global::System.Windows.Forms.CheckBox());
-            this.graphicsMiniGames = (new global::System.Windows.Forms.CheckBox());
-            this.graphicsFields = (new global::System.Windows.Forms.CheckBox());
-            this.graphicFrame3 = (new global::System.Windows.Forms.GroupBox());
-            this.graphicPrevPic = (new global::System.Windows.Forms.PictureBox());
-            this.menuGraphicPanel = (new global::System.Windows.Forms.Panel());
-            this.graphicFrame2 = (new global::System.Windows.Forms.GroupBox());
-            this.graphicsHelp = (new global::System.Windows.Forms.TextBox());
-            this.graphicsHelpAuthor = (new global::System.Windows.Forms.Label());
-            this.menuAboutPanel = (new global::System.Windows.Forms.Panel());
-            this.aboutFrame1 = (new global::System.Windows.Forms.GroupBox());
-            this.aboutContributors = (new global::System.Windows.Forms.RichTextBox());
-            this.aboutFrame2 = (new global::System.Windows.Forms.GroupBox());
-            this.packStory = (new global::System.Windows.Forms.Label());
-            this.menuSoundPanel = (new global::System.Windows.Forms.Panel());
-            this.soundFrame5 = (new global::System.Windows.Forms.GroupBox());
-            this.soundPrevPic = (new global::System.Windows.Forms.PictureBox());
-            this.soundFrame4 = (new global::System.Windows.Forms.GroupBox());
-            this.soundsListHelp = (new global::System.Windows.Forms.Label());
-            this.soundsList = (new global::System.Windows.Forms.ListBox());
-            this.soundFrame2 = (new global::System.Windows.Forms.GroupBox());
-            this.soundsHelp = (new global::System.Windows.Forms.TextBox());
-            this.soundsHelpAuthor = (new global::System.Windows.Forms.Label());
-            this.soundFrame3 = (new global::System.Windows.Forms.GroupBox());
-            this.soundsGroupVoices = (new global::System.Windows.Forms.GroupBox());
-            this.soundsVoices = (new global::System.Windows.Forms.ComboBox());
-            this.soundsGroupFMV = (new global::System.Windows.Forms.GroupBox());
-            this.soundsFMV = (new global::System.Windows.Forms.ComboBox());
-            this.soundsGroupAmbients = (new global::System.Windows.Forms.GroupBox());
-            this.soundsAmbients = (new global::System.Windows.Forms.ComboBox());
-            this.soundsGroupSfx = (new global::System.Windows.Forms.GroupBox());
-            this.soundsSfx = (new global::System.Windows.Forms.ComboBox());
-            this.soundsGroupMusics = (new global::System.Windows.Forms.GroupBox());
-            this.soundsMusics = (new global::System.Windows.Forms.ComboBox());
-            this.menuGameplayPanel = (new global::System.Windows.Forms.Panel());
-            this.gameplayFrame2 = (new global::System.Windows.Forms.GroupBox());
-            this.documentsFolder = (new global::System.Windows.Forms.Label());
-            this.gameplayHelp = (new global::System.Windows.Forms.TextBox());
-            this.gameplayHelpAuthor = (new global::System.Windows.Forms.Label());
-            this.gameplayFrame1 = (new global::System.Windows.Forms.GroupBox());
-            this.flagSGameplay = (new global::System.Windows.Forms.PictureBox());
-            this.flagGGameplay = (new global::System.Windows.Forms.PictureBox());
-            this.flagFGameplay = (new global::System.Windows.Forms.PictureBox());
-            this.flagEGameplay = (new global::System.Windows.Forms.PictureBox());
-            this.gameplayGroupMods = (new global::System.Windows.Forms.GroupBox());
-            this.saveEdit = (new global::System.Windows.Forms.Label());
-            this.saveByMod = (new global::System.Windows.Forms.Label());
-            this.gameplayMods = (new global::System.Windows.Forms.ComboBox());
-            this.gameplayFrame3 = (new global::System.Windows.Forms.GroupBox());
-            this.gameplayPrevPic = (new global::System.Windows.Forms.PictureBox());
-            this.menuFFNxPanel = (new global::System.Windows.Forms.Panel());
-            this.FFNxFrame2 = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxHelp = (new global::System.Windows.Forms.TextBox());
-            this.FFNxHelpAuthor = (new global::System.Windows.Forms.Label());
-            this.FFNxFrame1 = (new global::System.Windows.Forms.GroupBox());
-            this.flagGFFNxPatch = (new global::System.Windows.Forms.PictureBox());
-            this.FFNxPatchsList = (new global::System.Windows.Forms.CheckedListBox());
-            this.flagSFFNxPatch = (new global::System.Windows.Forms.PictureBox());
-            this.FFNxComboPatchs = (new global::System.Windows.Forms.ComboBox());
-            this.flagFFFNxPatch = (new global::System.Windows.Forms.PictureBox());
-            this.flagEFFNxPatch = (new global::System.Windows.Forms.PictureBox());
-            this.FFNxFrame3 = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxAnalogControllerArun = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxNoCd = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxGroupFps = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxFps = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxShowStats = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxDebugTool = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxFootSteps = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxLogs = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxGroupSpeedhack = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxSpeedhackMax = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxSpeedhackMin = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxSpeedhackStep = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupControllerDeathzones = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxContolerDeathzoneRT = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxContolerDeathzoneLT = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxContolerDeathzoneStick = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupAudioSample = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxAudioSample = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupIR = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxIR = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupAudioChannels = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxAudioChannels = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupAA = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxAA = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupResolution = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxResolution = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupHDR = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxHDR = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupRatio = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxRatio = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxGroupScreen = (new global::System.Windows.Forms.GroupBox());
-            this.FFNxScreen = (new global::System.Windows.Forms.ComboBox());
-            this.FFNxVsync = (new global::System.Windows.Forms.CheckBox());
-            this.FFNXMusicResume = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxAnisotropic = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxAnalogController = (new global::System.Windows.Forms.CheckBox());
-            this.FFNXSteamSucces = (new global::System.Windows.Forms.CheckBox());
-            this.FFNxGroup3dEngine = (new global::System.Windows.Forms.GroupBox());
-            this.FFNx3dEngine = (new global::System.Windows.Forms.ComboBox());
-            this.menuHelpPanel = (new global::System.Windows.Forms.Panel());
-            this.HelpFrame2 = (new global::System.Windows.Forms.GroupBox());
-            this.chooseHelp = (new global::System.Windows.Forms.Label());
-            this.HelpList = (new global::System.Windows.Forms.ComboBox());
-            this.GeneralHelp = (new global::System.Windows.Forms.RichTextBox());
-            this.menuLaunchGamePanel = (new global::System.Windows.Forms.Panel());
-            this.groupBox2 = (new global::System.Windows.Forms.GroupBox());
-            this.loadingAnimation = (new global::System.Windows.Forms.PictureBox());
-            this.loadingWaitDetails = (new global::System.Windows.Forms.Label());
-            this.loadingWait = (new global::System.Windows.Forms.Label());
-            this.menuControlsPanel = (new global::System.Windows.Forms.Panel());
-            this.controlsFrame2 = (new global::System.Windows.Forms.GroupBox());
-            this.analogPadUse = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboard = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpad = (new global::System.Windows.Forms.Label());
-            this.ctrlGamepad = (new global::System.Windows.Forms.Label());
-            this.ctrlControls = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardStart = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardAssist = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardTarget = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardCam = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardPgDown = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardPgUp = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardChange = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardMenu = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardCancel = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardOk = (new global::System.Windows.Forms.Label());
-            this.ctrlKeyboardPad = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadStart = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadAssist = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadTarget = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadCam = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadPgDown = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadPgUp = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadChange = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadMenu = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadCancel = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadOk = (new global::System.Windows.Forms.Label());
-            this.ctrlNumpadPad = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadStart = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadAssist = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadTarget = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadCam = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadPgDown = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadPgUp = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadChange = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadMenu = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadCancel = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadOk = (new global::System.Windows.Forms.Label());
-            this.ctrlGpadPad = (new global::System.Windows.Forms.Label());
-            this.ctrlOk = (new global::System.Windows.Forms.Label());
-            this.ctrlStart = (new global::System.Windows.Forms.Label());
-            this.ctrlAssist = (new global::System.Windows.Forms.Label());
-            this.ctrlTarget = (new global::System.Windows.Forms.Label());
-            this.ctrlCam = (new global::System.Windows.Forms.Label());
-            this.ctrlPgDown = (new global::System.Windows.Forms.Label());
-            this.ctrlPgUp = (new global::System.Windows.Forms.Label());
-            this.ctrlChange = (new global::System.Windows.Forms.Label());
-            this.ctrlMenu = (new global::System.Windows.Forms.Label());
-            this.ctrlCancel = (new global::System.Windows.Forms.Label());
-            this.ctrlMove = (new global::System.Windows.Forms.Label());
-            this.controlsFrame3 = (new global::System.Windows.Forms.GroupBox());
-            this.specialShortcutHelp = (new global::System.Windows.Forms.RichTextBox());
-            this.controleRestoreKb = (new global::System.Windows.Forms.Label());
-            this.controleRestoreNp = (new global::System.Windows.Forms.Label());
-            this.controlsFrame1 = (new global::System.Windows.Forms.GroupBox());
-            this.psxPict = (new global::System.Windows.Forms.PictureBox());
-            musicsPrev = (new global::System.Windows.Forms.PictureBox());
-            ambiantPrev = (new global::System.Windows.Forms.PictureBox());
-            sfxPrev = (new global::System.Windows.Forms.PictureBox());
-            fmvPrev = (new global::System.Windows.Forms.PictureBox());
-            voicesPrev = (new global::System.Windows.Forms.PictureBox());
-            ((global::System.ComponentModel.ISupportInitialize)(musicsPrev)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(ambiantPrev)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(sfxPrev)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(fmvPrev)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(voicesPrev)).BeginInit();
-            this.menuFrame.SuspendLayout();
-            this.settingsGroup.SuspendLayout();
-            this.ff7Lang.SuspendLayout();
-            this.interfaceLang.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.graphicFrame1.SuspendLayout();
-            this.graphicsGroupAddTextures.SuspendLayout();
-            this.graphicsGroupModels3Dm.SuspendLayout();
-            this.graphicsGroupModels3Dw.SuspendLayout();
-            this.graphicsGroupMenu.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagGGraphicsMenu)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagEGraphicsMenu)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagSGraphicsMenu)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagFGraphicsMenu)).BeginInit();
-            this.graphicsGroupFMV.SuspendLayout();
-            this.graphicsGroupModels3Dc.SuspendLayout();
-            this.graphicsGroupModels3Df.SuspendLayout();
-            this.graphicFrame3.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.graphicPrevPic)).BeginInit();
-            this.menuGraphicPanel.SuspendLayout();
-            this.graphicFrame2.SuspendLayout();
-            this.menuAboutPanel.SuspendLayout();
-            this.aboutFrame1.SuspendLayout();
-            this.aboutFrame2.SuspendLayout();
-            this.menuSoundPanel.SuspendLayout();
-            this.soundFrame5.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).BeginInit();
-            this.soundFrame4.SuspendLayout();
-            this.soundFrame2.SuspendLayout();
-            this.soundFrame3.SuspendLayout();
-            this.soundsGroupVoices.SuspendLayout();
-            this.soundsGroupFMV.SuspendLayout();
-            this.soundsGroupAmbients.SuspendLayout();
-            this.soundsGroupSfx.SuspendLayout();
-            this.soundsGroupMusics.SuspendLayout();
-            this.menuGameplayPanel.SuspendLayout();
-            this.gameplayFrame2.SuspendLayout();
-            this.gameplayFrame1.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagFGameplay)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagEGameplay)).BeginInit();
-            this.gameplayGroupMods.SuspendLayout();
-            this.gameplayFrame3.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).BeginInit();
-            this.menuFFNxPanel.SuspendLayout();
-            this.FFNxFrame2.SuspendLayout();
-            this.FFNxFrame1.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagGFFNxPatch)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagSFFNxPatch)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagFFFNxPatch)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagEFFNxPatch)).BeginInit();
-            this.FFNxFrame3.SuspendLayout();
-            this.FFNxGroupFps.SuspendLayout();
-            this.FFNxGroupSpeedhack.SuspendLayout();
-            this.FFNxGroupControllerDeathzones.SuspendLayout();
-            this.FFNxGroupAudioSample.SuspendLayout();
-            this.FFNxGroupIR.SuspendLayout();
-            this.FFNxGroupAudioChannels.SuspendLayout();
-            this.FFNxGroupAA.SuspendLayout();
-            this.FFNxGroupResolution.SuspendLayout();
-            this.FFNxGroupHDR.SuspendLayout();
-            this.FFNxGroupRatio.SuspendLayout();
-            this.FFNxGroupScreen.SuspendLayout();
-            this.FFNxGroup3dEngine.SuspendLayout();
-            this.menuHelpPanel.SuspendLayout();
-            this.HelpFrame2.SuspendLayout();
-            this.menuLaunchGamePanel.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).BeginInit();
-            this.menuControlsPanel.SuspendLayout();
-            this.controlsFrame2.SuspendLayout();
-            this.controlsFrame3.SuspendLayout();
-            this.controlsFrame1.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.psxPict)).BeginInit();
-            this.SuspendLayout();
+            PictureBox musicsPrev;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FF7U));
+            PictureBox ambiantPrev;
+            PictureBox sfxPrev;
+            PictureBox fmvPrev;
+            PictureBox voicesPrev;
+            menuFrame = new GroupBox();
+            menuLaunchGame = new Label();
+            settingsGroup = new GroupBox();
+            menuControls = new Label();
+            menuHelp = new Label();
+            menuFFNx = new Label();
+            menuGameplay = new Label();
+            menuSound = new Label();
+            menuGraphic = new Label();
+            menuAbout = new Label();
+            ff7Lang = new GroupBox();
+            langGame = new ComboBox();
+            interfaceLang = new GroupBox();
+            langInterface = new ComboBox();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            graphicFrame1 = new GroupBox();
+            graphicsGroupAddTextures = new GroupBox();
+            graphicsAddTextures = new ComboBox();
+            graphicsGroupModels3Dm = new GroupBox();
+            graphicsModels3Dm = new ComboBox();
+            FFNxGamutNtsc = new CheckBox();
+            graphicsGroupModels3Dw = new GroupBox();
+            graphicsModels3Dw = new ComboBox();
+            FFNxLighting = new CheckBox();
+            graphicsGroupMenu = new GroupBox();
+            flagGGraphicsMenu = new PictureBox();
+            flagEGraphicsMenu = new PictureBox();
+            flagSGraphicsMenu = new PictureBox();
+            flagFGraphicsMenu = new PictureBox();
+            graphicsMenu = new ComboBox();
+            graphicsGroupFMV = new GroupBox();
+            graphicsFMV = new ComboBox();
+            graphicsGroupModels3Dc = new GroupBox();
+            graphicsModels3Dc = new ComboBox();
+            graphicsGroupModels3Df = new GroupBox();
+            graphicsModels3Df = new ComboBox();
+            graphicsMagics = new CheckBox();
+            graphicsBattles = new CheckBox();
+            graphicsWorldMap = new CheckBox();
+            graphicsAnimations = new CheckBox();
+            graphicsMiniGames = new CheckBox();
+            graphicsFields = new CheckBox();
+            graphicFrame3 = new GroupBox();
+            graphicPrevPic = new PictureBox();
+            menuGraphicPanel = new Panel();
+            graphicFrame2 = new GroupBox();
+            graphicsHelp = new TextBox();
+            graphicsHelpAuthor = new Label();
+            menuAboutPanel = new Panel();
+            aboutFrame1 = new GroupBox();
+            aboutContributors = new RichTextBox();
+            aboutFrame2 = new GroupBox();
+            packStory = new Label();
+            menuSoundPanel = new Panel();
+            soundFrame5 = new GroupBox();
+            soundPrevPic = new PictureBox();
+            soundFrame4 = new GroupBox();
+            soundsListHelp = new Label();
+            soundsList = new ListBox();
+            soundFrame2 = new GroupBox();
+            soundsHelp = new TextBox();
+            soundsHelpAuthor = new Label();
+            soundFrame3 = new GroupBox();
+            soundsGroupVoices = new GroupBox();
+            soundsVoices = new ComboBox();
+            soundsGroupFMV = new GroupBox();
+            soundsFMV = new ComboBox();
+            soundsGroupAmbients = new GroupBox();
+            soundsAmbients = new ComboBox();
+            soundsGroupSfx = new GroupBox();
+            soundsSfx = new ComboBox();
+            soundsGroupMusics = new GroupBox();
+            soundsMusics = new ComboBox();
+            menuGameplayPanel = new Panel();
+            gameplayFrame2 = new GroupBox();
+            saveByMod = new Label();
+            saveEdit = new Label();
+            gameplayHelp = new TextBox();
+            gameplayHelpAuthor = new Label();
+            gameplayFrame1 = new GroupBox();
+            flagSGameplay = new PictureBox();
+            flagGGameplay = new PictureBox();
+            flagFGameplay = new PictureBox();
+            flagEGameplay = new PictureBox();
+            gameplayGroupMods = new GroupBox();
+            documentsFolder = new Label();
+            gameplayMods = new ComboBox();
+            gameplayFrame3 = new GroupBox();
+            gameplayPrevPic = new PictureBox();
+            menuFFNxPanel = new Panel();
+            FFNxFrame2 = new GroupBox();
+            FFNxHelp = new TextBox();
+            FFNxHelpAuthor = new Label();
+            FFNxFrame1 = new GroupBox();
+            flagGFFNxPatch = new PictureBox();
+            FFNxPatchsList = new CheckedListBox();
+            flagSFFNxPatch = new PictureBox();
+            FFNxComboPatchs = new ComboBox();
+            flagFFFNxPatch = new PictureBox();
+            flagEFFNxPatch = new PictureBox();
+            FFNxFrame3 = new GroupBox();
+            FFNxAnalogControllerArun = new CheckBox();
+            FFNxNoCd = new CheckBox();
+            FFNxGroupFps = new GroupBox();
+            FFNxFps = new ComboBox();
+            FFNxShowStats = new CheckBox();
+            FFNxDebugTool = new CheckBox();
+            FFNxFootSteps = new CheckBox();
+            FFNxLogs = new CheckBox();
+            FFNxGroupSpeedhack = new GroupBox();
+            FFNxSpeedhackMax = new ComboBox();
+            FFNxSpeedhackMin = new ComboBox();
+            FFNxSpeedhackStep = new ComboBox();
+            FFNxGroupControllerDeathzones = new GroupBox();
+            FFNxContolerDeathzoneRT = new ComboBox();
+            FFNxContolerDeathzoneLT = new ComboBox();
+            FFNxContolerDeathzoneStick = new ComboBox();
+            FFNxGroupAudioSample = new GroupBox();
+            FFNxAudioSample = new ComboBox();
+            FFNxGroupIR = new GroupBox();
+            FFNxIR = new ComboBox();
+            FFNxGroupAudioChannels = new GroupBox();
+            FFNxAudioChannels = new ComboBox();
+            FFNxGroupAA = new GroupBox();
+            FFNxAA = new ComboBox();
+            FFNxGroupResolution = new GroupBox();
+            FFNxResolution = new ComboBox();
+            FFNxGroupHDR = new GroupBox();
+            FFNxHDR = new ComboBox();
+            FFNxGroupRatio = new GroupBox();
+            FFNxRatio = new ComboBox();
+            FFNxGroupScreen = new GroupBox();
+            FFNxScreen = new ComboBox();
+            FFNxVsync = new CheckBox();
+            FFNXMusicResume = new CheckBox();
+            FFNxAnisotropic = new CheckBox();
+            FFNxAnalogController = new CheckBox();
+            FFNXSteamSucces = new CheckBox();
+            FFNxGroup3dEngine = new GroupBox();
+            FFNx3dEngine = new ComboBox();
+            menuHelpPanel = new Panel();
+            HelpFrame2 = new GroupBox();
+            chooseHelp = new Label();
+            HelpList = new ComboBox();
+            GeneralHelp = new RichTextBox();
+            menuLaunchGamePanel = new Panel();
+            groupBox2 = new GroupBox();
+            loadingAnimation = new PictureBox();
+            loadingWaitDetails = new Label();
+            loadingWait = new Label();
+            menuControlsPanel = new Panel();
+            controlsFrame2 = new GroupBox();
+            analogPadUse = new Label();
+            ctrlKeyboard = new Label();
+            ctrlNumpad = new Label();
+            ctrlGamepad = new Label();
+            ctrlControls = new Label();
+            ctrlKeyboardStart = new Label();
+            ctrlKeyboardAssist = new Label();
+            ctrlKeyboardTarget = new Label();
+            ctrlKeyboardCam = new Label();
+            ctrlKeyboardPgDown = new Label();
+            ctrlKeyboardPgUp = new Label();
+            ctrlKeyboardChange = new Label();
+            ctrlKeyboardMenu = new Label();
+            ctrlKeyboardCancel = new Label();
+            ctrlKeyboardOk = new Label();
+            ctrlKeyboardPad = new Label();
+            ctrlNumpadStart = new Label();
+            ctrlNumpadAssist = new Label();
+            ctrlNumpadTarget = new Label();
+            ctrlNumpadCam = new Label();
+            ctrlNumpadPgDown = new Label();
+            ctrlNumpadPgUp = new Label();
+            ctrlNumpadChange = new Label();
+            ctrlNumpadMenu = new Label();
+            ctrlNumpadCancel = new Label();
+            ctrlNumpadOk = new Label();
+            ctrlNumpadPad = new Label();
+            ctrlGpadStart = new Label();
+            ctrlGpadAssist = new Label();
+            ctrlGpadTarget = new Label();
+            ctrlGpadCam = new Label();
+            ctrlGpadPgDown = new Label();
+            ctrlGpadPgUp = new Label();
+            ctrlGpadChange = new Label();
+            ctrlGpadMenu = new Label();
+            ctrlGpadCancel = new Label();
+            ctrlGpadOk = new Label();
+            ctrlGpadPad = new Label();
+            ctrlOk = new Label();
+            ctrlStart = new Label();
+            ctrlAssist = new Label();
+            ctrlTarget = new Label();
+            ctrlCam = new Label();
+            ctrlPgDown = new Label();
+            ctrlPgUp = new Label();
+            ctrlChange = new Label();
+            ctrlMenu = new Label();
+            ctrlCancel = new Label();
+            ctrlMove = new Label();
+            controlsFrame3 = new GroupBox();
+            specialShortcutHelp = new RichTextBox();
+            controleRestoreKb = new Label();
+            controleRestoreNp = new Label();
+            controlsFrame1 = new GroupBox();
+            psxPict = new PictureBox();
+            musicsPrev = new PictureBox();
+            ambiantPrev = new PictureBox();
+            sfxPrev = new PictureBox();
+            fmvPrev = new PictureBox();
+            voicesPrev = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)musicsPrev).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ambiantPrev).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sfxPrev).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)fmvPrev).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)voicesPrev).BeginInit();
+            menuFrame.SuspendLayout();
+            settingsGroup.SuspendLayout();
+            ff7Lang.SuspendLayout();
+            interfaceLang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            graphicFrame1.SuspendLayout();
+            graphicsGroupAddTextures.SuspendLayout();
+            graphicsGroupModels3Dm.SuspendLayout();
+            graphicsGroupModels3Dw.SuspendLayout();
+            graphicsGroupMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)flagGGraphicsMenu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagEGraphicsMenu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagSGraphicsMenu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagFGraphicsMenu).BeginInit();
+            graphicsGroupFMV.SuspendLayout();
+            graphicsGroupModels3Dc.SuspendLayout();
+            graphicsGroupModels3Df.SuspendLayout();
+            graphicFrame3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)graphicPrevPic).BeginInit();
+            menuGraphicPanel.SuspendLayout();
+            graphicFrame2.SuspendLayout();
+            menuAboutPanel.SuspendLayout();
+            aboutFrame1.SuspendLayout();
+            aboutFrame2.SuspendLayout();
+            menuSoundPanel.SuspendLayout();
+            soundFrame5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)soundPrevPic).BeginInit();
+            soundFrame4.SuspendLayout();
+            soundFrame2.SuspendLayout();
+            soundFrame3.SuspendLayout();
+            soundsGroupVoices.SuspendLayout();
+            soundsGroupFMV.SuspendLayout();
+            soundsGroupAmbients.SuspendLayout();
+            soundsGroupSfx.SuspendLayout();
+            soundsGroupMusics.SuspendLayout();
+            menuGameplayPanel.SuspendLayout();
+            gameplayFrame2.SuspendLayout();
+            gameplayFrame1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)flagSGameplay).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagGGameplay).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagFGameplay).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagEGameplay).BeginInit();
+            gameplayGroupMods.SuspendLayout();
+            gameplayFrame3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gameplayPrevPic).BeginInit();
+            menuFFNxPanel.SuspendLayout();
+            FFNxFrame2.SuspendLayout();
+            FFNxFrame1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)flagGFFNxPatch).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagSFFNxPatch).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagFFFNxPatch).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagEFFNxPatch).BeginInit();
+            FFNxFrame3.SuspendLayout();
+            FFNxGroupFps.SuspendLayout();
+            FFNxGroupSpeedhack.SuspendLayout();
+            FFNxGroupControllerDeathzones.SuspendLayout();
+            FFNxGroupAudioSample.SuspendLayout();
+            FFNxGroupIR.SuspendLayout();
+            FFNxGroupAudioChannels.SuspendLayout();
+            FFNxGroupAA.SuspendLayout();
+            FFNxGroupResolution.SuspendLayout();
+            FFNxGroupHDR.SuspendLayout();
+            FFNxGroupRatio.SuspendLayout();
+            FFNxGroupScreen.SuspendLayout();
+            FFNxGroup3dEngine.SuspendLayout();
+            menuHelpPanel.SuspendLayout();
+            HelpFrame2.SuspendLayout();
+            menuLaunchGamePanel.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)loadingAnimation).BeginInit();
+            menuControlsPanel.SuspendLayout();
+            controlsFrame2.SuspendLayout();
+            controlsFrame3.SuspendLayout();
+            controlsFrame1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)psxPict).BeginInit();
+            SuspendLayout();
             // 
             // musicsPrev
             // 
-            musicsPrev.Image = ((global::System.Drawing.Image)(resources.GetObject("musicsPrev.Image")));
-            musicsPrev.Location = (new global::System.Drawing.Point(330, 20));
-            musicsPrev.Name = ("musicsPrev");
-            musicsPrev.Size = (new global::System.Drawing.Size(28, 28));
-            musicsPrev.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            musicsPrev.TabIndex = (7);
-            musicsPrev.TabStop = (false);
-            musicsPrev.Click += (this.musicsPrev_Click);
+            musicsPrev.Image = (Image)resources.GetObject("musicsPrev.Image");
+            musicsPrev.Location = new Point(330, 20);
+            musicsPrev.Name = "musicsPrev";
+            musicsPrev.Size = new Size(28, 28);
+            musicsPrev.SizeMode = PictureBoxSizeMode.Zoom;
+            musicsPrev.TabIndex = 7;
+            musicsPrev.TabStop = false;
+            musicsPrev.Click += musicsPrev_Click;
             // 
             // ambiantPrev
             // 
-            ambiantPrev.Image = ((global::System.Drawing.Image)(resources.GetObject("ambiantPrev.Image")));
-            ambiantPrev.Location = (new global::System.Drawing.Point(330, 20));
-            ambiantPrev.Name = ("ambiantPrev");
-            ambiantPrev.Size = (new global::System.Drawing.Size(28, 28));
-            ambiantPrev.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            ambiantPrev.TabIndex = (8);
-            ambiantPrev.TabStop = (false);
-            ambiantPrev.Click += (this.ambiantPrev_Click);
+            ambiantPrev.Image = (Image)resources.GetObject("ambiantPrev.Image");
+            ambiantPrev.Location = new Point(330, 20);
+            ambiantPrev.Name = "ambiantPrev";
+            ambiantPrev.Size = new Size(28, 28);
+            ambiantPrev.SizeMode = PictureBoxSizeMode.Zoom;
+            ambiantPrev.TabIndex = 8;
+            ambiantPrev.TabStop = false;
+            ambiantPrev.Click += ambiantPrev_Click;
             // 
             // sfxPrev
             // 
-            sfxPrev.Image = ((global::System.Drawing.Image)(resources.GetObject("sfxPrev.Image")));
-            sfxPrev.Location = (new global::System.Drawing.Point(330, 20));
-            sfxPrev.Name = ("sfxPrev");
-            sfxPrev.Size = (new global::System.Drawing.Size(28, 28));
-            sfxPrev.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            sfxPrev.TabIndex = (8);
-            sfxPrev.TabStop = (false);
-            sfxPrev.Click += (this.sfxPrev_Click);
+            sfxPrev.Image = (Image)resources.GetObject("sfxPrev.Image");
+            sfxPrev.Location = new Point(330, 20);
+            sfxPrev.Name = "sfxPrev";
+            sfxPrev.Size = new Size(28, 28);
+            sfxPrev.SizeMode = PictureBoxSizeMode.Zoom;
+            sfxPrev.TabIndex = 8;
+            sfxPrev.TabStop = false;
+            sfxPrev.Click += sfxPrev_Click;
             // 
             // fmvPrev
             // 
-            fmvPrev.Image = ((global::System.Drawing.Image)(resources.GetObject("fmvPrev.Image")));
-            fmvPrev.Location = (new global::System.Drawing.Point(330, 20));
-            fmvPrev.Name = ("fmvPrev");
-            fmvPrev.Size = (new global::System.Drawing.Size(28, 28));
-            fmvPrev.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            fmvPrev.TabIndex = (8);
-            fmvPrev.TabStop = (false);
-            fmvPrev.Click += (this.fmvPrev_Click);
+            fmvPrev.Image = (Image)resources.GetObject("fmvPrev.Image");
+            fmvPrev.Location = new Point(330, 20);
+            fmvPrev.Name = "fmvPrev";
+            fmvPrev.Size = new Size(28, 28);
+            fmvPrev.SizeMode = PictureBoxSizeMode.Zoom;
+            fmvPrev.TabIndex = 8;
+            fmvPrev.TabStop = false;
+            fmvPrev.Click += fmvPrev_Click;
             // 
             // voicesPrev
             // 
-            voicesPrev.Image = ((global::System.Drawing.Image)(resources.GetObject("voicesPrev.Image")));
-            voicesPrev.Location = (new global::System.Drawing.Point(330, 20));
-            voicesPrev.Name = ("voicesPrev");
-            voicesPrev.Size = (new global::System.Drawing.Size(28, 28));
-            voicesPrev.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            voicesPrev.TabIndex = (8);
-            voicesPrev.TabStop = (false);
-            voicesPrev.Click += (this.voicesPrev_Click);
+            voicesPrev.Image = (Image)resources.GetObject("voicesPrev.Image");
+            voicesPrev.Location = new Point(330, 20);
+            voicesPrev.Name = "voicesPrev";
+            voicesPrev.Size = new Size(28, 28);
+            voicesPrev.SizeMode = PictureBoxSizeMode.Zoom;
+            voicesPrev.TabIndex = 8;
+            voicesPrev.TabStop = false;
+            voicesPrev.Click += voicesPrev_Click;
             // 
             // menuFrame
             // 
-            this.menuFrame.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(33)), (global::System.Int32)((global::System.Byte)(40)), (global::System.Int32)((global::System.Byte)(50))));
-            this.menuFrame.BackgroundImageLayout = (global::System.Windows.Forms.ImageLayout.None);
-            this.menuFrame.Controls.Add(this.menuLaunchGame);
-            this.menuFrame.Controls.Add(this.settingsGroup);
-            this.menuFrame.Controls.Add(this.ff7Lang);
-            this.menuFrame.Controls.Add(this.interfaceLang);
-            this.menuFrame.Controls.Add(this.pictureBox2);
-            this.menuFrame.Controls.Add(this.pictureBox1);
-            this.menuFrame.Location = (new global::System.Drawing.Point(9, 4));
-            this.menuFrame.Margin = (new global::System.Windows.Forms.Padding(0));
-            this.menuFrame.Name = ("menuFrame");
-            this.menuFrame.Padding = (new global::System.Windows.Forms.Padding(0));
-            this.menuFrame.Size = (new global::System.Drawing.Size(309, 699));
-            this.menuFrame.TabIndex = (0);
-            this.menuFrame.TabStop = (false);
+            menuFrame.BackColor = Color.FromArgb(33, 40, 50);
+            menuFrame.BackgroundImageLayout = ImageLayout.None;
+            menuFrame.Controls.Add(menuLaunchGame);
+            menuFrame.Controls.Add(settingsGroup);
+            menuFrame.Controls.Add(ff7Lang);
+            menuFrame.Controls.Add(interfaceLang);
+            menuFrame.Controls.Add(pictureBox2);
+            menuFrame.Controls.Add(pictureBox1);
+            menuFrame.Location = new Point(9, 4);
+            menuFrame.Margin = new Padding(0);
+            menuFrame.Name = "menuFrame";
+            menuFrame.Padding = new Padding(0);
+            menuFrame.Size = new Size(309, 699);
+            menuFrame.TabIndex = 0;
+            menuFrame.TabStop = false;
             // 
             // menuLaunchGame
             // 
-            this.menuLaunchGame.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210)), (global::System.Int32)((global::System.Byte)(210))));
-            this.menuLaunchGame.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.menuLaunchGame.Font = (new global::System.Drawing.Font("Roboto Black", 20.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.menuLaunchGame.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuLaunchGame.Location = (new global::System.Drawing.Point(10, 653));
-            this.menuLaunchGame.Name = ("menuLaunchGame");
-            this.menuLaunchGame.Size = (new global::System.Drawing.Size(290, 32));
-            this.menuLaunchGame.TabIndex = (10);
-            this.menuLaunchGame.Text = ("Jouer à FF7 SYW");
-            this.menuLaunchGame.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.menuLaunchGame.Click += (this.menuLaunchGame_Click);
-            this.menuLaunchGame.MouseEnter += (this.menuLaunchGame_MouseEnter);
-            this.menuLaunchGame.MouseLeave += (this.menuLaunchGame_MouseLeave);
+            menuLaunchGame.BackColor = Color.FromArgb(210, 210, 210);
+            menuLaunchGame.Cursor = Cursors.Hand;
+            menuLaunchGame.Font = new Font("Roboto Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuLaunchGame.ForeColor = Color.Black;
+            menuLaunchGame.Location = new Point(10, 653);
+            menuLaunchGame.Name = "menuLaunchGame";
+            menuLaunchGame.Size = new Size(290, 32);
+            menuLaunchGame.TabIndex = 10;
+            menuLaunchGame.Text = "Jouer à FF7 SYW";
+            menuLaunchGame.TextAlign = ContentAlignment.MiddleCenter;
+            menuLaunchGame.Click += menuLaunchGame_Click;
+            menuLaunchGame.MouseEnter += menuLaunchGame_MouseEnter;
+            menuLaunchGame.MouseLeave += menuLaunchGame_MouseLeave;
             // 
             // settingsGroup
             // 
-            this.settingsGroup.Controls.Add(this.menuControls);
-            this.settingsGroup.Controls.Add(this.menuHelp);
-            this.settingsGroup.Controls.Add(this.menuFFNx);
-            this.settingsGroup.Controls.Add(this.menuGameplay);
-            this.settingsGroup.Controls.Add(this.menuSound);
-            this.settingsGroup.Controls.Add(this.menuGraphic);
-            this.settingsGroup.Controls.Add(this.menuAbout);
-            this.settingsGroup.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.settingsGroup.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.settingsGroup.Location = (new global::System.Drawing.Point(10, 278));
-            this.settingsGroup.Name = ("settingsGroup");
-            this.settingsGroup.Size = (new global::System.Drawing.Size(290, 244));
-            this.settingsGroup.TabIndex = (9);
-            this.settingsGroup.TabStop = (false);
-            this.settingsGroup.Text = ("Réglages");
+            settingsGroup.Controls.Add(menuControls);
+            settingsGroup.Controls.Add(menuHelp);
+            settingsGroup.Controls.Add(menuFFNx);
+            settingsGroup.Controls.Add(menuGameplay);
+            settingsGroup.Controls.Add(menuSound);
+            settingsGroup.Controls.Add(menuGraphic);
+            settingsGroup.Controls.Add(menuAbout);
+            settingsGroup.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            settingsGroup.ForeColor = Color.FromArgb(224, 224, 224);
+            settingsGroup.Location = new Point(10, 278);
+            settingsGroup.Name = "settingsGroup";
+            settingsGroup.Size = new Size(290, 244);
+            settingsGroup.TabIndex = 9;
+            settingsGroup.TabStop = false;
+            settingsGroup.Text = "Réglages";
             // 
             // menuControls
             // 
-            this.menuControls.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.menuControls.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.menuControls.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.menuControls.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuControls.Location = (new global::System.Drawing.Point(6, 177));
-            this.menuControls.Name = ("menuControls");
-            this.menuControls.Size = (new global::System.Drawing.Size(278, 27));
-            this.menuControls.TabIndex = (7);
-            this.menuControls.Text = ("Contrôles");
-            this.menuControls.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
-            this.menuControls.Click += (this.menuControls_Click);
-            this.menuControls.MouseEnter += (this.menuControls_MouseEnter);
-            this.menuControls.MouseLeave += (this.menuControls_MouseLeave);
+            menuControls.BackColor = SystemColors.ScrollBar;
+            menuControls.Cursor = Cursors.Hand;
+            menuControls.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuControls.ForeColor = Color.Black;
+            menuControls.Location = new Point(6, 177);
+            menuControls.Name = "menuControls";
+            menuControls.Size = new Size(278, 27);
+            menuControls.TabIndex = 7;
+            menuControls.Text = "Contrôles";
+            menuControls.TextAlign = ContentAlignment.MiddleLeft;
+            menuControls.Click += menuControls_Click;
+            menuControls.MouseEnter += menuControls_MouseEnter;
+            menuControls.MouseLeave += menuControls_MouseLeave;
             // 
             // menuHelp
             // 
-            this.menuHelp.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.menuHelp.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.menuHelp.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.menuHelp.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuHelp.Location = (new global::System.Drawing.Point(6, 208));
-            this.menuHelp.Name = ("menuHelp");
-            this.menuHelp.Size = (new global::System.Drawing.Size(278, 27));
-            this.menuHelp.TabIndex = (6);
-            this.menuHelp.Text = ("Aide générale");
-            this.menuHelp.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
-            this.menuHelp.Click += (this.menuHelp_Click);
-            this.menuHelp.MouseEnter += (this.menuHelp_MouseEnter);
-            this.menuHelp.MouseLeave += (this.menuHelp_MouseLeave);
+            menuHelp.BackColor = SystemColors.ScrollBar;
+            menuHelp.Cursor = Cursors.Hand;
+            menuHelp.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuHelp.ForeColor = Color.Black;
+            menuHelp.Location = new Point(6, 208);
+            menuHelp.Name = "menuHelp";
+            menuHelp.Size = new Size(278, 27);
+            menuHelp.TabIndex = 6;
+            menuHelp.Text = "Aide générale";
+            menuHelp.TextAlign = ContentAlignment.MiddleLeft;
+            menuHelp.Click += menuHelp_Click;
+            menuHelp.MouseEnter += menuHelp_MouseEnter;
+            menuHelp.MouseLeave += menuHelp_MouseLeave;
             // 
             // menuFFNx
             // 
-            this.menuFFNx.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.menuFFNx.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.menuFFNx.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.menuFFNx.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuFFNx.Location = (new global::System.Drawing.Point(6, 146));
-            this.menuFFNx.Name = ("menuFFNx");
-            this.menuFFNx.Size = (new global::System.Drawing.Size(278, 27));
-            this.menuFFNx.TabIndex = (5);
-            this.menuFFNx.Text = ("Configuration du pilote");
-            this.menuFFNx.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
-            this.menuFFNx.Click += (this.menuFFNx_Click);
-            this.menuFFNx.MouseEnter += (this.menuFFNx_MouseEnter);
-            this.menuFFNx.MouseLeave += (this.menuFFNx_MouseLeave);
+            menuFFNx.BackColor = SystemColors.ScrollBar;
+            menuFFNx.Cursor = Cursors.Hand;
+            menuFFNx.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuFFNx.ForeColor = Color.Black;
+            menuFFNx.Location = new Point(6, 146);
+            menuFFNx.Name = "menuFFNx";
+            menuFFNx.Size = new Size(278, 27);
+            menuFFNx.TabIndex = 5;
+            menuFFNx.Text = "Configuration du pilote";
+            menuFFNx.TextAlign = ContentAlignment.MiddleLeft;
+            menuFFNx.Click += menuFFNx_Click;
+            menuFFNx.MouseEnter += menuFFNx_MouseEnter;
+            menuFFNx.MouseLeave += menuFFNx_MouseLeave;
             // 
             // menuGameplay
             // 
-            this.menuGameplay.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.menuGameplay.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.menuGameplay.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.menuGameplay.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuGameplay.Location = (new global::System.Drawing.Point(6, 115));
-            this.menuGameplay.Name = ("menuGameplay");
-            this.menuGameplay.Size = (new global::System.Drawing.Size(278, 27));
-            this.menuGameplay.TabIndex = (4);
-            this.menuGameplay.Text = ("Mods de gameplay");
-            this.menuGameplay.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
-            this.menuGameplay.Click += (this.menuGameplay_Click);
-            this.menuGameplay.MouseEnter += (this.menuGameplay_MouseEnter);
-            this.menuGameplay.MouseLeave += (this.menuGameplay_MouseLeave);
+            menuGameplay.BackColor = SystemColors.ScrollBar;
+            menuGameplay.Cursor = Cursors.Hand;
+            menuGameplay.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuGameplay.ForeColor = Color.Black;
+            menuGameplay.Location = new Point(6, 115);
+            menuGameplay.Name = "menuGameplay";
+            menuGameplay.Size = new Size(278, 27);
+            menuGameplay.TabIndex = 4;
+            menuGameplay.Text = "Mods de gameplay";
+            menuGameplay.TextAlign = ContentAlignment.MiddleLeft;
+            menuGameplay.Click += menuGameplay_Click;
+            menuGameplay.MouseEnter += menuGameplay_MouseEnter;
+            menuGameplay.MouseLeave += menuGameplay_MouseLeave;
             // 
             // menuSound
             // 
-            this.menuSound.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.menuSound.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.menuSound.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.menuSound.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuSound.Location = (new global::System.Drawing.Point(6, 84));
-            this.menuSound.Name = ("menuSound");
-            this.menuSound.Size = (new global::System.Drawing.Size(278, 27));
-            this.menuSound.TabIndex = (3);
-            this.menuSound.Text = ("Mods audio");
-            this.menuSound.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
-            this.menuSound.Click += (this.menuSound_Click);
-            this.menuSound.MouseEnter += (this.menuSound_MouseEnter);
-            this.menuSound.MouseLeave += (this.menuSound_MouseLeave);
+            menuSound.BackColor = SystemColors.ScrollBar;
+            menuSound.Cursor = Cursors.Hand;
+            menuSound.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuSound.ForeColor = Color.Black;
+            menuSound.Location = new Point(6, 84);
+            menuSound.Name = "menuSound";
+            menuSound.Size = new Size(278, 27);
+            menuSound.TabIndex = 3;
+            menuSound.Text = "Mods audio";
+            menuSound.TextAlign = ContentAlignment.MiddleLeft;
+            menuSound.Click += menuSound_Click;
+            menuSound.MouseEnter += menuSound_MouseEnter;
+            menuSound.MouseLeave += menuSound_MouseLeave;
             // 
             // menuGraphic
             // 
-            this.menuGraphic.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.menuGraphic.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.menuGraphic.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.menuGraphic.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuGraphic.Location = (new global::System.Drawing.Point(6, 53));
-            this.menuGraphic.Name = ("menuGraphic");
-            this.menuGraphic.Size = (new global::System.Drawing.Size(278, 27));
-            this.menuGraphic.TabIndex = (2);
-            this.menuGraphic.Text = ("Mods graphiques");
-            this.menuGraphic.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
-            this.menuGraphic.Click += (this.menuGraphic_Click);
-            this.menuGraphic.MouseEnter += (this.menuGraphic_MouseEnter);
-            this.menuGraphic.MouseLeave += (this.menuGraphic_MouseLeave);
+            menuGraphic.BackColor = SystemColors.ScrollBar;
+            menuGraphic.Cursor = Cursors.Hand;
+            menuGraphic.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuGraphic.ForeColor = Color.Black;
+            menuGraphic.Location = new Point(6, 53);
+            menuGraphic.Name = "menuGraphic";
+            menuGraphic.Size = new Size(278, 27);
+            menuGraphic.TabIndex = 2;
+            menuGraphic.Text = "Mods graphiques";
+            menuGraphic.TextAlign = ContentAlignment.MiddleLeft;
+            menuGraphic.Click += menuGraphic_Click;
+            menuGraphic.MouseEnter += menuGraphic_MouseEnter;
+            menuGraphic.MouseLeave += menuGraphic_MouseLeave;
             // 
             // menuAbout
             // 
-            this.menuAbout.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.menuAbout.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.menuAbout.Font = (new global::System.Drawing.Font("Roboto Black", 14.25F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.menuAbout.ForeColor = (global::System.Drawing.Color.Black);
-            this.menuAbout.Location = (new global::System.Drawing.Point(6, 22));
-            this.menuAbout.Name = ("menuAbout");
-            this.menuAbout.Size = (new global::System.Drawing.Size(278, 27));
-            this.menuAbout.TabIndex = (1);
-            this.menuAbout.Text = ("À propos du pack");
-            this.menuAbout.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
-            this.menuAbout.Click += (this.menuAbout_Click);
-            this.menuAbout.MouseEnter += (this.menuAbout_MouseEnter);
-            this.menuAbout.MouseLeave += (this.menuAbout_MouseLeave);
+            menuAbout.BackColor = SystemColors.ScrollBar;
+            menuAbout.Cursor = Cursors.Hand;
+            menuAbout.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuAbout.ForeColor = Color.Black;
+            menuAbout.Location = new Point(6, 22);
+            menuAbout.Name = "menuAbout";
+            menuAbout.Size = new Size(278, 27);
+            menuAbout.TabIndex = 1;
+            menuAbout.Text = "À propos du pack";
+            menuAbout.TextAlign = ContentAlignment.MiddleLeft;
+            menuAbout.Click += menuAbout_Click;
+            menuAbout.MouseEnter += menuAbout_MouseEnter;
+            menuAbout.MouseLeave += menuAbout_MouseLeave;
             // 
             // ff7Lang
             // 
-            this.ff7Lang.Controls.Add(this.langGame);
-            this.ff7Lang.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.ff7Lang.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.ff7Lang.Location = (new global::System.Drawing.Point(10, 216));
-            this.ff7Lang.Name = ("ff7Lang");
-            this.ff7Lang.Size = (new global::System.Drawing.Size(290, 59));
-            this.ff7Lang.TabIndex = (8);
-            this.ff7Lang.TabStop = (false);
-            this.ff7Lang.Text = ("Langue de FF7");
+            ff7Lang.Controls.Add(langGame);
+            ff7Lang.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            ff7Lang.ForeColor = Color.FromArgb(224, 224, 224);
+            ff7Lang.Location = new Point(10, 216);
+            ff7Lang.Name = "ff7Lang";
+            ff7Lang.Size = new Size(290, 59);
+            ff7Lang.TabIndex = 8;
+            ff7Lang.TabStop = false;
+            ff7Lang.Text = "Langue de FF7";
             // 
             // langGame
             // 
-            this.langGame.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.langGame.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.langGame.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.langGame.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.langGame.ForeColor = (global::System.Drawing.Color.White);
-            this.langGame.FormattingEnabled = (true);
-            this.langGame.Location = (new global::System.Drawing.Point(9, 23));
-            this.langGame.Name = ("langGame");
-            this.langGame.Size = (new global::System.Drawing.Size(275, 23));
-            this.langGame.TabIndex = (0);
-            this.langGame.SelectedIndexChanged += (this.langGame_SelectedIndexChanged);
+            langGame.BackColor = Color.FromArgb(53, 60, 70);
+            langGame.Cursor = Cursors.Hand;
+            langGame.DropDownStyle = ComboBoxStyle.DropDownList;
+            langGame.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            langGame.ForeColor = Color.White;
+            langGame.FormattingEnabled = true;
+            langGame.Location = new Point(9, 23);
+            langGame.Name = "langGame";
+            langGame.Size = new Size(275, 23);
+            langGame.TabIndex = 0;
+            langGame.SelectedIndexChanged += langGame_SelectedIndexChanged;
             // 
             // interfaceLang
             // 
-            this.interfaceLang.Controls.Add(this.langInterface);
-            this.interfaceLang.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.interfaceLang.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.interfaceLang.Location = (new global::System.Drawing.Point(10, 154));
-            this.interfaceLang.Name = ("interfaceLang");
-            this.interfaceLang.Size = (new global::System.Drawing.Size(290, 59));
-            this.interfaceLang.TabIndex = (7);
-            this.interfaceLang.TabStop = (false);
-            this.interfaceLang.Text = ("Langue de l'interface");
+            interfaceLang.Controls.Add(langInterface);
+            interfaceLang.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            interfaceLang.ForeColor = Color.FromArgb(224, 224, 224);
+            interfaceLang.Location = new Point(10, 154);
+            interfaceLang.Name = "interfaceLang";
+            interfaceLang.Size = new Size(290, 59);
+            interfaceLang.TabIndex = 7;
+            interfaceLang.TabStop = false;
+            interfaceLang.Text = "Langue de l'interface";
             // 
             // langInterface
             // 
-            this.langInterface.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.langInterface.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.langInterface.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.langInterface.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.langInterface.ForeColor = (global::System.Drawing.Color.White);
-            this.langInterface.FormattingEnabled = (true);
-            this.langInterface.Location = (new global::System.Drawing.Point(9, 23));
-            this.langInterface.Name = ("langInterface");
-            this.langInterface.Size = (new global::System.Drawing.Size(275, 23));
-            this.langInterface.TabIndex = (0);
-            this.langInterface.SelectedIndexChanged += (this.langInterface_SelectedIndexChanged);
+            langInterface.BackColor = Color.FromArgb(53, 60, 70);
+            langInterface.Cursor = Cursors.Hand;
+            langInterface.DropDownStyle = ComboBoxStyle.DropDownList;
+            langInterface.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            langInterface.ForeColor = Color.White;
+            langInterface.FormattingEnabled = true;
+            langInterface.Location = new Point(9, 23);
+            langInterface.Name = "langInterface";
+            langInterface.Size = new Size(275, 23);
+            langInterface.TabIndex = 0;
+            langInterface.SelectedIndexChanged += langInterface_SelectedIndexChanged;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((global::System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = (new global::System.Drawing.Point(10, 527));
-            this.pictureBox2.Name = ("pictureBox2");
-            this.pictureBox2.Size = (new global::System.Drawing.Size(290, 126));
-            this.pictureBox2.TabIndex = (6);
-            this.pictureBox2.TabStop = (false);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(10, 527);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(290, 126);
+            pictureBox2.TabIndex = 6;
+            pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((global::System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = (new global::System.Drawing.Point(10, 19));
-            this.pictureBox1.Name = ("pictureBox1");
-            this.pictureBox1.Size = (new global::System.Drawing.Size(290, 139));
-            this.pictureBox1.TabIndex = (5);
-            this.pictureBox1.TabStop = (false);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(10, 19);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(290, 139);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // graphicFrame1
             // 
-            this.graphicFrame1.Controls.Add(this.graphicsGroupAddTextures);
-            this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dm);
-            this.graphicFrame1.Controls.Add(this.FFNxGamutNtsc);
-            this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dw);
-            this.graphicFrame1.Controls.Add(this.FFNxLighting);
-            this.graphicFrame1.Controls.Add(this.graphicsGroupMenu);
-            this.graphicFrame1.Controls.Add(this.graphicsGroupFMV);
-            this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Dc);
-            this.graphicFrame1.Controls.Add(this.graphicsGroupModels3Df);
-            this.graphicFrame1.Controls.Add(this.graphicsMagics);
-            this.graphicFrame1.Controls.Add(this.graphicsBattles);
-            this.graphicFrame1.Controls.Add(this.graphicsWorldMap);
-            this.graphicFrame1.Controls.Add(this.graphicsAnimations);
-            this.graphicFrame1.Controls.Add(this.graphicsMiniGames);
-            this.graphicFrame1.Controls.Add(this.graphicsFields);
-            this.graphicFrame1.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicFrame1.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicFrame1.Location = (new global::System.Drawing.Point(3, 4));
-            this.graphicFrame1.Name = ("graphicFrame1");
-            this.graphicFrame1.Size = (new global::System.Drawing.Size(514, 344));
-            this.graphicFrame1.TabIndex = (6);
-            this.graphicFrame1.TabStop = (false);
-            this.graphicFrame1.Text = ("Mods graphiques");
+            graphicFrame1.Controls.Add(graphicsGroupAddTextures);
+            graphicFrame1.Controls.Add(graphicsGroupModels3Dm);
+            graphicFrame1.Controls.Add(FFNxGamutNtsc);
+            graphicFrame1.Controls.Add(graphicsGroupModels3Dw);
+            graphicFrame1.Controls.Add(FFNxLighting);
+            graphicFrame1.Controls.Add(graphicsGroupMenu);
+            graphicFrame1.Controls.Add(graphicsGroupFMV);
+            graphicFrame1.Controls.Add(graphicsGroupModels3Dc);
+            graphicFrame1.Controls.Add(graphicsGroupModels3Df);
+            graphicFrame1.Controls.Add(graphicsMagics);
+            graphicFrame1.Controls.Add(graphicsBattles);
+            graphicFrame1.Controls.Add(graphicsWorldMap);
+            graphicFrame1.Controls.Add(graphicsAnimations);
+            graphicFrame1.Controls.Add(graphicsMiniGames);
+            graphicFrame1.Controls.Add(graphicsFields);
+            graphicFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame1.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicFrame1.Location = new Point(3, 4);
+            graphicFrame1.Name = "graphicFrame1";
+            graphicFrame1.Size = new Size(514, 344);
+            graphicFrame1.TabIndex = 6;
+            graphicFrame1.TabStop = false;
+            graphicFrame1.Text = "Mods graphiques";
             // 
             // graphicsGroupAddTextures
             // 
-            this.graphicsGroupAddTextures.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsGroupAddTextures.Controls.Add(this.graphicsAddTextures);
-            this.graphicsGroupAddTextures.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsGroupAddTextures.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicsGroupAddTextures.Location = (new global::System.Drawing.Point(260, 274));
-            this.graphicsGroupAddTextures.Name = ("graphicsGroupAddTextures");
-            this.graphicsGroupAddTextures.Size = (new global::System.Drawing.Size(245, 59));
-            this.graphicsGroupAddTextures.TabIndex = (15);
-            this.graphicsGroupAddTextures.TabStop = (false);
-            this.graphicsGroupAddTextures.Text = ("Textures additionnelles");
-            this.graphicsGroupAddTextures.MouseEnter += (this.graphicsAddTexturesChange);
+            graphicsGroupAddTextures.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsGroupAddTextures.Controls.Add(graphicsAddTextures);
+            graphicsGroupAddTextures.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupAddTextures.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicsGroupAddTextures.Location = new Point(260, 274);
+            graphicsGroupAddTextures.Name = "graphicsGroupAddTextures";
+            graphicsGroupAddTextures.Size = new Size(245, 59);
+            graphicsGroupAddTextures.TabIndex = 15;
+            graphicsGroupAddTextures.TabStop = false;
+            graphicsGroupAddTextures.Text = "Textures additionnelles";
+            graphicsGroupAddTextures.MouseEnter += graphicsAddTexturesChange;
             // 
             // graphicsAddTextures
             // 
-            this.graphicsAddTextures.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.graphicsAddTextures.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsAddTextures.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.graphicsAddTextures.ForeColor = (global::System.Drawing.Color.White);
-            this.graphicsAddTextures.FormattingEnabled = (true);
-            this.graphicsAddTextures.Location = (new global::System.Drawing.Point(9, 23));
-            this.graphicsAddTextures.Name = ("graphicsAddTextures");
-            this.graphicsAddTextures.Size = (new global::System.Drawing.Size(225, 23));
-            this.graphicsAddTextures.TabIndex = (0);
-            this.graphicsAddTextures.SelectedIndexChanged += (this.graphicsAddTexturesChange);
-            this.graphicsAddTextures.Click += (this.getMousePos);
+            graphicsAddTextures.BackColor = Color.FromArgb(53, 60, 70);
+            graphicsAddTextures.Cursor = Cursors.Hand;
+            graphicsAddTextures.DropDownStyle = ComboBoxStyle.DropDownList;
+            graphicsAddTextures.ForeColor = Color.White;
+            graphicsAddTextures.FormattingEnabled = true;
+            graphicsAddTextures.Location = new Point(9, 23);
+            graphicsAddTextures.Name = "graphicsAddTextures";
+            graphicsAddTextures.Size = new Size(225, 23);
+            graphicsAddTextures.TabIndex = 0;
+            graphicsAddTextures.SelectedIndexChanged += graphicsAddTexturesChange;
+            graphicsAddTextures.Click += getMousePos;
             // 
             // graphicsGroupModels3Dm
             // 
-            this.graphicsGroupModels3Dm.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsGroupModels3Dm.Controls.Add(this.graphicsModels3Dm);
-            this.graphicsGroupModels3Dm.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsGroupModels3Dm.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicsGroupModels3Dm.Location = (new global::System.Drawing.Point(260, 212));
-            this.graphicsGroupModels3Dm.Name = ("graphicsGroupModels3Dm");
-            this.graphicsGroupModels3Dm.Size = (new global::System.Drawing.Size(245, 59));
-            this.graphicsGroupModels3Dm.TabIndex = (14);
-            this.graphicsGroupModels3Dm.TabStop = (false);
-            this.graphicsGroupModels3Dm.Text = ("Modèles 3D des mini-jeux");
-            this.graphicsGroupModels3Dm.MouseEnter += (this.graphicsModels3DmChange);
+            graphicsGroupModels3Dm.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsGroupModels3Dm.Controls.Add(graphicsModels3Dm);
+            graphicsGroupModels3Dm.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dm.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicsGroupModels3Dm.Location = new Point(260, 212);
+            graphicsGroupModels3Dm.Name = "graphicsGroupModels3Dm";
+            graphicsGroupModels3Dm.Size = new Size(245, 59);
+            graphicsGroupModels3Dm.TabIndex = 14;
+            graphicsGroupModels3Dm.TabStop = false;
+            graphicsGroupModels3Dm.Text = "Modèles 3D des mini-jeux";
+            graphicsGroupModels3Dm.MouseEnter += graphicsModels3DmChange;
             // 
             // graphicsModels3Dm
             // 
-            this.graphicsModels3Dm.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.graphicsModels3Dm.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsModels3Dm.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.graphicsModels3Dm.ForeColor = (global::System.Drawing.Color.White);
-            this.graphicsModels3Dm.FormattingEnabled = (true);
-            this.graphicsModels3Dm.Location = (new global::System.Drawing.Point(9, 23));
-            this.graphicsModels3Dm.Name = ("graphicsModels3Dm");
-            this.graphicsModels3Dm.Size = (new global::System.Drawing.Size(225, 23));
-            this.graphicsModels3Dm.TabIndex = (0);
-            this.graphicsModels3Dm.SelectedIndexChanged += (this.graphicsModels3DmChange);
-            this.graphicsModels3Dm.Click += (this.getMousePos);
+            graphicsModels3Dm.BackColor = Color.FromArgb(53, 60, 70);
+            graphicsModels3Dm.Cursor = Cursors.Hand;
+            graphicsModels3Dm.DropDownStyle = ComboBoxStyle.DropDownList;
+            graphicsModels3Dm.ForeColor = Color.White;
+            graphicsModels3Dm.FormattingEnabled = true;
+            graphicsModels3Dm.Location = new Point(9, 23);
+            graphicsModels3Dm.Name = "graphicsModels3Dm";
+            graphicsModels3Dm.Size = new Size(225, 23);
+            graphicsModels3Dm.TabIndex = 0;
+            graphicsModels3Dm.SelectedIndexChanged += graphicsModels3DmChange;
+            graphicsModels3Dm.Click += getMousePos;
             // 
             // FFNxGamutNtsc
             // 
-            this.FFNxGamutNtsc.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGamutNtsc.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxGamutNtsc.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGamutNtsc.Location = (new global::System.Drawing.Point(349, 66));
-            this.FFNxGamutNtsc.Name = ("FFNxGamutNtsc");
-            this.FFNxGamutNtsc.Size = (new global::System.Drawing.Size(156, 19));
-            this.FFNxGamutNtsc.TabIndex = (40);
-            this.FFNxGamutNtsc.Text = ("Gamut NTSC-J");
-            this.FFNxGamutNtsc.UseVisualStyleBackColor = (false);
-            this.FFNxGamutNtsc.MouseEnter += (this.FFNxGamutNtsc_MouseEnter);
+            FFNxGamutNtsc.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGamutNtsc.Cursor = Cursors.Hand;
+            FFNxGamutNtsc.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGamutNtsc.Location = new Point(349, 66);
+            FFNxGamutNtsc.Name = "FFNxGamutNtsc";
+            FFNxGamutNtsc.Size = new Size(156, 19);
+            FFNxGamutNtsc.TabIndex = 40;
+            FFNxGamutNtsc.Text = "Gamut NTSC-J";
+            FFNxGamutNtsc.UseVisualStyleBackColor = false;
+            FFNxGamutNtsc.MouseEnter += FFNxGamutNtsc_MouseEnter;
             // 
             // graphicsGroupModels3Dw
             // 
-            this.graphicsGroupModels3Dw.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsGroupModels3Dw.Controls.Add(this.graphicsModels3Dw);
-            this.graphicsGroupModels3Dw.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsGroupModels3Dw.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicsGroupModels3Dw.Location = (new global::System.Drawing.Point(11, 212));
-            this.graphicsGroupModels3Dw.Name = ("graphicsGroupModels3Dw");
-            this.graphicsGroupModels3Dw.Size = (new global::System.Drawing.Size(245, 59));
-            this.graphicsGroupModels3Dw.TabIndex = (13);
-            this.graphicsGroupModels3Dw.TabStop = (false);
-            this.graphicsGroupModels3Dw.Text = ("Modèles 3D de la mapemonde");
-            this.graphicsGroupModels3Dw.MouseEnter += (this.graphicsModels3DwChange);
+            graphicsGroupModels3Dw.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsGroupModels3Dw.Controls.Add(graphicsModels3Dw);
+            graphicsGroupModels3Dw.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dw.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicsGroupModels3Dw.Location = new Point(11, 212);
+            graphicsGroupModels3Dw.Name = "graphicsGroupModels3Dw";
+            graphicsGroupModels3Dw.Size = new Size(245, 59);
+            graphicsGroupModels3Dw.TabIndex = 13;
+            graphicsGroupModels3Dw.TabStop = false;
+            graphicsGroupModels3Dw.Text = "Modèles 3D de la mapemonde";
+            graphicsGroupModels3Dw.MouseEnter += graphicsModels3DwChange;
             // 
             // graphicsModels3Dw
             // 
-            this.graphicsModels3Dw.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.graphicsModels3Dw.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsModels3Dw.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.graphicsModels3Dw.ForeColor = (global::System.Drawing.Color.White);
-            this.graphicsModels3Dw.FormattingEnabled = (true);
-            this.graphicsModels3Dw.Location = (new global::System.Drawing.Point(9, 23));
-            this.graphicsModels3Dw.Name = ("graphicsModels3Dw");
-            this.graphicsModels3Dw.Size = (new global::System.Drawing.Size(225, 23));
-            this.graphicsModels3Dw.TabIndex = (0);
-            this.graphicsModels3Dw.SelectedIndexChanged += (this.graphicsModels3DwChange);
-            this.graphicsModels3Dw.Click += (this.getMousePos);
+            graphicsModels3Dw.BackColor = Color.FromArgb(53, 60, 70);
+            graphicsModels3Dw.Cursor = Cursors.Hand;
+            graphicsModels3Dw.DropDownStyle = ComboBoxStyle.DropDownList;
+            graphicsModels3Dw.ForeColor = Color.White;
+            graphicsModels3Dw.FormattingEnabled = true;
+            graphicsModels3Dw.Location = new Point(9, 23);
+            graphicsModels3Dw.Name = "graphicsModels3Dw";
+            graphicsModels3Dw.Size = new Size(225, 23);
+            graphicsModels3Dw.TabIndex = 0;
+            graphicsModels3Dw.SelectedIndexChanged += graphicsModels3DwChange;
+            graphicsModels3Dw.Click += getMousePos;
             // 
             // FFNxLighting
             // 
-            this.FFNxLighting.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxLighting.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxLighting.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxLighting.Location = (new global::System.Drawing.Point(197, 66));
-            this.FFNxLighting.Name = ("FFNxLighting");
-            this.FFNxLighting.Size = (new global::System.Drawing.Size(149, 19));
-            this.FFNxLighting.TabIndex = (16);
-            this.FFNxLighting.Text = ("Ombres 3D");
-            this.FFNxLighting.UseVisualStyleBackColor = (false);
-            this.FFNxLighting.MouseEnter += (this.FFNxLighting_MouseEnter);
+            FFNxLighting.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxLighting.Cursor = Cursors.Hand;
+            FFNxLighting.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxLighting.Location = new Point(197, 66);
+            FFNxLighting.Name = "FFNxLighting";
+            FFNxLighting.Size = new Size(149, 19);
+            FFNxLighting.TabIndex = 16;
+            FFNxLighting.Text = "Ombres 3D";
+            FFNxLighting.UseVisualStyleBackColor = false;
+            FFNxLighting.MouseEnter += FFNxLighting_MouseEnter;
             // 
             // graphicsGroupMenu
             // 
-            this.graphicsGroupMenu.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsGroupMenu.Controls.Add(this.flagGGraphicsMenu);
-            this.graphicsGroupMenu.Controls.Add(this.flagEGraphicsMenu);
-            this.graphicsGroupMenu.Controls.Add(this.flagSGraphicsMenu);
-            this.graphicsGroupMenu.Controls.Add(this.flagFGraphicsMenu);
-            this.graphicsGroupMenu.Controls.Add(this.graphicsMenu);
-            this.graphicsGroupMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsGroupMenu.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicsGroupMenu.Location = (new global::System.Drawing.Point(11, 88));
-            this.graphicsGroupMenu.Name = ("graphicsGroupMenu");
-            this.graphicsGroupMenu.Size = (new global::System.Drawing.Size(494, 59));
-            this.graphicsGroupMenu.TabIndex = (12);
-            this.graphicsGroupMenu.TabStop = (false);
-            this.graphicsGroupMenu.Text = ("Interface (menus et polices)");
-            this.graphicsGroupMenu.MouseEnter += (this.graphicsMenuChange);
+            graphicsGroupMenu.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsGroupMenu.Controls.Add(flagGGraphicsMenu);
+            graphicsGroupMenu.Controls.Add(flagEGraphicsMenu);
+            graphicsGroupMenu.Controls.Add(flagSGraphicsMenu);
+            graphicsGroupMenu.Controls.Add(flagFGraphicsMenu);
+            graphicsGroupMenu.Controls.Add(graphicsMenu);
+            graphicsGroupMenu.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupMenu.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicsGroupMenu.Location = new Point(11, 88);
+            graphicsGroupMenu.Name = "graphicsGroupMenu";
+            graphicsGroupMenu.Size = new Size(494, 59);
+            graphicsGroupMenu.TabIndex = 12;
+            graphicsGroupMenu.TabStop = false;
+            graphicsGroupMenu.Text = "Interface (menus et polices)";
+            graphicsGroupMenu.MouseEnter += graphicsMenuChange;
             // 
             // flagGGraphicsMenu
             // 
-            this.flagGGraphicsMenu.Image = ((global::System.Drawing.Image)(resources.GetObject("flagGGraphicsMenu.Image")));
-            this.flagGGraphicsMenu.Location = (new global::System.Drawing.Point(409, 35));
-            this.flagGGraphicsMenu.Name = ("flagGGraphicsMenu");
-            this.flagGGraphicsMenu.Size = (new global::System.Drawing.Size(36, 18));
-            this.flagGGraphicsMenu.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagGGraphicsMenu.TabIndex = (19);
-            this.flagGGraphicsMenu.TabStop = (false);
+            flagGGraphicsMenu.Image = (Image)resources.GetObject("flagGGraphicsMenu.Image");
+            flagGGraphicsMenu.Location = new Point(409, 35);
+            flagGGraphicsMenu.Name = "flagGGraphicsMenu";
+            flagGGraphicsMenu.Size = new Size(36, 18);
+            flagGGraphicsMenu.SizeMode = PictureBoxSizeMode.Zoom;
+            flagGGraphicsMenu.TabIndex = 19;
+            flagGGraphicsMenu.TabStop = false;
             // 
             // flagEGraphicsMenu
             // 
-            this.flagEGraphicsMenu.Image = ((global::System.Drawing.Image)(resources.GetObject("flagEGraphicsMenu.Image")));
-            this.flagEGraphicsMenu.Location = (new global::System.Drawing.Point(409, 14));
-            this.flagEGraphicsMenu.Name = ("flagEGraphicsMenu");
-            this.flagEGraphicsMenu.Size = (new global::System.Drawing.Size(36, 18));
-            this.flagEGraphicsMenu.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagEGraphicsMenu.TabIndex = (18);
-            this.flagEGraphicsMenu.TabStop = (false);
+            flagEGraphicsMenu.Image = (Image)resources.GetObject("flagEGraphicsMenu.Image");
+            flagEGraphicsMenu.Location = new Point(409, 14);
+            flagEGraphicsMenu.Name = "flagEGraphicsMenu";
+            flagEGraphicsMenu.Size = new Size(36, 18);
+            flagEGraphicsMenu.SizeMode = PictureBoxSizeMode.Zoom;
+            flagEGraphicsMenu.TabIndex = 18;
+            flagEGraphicsMenu.TabStop = false;
             // 
             // flagSGraphicsMenu
             // 
-            this.flagSGraphicsMenu.Image = ((global::System.Drawing.Image)(resources.GetObject("flagSGraphicsMenu.Image")));
-            this.flagSGraphicsMenu.Location = (new global::System.Drawing.Point(447, 35));
-            this.flagSGraphicsMenu.Name = ("flagSGraphicsMenu");
-            this.flagSGraphicsMenu.Size = (new global::System.Drawing.Size(36, 18));
-            this.flagSGraphicsMenu.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagSGraphicsMenu.TabIndex = (17);
-            this.flagSGraphicsMenu.TabStop = (false);
+            flagSGraphicsMenu.Image = (Image)resources.GetObject("flagSGraphicsMenu.Image");
+            flagSGraphicsMenu.Location = new Point(447, 35);
+            flagSGraphicsMenu.Name = "flagSGraphicsMenu";
+            flagSGraphicsMenu.Size = new Size(36, 18);
+            flagSGraphicsMenu.SizeMode = PictureBoxSizeMode.Zoom;
+            flagSGraphicsMenu.TabIndex = 17;
+            flagSGraphicsMenu.TabStop = false;
             // 
             // flagFGraphicsMenu
             // 
-            this.flagFGraphicsMenu.Image = ((global::System.Drawing.Image)(resources.GetObject("flagFGraphicsMenu.Image")));
-            this.flagFGraphicsMenu.Location = (new global::System.Drawing.Point(447, 14));
-            this.flagFGraphicsMenu.Name = ("flagFGraphicsMenu");
-            this.flagFGraphicsMenu.Size = (new global::System.Drawing.Size(36, 18));
-            this.flagFGraphicsMenu.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagFGraphicsMenu.TabIndex = (16);
-            this.flagFGraphicsMenu.TabStop = (false);
+            flagFGraphicsMenu.Image = (Image)resources.GetObject("flagFGraphicsMenu.Image");
+            flagFGraphicsMenu.Location = new Point(447, 14);
+            flagFGraphicsMenu.Name = "flagFGraphicsMenu";
+            flagFGraphicsMenu.Size = new Size(36, 18);
+            flagFGraphicsMenu.SizeMode = PictureBoxSizeMode.Zoom;
+            flagFGraphicsMenu.TabIndex = 16;
+            flagFGraphicsMenu.TabStop = false;
             // 
             // graphicsMenu
             // 
-            this.graphicsMenu.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.graphicsMenu.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsMenu.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.graphicsMenu.ForeColor = (global::System.Drawing.Color.White);
-            this.graphicsMenu.FormattingEnabled = (true);
-            this.graphicsMenu.Location = (new global::System.Drawing.Point(9, 23));
-            this.graphicsMenu.Name = ("graphicsMenu");
-            this.graphicsMenu.Size = (new global::System.Drawing.Size(390, 23));
-            this.graphicsMenu.TabIndex = (0);
-            this.graphicsMenu.SelectedIndexChanged += (this.graphicsMenuChange);
-            this.graphicsMenu.Click += (this.getMousePos);
+            graphicsMenu.BackColor = Color.FromArgb(53, 60, 70);
+            graphicsMenu.Cursor = Cursors.Hand;
+            graphicsMenu.DropDownStyle = ComboBoxStyle.DropDownList;
+            graphicsMenu.ForeColor = Color.White;
+            graphicsMenu.FormattingEnabled = true;
+            graphicsMenu.Location = new Point(9, 23);
+            graphicsMenu.Name = "graphicsMenu";
+            graphicsMenu.Size = new Size(390, 23);
+            graphicsMenu.TabIndex = 0;
+            graphicsMenu.SelectedIndexChanged += graphicsMenuChange;
+            graphicsMenu.Click += getMousePos;
             // 
             // graphicsGroupFMV
             // 
-            this.graphicsGroupFMV.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsGroupFMV.Controls.Add(this.graphicsFMV);
-            this.graphicsGroupFMV.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsGroupFMV.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicsGroupFMV.Location = (new global::System.Drawing.Point(11, 274));
-            this.graphicsGroupFMV.Name = ("graphicsGroupFMV");
-            this.graphicsGroupFMV.Size = (new global::System.Drawing.Size(245, 59));
-            this.graphicsGroupFMV.TabIndex = (11);
-            this.graphicsGroupFMV.TabStop = (false);
-            this.graphicsGroupFMV.Text = ("Cinématiques");
-            this.graphicsGroupFMV.MouseEnter += (this.graphicsFMVChange);
+            graphicsGroupFMV.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsGroupFMV.Controls.Add(graphicsFMV);
+            graphicsGroupFMV.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupFMV.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicsGroupFMV.Location = new Point(11, 274);
+            graphicsGroupFMV.Name = "graphicsGroupFMV";
+            graphicsGroupFMV.Size = new Size(245, 59);
+            graphicsGroupFMV.TabIndex = 11;
+            graphicsGroupFMV.TabStop = false;
+            graphicsGroupFMV.Text = "Cinématiques";
+            graphicsGroupFMV.MouseEnter += graphicsFMVChange;
             // 
             // graphicsFMV
             // 
-            this.graphicsFMV.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.graphicsFMV.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsFMV.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.graphicsFMV.ForeColor = (global::System.Drawing.Color.White);
-            this.graphicsFMV.FormattingEnabled = (true);
-            this.graphicsFMV.Location = (new global::System.Drawing.Point(9, 23));
-            this.graphicsFMV.Name = ("graphicsFMV");
-            this.graphicsFMV.Size = (new global::System.Drawing.Size(225, 23));
-            this.graphicsFMV.TabIndex = (0);
-            this.graphicsFMV.SelectedIndexChanged += (this.graphicsFMVChange);
-            this.graphicsFMV.Click += (this.getMousePos);
+            graphicsFMV.BackColor = Color.FromArgb(53, 60, 70);
+            graphicsFMV.Cursor = Cursors.Hand;
+            graphicsFMV.DropDownStyle = ComboBoxStyle.DropDownList;
+            graphicsFMV.ForeColor = Color.White;
+            graphicsFMV.FormattingEnabled = true;
+            graphicsFMV.Location = new Point(9, 23);
+            graphicsFMV.Name = "graphicsFMV";
+            graphicsFMV.Size = new Size(225, 23);
+            graphicsFMV.TabIndex = 0;
+            graphicsFMV.SelectedIndexChanged += graphicsFMVChange;
+            graphicsFMV.Click += getMousePos;
             // 
             // graphicsGroupModels3Dc
             // 
-            this.graphicsGroupModels3Dc.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsGroupModels3Dc.Controls.Add(this.graphicsModels3Dc);
-            this.graphicsGroupModels3Dc.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsGroupModels3Dc.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicsGroupModels3Dc.Location = (new global::System.Drawing.Point(260, 150));
-            this.graphicsGroupModels3Dc.Name = ("graphicsGroupModels3Dc");
-            this.graphicsGroupModels3Dc.Size = (new global::System.Drawing.Size(245, 59));
-            this.graphicsGroupModels3Dc.TabIndex = (10);
-            this.graphicsGroupModels3Dc.TabStop = (false);
-            this.graphicsGroupModels3Dc.Text = ("Modèles 3D des combats");
-            this.graphicsGroupModels3Dc.MouseEnter += (this.graphicsModels3DcChange);
+            graphicsGroupModels3Dc.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsGroupModels3Dc.Controls.Add(graphicsModels3Dc);
+            graphicsGroupModels3Dc.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dc.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicsGroupModels3Dc.Location = new Point(260, 150);
+            graphicsGroupModels3Dc.Name = "graphicsGroupModels3Dc";
+            graphicsGroupModels3Dc.Size = new Size(245, 59);
+            graphicsGroupModels3Dc.TabIndex = 10;
+            graphicsGroupModels3Dc.TabStop = false;
+            graphicsGroupModels3Dc.Text = "Modèles 3D des combats";
+            graphicsGroupModels3Dc.MouseEnter += graphicsModels3DcChange;
             // 
             // graphicsModels3Dc
             // 
-            this.graphicsModels3Dc.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.graphicsModels3Dc.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsModels3Dc.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.graphicsModels3Dc.ForeColor = (global::System.Drawing.Color.White);
-            this.graphicsModels3Dc.FormattingEnabled = (true);
-            this.graphicsModels3Dc.Location = (new global::System.Drawing.Point(9, 23));
-            this.graphicsModels3Dc.Name = ("graphicsModels3Dc");
-            this.graphicsModels3Dc.Size = (new global::System.Drawing.Size(225, 23));
-            this.graphicsModels3Dc.TabIndex = (0);
-            this.graphicsModels3Dc.SelectedIndexChanged += (this.graphicsModels3DcChange);
-            this.graphicsModels3Dc.Click += (this.getMousePos);
+            graphicsModels3Dc.BackColor = Color.FromArgb(53, 60, 70);
+            graphicsModels3Dc.Cursor = Cursors.Hand;
+            graphicsModels3Dc.DropDownStyle = ComboBoxStyle.DropDownList;
+            graphicsModels3Dc.ForeColor = Color.White;
+            graphicsModels3Dc.FormattingEnabled = true;
+            graphicsModels3Dc.Location = new Point(9, 23);
+            graphicsModels3Dc.Name = "graphicsModels3Dc";
+            graphicsModels3Dc.Size = new Size(225, 23);
+            graphicsModels3Dc.TabIndex = 0;
+            graphicsModels3Dc.SelectedIndexChanged += graphicsModels3DcChange;
+            graphicsModels3Dc.Click += getMousePos;
             // 
             // graphicsGroupModels3Df
             // 
-            this.graphicsGroupModels3Df.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsGroupModels3Df.Controls.Add(this.graphicsModels3Df);
-            this.graphicsGroupModels3Df.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsGroupModels3Df.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicsGroupModels3Df.Location = (new global::System.Drawing.Point(11, 150));
-            this.graphicsGroupModels3Df.Name = ("graphicsGroupModels3Df");
-            this.graphicsGroupModels3Df.Size = (new global::System.Drawing.Size(245, 59));
-            this.graphicsGroupModels3Df.TabIndex = (9);
-            this.graphicsGroupModels3Df.TabStop = (false);
-            this.graphicsGroupModels3Df.Text = ("Modèles 3D des scènes du jeu");
-            this.graphicsGroupModels3Df.MouseEnter += (this.graphicsModels3DfChange);
+            graphicsGroupModels3Df.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsGroupModels3Df.Controls.Add(graphicsModels3Df);
+            graphicsGroupModels3Df.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Df.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicsGroupModels3Df.Location = new Point(11, 150);
+            graphicsGroupModels3Df.Name = "graphicsGroupModels3Df";
+            graphicsGroupModels3Df.Size = new Size(245, 59);
+            graphicsGroupModels3Df.TabIndex = 9;
+            graphicsGroupModels3Df.TabStop = false;
+            graphicsGroupModels3Df.Text = "Modèles 3D des scènes du jeu";
+            graphicsGroupModels3Df.MouseEnter += graphicsModels3DfChange;
             // 
             // graphicsModels3Df
             // 
-            this.graphicsModels3Df.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.graphicsModels3Df.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsModels3Df.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.graphicsModels3Df.ForeColor = (global::System.Drawing.Color.White);
-            this.graphicsModels3Df.FormattingEnabled = (true);
-            this.graphicsModels3Df.Location = (new global::System.Drawing.Point(9, 23));
-            this.graphicsModels3Df.Name = ("graphicsModels3Df");
-            this.graphicsModels3Df.Size = (new global::System.Drawing.Size(225, 23));
-            this.graphicsModels3Df.TabIndex = (0);
-            this.graphicsModels3Df.SelectedIndexChanged += (this.graphicsModels3DfChange);
-            this.graphicsModels3Df.Click += (this.getMousePos);
+            graphicsModels3Df.BackColor = Color.FromArgb(53, 60, 70);
+            graphicsModels3Df.Cursor = Cursors.Hand;
+            graphicsModels3Df.DropDownStyle = ComboBoxStyle.DropDownList;
+            graphicsModels3Df.ForeColor = Color.White;
+            graphicsModels3Df.FormattingEnabled = true;
+            graphicsModels3Df.Location = new Point(9, 23);
+            graphicsModels3Df.Name = "graphicsModels3Df";
+            graphicsModels3Df.Size = new Size(225, 23);
+            graphicsModels3Df.TabIndex = 0;
+            graphicsModels3Df.SelectedIndexChanged += graphicsModels3DfChange;
+            graphicsModels3Df.Click += getMousePos;
             // 
             // graphicsMagics
             // 
-            this.graphicsMagics.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsMagics.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsMagics.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsMagics.Location = (new global::System.Drawing.Point(260, 44));
-            this.graphicsMagics.Name = ("graphicsMagics");
-            this.graphicsMagics.Size = (new global::System.Drawing.Size(245, 19));
-            this.graphicsMagics.TabIndex = (5);
-            this.graphicsMagics.Text = ("Magies de combats HD");
-            this.graphicsMagics.UseVisualStyleBackColor = (false);
-            this.graphicsMagics.MouseEnter += (this.graphicsMagics_MouseEnter);
+            graphicsMagics.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsMagics.Checked = true;
+            graphicsMagics.CheckState = CheckState.Checked;
+            graphicsMagics.Cursor = Cursors.Hand;
+            graphicsMagics.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsMagics.Location = new Point(260, 44);
+            graphicsMagics.Name = "graphicsMagics";
+            graphicsMagics.Size = new Size(245, 19);
+            graphicsMagics.TabIndex = 5;
+            graphicsMagics.Text = "Magies de combats HD";
+            graphicsMagics.UseVisualStyleBackColor = false;
+            graphicsMagics.MouseEnter += graphicsMagics_MouseEnter;
             // 
             // graphicsBattles
             // 
-            this.graphicsBattles.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsBattles.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsBattles.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsBattles.Location = (new global::System.Drawing.Point(11, 44));
-            this.graphicsBattles.Name = ("graphicsBattles");
-            this.graphicsBattles.Size = (new global::System.Drawing.Size(246, 19));
-            this.graphicsBattles.TabIndex = (4);
-            this.graphicsBattles.Text = ("Scènes de combats HD");
-            this.graphicsBattles.UseVisualStyleBackColor = (false);
-            this.graphicsBattles.MouseEnter += (this.graphicsBattles_MouseEnter);
+            graphicsBattles.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsBattles.Checked = true;
+            graphicsBattles.CheckState = CheckState.Checked;
+            graphicsBattles.Cursor = Cursors.Hand;
+            graphicsBattles.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsBattles.Location = new Point(11, 44);
+            graphicsBattles.Name = "graphicsBattles";
+            graphicsBattles.Size = new Size(246, 19);
+            graphicsBattles.TabIndex = 4;
+            graphicsBattles.Text = "Scènes de combats HD";
+            graphicsBattles.UseVisualStyleBackColor = false;
+            graphicsBattles.MouseEnter += graphicsBattles_MouseEnter;
             // 
             // graphicsWorldMap
             // 
-            this.graphicsWorldMap.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsWorldMap.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsWorldMap.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsWorldMap.Location = (new global::System.Drawing.Point(11, 66));
-            this.graphicsWorldMap.Name = ("graphicsWorldMap");
-            this.graphicsWorldMap.Size = (new global::System.Drawing.Size(183, 19));
-            this.graphicsWorldMap.TabIndex = (3);
-            this.graphicsWorldMap.Text = ("Carte du monde HD");
-            this.graphicsWorldMap.UseVisualStyleBackColor = (false);
-            this.graphicsWorldMap.MouseEnter += (this.graphicsWorldMap_MouseEnter);
+            graphicsWorldMap.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsWorldMap.Checked = true;
+            graphicsWorldMap.CheckState = CheckState.Checked;
+            graphicsWorldMap.Cursor = Cursors.Hand;
+            graphicsWorldMap.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsWorldMap.Location = new Point(11, 66);
+            graphicsWorldMap.Name = "graphicsWorldMap";
+            graphicsWorldMap.Size = new Size(183, 19);
+            graphicsWorldMap.TabIndex = 3;
+            graphicsWorldMap.Text = "Carte du monde HD";
+            graphicsWorldMap.UseVisualStyleBackColor = false;
+            graphicsWorldMap.MouseEnter += graphicsWorldMap_MouseEnter;
             // 
             // graphicsAnimations
             // 
-            this.graphicsAnimations.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsAnimations.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsAnimations.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsAnimations.Location = (new global::System.Drawing.Point(197, 22));
-            this.graphicsAnimations.Name = ("graphicsAnimations");
-            this.graphicsAnimations.Size = (new global::System.Drawing.Size(180, 19));
-            this.graphicsAnimations.TabIndex = (2);
-            this.graphicsAnimations.Text = ("Animations avancées");
-            this.graphicsAnimations.UseVisualStyleBackColor = (false);
-            this.graphicsAnimations.MouseEnter += (this.graphicsAnimations_MouseEnter);
+            graphicsAnimations.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsAnimations.Cursor = Cursors.Hand;
+            graphicsAnimations.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsAnimations.Location = new Point(197, 22);
+            graphicsAnimations.Name = "graphicsAnimations";
+            graphicsAnimations.Size = new Size(180, 19);
+            graphicsAnimations.TabIndex = 2;
+            graphicsAnimations.Text = "Animations avancées";
+            graphicsAnimations.UseVisualStyleBackColor = false;
+            graphicsAnimations.MouseEnter += graphicsAnimations_MouseEnter;
             // 
             // graphicsMiniGames
             // 
-            this.graphicsMiniGames.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsMiniGames.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsMiniGames.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsMiniGames.Location = (new global::System.Drawing.Point(380, 22));
-            this.graphicsMiniGames.Name = ("graphicsMiniGames");
-            this.graphicsMiniGames.Size = (new global::System.Drawing.Size(125, 19));
-            this.graphicsMiniGames.TabIndex = (1);
-            this.graphicsMiniGames.Text = ("Mini-jeux HD");
-            this.graphicsMiniGames.UseVisualStyleBackColor = (false);
-            this.graphicsMiniGames.MouseEnter += (this.graphicsMiniGames_MouseEnter);
+            graphicsMiniGames.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsMiniGames.Checked = true;
+            graphicsMiniGames.CheckState = CheckState.Checked;
+            graphicsMiniGames.Cursor = Cursors.Hand;
+            graphicsMiniGames.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsMiniGames.Location = new Point(380, 22);
+            graphicsMiniGames.Name = "graphicsMiniGames";
+            graphicsMiniGames.Size = new Size(125, 19);
+            graphicsMiniGames.TabIndex = 1;
+            graphicsMiniGames.Text = "Mini-jeux HD";
+            graphicsMiniGames.UseVisualStyleBackColor = false;
+            graphicsMiniGames.MouseEnter += graphicsMiniGames_MouseEnter;
             // 
             // graphicsFields
             // 
-            this.graphicsFields.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsFields.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsFields.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsFields.Location = (new global::System.Drawing.Point(11, 22));
-            this.graphicsFields.Name = ("graphicsFields");
-            this.graphicsFields.Size = (new global::System.Drawing.Size(183, 19));
-            this.graphicsFields.TabIndex = (0);
-            this.graphicsFields.Text = ("Scènes du jeu HD");
-            this.graphicsFields.UseVisualStyleBackColor = (false);
-            this.graphicsFields.CheckedChanged += (this.graphicsFields_CheckedChanged);
-            this.graphicsFields.MouseEnter += (this.graphicsFields_MouseEnter);
+            graphicsFields.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsFields.Checked = true;
+            graphicsFields.CheckState = CheckState.Checked;
+            graphicsFields.Cursor = Cursors.Hand;
+            graphicsFields.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsFields.Location = new Point(11, 22);
+            graphicsFields.Name = "graphicsFields";
+            graphicsFields.Size = new Size(183, 19);
+            graphicsFields.TabIndex = 0;
+            graphicsFields.Text = "Scènes du jeu HD";
+            graphicsFields.UseVisualStyleBackColor = false;
+            graphicsFields.CheckedChanged += graphicsFields_CheckedChanged;
+            graphicsFields.MouseEnter += graphicsFields_MouseEnter;
             // 
             // graphicFrame3
             // 
-            this.graphicFrame3.Controls.Add(this.graphicPrevPic);
-            this.graphicFrame3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicFrame3.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicFrame3.Location = (new global::System.Drawing.Point(3, 350));
-            this.graphicFrame3.Name = ("graphicFrame3");
-            this.graphicFrame3.Size = (new global::System.Drawing.Size(788, 353));
-            this.graphicFrame3.TabIndex = (9);
-            this.graphicFrame3.TabStop = (false);
-            this.graphicFrame3.Text = ("Aperçu");
+            graphicFrame3.Controls.Add(graphicPrevPic);
+            graphicFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame3.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicFrame3.Location = new Point(3, 350);
+            graphicFrame3.Name = "graphicFrame3";
+            graphicFrame3.Size = new Size(788, 353);
+            graphicFrame3.TabIndex = 9;
+            graphicFrame3.TabStop = false;
+            graphicFrame3.Text = "Aperçu";
             // 
             // graphicPrevPic
             // 
-            this.graphicPrevPic.Location = (new global::System.Drawing.Point(11, 21));
-            this.graphicPrevPic.Name = ("graphicPrevPic");
-            this.graphicPrevPic.Size = (new global::System.Drawing.Size(765, 314));
-            this.graphicPrevPic.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.graphicPrevPic.TabIndex = (0);
-            this.graphicPrevPic.TabStop = (false);
+            graphicPrevPic.Location = new Point(11, 21);
+            graphicPrevPic.Name = "graphicPrevPic";
+            graphicPrevPic.Size = new Size(765, 314);
+            graphicPrevPic.SizeMode = PictureBoxSizeMode.Zoom;
+            graphicPrevPic.TabIndex = 0;
+            graphicPrevPic.TabStop = false;
             // 
             // menuGraphicPanel
             // 
-            this.menuGraphicPanel.Controls.Add(this.graphicFrame2);
-            this.menuGraphicPanel.Controls.Add(this.graphicFrame1);
-            this.menuGraphicPanel.Controls.Add(this.graphicFrame3);
-            this.menuGraphicPanel.Location = (new global::System.Drawing.Point(327, 1600));
-            this.menuGraphicPanel.Name = ("menuGraphicPanel");
-            this.menuGraphicPanel.Size = (new global::System.Drawing.Size(795, 703));
-            this.menuGraphicPanel.TabIndex = (10);
+            menuGraphicPanel.Controls.Add(graphicFrame2);
+            menuGraphicPanel.Controls.Add(graphicFrame1);
+            menuGraphicPanel.Controls.Add(graphicFrame3);
+            menuGraphicPanel.Location = new Point(327, 0);
+            menuGraphicPanel.Name = "menuGraphicPanel";
+            menuGraphicPanel.Size = new Size(795, 703);
+            menuGraphicPanel.TabIndex = 10;
             // 
             // graphicFrame2
             // 
-            this.graphicFrame2.Controls.Add(this.graphicsHelp);
-            this.graphicFrame2.Controls.Add(this.graphicsHelpAuthor);
-            this.graphicFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicFrame2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.graphicFrame2.Location = (new global::System.Drawing.Point(526, 4));
-            this.graphicFrame2.Name = ("graphicFrame2");
-            this.graphicFrame2.Size = (new global::System.Drawing.Size(265, 344));
-            this.graphicFrame2.TabIndex = (10);
-            this.graphicFrame2.TabStop = (false);
-            this.graphicFrame2.Text = ("Aide");
+            graphicFrame2.Controls.Add(graphicsHelp);
+            graphicFrame2.Controls.Add(graphicsHelpAuthor);
+            graphicFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame2.ForeColor = Color.FromArgb(224, 224, 224);
+            graphicFrame2.Location = new Point(526, 4);
+            graphicFrame2.Name = "graphicFrame2";
+            graphicFrame2.Size = new Size(265, 344);
+            graphicFrame2.TabIndex = 10;
+            graphicFrame2.TabStop = false;
+            graphicFrame2.Text = "Aide";
             // 
             // graphicsHelp
             // 
-            this.graphicsHelp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.graphicsHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
-            this.graphicsHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsHelp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.graphicsHelp.HideSelection = (false);
-            this.graphicsHelp.Location = (new global::System.Drawing.Point(12, 19));
-            this.graphicsHelp.Multiline = (true);
-            this.graphicsHelp.Name = ("graphicsHelp");
-            this.graphicsHelp.ScrollBars = (global::System.Windows.Forms.ScrollBars.Vertical);
-            this.graphicsHelp.Size = (new global::System.Drawing.Size(240, 291));
-            this.graphicsHelp.TabIndex = (20);
+            graphicsHelp.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsHelp.BorderStyle = BorderStyle.None;
+            graphicsHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsHelp.ForeColor = Color.FromArgb(32, 225, 229);
+            graphicsHelp.HideSelection = false;
+            graphicsHelp.Location = new Point(12, 19);
+            graphicsHelp.Multiline = true;
+            graphicsHelp.Name = "graphicsHelp";
+            graphicsHelp.ScrollBars = ScrollBars.Vertical;
+            graphicsHelp.Size = new Size(240, 291);
+            graphicsHelp.TabIndex = 20;
             // 
             // graphicsHelpAuthor
             // 
-            this.graphicsHelpAuthor.BackColor = (global::System.Drawing.Color.Black);
-            this.graphicsHelpAuthor.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.graphicsHelpAuthor.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.graphicsHelpAuthor.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.graphicsHelpAuthor.Location = (new global::System.Drawing.Point(12, 311));
-            this.graphicsHelpAuthor.Name = ("graphicsHelpAuthor");
-            this.graphicsHelpAuthor.Size = (new global::System.Drawing.Size(241, 22));
-            this.graphicsHelpAuthor.TabIndex = (1);
-            this.graphicsHelpAuthor.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.graphicsHelpAuthor.Click += (this.graphicsHelpAuthor_Click);
+            graphicsHelpAuthor.BackColor = Color.Black;
+            graphicsHelpAuthor.Cursor = Cursors.Hand;
+            graphicsHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicsHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
+            graphicsHelpAuthor.Location = new Point(12, 311);
+            graphicsHelpAuthor.Name = "graphicsHelpAuthor";
+            graphicsHelpAuthor.Size = new Size(241, 22);
+            graphicsHelpAuthor.TabIndex = 1;
+            graphicsHelpAuthor.TextAlign = ContentAlignment.MiddleCenter;
+            graphicsHelpAuthor.Click += graphicsHelpAuthor_Click;
             // 
             // menuAboutPanel
             // 
-            this.menuAboutPanel.Controls.Add(this.aboutFrame1);
-            this.menuAboutPanel.Controls.Add(this.aboutFrame2);
-            this.menuAboutPanel.Location = (new global::System.Drawing.Point(327, 1600));
-            this.menuAboutPanel.Name = ("menuAboutPanel");
-            this.menuAboutPanel.Size = (new global::System.Drawing.Size(799, 715));
-            this.menuAboutPanel.TabIndex = (11);
+            menuAboutPanel.Controls.Add(aboutFrame1);
+            menuAboutPanel.Controls.Add(aboutFrame2);
+            menuAboutPanel.Location = new Point(327, 1600);
+            menuAboutPanel.Name = "menuAboutPanel";
+            menuAboutPanel.Size = new Size(799, 715);
+            menuAboutPanel.TabIndex = 11;
             // 
             // aboutFrame1
             // 
-            this.aboutFrame1.Controls.Add(this.aboutContributors);
-            this.aboutFrame1.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.aboutFrame1.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.aboutFrame1.Location = (new global::System.Drawing.Point(3, 4));
-            this.aboutFrame1.Name = ("aboutFrame1");
-            this.aboutFrame1.Size = (new global::System.Drawing.Size(788, 513));
-            this.aboutFrame1.TabIndex = (7);
-            this.aboutFrame1.TabStop = (false);
-            this.aboutFrame1.Text = ("À propos du pack");
+            aboutFrame1.Controls.Add(aboutContributors);
+            aboutFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            aboutFrame1.ForeColor = Color.FromArgb(224, 224, 224);
+            aboutFrame1.Location = new Point(3, 4);
+            aboutFrame1.Name = "aboutFrame1";
+            aboutFrame1.Size = new Size(788, 513);
+            aboutFrame1.TabIndex = 7;
+            aboutFrame1.TabStop = false;
+            aboutFrame1.Text = "À propos du pack";
             // 
             // aboutContributors
             // 
-            this.aboutContributors.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(33)), (global::System.Int32)((global::System.Byte)(40)), (global::System.Int32)((global::System.Byte)(50))));
-            this.aboutContributors.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
-            this.aboutContributors.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.aboutContributors.Location = (new global::System.Drawing.Point(11, 22));
-            this.aboutContributors.Name = ("aboutContributors");
-            this.aboutContributors.ReadOnly = (true);
-            this.aboutContributors.ScrollBars = (global::System.Windows.Forms.RichTextBoxScrollBars.Vertical);
-            this.aboutContributors.Size = (new global::System.Drawing.Size(767, 476));
-            this.aboutContributors.TabIndex = (16);
-            this.aboutContributors.Text = ("");
-            this.aboutContributors.LinkClicked += (this.aboutContributors_LinkClicked);
+            aboutContributors.BackColor = Color.FromArgb(33, 40, 50);
+            aboutContributors.BorderStyle = BorderStyle.None;
+            aboutContributors.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            aboutContributors.Location = new Point(11, 22);
+            aboutContributors.Name = "aboutContributors";
+            aboutContributors.ReadOnly = true;
+            aboutContributors.ScrollBars = RichTextBoxScrollBars.Vertical;
+            aboutContributors.Size = new Size(767, 476);
+            aboutContributors.TabIndex = 16;
+            aboutContributors.Text = "";
+            aboutContributors.LinkClicked += aboutContributors_LinkClicked;
             // 
             // aboutFrame2
             // 
-            this.aboutFrame2.Controls.Add(this.packStory);
-            this.aboutFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.aboutFrame2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.aboutFrame2.Location = (new global::System.Drawing.Point(3, 523));
-            this.aboutFrame2.Name = ("aboutFrame2");
-            this.aboutFrame2.Size = (new global::System.Drawing.Size(788, 180));
-            this.aboutFrame2.TabIndex = (6);
-            this.aboutFrame2.TabStop = (false);
-            this.aboutFrame2.Text = ("À propos du pack");
+            aboutFrame2.Controls.Add(packStory);
+            aboutFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            aboutFrame2.ForeColor = Color.FromArgb(224, 224, 224);
+            aboutFrame2.Location = new Point(3, 523);
+            aboutFrame2.Name = "aboutFrame2";
+            aboutFrame2.Size = new Size(788, 180);
+            aboutFrame2.TabIndex = 6;
+            aboutFrame2.TabStop = false;
+            aboutFrame2.Text = "À propos du pack";
             // 
             // packStory
             // 
-            this.packStory.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.packStory.Font = (new global::System.Drawing.Font("Roboto", 10.25F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.packStory.ForeColor = (global::System.Drawing.Color.White);
-            this.packStory.Location = (new global::System.Drawing.Point(11, 24));
-            this.packStory.Name = ("packStory");
-            this.packStory.Size = (new global::System.Drawing.Size(767, 140));
-            this.packStory.TabIndex = (40);
-            this.packStory.TextAlign = (global::System.Drawing.ContentAlignment.MiddleLeft);
+            packStory.BackColor = Color.FromArgb(89, 98, 111);
+            packStory.Font = new Font("Roboto", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
+            packStory.ForeColor = Color.White;
+            packStory.Location = new Point(11, 24);
+            packStory.Name = "packStory";
+            packStory.Size = new Size(767, 140);
+            packStory.TabIndex = 40;
+            packStory.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // menuSoundPanel
             // 
-            this.menuSoundPanel.Controls.Add(this.soundFrame5);
-            this.menuSoundPanel.Controls.Add(this.soundFrame4);
-            this.menuSoundPanel.Controls.Add(this.soundFrame2);
-            this.menuSoundPanel.Controls.Add(this.soundFrame3);
-            this.menuSoundPanel.Location = (new global::System.Drawing.Point(327, 1600));
-            this.menuSoundPanel.Name = ("menuSoundPanel");
-            this.menuSoundPanel.Size = (new global::System.Drawing.Size(795, 703));
-            this.menuSoundPanel.TabIndex = (12);
+            menuSoundPanel.Controls.Add(soundFrame5);
+            menuSoundPanel.Controls.Add(soundFrame4);
+            menuSoundPanel.Controls.Add(soundFrame2);
+            menuSoundPanel.Controls.Add(soundFrame3);
+            menuSoundPanel.Location = new Point(327, 1600);
+            menuSoundPanel.Name = "menuSoundPanel";
+            menuSoundPanel.Size = new Size(795, 703);
+            menuSoundPanel.TabIndex = 12;
             // 
             // soundFrame5
             // 
-            this.soundFrame5.Controls.Add(this.soundPrevPic);
-            this.soundFrame5.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.soundFrame5.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundFrame5.Location = (new global::System.Drawing.Point(270, 352));
-            this.soundFrame5.Name = ("soundFrame5");
-            this.soundFrame5.Size = (new global::System.Drawing.Size(521, 351));
-            this.soundFrame5.TabIndex = (13);
-            this.soundFrame5.TabStop = (false);
+            soundFrame5.Controls.Add(soundPrevPic);
+            soundFrame5.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame5.ForeColor = Color.FromArgb(224, 224, 224);
+            soundFrame5.Location = new Point(270, 352);
+            soundFrame5.Name = "soundFrame5";
+            soundFrame5.Size = new Size(521, 351);
+            soundFrame5.TabIndex = 13;
+            soundFrame5.TabStop = false;
             // 
             // soundPrevPic
             // 
-            this.soundPrevPic.Location = (new global::System.Drawing.Point(11, 22));
-            this.soundPrevPic.Name = ("soundPrevPic");
-            this.soundPrevPic.Size = (new global::System.Drawing.Size(500, 315));
-            this.soundPrevPic.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.soundPrevPic.TabIndex = (1);
-            this.soundPrevPic.TabStop = (false);
+            soundPrevPic.Location = new Point(11, 22);
+            soundPrevPic.Name = "soundPrevPic";
+            soundPrevPic.Size = new Size(500, 315);
+            soundPrevPic.SizeMode = PictureBoxSizeMode.Zoom;
+            soundPrevPic.TabIndex = 1;
+            soundPrevPic.TabStop = false;
             // 
             // soundFrame4
             // 
-            this.soundFrame4.Controls.Add(this.soundsListHelp);
-            this.soundFrame4.Controls.Add(this.soundsList);
-            this.soundFrame4.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.soundFrame4.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundFrame4.Location = (new global::System.Drawing.Point(3, 352));
-            this.soundFrame4.Name = ("soundFrame4");
-            this.soundFrame4.Size = (new global::System.Drawing.Size(261, 351));
-            this.soundFrame4.TabIndex = (11);
-            this.soundFrame4.TabStop = (false);
-            this.soundFrame4.Text = ("Aperçu audio");
-            this.soundFrame4.MouseLeave += (this.soundFrame4_MouseLeave);
+            soundFrame4.Controls.Add(soundsListHelp);
+            soundFrame4.Controls.Add(soundsList);
+            soundFrame4.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame4.ForeColor = Color.FromArgb(224, 224, 224);
+            soundFrame4.Location = new Point(3, 352);
+            soundFrame4.Name = "soundFrame4";
+            soundFrame4.Size = new Size(261, 351);
+            soundFrame4.TabIndex = 11;
+            soundFrame4.TabStop = false;
+            soundFrame4.Text = "Aperçu audio";
+            soundFrame4.MouseLeave += soundFrame4_MouseLeave;
             // 
             // soundsListHelp
             // 
-            this.soundsListHelp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.soundsListHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsListHelp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.soundsListHelp.Location = (new global::System.Drawing.Point(11, 22));
-            this.soundsListHelp.Name = ("soundsListHelp");
-            this.soundsListHelp.Padding = (new global::System.Windows.Forms.Padding(4, 5, 4, 5));
-            this.soundsListHelp.Size = (new global::System.Drawing.Size(240, 142));
-            this.soundsListHelp.TabIndex = (5);
+            soundsListHelp.BackColor = Color.FromArgb(89, 98, 111);
+            soundsListHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsListHelp.ForeColor = Color.FromArgb(32, 225, 229);
+            soundsListHelp.Location = new Point(11, 22);
+            soundsListHelp.Name = "soundsListHelp";
+            soundsListHelp.Padding = new Padding(4, 5, 4, 5);
+            soundsListHelp.Size = new Size(240, 142);
+            soundsListHelp.TabIndex = 5;
             // 
             // soundsList
             // 
-            this.soundsList.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.soundsList.BorderStyle = (global::System.Windows.Forms.BorderStyle.FixedSingle);
-            this.soundsList.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.soundsList.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsList.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundsList.FormattingEnabled = (true);
-            this.soundsList.ItemHeight = (15);
-            this.soundsList.Location = (new global::System.Drawing.Point(11, 172));
-            this.soundsList.Name = ("soundsList");
-            this.soundsList.Size = (new global::System.Drawing.Size(240, 152));
-            this.soundsList.TabIndex = (0);
-            this.soundsList.SelectedIndexChanged += (this.soundsList_SelectedIndexChanged);
+            soundsList.BackColor = Color.FromArgb(89, 98, 111);
+            soundsList.BorderStyle = BorderStyle.FixedSingle;
+            soundsList.Cursor = Cursors.Hand;
+            soundsList.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsList.ForeColor = Color.FromArgb(224, 224, 224);
+            soundsList.FormattingEnabled = true;
+            soundsList.ItemHeight = 15;
+            soundsList.Location = new Point(11, 172);
+            soundsList.Name = "soundsList";
+            soundsList.Size = new Size(240, 152);
+            soundsList.TabIndex = 0;
+            soundsList.SelectedIndexChanged += soundsList_SelectedIndexChanged;
             // 
             // soundFrame2
             // 
-            this.soundFrame2.Controls.Add(this.soundsHelp);
-            this.soundFrame2.Controls.Add(this.soundsHelpAuthor);
-            this.soundFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.soundFrame2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundFrame2.Location = (new global::System.Drawing.Point(395, 4));
-            this.soundFrame2.Name = ("soundFrame2");
-            this.soundFrame2.Size = (new global::System.Drawing.Size(396, 342));
-            this.soundFrame2.TabIndex = (9);
-            this.soundFrame2.TabStop = (false);
-            this.soundFrame2.Text = ("À propos du mod");
+            soundFrame2.Controls.Add(soundsHelp);
+            soundFrame2.Controls.Add(soundsHelpAuthor);
+            soundFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame2.ForeColor = Color.FromArgb(224, 224, 224);
+            soundFrame2.Location = new Point(395, 4);
+            soundFrame2.Name = "soundFrame2";
+            soundFrame2.Size = new Size(396, 342);
+            soundFrame2.TabIndex = 9;
+            soundFrame2.TabStop = false;
+            soundFrame2.Text = "À propos du mod";
             // 
             // soundsHelp
             // 
-            this.soundsHelp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.soundsHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
-            this.soundsHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsHelp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.soundsHelp.Location = (new global::System.Drawing.Point(11, 22));
-            this.soundsHelp.Multiline = (true);
-            this.soundsHelp.Name = ("soundsHelp");
-            this.soundsHelp.ReadOnly = (true);
-            this.soundsHelp.ScrollBars = (global::System.Windows.Forms.ScrollBars.Vertical);
-            this.soundsHelp.Size = (new global::System.Drawing.Size(375, 285));
-            this.soundsHelp.TabIndex = (21);
+            soundsHelp.BackColor = Color.FromArgb(89, 98, 111);
+            soundsHelp.BorderStyle = BorderStyle.None;
+            soundsHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsHelp.ForeColor = Color.FromArgb(32, 225, 229);
+            soundsHelp.Location = new Point(11, 22);
+            soundsHelp.Multiline = true;
+            soundsHelp.Name = "soundsHelp";
+            soundsHelp.ReadOnly = true;
+            soundsHelp.ScrollBars = ScrollBars.Vertical;
+            soundsHelp.Size = new Size(375, 285);
+            soundsHelp.TabIndex = 21;
             // 
             // soundsHelpAuthor
             // 
-            this.soundsHelpAuthor.BackColor = (global::System.Drawing.Color.Black);
-            this.soundsHelpAuthor.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.soundsHelpAuthor.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsHelpAuthor.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.soundsHelpAuthor.Location = (new global::System.Drawing.Point(11, 308));
-            this.soundsHelpAuthor.Name = ("soundsHelpAuthor");
-            this.soundsHelpAuthor.Size = (new global::System.Drawing.Size(375, 22));
-            this.soundsHelpAuthor.TabIndex = (5);
-            this.soundsHelpAuthor.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.soundsHelpAuthor.Click += (this.soundsHelpAuthor_Click);
+            soundsHelpAuthor.BackColor = Color.Black;
+            soundsHelpAuthor.Cursor = Cursors.Hand;
+            soundsHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundsHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
+            soundsHelpAuthor.Location = new Point(11, 308);
+            soundsHelpAuthor.Name = "soundsHelpAuthor";
+            soundsHelpAuthor.Size = new Size(375, 22);
+            soundsHelpAuthor.TabIndex = 5;
+            soundsHelpAuthor.TextAlign = ContentAlignment.MiddleCenter;
+            soundsHelpAuthor.Click += soundsHelpAuthor_Click;
             // 
             // soundFrame3
             // 
-            this.soundFrame3.Controls.Add(this.soundsGroupVoices);
-            this.soundFrame3.Controls.Add(this.soundsGroupFMV);
-            this.soundFrame3.Controls.Add(this.soundsGroupAmbients);
-            this.soundFrame3.Controls.Add(this.soundsGroupSfx);
-            this.soundFrame3.Controls.Add(this.soundsGroupMusics);
-            this.soundFrame3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.soundFrame3.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundFrame3.Location = (new global::System.Drawing.Point(3, 4));
-            this.soundFrame3.Name = ("soundFrame3");
-            this.soundFrame3.Size = (new global::System.Drawing.Size(386, 342));
-            this.soundFrame3.TabIndex = (6);
-            this.soundFrame3.TabStop = (false);
-            this.soundFrame3.Text = ("Mods audio");
+            soundFrame3.Controls.Add(soundsGroupVoices);
+            soundFrame3.Controls.Add(soundsGroupFMV);
+            soundFrame3.Controls.Add(soundsGroupAmbients);
+            soundFrame3.Controls.Add(soundsGroupSfx);
+            soundFrame3.Controls.Add(soundsGroupMusics);
+            soundFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame3.ForeColor = Color.FromArgb(224, 224, 224);
+            soundFrame3.Location = new Point(3, 4);
+            soundFrame3.Name = "soundFrame3";
+            soundFrame3.Size = new Size(386, 342);
+            soundFrame3.TabIndex = 6;
+            soundFrame3.TabStop = false;
+            soundFrame3.Text = "Mods audio";
             // 
             // soundsGroupVoices
             // 
-            this.soundsGroupVoices.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.soundsGroupVoices.Controls.Add(voicesPrev);
-            this.soundsGroupVoices.Controls.Add(this.soundsVoices);
-            this.soundsGroupVoices.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsGroupVoices.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundsGroupVoices.Location = (new global::System.Drawing.Point(11, 271));
-            this.soundsGroupVoices.Name = ("soundsGroupVoices");
-            this.soundsGroupVoices.Size = (new global::System.Drawing.Size(365, 59));
-            this.soundsGroupVoices.TabIndex = (17);
-            this.soundsGroupVoices.TabStop = (false);
-            this.soundsGroupVoices.Text = ("Voix des personnages");
-            this.soundsGroupVoices.MouseEnter += (this.soundsVoicesChange);
+            soundsGroupVoices.BackColor = Color.FromArgb(89, 98, 111);
+            soundsGroupVoices.Controls.Add(voicesPrev);
+            soundsGroupVoices.Controls.Add(soundsVoices);
+            soundsGroupVoices.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupVoices.ForeColor = Color.FromArgb(224, 224, 224);
+            soundsGroupVoices.Location = new Point(11, 271);
+            soundsGroupVoices.Name = "soundsGroupVoices";
+            soundsGroupVoices.Size = new Size(365, 59);
+            soundsGroupVoices.TabIndex = 17;
+            soundsGroupVoices.TabStop = false;
+            soundsGroupVoices.Text = "Voix des personnages";
+            soundsGroupVoices.MouseEnter += soundsVoicesChange;
             // 
             // soundsVoices
             // 
-            this.soundsVoices.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.soundsVoices.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.soundsVoices.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.soundsVoices.ForeColor = (global::System.Drawing.Color.White);
-            this.soundsVoices.FormattingEnabled = (true);
-            this.soundsVoices.Location = (new global::System.Drawing.Point(9, 23));
-            this.soundsVoices.Name = ("soundsVoices");
-            this.soundsVoices.Size = (new global::System.Drawing.Size(315, 23));
-            this.soundsVoices.TabIndex = (0);
-            this.soundsVoices.SelectedIndexChanged += (this.soundsVoicesChange);
-            this.soundsVoices.Click += (this.getMousePos);
+            soundsVoices.BackColor = Color.FromArgb(53, 60, 70);
+            soundsVoices.Cursor = Cursors.Hand;
+            soundsVoices.DropDownStyle = ComboBoxStyle.DropDownList;
+            soundsVoices.ForeColor = Color.White;
+            soundsVoices.FormattingEnabled = true;
+            soundsVoices.Location = new Point(9, 23);
+            soundsVoices.Name = "soundsVoices";
+            soundsVoices.Size = new Size(315, 23);
+            soundsVoices.TabIndex = 0;
+            soundsVoices.SelectedIndexChanged += soundsVoicesChange;
+            soundsVoices.Click += getMousePos;
             // 
             // soundsGroupFMV
             // 
-            this.soundsGroupFMV.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.soundsGroupFMV.Controls.Add(fmvPrev);
-            this.soundsGroupFMV.Controls.Add(this.soundsFMV);
-            this.soundsGroupFMV.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsGroupFMV.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundsGroupFMV.Location = (new global::System.Drawing.Point(11, 208));
-            this.soundsGroupFMV.Name = ("soundsGroupFMV");
-            this.soundsGroupFMV.Size = (new global::System.Drawing.Size(365, 59));
-            this.soundsGroupFMV.TabIndex = (16);
-            this.soundsGroupFMV.TabStop = (false);
-            this.soundsGroupFMV.Text = ("Pistes audio des cinématiques");
-            this.soundsGroupFMV.MouseEnter += (this.soundsFMVChange);
+            soundsGroupFMV.BackColor = Color.FromArgb(89, 98, 111);
+            soundsGroupFMV.Controls.Add(fmvPrev);
+            soundsGroupFMV.Controls.Add(soundsFMV);
+            soundsGroupFMV.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupFMV.ForeColor = Color.FromArgb(224, 224, 224);
+            soundsGroupFMV.Location = new Point(11, 208);
+            soundsGroupFMV.Name = "soundsGroupFMV";
+            soundsGroupFMV.Size = new Size(365, 59);
+            soundsGroupFMV.TabIndex = 16;
+            soundsGroupFMV.TabStop = false;
+            soundsGroupFMV.Text = "Pistes audio des cinématiques";
+            soundsGroupFMV.MouseEnter += soundsFMVChange;
             // 
             // soundsFMV
             // 
-            this.soundsFMV.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.soundsFMV.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.soundsFMV.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.soundsFMV.ForeColor = (global::System.Drawing.Color.White);
-            this.soundsFMV.FormattingEnabled = (true);
-            this.soundsFMV.Location = (new global::System.Drawing.Point(9, 23));
-            this.soundsFMV.Name = ("soundsFMV");
-            this.soundsFMV.Size = (new global::System.Drawing.Size(315, 23));
-            this.soundsFMV.TabIndex = (0);
-            this.soundsFMV.SelectedIndexChanged += (this.soundsFMVChange);
-            this.soundsFMV.Click += (this.getMousePos);
+            soundsFMV.BackColor = Color.FromArgb(53, 60, 70);
+            soundsFMV.Cursor = Cursors.Hand;
+            soundsFMV.DropDownStyle = ComboBoxStyle.DropDownList;
+            soundsFMV.ForeColor = Color.White;
+            soundsFMV.FormattingEnabled = true;
+            soundsFMV.Location = new Point(9, 23);
+            soundsFMV.Name = "soundsFMV";
+            soundsFMV.Size = new Size(315, 23);
+            soundsFMV.TabIndex = 0;
+            soundsFMV.SelectedIndexChanged += soundsFMVChange;
+            soundsFMV.Click += getMousePos;
             // 
             // soundsGroupAmbients
             // 
-            this.soundsGroupAmbients.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.soundsGroupAmbients.Controls.Add(ambiantPrev);
-            this.soundsGroupAmbients.Controls.Add(this.soundsAmbients);
-            this.soundsGroupAmbients.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsGroupAmbients.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundsGroupAmbients.Location = (new global::System.Drawing.Point(11, 84));
-            this.soundsGroupAmbients.Name = ("soundsGroupAmbients");
-            this.soundsGroupAmbients.Size = (new global::System.Drawing.Size(365, 59));
-            this.soundsGroupAmbients.TabIndex = (15);
-            this.soundsGroupAmbients.TabStop = (false);
-            this.soundsGroupAmbients.Text = ("Sons d'ambiance du jeu");
-            this.soundsGroupAmbients.MouseEnter += (this.soundsAmbiantChange);
+            soundsGroupAmbients.BackColor = Color.FromArgb(89, 98, 111);
+            soundsGroupAmbients.Controls.Add(ambiantPrev);
+            soundsGroupAmbients.Controls.Add(soundsAmbients);
+            soundsGroupAmbients.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupAmbients.ForeColor = Color.FromArgb(224, 224, 224);
+            soundsGroupAmbients.Location = new Point(11, 84);
+            soundsGroupAmbients.Name = "soundsGroupAmbients";
+            soundsGroupAmbients.Size = new Size(365, 59);
+            soundsGroupAmbients.TabIndex = 15;
+            soundsGroupAmbients.TabStop = false;
+            soundsGroupAmbients.Text = "Sons d'ambiance du jeu";
+            soundsGroupAmbients.MouseEnter += soundsAmbiantChange;
             // 
             // soundsAmbients
             // 
-            this.soundsAmbients.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.soundsAmbients.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.soundsAmbients.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.soundsAmbients.ForeColor = (global::System.Drawing.Color.White);
-            this.soundsAmbients.FormattingEnabled = (true);
-            this.soundsAmbients.Location = (new global::System.Drawing.Point(9, 23));
-            this.soundsAmbients.Name = ("soundsAmbients");
-            this.soundsAmbients.Size = (new global::System.Drawing.Size(315, 23));
-            this.soundsAmbients.TabIndex = (0);
-            this.soundsAmbients.SelectedIndexChanged += (this.soundsAmbiantChange);
-            this.soundsAmbients.Click += (this.getMousePos);
+            soundsAmbients.BackColor = Color.FromArgb(53, 60, 70);
+            soundsAmbients.Cursor = Cursors.Hand;
+            soundsAmbients.DropDownStyle = ComboBoxStyle.DropDownList;
+            soundsAmbients.ForeColor = Color.White;
+            soundsAmbients.FormattingEnabled = true;
+            soundsAmbients.Location = new Point(9, 23);
+            soundsAmbients.Name = "soundsAmbients";
+            soundsAmbients.Size = new Size(315, 23);
+            soundsAmbients.TabIndex = 0;
+            soundsAmbients.SelectedIndexChanged += soundsAmbiantChange;
+            soundsAmbients.Click += getMousePos;
             // 
             // soundsGroupSfx
             // 
-            this.soundsGroupSfx.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.soundsGroupSfx.Controls.Add(sfxPrev);
-            this.soundsGroupSfx.Controls.Add(this.soundsSfx);
-            this.soundsGroupSfx.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsGroupSfx.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundsGroupSfx.Location = (new global::System.Drawing.Point(11, 146));
-            this.soundsGroupSfx.Name = ("soundsGroupSfx");
-            this.soundsGroupSfx.Size = (new global::System.Drawing.Size(365, 59));
-            this.soundsGroupSfx.TabIndex = (14);
-            this.soundsGroupSfx.TabStop = (false);
-            this.soundsGroupSfx.Text = ("Effets sonores du jeu");
-            this.soundsGroupSfx.MouseEnter += (this.soundsSfxChange);
+            soundsGroupSfx.BackColor = Color.FromArgb(89, 98, 111);
+            soundsGroupSfx.Controls.Add(sfxPrev);
+            soundsGroupSfx.Controls.Add(soundsSfx);
+            soundsGroupSfx.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupSfx.ForeColor = Color.FromArgb(224, 224, 224);
+            soundsGroupSfx.Location = new Point(11, 146);
+            soundsGroupSfx.Name = "soundsGroupSfx";
+            soundsGroupSfx.Size = new Size(365, 59);
+            soundsGroupSfx.TabIndex = 14;
+            soundsGroupSfx.TabStop = false;
+            soundsGroupSfx.Text = "Effets sonores du jeu";
+            soundsGroupSfx.MouseEnter += soundsSfxChange;
             // 
             // soundsSfx
             // 
-            this.soundsSfx.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.soundsSfx.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.soundsSfx.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.soundsSfx.ForeColor = (global::System.Drawing.Color.White);
-            this.soundsSfx.FormattingEnabled = (true);
-            this.soundsSfx.Location = (new global::System.Drawing.Point(9, 22));
-            this.soundsSfx.Name = ("soundsSfx");
-            this.soundsSfx.Size = (new global::System.Drawing.Size(315, 23));
-            this.soundsSfx.TabIndex = (0);
-            this.soundsSfx.SelectedIndexChanged += (this.soundsSfxChange);
-            this.soundsSfx.Click += (this.getMousePos);
+            soundsSfx.BackColor = Color.FromArgb(53, 60, 70);
+            soundsSfx.Cursor = Cursors.Hand;
+            soundsSfx.DropDownStyle = ComboBoxStyle.DropDownList;
+            soundsSfx.ForeColor = Color.White;
+            soundsSfx.FormattingEnabled = true;
+            soundsSfx.Location = new Point(9, 22);
+            soundsSfx.Name = "soundsSfx";
+            soundsSfx.Size = new Size(315, 23);
+            soundsSfx.TabIndex = 0;
+            soundsSfx.SelectedIndexChanged += soundsSfxChange;
+            soundsSfx.Click += getMousePos;
             // 
             // soundsGroupMusics
             // 
-            this.soundsGroupMusics.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.soundsGroupMusics.Controls.Add(musicsPrev);
-            this.soundsGroupMusics.Controls.Add(this.soundsMusics);
-            this.soundsGroupMusics.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.soundsGroupMusics.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.soundsGroupMusics.Location = (new global::System.Drawing.Point(11, 22));
-            this.soundsGroupMusics.Name = ("soundsGroupMusics");
-            this.soundsGroupMusics.Size = (new global::System.Drawing.Size(365, 59));
-            this.soundsGroupMusics.TabIndex = (13);
-            this.soundsGroupMusics.TabStop = (false);
-            this.soundsGroupMusics.Text = ("Musiques du jeu");
-            this.soundsGroupMusics.MouseEnter += (this.soundsMusicsChange);
+            soundsGroupMusics.BackColor = Color.FromArgb(89, 98, 111);
+            soundsGroupMusics.Controls.Add(musicsPrev);
+            soundsGroupMusics.Controls.Add(soundsMusics);
+            soundsGroupMusics.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupMusics.ForeColor = Color.FromArgb(224, 224, 224);
+            soundsGroupMusics.Location = new Point(11, 22);
+            soundsGroupMusics.Name = "soundsGroupMusics";
+            soundsGroupMusics.Size = new Size(365, 59);
+            soundsGroupMusics.TabIndex = 13;
+            soundsGroupMusics.TabStop = false;
+            soundsGroupMusics.Text = "Musiques du jeu";
+            soundsGroupMusics.MouseEnter += soundsMusicsChange;
             // 
             // soundsMusics
             // 
-            this.soundsMusics.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.soundsMusics.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.soundsMusics.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.soundsMusics.ForeColor = (global::System.Drawing.Color.White);
-            this.soundsMusics.FormattingEnabled = (true);
-            this.soundsMusics.Location = (new global::System.Drawing.Point(9, 23));
-            this.soundsMusics.Name = ("soundsMusics");
-            this.soundsMusics.Size = (new global::System.Drawing.Size(315, 23));
-            this.soundsMusics.TabIndex = (0);
-            this.soundsMusics.SelectedIndexChanged += (this.soundsMusicsChange);
-            this.soundsMusics.Click += (this.getMousePos);
+            soundsMusics.BackColor = Color.FromArgb(53, 60, 70);
+            soundsMusics.Cursor = Cursors.Hand;
+            soundsMusics.DropDownStyle = ComboBoxStyle.DropDownList;
+            soundsMusics.ForeColor = Color.White;
+            soundsMusics.FormattingEnabled = true;
+            soundsMusics.Location = new Point(9, 23);
+            soundsMusics.Name = "soundsMusics";
+            soundsMusics.Size = new Size(315, 23);
+            soundsMusics.TabIndex = 0;
+            soundsMusics.SelectedIndexChanged += soundsMusicsChange;
+            soundsMusics.Click += getMousePos;
             // 
             // menuGameplayPanel
             // 
-            this.menuGameplayPanel.Controls.Add(this.gameplayFrame2);
-            this.menuGameplayPanel.Controls.Add(this.gameplayFrame1);
-            this.menuGameplayPanel.Controls.Add(this.gameplayFrame3);
-            this.menuGameplayPanel.Location = (new global::System.Drawing.Point(327, 0));
-            this.menuGameplayPanel.Name = ("menuGameplayPanel");
-            this.menuGameplayPanel.Size = (new global::System.Drawing.Size(795, 703));
-            this.menuGameplayPanel.TabIndex = (13);
+            menuGameplayPanel.Controls.Add(gameplayFrame2);
+            menuGameplayPanel.Controls.Add(gameplayFrame1);
+            menuGameplayPanel.Controls.Add(gameplayFrame3);
+            menuGameplayPanel.Location = new Point(327, 1600);
+            menuGameplayPanel.Name = "menuGameplayPanel";
+            menuGameplayPanel.Size = new Size(795, 703);
+            menuGameplayPanel.TabIndex = 13;
             // 
             // gameplayFrame2
             // 
-            this.gameplayFrame2.Controls.Add(this.saveByMod);
-            this.gameplayFrame2.Controls.Add(this.saveEdit);
-            this.gameplayFrame2.Controls.Add(this.gameplayHelp);
-            this.gameplayFrame2.Controls.Add(this.gameplayHelpAuthor);
-            this.gameplayFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.gameplayFrame2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.gameplayFrame2.Location = (new global::System.Drawing.Point(3, 102));
-            this.gameplayFrame2.Name = ("gameplayFrame2");
-            this.gameplayFrame2.Size = (new global::System.Drawing.Size(788, 274));
-            this.gameplayFrame2.TabIndex = (10);
-            this.gameplayFrame2.TabStop = (false);
-            this.gameplayFrame2.Text = ("Aide");
-            // 
-            // documentsFolder
-            // 
-            this.documentsFolder.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.documentsFolder.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.documentsFolder.Font = (new global::System.Drawing.Font("Roboto Black", 12F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.documentsFolder.ForeColor = (global::System.Drawing.Color.Black);
-            this.documentsFolder.Location = (new global::System.Drawing.Point(388, 23));
-            this.documentsFolder.Name = ("documentsFolder");
-            this.documentsFolder.Size = (new global::System.Drawing.Size(250, 23));
-            this.documentsFolder.TabIndex = (18);
-            this.documentsFolder.Text = ("Documentation");
-            this.documentsFolder.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.documentsFolder.Click += (this.documentsFolder_Click);
-            this.documentsFolder.MouseEnter += (this.documentsFolder_MouseEnter);
-            this.documentsFolder.MouseLeave += (this.documentsFolder_MouseLeave);
-            // 
-            // gameplayHelp
-            // 
-            this.gameplayHelp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.gameplayHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
-            this.gameplayHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.gameplayHelp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.gameplayHelp.Location = (new global::System.Drawing.Point(12, 20));
-            this.gameplayHelp.Multiline = (true);
-            this.gameplayHelp.Name = ("gameplayHelp");
-            this.gameplayHelp.ReadOnly = (true);
-            this.gameplayHelp.ScrollBars = (global::System.Windows.Forms.ScrollBars.Vertical);
-            this.gameplayHelp.Size = (new global::System.Drawing.Size(763, 219));
-            this.gameplayHelp.TabIndex = (19);
-            // 
-            // gameplayHelpAuthor
-            // 
-            this.gameplayHelpAuthor.BackColor = (global::System.Drawing.Color.Black);
-            this.gameplayHelpAuthor.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.gameplayHelpAuthor.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.gameplayHelpAuthor.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.gameplayHelpAuthor.Location = (new global::System.Drawing.Point(12, 240));
-            this.gameplayHelpAuthor.Name = ("gameplayHelpAuthor");
-            this.gameplayHelpAuthor.Size = (new global::System.Drawing.Size(764, 22));
-            this.gameplayHelpAuthor.TabIndex = (3);
-            this.gameplayHelpAuthor.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.gameplayHelpAuthor.Click += (this.gameplayHelpAuthor_Click);
-            // 
-            // gameplayFrame1
-            // 
-            this.gameplayFrame1.Controls.Add(this.flagSGameplay);
-            this.gameplayFrame1.Controls.Add(this.flagGGameplay);
-            this.gameplayFrame1.Controls.Add(this.flagFGameplay);
-            this.gameplayFrame1.Controls.Add(this.flagEGameplay);
-            this.gameplayFrame1.Controls.Add(this.gameplayGroupMods);
-            this.gameplayFrame1.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.gameplayFrame1.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.gameplayFrame1.Location = (new global::System.Drawing.Point(3, 4));
-            this.gameplayFrame1.Name = ("gameplayFrame1");
-            this.gameplayFrame1.Size = (new global::System.Drawing.Size(788, 92));
-            this.gameplayFrame1.TabIndex = (6);
-            this.gameplayFrame1.TabStop = (false);
-            this.gameplayFrame1.Text = ("Mods de gameplay");
-            // 
-            // flagSGameplay
-            // 
-            this.flagSGameplay.Image = ((global::System.Drawing.Image)(resources.GetObject("flagSGameplay.Image")));
-            this.flagSGameplay.Location = (new global::System.Drawing.Point(724, 54));
-            this.flagSGameplay.Name = ("flagSGameplay");
-            this.flagSGameplay.Size = (new global::System.Drawing.Size(52, 26));
-            this.flagSGameplay.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagSGameplay.TabIndex = (14);
-            this.flagSGameplay.TabStop = (false);
-            // 
-            // flagGGameplay
-            // 
-            this.flagGGameplay.Image = ((global::System.Drawing.Image)(resources.GetObject("flagGGameplay.Image")));
-            this.flagGGameplay.Location = (new global::System.Drawing.Point(667, 54));
-            this.flagGGameplay.Name = ("flagGGameplay");
-            this.flagGGameplay.Size = (new global::System.Drawing.Size(52, 26));
-            this.flagGGameplay.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagGGameplay.TabIndex = (13);
-            this.flagGGameplay.TabStop = (false);
-            // 
-            // flagFGameplay
-            // 
-            this.flagFGameplay.Image = ((global::System.Drawing.Image)(resources.GetObject("flagFGameplay.Image")));
-            this.flagFGameplay.Location = (new global::System.Drawing.Point(724, 22));
-            this.flagFGameplay.Name = ("flagFGameplay");
-            this.flagFGameplay.Size = (new global::System.Drawing.Size(52, 26));
-            this.flagFGameplay.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagFGameplay.TabIndex = (12);
-            this.flagFGameplay.TabStop = (false);
-            // 
-            // flagEGameplay
-            // 
-            this.flagEGameplay.Image = ((global::System.Drawing.Image)(resources.GetObject("flagEGameplay.Image")));
-            this.flagEGameplay.Location = (new global::System.Drawing.Point(667, 22));
-            this.flagEGameplay.Name = ("flagEGameplay");
-            this.flagEGameplay.Size = (new global::System.Drawing.Size(52, 26));
-            this.flagEGameplay.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagEGameplay.TabIndex = (11);
-            this.flagEGameplay.TabStop = (false);
-            // 
-            // gameplayGroupMods
-            // 
-            this.gameplayGroupMods.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.gameplayGroupMods.Controls.Add(this.documentsFolder);
-            this.gameplayGroupMods.Controls.Add(this.gameplayMods);
-            this.gameplayGroupMods.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.gameplayGroupMods.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.gameplayGroupMods.Location = (new global::System.Drawing.Point(11, 22));
-            this.gameplayGroupMods.Name = ("gameplayGroupMods");
-            this.gameplayGroupMods.Size = (new global::System.Drawing.Size(646, 59));
-            this.gameplayGroupMods.TabIndex = (10);
-            this.gameplayGroupMods.TabStop = (false);
-            this.gameplayGroupMods.Text = ("Mod de gameplay");
-            this.gameplayGroupMods.MouseEnter += (this.gameplayModsChange);
-            // 
-            // saveEdit
-            // 
-            this.saveEdit.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.saveEdit.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.saveEdit.Font = (new global::System.Drawing.Font("Roboto Black", 12F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.saveEdit.ForeColor = (global::System.Drawing.Color.Black);
-            this.saveEdit.Location = (new global::System.Drawing.Point(565, 239));
-            this.saveEdit.Name = ("saveEdit");
-            this.saveEdit.Size = (new global::System.Drawing.Size(210, 23));
-            this.saveEdit.TabIndex = (18);
-            this.saveEdit.Text = ("Edit save");
-            this.saveEdit.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.saveEdit.Click += (this.saveEdit_Click);
-            this.saveEdit.MouseEnter += (this.saveEdit_MouseEnter);
-            this.saveEdit.MouseLeave += (this.saveEdit_MouseLeave);
+            gameplayFrame2.Controls.Add(saveByMod);
+            gameplayFrame2.Controls.Add(saveEdit);
+            gameplayFrame2.Controls.Add(gameplayHelp);
+            gameplayFrame2.Controls.Add(gameplayHelpAuthor);
+            gameplayFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame2.ForeColor = Color.FromArgb(224, 224, 224);
+            gameplayFrame2.Location = new Point(3, 102);
+            gameplayFrame2.Name = "gameplayFrame2";
+            gameplayFrame2.Size = new Size(788, 274);
+            gameplayFrame2.TabIndex = 10;
+            gameplayFrame2.TabStop = false;
+            gameplayFrame2.Text = "Aide";
             // 
             // saveByMod
             // 
-            this.saveByMod.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.saveByMod.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.saveByMod.Font = (new global::System.Drawing.Font("Roboto Black", 12F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.saveByMod.ForeColor = (global::System.Drawing.Color.Black);
-            this.saveByMod.Location = (new global::System.Drawing.Point(12, 239));
-            this.saveByMod.Name = ("saveByMod");
-            this.saveByMod.Size = (new global::System.Drawing.Size(210, 23));
-            this.saveByMod.TabIndex = (17);
-            this.saveByMod.Text = ("Dossier save");
-            this.saveByMod.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.saveByMod.Click += (this.saveByMod_Click);
-            this.saveByMod.MouseEnter += (this.saveByMod_MouseEnter);
-            this.saveByMod.MouseLeave += (this.saveByMod_MouseLeave);
+            saveByMod.BackColor = SystemColors.ScrollBar;
+            saveByMod.Cursor = Cursors.Hand;
+            saveByMod.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            saveByMod.ForeColor = Color.Black;
+            saveByMod.Location = new Point(12, 239);
+            saveByMod.Name = "saveByMod";
+            saveByMod.Size = new Size(210, 23);
+            saveByMod.TabIndex = 17;
+            saveByMod.Text = "Dossier save";
+            saveByMod.TextAlign = ContentAlignment.MiddleCenter;
+            saveByMod.Click += saveByMod_Click;
+            saveByMod.MouseEnter += saveByMod_MouseEnter;
+            saveByMod.MouseLeave += saveByMod_MouseLeave;
+            // 
+            // saveEdit
+            // 
+            saveEdit.BackColor = SystemColors.ScrollBar;
+            saveEdit.Cursor = Cursors.Hand;
+            saveEdit.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            saveEdit.ForeColor = Color.Black;
+            saveEdit.Location = new Point(565, 239);
+            saveEdit.Name = "saveEdit";
+            saveEdit.Size = new Size(210, 23);
+            saveEdit.TabIndex = 18;
+            saveEdit.Text = "Edit save";
+            saveEdit.TextAlign = ContentAlignment.MiddleCenter;
+            saveEdit.Click += saveEdit_Click;
+            saveEdit.MouseEnter += saveEdit_MouseEnter;
+            saveEdit.MouseLeave += saveEdit_MouseLeave;
+            // 
+            // gameplayHelp
+            // 
+            gameplayHelp.BackColor = Color.FromArgb(89, 98, 111);
+            gameplayHelp.BorderStyle = BorderStyle.None;
+            gameplayHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            gameplayHelp.ForeColor = Color.FromArgb(32, 225, 229);
+            gameplayHelp.Location = new Point(12, 20);
+            gameplayHelp.Multiline = true;
+            gameplayHelp.Name = "gameplayHelp";
+            gameplayHelp.ReadOnly = true;
+            gameplayHelp.ScrollBars = ScrollBars.Vertical;
+            gameplayHelp.Size = new Size(763, 219);
+            gameplayHelp.TabIndex = 19;
+            // 
+            // gameplayHelpAuthor
+            // 
+            gameplayHelpAuthor.BackColor = Color.Black;
+            gameplayHelpAuthor.Cursor = Cursors.Hand;
+            gameplayHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
+            gameplayHelpAuthor.Location = new Point(12, 240);
+            gameplayHelpAuthor.Name = "gameplayHelpAuthor";
+            gameplayHelpAuthor.Size = new Size(764, 22);
+            gameplayHelpAuthor.TabIndex = 3;
+            gameplayHelpAuthor.TextAlign = ContentAlignment.MiddleCenter;
+            gameplayHelpAuthor.Click += gameplayHelpAuthor_Click;
+            // 
+            // gameplayFrame1
+            // 
+            gameplayFrame1.Controls.Add(flagSGameplay);
+            gameplayFrame1.Controls.Add(flagGGameplay);
+            gameplayFrame1.Controls.Add(flagFGameplay);
+            gameplayFrame1.Controls.Add(flagEGameplay);
+            gameplayFrame1.Controls.Add(gameplayGroupMods);
+            gameplayFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame1.ForeColor = Color.FromArgb(224, 224, 224);
+            gameplayFrame1.Location = new Point(3, 4);
+            gameplayFrame1.Name = "gameplayFrame1";
+            gameplayFrame1.Size = new Size(788, 92);
+            gameplayFrame1.TabIndex = 6;
+            gameplayFrame1.TabStop = false;
+            gameplayFrame1.Text = "Mods de gameplay";
+            // 
+            // flagSGameplay
+            // 
+            flagSGameplay.Image = (Image)resources.GetObject("flagSGameplay.Image");
+            flagSGameplay.Location = new Point(724, 54);
+            flagSGameplay.Name = "flagSGameplay";
+            flagSGameplay.Size = new Size(52, 26);
+            flagSGameplay.SizeMode = PictureBoxSizeMode.Zoom;
+            flagSGameplay.TabIndex = 14;
+            flagSGameplay.TabStop = false;
+            // 
+            // flagGGameplay
+            // 
+            flagGGameplay.Image = (Image)resources.GetObject("flagGGameplay.Image");
+            flagGGameplay.Location = new Point(667, 54);
+            flagGGameplay.Name = "flagGGameplay";
+            flagGGameplay.Size = new Size(52, 26);
+            flagGGameplay.SizeMode = PictureBoxSizeMode.Zoom;
+            flagGGameplay.TabIndex = 13;
+            flagGGameplay.TabStop = false;
+            // 
+            // flagFGameplay
+            // 
+            flagFGameplay.Image = (Image)resources.GetObject("flagFGameplay.Image");
+            flagFGameplay.Location = new Point(724, 22);
+            flagFGameplay.Name = "flagFGameplay";
+            flagFGameplay.Size = new Size(52, 26);
+            flagFGameplay.SizeMode = PictureBoxSizeMode.Zoom;
+            flagFGameplay.TabIndex = 12;
+            flagFGameplay.TabStop = false;
+            // 
+            // flagEGameplay
+            // 
+            flagEGameplay.Image = (Image)resources.GetObject("flagEGameplay.Image");
+            flagEGameplay.Location = new Point(667, 22);
+            flagEGameplay.Name = "flagEGameplay";
+            flagEGameplay.Size = new Size(52, 26);
+            flagEGameplay.SizeMode = PictureBoxSizeMode.Zoom;
+            flagEGameplay.TabIndex = 11;
+            flagEGameplay.TabStop = false;
+            // 
+            // gameplayGroupMods
+            // 
+            gameplayGroupMods.BackColor = Color.FromArgb(89, 98, 111);
+            gameplayGroupMods.Controls.Add(documentsFolder);
+            gameplayGroupMods.Controls.Add(gameplayMods);
+            gameplayGroupMods.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            gameplayGroupMods.ForeColor = Color.FromArgb(224, 224, 224);
+            gameplayGroupMods.Location = new Point(11, 22);
+            gameplayGroupMods.Name = "gameplayGroupMods";
+            gameplayGroupMods.Size = new Size(646, 59);
+            gameplayGroupMods.TabIndex = 10;
+            gameplayGroupMods.TabStop = false;
+            gameplayGroupMods.Text = "Mod de gameplay";
+            gameplayGroupMods.MouseEnter += gameplayModsChange;
+            // 
+            // documentsFolder
+            // 
+            documentsFolder.BackColor = SystemColors.ScrollBar;
+            documentsFolder.Cursor = Cursors.Hand;
+            documentsFolder.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            documentsFolder.ForeColor = Color.Black;
+            documentsFolder.Location = new Point(388, 23);
+            documentsFolder.Name = "documentsFolder";
+            documentsFolder.Size = new Size(250, 23);
+            documentsFolder.TabIndex = 18;
+            documentsFolder.Text = "Documentation";
+            documentsFolder.TextAlign = ContentAlignment.MiddleCenter;
+            documentsFolder.Click += documentsFolder_Click;
+            documentsFolder.MouseEnter += documentsFolder_MouseEnter;
+            documentsFolder.MouseLeave += documentsFolder_MouseLeave;
             // 
             // gameplayMods
             // 
-            this.gameplayMods.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.gameplayMods.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.gameplayMods.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.gameplayMods.ForeColor = (global::System.Drawing.Color.White);
-            this.gameplayMods.FormattingEnabled = (true);
-            this.gameplayMods.Location = (new global::System.Drawing.Point(9, 23));
-            this.gameplayMods.Name = ("gameplayMods");
-            this.gameplayMods.Size = (new global::System.Drawing.Size(372, 23));
-            this.gameplayMods.TabIndex = (0);
-            this.gameplayMods.SelectedIndexChanged += (this.gameplayModsChange);
-            this.gameplayMods.Click += (this.getMousePos);
+            gameplayMods.BackColor = Color.FromArgb(53, 60, 70);
+            gameplayMods.Cursor = Cursors.Hand;
+            gameplayMods.DropDownStyle = ComboBoxStyle.DropDownList;
+            gameplayMods.ForeColor = Color.White;
+            gameplayMods.FormattingEnabled = true;
+            gameplayMods.Location = new Point(9, 23);
+            gameplayMods.Name = "gameplayMods";
+            gameplayMods.Size = new Size(372, 23);
+            gameplayMods.TabIndex = 0;
+            gameplayMods.SelectedIndexChanged += gameplayModsChange;
+            gameplayMods.Click += getMousePos;
             // 
             // gameplayFrame3
             // 
-            this.gameplayFrame3.Controls.Add(this.gameplayPrevPic);
-            this.gameplayFrame3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.gameplayFrame3.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.gameplayFrame3.Location = (new global::System.Drawing.Point(3, 382));
-            this.gameplayFrame3.Name = ("gameplayFrame3");
-            this.gameplayFrame3.Size = (new global::System.Drawing.Size(788, 321));
-            this.gameplayFrame3.TabIndex = (9);
-            this.gameplayFrame3.TabStop = (false);
-            this.gameplayFrame3.Text = ("Aperçu");
+            gameplayFrame3.Controls.Add(gameplayPrevPic);
+            gameplayFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame3.ForeColor = Color.FromArgb(224, 224, 224);
+            gameplayFrame3.Location = new Point(3, 382);
+            gameplayFrame3.Name = "gameplayFrame3";
+            gameplayFrame3.Size = new Size(788, 321);
+            gameplayFrame3.TabIndex = 9;
+            gameplayFrame3.TabStop = false;
+            gameplayFrame3.Text = "Aperçu";
             // 
             // gameplayPrevPic
             // 
-            this.gameplayPrevPic.Location = (new global::System.Drawing.Point(11, 22));
-            this.gameplayPrevPic.Name = ("gameplayPrevPic");
-            this.gameplayPrevPic.Size = (new global::System.Drawing.Size(765, 285));
-            this.gameplayPrevPic.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.gameplayPrevPic.TabIndex = (1);
-            this.gameplayPrevPic.TabStop = (false);
+            gameplayPrevPic.Location = new Point(11, 22);
+            gameplayPrevPic.Name = "gameplayPrevPic";
+            gameplayPrevPic.Size = new Size(765, 285);
+            gameplayPrevPic.SizeMode = PictureBoxSizeMode.Zoom;
+            gameplayPrevPic.TabIndex = 1;
+            gameplayPrevPic.TabStop = false;
             // 
             // menuFFNxPanel
             // 
-            this.menuFFNxPanel.Controls.Add(this.FFNxFrame2);
-            this.menuFFNxPanel.Controls.Add(this.FFNxFrame1);
-            this.menuFFNxPanel.Controls.Add(this.FFNxFrame3);
-            this.menuFFNxPanel.Location = (new global::System.Drawing.Point(327, 1600));
-            this.menuFFNxPanel.Name = ("menuFFNxPanel");
-            this.menuFFNxPanel.Size = (new global::System.Drawing.Size(795, 703));
-            this.menuFFNxPanel.TabIndex = (14);
+            menuFFNxPanel.Controls.Add(FFNxFrame2);
+            menuFFNxPanel.Controls.Add(FFNxFrame1);
+            menuFFNxPanel.Controls.Add(FFNxFrame3);
+            menuFFNxPanel.Location = new Point(327, 1600);
+            menuFFNxPanel.Name = "menuFFNxPanel";
+            menuFFNxPanel.Size = new Size(795, 703);
+            menuFFNxPanel.TabIndex = 14;
             // 
             // FFNxFrame2
             // 
-            this.FFNxFrame2.Controls.Add(this.FFNxHelp);
-            this.FFNxFrame2.Controls.Add(this.FFNxHelpAuthor);
-            this.FFNxFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxFrame2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxFrame2.Location = (new global::System.Drawing.Point(355, 4));
-            this.FFNxFrame2.Name = ("FFNxFrame2");
-            this.FFNxFrame2.Size = (new global::System.Drawing.Size(436, 330));
-            this.FFNxFrame2.TabIndex = (10);
-            this.FFNxFrame2.TabStop = (false);
-            this.FFNxFrame2.Text = ("Aide");
+            FFNxFrame2.Controls.Add(FFNxHelp);
+            FFNxFrame2.Controls.Add(FFNxHelpAuthor);
+            FFNxFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame2.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxFrame2.Location = new Point(355, 4);
+            FFNxFrame2.Name = "FFNxFrame2";
+            FFNxFrame2.Size = new Size(436, 330);
+            FFNxFrame2.TabIndex = 10;
+            FFNxFrame2.TabStop = false;
+            FFNxFrame2.Text = "Aide";
             // 
             // FFNxHelp
             // 
-            this.FFNxHelp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
-            this.FFNxHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxHelp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.FFNxHelp.Location = (new global::System.Drawing.Point(12, 22));
-            this.FFNxHelp.Multiline = (true);
-            this.FFNxHelp.Name = ("FFNxHelp");
-            this.FFNxHelp.ReadOnly = (true);
-            this.FFNxHelp.ScrollBars = (global::System.Windows.Forms.ScrollBars.Vertical);
-            this.FFNxHelp.Size = (new global::System.Drawing.Size(414, 274));
-            this.FFNxHelp.TabIndex = (22);
+            FFNxHelp.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxHelp.BorderStyle = BorderStyle.None;
+            FFNxHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxHelp.ForeColor = Color.FromArgb(32, 225, 229);
+            FFNxHelp.Location = new Point(12, 22);
+            FFNxHelp.Multiline = true;
+            FFNxHelp.Name = "FFNxHelp";
+            FFNxHelp.ReadOnly = true;
+            FFNxHelp.ScrollBars = ScrollBars.Vertical;
+            FFNxHelp.Size = new Size(414, 274);
+            FFNxHelp.TabIndex = 22;
             // 
             // FFNxHelpAuthor
             // 
-            this.FFNxHelpAuthor.BackColor = (global::System.Drawing.Color.Black);
-            this.FFNxHelpAuthor.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxHelpAuthor.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxHelpAuthor.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.FFNxHelpAuthor.Location = (new global::System.Drawing.Point(12, 298));
-            this.FFNxHelpAuthor.Name = ("FFNxHelpAuthor");
-            this.FFNxHelpAuthor.Size = (new global::System.Drawing.Size(414, 22));
-            this.FFNxHelpAuthor.TabIndex = (3);
-            this.FFNxHelpAuthor.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.FFNxHelpAuthor.Click += (this.FFNxHelpAuthor_Click);
+            FFNxHelpAuthor.BackColor = Color.Black;
+            FFNxHelpAuthor.Cursor = Cursors.Hand;
+            FFNxHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
+            FFNxHelpAuthor.Location = new Point(12, 298);
+            FFNxHelpAuthor.Name = "FFNxHelpAuthor";
+            FFNxHelpAuthor.Size = new Size(414, 22);
+            FFNxHelpAuthor.TabIndex = 3;
+            FFNxHelpAuthor.TextAlign = ContentAlignment.MiddleCenter;
+            FFNxHelpAuthor.Click += FFNxHelpAuthor_Click;
             // 
             // FFNxFrame1
             // 
-            this.FFNxFrame1.Controls.Add(this.flagGFFNxPatch);
-            this.FFNxFrame1.Controls.Add(this.FFNxPatchsList);
-            this.FFNxFrame1.Controls.Add(this.flagSFFNxPatch);
-            this.FFNxFrame1.Controls.Add(this.FFNxComboPatchs);
-            this.FFNxFrame1.Controls.Add(this.flagFFFNxPatch);
-            this.FFNxFrame1.Controls.Add(this.flagEFFNxPatch);
-            this.FFNxFrame1.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxFrame1.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxFrame1.Location = (new global::System.Drawing.Point(355, 340));
-            this.FFNxFrame1.Name = ("FFNxFrame1");
-            this.FFNxFrame1.Size = (new global::System.Drawing.Size(436, 363));
-            this.FFNxFrame1.TabIndex = (6);
-            this.FFNxFrame1.TabStop = (false);
-            this.FFNxFrame1.Text = ("Patchs mémoire");
+            FFNxFrame1.Controls.Add(flagGFFNxPatch);
+            FFNxFrame1.Controls.Add(FFNxPatchsList);
+            FFNxFrame1.Controls.Add(flagSFFNxPatch);
+            FFNxFrame1.Controls.Add(FFNxComboPatchs);
+            FFNxFrame1.Controls.Add(flagFFFNxPatch);
+            FFNxFrame1.Controls.Add(flagEFFNxPatch);
+            FFNxFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame1.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxFrame1.Location = new Point(355, 340);
+            FFNxFrame1.Name = "FFNxFrame1";
+            FFNxFrame1.Size = new Size(436, 363);
+            FFNxFrame1.TabIndex = 6;
+            FFNxFrame1.TabStop = false;
+            FFNxFrame1.Text = "Patchs mémoire";
             // 
             // flagGFFNxPatch
             // 
-            this.flagGFFNxPatch.Image = ((global::System.Drawing.Image)(resources.GetObject("flagGFFNxPatch.Image")));
-            this.flagGFFNxPatch.Location = (new global::System.Drawing.Point(370, 323));
-            this.flagGFFNxPatch.Name = ("flagGFFNxPatch");
-            this.flagGFFNxPatch.Size = (new global::System.Drawing.Size(56, 28));
-            this.flagGFFNxPatch.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagGFFNxPatch.TabIndex = (26);
-            this.flagGFFNxPatch.TabStop = (false);
+            flagGFFNxPatch.Image = (Image)resources.GetObject("flagGFFNxPatch.Image");
+            flagGFFNxPatch.Location = new Point(370, 323);
+            flagGFFNxPatch.Name = "flagGFFNxPatch";
+            flagGFFNxPatch.Size = new Size(56, 28);
+            flagGFFNxPatch.SizeMode = PictureBoxSizeMode.Zoom;
+            flagGFFNxPatch.TabIndex = 26;
+            flagGFFNxPatch.TabStop = false;
             // 
             // FFNxPatchsList
             // 
-            this.FFNxPatchsList.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxPatchsList.BorderStyle = (global::System.Windows.Forms.BorderStyle.FixedSingle);
-            this.FFNxPatchsList.CheckOnClick = (true);
-            this.FFNxPatchsList.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxPatchsList.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxPatchsList.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxPatchsList.FormattingEnabled = (true);
-            this.FFNxPatchsList.Location = (new global::System.Drawing.Point(11, 22));
-            this.FFNxPatchsList.Name = ("FFNxPatchsList");
-            this.FFNxPatchsList.Size = (new global::System.Drawing.Size(415, 290));
-            this.FFNxPatchsList.TabIndex = (29);
-            this.FFNxPatchsList.MouseMove += (this.FFNxPatchsList_MouseMove);
+            FFNxPatchsList.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxPatchsList.BorderStyle = BorderStyle.FixedSingle;
+            FFNxPatchsList.CheckOnClick = true;
+            FFNxPatchsList.Cursor = Cursors.Hand;
+            FFNxPatchsList.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxPatchsList.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxPatchsList.FormattingEnabled = true;
+            FFNxPatchsList.Location = new Point(11, 22);
+            FFNxPatchsList.Name = "FFNxPatchsList";
+            FFNxPatchsList.Size = new Size(415, 290);
+            FFNxPatchsList.TabIndex = 29;
+            FFNxPatchsList.MouseMove += FFNxPatchsList_MouseMove;
             // 
             // flagSFFNxPatch
             // 
-            this.flagSFFNxPatch.Image = ((global::System.Drawing.Image)(resources.GetObject("flagSFFNxPatch.Image")));
-            this.flagSFFNxPatch.Location = (new global::System.Drawing.Point(251, 323));
-            this.flagSFFNxPatch.Name = ("flagSFFNxPatch");
-            this.flagSFFNxPatch.Size = (new global::System.Drawing.Size(56, 28));
-            this.flagSFFNxPatch.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagSFFNxPatch.TabIndex = (25);
-            this.flagSFFNxPatch.TabStop = (false);
+            flagSFFNxPatch.Image = (Image)resources.GetObject("flagSFFNxPatch.Image");
+            flagSFFNxPatch.Location = new Point(251, 323);
+            flagSFFNxPatch.Name = "flagSFFNxPatch";
+            flagSFFNxPatch.Size = new Size(56, 28);
+            flagSFFNxPatch.SizeMode = PictureBoxSizeMode.Zoom;
+            flagSFFNxPatch.TabIndex = 25;
+            flagSFFNxPatch.TabStop = false;
             // 
             // FFNxComboPatchs
             // 
-            this.FFNxComboPatchs.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxComboPatchs.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxComboPatchs.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxComboPatchs.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxComboPatchs.FormattingEnabled = (true);
-            this.FFNxComboPatchs.Location = (new global::System.Drawing.Point(12, 144));
-            this.FFNxComboPatchs.Name = ("FFNxComboPatchs");
-            this.FFNxComboPatchs.Size = (new global::System.Drawing.Size(239, 23));
-            this.FFNxComboPatchs.TabIndex = (28);
-            this.FFNxComboPatchs.Visible = (false);
+            FFNxComboPatchs.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxComboPatchs.Cursor = Cursors.Hand;
+            FFNxComboPatchs.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxComboPatchs.ForeColor = Color.White;
+            FFNxComboPatchs.FormattingEnabled = true;
+            FFNxComboPatchs.Location = new Point(12, 144);
+            FFNxComboPatchs.Name = "FFNxComboPatchs";
+            FFNxComboPatchs.Size = new Size(239, 23);
+            FFNxComboPatchs.TabIndex = 28;
+            FFNxComboPatchs.Visible = false;
             // 
             // flagFFFNxPatch
             // 
-            this.flagFFFNxPatch.Image = ((global::System.Drawing.Image)(resources.GetObject("flagFFFNxPatch.Image")));
-            this.flagFFFNxPatch.Location = (new global::System.Drawing.Point(132, 323));
-            this.flagFFFNxPatch.Name = ("flagFFFNxPatch");
-            this.flagFFFNxPatch.Size = (new global::System.Drawing.Size(56, 28));
-            this.flagFFFNxPatch.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagFFFNxPatch.TabIndex = (24);
-            this.flagFFFNxPatch.TabStop = (false);
+            flagFFFNxPatch.Image = (Image)resources.GetObject("flagFFFNxPatch.Image");
+            flagFFFNxPatch.Location = new Point(132, 323);
+            flagFFFNxPatch.Name = "flagFFFNxPatch";
+            flagFFFNxPatch.Size = new Size(56, 28);
+            flagFFFNxPatch.SizeMode = PictureBoxSizeMode.Zoom;
+            flagFFFNxPatch.TabIndex = 24;
+            flagFFFNxPatch.TabStop = false;
             // 
             // flagEFFNxPatch
             // 
-            this.flagEFFNxPatch.Image = ((global::System.Drawing.Image)(resources.GetObject("flagEFFNxPatch.Image")));
-            this.flagEFFNxPatch.Location = (new global::System.Drawing.Point(12, 323));
-            this.flagEFFNxPatch.Name = ("flagEFFNxPatch");
-            this.flagEFFNxPatch.Size = (new global::System.Drawing.Size(56, 28));
-            this.flagEFFNxPatch.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.flagEFFNxPatch.TabIndex = (23);
-            this.flagEFFNxPatch.TabStop = (false);
+            flagEFFNxPatch.Image = (Image)resources.GetObject("flagEFFNxPatch.Image");
+            flagEFFNxPatch.Location = new Point(12, 323);
+            flagEFFNxPatch.Name = "flagEFFNxPatch";
+            flagEFFNxPatch.Size = new Size(56, 28);
+            flagEFFNxPatch.SizeMode = PictureBoxSizeMode.Zoom;
+            flagEFFNxPatch.TabIndex = 23;
+            flagEFFNxPatch.TabStop = false;
             // 
             // FFNxFrame3
             // 
-            this.FFNxFrame3.Controls.Add(this.FFNxAnalogControllerArun);
-            this.FFNxFrame3.Controls.Add(this.FFNxNoCd);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupFps);
-            this.FFNxFrame3.Controls.Add(this.FFNxShowStats);
-            this.FFNxFrame3.Controls.Add(this.FFNxDebugTool);
-            this.FFNxFrame3.Controls.Add(this.FFNxFootSteps);
-            this.FFNxFrame3.Controls.Add(this.FFNxLogs);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupSpeedhack);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupControllerDeathzones);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupAudioSample);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupIR);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupAudioChannels);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupAA);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupResolution);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupHDR);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupRatio);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroupScreen);
-            this.FFNxFrame3.Controls.Add(this.FFNxVsync);
-            this.FFNxFrame3.Controls.Add(this.FFNXMusicResume);
-            this.FFNxFrame3.Controls.Add(this.FFNxAnisotropic);
-            this.FFNxFrame3.Controls.Add(this.FFNxAnalogController);
-            this.FFNxFrame3.Controls.Add(this.FFNXSteamSucces);
-            this.FFNxFrame3.Controls.Add(this.FFNxGroup3dEngine);
-            this.FFNxFrame3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxFrame3.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxFrame3.Location = (new global::System.Drawing.Point(3, 4));
-            this.FFNxFrame3.Name = ("FFNxFrame3");
-            this.FFNxFrame3.Size = (new global::System.Drawing.Size(346, 699));
-            this.FFNxFrame3.TabIndex = (9);
-            this.FFNxFrame3.TabStop = (false);
-            this.FFNxFrame3.Text = ("Configuration du pilote FFNx");
+            FFNxFrame3.Controls.Add(FFNxAnalogControllerArun);
+            FFNxFrame3.Controls.Add(FFNxNoCd);
+            FFNxFrame3.Controls.Add(FFNxGroupFps);
+            FFNxFrame3.Controls.Add(FFNxShowStats);
+            FFNxFrame3.Controls.Add(FFNxDebugTool);
+            FFNxFrame3.Controls.Add(FFNxFootSteps);
+            FFNxFrame3.Controls.Add(FFNxLogs);
+            FFNxFrame3.Controls.Add(FFNxGroupSpeedhack);
+            FFNxFrame3.Controls.Add(FFNxGroupControllerDeathzones);
+            FFNxFrame3.Controls.Add(FFNxGroupAudioSample);
+            FFNxFrame3.Controls.Add(FFNxGroupIR);
+            FFNxFrame3.Controls.Add(FFNxGroupAudioChannels);
+            FFNxFrame3.Controls.Add(FFNxGroupAA);
+            FFNxFrame3.Controls.Add(FFNxGroupResolution);
+            FFNxFrame3.Controls.Add(FFNxGroupHDR);
+            FFNxFrame3.Controls.Add(FFNxGroupRatio);
+            FFNxFrame3.Controls.Add(FFNxGroupScreen);
+            FFNxFrame3.Controls.Add(FFNxVsync);
+            FFNxFrame3.Controls.Add(FFNXMusicResume);
+            FFNxFrame3.Controls.Add(FFNxAnisotropic);
+            FFNxFrame3.Controls.Add(FFNxAnalogController);
+            FFNxFrame3.Controls.Add(FFNXSteamSucces);
+            FFNxFrame3.Controls.Add(FFNxGroup3dEngine);
+            FFNxFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame3.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxFrame3.Location = new Point(3, 4);
+            FFNxFrame3.Name = "FFNxFrame3";
+            FFNxFrame3.Size = new Size(346, 699);
+            FFNxFrame3.TabIndex = 9;
+            FFNxFrame3.TabStop = false;
+            FFNxFrame3.Text = "Configuration du pilote FFNx";
             // 
             // FFNxAnalogControllerArun
             // 
-            this.FFNxAnalogControllerArun.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxAnalogControllerArun.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxAnalogControllerArun.Enabled = (false);
-            this.FFNxAnalogControllerArun.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxAnalogControllerArun.Location = (new global::System.Drawing.Point(182, 553));
-            this.FFNxAnalogControllerArun.Name = ("FFNxAnalogControllerArun");
-            this.FFNxAnalogControllerArun.Size = (new global::System.Drawing.Size(153, 19));
-            this.FFNxAnalogControllerArun.TabIndex = (41);
-            this.FFNxAnalogControllerArun.Text = ("Course automatique");
-            this.FFNxAnalogControllerArun.UseVisualStyleBackColor = (false);
-            this.FFNxAnalogControllerArun.MouseEnter += (this.FFNxAnalogControllerArun_MouseEnter);
+            FFNxAnalogControllerArun.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxAnalogControllerArun.Cursor = Cursors.Hand;
+            FFNxAnalogControllerArun.Enabled = false;
+            FFNxAnalogControllerArun.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAnalogControllerArun.Location = new Point(182, 553);
+            FFNxAnalogControllerArun.Name = "FFNxAnalogControllerArun";
+            FFNxAnalogControllerArun.Size = new Size(153, 19);
+            FFNxAnalogControllerArun.TabIndex = 41;
+            FFNxAnalogControllerArun.Text = "Course automatique";
+            FFNxAnalogControllerArun.UseVisualStyleBackColor = false;
+            FFNxAnalogControllerArun.MouseEnter += FFNxAnalogControllerArun_MouseEnter;
             // 
             // FFNxNoCd
             // 
-            this.FFNxNoCd.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxNoCd.Checked = (true);
-            this.FFNxNoCd.CheckState = (global::System.Windows.Forms.CheckState.Checked);
-            this.FFNxNoCd.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxNoCd.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxNoCd.Location = (new global::System.Drawing.Point(10, 603));
-            this.FFNxNoCd.Name = ("FFNxNoCd");
-            this.FFNxNoCd.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNxNoCd.TabIndex = (39);
-            this.FFNxNoCd.Text = ("No-CD");
-            this.FFNxNoCd.UseVisualStyleBackColor = (false);
-            this.FFNxNoCd.MouseEnter += (this.FFNxNoCd_MouseEnter);
+            FFNxNoCd.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxNoCd.Checked = true;
+            FFNxNoCd.CheckState = CheckState.Checked;
+            FFNxNoCd.Cursor = Cursors.Hand;
+            FFNxNoCd.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxNoCd.Location = new Point(10, 603);
+            FFNxNoCd.Name = "FFNxNoCd";
+            FFNxNoCd.Size = new Size(325, 19);
+            FFNxNoCd.TabIndex = 39;
+            FFNxNoCd.Text = "No-CD";
+            FFNxNoCd.UseVisualStyleBackColor = false;
+            FFNxNoCd.MouseEnter += FFNxNoCd_MouseEnter;
             // 
             // FFNxGroupFps
             // 
-            this.FFNxGroupFps.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupFps.Controls.Add(this.FFNxFps);
-            this.FFNxGroupFps.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupFps.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupFps.Location = (new global::System.Drawing.Point(153, 205));
-            this.FFNxGroupFps.Name = ("FFNxGroupFps");
-            this.FFNxGroupFps.Size = (new global::System.Drawing.Size(182, 59));
-            this.FFNxGroupFps.TabIndex = (38);
-            this.FFNxGroupFps.TabStop = (false);
-            this.FFNxGroupFps.Text = ("Fluidité du jeu (fps)");
-            this.FFNxGroupFps.Click += (this.getMousePos);
-            this.FFNxGroupFps.MouseEnter += (this.FFNxGroupFps_MouseEnter);
+            FFNxGroupFps.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupFps.Controls.Add(FFNxFps);
+            FFNxGroupFps.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupFps.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupFps.Location = new Point(153, 205);
+            FFNxGroupFps.Name = "FFNxGroupFps";
+            FFNxGroupFps.Size = new Size(182, 59);
+            FFNxGroupFps.TabIndex = 38;
+            FFNxGroupFps.TabStop = false;
+            FFNxGroupFps.Text = "Fluidité du jeu (fps)";
+            FFNxGroupFps.Click += getMousePos;
+            FFNxGroupFps.MouseEnter += FFNxGroupFps_MouseEnter;
             // 
             // FFNxFps
             // 
-            this.FFNxFps.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxFps.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxFps.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxFps.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxFps.FormattingEnabled = (true);
-            this.FFNxFps.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxFps.Name = ("FFNxFps");
-            this.FFNxFps.Size = (new global::System.Drawing.Size(162, 23));
-            this.FFNxFps.TabIndex = (0);
-            this.FFNxFps.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxFps.Click += (this.getMousePos);
+            FFNxFps.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxFps.Cursor = Cursors.Hand;
+            FFNxFps.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxFps.ForeColor = Color.White;
+            FFNxFps.FormattingEnabled = true;
+            FFNxFps.Location = new Point(9, 23);
+            FFNxFps.Name = "FFNxFps";
+            FFNxFps.Size = new Size(162, 23);
+            FFNxFps.TabIndex = 0;
+            FFNxFps.SelectedIndexChanged += setMousePos;
+            FFNxFps.Click += getMousePos;
             // 
             // FFNxShowStats
             // 
-            this.FFNxShowStats.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxShowStats.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxShowStats.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxShowStats.Location = (new global::System.Drawing.Point(10, 625));
-            this.FFNxShowStats.Name = ("FFNxShowStats");
-            this.FFNxShowStats.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNxShowStats.TabIndex = (37);
-            this.FFNxShowStats.Text = ("Afficher les informations de FFNx");
-            this.FFNxShowStats.UseVisualStyleBackColor = (false);
-            this.FFNxShowStats.MouseEnter += (this.FFNxShowStats_MouseEnter);
+            FFNxShowStats.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxShowStats.Cursor = Cursors.Hand;
+            FFNxShowStats.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxShowStats.Location = new Point(10, 625);
+            FFNxShowStats.Name = "FFNxShowStats";
+            FFNxShowStats.Size = new Size(325, 19);
+            FFNxShowStats.TabIndex = 37;
+            FFNxShowStats.Text = "Afficher les informations de FFNx";
+            FFNxShowStats.UseVisualStyleBackColor = false;
+            FFNxShowStats.MouseEnter += FFNxShowStats_MouseEnter;
             // 
             // FFNxDebugTool
             // 
-            this.FFNxDebugTool.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxDebugTool.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxDebugTool.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxDebugTool.Location = (new global::System.Drawing.Point(10, 647));
-            this.FFNxDebugTool.Name = ("FFNxDebugTool");
-            this.FFNxDebugTool.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNxDebugTool.TabIndex = (36);
-            this.FFNxDebugTool.Text = ("Outil de debug");
-            this.FFNxDebugTool.UseVisualStyleBackColor = (false);
-            this.FFNxDebugTool.MouseEnter += (this.FFNxDebugTool_MouseEnter);
+            FFNxDebugTool.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxDebugTool.Cursor = Cursors.Hand;
+            FFNxDebugTool.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxDebugTool.Location = new Point(10, 647);
+            FFNxDebugTool.Name = "FFNxDebugTool";
+            FFNxDebugTool.Size = new Size(325, 19);
+            FFNxDebugTool.TabIndex = 36;
+            FFNxDebugTool.Text = "Outil de debug";
+            FFNxDebugTool.UseVisualStyleBackColor = false;
+            FFNxDebugTool.MouseEnter += FFNxDebugTool_MouseEnter;
             // 
             // FFNxFootSteps
             // 
-            this.FFNxFootSteps.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxFootSteps.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxFootSteps.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxFootSteps.Location = (new global::System.Drawing.Point(10, 401));
-            this.FFNxFootSteps.Name = ("FFNxFootSteps");
-            this.FFNxFootSteps.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNxFootSteps.TabIndex = (35);
-            this.FFNxFootSteps.Text = ("Activer les bruits de pas");
-            this.FFNxFootSteps.UseVisualStyleBackColor = (false);
-            this.FFNxFootSteps.MouseEnter += (this.FFNxFootSteps_MouseEnter);
+            FFNxFootSteps.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxFootSteps.Cursor = Cursors.Hand;
+            FFNxFootSteps.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxFootSteps.Location = new Point(10, 401);
+            FFNxFootSteps.Name = "FFNxFootSteps";
+            FFNxFootSteps.Size = new Size(325, 19);
+            FFNxFootSteps.TabIndex = 35;
+            FFNxFootSteps.Text = "Activer les bruits de pas";
+            FFNxFootSteps.UseVisualStyleBackColor = false;
+            FFNxFootSteps.MouseEnter += FFNxFootSteps_MouseEnter;
             // 
             // FFNxLogs
             // 
-            this.FFNxLogs.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxLogs.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxLogs.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxLogs.Location = (new global::System.Drawing.Point(10, 669));
-            this.FFNxLogs.Name = ("FFNxLogs");
-            this.FFNxLogs.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNxLogs.TabIndex = (34);
-            this.FFNxLogs.Text = ("Logs complets");
-            this.FFNxLogs.UseVisualStyleBackColor = (false);
-            this.FFNxLogs.MouseEnter += (this.FFNxLogs_MouseEnter);
+            FFNxLogs.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxLogs.Cursor = Cursors.Hand;
+            FFNxLogs.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxLogs.Location = new Point(10, 669);
+            FFNxLogs.Name = "FFNxLogs";
+            FFNxLogs.Size = new Size(325, 19);
+            FFNxLogs.TabIndex = 34;
+            FFNxLogs.Text = "Logs complets";
+            FFNxLogs.UseVisualStyleBackColor = false;
+            FFNxLogs.MouseEnter += FFNxLogs_MouseEnter;
             // 
             // FFNxGroupSpeedhack
             // 
-            this.FFNxGroupSpeedhack.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupSpeedhack.Controls.Add(this.FFNxSpeedhackMax);
-            this.FFNxGroupSpeedhack.Controls.Add(this.FFNxSpeedhackMin);
-            this.FFNxGroupSpeedhack.Controls.Add(this.FFNxSpeedhackStep);
-            this.FFNxGroupSpeedhack.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupSpeedhack.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupSpeedhack.Location = (new global::System.Drawing.Point(10, 429));
-            this.FFNxGroupSpeedhack.Name = ("FFNxGroupSpeedhack");
-            this.FFNxGroupSpeedhack.Size = (new global::System.Drawing.Size(325, 59));
-            this.FFNxGroupSpeedhack.TabIndex = (33);
-            this.FFNxGroupSpeedhack.TabStop = (false);
-            this.FFNxGroupSpeedhack.Text = ("Speedhack (step, minimum, maximum)");
-            this.FFNxGroupSpeedhack.Click += (this.getMousePos);
-            this.FFNxGroupSpeedhack.MouseEnter += (this.FFNxGroupSpeedhack_MouseEnter);
+            FFNxGroupSpeedhack.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackMax);
+            FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackMin);
+            FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackStep);
+            FFNxGroupSpeedhack.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupSpeedhack.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupSpeedhack.Location = new Point(10, 429);
+            FFNxGroupSpeedhack.Name = "FFNxGroupSpeedhack";
+            FFNxGroupSpeedhack.Size = new Size(325, 59);
+            FFNxGroupSpeedhack.TabIndex = 33;
+            FFNxGroupSpeedhack.TabStop = false;
+            FFNxGroupSpeedhack.Text = "Speedhack (step, minimum, maximum)";
+            FFNxGroupSpeedhack.Click += getMousePos;
+            FFNxGroupSpeedhack.MouseEnter += FFNxGroupSpeedhack_MouseEnter;
             // 
             // FFNxSpeedhackMax
             // 
-            this.FFNxSpeedhackMax.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxSpeedhackMax.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxSpeedhackMax.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxSpeedhackMax.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxSpeedhackMax.FormattingEnabled = (true);
-            this.FFNxSpeedhackMax.Location = (new global::System.Drawing.Point(215, 22));
-            this.FFNxSpeedhackMax.Name = ("FFNxSpeedhackMax");
-            this.FFNxSpeedhackMax.Size = (new global::System.Drawing.Size(99, 23));
-            this.FFNxSpeedhackMax.TabIndex = (2);
-            this.FFNxSpeedhackMax.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxSpeedhackMax.Click += (this.getMousePos);
+            FFNxSpeedhackMax.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxSpeedhackMax.Cursor = Cursors.Hand;
+            FFNxSpeedhackMax.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxSpeedhackMax.ForeColor = Color.White;
+            FFNxSpeedhackMax.FormattingEnabled = true;
+            FFNxSpeedhackMax.Location = new Point(215, 22);
+            FFNxSpeedhackMax.Name = "FFNxSpeedhackMax";
+            FFNxSpeedhackMax.Size = new Size(99, 23);
+            FFNxSpeedhackMax.TabIndex = 2;
+            FFNxSpeedhackMax.SelectedIndexChanged += setMousePos;
+            FFNxSpeedhackMax.Click += getMousePos;
             // 
             // FFNxSpeedhackMin
             // 
-            this.FFNxSpeedhackMin.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxSpeedhackMin.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxSpeedhackMin.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxSpeedhackMin.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxSpeedhackMin.FormattingEnabled = (true);
-            this.FFNxSpeedhackMin.Location = (new global::System.Drawing.Point(112, 22));
-            this.FFNxSpeedhackMin.Name = ("FFNxSpeedhackMin");
-            this.FFNxSpeedhackMin.Size = (new global::System.Drawing.Size(99, 23));
-            this.FFNxSpeedhackMin.TabIndex = (1);
-            this.FFNxSpeedhackMin.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxSpeedhackMin.Click += (this.getMousePos);
+            FFNxSpeedhackMin.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxSpeedhackMin.Cursor = Cursors.Hand;
+            FFNxSpeedhackMin.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxSpeedhackMin.ForeColor = Color.White;
+            FFNxSpeedhackMin.FormattingEnabled = true;
+            FFNxSpeedhackMin.Location = new Point(112, 22);
+            FFNxSpeedhackMin.Name = "FFNxSpeedhackMin";
+            FFNxSpeedhackMin.Size = new Size(99, 23);
+            FFNxSpeedhackMin.TabIndex = 1;
+            FFNxSpeedhackMin.SelectedIndexChanged += setMousePos;
+            FFNxSpeedhackMin.Click += getMousePos;
             // 
             // FFNxSpeedhackStep
             // 
-            this.FFNxSpeedhackStep.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxSpeedhackStep.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxSpeedhackStep.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxSpeedhackStep.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxSpeedhackStep.FormattingEnabled = (true);
-            this.FFNxSpeedhackStep.Location = (new global::System.Drawing.Point(9, 22));
-            this.FFNxSpeedhackStep.Name = ("FFNxSpeedhackStep");
-            this.FFNxSpeedhackStep.Size = (new global::System.Drawing.Size(99, 23));
-            this.FFNxSpeedhackStep.TabIndex = (0);
-            this.FFNxSpeedhackStep.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxSpeedhackStep.Click += (this.getMousePos);
+            FFNxSpeedhackStep.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxSpeedhackStep.Cursor = Cursors.Hand;
+            FFNxSpeedhackStep.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxSpeedhackStep.ForeColor = Color.White;
+            FFNxSpeedhackStep.FormattingEnabled = true;
+            FFNxSpeedhackStep.Location = new Point(9, 22);
+            FFNxSpeedhackStep.Name = "FFNxSpeedhackStep";
+            FFNxSpeedhackStep.Size = new Size(99, 23);
+            FFNxSpeedhackStep.TabIndex = 0;
+            FFNxSpeedhackStep.SelectedIndexChanged += setMousePos;
+            FFNxSpeedhackStep.Click += getMousePos;
             // 
             // FFNxGroupControllerDeathzones
             // 
-            this.FFNxGroupControllerDeathzones.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupControllerDeathzones.Controls.Add(this.FFNxContolerDeathzoneRT);
-            this.FFNxGroupControllerDeathzones.Controls.Add(this.FFNxContolerDeathzoneLT);
-            this.FFNxGroupControllerDeathzones.Controls.Add(this.FFNxContolerDeathzoneStick);
-            this.FFNxGroupControllerDeathzones.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupControllerDeathzones.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupControllerDeathzones.Location = (new global::System.Drawing.Point(10, 491));
-            this.FFNxGroupControllerDeathzones.Name = ("FFNxGroupControllerDeathzones");
-            this.FFNxGroupControllerDeathzones.Size = (new global::System.Drawing.Size(325, 59));
-            this.FFNxGroupControllerDeathzones.TabIndex = (32);
-            this.FFNxGroupControllerDeathzones.TabStop = (false);
-            this.FFNxGroupControllerDeathzones.Text = ("Zône morte de la manette (stick, LT, RT)");
-            this.FFNxGroupControllerDeathzones.Click += (this.getMousePos);
-            this.FFNxGroupControllerDeathzones.MouseEnter += (this.FFNxGroupControllerDeathzones_MouseEnter);
+            FFNxGroupControllerDeathzones.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneRT);
+            FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneLT);
+            FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneStick);
+            FFNxGroupControllerDeathzones.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupControllerDeathzones.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupControllerDeathzones.Location = new Point(10, 491);
+            FFNxGroupControllerDeathzones.Name = "FFNxGroupControllerDeathzones";
+            FFNxGroupControllerDeathzones.Size = new Size(325, 59);
+            FFNxGroupControllerDeathzones.TabIndex = 32;
+            FFNxGroupControllerDeathzones.TabStop = false;
+            FFNxGroupControllerDeathzones.Text = "Zône morte de la manette (stick, LT, RT)";
+            FFNxGroupControllerDeathzones.Click += getMousePos;
+            FFNxGroupControllerDeathzones.MouseEnter += FFNxGroupControllerDeathzones_MouseEnter;
             // 
             // FFNxContolerDeathzoneRT
             // 
-            this.FFNxContolerDeathzoneRT.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxContolerDeathzoneRT.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxContolerDeathzoneRT.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxContolerDeathzoneRT.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxContolerDeathzoneRT.FormattingEnabled = (true);
-            this.FFNxContolerDeathzoneRT.Location = (new global::System.Drawing.Point(215, 22));
-            this.FFNxContolerDeathzoneRT.Name = ("FFNxContolerDeathzoneRT");
-            this.FFNxContolerDeathzoneRT.Size = (new global::System.Drawing.Size(99, 23));
-            this.FFNxContolerDeathzoneRT.TabIndex = (2);
-            this.FFNxContolerDeathzoneRT.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxContolerDeathzoneRT.Click += (this.getMousePos);
+            FFNxContolerDeathzoneRT.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxContolerDeathzoneRT.Cursor = Cursors.Hand;
+            FFNxContolerDeathzoneRT.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxContolerDeathzoneRT.ForeColor = Color.White;
+            FFNxContolerDeathzoneRT.FormattingEnabled = true;
+            FFNxContolerDeathzoneRT.Location = new Point(215, 22);
+            FFNxContolerDeathzoneRT.Name = "FFNxContolerDeathzoneRT";
+            FFNxContolerDeathzoneRT.Size = new Size(99, 23);
+            FFNxContolerDeathzoneRT.TabIndex = 2;
+            FFNxContolerDeathzoneRT.SelectedIndexChanged += setMousePos;
+            FFNxContolerDeathzoneRT.Click += getMousePos;
             // 
             // FFNxContolerDeathzoneLT
             // 
-            this.FFNxContolerDeathzoneLT.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxContolerDeathzoneLT.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxContolerDeathzoneLT.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxContolerDeathzoneLT.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxContolerDeathzoneLT.FormattingEnabled = (true);
-            this.FFNxContolerDeathzoneLT.Location = (new global::System.Drawing.Point(112, 23));
-            this.FFNxContolerDeathzoneLT.Name = ("FFNxContolerDeathzoneLT");
-            this.FFNxContolerDeathzoneLT.Size = (new global::System.Drawing.Size(99, 23));
-            this.FFNxContolerDeathzoneLT.TabIndex = (1);
-            this.FFNxContolerDeathzoneLT.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxContolerDeathzoneLT.Click += (this.getMousePos);
+            FFNxContolerDeathzoneLT.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxContolerDeathzoneLT.Cursor = Cursors.Hand;
+            FFNxContolerDeathzoneLT.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxContolerDeathzoneLT.ForeColor = Color.White;
+            FFNxContolerDeathzoneLT.FormattingEnabled = true;
+            FFNxContolerDeathzoneLT.Location = new Point(112, 23);
+            FFNxContolerDeathzoneLT.Name = "FFNxContolerDeathzoneLT";
+            FFNxContolerDeathzoneLT.Size = new Size(99, 23);
+            FFNxContolerDeathzoneLT.TabIndex = 1;
+            FFNxContolerDeathzoneLT.SelectedIndexChanged += setMousePos;
+            FFNxContolerDeathzoneLT.Click += getMousePos;
             // 
             // FFNxContolerDeathzoneStick
             // 
-            this.FFNxContolerDeathzoneStick.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxContolerDeathzoneStick.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxContolerDeathzoneStick.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxContolerDeathzoneStick.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxContolerDeathzoneStick.FormattingEnabled = (true);
-            this.FFNxContolerDeathzoneStick.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxContolerDeathzoneStick.Name = ("FFNxContolerDeathzoneStick");
-            this.FFNxContolerDeathzoneStick.Size = (new global::System.Drawing.Size(99, 23));
-            this.FFNxContolerDeathzoneStick.TabIndex = (0);
-            this.FFNxContolerDeathzoneStick.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxContolerDeathzoneStick.Click += (this.getMousePos);
+            FFNxContolerDeathzoneStick.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxContolerDeathzoneStick.Cursor = Cursors.Hand;
+            FFNxContolerDeathzoneStick.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxContolerDeathzoneStick.ForeColor = Color.White;
+            FFNxContolerDeathzoneStick.FormattingEnabled = true;
+            FFNxContolerDeathzoneStick.Location = new Point(9, 23);
+            FFNxContolerDeathzoneStick.Name = "FFNxContolerDeathzoneStick";
+            FFNxContolerDeathzoneStick.Size = new Size(99, 23);
+            FFNxContolerDeathzoneStick.TabIndex = 0;
+            FFNxContolerDeathzoneStick.SelectedIndexChanged += setMousePos;
+            FFNxContolerDeathzoneStick.Click += getMousePos;
             // 
             // FFNxGroupAudioSample
             // 
-            this.FFNxGroupAudioSample.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupAudioSample.Controls.Add(this.FFNxAudioSample);
-            this.FFNxGroupAudioSample.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupAudioSample.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupAudioSample.Location = (new global::System.Drawing.Point(153, 317));
-            this.FFNxGroupAudioSample.Name = ("FFNxGroupAudioSample");
-            this.FFNxGroupAudioSample.Size = (new global::System.Drawing.Size(182, 59));
-            this.FFNxGroupAudioSample.TabIndex = (31);
-            this.FFNxGroupAudioSample.TabStop = (false);
-            this.FFNxGroupAudioSample.Text = ("Echantillonnage audio");
-            this.FFNxGroupAudioSample.Click += (this.getMousePos);
-            this.FFNxGroupAudioSample.MouseEnter += (this.FFNxGroupAudioSample_MouseEnter);
+            FFNxGroupAudioSample.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupAudioSample.Controls.Add(FFNxAudioSample);
+            FFNxGroupAudioSample.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAudioSample.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupAudioSample.Location = new Point(153, 317);
+            FFNxGroupAudioSample.Name = "FFNxGroupAudioSample";
+            FFNxGroupAudioSample.Size = new Size(182, 59);
+            FFNxGroupAudioSample.TabIndex = 31;
+            FFNxGroupAudioSample.TabStop = false;
+            FFNxGroupAudioSample.Text = "Echantillonnage audio";
+            FFNxGroupAudioSample.Click += getMousePos;
+            FFNxGroupAudioSample.MouseEnter += FFNxGroupAudioSample_MouseEnter;
             // 
             // FFNxAudioSample
             // 
-            this.FFNxAudioSample.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxAudioSample.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxAudioSample.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxAudioSample.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxAudioSample.FormattingEnabled = (true);
-            this.FFNxAudioSample.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxAudioSample.Name = ("FFNxAudioSample");
-            this.FFNxAudioSample.Size = (new global::System.Drawing.Size(162, 23));
-            this.FFNxAudioSample.TabIndex = (0);
-            this.FFNxAudioSample.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxAudioSample.Click += (this.getMousePos);
+            FFNxAudioSample.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxAudioSample.Cursor = Cursors.Hand;
+            FFNxAudioSample.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxAudioSample.ForeColor = Color.White;
+            FFNxAudioSample.FormattingEnabled = true;
+            FFNxAudioSample.Location = new Point(9, 23);
+            FFNxAudioSample.Name = "FFNxAudioSample";
+            FFNxAudioSample.Size = new Size(162, 23);
+            FFNxAudioSample.TabIndex = 0;
+            FFNxAudioSample.SelectedIndexChanged += setMousePos;
+            FFNxAudioSample.Click += getMousePos;
             // 
             // FFNxGroupIR
             // 
-            this.FFNxGroupIR.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupIR.Controls.Add(this.FFNxIR);
-            this.FFNxGroupIR.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupIR.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupIR.Location = (new global::System.Drawing.Point(11, 143));
-            this.FFNxGroupIR.Name = ("FFNxGroupIR");
-            this.FFNxGroupIR.Size = (new global::System.Drawing.Size(139, 59));
-            this.FFNxGroupIR.TabIndex = (30);
-            this.FFNxGroupIR.TabStop = (false);
-            this.FFNxGroupIR.Text = ("Résolution interne");
-            this.FFNxGroupIR.Click += (this.getMousePos);
-            this.FFNxGroupIR.MouseEnter += (this.FFNxGroupIR_MouseEnter);
+            FFNxGroupIR.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupIR.Controls.Add(FFNxIR);
+            FFNxGroupIR.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupIR.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupIR.Location = new Point(11, 143);
+            FFNxGroupIR.Name = "FFNxGroupIR";
+            FFNxGroupIR.Size = new Size(139, 59);
+            FFNxGroupIR.TabIndex = 30;
+            FFNxGroupIR.TabStop = false;
+            FFNxGroupIR.Text = "Résolution interne";
+            FFNxGroupIR.Click += getMousePos;
+            FFNxGroupIR.MouseEnter += FFNxGroupIR_MouseEnter;
             // 
             // FFNxIR
             // 
-            this.FFNxIR.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxIR.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxIR.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxIR.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxIR.FormattingEnabled = (true);
-            this.FFNxIR.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxIR.Name = ("FFNxIR");
-            this.FFNxIR.Size = (new global::System.Drawing.Size(121, 23));
-            this.FFNxIR.TabIndex = (0);
-            this.FFNxIR.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxIR.Click += (this.getMousePos);
+            FFNxIR.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxIR.Cursor = Cursors.Hand;
+            FFNxIR.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxIR.ForeColor = Color.White;
+            FFNxIR.FormattingEnabled = true;
+            FFNxIR.Location = new Point(9, 23);
+            FFNxIR.Name = "FFNxIR";
+            FFNxIR.Size = new Size(121, 23);
+            FFNxIR.TabIndex = 0;
+            FFNxIR.SelectedIndexChanged += setMousePos;
+            FFNxIR.Click += getMousePos;
             // 
             // FFNxGroupAudioChannels
             // 
-            this.FFNxGroupAudioChannels.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupAudioChannels.Controls.Add(this.FFNxAudioChannels);
-            this.FFNxGroupAudioChannels.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupAudioChannels.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupAudioChannels.Location = (new global::System.Drawing.Point(10, 317));
-            this.FFNxGroupAudioChannels.Name = ("FFNxGroupAudioChannels");
-            this.FFNxGroupAudioChannels.Size = (new global::System.Drawing.Size(140, 59));
-            this.FFNxGroupAudioChannels.TabIndex = (29);
-            this.FFNxGroupAudioChannels.TabStop = (false);
-            this.FFNxGroupAudioChannels.Text = ("Canaux audio");
-            this.FFNxGroupAudioChannels.Click += (this.getMousePos);
-            this.FFNxGroupAudioChannels.MouseEnter += (this.FFNxGroupAudioChannels_MouseEnter);
+            FFNxGroupAudioChannels.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupAudioChannels.Controls.Add(FFNxAudioChannels);
+            FFNxGroupAudioChannels.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAudioChannels.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupAudioChannels.Location = new Point(10, 317);
+            FFNxGroupAudioChannels.Name = "FFNxGroupAudioChannels";
+            FFNxGroupAudioChannels.Size = new Size(140, 59);
+            FFNxGroupAudioChannels.TabIndex = 29;
+            FFNxGroupAudioChannels.TabStop = false;
+            FFNxGroupAudioChannels.Text = "Canaux audio";
+            FFNxGroupAudioChannels.Click += getMousePos;
+            FFNxGroupAudioChannels.MouseEnter += FFNxGroupAudioChannels_MouseEnter;
             // 
             // FFNxAudioChannels
             // 
-            this.FFNxAudioChannels.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxAudioChannels.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxAudioChannels.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxAudioChannels.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxAudioChannels.FormattingEnabled = (true);
-            this.FFNxAudioChannels.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxAudioChannels.Name = ("FFNxAudioChannels");
-            this.FFNxAudioChannels.Size = (new global::System.Drawing.Size(122, 23));
-            this.FFNxAudioChannels.TabIndex = (0);
-            this.FFNxAudioChannels.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxAudioChannels.Click += (this.getMousePos);
+            FFNxAudioChannels.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxAudioChannels.Cursor = Cursors.Hand;
+            FFNxAudioChannels.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxAudioChannels.ForeColor = Color.White;
+            FFNxAudioChannels.FormattingEnabled = true;
+            FFNxAudioChannels.Location = new Point(9, 23);
+            FFNxAudioChannels.Name = "FFNxAudioChannels";
+            FFNxAudioChannels.Size = new Size(122, 23);
+            FFNxAudioChannels.TabIndex = 0;
+            FFNxAudioChannels.SelectedIndexChanged += setMousePos;
+            FFNxAudioChannels.Click += getMousePos;
             // 
             // FFNxGroupAA
             // 
-            this.FFNxGroupAA.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupAA.Controls.Add(this.FFNxAA);
-            this.FFNxGroupAA.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupAA.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupAA.Location = (new global::System.Drawing.Point(153, 143));
-            this.FFNxGroupAA.Name = ("FFNxGroupAA");
-            this.FFNxGroupAA.Size = (new global::System.Drawing.Size(182, 59));
-            this.FFNxGroupAA.TabIndex = (28);
-            this.FFNxGroupAA.TabStop = (false);
-            this.FFNxGroupAA.Text = ("Anti-Aliasing");
-            this.FFNxGroupAA.Click += (this.getMousePos);
-            this.FFNxGroupAA.MouseEnter += (this.FFNxGroupAA_MouseEnter);
+            FFNxGroupAA.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupAA.Controls.Add(FFNxAA);
+            FFNxGroupAA.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAA.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupAA.Location = new Point(153, 143);
+            FFNxGroupAA.Name = "FFNxGroupAA";
+            FFNxGroupAA.Size = new Size(182, 59);
+            FFNxGroupAA.TabIndex = 28;
+            FFNxGroupAA.TabStop = false;
+            FFNxGroupAA.Text = "Anti-Aliasing";
+            FFNxGroupAA.Click += getMousePos;
+            FFNxGroupAA.MouseEnter += FFNxGroupAA_MouseEnter;
             // 
             // FFNxAA
             // 
-            this.FFNxAA.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxAA.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxAA.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxAA.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxAA.FormattingEnabled = (true);
-            this.FFNxAA.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxAA.Name = ("FFNxAA");
-            this.FFNxAA.Size = (new global::System.Drawing.Size(162, 23));
-            this.FFNxAA.TabIndex = (0);
-            this.FFNxAA.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxAA.Click += (this.getMousePos);
+            FFNxAA.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxAA.Cursor = Cursors.Hand;
+            FFNxAA.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxAA.ForeColor = Color.White;
+            FFNxAA.FormattingEnabled = true;
+            FFNxAA.Location = new Point(9, 23);
+            FFNxAA.Name = "FFNxAA";
+            FFNxAA.Size = new Size(162, 23);
+            FFNxAA.TabIndex = 0;
+            FFNxAA.SelectedIndexChanged += setMousePos;
+            FFNxAA.Click += getMousePos;
             // 
             // FFNxGroupResolution
             // 
-            this.FFNxGroupResolution.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupResolution.Controls.Add(this.FFNxResolution);
-            this.FFNxGroupResolution.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupResolution.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupResolution.Location = (new global::System.Drawing.Point(11, 81));
-            this.FFNxGroupResolution.Name = ("FFNxGroupResolution");
-            this.FFNxGroupResolution.Size = (new global::System.Drawing.Size(139, 59));
-            this.FFNxGroupResolution.TabIndex = (27);
-            this.FFNxGroupResolution.TabStop = (false);
-            this.FFNxGroupResolution.Text = ("Résolution d'écran");
-            this.FFNxGroupResolution.Click += (this.getMousePos);
-            this.FFNxGroupResolution.MouseEnter += (this.FFNxGroupResolution_MouseEnter);
+            FFNxGroupResolution.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupResolution.Controls.Add(FFNxResolution);
+            FFNxGroupResolution.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupResolution.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupResolution.Location = new Point(11, 81);
+            FFNxGroupResolution.Name = "FFNxGroupResolution";
+            FFNxGroupResolution.Size = new Size(139, 59);
+            FFNxGroupResolution.TabIndex = 27;
+            FFNxGroupResolution.TabStop = false;
+            FFNxGroupResolution.Text = "Résolution d'écran";
+            FFNxGroupResolution.Click += getMousePos;
+            FFNxGroupResolution.MouseEnter += FFNxGroupResolution_MouseEnter;
             // 
             // FFNxResolution
             // 
-            this.FFNxResolution.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxResolution.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxResolution.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxResolution.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxResolution.FormattingEnabled = (true);
-            this.FFNxResolution.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxResolution.Name = ("FFNxResolution");
-            this.FFNxResolution.Size = (new global::System.Drawing.Size(121, 23));
-            this.FFNxResolution.TabIndex = (0);
-            this.FFNxResolution.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxResolution.Click += (this.getMousePos);
+            FFNxResolution.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxResolution.Cursor = Cursors.Hand;
+            FFNxResolution.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxResolution.ForeColor = Color.White;
+            FFNxResolution.FormattingEnabled = true;
+            FFNxResolution.Location = new Point(9, 23);
+            FFNxResolution.Name = "FFNxResolution";
+            FFNxResolution.Size = new Size(121, 23);
+            FFNxResolution.TabIndex = 0;
+            FFNxResolution.SelectedIndexChanged += setMousePos;
+            FFNxResolution.Click += getMousePos;
             // 
             // FFNxGroupHDR
             // 
-            this.FFNxGroupHDR.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupHDR.Controls.Add(this.FFNxHDR);
-            this.FFNxGroupHDR.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupHDR.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupHDR.Location = (new global::System.Drawing.Point(10, 205));
-            this.FFNxGroupHDR.Name = ("FFNxGroupHDR");
-            this.FFNxGroupHDR.Size = (new global::System.Drawing.Size(140, 59));
-            this.FFNxGroupHDR.TabIndex = (26);
-            this.FFNxGroupHDR.TabStop = (false);
-            this.FFNxGroupHDR.Text = ("HDR Nits");
-            this.FFNxGroupHDR.Click += (this.getMousePos);
-            this.FFNxGroupHDR.MouseEnter += (this.FFNxGroupHDR_MouseEnter);
+            FFNxGroupHDR.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupHDR.Controls.Add(FFNxHDR);
+            FFNxGroupHDR.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupHDR.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupHDR.Location = new Point(10, 205);
+            FFNxGroupHDR.Name = "FFNxGroupHDR";
+            FFNxGroupHDR.Size = new Size(140, 59);
+            FFNxGroupHDR.TabIndex = 26;
+            FFNxGroupHDR.TabStop = false;
+            FFNxGroupHDR.Text = "HDR Nits";
+            FFNxGroupHDR.Click += getMousePos;
+            FFNxGroupHDR.MouseEnter += FFNxGroupHDR_MouseEnter;
             // 
             // FFNxHDR
             // 
-            this.FFNxHDR.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxHDR.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxHDR.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxHDR.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxHDR.FormattingEnabled = (true);
-            this.FFNxHDR.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxHDR.Name = ("FFNxHDR");
-            this.FFNxHDR.Size = (new global::System.Drawing.Size(122, 23));
-            this.FFNxHDR.TabIndex = (0);
-            this.FFNxHDR.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxHDR.Click += (this.getMousePos);
+            FFNxHDR.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxHDR.Cursor = Cursors.Hand;
+            FFNxHDR.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxHDR.ForeColor = Color.White;
+            FFNxHDR.FormattingEnabled = true;
+            FFNxHDR.Location = new Point(9, 23);
+            FFNxHDR.Name = "FFNxHDR";
+            FFNxHDR.Size = new Size(122, 23);
+            FFNxHDR.TabIndex = 0;
+            FFNxHDR.SelectedIndexChanged += setMousePos;
+            FFNxHDR.Click += getMousePos;
             // 
             // FFNxGroupRatio
             // 
-            this.FFNxGroupRatio.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupRatio.Controls.Add(this.FFNxRatio);
-            this.FFNxGroupRatio.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupRatio.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupRatio.Location = (new global::System.Drawing.Point(153, 81));
-            this.FFNxGroupRatio.Name = ("FFNxGroupRatio");
-            this.FFNxGroupRatio.Size = (new global::System.Drawing.Size(182, 59));
-            this.FFNxGroupRatio.TabIndex = (25);
-            this.FFNxGroupRatio.TabStop = (false);
-            this.FFNxGroupRatio.Text = ("Format d'affichage");
-            this.FFNxGroupRatio.Click += (this.getMousePos);
-            this.FFNxGroupRatio.MouseEnter += (this.FFNxGroupRatio_MouseEnter);
+            FFNxGroupRatio.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupRatio.Controls.Add(FFNxRatio);
+            FFNxGroupRatio.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupRatio.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupRatio.Location = new Point(153, 81);
+            FFNxGroupRatio.Name = "FFNxGroupRatio";
+            FFNxGroupRatio.Size = new Size(182, 59);
+            FFNxGroupRatio.TabIndex = 25;
+            FFNxGroupRatio.TabStop = false;
+            FFNxGroupRatio.Text = "Format d'affichage";
+            FFNxGroupRatio.Click += getMousePos;
+            FFNxGroupRatio.MouseEnter += FFNxGroupRatio_MouseEnter;
             // 
             // FFNxRatio
             // 
-            this.FFNxRatio.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxRatio.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxRatio.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxRatio.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxRatio.FormattingEnabled = (true);
-            this.FFNxRatio.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxRatio.Name = ("FFNxRatio");
-            this.FFNxRatio.Size = (new global::System.Drawing.Size(162, 23));
-            this.FFNxRatio.TabIndex = (0);
-            this.FFNxRatio.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxRatio.Click += (this.getMousePos);
+            FFNxRatio.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxRatio.Cursor = Cursors.Hand;
+            FFNxRatio.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxRatio.ForeColor = Color.White;
+            FFNxRatio.FormattingEnabled = true;
+            FFNxRatio.Location = new Point(9, 23);
+            FFNxRatio.Name = "FFNxRatio";
+            FFNxRatio.Size = new Size(162, 23);
+            FFNxRatio.TabIndex = 0;
+            FFNxRatio.SelectedIndexChanged += setMousePos;
+            FFNxRatio.Click += getMousePos;
             // 
             // FFNxGroupScreen
             // 
-            this.FFNxGroupScreen.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroupScreen.Controls.Add(this.FFNxScreen);
-            this.FFNxGroupScreen.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroupScreen.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroupScreen.Location = (new global::System.Drawing.Point(153, 19));
-            this.FFNxGroupScreen.Name = ("FFNxGroupScreen");
-            this.FFNxGroupScreen.Size = (new global::System.Drawing.Size(182, 59));
-            this.FFNxGroupScreen.TabIndex = (24);
-            this.FFNxGroupScreen.TabStop = (false);
-            this.FFNxGroupScreen.Text = ("Affichage");
-            this.FFNxGroupScreen.Click += (this.getMousePos);
-            this.FFNxGroupScreen.MouseEnter += (this.FFNxGroupScreen_MouseEnter);
+            FFNxGroupScreen.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroupScreen.Controls.Add(FFNxScreen);
+            FFNxGroupScreen.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupScreen.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroupScreen.Location = new Point(153, 19);
+            FFNxGroupScreen.Name = "FFNxGroupScreen";
+            FFNxGroupScreen.Size = new Size(182, 59);
+            FFNxGroupScreen.TabIndex = 24;
+            FFNxGroupScreen.TabStop = false;
+            FFNxGroupScreen.Text = "Affichage";
+            FFNxGroupScreen.Click += getMousePos;
+            FFNxGroupScreen.MouseEnter += FFNxGroupScreen_MouseEnter;
             // 
             // FFNxScreen
             // 
-            this.FFNxScreen.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNxScreen.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxScreen.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNxScreen.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNxScreen.FormattingEnabled = (true);
-            this.FFNxScreen.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNxScreen.Name = ("FFNxScreen");
-            this.FFNxScreen.Size = (new global::System.Drawing.Size(161, 23));
-            this.FFNxScreen.TabIndex = (0);
-            this.FFNxScreen.SelectedIndexChanged += (this.setMousePos);
-            this.FFNxScreen.Click += (this.getMousePos);
+            FFNxScreen.BackColor = Color.FromArgb(53, 60, 70);
+            FFNxScreen.Cursor = Cursors.Hand;
+            FFNxScreen.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNxScreen.ForeColor = Color.White;
+            FFNxScreen.FormattingEnabled = true;
+            FFNxScreen.Location = new Point(9, 23);
+            FFNxScreen.Name = "FFNxScreen";
+            FFNxScreen.Size = new Size(161, 23);
+            FFNxScreen.TabIndex = 0;
+            FFNxScreen.SelectedIndexChanged += setMousePos;
+            FFNxScreen.Click += getMousePos;
             // 
             // FFNxVsync
             // 
-            this.FFNxVsync.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxVsync.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxVsync.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxVsync.Location = (new global::System.Drawing.Point(10, 289));
-            this.FFNxVsync.Name = ("FFNxVsync");
-            this.FFNxVsync.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNxVsync.TabIndex = (23);
-            this.FFNxVsync.Text = ("Synchronisation verticale");
-            this.FFNxVsync.UseVisualStyleBackColor = (false);
-            this.FFNxVsync.MouseEnter += (this.FFNxVsync_MouseEnter);
+            FFNxVsync.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxVsync.Cursor = Cursors.Hand;
+            FFNxVsync.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxVsync.Location = new Point(10, 289);
+            FFNxVsync.Name = "FFNxVsync";
+            FFNxVsync.Size = new Size(325, 19);
+            FFNxVsync.TabIndex = 23;
+            FFNxVsync.Text = "Synchronisation verticale";
+            FFNxVsync.UseVisualStyleBackColor = false;
+            FFNxVsync.MouseEnter += FFNxVsync_MouseEnter;
             // 
             // FFNXMusicResume
             // 
-            this.FFNXMusicResume.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNXMusicResume.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNXMusicResume.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNXMusicResume.Location = (new global::System.Drawing.Point(10, 379));
-            this.FFNXMusicResume.Name = ("FFNXMusicResume");
-            this.FFNXMusicResume.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNXMusicResume.TabIndex = (22);
-            this.FFNXMusicResume.Text = ("Reprendre les musiques");
-            this.FFNXMusicResume.UseVisualStyleBackColor = (false);
-            this.FFNXMusicResume.MouseEnter += (this.FFNXMusicResume_MouseEnter);
+            FFNXMusicResume.BackColor = Color.FromArgb(89, 98, 111);
+            FFNXMusicResume.Cursor = Cursors.Hand;
+            FFNXMusicResume.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNXMusicResume.Location = new Point(10, 379);
+            FFNXMusicResume.Name = "FFNXMusicResume";
+            FFNXMusicResume.Size = new Size(325, 19);
+            FFNXMusicResume.TabIndex = 22;
+            FFNXMusicResume.Text = "Reprendre les musiques";
+            FFNXMusicResume.UseVisualStyleBackColor = false;
+            FFNXMusicResume.MouseEnter += FFNXMusicResume_MouseEnter;
             // 
             // FFNxAnisotropic
             // 
-            this.FFNxAnisotropic.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxAnisotropic.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxAnisotropic.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxAnisotropic.Location = (new global::System.Drawing.Point(10, 267));
-            this.FFNxAnisotropic.Name = ("FFNxAnisotropic");
-            this.FFNxAnisotropic.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNxAnisotropic.TabIndex = (21);
-            this.FFNxAnisotropic.Text = ("Filtrage anisotrope");
-            this.FFNxAnisotropic.UseVisualStyleBackColor = (false);
-            this.FFNxAnisotropic.MouseEnter += (this.FFNxAnisotropic_MouseEnter);
+            FFNxAnisotropic.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxAnisotropic.Cursor = Cursors.Hand;
+            FFNxAnisotropic.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAnisotropic.Location = new Point(10, 267);
+            FFNxAnisotropic.Name = "FFNxAnisotropic";
+            FFNxAnisotropic.Size = new Size(325, 19);
+            FFNxAnisotropic.TabIndex = 21;
+            FFNxAnisotropic.Text = "Filtrage anisotrope";
+            FFNxAnisotropic.UseVisualStyleBackColor = false;
+            FFNxAnisotropic.MouseEnter += FFNxAnisotropic_MouseEnter;
             // 
             // FFNxAnalogController
             // 
-            this.FFNxAnalogController.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxAnalogController.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNxAnalogController.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxAnalogController.Location = (new global::System.Drawing.Point(10, 553));
-            this.FFNxAnalogController.Name = ("FFNxAnalogController");
-            this.FFNxAnalogController.Size = (new global::System.Drawing.Size(169, 19));
-            this.FFNxAnalogController.TabIndex = (19);
-            this.FFNxAnalogController.Text = ("Contôleur analogique");
-            this.FFNxAnalogController.UseVisualStyleBackColor = (false);
-            this.FFNxAnalogController.CheckedChanged += (this.FFNxAnalogController_CheckedChanged);
-            this.FFNxAnalogController.MouseEnter += (this.FFNxAnalogController_MouseEnter);
+            FFNxAnalogController.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxAnalogController.Cursor = Cursors.Hand;
+            FFNxAnalogController.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAnalogController.Location = new Point(10, 553);
+            FFNxAnalogController.Name = "FFNxAnalogController";
+            FFNxAnalogController.Size = new Size(169, 19);
+            FFNxAnalogController.TabIndex = 19;
+            FFNxAnalogController.Text = "Contôleur analogique";
+            FFNxAnalogController.UseVisualStyleBackColor = false;
+            FFNxAnalogController.CheckedChanged += FFNxAnalogController_CheckedChanged;
+            FFNxAnalogController.MouseEnter += FFNxAnalogController_MouseEnter;
             // 
             // FFNXSteamSucces
             // 
-            this.FFNXSteamSucces.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNXSteamSucces.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNXSteamSucces.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNXSteamSucces.Location = (new global::System.Drawing.Point(10, 581));
-            this.FFNXSteamSucces.Name = ("FFNXSteamSucces");
-            this.FFNXSteamSucces.Size = (new global::System.Drawing.Size(325, 19));
-            this.FFNXSteamSucces.TabIndex = (18);
-            this.FFNXSteamSucces.Text = ("Succès Steam");
-            this.FFNXSteamSucces.UseVisualStyleBackColor = (false);
-            this.FFNXSteamSucces.MouseEnter += (this.FFNXSteamSucces_MouseEnter);
+            FFNXSteamSucces.BackColor = Color.FromArgb(89, 98, 111);
+            FFNXSteamSucces.Cursor = Cursors.Hand;
+            FFNXSteamSucces.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNXSteamSucces.Location = new Point(10, 581);
+            FFNXSteamSucces.Name = "FFNXSteamSucces";
+            FFNXSteamSucces.Size = new Size(325, 19);
+            FFNXSteamSucces.TabIndex = 18;
+            FFNXSteamSucces.Text = "Succès Steam";
+            FFNXSteamSucces.UseVisualStyleBackColor = false;
+            FFNXSteamSucces.MouseEnter += FFNXSteamSucces_MouseEnter;
             // 
             // FFNxGroup3dEngine
             // 
-            this.FFNxGroup3dEngine.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(89)), (global::System.Int32)((global::System.Byte)(98)), (global::System.Int32)((global::System.Byte)(111))));
-            this.FFNxGroup3dEngine.Controls.Add(this.FFNx3dEngine);
-            this.FFNxGroup3dEngine.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.FFNxGroup3dEngine.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.FFNxGroup3dEngine.Location = (new global::System.Drawing.Point(11, 19));
-            this.FFNxGroup3dEngine.Name = ("FFNxGroup3dEngine");
-            this.FFNxGroup3dEngine.Size = (new global::System.Drawing.Size(139, 59));
-            this.FFNxGroup3dEngine.TabIndex = (17);
-            this.FFNxGroup3dEngine.TabStop = (false);
-            this.FFNxGroup3dEngine.Text = ("Moteur de rendu");
-            this.FFNxGroup3dEngine.MouseEnter += (this.FFNxGroup3dEngine_MouseEnter);
+            FFNxGroup3dEngine.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGroup3dEngine.Controls.Add(FFNx3dEngine);
+            FFNxGroup3dEngine.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroup3dEngine.ForeColor = Color.FromArgb(224, 224, 224);
+            FFNxGroup3dEngine.Location = new Point(11, 19);
+            FFNxGroup3dEngine.Name = "FFNxGroup3dEngine";
+            FFNxGroup3dEngine.Size = new Size(139, 59);
+            FFNxGroup3dEngine.TabIndex = 17;
+            FFNxGroup3dEngine.TabStop = false;
+            FFNxGroup3dEngine.Text = "Moteur de rendu";
+            FFNxGroup3dEngine.MouseEnter += FFNxGroup3dEngine_MouseEnter;
             // 
             // FFNx3dEngine
             // 
-            this.FFNx3dEngine.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.FFNx3dEngine.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.FFNx3dEngine.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.FFNx3dEngine.ForeColor = (global::System.Drawing.Color.White);
-            this.FFNx3dEngine.FormattingEnabled = (true);
-            this.FFNx3dEngine.Location = (new global::System.Drawing.Point(9, 23));
-            this.FFNx3dEngine.Name = ("FFNx3dEngine");
-            this.FFNx3dEngine.Size = (new global::System.Drawing.Size(121, 23));
-            this.FFNx3dEngine.TabIndex = (0);
-            this.FFNx3dEngine.SelectedIndexChanged += (this.setMousePos);
-            this.FFNx3dEngine.Click += (this.getMousePos);
+            FFNx3dEngine.BackColor = Color.FromArgb(53, 60, 70);
+            FFNx3dEngine.Cursor = Cursors.Hand;
+            FFNx3dEngine.DropDownStyle = ComboBoxStyle.DropDownList;
+            FFNx3dEngine.ForeColor = Color.White;
+            FFNx3dEngine.FormattingEnabled = true;
+            FFNx3dEngine.Location = new Point(9, 23);
+            FFNx3dEngine.Name = "FFNx3dEngine";
+            FFNx3dEngine.Size = new Size(121, 23);
+            FFNx3dEngine.TabIndex = 0;
+            FFNx3dEngine.SelectedIndexChanged += setMousePos;
+            FFNx3dEngine.Click += getMousePos;
             // 
             // menuHelpPanel
             // 
-            this.menuHelpPanel.Controls.Add(this.HelpFrame2);
-            this.menuHelpPanel.Location = (new global::System.Drawing.Point(327, 1600));
-            this.menuHelpPanel.Name = ("menuHelpPanel");
-            this.menuHelpPanel.Size = (new global::System.Drawing.Size(795, 703));
-            this.menuHelpPanel.TabIndex = (15);
+            menuHelpPanel.Controls.Add(HelpFrame2);
+            menuHelpPanel.Location = new Point(327, 1600);
+            menuHelpPanel.Name = "menuHelpPanel";
+            menuHelpPanel.Size = new Size(795, 703);
+            menuHelpPanel.TabIndex = 15;
             // 
             // HelpFrame2
             // 
-            this.HelpFrame2.Controls.Add(this.chooseHelp);
-            this.HelpFrame2.Controls.Add(this.HelpList);
-            this.HelpFrame2.Controls.Add(this.GeneralHelp);
-            this.HelpFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.HelpFrame2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.HelpFrame2.Location = (new global::System.Drawing.Point(3, 4));
-            this.HelpFrame2.Name = ("HelpFrame2");
-            this.HelpFrame2.Size = (new global::System.Drawing.Size(788, 699));
-            this.HelpFrame2.TabIndex = (10);
-            this.HelpFrame2.TabStop = (false);
-            this.HelpFrame2.Text = ("Aide générale");
+            HelpFrame2.Controls.Add(chooseHelp);
+            HelpFrame2.Controls.Add(HelpList);
+            HelpFrame2.Controls.Add(GeneralHelp);
+            HelpFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            HelpFrame2.ForeColor = Color.FromArgb(224, 224, 224);
+            HelpFrame2.Location = new Point(3, 4);
+            HelpFrame2.Name = "HelpFrame2";
+            HelpFrame2.Size = new Size(788, 699);
+            HelpFrame2.TabIndex = 10;
+            HelpFrame2.TabStop = false;
+            HelpFrame2.Text = "Aide générale";
             // 
             // chooseHelp
             // 
-            this.chooseHelp.BackColor = (global::System.Drawing.Color.Transparent);
-            this.chooseHelp.Font = (new global::System.Drawing.Font("Roboto Black", 36F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.chooseHelp.ForeColor = (global::System.Drawing.Color.White);
-            this.chooseHelp.Location = (new global::System.Drawing.Point(14, 51));
-            this.chooseHelp.Name = ("chooseHelp");
-            this.chooseHelp.Size = (new global::System.Drawing.Size(764, 634));
-            this.chooseHelp.TabIndex = (5);
-            this.chooseHelp.Text = ("Choisissez un fichier d'aide dans la liste");
-            this.chooseHelp.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
+            chooseHelp.BackColor = Color.Transparent;
+            chooseHelp.Font = new Font("Roboto Black", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            chooseHelp.ForeColor = Color.White;
+            chooseHelp.Location = new Point(14, 51);
+            chooseHelp.Name = "chooseHelp";
+            chooseHelp.Size = new Size(764, 634);
+            chooseHelp.TabIndex = 5;
+            chooseHelp.Text = "Choisissez un fichier d'aide dans la liste";
+            chooseHelp.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // HelpList
             // 
-            this.HelpList.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(53)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(70))));
-            this.HelpList.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.HelpList.DropDownStyle = (global::System.Windows.Forms.ComboBoxStyle.DropDownList);
-            this.HelpList.ForeColor = (global::System.Drawing.Color.White);
-            this.HelpList.FormattingEnabled = (true);
-            this.HelpList.Location = (new global::System.Drawing.Point(14, 22));
-            this.HelpList.Name = ("HelpList");
-            this.HelpList.Size = (new global::System.Drawing.Size(762, 23));
-            this.HelpList.TabIndex = (1);
-            this.HelpList.SelectedIndexChanged += (this.HelpList_SelectedIndexChanged);
+            HelpList.BackColor = Color.FromArgb(53, 60, 70);
+            HelpList.Cursor = Cursors.Hand;
+            HelpList.DropDownStyle = ComboBoxStyle.DropDownList;
+            HelpList.ForeColor = Color.White;
+            HelpList.FormattingEnabled = true;
+            HelpList.Location = new Point(14, 22);
+            HelpList.Name = "HelpList";
+            HelpList.Size = new Size(762, 23);
+            HelpList.TabIndex = 1;
+            HelpList.SelectedIndexChanged += HelpList_SelectedIndexChanged;
             // 
             // GeneralHelp
             // 
-            this.GeneralHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
-            this.GeneralHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.GeneralHelp.Location = (new global::System.Drawing.Point(14, 51));
-            this.GeneralHelp.Name = ("GeneralHelp");
-            this.GeneralHelp.ReadOnly = (true);
-            this.GeneralHelp.Size = (new global::System.Drawing.Size(762, 634));
-            this.GeneralHelp.TabIndex = (0);
-            this.GeneralHelp.Text = ("");
+            GeneralHelp.BorderStyle = BorderStyle.None;
+            GeneralHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            GeneralHelp.Location = new Point(14, 51);
+            GeneralHelp.Name = "GeneralHelp";
+            GeneralHelp.ReadOnly = true;
+            GeneralHelp.Size = new Size(762, 634);
+            GeneralHelp.TabIndex = 0;
+            GeneralHelp.Text = "";
             // 
             // menuLaunchGamePanel
             // 
-            this.menuLaunchGamePanel.Controls.Add(this.groupBox2);
-            this.menuLaunchGamePanel.Location = (new global::System.Drawing.Point(327, 1600));
-            this.menuLaunchGamePanel.Name = ("menuLaunchGamePanel");
-            this.menuLaunchGamePanel.Size = (new global::System.Drawing.Size(795, 703));
-            this.menuLaunchGamePanel.TabIndex = (16);
+            menuLaunchGamePanel.Controls.Add(groupBox2);
+            menuLaunchGamePanel.Location = new Point(327, 1600);
+            menuLaunchGamePanel.Name = "menuLaunchGamePanel";
+            menuLaunchGamePanel.Size = new Size(795, 703);
+            menuLaunchGamePanel.TabIndex = 16;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.loadingAnimation);
-            this.groupBox2.Controls.Add(this.loadingWaitDetails);
-            this.groupBox2.Controls.Add(this.loadingWait);
-            this.groupBox2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.groupBox2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.groupBox2.Location = (new global::System.Drawing.Point(3, 4));
-            this.groupBox2.Name = ("groupBox2");
-            this.groupBox2.Size = (new global::System.Drawing.Size(788, 699));
-            this.groupBox2.TabIndex = (6);
-            this.groupBox2.TabStop = (false);
+            groupBox2.Controls.Add(loadingAnimation);
+            groupBox2.Controls.Add(loadingWaitDetails);
+            groupBox2.Controls.Add(loadingWait);
+            groupBox2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox2.ForeColor = Color.FromArgb(224, 224, 224);
+            groupBox2.Location = new Point(3, 4);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(788, 699);
+            groupBox2.TabIndex = 6;
+            groupBox2.TabStop = false;
             // 
             // loadingAnimation
             // 
-            this.loadingAnimation.Image = ((global::System.Drawing.Image)(resources.GetObject("loadingAnimation.Image")));
-            this.loadingAnimation.Location = (new global::System.Drawing.Point(18, 19));
-            this.loadingAnimation.Name = ("loadingAnimation");
-            this.loadingAnimation.Size = (new global::System.Drawing.Size(752, 529));
-            this.loadingAnimation.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.CenterImage);
-            this.loadingAnimation.TabIndex = (70);
-            this.loadingAnimation.TabStop = (false);
-            this.loadingAnimation.Visible = (false);
+            loadingAnimation.Image = (Image)resources.GetObject("loadingAnimation.Image");
+            loadingAnimation.Location = new Point(18, 19);
+            loadingAnimation.Name = "loadingAnimation";
+            loadingAnimation.Size = new Size(752, 529);
+            loadingAnimation.SizeMode = PictureBoxSizeMode.CenterImage;
+            loadingAnimation.TabIndex = 70;
+            loadingAnimation.TabStop = false;
+            loadingAnimation.Visible = false;
             // 
             // loadingWaitDetails
             // 
-            this.loadingWaitDetails.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(12)), (global::System.Int32)((global::System.Byte)(120)), (global::System.Int32)((global::System.Byte)(120))));
-            this.loadingWaitDetails.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.loadingWaitDetails.Font = (new global::System.Drawing.Font("Roboto", 21.75F, global::System.Drawing.FontStyle.Italic, global::System.Drawing.GraphicsUnit.Point));
-            this.loadingWaitDetails.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.loadingWaitDetails.Location = (new global::System.Drawing.Point(18, 626));
-            this.loadingWaitDetails.Name = ("loadingWaitDetails");
-            this.loadingWaitDetails.Size = (new global::System.Drawing.Size(752, 46));
-            this.loadingWaitDetails.TabIndex = (69);
-            this.loadingWaitDetails.Text = ("Chargement en cours");
-            this.loadingWaitDetails.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
+            loadingWaitDetails.BackColor = Color.FromArgb(12, 120, 120);
+            loadingWaitDetails.Cursor = Cursors.Hand;
+            loadingWaitDetails.Font = new Font("Roboto", 21.75F, FontStyle.Italic, GraphicsUnit.Point);
+            loadingWaitDetails.ForeColor = Color.FromArgb(224, 224, 224);
+            loadingWaitDetails.Location = new Point(18, 626);
+            loadingWaitDetails.Name = "loadingWaitDetails";
+            loadingWaitDetails.Size = new Size(752, 46);
+            loadingWaitDetails.TabIndex = 69;
+            loadingWaitDetails.Text = "Chargement en cours";
+            loadingWaitDetails.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // loadingWait
             // 
-            this.loadingWait.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(6)), (global::System.Int32)((global::System.Byte)(60)), (global::System.Int32)((global::System.Byte)(60))));
-            this.loadingWait.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.loadingWait.Font = (new global::System.Drawing.Font("Roboto", 36F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.loadingWait.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.loadingWait.Location = (new global::System.Drawing.Point(18, 551));
-            this.loadingWait.Name = ("loadingWait");
-            this.loadingWait.Size = (new global::System.Drawing.Size(752, 65));
-            this.loadingWait.TabIndex = (68);
-            this.loadingWait.Text = ("Chargement en cours");
-            this.loadingWait.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
+            loadingWait.BackColor = Color.FromArgb(6, 60, 60);
+            loadingWait.Cursor = Cursors.Hand;
+            loadingWait.Font = new Font("Roboto", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            loadingWait.ForeColor = Color.FromArgb(224, 224, 224);
+            loadingWait.Location = new Point(18, 551);
+            loadingWait.Name = "loadingWait";
+            loadingWait.Size = new Size(752, 65);
+            loadingWait.TabIndex = 68;
+            loadingWait.Text = "Chargement en cours";
+            loadingWait.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // menuControlsPanel
             // 
-            this.menuControlsPanel.Controls.Add(this.controlsFrame2);
-            this.menuControlsPanel.Controls.Add(this.controlsFrame3);
-            this.menuControlsPanel.Controls.Add(this.controlsFrame1);
-            this.menuControlsPanel.Location = (new global::System.Drawing.Point(327, 1600));
-            this.menuControlsPanel.Name = ("menuControlsPanel");
-            this.menuControlsPanel.Size = (new global::System.Drawing.Size(795, 703));
-            this.menuControlsPanel.TabIndex = (41);
+            menuControlsPanel.Controls.Add(controlsFrame2);
+            menuControlsPanel.Controls.Add(controlsFrame3);
+            menuControlsPanel.Controls.Add(controlsFrame1);
+            menuControlsPanel.Location = new Point(327, 1600);
+            menuControlsPanel.Name = "menuControlsPanel";
+            menuControlsPanel.Size = new Size(795, 703);
+            menuControlsPanel.TabIndex = 41;
             // 
             // controlsFrame2
             // 
-            this.controlsFrame2.Controls.Add(this.analogPadUse);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboard);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpad);
-            this.controlsFrame2.Controls.Add(this.ctrlGamepad);
-            this.controlsFrame2.Controls.Add(this.ctrlControls);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardStart);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardAssist);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardTarget);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardCam);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardPgDown);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardPgUp);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardChange);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardMenu);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardCancel);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardOk);
-            this.controlsFrame2.Controls.Add(this.ctrlKeyboardPad);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadStart);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadAssist);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadTarget);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadCam);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadPgDown);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadPgUp);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadChange);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadMenu);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadCancel);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadOk);
-            this.controlsFrame2.Controls.Add(this.ctrlNumpadPad);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadStart);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadAssist);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadTarget);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadCam);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadPgDown);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadPgUp);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadChange);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadMenu);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadCancel);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadOk);
-            this.controlsFrame2.Controls.Add(this.ctrlGpadPad);
-            this.controlsFrame2.Controls.Add(this.ctrlOk);
-            this.controlsFrame2.Controls.Add(this.ctrlStart);
-            this.controlsFrame2.Controls.Add(this.ctrlAssist);
-            this.controlsFrame2.Controls.Add(this.ctrlTarget);
-            this.controlsFrame2.Controls.Add(this.ctrlCam);
-            this.controlsFrame2.Controls.Add(this.ctrlPgDown);
-            this.controlsFrame2.Controls.Add(this.ctrlPgUp);
-            this.controlsFrame2.Controls.Add(this.ctrlChange);
-            this.controlsFrame2.Controls.Add(this.ctrlMenu);
-            this.controlsFrame2.Controls.Add(this.ctrlCancel);
-            this.controlsFrame2.Controls.Add(this.ctrlMove);
-            this.controlsFrame2.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.controlsFrame2.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.controlsFrame2.Location = (new global::System.Drawing.Point(402, 4));
-            this.controlsFrame2.Name = ("controlsFrame2");
-            this.controlsFrame2.Size = (new global::System.Drawing.Size(390, 301));
-            this.controlsFrame2.TabIndex = (11);
-            this.controlsFrame2.TabStop = (false);
-            this.controlsFrame2.Text = ("Controles par defaut");
+            controlsFrame2.Controls.Add(analogPadUse);
+            controlsFrame2.Controls.Add(ctrlKeyboard);
+            controlsFrame2.Controls.Add(ctrlNumpad);
+            controlsFrame2.Controls.Add(ctrlGamepad);
+            controlsFrame2.Controls.Add(ctrlControls);
+            controlsFrame2.Controls.Add(ctrlKeyboardStart);
+            controlsFrame2.Controls.Add(ctrlKeyboardAssist);
+            controlsFrame2.Controls.Add(ctrlKeyboardTarget);
+            controlsFrame2.Controls.Add(ctrlKeyboardCam);
+            controlsFrame2.Controls.Add(ctrlKeyboardPgDown);
+            controlsFrame2.Controls.Add(ctrlKeyboardPgUp);
+            controlsFrame2.Controls.Add(ctrlKeyboardChange);
+            controlsFrame2.Controls.Add(ctrlKeyboardMenu);
+            controlsFrame2.Controls.Add(ctrlKeyboardCancel);
+            controlsFrame2.Controls.Add(ctrlKeyboardOk);
+            controlsFrame2.Controls.Add(ctrlKeyboardPad);
+            controlsFrame2.Controls.Add(ctrlNumpadStart);
+            controlsFrame2.Controls.Add(ctrlNumpadAssist);
+            controlsFrame2.Controls.Add(ctrlNumpadTarget);
+            controlsFrame2.Controls.Add(ctrlNumpadCam);
+            controlsFrame2.Controls.Add(ctrlNumpadPgDown);
+            controlsFrame2.Controls.Add(ctrlNumpadPgUp);
+            controlsFrame2.Controls.Add(ctrlNumpadChange);
+            controlsFrame2.Controls.Add(ctrlNumpadMenu);
+            controlsFrame2.Controls.Add(ctrlNumpadCancel);
+            controlsFrame2.Controls.Add(ctrlNumpadOk);
+            controlsFrame2.Controls.Add(ctrlNumpadPad);
+            controlsFrame2.Controls.Add(ctrlGpadStart);
+            controlsFrame2.Controls.Add(ctrlGpadAssist);
+            controlsFrame2.Controls.Add(ctrlGpadTarget);
+            controlsFrame2.Controls.Add(ctrlGpadCam);
+            controlsFrame2.Controls.Add(ctrlGpadPgDown);
+            controlsFrame2.Controls.Add(ctrlGpadPgUp);
+            controlsFrame2.Controls.Add(ctrlGpadChange);
+            controlsFrame2.Controls.Add(ctrlGpadMenu);
+            controlsFrame2.Controls.Add(ctrlGpadCancel);
+            controlsFrame2.Controls.Add(ctrlGpadOk);
+            controlsFrame2.Controls.Add(ctrlGpadPad);
+            controlsFrame2.Controls.Add(ctrlOk);
+            controlsFrame2.Controls.Add(ctrlStart);
+            controlsFrame2.Controls.Add(ctrlAssist);
+            controlsFrame2.Controls.Add(ctrlTarget);
+            controlsFrame2.Controls.Add(ctrlCam);
+            controlsFrame2.Controls.Add(ctrlPgDown);
+            controlsFrame2.Controls.Add(ctrlPgUp);
+            controlsFrame2.Controls.Add(ctrlChange);
+            controlsFrame2.Controls.Add(ctrlMenu);
+            controlsFrame2.Controls.Add(ctrlCancel);
+            controlsFrame2.Controls.Add(ctrlMove);
+            controlsFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            controlsFrame2.ForeColor = Color.FromArgb(224, 224, 224);
+            controlsFrame2.Location = new Point(402, 4);
+            controlsFrame2.Name = "controlsFrame2";
+            controlsFrame2.Size = new Size(390, 301);
+            controlsFrame2.TabIndex = 11;
+            controlsFrame2.TabStop = false;
+            controlsFrame2.Text = "Controles par defaut";
             // 
             // analogPadUse
             // 
-            this.analogPadUse.BackColor = (global::System.Drawing.Color.Transparent);
-            this.analogPadUse.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.analogPadUse.ForeColor = (global::System.Drawing.Color.White);
-            this.analogPadUse.Location = (new global::System.Drawing.Point(9, 239));
-            this.analogPadUse.Name = ("analogPadUse");
-            this.analogPadUse.Size = (new global::System.Drawing.Size(370, 46));
-            this.analogPadUse.TabIndex = (61);
-            this.analogPadUse.Text = ("Pour utiliser le stick analogique (L3) pour les déplacements, il est obligatoire d'activer le contrôleur analogique dans la configuration du pilote.");
+            analogPadUse.BackColor = Color.Transparent;
+            analogPadUse.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            analogPadUse.ForeColor = Color.White;
+            analogPadUse.Location = new Point(9, 239);
+            analogPadUse.Name = "analogPadUse";
+            analogPadUse.Size = new Size(370, 46);
+            analogPadUse.TabIndex = 61;
+            analogPadUse.Text = "Pour utiliser le stick analogique (L3) pour les déplacements, il est obligatoire d'activer le contrôleur analogique dans la configuration du pilote.";
             // 
             // ctrlKeyboard
             // 
-            this.ctrlKeyboard.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboard.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboard.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlKeyboard.Location = (new global::System.Drawing.Point(297, 25));
-            this.ctrlKeyboard.Name = ("ctrlKeyboard");
-            this.ctrlKeyboard.Size = (new global::System.Drawing.Size(82, 16));
-            this.ctrlKeyboard.TabIndex = (60);
-            this.ctrlKeyboard.Text = ("Clavier");
+            ctrlKeyboard.BackColor = Color.Transparent;
+            ctrlKeyboard.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            ctrlKeyboard.ForeColor = Color.White;
+            ctrlKeyboard.Location = new Point(297, 25);
+            ctrlKeyboard.Name = "ctrlKeyboard";
+            ctrlKeyboard.Size = new Size(82, 16);
+            ctrlKeyboard.TabIndex = 60;
+            ctrlKeyboard.Text = "Clavier";
             // 
             // ctrlNumpad
             // 
-            this.ctrlNumpad.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpad.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpad.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlNumpad.Location = (new global::System.Drawing.Point(207, 25));
-            this.ctrlNumpad.Name = ("ctrlNumpad");
-            this.ctrlNumpad.Size = (new global::System.Drawing.Size(84, 16));
-            this.ctrlNumpad.TabIndex = (59);
-            this.ctrlNumpad.Text = ("Pavé num");
+            ctrlNumpad.BackColor = Color.Transparent;
+            ctrlNumpad.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            ctrlNumpad.ForeColor = Color.White;
+            ctrlNumpad.Location = new Point(207, 25);
+            ctrlNumpad.Name = "ctrlNumpad";
+            ctrlNumpad.Size = new Size(84, 16);
+            ctrlNumpad.TabIndex = 59;
+            ctrlNumpad.Text = "Pavé num";
             // 
             // ctrlGamepad
             // 
-            this.ctrlGamepad.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGamepad.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGamepad.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlGamepad.Location = (new global::System.Drawing.Point(121, 25));
-            this.ctrlGamepad.Name = ("ctrlGamepad");
-            this.ctrlGamepad.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGamepad.TabIndex = (58);
-            this.ctrlGamepad.Text = ("Manette");
+            ctrlGamepad.BackColor = Color.Transparent;
+            ctrlGamepad.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            ctrlGamepad.ForeColor = Color.White;
+            ctrlGamepad.Location = new Point(121, 25);
+            ctrlGamepad.Name = "ctrlGamepad";
+            ctrlGamepad.Size = new Size(80, 16);
+            ctrlGamepad.TabIndex = 58;
+            ctrlGamepad.Text = "Manette";
             // 
             // ctrlControls
             // 
-            this.ctrlControls.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlControls.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlControls.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlControls.Location = (new global::System.Drawing.Point(8, 25));
-            this.ctrlControls.Name = ("ctrlControls");
-            this.ctrlControls.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlControls.TabIndex = (57);
-            this.ctrlControls.Text = ("Contrôles");
+            ctrlControls.BackColor = Color.Transparent;
+            ctrlControls.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            ctrlControls.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlControls.Location = new Point(8, 25);
+            ctrlControls.Name = "ctrlControls";
+            ctrlControls.Size = new Size(106, 16);
+            ctrlControls.TabIndex = 57;
+            ctrlControls.Text = "Contrôles";
             // 
             // ctrlKeyboardStart
             // 
-            this.ctrlKeyboardStart.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardStart.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardStart.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardStart.Location = (new global::System.Drawing.Point(297, 213));
-            this.ctrlKeyboardStart.Name = ("ctrlKeyboardStart");
-            this.ctrlKeyboardStart.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardStart.TabIndex = (56);
-            this.ctrlKeyboardStart.Text = ("Supprimer");
+            ctrlKeyboardStart.BackColor = Color.Transparent;
+            ctrlKeyboardStart.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardStart.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardStart.Location = new Point(297, 213);
+            ctrlKeyboardStart.Name = "ctrlKeyboardStart";
+            ctrlKeyboardStart.Size = new Size(80, 16);
+            ctrlKeyboardStart.TabIndex = 56;
+            ctrlKeyboardStart.Text = "Supprimer";
             // 
             // ctrlKeyboardAssist
             // 
-            this.ctrlKeyboardAssist.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardAssist.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardAssist.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardAssist.Location = (new global::System.Drawing.Point(297, 197));
-            this.ctrlKeyboardAssist.Name = ("ctrlKeyboardAssist");
-            this.ctrlKeyboardAssist.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardAssist.TabIndex = (55);
-            this.ctrlKeyboardAssist.Text = ("Insertion");
+            ctrlKeyboardAssist.BackColor = Color.Transparent;
+            ctrlKeyboardAssist.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardAssist.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardAssist.Location = new Point(297, 197);
+            ctrlKeyboardAssist.Name = "ctrlKeyboardAssist";
+            ctrlKeyboardAssist.Size = new Size(80, 16);
+            ctrlKeyboardAssist.TabIndex = 55;
+            ctrlKeyboardAssist.Text = "Insertion";
             // 
             // ctrlKeyboardTarget
             // 
-            this.ctrlKeyboardTarget.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardTarget.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardTarget.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardTarget.Location = (new global::System.Drawing.Point(297, 180));
-            this.ctrlKeyboardTarget.Name = ("ctrlKeyboardTarget");
-            this.ctrlKeyboardTarget.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardTarget.TabIndex = (54);
-            this.ctrlKeyboardTarget.Text = ("Fin");
+            ctrlKeyboardTarget.BackColor = Color.Transparent;
+            ctrlKeyboardTarget.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardTarget.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardTarget.Location = new Point(297, 180);
+            ctrlKeyboardTarget.Name = "ctrlKeyboardTarget";
+            ctrlKeyboardTarget.Size = new Size(80, 16);
+            ctrlKeyboardTarget.TabIndex = 54;
+            ctrlKeyboardTarget.Text = "Fin";
             // 
             // ctrlKeyboardCam
             // 
-            this.ctrlKeyboardCam.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardCam.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardCam.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardCam.Location = (new global::System.Drawing.Point(297, 163));
-            this.ctrlKeyboardCam.Name = ("ctrlKeyboardCam");
-            this.ctrlKeyboardCam.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardCam.TabIndex = (53);
-            this.ctrlKeyboardCam.Text = ("Début");
+            ctrlKeyboardCam.BackColor = Color.Transparent;
+            ctrlKeyboardCam.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardCam.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardCam.Location = new Point(297, 163);
+            ctrlKeyboardCam.Name = "ctrlKeyboardCam";
+            ctrlKeyboardCam.Size = new Size(80, 16);
+            ctrlKeyboardCam.TabIndex = 53;
+            ctrlKeyboardCam.Text = "Début";
             // 
             // ctrlKeyboardPgDown
             // 
-            this.ctrlKeyboardPgDown.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardPgDown.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardPgDown.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardPgDown.Location = (new global::System.Drawing.Point(297, 146));
-            this.ctrlKeyboardPgDown.Name = ("ctrlKeyboardPgDown");
-            this.ctrlKeyboardPgDown.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardPgDown.TabIndex = (52);
-            this.ctrlKeyboardPgDown.Text = ("Page bas");
+            ctrlKeyboardPgDown.BackColor = Color.Transparent;
+            ctrlKeyboardPgDown.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardPgDown.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardPgDown.Location = new Point(297, 146);
+            ctrlKeyboardPgDown.Name = "ctrlKeyboardPgDown";
+            ctrlKeyboardPgDown.Size = new Size(80, 16);
+            ctrlKeyboardPgDown.TabIndex = 52;
+            ctrlKeyboardPgDown.Text = "Page bas";
             // 
             // ctrlKeyboardPgUp
             // 
-            this.ctrlKeyboardPgUp.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardPgUp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardPgUp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardPgUp.Location = (new global::System.Drawing.Point(297, 129));
-            this.ctrlKeyboardPgUp.Name = ("ctrlKeyboardPgUp");
-            this.ctrlKeyboardPgUp.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardPgUp.TabIndex = (51);
-            this.ctrlKeyboardPgUp.Text = ("Page haut");
+            ctrlKeyboardPgUp.BackColor = Color.Transparent;
+            ctrlKeyboardPgUp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardPgUp.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardPgUp.Location = new Point(297, 129);
+            ctrlKeyboardPgUp.Name = "ctrlKeyboardPgUp";
+            ctrlKeyboardPgUp.Size = new Size(80, 16);
+            ctrlKeyboardPgUp.TabIndex = 51;
+            ctrlKeyboardPgUp.Text = "Page haut";
             // 
             // ctrlKeyboardChange
             // 
-            this.ctrlKeyboardChange.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardChange.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardChange.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardChange.Location = (new global::System.Drawing.Point(297, 112));
-            this.ctrlKeyboardChange.Name = ("ctrlKeyboardChange");
-            this.ctrlKeyboardChange.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardChange.TabIndex = (50);
-            this.ctrlKeyboardChange.Text = ("Contrôle");
+            ctrlKeyboardChange.BackColor = Color.Transparent;
+            ctrlKeyboardChange.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardChange.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardChange.Location = new Point(297, 112);
+            ctrlKeyboardChange.Name = "ctrlKeyboardChange";
+            ctrlKeyboardChange.Size = new Size(80, 16);
+            ctrlKeyboardChange.TabIndex = 50;
+            ctrlKeyboardChange.Text = "Contrôle";
             // 
             // ctrlKeyboardMenu
             // 
-            this.ctrlKeyboardMenu.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardMenu.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardMenu.Location = (new global::System.Drawing.Point(297, 95));
-            this.ctrlKeyboardMenu.Name = ("ctrlKeyboardMenu");
-            this.ctrlKeyboardMenu.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardMenu.TabIndex = (49);
-            this.ctrlKeyboardMenu.Text = ("Majuscule");
+            ctrlKeyboardMenu.BackColor = Color.Transparent;
+            ctrlKeyboardMenu.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardMenu.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardMenu.Location = new Point(297, 95);
+            ctrlKeyboardMenu.Name = "ctrlKeyboardMenu";
+            ctrlKeyboardMenu.Size = new Size(80, 16);
+            ctrlKeyboardMenu.TabIndex = 49;
+            ctrlKeyboardMenu.Text = "Majuscule";
             // 
             // ctrlKeyboardCancel
             // 
-            this.ctrlKeyboardCancel.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardCancel.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardCancel.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardCancel.Location = (new global::System.Drawing.Point(297, 78));
-            this.ctrlKeyboardCancel.Name = ("ctrlKeyboardCancel");
-            this.ctrlKeyboardCancel.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardCancel.TabIndex = (48);
-            this.ctrlKeyboardCancel.Text = ("Espace");
+            ctrlKeyboardCancel.BackColor = Color.Transparent;
+            ctrlKeyboardCancel.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardCancel.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardCancel.Location = new Point(297, 78);
+            ctrlKeyboardCancel.Name = "ctrlKeyboardCancel";
+            ctrlKeyboardCancel.Size = new Size(80, 16);
+            ctrlKeyboardCancel.TabIndex = 48;
+            ctrlKeyboardCancel.Text = "Espace";
             // 
             // ctrlKeyboardOk
             // 
-            this.ctrlKeyboardOk.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardOk.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardOk.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardOk.Location = (new global::System.Drawing.Point(297, 61));
-            this.ctrlKeyboardOk.Name = ("ctrlKeyboardOk");
-            this.ctrlKeyboardOk.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardOk.TabIndex = (47);
-            this.ctrlKeyboardOk.Text = ("Entrée");
+            ctrlKeyboardOk.BackColor = Color.Transparent;
+            ctrlKeyboardOk.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardOk.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardOk.Location = new Point(297, 61);
+            ctrlKeyboardOk.Name = "ctrlKeyboardOk";
+            ctrlKeyboardOk.Size = new Size(80, 16);
+            ctrlKeyboardOk.TabIndex = 47;
+            ctrlKeyboardOk.Text = "Entrée";
             // 
             // ctrlKeyboardPad
             // 
-            this.ctrlKeyboardPad.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlKeyboardPad.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlKeyboardPad.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlKeyboardPad.Location = (new global::System.Drawing.Point(297, 44));
-            this.ctrlKeyboardPad.Name = ("ctrlKeyboardPad");
-            this.ctrlKeyboardPad.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlKeyboardPad.TabIndex = (46);
-            this.ctrlKeyboardPad.Text = ("Flêches");
+            ctrlKeyboardPad.BackColor = Color.Transparent;
+            ctrlKeyboardPad.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardPad.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlKeyboardPad.Location = new Point(297, 44);
+            ctrlKeyboardPad.Name = "ctrlKeyboardPad";
+            ctrlKeyboardPad.Size = new Size(80, 16);
+            ctrlKeyboardPad.TabIndex = 46;
+            ctrlKeyboardPad.Text = "Flêches";
             // 
             // ctrlNumpadStart
             // 
-            this.ctrlNumpadStart.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadStart.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadStart.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadStart.Location = (new global::System.Drawing.Point(208, 213));
-            this.ctrlNumpadStart.Name = ("ctrlNumpadStart");
-            this.ctrlNumpadStart.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadStart.TabIndex = (45);
-            this.ctrlNumpadStart.Text = ("-");
+            ctrlNumpadStart.BackColor = Color.Transparent;
+            ctrlNumpadStart.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadStart.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadStart.Location = new Point(208, 213);
+            ctrlNumpadStart.Name = "ctrlNumpadStart";
+            ctrlNumpadStart.Size = new Size(80, 16);
+            ctrlNumpadStart.TabIndex = 45;
+            ctrlNumpadStart.Text = "-";
             // 
             // ctrlNumpadAssist
             // 
-            this.ctrlNumpadAssist.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadAssist.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadAssist.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadAssist.Location = (new global::System.Drawing.Point(208, 197));
-            this.ctrlNumpadAssist.Name = ("ctrlNumpadAssist");
-            this.ctrlNumpadAssist.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadAssist.TabIndex = (44);
-            this.ctrlNumpadAssist.Text = ("5");
+            ctrlNumpadAssist.BackColor = Color.Transparent;
+            ctrlNumpadAssist.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadAssist.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadAssist.Location = new Point(208, 197);
+            ctrlNumpadAssist.Name = "ctrlNumpadAssist";
+            ctrlNumpadAssist.Size = new Size(80, 16);
+            ctrlNumpadAssist.TabIndex = 44;
+            ctrlNumpadAssist.Text = "5";
             // 
             // ctrlNumpadTarget
             // 
-            this.ctrlNumpadTarget.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadTarget.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadTarget.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadTarget.Location = (new global::System.Drawing.Point(208, 180));
-            this.ctrlNumpadTarget.Name = ("ctrlNumpadTarget");
-            this.ctrlNumpadTarget.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadTarget.TabIndex = (43);
-            this.ctrlNumpadTarget.Text = ("1");
+            ctrlNumpadTarget.BackColor = Color.Transparent;
+            ctrlNumpadTarget.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadTarget.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadTarget.Location = new Point(208, 180);
+            ctrlNumpadTarget.Name = "ctrlNumpadTarget";
+            ctrlNumpadTarget.Size = new Size(80, 16);
+            ctrlNumpadTarget.TabIndex = 43;
+            ctrlNumpadTarget.Text = "1";
             // 
             // ctrlNumpadCam
             // 
-            this.ctrlNumpadCam.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadCam.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadCam.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadCam.Location = (new global::System.Drawing.Point(208, 163));
-            this.ctrlNumpadCam.Name = ("ctrlNumpadCam");
-            this.ctrlNumpadCam.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadCam.TabIndex = (42);
-            this.ctrlNumpadCam.Text = ("7");
+            ctrlNumpadCam.BackColor = Color.Transparent;
+            ctrlNumpadCam.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadCam.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadCam.Location = new Point(208, 163);
+            ctrlNumpadCam.Name = "ctrlNumpadCam";
+            ctrlNumpadCam.Size = new Size(80, 16);
+            ctrlNumpadCam.TabIndex = 42;
+            ctrlNumpadCam.Text = "7";
             // 
             // ctrlNumpadPgDown
             // 
-            this.ctrlNumpadPgDown.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadPgDown.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadPgDown.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadPgDown.Location = (new global::System.Drawing.Point(208, 146));
-            this.ctrlNumpadPgDown.Name = ("ctrlNumpadPgDown");
-            this.ctrlNumpadPgDown.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadPgDown.TabIndex = (41);
-            this.ctrlNumpadPgDown.Text = ("3");
+            ctrlNumpadPgDown.BackColor = Color.Transparent;
+            ctrlNumpadPgDown.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadPgDown.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadPgDown.Location = new Point(208, 146);
+            ctrlNumpadPgDown.Name = "ctrlNumpadPgDown";
+            ctrlNumpadPgDown.Size = new Size(80, 16);
+            ctrlNumpadPgDown.TabIndex = 41;
+            ctrlNumpadPgDown.Text = "3";
             // 
             // ctrlNumpadPgUp
             // 
-            this.ctrlNumpadPgUp.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadPgUp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadPgUp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadPgUp.Location = (new global::System.Drawing.Point(208, 129));
-            this.ctrlNumpadPgUp.Name = ("ctrlNumpadPgUp");
-            this.ctrlNumpadPgUp.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadPgUp.TabIndex = (40);
-            this.ctrlNumpadPgUp.Text = ("9");
+            ctrlNumpadPgUp.BackColor = Color.Transparent;
+            ctrlNumpadPgUp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadPgUp.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadPgUp.Location = new Point(208, 129);
+            ctrlNumpadPgUp.Name = "ctrlNumpadPgUp";
+            ctrlNumpadPgUp.Size = new Size(80, 16);
+            ctrlNumpadPgUp.TabIndex = 40;
+            ctrlNumpadPgUp.Text = "9";
             // 
             // ctrlNumpadChange
             // 
-            this.ctrlNumpadChange.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadChange.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadChange.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadChange.Location = (new global::System.Drawing.Point(208, 112));
-            this.ctrlNumpadChange.Name = ("ctrlNumpadChange");
-            this.ctrlNumpadChange.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadChange.TabIndex = (39);
-            this.ctrlNumpadChange.Text = (".");
+            ctrlNumpadChange.BackColor = Color.Transparent;
+            ctrlNumpadChange.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadChange.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadChange.Location = new Point(208, 112);
+            ctrlNumpadChange.Name = "ctrlNumpadChange";
+            ctrlNumpadChange.Size = new Size(80, 16);
+            ctrlNumpadChange.TabIndex = 39;
+            ctrlNumpadChange.Text = ".";
             // 
             // ctrlNumpadMenu
             // 
-            this.ctrlNumpadMenu.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadMenu.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadMenu.Location = (new global::System.Drawing.Point(208, 95));
-            this.ctrlNumpadMenu.Name = ("ctrlNumpadMenu");
-            this.ctrlNumpadMenu.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadMenu.TabIndex = (38);
-            this.ctrlNumpadMenu.Text = ("+");
+            ctrlNumpadMenu.BackColor = Color.Transparent;
+            ctrlNumpadMenu.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadMenu.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadMenu.Location = new Point(208, 95);
+            ctrlNumpadMenu.Name = "ctrlNumpadMenu";
+            ctrlNumpadMenu.Size = new Size(80, 16);
+            ctrlNumpadMenu.TabIndex = 38;
+            ctrlNumpadMenu.Text = "+";
             // 
             // ctrlNumpadCancel
             // 
-            this.ctrlNumpadCancel.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadCancel.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadCancel.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadCancel.Location = (new global::System.Drawing.Point(208, 78));
-            this.ctrlNumpadCancel.Name = ("ctrlNumpadCancel");
-            this.ctrlNumpadCancel.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadCancel.TabIndex = (37);
-            this.ctrlNumpadCancel.Text = ("0");
+            ctrlNumpadCancel.BackColor = Color.Transparent;
+            ctrlNumpadCancel.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadCancel.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadCancel.Location = new Point(208, 78);
+            ctrlNumpadCancel.Name = "ctrlNumpadCancel";
+            ctrlNumpadCancel.Size = new Size(80, 16);
+            ctrlNumpadCancel.TabIndex = 37;
+            ctrlNumpadCancel.Text = "0";
             // 
             // ctrlNumpadOk
             // 
-            this.ctrlNumpadOk.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadOk.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadOk.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadOk.Location = (new global::System.Drawing.Point(208, 61));
-            this.ctrlNumpadOk.Name = ("ctrlNumpadOk");
-            this.ctrlNumpadOk.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadOk.TabIndex = (36);
-            this.ctrlNumpadOk.Text = ("Entrée");
+            ctrlNumpadOk.BackColor = Color.Transparent;
+            ctrlNumpadOk.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadOk.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadOk.Location = new Point(208, 61);
+            ctrlNumpadOk.Name = "ctrlNumpadOk";
+            ctrlNumpadOk.Size = new Size(80, 16);
+            ctrlNumpadOk.TabIndex = 36;
+            ctrlNumpadOk.Text = "Entrée";
             // 
             // ctrlNumpadPad
             // 
-            this.ctrlNumpadPad.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlNumpadPad.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlNumpadPad.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlNumpadPad.Location = (new global::System.Drawing.Point(208, 44));
-            this.ctrlNumpadPad.Name = ("ctrlNumpadPad");
-            this.ctrlNumpadPad.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlNumpadPad.TabIndex = (35);
-            this.ctrlNumpadPad.Text = ("Flêches");
+            ctrlNumpadPad.BackColor = Color.Transparent;
+            ctrlNumpadPad.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadPad.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlNumpadPad.Location = new Point(208, 44);
+            ctrlNumpadPad.Name = "ctrlNumpadPad";
+            ctrlNumpadPad.Size = new Size(80, 16);
+            ctrlNumpadPad.TabIndex = 35;
+            ctrlNumpadPad.Text = "Flêches";
             // 
             // ctrlGpadStart
             // 
-            this.ctrlGpadStart.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadStart.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadStart.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadStart.Location = (new global::System.Drawing.Point(121, 213));
-            this.ctrlGpadStart.Name = ("ctrlGpadStart");
-            this.ctrlGpadStart.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadStart.TabIndex = (34);
-            this.ctrlGpadStart.Text = ("Start");
+            ctrlGpadStart.BackColor = Color.Transparent;
+            ctrlGpadStart.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadStart.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadStart.Location = new Point(121, 213);
+            ctrlGpadStart.Name = "ctrlGpadStart";
+            ctrlGpadStart.Size = new Size(80, 16);
+            ctrlGpadStart.TabIndex = 34;
+            ctrlGpadStart.Text = "Start";
             // 
             // ctrlGpadAssist
             // 
-            this.ctrlGpadAssist.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadAssist.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadAssist.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadAssist.Location = (new global::System.Drawing.Point(121, 197));
-            this.ctrlGpadAssist.Name = ("ctrlGpadAssist");
-            this.ctrlGpadAssist.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadAssist.TabIndex = (33);
-            this.ctrlGpadAssist.Text = ("Select");
+            ctrlGpadAssist.BackColor = Color.Transparent;
+            ctrlGpadAssist.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadAssist.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadAssist.Location = new Point(121, 197);
+            ctrlGpadAssist.Name = "ctrlGpadAssist";
+            ctrlGpadAssist.Size = new Size(80, 16);
+            ctrlGpadAssist.TabIndex = 33;
+            ctrlGpadAssist.Text = "Select";
             // 
             // ctrlGpadTarget
             // 
-            this.ctrlGpadTarget.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadTarget.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadTarget.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadTarget.Location = (new global::System.Drawing.Point(121, 180));
-            this.ctrlGpadTarget.Name = ("ctrlGpadTarget");
-            this.ctrlGpadTarget.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadTarget.TabIndex = (32);
-            this.ctrlGpadTarget.Text = ("R2");
+            ctrlGpadTarget.BackColor = Color.Transparent;
+            ctrlGpadTarget.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadTarget.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadTarget.Location = new Point(121, 180);
+            ctrlGpadTarget.Name = "ctrlGpadTarget";
+            ctrlGpadTarget.Size = new Size(80, 16);
+            ctrlGpadTarget.TabIndex = 32;
+            ctrlGpadTarget.Text = "R2";
             // 
             // ctrlGpadCam
             // 
-            this.ctrlGpadCam.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadCam.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadCam.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadCam.Location = (new global::System.Drawing.Point(121, 163));
-            this.ctrlGpadCam.Name = ("ctrlGpadCam");
-            this.ctrlGpadCam.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadCam.TabIndex = (31);
-            this.ctrlGpadCam.Text = ("L2");
+            ctrlGpadCam.BackColor = Color.Transparent;
+            ctrlGpadCam.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadCam.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadCam.Location = new Point(121, 163);
+            ctrlGpadCam.Name = "ctrlGpadCam";
+            ctrlGpadCam.Size = new Size(80, 16);
+            ctrlGpadCam.TabIndex = 31;
+            ctrlGpadCam.Text = "L2";
             // 
             // ctrlGpadPgDown
             // 
-            this.ctrlGpadPgDown.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadPgDown.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadPgDown.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadPgDown.Location = (new global::System.Drawing.Point(121, 146));
-            this.ctrlGpadPgDown.Name = ("ctrlGpadPgDown");
-            this.ctrlGpadPgDown.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadPgDown.TabIndex = (30);
-            this.ctrlGpadPgDown.Text = ("R1");
+            ctrlGpadPgDown.BackColor = Color.Transparent;
+            ctrlGpadPgDown.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadPgDown.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadPgDown.Location = new Point(121, 146);
+            ctrlGpadPgDown.Name = "ctrlGpadPgDown";
+            ctrlGpadPgDown.Size = new Size(80, 16);
+            ctrlGpadPgDown.TabIndex = 30;
+            ctrlGpadPgDown.Text = "R1";
             // 
             // ctrlGpadPgUp
             // 
-            this.ctrlGpadPgUp.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadPgUp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadPgUp.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadPgUp.Location = (new global::System.Drawing.Point(121, 129));
-            this.ctrlGpadPgUp.Name = ("ctrlGpadPgUp");
-            this.ctrlGpadPgUp.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadPgUp.TabIndex = (29);
-            this.ctrlGpadPgUp.Text = ("L1");
+            ctrlGpadPgUp.BackColor = Color.Transparent;
+            ctrlGpadPgUp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadPgUp.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadPgUp.Location = new Point(121, 129);
+            ctrlGpadPgUp.Name = "ctrlGpadPgUp";
+            ctrlGpadPgUp.Size = new Size(80, 16);
+            ctrlGpadPgUp.TabIndex = 29;
+            ctrlGpadPgUp.Text = "L1";
             // 
             // ctrlGpadChange
             // 
-            this.ctrlGpadChange.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadChange.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadChange.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadChange.Location = (new global::System.Drawing.Point(121, 112));
-            this.ctrlGpadChange.Name = ("ctrlGpadChange");
-            this.ctrlGpadChange.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadChange.TabIndex = (28);
-            this.ctrlGpadChange.Text = ("Carré");
+            ctrlGpadChange.BackColor = Color.Transparent;
+            ctrlGpadChange.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadChange.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadChange.Location = new Point(121, 112);
+            ctrlGpadChange.Name = "ctrlGpadChange";
+            ctrlGpadChange.Size = new Size(80, 16);
+            ctrlGpadChange.TabIndex = 28;
+            ctrlGpadChange.Text = "Carré";
             // 
             // ctrlGpadMenu
             // 
-            this.ctrlGpadMenu.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadMenu.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadMenu.Location = (new global::System.Drawing.Point(121, 95));
-            this.ctrlGpadMenu.Name = ("ctrlGpadMenu");
-            this.ctrlGpadMenu.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadMenu.TabIndex = (27);
-            this.ctrlGpadMenu.Text = ("Triangle");
+            ctrlGpadMenu.BackColor = Color.Transparent;
+            ctrlGpadMenu.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadMenu.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadMenu.Location = new Point(121, 95);
+            ctrlGpadMenu.Name = "ctrlGpadMenu";
+            ctrlGpadMenu.Size = new Size(80, 16);
+            ctrlGpadMenu.TabIndex = 27;
+            ctrlGpadMenu.Text = "Triangle";
             // 
             // ctrlGpadCancel
             // 
-            this.ctrlGpadCancel.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadCancel.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadCancel.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadCancel.Location = (new global::System.Drawing.Point(121, 78));
-            this.ctrlGpadCancel.Name = ("ctrlGpadCancel");
-            this.ctrlGpadCancel.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadCancel.TabIndex = (26);
-            this.ctrlGpadCancel.Text = ("Croix");
+            ctrlGpadCancel.BackColor = Color.Transparent;
+            ctrlGpadCancel.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadCancel.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadCancel.Location = new Point(121, 78);
+            ctrlGpadCancel.Name = "ctrlGpadCancel";
+            ctrlGpadCancel.Size = new Size(80, 16);
+            ctrlGpadCancel.TabIndex = 26;
+            ctrlGpadCancel.Text = "Croix";
             // 
             // ctrlGpadOk
             // 
-            this.ctrlGpadOk.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadOk.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadOk.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadOk.Location = (new global::System.Drawing.Point(121, 61));
-            this.ctrlGpadOk.Name = ("ctrlGpadOk");
-            this.ctrlGpadOk.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadOk.TabIndex = (25);
-            this.ctrlGpadOk.Text = ("Rond");
+            ctrlGpadOk.BackColor = Color.Transparent;
+            ctrlGpadOk.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadOk.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadOk.Location = new Point(121, 61);
+            ctrlGpadOk.Name = "ctrlGpadOk";
+            ctrlGpadOk.Size = new Size(80, 16);
+            ctrlGpadOk.TabIndex = 25;
+            ctrlGpadOk.Text = "Rond";
             // 
             // ctrlGpadPad
             // 
-            this.ctrlGpadPad.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlGpadPad.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlGpadPad.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(32)), (global::System.Int32)((global::System.Byte)(225)), (global::System.Int32)((global::System.Byte)(229))));
-            this.ctrlGpadPad.Location = (new global::System.Drawing.Point(121, 44));
-            this.ctrlGpadPad.Name = ("ctrlGpadPad");
-            this.ctrlGpadPad.Size = (new global::System.Drawing.Size(80, 16));
-            this.ctrlGpadPad.TabIndex = (24);
-            this.ctrlGpadPad.Text = ("Pad/L3");
+            ctrlGpadPad.BackColor = Color.Transparent;
+            ctrlGpadPad.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadPad.ForeColor = Color.FromArgb(32, 225, 229);
+            ctrlGpadPad.Location = new Point(121, 44);
+            ctrlGpadPad.Name = "ctrlGpadPad";
+            ctrlGpadPad.Size = new Size(80, 16);
+            ctrlGpadPad.TabIndex = 24;
+            ctrlGpadPad.Text = "Pad/L3";
             // 
             // ctrlOk
             // 
-            this.ctrlOk.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlOk.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlOk.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlOk.Location = (new global::System.Drawing.Point(8, 61));
-            this.ctrlOk.Name = ("ctrlOk");
-            this.ctrlOk.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlOk.TabIndex = (23);
-            this.ctrlOk.Text = ("[OK]");
+            ctrlOk.BackColor = Color.Transparent;
+            ctrlOk.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlOk.ForeColor = Color.White;
+            ctrlOk.Location = new Point(8, 61);
+            ctrlOk.Name = "ctrlOk";
+            ctrlOk.Size = new Size(106, 16);
+            ctrlOk.TabIndex = 23;
+            ctrlOk.Text = "[OK]";
             // 
             // ctrlStart
             // 
-            this.ctrlStart.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlStart.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlStart.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlStart.Location = (new global::System.Drawing.Point(8, 213));
-            this.ctrlStart.Name = ("ctrlStart");
-            this.ctrlStart.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlStart.TabIndex = (22);
-            this.ctrlStart.Text = ("[DEMARRER]");
+            ctrlStart.BackColor = Color.Transparent;
+            ctrlStart.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlStart.ForeColor = Color.White;
+            ctrlStart.Location = new Point(8, 213);
+            ctrlStart.Name = "ctrlStart";
+            ctrlStart.Size = new Size(106, 16);
+            ctrlStart.TabIndex = 22;
+            ctrlStart.Text = "[DEMARRER]";
             // 
             // ctrlAssist
             // 
-            this.ctrlAssist.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlAssist.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlAssist.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlAssist.Location = (new global::System.Drawing.Point(8, 197));
-            this.ctrlAssist.Name = ("ctrlAssist");
-            this.ctrlAssist.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlAssist.TabIndex = (21);
-            this.ctrlAssist.Text = ("[ASSISTER]");
+            ctrlAssist.BackColor = Color.Transparent;
+            ctrlAssist.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlAssist.ForeColor = Color.White;
+            ctrlAssist.Location = new Point(8, 197);
+            ctrlAssist.Name = "ctrlAssist";
+            ctrlAssist.Size = new Size(106, 16);
+            ctrlAssist.TabIndex = 21;
+            ctrlAssist.Text = "[ASSISTER]";
             // 
             // ctrlTarget
             // 
-            this.ctrlTarget.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlTarget.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlTarget.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlTarget.Location = (new global::System.Drawing.Point(8, 180));
-            this.ctrlTarget.Name = ("ctrlTarget");
-            this.ctrlTarget.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlTarget.TabIndex = (20);
-            this.ctrlTarget.Text = ("[CIBLE]");
+            ctrlTarget.BackColor = Color.Transparent;
+            ctrlTarget.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlTarget.ForeColor = Color.White;
+            ctrlTarget.Location = new Point(8, 180);
+            ctrlTarget.Name = "ctrlTarget";
+            ctrlTarget.Size = new Size(106, 16);
+            ctrlTarget.TabIndex = 20;
+            ctrlTarget.Text = "[CIBLE]";
             // 
             // ctrlCam
             // 
-            this.ctrlCam.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlCam.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlCam.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlCam.Location = (new global::System.Drawing.Point(8, 163));
-            this.ctrlCam.Name = ("ctrlCam");
-            this.ctrlCam.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlCam.TabIndex = (19);
-            this.ctrlCam.Text = ("[CAMERA]");
+            ctrlCam.BackColor = Color.Transparent;
+            ctrlCam.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlCam.ForeColor = Color.White;
+            ctrlCam.Location = new Point(8, 163);
+            ctrlCam.Name = "ctrlCam";
+            ctrlCam.Size = new Size(106, 16);
+            ctrlCam.TabIndex = 19;
+            ctrlCam.Text = "[CAMERA]";
             // 
             // ctrlPgDown
             // 
-            this.ctrlPgDown.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlPgDown.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlPgDown.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlPgDown.Location = (new global::System.Drawing.Point(8, 146));
-            this.ctrlPgDown.Name = ("ctrlPgDown");
-            this.ctrlPgDown.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlPgDown.TabIndex = (18);
-            this.ctrlPgDown.Text = ("[PAGEBAS]");
+            ctrlPgDown.BackColor = Color.Transparent;
+            ctrlPgDown.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlPgDown.ForeColor = Color.White;
+            ctrlPgDown.Location = new Point(8, 146);
+            ctrlPgDown.Name = "ctrlPgDown";
+            ctrlPgDown.Size = new Size(106, 16);
+            ctrlPgDown.TabIndex = 18;
+            ctrlPgDown.Text = "[PAGEBAS]";
             // 
             // ctrlPgUp
             // 
-            this.ctrlPgUp.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlPgUp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlPgUp.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlPgUp.Location = (new global::System.Drawing.Point(8, 129));
-            this.ctrlPgUp.Name = ("ctrlPgUp");
-            this.ctrlPgUp.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlPgUp.TabIndex = (17);
-            this.ctrlPgUp.Text = ("[PAGEHAUT]");
+            ctrlPgUp.BackColor = Color.Transparent;
+            ctrlPgUp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlPgUp.ForeColor = Color.White;
+            ctrlPgUp.Location = new Point(8, 129);
+            ctrlPgUp.Name = "ctrlPgUp";
+            ctrlPgUp.Size = new Size(106, 16);
+            ctrlPgUp.TabIndex = 17;
+            ctrlPgUp.Text = "[PAGEHAUT]";
             // 
             // ctrlChange
             // 
-            this.ctrlChange.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlChange.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlChange.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlChange.Location = (new global::System.Drawing.Point(8, 112));
-            this.ctrlChange.Name = ("ctrlChange");
-            this.ctrlChange.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlChange.TabIndex = (16);
-            this.ctrlChange.Text = ("[CHANGER]");
+            ctrlChange.BackColor = Color.Transparent;
+            ctrlChange.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlChange.ForeColor = Color.White;
+            ctrlChange.Location = new Point(8, 112);
+            ctrlChange.Name = "ctrlChange";
+            ctrlChange.Size = new Size(106, 16);
+            ctrlChange.TabIndex = 16;
+            ctrlChange.Text = "[CHANGER]";
             // 
             // ctrlMenu
             // 
-            this.ctrlMenu.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlMenu.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlMenu.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlMenu.Location = (new global::System.Drawing.Point(8, 95));
-            this.ctrlMenu.Name = ("ctrlMenu");
-            this.ctrlMenu.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlMenu.TabIndex = (15);
-            this.ctrlMenu.Text = ("[MENU]");
+            ctrlMenu.BackColor = Color.Transparent;
+            ctrlMenu.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlMenu.ForeColor = Color.White;
+            ctrlMenu.Location = new Point(8, 95);
+            ctrlMenu.Name = "ctrlMenu";
+            ctrlMenu.Size = new Size(106, 16);
+            ctrlMenu.TabIndex = 15;
+            ctrlMenu.Text = "[MENU]";
             // 
             // ctrlCancel
             // 
-            this.ctrlCancel.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlCancel.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlCancel.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlCancel.Location = (new global::System.Drawing.Point(8, 78));
-            this.ctrlCancel.Name = ("ctrlCancel");
-            this.ctrlCancel.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlCancel.TabIndex = (14);
-            this.ctrlCancel.Text = ("[ANNULER]");
+            ctrlCancel.BackColor = Color.Transparent;
+            ctrlCancel.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlCancel.ForeColor = Color.White;
+            ctrlCancel.Location = new Point(8, 78);
+            ctrlCancel.Name = "ctrlCancel";
+            ctrlCancel.Size = new Size(106, 16);
+            ctrlCancel.TabIndex = 14;
+            ctrlCancel.Text = "[ANNULER]";
             // 
             // ctrlMove
             // 
-            this.ctrlMove.BackColor = (global::System.Drawing.Color.Transparent);
-            this.ctrlMove.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.ctrlMove.ForeColor = (global::System.Drawing.Color.White);
-            this.ctrlMove.Location = (new global::System.Drawing.Point(8, 44));
-            this.ctrlMove.Name = ("ctrlMove");
-            this.ctrlMove.Size = (new global::System.Drawing.Size(106, 16));
-            this.ctrlMove.TabIndex = (12);
-            this.ctrlMove.Text = ("[DIRECTIONS]");
+            ctrlMove.BackColor = Color.Transparent;
+            ctrlMove.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlMove.ForeColor = Color.White;
+            ctrlMove.Location = new Point(8, 44);
+            ctrlMove.Name = "ctrlMove";
+            ctrlMove.Size = new Size(106, 16);
+            ctrlMove.TabIndex = 12;
+            ctrlMove.Text = "[DIRECTIONS]";
             // 
             // controlsFrame3
             // 
-            this.controlsFrame3.Controls.Add(this.specialShortcutHelp);
-            this.controlsFrame3.Controls.Add(this.controleRestoreKb);
-            this.controlsFrame3.Controls.Add(this.controleRestoreNp);
-            this.controlsFrame3.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.controlsFrame3.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.controlsFrame3.Location = (new global::System.Drawing.Point(3, 311));
-            this.controlsFrame3.Name = ("controlsFrame3");
-            this.controlsFrame3.Size = (new global::System.Drawing.Size(788, 392));
-            this.controlsFrame3.TabIndex = (12);
-            this.controlsFrame3.TabStop = (false);
-            this.controlsFrame3.Text = ("Fonctions spéciales");
+            controlsFrame3.Controls.Add(specialShortcutHelp);
+            controlsFrame3.Controls.Add(controleRestoreKb);
+            controlsFrame3.Controls.Add(controleRestoreNp);
+            controlsFrame3.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            controlsFrame3.ForeColor = Color.FromArgb(224, 224, 224);
+            controlsFrame3.Location = new Point(3, 311);
+            controlsFrame3.Name = "controlsFrame3";
+            controlsFrame3.Size = new Size(788, 392);
+            controlsFrame3.TabIndex = 12;
+            controlsFrame3.TabStop = false;
+            controlsFrame3.Text = "Fonctions spéciales";
             // 
             // specialShortcutHelp
             // 
-            this.specialShortcutHelp.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(33)), (global::System.Int32)((global::System.Byte)(40)), (global::System.Int32)((global::System.Byte)(50))));
-            this.specialShortcutHelp.BorderStyle = (global::System.Windows.Forms.BorderStyle.None);
-            this.specialShortcutHelp.Font = (new global::System.Drawing.Font("Roboto", 9.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
-            this.specialShortcutHelp.Location = (new global::System.Drawing.Point(11, 22));
-            this.specialShortcutHelp.Name = ("specialShortcutHelp");
-            this.specialShortcutHelp.ReadOnly = (true);
-            this.specialShortcutHelp.ScrollBars = (global::System.Windows.Forms.RichTextBoxScrollBars.Vertical);
-            this.specialShortcutHelp.Size = (new global::System.Drawing.Size(767, 314));
-            this.specialShortcutHelp.TabIndex = (15);
-            this.specialShortcutHelp.Text = ("");
+            specialShortcutHelp.BackColor = Color.FromArgb(33, 40, 50);
+            specialShortcutHelp.BorderStyle = BorderStyle.None;
+            specialShortcutHelp.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            specialShortcutHelp.Location = new Point(11, 22);
+            specialShortcutHelp.Name = "specialShortcutHelp";
+            specialShortcutHelp.ReadOnly = true;
+            specialShortcutHelp.ScrollBars = RichTextBoxScrollBars.Vertical;
+            specialShortcutHelp.Size = new Size(767, 314);
+            specialShortcutHelp.TabIndex = 15;
+            specialShortcutHelp.Text = "";
             // 
             // controleRestoreKb
             // 
-            this.controleRestoreKb.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.controleRestoreKb.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.controleRestoreKb.Font = (new global::System.Drawing.Font("Roboto Black", 12.5F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.controleRestoreKb.ForeColor = (global::System.Drawing.Color.Black);
-            this.controleRestoreKb.Location = (new global::System.Drawing.Point(11, 346));
-            this.controleRestoreKb.Name = ("controleRestoreKb");
-            this.controleRestoreKb.Size = (new global::System.Drawing.Size(381, 32));
-            this.controleRestoreKb.TabIndex = (13);
-            this.controleRestoreKb.Text = ("Rétablir les controles par défaut");
-            this.controleRestoreKb.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.controleRestoreKb.Click += (this.controleRestoreKb_Click);
-            this.controleRestoreKb.MouseEnter += (this.controleRestoreKb_MouseEnter);
-            this.controleRestoreKb.MouseLeave += (this.controleRestoreKb_MouseLeave);
+            controleRestoreKb.BackColor = SystemColors.ScrollBar;
+            controleRestoreKb.Cursor = Cursors.Hand;
+            controleRestoreKb.Font = new Font("Roboto Black", 12.5F, FontStyle.Bold, GraphicsUnit.Point);
+            controleRestoreKb.ForeColor = Color.Black;
+            controleRestoreKb.Location = new Point(11, 346);
+            controleRestoreKb.Name = "controleRestoreKb";
+            controleRestoreKb.Size = new Size(381, 32);
+            controleRestoreKb.TabIndex = 13;
+            controleRestoreKb.Text = "Rétablir les controles par défaut";
+            controleRestoreKb.TextAlign = ContentAlignment.MiddleCenter;
+            controleRestoreKb.Click += controleRestoreKb_Click;
+            controleRestoreKb.MouseEnter += controleRestoreKb_MouseEnter;
+            controleRestoreKb.MouseLeave += controleRestoreKb_MouseLeave;
             // 
             // controleRestoreNp
             // 
-            this.controleRestoreNp.BackColor = (global::System.Drawing.SystemColors.ScrollBar);
-            this.controleRestoreNp.Cursor = (global::System.Windows.Forms.Cursors.Hand);
-            this.controleRestoreNp.Font = (new global::System.Drawing.Font("Roboto Black", 12.5F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.controleRestoreNp.ForeColor = (global::System.Drawing.Color.Black);
-            this.controleRestoreNp.Location = (new global::System.Drawing.Point(396, 346));
-            this.controleRestoreNp.Name = ("controleRestoreNp");
-            this.controleRestoreNp.Size = (new global::System.Drawing.Size(382, 32));
-            this.controleRestoreNp.TabIndex = (14);
-            this.controleRestoreNp.Text = ("Rétablir les controles sans pavé numérique");
-            this.controleRestoreNp.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
-            this.controleRestoreNp.Click += (this.controleRestoreNp_Click);
-            this.controleRestoreNp.MouseEnter += (this.controleRestoreNp_MouseEnter);
-            this.controleRestoreNp.MouseLeave += (this.controleRestoreNp_MouseLeave);
+            controleRestoreNp.BackColor = SystemColors.ScrollBar;
+            controleRestoreNp.Cursor = Cursors.Hand;
+            controleRestoreNp.Font = new Font("Roboto Black", 12.5F, FontStyle.Bold, GraphicsUnit.Point);
+            controleRestoreNp.ForeColor = Color.Black;
+            controleRestoreNp.Location = new Point(396, 346);
+            controleRestoreNp.Name = "controleRestoreNp";
+            controleRestoreNp.Size = new Size(382, 32);
+            controleRestoreNp.TabIndex = 14;
+            controleRestoreNp.Text = "Rétablir les controles sans pavé numérique";
+            controleRestoreNp.TextAlign = ContentAlignment.MiddleCenter;
+            controleRestoreNp.Click += controleRestoreNp_Click;
+            controleRestoreNp.MouseEnter += controleRestoreNp_MouseEnter;
+            controleRestoreNp.MouseLeave += controleRestoreNp_MouseLeave;
             // 
             // controlsFrame1
             // 
-            this.controlsFrame1.Controls.Add(this.psxPict);
-            this.controlsFrame1.Font = (new global::System.Drawing.Font("Roboto Black", 9.75F, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point));
-            this.controlsFrame1.ForeColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224)), (global::System.Int32)((global::System.Byte)(224))));
-            this.controlsFrame1.Location = (new global::System.Drawing.Point(3, 4));
-            this.controlsFrame1.Name = ("controlsFrame1");
-            this.controlsFrame1.Size = (new global::System.Drawing.Size(390, 301));
-            this.controlsFrame1.TabIndex = (10);
-            this.controlsFrame1.TabStop = (false);
-            this.controlsFrame1.Text = ("Manette");
+            controlsFrame1.Controls.Add(psxPict);
+            controlsFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            controlsFrame1.ForeColor = Color.FromArgb(224, 224, 224);
+            controlsFrame1.Location = new Point(3, 4);
+            controlsFrame1.Name = "controlsFrame1";
+            controlsFrame1.Size = new Size(390, 301);
+            controlsFrame1.TabIndex = 10;
+            controlsFrame1.TabStop = false;
+            controlsFrame1.Text = "Manette";
             // 
             // psxPict
             // 
-            this.psxPict.Anchor = (global::System.Windows.Forms.AnchorStyles.None);
-            this.psxPict.Image = (global::FF7_SYW_Unified.Properties.Resources.psx);
-            this.psxPict.Location = (new global::System.Drawing.Point(4, 23));
-            this.psxPict.Name = ("psxPict");
-            this.psxPict.Size = (new global::System.Drawing.Size(382, 272));
-            this.psxPict.TabIndex = (6);
-            this.psxPict.TabStop = (false);
+            psxPict.Anchor = AnchorStyles.None;
+            psxPict.Image = Properties.Resources.psx;
+            psxPict.Location = new Point(4, 23);
+            psxPict.Name = "psxPict";
+            psxPict.Size = new Size(382, 272);
+            psxPict.TabIndex = 6;
+            psxPict.TabStop = false;
             // 
             // FF7U
             // 
-            this.AutoScaleDimensions = (new global::System.Drawing.SizeF(7F, 15F));
-            this.AutoScaleMode = (global::System.Windows.Forms.AutoScaleMode.Font);
-            this.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(33)), (global::System.Int32)((global::System.Byte)(40)), (global::System.Int32)((global::System.Byte)(50))));
-            this.BackgroundImageLayout = (global::System.Windows.Forms.ImageLayout.Center);
-            this.ClientSize = (new global::System.Drawing.Size(1127, 711));
-            this.Controls.Add(this.menuControlsPanel);
-            this.Controls.Add(this.menuLaunchGamePanel);
-            this.Controls.Add(this.menuHelpPanel);
-            this.Controls.Add(this.menuFFNxPanel);
-            this.Controls.Add(this.menuGameplayPanel);
-            this.Controls.Add(this.menuSoundPanel);
-            this.Controls.Add(this.menuAboutPanel);
-            this.Controls.Add(this.menuGraphicPanel);
-            this.Controls.Add(this.menuFrame);
-            this.FormBorderStyle = (global::System.Windows.Forms.FormBorderStyle.FixedSingle);
-            this.Icon = ((global::System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = (false);
-            this.Name = ("FF7U");
-            this.StartPosition = (global::System.Windows.Forms.FormStartPosition.CenterScreen);
-            this.Text = ("FF7_SYW_Unified");
-            this.FormClosing += (this.FormClosingCheck);
-            this.Load += (this.FF7U_Load);
-            ((global::System.ComponentModel.ISupportInitialize)(musicsPrev)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(ambiantPrev)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(sfxPrev)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(fmvPrev)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(voicesPrev)).EndInit();
-            this.menuFrame.ResumeLayout(false);
-            this.settingsGroup.ResumeLayout(false);
-            this.ff7Lang.ResumeLayout(false);
-            this.interfaceLang.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.graphicFrame1.ResumeLayout(false);
-            this.graphicsGroupAddTextures.ResumeLayout(false);
-            this.graphicsGroupModels3Dm.ResumeLayout(false);
-            this.graphicsGroupModels3Dw.ResumeLayout(false);
-            this.graphicsGroupMenu.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagGGraphicsMenu)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagEGraphicsMenu)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagSGraphicsMenu)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagFGraphicsMenu)).EndInit();
-            this.graphicsGroupFMV.ResumeLayout(false);
-            this.graphicsGroupModels3Dc.ResumeLayout(false);
-            this.graphicsGroupModels3Df.ResumeLayout(false);
-            this.graphicFrame3.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.graphicPrevPic)).EndInit();
-            this.menuGraphicPanel.ResumeLayout(false);
-            this.graphicFrame2.ResumeLayout(false);
-            this.graphicFrame2.PerformLayout();
-            this.menuAboutPanel.ResumeLayout(false);
-            this.aboutFrame1.ResumeLayout(false);
-            this.aboutFrame2.ResumeLayout(false);
-            this.menuSoundPanel.ResumeLayout(false);
-            this.soundFrame5.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.soundPrevPic)).EndInit();
-            this.soundFrame4.ResumeLayout(false);
-            this.soundFrame2.ResumeLayout(false);
-            this.soundFrame2.PerformLayout();
-            this.soundFrame3.ResumeLayout(false);
-            this.soundsGroupVoices.ResumeLayout(false);
-            this.soundsGroupFMV.ResumeLayout(false);
-            this.soundsGroupAmbients.ResumeLayout(false);
-            this.soundsGroupSfx.ResumeLayout(false);
-            this.soundsGroupMusics.ResumeLayout(false);
-            this.menuGameplayPanel.ResumeLayout(false);
-            this.gameplayFrame2.ResumeLayout(false);
-            this.gameplayFrame2.PerformLayout();
-            this.gameplayFrame1.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagSGameplay)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagGGameplay)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagFGameplay)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagEGameplay)).EndInit();
-            this.gameplayGroupMods.ResumeLayout(false);
-            this.gameplayFrame3.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.gameplayPrevPic)).EndInit();
-            this.menuFFNxPanel.ResumeLayout(false);
-            this.FFNxFrame2.ResumeLayout(false);
-            this.FFNxFrame2.PerformLayout();
-            this.FFNxFrame1.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagGFFNxPatch)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagSFFNxPatch)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagFFFNxPatch)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.flagEFFNxPatch)).EndInit();
-            this.FFNxFrame3.ResumeLayout(false);
-            this.FFNxGroupFps.ResumeLayout(false);
-            this.FFNxGroupSpeedhack.ResumeLayout(false);
-            this.FFNxGroupControllerDeathzones.ResumeLayout(false);
-            this.FFNxGroupAudioSample.ResumeLayout(false);
-            this.FFNxGroupIR.ResumeLayout(false);
-            this.FFNxGroupAudioChannels.ResumeLayout(false);
-            this.FFNxGroupAA.ResumeLayout(false);
-            this.FFNxGroupResolution.ResumeLayout(false);
-            this.FFNxGroupHDR.ResumeLayout(false);
-            this.FFNxGroupRatio.ResumeLayout(false);
-            this.FFNxGroupScreen.ResumeLayout(false);
-            this.FFNxGroup3dEngine.ResumeLayout(false);
-            this.menuHelpPanel.ResumeLayout(false);
-            this.HelpFrame2.ResumeLayout(false);
-            this.menuLaunchGamePanel.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.loadingAnimation)).EndInit();
-            this.menuControlsPanel.ResumeLayout(false);
-            this.controlsFrame2.ResumeLayout(false);
-            this.controlsFrame3.ResumeLayout(false);
-            this.controlsFrame1.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.psxPict)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(33, 40, 50);
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(1127, 711);
+            Controls.Add(menuControlsPanel);
+            Controls.Add(menuLaunchGamePanel);
+            Controls.Add(menuHelpPanel);
+            Controls.Add(menuFFNxPanel);
+            Controls.Add(menuGameplayPanel);
+            Controls.Add(menuSoundPanel);
+            Controls.Add(menuAboutPanel);
+            Controls.Add(menuGraphicPanel);
+            Controls.Add(menuFrame);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "FF7U";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FF7_SYW_Unified";
+            FormClosing += FormClosingCheck;
+            Load += FF7U_Load;
+            ((System.ComponentModel.ISupportInitialize)musicsPrev).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ambiantPrev).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sfxPrev).EndInit();
+            ((System.ComponentModel.ISupportInitialize)fmvPrev).EndInit();
+            ((System.ComponentModel.ISupportInitialize)voicesPrev).EndInit();
+            menuFrame.ResumeLayout(false);
+            settingsGroup.ResumeLayout(false);
+            ff7Lang.ResumeLayout(false);
+            interfaceLang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            graphicFrame1.ResumeLayout(false);
+            graphicsGroupAddTextures.ResumeLayout(false);
+            graphicsGroupModels3Dm.ResumeLayout(false);
+            graphicsGroupModels3Dw.ResumeLayout(false);
+            graphicsGroupMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)flagGGraphicsMenu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagEGraphicsMenu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagSGraphicsMenu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagFGraphicsMenu).EndInit();
+            graphicsGroupFMV.ResumeLayout(false);
+            graphicsGroupModels3Dc.ResumeLayout(false);
+            graphicsGroupModels3Df.ResumeLayout(false);
+            graphicFrame3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)graphicPrevPic).EndInit();
+            menuGraphicPanel.ResumeLayout(false);
+            graphicFrame2.ResumeLayout(false);
+            graphicFrame2.PerformLayout();
+            menuAboutPanel.ResumeLayout(false);
+            aboutFrame1.ResumeLayout(false);
+            aboutFrame2.ResumeLayout(false);
+            menuSoundPanel.ResumeLayout(false);
+            soundFrame5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)soundPrevPic).EndInit();
+            soundFrame4.ResumeLayout(false);
+            soundFrame2.ResumeLayout(false);
+            soundFrame2.PerformLayout();
+            soundFrame3.ResumeLayout(false);
+            soundsGroupVoices.ResumeLayout(false);
+            soundsGroupFMV.ResumeLayout(false);
+            soundsGroupAmbients.ResumeLayout(false);
+            soundsGroupSfx.ResumeLayout(false);
+            soundsGroupMusics.ResumeLayout(false);
+            menuGameplayPanel.ResumeLayout(false);
+            gameplayFrame2.ResumeLayout(false);
+            gameplayFrame2.PerformLayout();
+            gameplayFrame1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)flagSGameplay).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagGGameplay).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagFGameplay).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagEGameplay).EndInit();
+            gameplayGroupMods.ResumeLayout(false);
+            gameplayFrame3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gameplayPrevPic).EndInit();
+            menuFFNxPanel.ResumeLayout(false);
+            FFNxFrame2.ResumeLayout(false);
+            FFNxFrame2.PerformLayout();
+            FFNxFrame1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)flagGFFNxPatch).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagSFFNxPatch).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagFFFNxPatch).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagEFFNxPatch).EndInit();
+            FFNxFrame3.ResumeLayout(false);
+            FFNxGroupFps.ResumeLayout(false);
+            FFNxGroupSpeedhack.ResumeLayout(false);
+            FFNxGroupControllerDeathzones.ResumeLayout(false);
+            FFNxGroupAudioSample.ResumeLayout(false);
+            FFNxGroupIR.ResumeLayout(false);
+            FFNxGroupAudioChannels.ResumeLayout(false);
+            FFNxGroupAA.ResumeLayout(false);
+            FFNxGroupResolution.ResumeLayout(false);
+            FFNxGroupHDR.ResumeLayout(false);
+            FFNxGroupRatio.ResumeLayout(false);
+            FFNxGroupScreen.ResumeLayout(false);
+            FFNxGroup3dEngine.ResumeLayout(false);
+            menuHelpPanel.ResumeLayout(false);
+            HelpFrame2.ResumeLayout(false);
+            menuLaunchGamePanel.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)loadingAnimation).EndInit();
+            menuControlsPanel.ResumeLayout(false);
+            controlsFrame2.ResumeLayout(false);
+            controlsFrame3.ResumeLayout(false);
+            controlsFrame1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)psxPict).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -3385,71 +3395,71 @@
         private TextBox FFNxHelp;
         private RichTextBox GeneralHelp;
         private CheckBox FFNxAnalogControllerArun;
-        private global::System.Windows.Forms.ComboBox HelpList;
-        private global::System.Windows.Forms.Label chooseHelp;
-        private global::System.Windows.Forms.Label menuControls;
-        private global::System.Windows.Forms.Panel menuControlsPanel;
-        private global::System.Windows.Forms.Label controleRestoreNp;
-        private global::System.Windows.Forms.Label controleRestoreKb;
-        private global::System.Windows.Forms.GroupBox controlsFrame3;
-        private global::System.Windows.Forms.GroupBox controlsFrame1;
-        private global::System.Windows.Forms.GroupBox controlsFrame2;
-        private global::System.Windows.Forms.PictureBox psxPict;
-        private global::System.Windows.Forms.GroupBox groupBox1;
-        private global::System.Windows.Forms.GroupBox groupBox3;
-        private global::System.Windows.Forms.GroupBox groupBox4;
-        private global::System.Windows.Forms.Label ctrlMove;
-        private global::System.Windows.Forms.Label ctrlStart;
-        private global::System.Windows.Forms.Label ctrlAssist;
-        private global::System.Windows.Forms.Label ctrlTarget;
-        private global::System.Windows.Forms.Label ctrlCam;
-        private global::System.Windows.Forms.Label ctrlPgDown;
-        private global::System.Windows.Forms.Label ctrlPgUp;
-        private global::System.Windows.Forms.Label ctrlChange;
-        private global::System.Windows.Forms.Label ctrlMenu;
-        private global::System.Windows.Forms.Label ctrlCancel;
-        private global::System.Windows.Forms.Label ctrlOk;
-        private global::System.Windows.Forms.Label ctrlGpadPad;
-        private global::System.Windows.Forms.Label ctrlGpadChange;
-        private global::System.Windows.Forms.Label ctrlGpadMenu;
-        private global::System.Windows.Forms.Label ctrlGpadCancel;
-        private global::System.Windows.Forms.Label ctrlGpadOk;
-        private global::System.Windows.Forms.Label ctrlGpadStart;
-        private global::System.Windows.Forms.Label ctrlGpadAssist;
-        private global::System.Windows.Forms.Label ctrlGpadTarget;
-        private global::System.Windows.Forms.Label ctrlGpadCam;
-        private global::System.Windows.Forms.Label ctrlGpadPgDown;
-        private global::System.Windows.Forms.Label ctrlGpadPgUp;
-        private global::System.Windows.Forms.Label ctrlNumpadStart;
-        private global::System.Windows.Forms.Label ctrlNumpadAssist;
-        private global::System.Windows.Forms.Label ctrlNumpadTarget;
-        private global::System.Windows.Forms.Label ctrlNumpadCam;
-        private global::System.Windows.Forms.Label ctrlNumpadPgDown;
-        private global::System.Windows.Forms.Label ctrlNumpadPgUp;
-        private global::System.Windows.Forms.Label ctrlNumpadChange;
-        private global::System.Windows.Forms.Label ctrlNumpadMenu;
-        private global::System.Windows.Forms.Label ctrlNumpadCancel;
-        private global::System.Windows.Forms.Label ctrlNumpadOk;
-        private global::System.Windows.Forms.Label ctrlNumpadPad;
-        private global::System.Windows.Forms.Label ctrlKeyboardStart;
-        private global::System.Windows.Forms.Label ctrlKeyboardAssist;
-        private global::System.Windows.Forms.Label ctrlKeyboardTarget;
-        private global::System.Windows.Forms.Label ctrlKeyboardCam;
-        private global::System.Windows.Forms.Label ctrlKeyboardPgDown;
-        private global::System.Windows.Forms.Label ctrlKeyboardPgUp;
-        private global::System.Windows.Forms.Label ctrlKeyboardChange;
-        private global::System.Windows.Forms.Label ctrlKeyboardMenu;
-        private global::System.Windows.Forms.Label ctrlKeyboardCancel;
-        private global::System.Windows.Forms.Label ctrlKeyboardOk;
-        private global::System.Windows.Forms.Label ctrlKeyboardPad;
-        private global::System.Windows.Forms.Label ctrlKeyboard;
-        private global::System.Windows.Forms.Label ctrlNumpad;
-        private global::System.Windows.Forms.Label ctrlGamepad;
-        private global::System.Windows.Forms.Label ctrlControls;
-        private global::System.Windows.Forms.Label analogPadUse;
-        private global::System.Windows.Forms.RichTextBox specialShortcutHelp;
-        private global::System.Windows.Forms.GroupBox aboutFrame1;
-        private global::System.Windows.Forms.RichTextBox aboutContributors;
-        private global::System.Windows.Forms.Label saveEdit;
+        private ComboBox HelpList;
+        private Label chooseHelp;
+        private Label menuControls;
+        private Panel menuControlsPanel;
+        private Label controleRestoreNp;
+        private Label controleRestoreKb;
+        private GroupBox controlsFrame3;
+        private GroupBox controlsFrame1;
+        private GroupBox controlsFrame2;
+        private PictureBox psxPict;
+        private GroupBox groupBox1;
+        private GroupBox groupBox3;
+        private GroupBox groupBox4;
+        private Label ctrlMove;
+        private Label ctrlStart;
+        private Label ctrlAssist;
+        private Label ctrlTarget;
+        private Label ctrlCam;
+        private Label ctrlPgDown;
+        private Label ctrlPgUp;
+        private Label ctrlChange;
+        private Label ctrlMenu;
+        private Label ctrlCancel;
+        private Label ctrlOk;
+        private Label ctrlGpadPad;
+        private Label ctrlGpadChange;
+        private Label ctrlGpadMenu;
+        private Label ctrlGpadCancel;
+        private Label ctrlGpadOk;
+        private Label ctrlGpadStart;
+        private Label ctrlGpadAssist;
+        private Label ctrlGpadTarget;
+        private Label ctrlGpadCam;
+        private Label ctrlGpadPgDown;
+        private Label ctrlGpadPgUp;
+        private Label ctrlNumpadStart;
+        private Label ctrlNumpadAssist;
+        private Label ctrlNumpadTarget;
+        private Label ctrlNumpadCam;
+        private Label ctrlNumpadPgDown;
+        private Label ctrlNumpadPgUp;
+        private Label ctrlNumpadChange;
+        private Label ctrlNumpadMenu;
+        private Label ctrlNumpadCancel;
+        private Label ctrlNumpadOk;
+        private Label ctrlNumpadPad;
+        private Label ctrlKeyboardStart;
+        private Label ctrlKeyboardAssist;
+        private Label ctrlKeyboardTarget;
+        private Label ctrlKeyboardCam;
+        private Label ctrlKeyboardPgDown;
+        private Label ctrlKeyboardPgUp;
+        private Label ctrlKeyboardChange;
+        private Label ctrlKeyboardMenu;
+        private Label ctrlKeyboardCancel;
+        private Label ctrlKeyboardOk;
+        private Label ctrlKeyboardPad;
+        private Label ctrlKeyboard;
+        private Label ctrlNumpad;
+        private Label ctrlGamepad;
+        private Label ctrlControls;
+        private Label analogPadUse;
+        private RichTextBox specialShortcutHelp;
+        private GroupBox aboutFrame1;
+        private RichTextBox aboutContributors;
+        private Label saveEdit;
     }
 }

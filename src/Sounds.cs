@@ -26,7 +26,7 @@ namespace FF7_SYW_Unified
             setModsItems(soundsFMV, @"audio\movies\");
             setModsItems(soundsVoices, @"audio\voices\");
 
-            soundsMusics.Text = soundsMusics.Items[0].ToString();
+            soundsMusics.Text = soundsMusics.Items[1].ToString();
             soundsAmbients.Text = soundsAmbients.Items[0].ToString();
             soundsSfx.Text = soundsSfx.Items[0].ToString();
             soundsFMV.Text = soundsFMV.Items[0].ToString();
