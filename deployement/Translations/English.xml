@@ -74,7 +74,7 @@
 	</control>
 	<control>
 		<name>menuFFNx</name>
-		<text>Driver Setup</text>
+		<text>Driver and Patchs</text>
 	</control>
 	<control>
 		<name>menuHelp</name>
@@ -110,7 +110,7 @@
 		<name>packStory</name>
 		<text>The FF7 SYW project is a pack including Final Fantasy VII with graphical reprocessing thanks to advanced artificial intelligence on background images, fights, world map, mini-games and video sequences, other elements have also been recreated while preserving the original essence of the game.
 		
-In addition, the pack contains various advanced configuration options and various patches such as save-anywhere functions, autorun, disable random battles, fast forward, challenges and difficulty mods of all kinds...all this to offer an unprecedented gaming experience and comfort.</text>
+In addition, the pack contains various advanced configuration options and various patchs such as save-anywhere functions, autorun, disable random battles, fast forward, challenges and difficulty mods of all kinds...all this to offer an unprecedented gaming experience and comfort.</text>
 	</control>	
 	
 	
@@ -163,6 +163,20 @@ Geometry and lighting bugs from the original game have been fixed by AxlRose.
 It is recommended to activate this option.</help>
 		<author>Satsuki_Yatoshi and AxlRose</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>axl3dbattle</name>
+		<text>AxlRose's Blender</text>
+		<help>3D battle scenes corrections.
+		
+Fixes the "shadow/light" effect (blending) of the ground/floor for all affected Battle Stages.
+
+Improvements to the Battle Fields were done directly to the 3D model's floor meshes.
+
+It is recommended to activate this option..
+</help>
+		<author>AxlRose</author>
+		<url>https://forums.qhimm.com/index.php?topic=21357.0</url>
 	</control>
 	<control>
 		<name>graphicsMagics</name>
@@ -351,7 +365,7 @@ It may take a few moments to launch.</text>
 <!--  -->
 	<control>
 		<name>FFNxFrame1</name>
-		<text>Memory patches</text>
+		<text>Patchs</text>
 	</control>	
 	<control>
 		<name>FFNxFrame2</name>
@@ -558,7 +572,7 @@ Thanks to this option you can choose to make the fights more fluid in 30fps or t
 
 The option to have fights in 30fps requires having interpolated combat models.
 
-The 60fps game option also requires interpolated models (those of the game scenes) but also some game patches to avoid (minor) bugs in certain scenes.
+The 60fps game option also requires interpolated models (those of the game scenes) but also some game patchs to avoid (minor) bugs in certain scenes.
 
 the 3D models included in the pack are already interpolated.
 

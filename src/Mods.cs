@@ -327,6 +327,11 @@ namespace FF7_SYW_Unified
                 }
             }
 
+            if (axl3dbattle.Checked)
+            {
+                loadingLog(axl3dbattle.Text);
+                folderModCopy(Application.StartupPath + @"Mods\SYW\3DBattleBackgroundAxl\");
+            }
         }
 
 

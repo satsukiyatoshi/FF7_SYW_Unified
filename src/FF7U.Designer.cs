@@ -242,6 +242,7 @@
             controleRestoreNp = new Label();
             controlsFrame1 = new GroupBox();
             psxPict = new PictureBox();
+            axl3dbattle = new CheckBox();
             musicsPrev = new PictureBox();
             ambiantPrev = new PictureBox();
             sfxPrev = new PictureBox();
@@ -621,6 +622,7 @@
             // 
             // graphicFrame1
             // 
+            graphicFrame1.Controls.Add(axl3dbattle);
             graphicFrame1.Controls.Add(graphicsGroupAddTextures);
             graphicFrame1.Controls.Add(graphicsGroupModels3Dm);
             graphicFrame1.Controls.Add(FFNxGamutNtsc);
@@ -918,9 +920,9 @@
             graphicsMagics.CheckState = CheckState.Checked;
             graphicsMagics.Cursor = Cursors.Hand;
             graphicsMagics.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            graphicsMagics.Location = new Point(260, 44);
+            graphicsMagics.Location = new Point(341, 44);
             graphicsMagics.Name = "graphicsMagics";
-            graphicsMagics.Size = new Size(245, 19);
+            graphicsMagics.Size = new Size(164, 19);
             graphicsMagics.TabIndex = 5;
             graphicsMagics.Text = "Magies de combats HD";
             graphicsMagics.UseVisualStyleBackColor = false;
@@ -935,7 +937,7 @@
             graphicsBattles.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsBattles.Location = new Point(11, 44);
             graphicsBattles.Name = "graphicsBattles";
-            graphicsBattles.Size = new Size(246, 19);
+            graphicsBattles.Size = new Size(168, 19);
             graphicsBattles.TabIndex = 4;
             graphicsBattles.Text = "Scènes de combats HD";
             graphicsBattles.UseVisualStyleBackColor = false;
@@ -3136,6 +3138,21 @@
             psxPict.TabIndex = 6;
             psxPict.TabStop = false;
             // 
+            // axl3dbattle
+            // 
+            axl3dbattle.BackColor = Color.FromArgb(89, 98, 111);
+            axl3dbattle.Checked = true;
+            axl3dbattle.CheckState = CheckState.Checked;
+            axl3dbattle.Cursor = Cursors.Hand;
+            axl3dbattle.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            axl3dbattle.Location = new Point(182, 44);
+            axl3dbattle.Name = "axl3dbattle";
+            axl3dbattle.Size = new Size(156, 19);
+            axl3dbattle.TabIndex = 41;
+            axl3dbattle.Text = "AxlRose's Blender";
+            axl3dbattle.UseVisualStyleBackColor = false;
+            axl3dbattle.MouseEnter += axl3dbattle_MouseEnter;
+            // 
             // FF7U
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -3461,5 +3478,6 @@
         private GroupBox aboutFrame1;
         private RichTextBox aboutContributors;
         private Label saveEdit;
+        private CheckBox axl3dbattle;
     }
 }

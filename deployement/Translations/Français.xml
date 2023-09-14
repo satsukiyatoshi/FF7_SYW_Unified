@@ -74,7 +74,7 @@
 	</control>
 	<control>
 		<name>menuFFNx</name>
-		<text>Configuration du pilote</text>
+		<text>Pilote et patchs</text>
 	</control>
 	<control>
 		<name>menuHelp</name>
@@ -163,6 +163,20 @@ La géométrie et les bug d'éclairages du jeu d'origine ont été corrigé par 
 Il est conseillé d'activer cette option.</help>
 		<author>Satsuki_Yatoshi et AxlRose</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>axl3dbattle</name>
+		<text>AxlRose's Blender</text>
+		<help>Correction de la 3D des scenes de combat.
+		
+Corrige les effets d'ombre et de lumière du sol des environements de combat.
+
+Améliore l'alignement des textures du sol des environements de combat.
+
+Il est conseillé d'activer cette option.
+</help>
+		<author>AxlRose</author>
+		<url>https://forums.qhimm.com/index.php?topic=21357.0</url>
 	</control>
 	<control>
 		<name>graphicsMagics</name>
@@ -350,7 +364,7 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 <!--  -->
 	<control>
 		<name>FFNxFrame1</name>
-		<text>Patchs mémoire</text>
+		<text>Patchs</text>
 	</control>	
 	<control>
 		<name>FFNxFrame2</name>
