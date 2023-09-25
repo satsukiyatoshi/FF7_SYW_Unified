@@ -151,6 +151,18 @@ namespace FF7_SYW_Unified
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesLang\" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
+            //if 30fps mod is activated then copy 30 fps file of the mod too
+            if (FFNxFps.SelectedIndex == 1 && Directory.Exists(modFolder + @"Files30fps"))
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"Files30fps"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
+            //if 30fps mod is activated and specific langauge file exists then copy localised 30 fps file of the mod too
+            if (FFNxFps.SelectedIndex == 1 && Directory.Exists(modFolder + @"FilesLang30fps\" + Globals.gameLang))
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesLang30fps\" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
             //if 60fps mod is activated then copy 60 fps file of the mod too
             if (FFNxFps.SelectedIndex == 2 && Directory.Exists(modFolder + @"Files60fps"))
             {
