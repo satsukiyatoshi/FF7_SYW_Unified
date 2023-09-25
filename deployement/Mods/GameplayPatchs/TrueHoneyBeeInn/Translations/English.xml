@@ -5,8 +5,10 @@
 		<help>True Honey Bee Inn : 
 		
 Adds the removed parts of the honey bee inn to the original game!
+
+May cause some bugs with specific gameplay mods like the NT mod. 
 </help>
-		<author>Cloudiar and Sacepi</author>
+		<author>Cloudiar, Sacepi, L@zaro</author>
 		<url>https://forums.qhimm.com/index.php?topic=21133.0</url>
 		<compatibily>FES</compatibily>
 </control>

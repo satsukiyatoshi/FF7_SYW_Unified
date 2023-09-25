@@ -17,6 +17,7 @@ namespace FF7_SYW_Unified
         private void gameplaySetDefaults()
         {
             setModsItems(gameplayMods, @"gameplay\");
+            setDefaultGameplayPatchsListValues();
             gameplayMods.Text = gameplayMods.Items[0].ToString();
         }
 
@@ -25,7 +26,7 @@ namespace FF7_SYW_Unified
         private void gameplayModsChange(object sender, EventArgs e)
         {
             modShowCustom(gameplayMods, @"gameplay\", gameplayHelp, gameplayHelpAuthor, gameplayPrevPic);
-            setModFlags(gameplayFrame1);
+            setModFlags(gameplayFrame2);
 
             if (Directory.Exists(getModCustomFolder(gameplayMods, @"gameplay\") + @"\docs"))
             {
@@ -95,6 +96,55 @@ namespace FF7_SYW_Unified
         private void documentsFolder_Click(object sender, EventArgs e)
         {
             Process.Start("explorer.exe", getModCustomFolder(gameplayMods, @"gameplay\") + @"\docs");
+        }
+
+        private void setDefaultGameplayPatchsListValues()
+        {
+            gameplayComboPatchs.Items.Clear();
+            GameplayPatchsList.Items.Clear();
+
+            setModsItems(gameplayComboPatchs, @"GameplayPatchs\");
+            foreach (var item in gameplayComboPatchs.Items)
+            {
+                GameplayPatchsList.Items.Add(item);
+            }
+        }
+
+
+        private void GameplayPatchsList_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            Point pos = GameplayPatchsList.PointToClient(MousePosition);
+
+            int index = GameplayPatchsList.IndexFromPoint(pos);
+
+            if (index > -1)
+            {
+                gameplayComboPatchs.Text = GameplayPatchsList.Items[index].ToString();
+                modShowCustom(gameplayComboPatchs, @"GameplayPatchs\", gameplayHelp, gameplayHelpAuthor, gameplayPrevPic);
+                setModFlags(gameplayFrame2);
+            }
+
+            // use 25 ms sleep to avoid overkill cpu usage with the mousemove check
+            Thread.Sleep(25);
+
+        }
+
+        private void applyGameplayPatchs()
+        {
+
+            loadingLog(gameplayFrame5.Text);
+
+            int i;
+
+            for (i = 0; i <= (GameplayPatchsList.Items.Count - 1); i++)
+            {
+                if (GameplayPatchsList.GetItemChecked(i))
+                {
+                    string[] dirs = Directory.GetDirectories(Application.StartupPath + @"mods\GameplayPatchs", "*", SearchOption.TopDirectoryOnly);
+                    folderModCopy(dirs[i]);
+                }
+            }
         }
 
 

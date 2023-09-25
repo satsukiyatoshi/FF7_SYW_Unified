@@ -345,6 +345,10 @@ It may take a few moments to launch.</text>
 		<text>Preview</text>
 	</control>
 	<control>
+		<name>gameplayFrame5</name>
+		<text>Gameplay patchs</text>
+	</control>
+	<control>
 		<name>saveByMod</name>
 		<text>Saves folder</text>
 	</control>

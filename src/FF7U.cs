@@ -90,6 +90,7 @@ namespace FF7_SYW_Unified
                 ApplyGameLang();
                 applySywTextures();
                 applyMods();
+                applyGameplayPatchs();
                 applyPatchs();
                 ffnxTomlGenerate();
                 saveValues();

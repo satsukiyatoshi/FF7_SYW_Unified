@@ -345,6 +345,10 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 		<text>Aperçu</text>
 	</control>
 	<control>
+		<name>gameplayFrame5</name>
+		<text>Patchs de gameplay</text>
+	</control>
+	<control>
 		<name>saveByMod</name>
 		<text>Dossier des sauvegardes</text>
 	</control>

@@ -51,6 +51,7 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             graphicFrame1 = new GroupBox();
+            axl3dbattle = new CheckBox();
             graphicsGroupAddTextures = new GroupBox();
             graphicsAddTextures = new ComboBox();
             graphicsGroupModels3Dm = new GroupBox();
@@ -110,18 +111,20 @@
             soundsMusics = new ComboBox();
             menuGameplayPanel = new Panel();
             gameplayFrame2 = new GroupBox();
-            saveByMod = new Label();
-            saveEdit = new Label();
             gameplayHelp = new TextBox();
             gameplayHelpAuthor = new Label();
-            gameplayFrame1 = new GroupBox();
             flagSGameplay = new PictureBox();
-            flagGGameplay = new PictureBox();
-            flagFGameplay = new PictureBox();
             flagEGameplay = new PictureBox();
+            flagFGameplay = new PictureBox();
+            flagGGameplay = new PictureBox();
+            gameplayFrame5 = new GroupBox();
+            GameplayPatchsList = new CheckedListBox();
+            gameplayFrame1 = new GroupBox();
             gameplayGroupMods = new GroupBox();
-            documentsFolder = new Label();
             gameplayMods = new ComboBox();
+            saveEdit = new Label();
+            saveByMod = new Label();
+            documentsFolder = new Label();
             gameplayFrame3 = new GroupBox();
             gameplayPrevPic = new PictureBox();
             menuFFNxPanel = new Panel();
@@ -242,7 +245,7 @@
             controleRestoreNp = new Label();
             controlsFrame1 = new GroupBox();
             psxPict = new PictureBox();
-            axl3dbattle = new CheckBox();
+            gameplayComboPatchs = new ComboBox();
             musicsPrev = new PictureBox();
             ambiantPrev = new PictureBox();
             sfxPrev = new PictureBox();
@@ -291,11 +294,12 @@
             soundsGroupMusics.SuspendLayout();
             menuGameplayPanel.SuspendLayout();
             gameplayFrame2.SuspendLayout();
-            gameplayFrame1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)flagSGameplay).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)flagGGameplay).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)flagFGameplay).BeginInit();
             ((System.ComponentModel.ISupportInitialize)flagEGameplay).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagFGameplay).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flagGGameplay).BeginInit();
+            gameplayFrame5.SuspendLayout();
+            gameplayFrame1.SuspendLayout();
             gameplayGroupMods.SuspendLayout();
             gameplayFrame3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gameplayPrevPic).BeginInit();
@@ -646,6 +650,21 @@
             graphicFrame1.TabIndex = 6;
             graphicFrame1.TabStop = false;
             graphicFrame1.Text = "Mods graphiques";
+            // 
+            // axl3dbattle
+            // 
+            axl3dbattle.BackColor = Color.FromArgb(89, 98, 111);
+            axl3dbattle.Checked = true;
+            axl3dbattle.CheckState = CheckState.Checked;
+            axl3dbattle.Cursor = Cursors.Hand;
+            axl3dbattle.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            axl3dbattle.Location = new Point(182, 44);
+            axl3dbattle.Name = "axl3dbattle";
+            axl3dbattle.Size = new Size(156, 19);
+            axl3dbattle.TabIndex = 41;
+            axl3dbattle.Text = "AxlRose's Blender";
+            axl3dbattle.UseVisualStyleBackColor = false;
+            axl3dbattle.MouseEnter += axl3dbattle_MouseEnter;
             // 
             // graphicsGroupAddTextures
             // 
@@ -1028,7 +1047,7 @@
             menuGraphicPanel.Controls.Add(graphicFrame2);
             menuGraphicPanel.Controls.Add(graphicFrame1);
             menuGraphicPanel.Controls.Add(graphicFrame3);
-            menuGraphicPanel.Location = new Point(327, 0);
+            menuGraphicPanel.Location = new Point(327, 1600);
             menuGraphicPanel.Name = "menuGraphicPanel";
             menuGraphicPanel.Size = new Size(795, 703);
             menuGraphicPanel.TabIndex = 10;
@@ -1406,59 +1425,30 @@
             // menuGameplayPanel
             // 
             menuGameplayPanel.Controls.Add(gameplayFrame2);
+            menuGameplayPanel.Controls.Add(gameplayFrame5);
             menuGameplayPanel.Controls.Add(gameplayFrame1);
             menuGameplayPanel.Controls.Add(gameplayFrame3);
-            menuGameplayPanel.Location = new Point(327, 1600);
+            menuGameplayPanel.Location = new Point(327, 0);
             menuGameplayPanel.Name = "menuGameplayPanel";
             menuGameplayPanel.Size = new Size(795, 703);
             menuGameplayPanel.TabIndex = 13;
             // 
             // gameplayFrame2
             // 
-            gameplayFrame2.Controls.Add(saveByMod);
-            gameplayFrame2.Controls.Add(saveEdit);
             gameplayFrame2.Controls.Add(gameplayHelp);
             gameplayFrame2.Controls.Add(gameplayHelpAuthor);
+            gameplayFrame2.Controls.Add(flagSGameplay);
+            gameplayFrame2.Controls.Add(flagEGameplay);
+            gameplayFrame2.Controls.Add(flagFGameplay);
+            gameplayFrame2.Controls.Add(flagGGameplay);
             gameplayFrame2.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             gameplayFrame2.ForeColor = Color.FromArgb(224, 224, 224);
-            gameplayFrame2.Location = new Point(3, 102);
+            gameplayFrame2.Location = new Point(355, 5);
             gameplayFrame2.Name = "gameplayFrame2";
-            gameplayFrame2.Size = new Size(788, 274);
+            gameplayFrame2.Size = new Size(437, 371);
             gameplayFrame2.TabIndex = 10;
             gameplayFrame2.TabStop = false;
             gameplayFrame2.Text = "Aide";
-            // 
-            // saveByMod
-            // 
-            saveByMod.BackColor = SystemColors.ScrollBar;
-            saveByMod.Cursor = Cursors.Hand;
-            saveByMod.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            saveByMod.ForeColor = Color.Black;
-            saveByMod.Location = new Point(12, 239);
-            saveByMod.Name = "saveByMod";
-            saveByMod.Size = new Size(210, 23);
-            saveByMod.TabIndex = 17;
-            saveByMod.Text = "Dossier save";
-            saveByMod.TextAlign = ContentAlignment.MiddleCenter;
-            saveByMod.Click += saveByMod_Click;
-            saveByMod.MouseEnter += saveByMod_MouseEnter;
-            saveByMod.MouseLeave += saveByMod_MouseLeave;
-            // 
-            // saveEdit
-            // 
-            saveEdit.BackColor = SystemColors.ScrollBar;
-            saveEdit.Cursor = Cursors.Hand;
-            saveEdit.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            saveEdit.ForeColor = Color.Black;
-            saveEdit.Location = new Point(565, 239);
-            saveEdit.Name = "saveEdit";
-            saveEdit.Size = new Size(210, 23);
-            saveEdit.TabIndex = 18;
-            saveEdit.Text = "Edit save";
-            saveEdit.TextAlign = ContentAlignment.MiddleCenter;
-            saveEdit.Click += saveEdit_Click;
-            saveEdit.MouseEnter += saveEdit_MouseEnter;
-            saveEdit.MouseLeave += saveEdit_MouseLeave;
             // 
             // gameplayHelp
             // 
@@ -1471,7 +1461,7 @@
             gameplayHelp.Name = "gameplayHelp";
             gameplayHelp.ReadOnly = true;
             gameplayHelp.ScrollBars = ScrollBars.Vertical;
-            gameplayHelp.Size = new Size(763, 219);
+            gameplayHelp.Size = new Size(412, 286);
             gameplayHelp.TabIndex = 19;
             // 
             // gameplayHelpAuthor
@@ -1480,99 +1470,107 @@
             gameplayHelpAuthor.Cursor = Cursors.Hand;
             gameplayHelpAuthor.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             gameplayHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
-            gameplayHelpAuthor.Location = new Point(12, 240);
+            gameplayHelpAuthor.Location = new Point(11, 307);
             gameplayHelpAuthor.Name = "gameplayHelpAuthor";
-            gameplayHelpAuthor.Size = new Size(764, 22);
+            gameplayHelpAuthor.Size = new Size(413, 22);
             gameplayHelpAuthor.TabIndex = 3;
             gameplayHelpAuthor.TextAlign = ContentAlignment.MiddleCenter;
             gameplayHelpAuthor.Click += gameplayHelpAuthor_Click;
             // 
-            // gameplayFrame1
-            // 
-            gameplayFrame1.Controls.Add(flagSGameplay);
-            gameplayFrame1.Controls.Add(flagGGameplay);
-            gameplayFrame1.Controls.Add(flagFGameplay);
-            gameplayFrame1.Controls.Add(flagEGameplay);
-            gameplayFrame1.Controls.Add(gameplayGroupMods);
-            gameplayFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            gameplayFrame1.ForeColor = Color.FromArgb(224, 224, 224);
-            gameplayFrame1.Location = new Point(3, 4);
-            gameplayFrame1.Name = "gameplayFrame1";
-            gameplayFrame1.Size = new Size(788, 92);
-            gameplayFrame1.TabIndex = 6;
-            gameplayFrame1.TabStop = false;
-            gameplayFrame1.Text = "Mods de gameplay";
-            // 
             // flagSGameplay
             // 
             flagSGameplay.Image = (Image)resources.GetObject("flagSGameplay.Image");
-            flagSGameplay.Location = new Point(724, 54);
+            flagSGameplay.Location = new Point(372, 335);
             flagSGameplay.Name = "flagSGameplay";
             flagSGameplay.Size = new Size(52, 26);
             flagSGameplay.SizeMode = PictureBoxSizeMode.Zoom;
             flagSGameplay.TabIndex = 14;
             flagSGameplay.TabStop = false;
             // 
-            // flagGGameplay
-            // 
-            flagGGameplay.Image = (Image)resources.GetObject("flagGGameplay.Image");
-            flagGGameplay.Location = new Point(667, 54);
-            flagGGameplay.Name = "flagGGameplay";
-            flagGGameplay.Size = new Size(52, 26);
-            flagGGameplay.SizeMode = PictureBoxSizeMode.Zoom;
-            flagGGameplay.TabIndex = 13;
-            flagGGameplay.TabStop = false;
-            // 
-            // flagFGameplay
-            // 
-            flagFGameplay.Image = (Image)resources.GetObject("flagFGameplay.Image");
-            flagFGameplay.Location = new Point(724, 22);
-            flagFGameplay.Name = "flagFGameplay";
-            flagFGameplay.Size = new Size(52, 26);
-            flagFGameplay.SizeMode = PictureBoxSizeMode.Zoom;
-            flagFGameplay.TabIndex = 12;
-            flagFGameplay.TabStop = false;
-            // 
             // flagEGameplay
             // 
             flagEGameplay.Image = (Image)resources.GetObject("flagEGameplay.Image");
-            flagEGameplay.Location = new Point(667, 22);
+            flagEGameplay.Location = new Point(12, 335);
             flagEGameplay.Name = "flagEGameplay";
             flagEGameplay.Size = new Size(52, 26);
             flagEGameplay.SizeMode = PictureBoxSizeMode.Zoom;
             flagEGameplay.TabIndex = 11;
             flagEGameplay.TabStop = false;
             // 
+            // flagFGameplay
+            // 
+            flagFGameplay.Image = (Image)resources.GetObject("flagFGameplay.Image");
+            flagFGameplay.Location = new Point(132, 335);
+            flagFGameplay.Name = "flagFGameplay";
+            flagFGameplay.Size = new Size(52, 26);
+            flagFGameplay.SizeMode = PictureBoxSizeMode.Zoom;
+            flagFGameplay.TabIndex = 12;
+            flagFGameplay.TabStop = false;
+            // 
+            // flagGGameplay
+            // 
+            flagGGameplay.Image = (Image)resources.GetObject("flagGGameplay.Image");
+            flagGGameplay.Location = new Point(252, 335);
+            flagGGameplay.Name = "flagGGameplay";
+            flagGGameplay.Size = new Size(52, 26);
+            flagGGameplay.SizeMode = PictureBoxSizeMode.Zoom;
+            flagGGameplay.TabIndex = 13;
+            flagGGameplay.TabStop = false;
+            // 
+            // gameplayFrame5
+            // 
+            gameplayFrame5.Controls.Add(GameplayPatchsList);
+            gameplayFrame5.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame5.ForeColor = Color.FromArgb(224, 224, 224);
+            gameplayFrame5.Location = new Point(3, 178);
+            gameplayFrame5.Name = "gameplayFrame5";
+            gameplayFrame5.Size = new Size(346, 198);
+            gameplayFrame5.TabIndex = 10;
+            gameplayFrame5.TabStop = false;
+            gameplayFrame5.Text = "Patchs de gameplay";
+            // 
+            // GameplayPatchsList
+            // 
+            GameplayPatchsList.BackColor = Color.FromArgb(89, 98, 111);
+            GameplayPatchsList.BorderStyle = BorderStyle.FixedSingle;
+            GameplayPatchsList.CheckOnClick = true;
+            GameplayPatchsList.Cursor = Cursors.Hand;
+            GameplayPatchsList.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            GameplayPatchsList.ForeColor = Color.FromArgb(224, 224, 224);
+            GameplayPatchsList.FormattingEnabled = true;
+            GameplayPatchsList.Location = new Point(10, 22);
+            GameplayPatchsList.Name = "GameplayPatchsList";
+            GameplayPatchsList.Size = new Size(325, 164);
+            GameplayPatchsList.TabIndex = 43;
+            GameplayPatchsList.MouseMove += GameplayPatchsList_MouseMove;
+            // 
+            // gameplayFrame1
+            // 
+            gameplayFrame1.Controls.Add(gameplayGroupMods);
+            gameplayFrame1.Controls.Add(saveEdit);
+            gameplayFrame1.Controls.Add(saveByMod);
+            gameplayFrame1.Controls.Add(documentsFolder);
+            gameplayFrame1.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame1.ForeColor = Color.FromArgb(224, 224, 224);
+            gameplayFrame1.Location = new Point(3, 4);
+            gameplayFrame1.Name = "gameplayFrame1";
+            gameplayFrame1.Size = new Size(346, 168);
+            gameplayFrame1.TabIndex = 6;
+            gameplayFrame1.TabStop = false;
+            gameplayFrame1.Text = "Mods de gameplay";
+            // 
             // gameplayGroupMods
             // 
             gameplayGroupMods.BackColor = Color.FromArgb(89, 98, 111);
-            gameplayGroupMods.Controls.Add(documentsFolder);
             gameplayGroupMods.Controls.Add(gameplayMods);
             gameplayGroupMods.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             gameplayGroupMods.ForeColor = Color.FromArgb(224, 224, 224);
-            gameplayGroupMods.Location = new Point(11, 22);
+            gameplayGroupMods.Location = new Point(10, 21);
             gameplayGroupMods.Name = "gameplayGroupMods";
-            gameplayGroupMods.Size = new Size(646, 59);
-            gameplayGroupMods.TabIndex = 10;
+            gameplayGroupMods.Size = new Size(325, 52);
+            gameplayGroupMods.TabIndex = 42;
             gameplayGroupMods.TabStop = false;
             gameplayGroupMods.Text = "Mod de gameplay";
-            gameplayGroupMods.MouseEnter += gameplayModsChange;
-            // 
-            // documentsFolder
-            // 
-            documentsFolder.BackColor = SystemColors.ScrollBar;
-            documentsFolder.Cursor = Cursors.Hand;
-            documentsFolder.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            documentsFolder.ForeColor = Color.Black;
-            documentsFolder.Location = new Point(388, 23);
-            documentsFolder.Name = "documentsFolder";
-            documentsFolder.Size = new Size(250, 23);
-            documentsFolder.TabIndex = 18;
-            documentsFolder.Text = "Documentation";
-            documentsFolder.TextAlign = ContentAlignment.MiddleCenter;
-            documentsFolder.Click += documentsFolder_Click;
-            documentsFolder.MouseEnter += documentsFolder_MouseEnter;
-            documentsFolder.MouseLeave += documentsFolder_MouseLeave;
             // 
             // gameplayMods
             // 
@@ -1581,12 +1579,60 @@
             gameplayMods.DropDownStyle = ComboBoxStyle.DropDownList;
             gameplayMods.ForeColor = Color.White;
             gameplayMods.FormattingEnabled = true;
-            gameplayMods.Location = new Point(9, 23);
+            gameplayMods.Location = new Point(8, 20);
             gameplayMods.Name = "gameplayMods";
-            gameplayMods.Size = new Size(372, 23);
+            gameplayMods.Size = new Size(305, 23);
             gameplayMods.TabIndex = 0;
             gameplayMods.SelectedIndexChanged += gameplayModsChange;
             gameplayMods.Click += getMousePos;
+            // 
+            // saveEdit
+            // 
+            saveEdit.BackColor = SystemColors.ScrollBar;
+            saveEdit.Cursor = Cursors.Hand;
+            saveEdit.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            saveEdit.ForeColor = Color.Black;
+            saveEdit.Location = new Point(10, 108);
+            saveEdit.Name = "saveEdit";
+            saveEdit.Size = new Size(325, 23);
+            saveEdit.TabIndex = 18;
+            saveEdit.Text = "Edit save";
+            saveEdit.TextAlign = ContentAlignment.MiddleCenter;
+            saveEdit.Click += saveEdit_Click;
+            saveEdit.MouseEnter += saveEdit_MouseEnter;
+            saveEdit.MouseLeave += saveEdit_MouseLeave;
+            // 
+            // saveByMod
+            // 
+            saveByMod.BackColor = SystemColors.ScrollBar;
+            saveByMod.Cursor = Cursors.Hand;
+            saveByMod.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            saveByMod.ForeColor = Color.Black;
+            saveByMod.Location = new Point(10, 81);
+            saveByMod.Name = "saveByMod";
+            saveByMod.Size = new Size(325, 23);
+            saveByMod.TabIndex = 17;
+            saveByMod.Text = "Dossier save";
+            saveByMod.TextAlign = ContentAlignment.MiddleCenter;
+            saveByMod.Click += saveByMod_Click;
+            saveByMod.MouseEnter += saveByMod_MouseEnter;
+            saveByMod.MouseLeave += saveByMod_MouseLeave;
+            // 
+            // documentsFolder
+            // 
+            documentsFolder.BackColor = SystemColors.ScrollBar;
+            documentsFolder.Cursor = Cursors.Hand;
+            documentsFolder.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            documentsFolder.ForeColor = Color.Black;
+            documentsFolder.Location = new Point(10, 135);
+            documentsFolder.Name = "documentsFolder";
+            documentsFolder.Size = new Size(325, 23);
+            documentsFolder.TabIndex = 18;
+            documentsFolder.Text = "Documentation";
+            documentsFolder.TextAlign = ContentAlignment.MiddleCenter;
+            documentsFolder.Click += documentsFolder_Click;
+            documentsFolder.MouseEnter += documentsFolder_MouseEnter;
+            documentsFolder.MouseLeave += documentsFolder_MouseLeave;
             // 
             // gameplayFrame3
             // 
@@ -1718,7 +1764,7 @@
             FFNxComboPatchs.DropDownStyle = ComboBoxStyle.DropDownList;
             FFNxComboPatchs.ForeColor = Color.White;
             FFNxComboPatchs.FormattingEnabled = true;
-            FFNxComboPatchs.Location = new Point(12, 144);
+            FFNxComboPatchs.Location = new Point(1300, 12);
             FFNxComboPatchs.Name = "FFNxComboPatchs";
             FFNxComboPatchs.Size = new Size(239, 23);
             FFNxComboPatchs.TabIndex = 28;
@@ -3138,20 +3184,15 @@
             psxPict.TabIndex = 6;
             psxPict.TabStop = false;
             // 
-            // axl3dbattle
+            // gameplayComboPatchs
             // 
-            axl3dbattle.BackColor = Color.FromArgb(89, 98, 111);
-            axl3dbattle.Checked = true;
-            axl3dbattle.CheckState = CheckState.Checked;
-            axl3dbattle.Cursor = Cursors.Hand;
-            axl3dbattle.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            axl3dbattle.Location = new Point(182, 44);
-            axl3dbattle.Name = "axl3dbattle";
-            axl3dbattle.Size = new Size(156, 19);
-            axl3dbattle.TabIndex = 41;
-            axl3dbattle.Text = "AxlRose's Blender";
-            axl3dbattle.UseVisualStyleBackColor = false;
-            axl3dbattle.MouseEnter += axl3dbattle_MouseEnter;
+            gameplayComboPatchs.DropDownStyle = ComboBoxStyle.DropDownList;
+            gameplayComboPatchs.FormattingEnabled = true;
+            gameplayComboPatchs.Location = new Point(1541, 657);
+            gameplayComboPatchs.Name = "gameplayComboPatchs";
+            gameplayComboPatchs.Size = new Size(106, 23);
+            gameplayComboPatchs.TabIndex = 42;
+            gameplayComboPatchs.Visible = false;
             // 
             // FF7U
             // 
@@ -3160,6 +3201,7 @@
             BackColor = Color.FromArgb(33, 40, 50);
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1127, 711);
+            Controls.Add(gameplayComboPatchs);
             Controls.Add(menuControlsPanel);
             Controls.Add(menuLaunchGamePanel);
             Controls.Add(menuHelpPanel);
@@ -3223,11 +3265,12 @@
             menuGameplayPanel.ResumeLayout(false);
             gameplayFrame2.ResumeLayout(false);
             gameplayFrame2.PerformLayout();
-            gameplayFrame1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)flagSGameplay).EndInit();
-            ((System.ComponentModel.ISupportInitialize)flagGGameplay).EndInit();
-            ((System.ComponentModel.ISupportInitialize)flagFGameplay).EndInit();
             ((System.ComponentModel.ISupportInitialize)flagEGameplay).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagFGameplay).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flagGGameplay).EndInit();
+            gameplayFrame5.ResumeLayout(false);
+            gameplayFrame1.ResumeLayout(false);
             gameplayGroupMods.ResumeLayout(false);
             gameplayFrame3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gameplayPrevPic).EndInit();
@@ -3331,7 +3374,6 @@
         private ListBox soundsList;
         private Label soundsListHelp;
         private Label gameplayHelpAuthor;
-        private GroupBox gameplayGroupMods;
         private ComboBox gameplayMods;
         private GroupBox gameplayFrame3;
         private PictureBox gameplayPrevPic;
@@ -3422,7 +3464,7 @@
         private GroupBox controlsFrame1;
         private GroupBox controlsFrame2;
         private PictureBox psxPict;
-        private GroupBox groupBox1;
+        private GroupBox gameplayFrame5;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private Label ctrlMove;
@@ -3479,5 +3521,8 @@
         private RichTextBox aboutContributors;
         private Label saveEdit;
         private CheckBox axl3dbattle;
+        private CheckedListBox GameplayPatchsList;
+        private GroupBox gameplayGroupMods;
+        private ComboBox gameplayComboPatchs;
     }
 }
