@@ -1,0 +1,579 @@
+9916E0 = 2E 36 00 53 55 49 56 41 4E 54 FF 00 00 00 00
+
+#Mot "NV suivant"
+
+
+
+9916F4 = 2E 36 00 4C 49 4D 49 54 45 FF 00 00 00 00 00
+
+#Mot "NV limite"
+
+
+
+997A24 = 2E 36 00 4C 49 4D 49 54 45 00 1A FF
+
+#Mot "Niveau limite :"
+
+
+
+
+
+
+
++400C00
+
+
+
+354BD3 = AA
+
+#Position Y de la boite lieu
+
+
+
+354C39 = 2F
+
+#Position X de la boite
+
+
+
+354C7A = 44
+
+#Position X heures
+
+
+
+354CAA = 58
+
+#Position X :
+
+
+
+354CD8 = 62
+
+#Position X minutes
+
+
+
+354CFA = 76
+
+#Position X :
+
+
+
+354D29 = 80
+
+#Position X secondes
+
+
+
+354D3E = B7
+
+#Position X du mot "Temps"
+
+
+
+354D6D = 2C
+
+#Position Y chiffres des gils
+
+
+
+354D74 = 20
+
+#Position X chiffres des gils
+
+
+
+354D8F = 28
+
+#Position Y du mot "Gils"
+
+
+
+354D86 = CC
+
+#Position X du mot "Gils"
+
+
+
+354DA1 = 4A
+
+#Hauteur de la boite
+
+
+
+354DA3 = A4
+
+#Longueur de la boite
+
+
+
+354EE9 = 47
+
+#Position X jauge niveau suivant
+
+
+
+354FC0 = 7B
+
+#Longeur jauge limite
+
+
+
+354FDA = 47
+
+#Position X jauge limite
+
+
+
+355008 = 47
+
+#Position X cadre niveau suivant
+
+
+
+355037 = 47
+
+#Position X cadre limite
+
+
+
+3550C2 = A0
+
+#Position X du chiffre du niveau de limite
+
+
+
+38DFAF = 14
+
+#Position Y des attributs
+
+
+
+38DFB1 = 66
+
+#Position X des attributs
+
+
+
+38DFC7 = 0E
+
+#Position Y de l'avatar
+
+
+
+38DFC9 = 0E
+
+#Position X de l'avatar
+
+
+
+38E2F8 = 9B
+
+#Position Y de la boite de comandes
+
+
+
+38E2FD = 2F
+
+#Position X de la boite de comandes
+
+
+
+38E30A = 38
+
+#Position Y de toute la zone equipee
+
+
+
+38F599 = 68 7C 00 00 00 68 C9 00 00 00 91
+
+#Position Y des chiffres "Force"
+
+
+
+38F5CF = 1C
+
+#Position Y des chiffres "Rapidite"
+
+
+
+38F605 = 34
+
+#Position Y des chiffres "Vitalite"
+
+
+
+38F63B = 4C
+
+#Position Y des chiffres "Magie"
+
+
+
+38F672 = 64
+
+#Position Y des chiffres "Esprit"
+
+
+
+38F6A8 = 7C
+
+#Position Y des chiffres "Chance"
+
+
+
+38F811 = 68 2C 01 00 00 66 B8 C9 00 50
+
+#des chiffres "Attaque"
+
+
+
+38F835 = 1C
+
+#Position Y des chiffres "Precision"
+
+
+
+38F85A = 34
+
+#Position Y des chiffres "Defense"
+
+
+
+38F87F = 4C
+
+#Position Y des chiffres "Esquive"
+
+
+
+38F8A4 = 64
+
+#Position Y des chiffres "Atq magique"
+
+
+
+38F8C9 = 7C
+
+#Position Y des chiffres "Def magique"
+
+
+
+38F8EE = 94
+
+#Position Y des chiffres "Esq magique"
+
+
+
+38FD98 = C1
+
+#1 pixel en moins de la barre limite interieure
+
+
+
+38FD9E = 60
+
+#Position Y de la barre limite interieure
+
+
+
+38FDA0 = E8
+
+#Position X de la barre limite interieure
+
+
+
+38FDC3 = 60
+
+#Position Y de la barre limite
+
+
+
+38FDC5 = E4
+
+#Position X de la barre limite
+
+
+
+38FDE8 = 2D
+
+#Position Y du mot "EXP"
+
+
+
+38FDEA = 10 01
+
+#Position X du mot "EXP"
+
+
+
+38FE17 = 60
+
+#Position Y de la barre de NV suivant interieure
+
+
+
+38FE19 = 10
+
+#Position X de la barre de NV suivant interieure
+
+
+
+38FE3C = 60
+
+#Position Y de la barre de NV suivant
+
+
+
+38FE3E = 10
+
+#Position X de la barre de NV suivant
+
+
+
+38FE61 = 31
+
+#Position Y du mot "p" de EXP
+
+
+
+38FE63 = BB
+
+#Position X du mot "p" de EXP
+
+
+
+38FE86 = 4C
+
+#Position Y du mot "p" de NV suivant
+
+
+
+38FE88 = BB 01
+
+#Position X du mot "p" de NV suivant
+
+
+
+38FEAE = 31
+
+#Position Y des chiffres de EXP
+
+
+
+38FEB0 = 43
+
+#Position X des chiffres de EXP
+
+
+
+38FED6 = 4C
+
+#Position Y des chiffres de NV suivant
+
+
+
+38FED8 = 43
+
+#Position X des chiffres de NV suivant
+
+
+
+38FEFB = 48
+
+#Position Y du mot "NV suivant"
+
+
+
+38FEFD = 10 01
+
+#Position X du mot "NV suivant"
+
+
+
+38FF16 = 48
+
+#Position Y du mot "NV limite"
+
+
+
+38FF18 = E4 01
+
+#Position X du mot "NV limite"
+
+
+
+38FF40 = 4C
+
+#Position Y du chiffre limite
+
+
+
+38FF42 = C5
+
+#Position X du chiffre limite
+
+
+
+39FB4A = 72
+
+#Position Y du curseur fantome
+
+
+
+39FB4D = 24
+
+#Position X du curseur fantome
+
+
+
+39FBA0 = 11
+
+#Position Y du curseur "Utiliser" "Aranger" "Elements-cle"
+
+
+
+39FBCB = 11
+
+#Position Y du curseur fantome "Utiliser"
+
+
+
+39FBF1 = 72
+
+#Position Y du curseur objet
+
+
+
+39FBF4 = 24
+
+#Position X du curseur objet
+
+
+
+39FC69 = 11
+
+#Position Y du curseur fantome "Utiliser" sub-selection
+
+
+
+39FCEA = 11
+
+#Position Y du curseur fantome "Elements-cle"
+
+
+
+39FD9B = 11
+
+#Position Y du curseur fantome "Aranger"
+
+
+
+39FE64 = 11
+
+#Position Y du curseur fantome "Aranger" sub-selection
+
+
+
+39FF1C = 80
+
+#Position X du texte de avatars
+
+
+
+39FF39 = 78
+
+#Position Y des avatars
+
+
+
+39FF3C = 22
+
+#Position X des avatars
+
+
+
+39FF48 = 80
+
+#Hauteur cadre boite avatar
+
+
+
+39FF4D = 22
+
+#Largeur cadre boite avatar
+
+
+
+39FF52 = 60
+
+#Position Y cadre boite avatar
+
+
+
+39FF54 = 00
+
+#Position X cadre boite avatar
+
+
+
+39FF9F = 11
+
+#Position Y des mots "Utiliser" "Aranger" "Elements-cle"
+
+
+
+3A01A2 = 6E
+
+#Position X du nom de l'objet
+
+
+
+3A026C = 4F
+
+#Position X de l'icone objet
+
+
+
+3A029E = 73
+
+#Position Y du mot ":" des objets
+
+
+
+3A02A1 = 32
+
+#Position X du mot ":" des objets
+
+
+
+3A02D4 = 71
+
+#Position Y de la quantité d'objets
+
+
+
+3A02D7 = 37
+
+#Position X de la quantité d'objets
+
+
+
+3ABEFF = 1D
+
+#Longeur boite "Merci de patienter"
+
+
+
+3ABF0B = 1E
+
+#Position X de la boite "Merci de patienter"
+
+
++0
+997AB8 = 64 00 B4 00 FD 00 46 01
+
+#position de la boite de commande dans le menu etat
+
+
+99E66C = 00 33 41 55 56 45 47 41 52 44 45 00 12 FF
+#optimisation de l'alignement de "sauvegarde 2"

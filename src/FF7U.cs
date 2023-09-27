@@ -51,6 +51,7 @@ namespace FF7_SYW_Unified
 
             loadValues(Application.StartupPath + @"\lang.ini");
             setDefaultFFNxValues();
+            setDefaultGameplayPatchsListValues();
             loadValues(Application.StartupPath + @"\settings.ini");
 
             //set default mod/placeholder pictures

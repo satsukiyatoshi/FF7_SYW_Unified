@@ -53,6 +53,11 @@ namespace FF7_SYW_Unified
                 tw.WriteLine("Patchslist;;;;" + FFNxPatchsList.Items[indexChecked].ToString()+"####");
             }
 
+            foreach (int indexChecked in GameplayPatchsList.CheckedIndices)
+            {
+                tw.WriteLine("GameplayPatchslist;;;;" + GameplayPatchsList.Items[indexChecked].ToString() + "####");
+            }
+
             tw.Close();
 
             TextWriter twl = new StreamWriter(@Application.StartupPath + @"\lang.ini");
@@ -88,6 +93,19 @@ namespace FF7_SYW_Unified
                                 if (FFNxPatchsList.Items[patchvalue].ToString() == patchname)
                                 {
                                     FFNxPatchsList.SetItemChecked(patchvalue, true);
+                                }
+                            }
+                        }
+
+                        else if (line.Contains("GameplayPatchslist;;;;") == true && line.Contains("####") == true)
+                        {
+                            patchname = Between(line, "GameplayPatchslist;;;;", "####");
+
+                            for (int patchvalue = 0; patchvalue < GameplayPatchsList.Items.Count; patchvalue++)
+                            {
+                                if (GameplayPatchsList.Items[patchvalue].ToString() == patchname)
+                                {
+                                    GameplayPatchsList.SetItemChecked(patchvalue, true);
                                 }
                             }
                         }
