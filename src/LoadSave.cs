@@ -84,19 +84,6 @@ namespace FF7_SYW_Unified
                             GetComboboxByName(Between(line, ";;;;", "::::")).Text = Between(line, "::::", "####");
                         }
 
-                        else if (line.Contains("Patchslist;;;;") == true && line.Contains("####") == true)
-                        {
-                            patchname = Between(line, "Patchslist;;;;", "####");
-
-                            for (int patchvalue = 0; patchvalue < FFNxPatchsList.Items.Count; patchvalue++)
-                            {
-                                if (FFNxPatchsList.Items[patchvalue].ToString() == patchname)
-                                {
-                                    FFNxPatchsList.SetItemChecked(patchvalue, true);
-                                }
-                            }
-                        }
-
                         else if (line.Contains("GameplayPatchslist;;;;") == true && line.Contains("####") == true)
                         {
                             patchname = Between(line, "GameplayPatchslist;;;;", "####");
@@ -106,6 +93,19 @@ namespace FF7_SYW_Unified
                                 if (GameplayPatchsList.Items[patchvalue].ToString() == patchname)
                                 {
                                     GameplayPatchsList.SetItemChecked(patchvalue, true);
+                                }
+                            }
+                        }
+
+                        else if (line.Contains("Patchslist;;;;") == true && line.Contains("####") == true)
+                        {
+                            patchname = Between(line, "Patchslist;;;;", "####");
+
+                            for (int patchvalue = 0; patchvalue < FFNxPatchsList.Items.Count; patchvalue++)
+                            {
+                                if (FFNxPatchsList.Items[patchvalue].ToString() == patchname)
+                                {
+                                    FFNxPatchsList.SetItemChecked(patchvalue, true);
                                 }
                             }
                         }
