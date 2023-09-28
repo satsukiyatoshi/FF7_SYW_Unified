@@ -49,6 +49,12 @@ namespace FF7_SYW_Unified
             FFNxFps.Items.Clear();
             FFNxAudioChannels.Items.Clear();
             FFNxAudioSample.Items.Clear();
+            FFNxSpeedhackStep.Items.Clear();
+            FFNxSpeedhackMin.Items.Clear();
+            FFNxSpeedhackMax.Items.Clear();
+            FFNxContolerDeathzoneStick.Items.Clear();
+            FFNxContolerDeathzoneLT.Items.Clear();
+            FFNxContolerDeathzoneRT.Items.Clear();
 
             FFNx3dEngine.Items.Add(translate("auto", Globals.translateUI));
             FFNx3dEngine.Items.Add("OpenGL");
