@@ -50,9 +50,13 @@ namespace FF7_SYW_Unified
 
 
         //display preview picture and description for SYW mods and FFNx options
-        private void modShow(string name, TextBox help, Label author)
+        private void modShow(string name, TextBox help, Label author, Boolean showPrev = true)
         {
-            graphicPrevPic.ImageLocation = Application.StartupPath + @"Mods\SYW\Prev\" + name + ".jpg";
+            if(showPrev)
+            {
+                graphicPrevPic.ImageLocation = Application.StartupPath + @"Mods\SYW\Prev\" + name + ".jpg";
+            }
+            
             help.Text = translate(name + "help", Globals.translateUI).ReplaceLineEndings();
             author.Text = translate(name + "author", Globals.translateUI);
             Globals.actualModUrl = translate(name + "url", Globals.translateUI);
