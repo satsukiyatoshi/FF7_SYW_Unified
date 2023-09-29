@@ -1,0 +1,276 @@
+Balancing
+
+//Stat Weights//
+
+) Strength
+Weight: 2x
+Strength is used for physical attacks and is combined with the weapon's attack rating to create the final overall attack stat. Strength and Weapon Attack have the same weight as each other, with +1 Strength being the same as +1 Weapon attack so for this reason there are no Strength bonuses on weapons as it'd be redundant. Physical attacks themselves are more reliant on Level to reach higher damage thresholds than they are on base power, unlike Spells and Magic.
+
+
+) Magic
+Weight: 2x
+Magic is used by itself, with no Weapon attack to combine it with. Magic damage itself is more reliant on base power over level, meaning that spells with higher base power need to be cycled in as the game progresses in order to keep up with Strength scaling from increasing levels.
+
+
+) Vitality
+Weight: 1x
+Vitality is combined with Armour Defence to create the final Defence value, with both being of equal weight to each other (for instance, +1 Vitality is the same as +1 Armour Defence; for this reason, Vitality and Spirit bonuses do not appear on Armour). Roughly 50 points of Vitality/Defence contributes a 10% reduction to incoming physical attacks.
+
+
+) Spirit
+Weight: 1x
+Spirit is combined with Armour Magic Defence to create the final Magic Defence value, with both being of equal weight to each other (for instance, +1 Spirit is the same as +1 Armour Magic Defence). Roughly 50 points of Spirit/Magic Defence contributes a 10% reduction to incoming magical attacks.
+
+
+) Dex
+Weight: 0.75x (roughly)
+Dexterity is one of the 'busiest' stats in this game, factoring into different checks and even being split into two separate stats that both affect the speed of battles in different ways. 
+
+First, the 'base' speed of the battle is established by taking an average of the natural unmodified dexterity stats all participating characters. This means all equipment bonuses and even Sources are not used when calculating this average.
+
+Now Dexterity modifiers from equipment and Sources are considered. This determines how fast or how slow the character's ATB gauge will fill in relation to the 'base' speed that has been established. Having a +50 boost to Dexterity is roughly the equivalent of having Haste.
+
+Dexterity also factors into Physical Evasion, by a factor of Dex/4. So +50 Dexterity contributes +12.5% physical evasion. But it then goes further, as Physical Evasion itself is factored onto Physical Accuracy. Your evasion stat will be added directly onto your physical attack's accuracy; so +50 Dex giving +12.5% evasion then goes on to give +12.5% accuracy as well.
+
+Due to its effect on evasion, Dexterity's weighting is to an extent influenced by Luck's weighting: +50 Dex = +12.5% Evasion + Accuracy, whereas +50 Luck gives +12.5% chance to fully evade (separate to actual evasion) and +12.5% chance to ignore accuracy and land an automatic critical hit (which is far better). Dexterity also affects ATB speeds, but the overall impact this has depends upon a lot of other factors such as derived enemy speed, player input, statuses, etc. For that reason, I've opted to go for a 0.75x weight rather than 1x weight as I feel a maxed Luck stat has a higher impact than a maxed Dexterity stat.
+
+
+) Luck
+Weight: 1x
+The Luck stat affects two things; Lucky Hit and Lucky Dodge. Both are calculated in that order for any physical attack made by any actor and will use the attacker's Luck for Lucky Hit and the target's Luck for Lucky Dodge. Lucky Hit is an automatic guaranteed Critical Hit that will always land, whereas Lucky Dodge is a guaranteed evade. Lucky Hit will be calculated first and, if it resolves true, will negate the Lucky Dodge check giving the attacker an edge.
+
+Both checks are Luck/4, so a Luck bonus of +50 will equal a +12.5% critical chance boost and a 12.5% physical evade boost. Weighted against Critical Chance itself, which has a 2x weight, you are trading critical chance directly to a separate physical evade chance when choosing Luck over Critical% Boost. If you had a weapon with 25% Crit Boost, say, then equipped a weapon with +50 Luck instead you would end up dropping to 12.5% Critical Chance and gaining 12.5% chance to Lucky Dodge.
+
+
+) Critical Hit-Rate%
+Weight: 2x
+This gives the weapon a boost to its chances of landing a critical hit, which acts independently of the Luck stat. It has been weighted against the Luck stat, which gives half the critical chance per point, but also gives an equal amount to Lucky Dodge as well. The reason Crit% is weighted double to Luck is because it rests purely in the offence side of the fence and each point in Crit translates directly as a 1:1 increase whereas for Luck that increase is instead 1:4, but diverted in equal amount to 2 checks (Lucky Hit and Lucky Dodge) meaning it actually translates to 1:2 as it lifts two checks instead of 1. With Crit% as 1:1, it gets 2x weight whereas Luck gets 1x weight as it is 1:2.
+
+
+//Spells//
+
+*) Attack Magic
+Fire spells reduce defence/magic defence by 1%.
+Ice spells have the lowest base power of the elemental spells, but are very MP-efficient.
+Bolt spells have 255% accuracy, meaning they will never miss except in exceptional circumstances.
+Earth spells ignore Reflect, and have the highest base power of the elemental spells.
+Poison spells have a high MP cost and base chance to poison that increases each tier.
+Gravity spells have a base 75% accuracy, but flying enemies tend to have the 'Cannot Miss' weakness to Gravity.
+Comet now ignores Magic Defence.
+Comet2 now hits 6 times instead of 4.
+Freeze, Break, Tornado, Flare, Hydro, and Pearl each have a base chance to inflict a status ailment.
+Ultima has the highest base power of any standard spell and is non-elemental meaning it ignores Shield.
+
+
+*) Status Magic
+For magic purely focused on status ailments:
+Base spell accuracy: 100%
+Status Chances:
+68% chance for single target
+44% chance if cast has All attached
+100% chance if combined with mastered MP Turbo, 64% chance if All is also attached
+34% chance if combined with Quadra.
+
+Some spells that deal damage have status ailments attached, such as Contain.
+These typically have a base chance of 40%, which is also affected by All/MP Turbo/Quadra Magic.
+
+X-Zone (Remove) is an exception, and has a 255% base chance of inflicting KO with % accuracy on the spell.
+However, no gil is received from enemies who are killed by this attack (as per the original).
+
+
+*) Support Magic
+Debarrier now affects Shield and Peerless in addition to Wall/Reflect.
+Dispel can also affect Dual-Drain, Auto-Crit, and Peerless in addition to other magic-effects.
+Regen is now Restorative element, meaning it is affected by accessories/statuses that block Restorative.
+Esuna handles Sleep, Poison, Confu, Silence, Frog, Mini, Petrify, Berserk, Paralysis, and Blind.
+Life revives a character with 50% of their HP.
+Renew (Full Cure) heals HP by a standard Magic formula meaning it scales better for casters, and can recover KO.
+ 
+ 
+*) New Spells
+Osmose: Replaces Death spell, absorbs a small amount of MP from the target (Death is covered by Remove spell).
+Hydro: Replaces Frog, a Contain-level Water-element spell for end-game. Can be used by Frogged characters.
+Pearl: Replaces Poisona, a Contain-level Holy-element spell for end-game.
+
+
+//Summons//
+Summon spells use a different spell formula to the standard Magic formula, which favours Summon's base power
+over the caster's Magic stat. This means that a Summon will always deal decent damage in spite of the caster's
+Magic stat, making them more usable by a non-Magic build while not becoming completely overpowered in the hands
+of a Magic-focused build. Summons also have the following attributes:
+
+*) They ignore MBarrier
+
+*) Each Summon attack has an additional effect; typically a chance to inflict a status ailment, though some will carry a Debarrier/Dispel effect, revive KO'd allies, etc.
+
+*) Each Summon Materia has a heavier range of stat modifiers which can compliment different builds (or undermine them). Check the drawbacks carefully before equipping.
+
+*) Each Summon is one-use only, and drops as 1-star Mastered; Quadra Magic can extend this limit based on its Level.
+
+*) Master Summon can be created by taking all Summon Materia to the Huge Materia in Bugenhagen's Observatory and unlike vanilla the individual Summon Materia will not be consumed by the process. Master Summon has unlimited uses.
+
+
+//Enemy Skills//
+Reworked to remove duplicate effects and introduce new ones to replace redundant/useless skills.
+Frog Song: Inflicts/Toggles Frog.
+LV Suicide: Earth-element, chance to inflict Mini, deals bonus damage if attacker/target levels match.
+Magic Hammer: Drains HP instead of MP.
+White Wind: Heals for 50% of the Caster's current HP instead of 100%, no longer restores statuses.
+Big Guard: Grants Wall + Reflect, instead of Haste.
+Mustard Bomb: Replaces Angel Whisper, non-elemental spell that inflicts Haste + Dual (reverse Regen).
+Dragon Force: Grants Haste, Berserk, Auto-Crits
+Death Force: Same as before, MP cost adjusted.
+Antipode: Replaces Flamethrower, Fire/Ice element attack with 11 base, chance to inflict Slow.
+Laser: Non-elemental, ignores Magic Defence.
+Matra Magic: Not much changed.
+Bad Breath: Status chance reduced.
+Beta: Dual-element skill, Fire/Poison,
+Aqualung: Dual-element skill, Water/Wind.
+Trine: Dual-element, Bolt/Earth.
+Magic Breath: Dual-element, Ice/Holy.
+????: Gravity element, inflicts damage equal to caster's lost HP.
+Goblin Song: Inflicts Fury on enemies, revives KO'd allies.
+Chocobuckle: Wind element, chance to inflict Confu, no longer has 'Escapes' formula; just deals standard Magic damage.
+Virus: Replaces L5 Death, Poison element magic damage, inflicts Dual.
+Death Sentence: Not much changed.
+Chronocure: Replaces Roulette, heals HP based on in-game time, reverts all statuses including KO.
+Shadow Flare: ???? Element, can't be reflected, chance to inflict KO.
+Pandora's Box: ???? element, hits all actors on field, ignores Magic Defence, Reflectable.
+
+
+//Player-Party Balancing//
+
+Characters start with a roughly matched stat weight in their starting attributes, which can increase to a max of 100 through natural levelling but are also increased through the separate Source Point system in which the player chooses upgrades for the character to build them a certain way. This upgrade system unlocks after clearing the Cargo Ship and 3 additional upgrades are unlocked after defeating bosses when advancing the story. An example of the upgrade choices are below:
+
+[{CLOUD}] - Rank Up
+Choose Upgrade:
+{CHOICE}Ex-SOLDIER: Str+15{, }Mag+7{, }Vit/Dex+8
+{CHOICE}Mercenary: Str/Vit/Lck+15
+{CHOICE}Makonoid: Mag/Spr/Dex+15
+{CHOICE}Duellist: Str/Mag/Dex/Lck+10
+{CHOICE}COMMANDO: Str/Vit/Spr+12{, }Mag+6
+{CHOICE}{PURPLE}[Check Character Stats]{WHITE}
+
+So over the course of the game, players wanting to build Cloud as an all-round damage-dealer could pick the first option four times and boost his natural stats by +60 Strength, +28 Magic, +36 Vitality, and +36 Dexterity. Or a player could mix and match the upgrades, going with the 2nd option twice then
+the 3rd option, and finally the 4th option. Players can also randomise the Sources they get from each upgrade using a separate system if they wish.
+
+All player equipment now plays a much larger role in your attributes; weapons, armour, and accessories mostly all give some form of stat increase and/or a secondary effect. Some weapons will carry an innate element or status ailment, some armour will block certain statuses, and some accessories have drawbacks such as blocking Haste if the main effect is potent enough. Materia also has revised stat bonuses/penalties, with most standard Magic materia having no penalties and Summons having very diverse stat bonuses/penalties.
+
+Characters also come with their own unique innate ability; increasing Gil dropped by an enemy, restoring party MP over time, blocking elemental damage, or mixing unique items to be used in-battle are some examples. Innates are explained when a character joins the party and can be reviewed at the Beginner's Hall in Junon. Limit Breaks were also adjusted so that characters have a mix of Physical & Magic-based attacks to better support builds that focus Magic over Physical damage (where before, most Limits were universally physical-based).
+
+Combining your equipment with Materia and choosing your character stat upgrades allows for very diverse builds. You can build characters how you'd expect them to be, or go in a completely different direction and have Aeris be a physical damage-dealer with the option to go healer again using her healing staves, Barret be a fast Mage to make full use of his magic-based Lv.4 Limit, or turn Yuffie into a counter-based tank to take better advantage of her Mug-counter innate.
+
+
+//List of Innates//
+Cloud: Set up by using the Defend command, then continue fighting as normal. The next time Cloud is hit by physical damage he will counter it with either a single physical attack, a Deathblow, 2x-Cut, or 4x-Cut. This works in addition to any other counter materia.
+
+Barret: When hit by a physical attack, if in the front row he gains Strength (up to +40). If in the back row, he regains 1/16 of his HP.
+
+Tifa: Once per battle, she will survive a KO with 1 HP (or ignore a insta-KO attack) and retains any queued actions, buffs, Limit Gauge, etc. However she also retains negative statuses so Poison or Dual-Drain will undermine this innate.
+
+Aeris: Activate by Defending, Aeris will absorb most elemental damage and HP while she defends.
+
+Red XIII: Over time will gain strength and magic up to a max of +45 for both; is useful in longer battles.
+
+Yuffie: If attacked physically while in the front row, she will counter with Mug. After 15 turns have passed, Yuffie's Throwlette will charge and will throw a random shuriken weapon at an enemy when Defend is used (or if already Defending).
+
+Cait Sith: Regains MP slowly over time; when Defending, the entire party will regain MP at a faster rate.
+
+Vincent: Starts battle with Wall; will intermittently recover HP equal to his current MP.
+
+Cid: After some time has passed in battle, a message saying 'Cid Mix is Ready'. Using the Defend command (or if already Defending) activates Mix with the cascading series of effects:
+If Cid's HP is below 50%, he will use H-Potion and recover 25% of the party's HP.
+If Cid's MP is below 50%, he will use I-Ether and recover 25% of the party's MP.
+If Cid does not have Barrier or MBarrier he will use G-Curtain and gain Wall.
+If none of the above conditions are met, he will use H-Mine which is a physical attack with 24 base power (standard physical base is 16).
+
+
+
+//Enemy Balancing//
+
+In order to avoid high HP bloat in this build, enemy defences have been scaled to help them match with the player party's progression throughout the game with most bosses being specced to match closely with their original HP (or less, in the case of some bosses like Proud Clod who has dropped from 60,000 in base to 30,000 in this mod). It's rare for bosses in this game to exceed 65000HP (meaning Sense will usually work), and only applies to some end-game bosses like Safer Sephiroth. Some special enemies/bosses have been set up a little differently, for instance Tonberries who have much higher base HP but virtually no defences, or certain bosses who start with very high defences that deteriorate slightly each time the player hits them; this helps to make the battles feel a bit more varied and hopefully encourage mixing and matching different types of attacks.
+
+Most enemies/bosses also have at least 1 elemental weakness and can be affected by a status ailment; try experimenting if the battle is proving difficult. Some bosses will react to their status in different ways, usually to the player party's favour (for instance, one boss will skip its Magic-attack phase to cleanse itself of Silence, giving the party a free turn of breathing space). There are also enemies that can change elemental resistances, such as enemies who start grounded but then fly into the air.
+
+
+//Damage Modifiers & Formulas//
+
+Modifiers in FF7 are %-based and stacking, which can cause serious problems as the game progresses as it produces a huge variance in potential damage dealt/taken. As an example, a vanilla attack in FF7 can be reduced from the cap of 9999 down to 875 damage through the use of Defend, Back Row, Sadness, and Barrier without beginning to take into account the Defence stats which can reduce damage down again by 50% (for 255 Defence) and 99% for 510 Defence(achieved through Dragon Force/Hero Drink).
+
+To tackle this, the following adjustments were made:
+
+Elemental Weakness
+Original: 2x
+NT 2.0: 1.5x
+Reason: NT introduces elemental weaknesses and resistances to every enemy, and while that made the player's set-up and spell use more meaningful
+it also made the variance wider between optimal and non-optimal groups which is problematic when doing a blind run. A lower modifier reduces the
+potential gap but still high enough to keep elemental use relevant.
+
+Critical Hit
+Original: 2x
+NT 2.0: 1.5x
+Reason: While physical attacks aren't as versatile with elemental damage, they do have access to critical hits which double their damage. This was part of the problem with the disparity between physicals and magic attacks (Knights of the Round notwithstanding) in that physicals would rapidly outpace magic attacks. A reduction helps keep variance under control.
+
+Back Row Damage Reduction
+Original: 50%
+NT 2.0: 10%
+Reason: Back Row is a huge boost in vanilla FF7 as all enemy physical attacks are treated as short range, meaning you can effectively reduce the physical damage taken by half while easily circumventing the penalty yourself either with Long Range Materia, long range weapons, Limit Breaks, or just leaning more on spells. While NT 1.5 reinstated the Long Range flag for enemy physical attacks, helping to alleviate the issue slightly, the core of the issue remained and it made it difficult to accurately spec enemy damage toward the end of the game as the incoming numbers could be halved with fairly little cost.
+
+Sadness Damage Reduction
+Original: 30%
+NT 2.0: 5%
+Reason: Sadness was intended as a detrimental status but its damage reduction affecting physical and magical attacks made it a strong temptation to make use of as a buff instead, in spite of its effect on the Limit gauge. To promote more aggressive play with more regular Limit Breaks, and to lean Sadness more as a double-edged status than a buff, the damage reduction it offers has been heavily reduced.
+
+Barrier/MBarrier
+Original: 50%
+NT 2.0: 33%
+Reason: Maintaining Barriers was a core mechanic in boss fights for 1.5, but this could become problematic in longer fights and toward end-game there'd be major swings in damage when they ran off and attacks came in against unprotected characters; it also made it harder to recover KO'd characters if damage is being specced to account for Barriers and the reduction they offer is high. With the change, Barriers are still very useful but a little less essential.
+
+Defend
+Original: 50%
+NT 2.0: 33%
+Reason: In order to help reduce variance, Defend has been adjusted. It is also now used as a trigger for several innate abilties and some Defend commands were improved for some characters, such as Aeris who gains near full elemental immunity while Defending.
+
+Drain HP
+Original: 100%
+NT 2.0: 12.5%
+Reason: Enemies that drain damage as HP could create situations where players were unable to fight through the HP restoration, and conversely weapons with the Drain HP flag were generally seen as overpowered and able to make characters almost immortal with the right set up. At 12.5% they're now more consistent with the HP Drain given by HP Absorb Materia and less overwhelming.
+
+Powersoul
+Original: 2x for Near-KO, 4x for Death Sentence
+NT 2.0: 2x for Near-KO, 2x for Death Sentence
+Reason: You may know that Powersoul is the backbone of speedruns for its high possible damage output once both conditions are met (or even just the Death Sentence requirement). With this change and the 0 base power on the weapon, Powersoul can still deal more damage than a conventional weapon but not magnitudes more that renders other options obsolete. The set-up still has payoff to warrant it but is less overwhelming.
+
+Missing Score
+Original: 1 + (AP on Weapon / 10,000) / 16
+NT 2.0: 1 + (AP on Weapon / 20,000) / 16
+Reason: The most potentially powerful weapon, this adjustments halves the multiplier being achieved so with 1,000,000 AP on the weapon a player would get a multiplier of 3x rather than 6x.
+
+Dice/Random DMG
+Original: Random * 100
+NT 2.0: Random * 50
+Reason: Dice is a very powerful (and often underestimated) Lv.1 Limit Break that can potentially deal huge amounts of damage throughout the game thanks to its ignore defence property. As enemy defence has been more finely tweaked in order to keep enemy HP values down, an adjustment to this formula was made.
+
+Game Timer = Damage
+Original: Game Time * 100
+NT 2.0: Game Time * 50
+Reason: The time-based formula was potentially devastating with a upper limit of 9959 damage, making it impractical to use for enemy attacks at any stage of the game. At *50 it can be more safely used with an upper limit of 4979 damage instead.
+
+Target's Kills = Damage
+Original: Target's Kill Count *10
+NT 2.0: Target's Kill Count * 5
+Reason: By the end of the game, attacks like Everyone's Grudge can become one hit kills for characters like Cloud who have high kill counts from their constant presence in the party. This keeps it at a more reasonable level vs. NT Character MaxHP levels.
+
+Equipped Materia = Damage
+Original: Target's Equipped Materia Count * 1111
+NT 2.0: Target's Equipped Materia Count * 111
+Reason: A fairly bad attack used by Emerald Weapon was the Materia-based Aire Tam Storm that would one-shot any character with over 8 Materia equipped, making it difficult to make full use of your Materia inventory in one of the few end-game fights where there's scope to make proper use of it. At 111, the max damage becomes 1776 which is a lot more reasonable.
+
+Restorative Magic Ignores Barrier
+Reason: A problem with MBarrier in the default game is that healing magic gets blocked by MBarrier, halving its effectiveness (and handing a further advantage to alternate healing options such as White Wind). With this modification, healing magic can now be used in conjunction with MBarrier without penalty. An argument could be made that the vanilla behaviour is a potential way of balancing MBarrier vs healing magic, but given the other healing options available and that Barrier carries no such drawbacks, it just reduces the effectiveness of restorative magic and pushes the player toward alternatives like items and White Wind instead.
+
+Sense Limit: 65535
+Reason: Sense is difficult to justify in vanilla when going past a certain point as enemy HP rises past 30,000 at which point it will no longer report on both enemy HP and its elemental weaknesses/resistances. Raising the cap helps keep Sense useful, in conjunction with defence vs HP balancing, for nearly every enemy and boss in the game.
+
+Poison Status: Non-elemental ticks
+Reason: Poison ticks were Poison-element in vanilla, which meant that enemies with resistance/weakness to Poison would take half/double damage from the ticks. This made balancing the poison element weakness difficult as it would result in bosses with this weakness being killed very quickly. A non-elemental tick alleviates this with the added benefit of allowing the status to operate independently of the element.
