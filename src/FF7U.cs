@@ -24,6 +24,39 @@ namespace FF7_SYW_Unified
                     if (File.Exists(Application.StartupPath + @"\Game\FFNx.toml") && File.Exists(Application.StartupPath + @"\settings.ini"))
                         Globals.directLaunch = true;
                 }
+
+                //function to backup all save files in case of uninstall
+                if (arg == "backupsaves")
+                {
+                    DateTime currentDate = DateTime.Now;
+
+                    string targetFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\FF7_SYW_Saves_" + currentDate.ToString("yyyy-MM-dd-(HH") + "h" + currentDate.ToString("mm)");
+                    string sourceFolderPath = Application.StartupPath + @"Mods\Gameplay";
+
+                    Directory.CreateDirectory(targetFolderPath);
+
+                    foreach (string subfolderPath in Directory.GetDirectories(sourceFolderPath))
+                    {
+                        string subfolderName = new DirectoryInfo(subfolderPath).Name;
+
+                        string saveFolderPath = Path.Combine(subfolderPath, "save");
+                        if (Directory.Exists(saveFolderPath) && Directory.GetFiles(saveFolderPath).Length > 0)
+                        {
+                            string targetSubfolderPath = Path.Combine(targetFolderPath, subfolderName, "save");
+                            Directory.CreateDirectory(targetSubfolderPath);
+
+                            foreach (string sourceFilePath in Directory.GetFiles(saveFolderPath))
+                            {
+                                string sourceFileName = Path.GetFileName(sourceFilePath);
+                                string targetFilePath = Path.Combine(targetSubfolderPath, sourceFileName);
+                                File.Copy(sourceFilePath, targetFilePath, true);
+                            }
+                        }
+                    }
+
+
+                    this.Close();
+                }
             }
 
             //get translations list
@@ -157,6 +190,7 @@ namespace FF7_SYW_Unified
             playAudioClose();
             Process.GetCurrentProcess().Kill();
         }
+
     }
 
 }
