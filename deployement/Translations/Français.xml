@@ -431,7 +431,10 @@ Surtout utile en jeu fenêtré.</help>
 
 -16/9 étiré, pas de bug connu mais l'image est verticalement écrasée.
 
--16/9 réel, modifie le moteur du jeu afin d'avoir un vrai 16/9 partout ou cela est possible, quelques bugs (non bloquants) peuvent apparaître.</help>
+-16/9 réel, modifie le moteur du jeu afin d'avoir un vrai 16/9 partout ou cela est possible, quelques bugs (non bloquants) peuvent apparaître.
+
+-16/10 réel, modifie le moteur du jeu afin d'avoir un vrai 16/10 partout ou cela est possible, idéal pour le steam deck, option expérientale.
+</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
@@ -440,7 +443,11 @@ Surtout utile en jeu fenêtré.</help>
 	</control>
 	<control>
 		<name>realwidescreen</name>
-		<text>16/9 réel (béta)</text>
+		<text>16/9 réel</text>
+	</control>
+	<control>
+		<name>realwidescreendeck</name>
+		<text>16/10 réel (béta)</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>

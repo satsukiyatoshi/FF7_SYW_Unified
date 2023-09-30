@@ -76,6 +76,7 @@ namespace FF7_SYW_Unified
             FFNxRatio.Items.Add("4/3 (" + translate("vanilla", Globals.translateUI) + ")");
             FFNxRatio.Items.Add(translate("strechedwidescreen", Globals.translateUI));
             FFNxRatio.Items.Add(translate("realwidescreen", Globals.translateUI));
+            FFNxRatio.Items.Add(translate("realwidescreendeck", Globals.translateUI));
             FFNxRatio.Text = ("4/3 (" + translate("vanilla", Globals.translateUI) + ")");
 
             FFNxIR.Items.Add(translate("auto", Globals.translateUI));

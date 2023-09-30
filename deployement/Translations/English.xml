@@ -432,16 +432,22 @@ Especially useful in windowed play.</help>
 
 -16/9 stretched, no known bug but the image is vertically crushed.
 
-- real 16/9, modifies the game engine in order to have a real 16/9 wherever possible, some bugs (non-blocking) may appear.</help>
+-True 16/9, modifies the game engine in order to have a real 16/9 wherever possible, some bugs (non-blocking) may appear
+
+-True 16/10, modifies the game engine in order to have a real 16/10 wherever possible, ideal ratio for steam deck, experimental feature.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>strechedwidescreen</name>
-		<text>16/9 Stretched (distorted)</text>
+		<text>Stretched 16/9 (distorted)</text>
 	</control>
 	<control>
 		<name>realwidescreen</name>
-		<text>16/9 real (beta)</text>
+		<text>True 16/9 real</text>
+	</control>
+	<control>
+		<name>realwidescreendeck</name>
+		<text>True 16/10 (beta)</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>
