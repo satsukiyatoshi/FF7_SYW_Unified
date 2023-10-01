@@ -217,7 +217,7 @@ namespace FF7_SYW_Unified
 
 
 
-        //disable texture file by renaming them to SYWD extention
+        //disable texture file by renaming them to SYWT extention
         private void disableFiles(string textureFolder, Boolean subfolder = false)
         {
             List<string> files = Directory.GetFiles(Application.StartupPath + textureFolder, "*.dds", subfolder ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly).ToList();
@@ -231,7 +231,7 @@ namespace FF7_SYW_Unified
 
 
 
-        //disable folder by renaming it to SYWD extention
+        //disable folder by renaming it to SYWF extention
         private void disableFolder(string folder)
         {
             Directory.Move(folder, folder + ".SYWF");
@@ -339,7 +339,7 @@ namespace FF7_SYW_Unified
                 foreach (var line in lines)
                 {
                     file = Application.StartupPath + @"\Mods\SYW\Textures\field\" + line;
-                    File.Move(file, Path.ChangeExtension(file, ".SYWD"));
+                    File.Move(file, Path.ChangeExtension(file, ".SYWT"));
                 }
             }
 

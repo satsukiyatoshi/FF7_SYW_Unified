@@ -586,7 +586,11 @@ The 60fps game option also requires interpolated models (those of the game scene
 
 the 3D models included in the pack are already interpolated.
 
-The game scenes in french and english are also patched.</help>
+The game scenes in french and english are also patched.
+
+Here is the list of know bug for 60 fps patch (most of them are fixe (checked) now):
+https://github.com/julianxhokaxhiu/FFNx/issues/347</help>
+		<url>https://github.com/julianxhokaxhiu/FFNx/issues/347</url>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
