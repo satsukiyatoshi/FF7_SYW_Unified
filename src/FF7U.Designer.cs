@@ -1156,7 +1156,7 @@
             menuSoundPanel.Controls.Add(soundFrame4);
             menuSoundPanel.Controls.Add(soundFrame2);
             menuSoundPanel.Controls.Add(soundFrame3);
-            menuSoundPanel.Location = new Point(327, 1600);
+            menuSoundPanel.Location = new Point(327, 0);
             menuSoundPanel.Name = "menuSoundPanel";
             menuSoundPanel.Size = new Size(795, 703);
             menuSoundPanel.TabIndex = 12;
@@ -1428,7 +1428,7 @@
             menuGameplayPanel.Controls.Add(gameplayFrame5);
             menuGameplayPanel.Controls.Add(gameplayFrame1);
             menuGameplayPanel.Controls.Add(gameplayFrame3);
-            menuGameplayPanel.Location = new Point(327, 0);
+            menuGameplayPanel.Location = new Point(327, 1600);
             menuGameplayPanel.Name = "menuGameplayPanel";
             menuGameplayPanel.Size = new Size(795, 703);
             menuGameplayPanel.TabIndex = 13;

@@ -21,7 +21,7 @@ namespace FF7_SYW_Unified
         private void soundsSetDefaults()
         {
             setModsItems(soundsMusics, @"audio\musics\");
-            setModsItems(soundsAmbients, @"audio\ambients\");
+            setModsItems(soundsAmbients, @"audio\ambiants\");
             setModsItems(soundsSfx, @"audio\sfxs\");
             setModsItems(soundsFMV, @"audio\movies\");
             setModsItems(soundsVoices, @"audio\voices\");
@@ -153,13 +153,13 @@ namespace FF7_SYW_Unified
 
         private void soundFrame4_MouseLeave(object sender, EventArgs e){ playAudioClose(); }
         private void soundsMusicsChange(object sender, EventArgs e) { modShowCustom(soundsMusics, @"audio\musics", soundsHelp, soundsHelpAuthor, soundPrevPic); }
-        private void soundsAmbiantChange(object sender, EventArgs e) {modShowCustom(soundsAmbients, @"audio\ambients", soundsHelp, soundsHelpAuthor, soundPrevPic); }
+        private void soundsAmbiantChange(object sender, EventArgs e) {modShowCustom(soundsAmbients, @"audio\ambiants", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsSfxChange(object sender, EventArgs e) { modShowCustom(soundsSfx, @"audio\sfxs", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsFMVChange(object sender, EventArgs e) { modShowCustom(soundsFMV, @"audio\movies", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsVoicesChange(object sender, EventArgs e) { modShowCustom(soundsVoices, @"audio\voices", soundsHelp, soundsHelpAuthor, soundPrevPic); }
 
         private void musicsPrev_Click(object sender, EventArgs e) { soundsLoad(soundsMusics, @"audio\musics"); }
-        private void ambiantPrev_Click(object sender, EventArgs e) { soundsLoad(soundsAmbients, @"audio\ambients"); }
+        private void ambiantPrev_Click(object sender, EventArgs e) { soundsLoad(soundsAmbients, @"audio\ambiants"); }
         private void sfxPrev_Click(object sender, EventArgs e) { soundsLoad(soundsSfx, @"audio\sfxs"); }
         private void fmvPrev_Click(object sender, EventArgs e) { soundsLoad(soundsFMV, @"audio\movies", @"\files\direct\movies\"); }
         private void voicesPrev_Click(object sender, EventArgs e) { soundsLoad(soundsVoices, @"audio\voices"); }

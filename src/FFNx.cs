@@ -304,6 +304,7 @@ namespace FF7_SYW_Unified
 
             string soundsFolder;
             string quote = "\"";
+            string soundsExts = getSoundExts(Application.StartupPath + @"\Mods\Audio\exts");
 
             TextWriter twx = new StreamWriter(Application.StartupPath + @"\Game\FFNx.toml", false);
 
@@ -389,11 +390,10 @@ namespace FF7_SYW_Unified
             }
             else
             {
-                soundsFolder = getModCustomFolder(soundsMusics, @"audio\musics");
                 twx.WriteLine("use_external_music = true");
-                twx.WriteLine("external_music_ext = " + getSoundExts(soundsFolder));
-                twx.WriteLine("external_music_path = " + quote + @"..\" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
-                if (getSoundExts(soundsFolder).Contains("psf")) { twx.WriteLine("he_bios_path = " + quote + @"..\" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files\hebios.bin" + quote); }
+                twx.WriteLine("external_music_ext = " + soundsExts);
+                twx.WriteLine("external_music_path = " + quote + @"current\musics" + quote);
+                twx.WriteLine("he_bios_path = " + quote + @"current\musics\hebios.bin" + quote);
             }
 
             if (soundsSfx.SelectedIndex == 0)
@@ -402,30 +402,26 @@ namespace FF7_SYW_Unified
             }
             else
             {
-                soundsFolder = getModCustomFolder(soundsSfx, @"audio\sfxs");
                 twx.WriteLine("use_external_sfx = true");
-                twx.WriteLine("external_sfx_ext = " + getSoundExts(soundsFolder));
-                twx.WriteLine("external_sfx_path = " + quote + @"..\" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
+                twx.WriteLine("external_sfx_ext = " + soundsExts);
+                twx.WriteLine("external_sfx_path = " + quote + @"current\sfxs" + quote);
             }
 
             if (soundsVoices.SelectedIndex != 0)
             {
-                soundsFolder = getModCustomFolder(soundsVoices, @"audio\voices");
-                twx.WriteLine("external_voice_ext = " + getSoundExts(soundsFolder));
-                twx.WriteLine("external_voice_path = " + quote + @"..\" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
+                twx.WriteLine("external_voice_ext = " + soundsExts);
+                twx.WriteLine("external_voice_path = " + quote + @"current\voices" + quote);
             }
 
             if (soundsAmbients.SelectedIndex != 0)
             {
-                soundsFolder = getModCustomFolder(soundsAmbients, @"audio\ambients");
-                twx.WriteLine("external_ambient_ext = " + getSoundExts(soundsFolder));
-                twx.WriteLine("external_ambient_path = " + quote + @"..\" + soundsFolder.Remove(0, Application.StartupPath.Length) + @"\files" + quote);
+                twx.WriteLine("external_ambient_ext = " + soundsExts);
+                twx.WriteLine("external_ambient_path = " + quote + @"current\ambiants" + quote);
             }
 
             if (soundsFMV.SelectedIndex != 0)
             {
-                soundsFolder = getModCustomFolder(soundsFMV, @"audio\movies");
-                twx.WriteLine("external_movie_audio_ext = " + getSoundExts(soundsFolder));
+                twx.WriteLine("external_movie_audio_ext = " + soundsExts);
                 twx.WriteLine("ff7_external_opening_music = true ");
             }
             twx.Close();

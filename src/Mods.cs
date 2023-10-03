@@ -381,6 +381,18 @@ namespace FF7_SYW_Unified
 
             loadingLog(soundsFMV.Text);
             folderModCopy(getModCustomFolder(soundsFMV, @"audio\movies"));
+
+            loadingLog(soundsAmbients.Text);
+            folderModCopy(getModCustomFolder(soundsAmbients, @"audio\ambiants"));
+
+            loadingLog(soundsMusics.Text);
+            folderModCopy(getModCustomFolder(soundsMusics, @"audio\musics"));
+
+            loadingLog(soundsSfx.Text);
+            folderModCopy(getModCustomFolder(soundsSfx, @"audio\sfxs"));
+
+            loadingLog(soundsVoices.Text);
+            folderModCopy(getModCustomFolder(soundsVoices, @"audio\voices"));
         }
 
     }
