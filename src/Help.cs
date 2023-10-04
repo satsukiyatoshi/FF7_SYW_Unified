@@ -24,23 +24,8 @@ namespace FF7_SYW_Unified
 
         private void HelpList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*
-            string helpFile = Application.StartupPath + @"\Translations\Help\" + langInterface.Text + @"\" + HelpList.Text + ".rtf";
 
-            try
-            {
-                GeneralHelp.LoadFile(helpFile, RichTextBoxStreamType.RichText);
-                chooseHelp.Visible = false;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(translate("errorFile", Globals.translateUI) + Environment.NewLine + Environment.NewLine + helpFile + Environment.NewLine + Environment.NewLine + ex.Message);
-                chooseHelp.Visible = true;
-                HelpList.Text = "";
-            }
-            */
-
-            if(loadRtf(Application.StartupPath + @"\Translations\Help\" + langInterface.Text + @"\" + HelpList.Text + ".rtf", GeneralHelp))
+            if (loadRtf(Application.StartupPath + @"\Translations\Help\" + langInterface.Text + @"\" + HelpList.Text + ".rtf", GeneralHelp))
             {
                 chooseHelp.Visible = false;
             } else
@@ -51,28 +36,13 @@ namespace FF7_SYW_Unified
             
         }
 
-        /*
-        private void shortcutsHelp()
-        {
-            string helpFile = Application.StartupPath + @"\Translations\Shortcuts\" + langInterface.Text + ".rtf";
-
-            try
-            {
-                specialShortcutHelp.LoadFile(helpFile, RichTextBoxStreamType.RichText);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(translate("errorFile", Globals.translateUI) + Environment.NewLine + Environment.NewLine + helpFile + Environment.NewLine + Environment.NewLine + ex.Message);
-            }
-        }
-        */
-
-
         private Boolean loadRtf(string rtfFile, RichTextBox richText)
         {
             try
             {
                 richText.LoadFile(rtfFile, RichTextBoxStreamType.RichText);
+                richText.SelectionStart = 0;
+                richText.ScrollToCaret();
                 return true;
             }
             catch (Exception ex)
