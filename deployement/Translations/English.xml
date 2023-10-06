@@ -180,7 +180,7 @@ It is recommended to activate this option..
 	</control>
 	<control>
 		<name>graphicsMagics</name>
-		<text>HD battle magics.</text>
+		<text>HD battle magics</text>
 		<help>Textures of magic and combat effects done from scratch in 3D.
 
 The vast majority of textures are done from scratch but some elements have been reprocessed in HD with an ESRGan AI.

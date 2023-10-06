@@ -158,11 +158,11 @@ namespace FF7_SYW_Unified
         private void soundsFMVChange(object sender, EventArgs e) { modShowCustom(soundsFMV, @"audio\movies", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsVoicesChange(object sender, EventArgs e) { modShowCustom(soundsVoices, @"audio\voices", soundsHelp, soundsHelpAuthor, soundPrevPic); }
 
-        private void musicsPrev_Click(object sender, EventArgs e) { soundsLoad(soundsMusics, @"audio\musics"); }
-        private void ambiantPrev_Click(object sender, EventArgs e) { soundsLoad(soundsAmbients, @"audio\ambiants"); }
-        private void sfxPrev_Click(object sender, EventArgs e) { soundsLoad(soundsSfx, @"audio\sfxs"); }
-        private void fmvPrev_Click(object sender, EventArgs e) { soundsLoad(soundsFMV, @"audio\movies", @"\files\direct\movies\"); }
-        private void voicesPrev_Click(object sender, EventArgs e) { soundsLoad(soundsVoices, @"audio\voices"); }
+        private void musicsPrev_Click(object sender, EventArgs e) { soundsLoad(soundsMusics, @"audio\musics", @"\files\musics\"); }
+        private void ambiantPrev_Click(object sender, EventArgs e) { soundsLoad(soundsAmbients, @"audio\ambiants", @"\files\ambiants\"); }
+        private void sfxPrev_Click(object sender, EventArgs e) { soundsLoad(soundsSfx, @"audio\sfxs", @"\files\sfxs\"); }
+        private void fmvPrev_Click(object sender, EventArgs e) { soundsLoad(soundsFMV, @"audio\movies", @"\files\data\movies\"); }
+        private void voicesPrev_Click(object sender, EventArgs e) { soundsLoad(soundsVoices, @"audio\voices", @"\files\voices\"); }
 
     }
 }
