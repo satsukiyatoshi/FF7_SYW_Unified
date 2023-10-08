@@ -654,8 +654,6 @@
             // axl3dbattle
             // 
             axl3dbattle.BackColor = Color.FromArgb(89, 98, 111);
-            axl3dbattle.Checked = true;
-            axl3dbattle.CheckState = CheckState.Checked;
             axl3dbattle.Cursor = Cursors.Hand;
             axl3dbattle.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             axl3dbattle.Location = new Point(182, 44);
@@ -935,8 +933,6 @@
             // graphicsMagics
             // 
             graphicsMagics.BackColor = Color.FromArgb(89, 98, 111);
-            graphicsMagics.Checked = true;
-            graphicsMagics.CheckState = CheckState.Checked;
             graphicsMagics.Cursor = Cursors.Hand;
             graphicsMagics.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsMagics.Location = new Point(341, 44);
@@ -950,8 +946,6 @@
             // graphicsBattles
             // 
             graphicsBattles.BackColor = Color.FromArgb(89, 98, 111);
-            graphicsBattles.Checked = true;
-            graphicsBattles.CheckState = CheckState.Checked;
             graphicsBattles.Cursor = Cursors.Hand;
             graphicsBattles.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsBattles.Location = new Point(11, 44);
@@ -965,8 +959,6 @@
             // graphicsWorldMap
             // 
             graphicsWorldMap.BackColor = Color.FromArgb(89, 98, 111);
-            graphicsWorldMap.Checked = true;
-            graphicsWorldMap.CheckState = CheckState.Checked;
             graphicsWorldMap.Cursor = Cursors.Hand;
             graphicsWorldMap.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsWorldMap.Location = new Point(11, 66);
@@ -993,8 +985,6 @@
             // graphicsMiniGames
             // 
             graphicsMiniGames.BackColor = Color.FromArgb(89, 98, 111);
-            graphicsMiniGames.Checked = true;
-            graphicsMiniGames.CheckState = CheckState.Checked;
             graphicsMiniGames.Cursor = Cursors.Hand;
             graphicsMiniGames.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsMiniGames.Location = new Point(380, 22);
@@ -1008,8 +998,6 @@
             // graphicsFields
             // 
             graphicsFields.BackColor = Color.FromArgb(89, 98, 111);
-            graphicsFields.Checked = true;
-            graphicsFields.CheckState = CheckState.Checked;
             graphicsFields.Cursor = Cursors.Hand;
             graphicsFields.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsFields.Location = new Point(11, 22);
@@ -1156,7 +1144,7 @@
             menuSoundPanel.Controls.Add(soundFrame4);
             menuSoundPanel.Controls.Add(soundFrame2);
             menuSoundPanel.Controls.Add(soundFrame3);
-            menuSoundPanel.Location = new Point(327, 0);
+            menuSoundPanel.Location = new Point(327, 1600);
             menuSoundPanel.Name = "menuSoundPanel";
             menuSoundPanel.Size = new Size(795, 703);
             menuSoundPanel.TabIndex = 12;
@@ -1841,8 +1829,6 @@
             // FFNxNoCd
             // 
             FFNxNoCd.BackColor = Color.FromArgb(89, 98, 111);
-            FFNxNoCd.Checked = true;
-            FFNxNoCd.CheckState = CheckState.Checked;
             FFNxNoCd.Cursor = Cursors.Hand;
             FFNxNoCd.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxNoCd.Location = new Point(10, 603);
