@@ -53,6 +53,10 @@
 		<text>Langue de l'interface</text>
 	</control>
 	<control>
+		<name>gamePreset</name>
+		<text>Pré-Réglages</text>
+	</control>
+	<control>
 		<name>settingsGroup</name>
 		<text>Menu</text>
 	</control>	
