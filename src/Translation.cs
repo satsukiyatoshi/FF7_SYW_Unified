@@ -151,7 +151,7 @@ namespace FF7_SYW_Unified
         {
             if (langGame.Text == "Français") { Globals.gameLang = "F"; }
             if (langGame.Text == "English") { Globals.gameLang = "E"; }
-            if (langGame.Text == "Deutsch") { Globals.gameLang = "D"; }
+            if (langGame.Text == "Deutsch") { Globals.gameLang = "G"; }
             if (langGame.Text == "Español") { Globals.gameLang = "S"; }
         }
 

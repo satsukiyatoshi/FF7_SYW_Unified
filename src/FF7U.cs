@@ -59,6 +59,13 @@ namespace FF7_SYW_Unified
                 }
             }
 
+
+            using (StreamReader sr = new StreamReader(Application.StartupPath + @"\version.vrs"))
+            {
+                this.Text = "FF7_SYW_Unified " + sr.ReadLine();
+            }
+
+
             //get translations list
             try
             {

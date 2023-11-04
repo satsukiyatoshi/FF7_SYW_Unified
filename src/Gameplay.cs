@@ -60,7 +60,7 @@ namespace FF7_SYW_Unified
             string region = "PAL-E";
 
             if (Globals.gameLang == "F") { region = "PAL-FR"; }
-            if (Globals.gameLang == "D") { region = "PAL-DE"; }
+            if (Globals.gameLang == "G") { region = "PAL-DE"; }
             if (Globals.gameLang == "S") { region = "PAL-ES"; }
             if (langInterface.Text == "Français") { lang = "fr"; }
             if (langInterface.Text == "Deutsch") { lang = "de"; }

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>NT mod 2.09991 French version</text>
+		<help>NT mod FR: 
+
+This mod is a quick french translation of the original NT mod, it's based on an old NT mod.
+I recommand to use the official NT mod if you can read english.
+
+NT mod :		
+This mod is a complete overhaul of the FF7 game system.
+  
+Third-party 3D models (modern, or additional textures) are not recommended, they may cause bugs.
+The overall scenario is the same but there are many changes, side quests, new enemies... this mod is difficult to describe because it changes the game in depth.
+
+I recommend this mod if you have already done FF7 at least once.
+</help>
+		<author>Sega Chief and Diablo</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=464716</url>
+		<compatibily>F</compatibily>
+</control>
+</translation>
+
