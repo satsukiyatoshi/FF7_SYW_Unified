@@ -50,7 +50,7 @@
 	<control>
 		<name>presetchange</name>
 		<text>Êtes-vous sur de vouloir charger ces réglages ?
-Cela va remplacer vos réglages actuels (y compris les mods de gameplay, les patch ...)</text>
+Cela va remplacer vos réglages actuels (seul les réglages des parties gameplay et audio sont conservées...)</text>
 	</control>
 	
 	

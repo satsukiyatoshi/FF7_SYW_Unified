@@ -49,8 +49,11 @@ namespace FF7_SYW_Unified
 
                 if (reponse == DialogResult.Yes)
                 {
-                    //ajouter la logique de chargement du preset choisi
+                    Globals.formIsLoaded = false;
+                    File.Copy(Application.StartupPath + @"\Presets\" + langInterface.Text + @"\" + presets.SelectedIndex.ToString("00") + "-" + presets.Text + ".ini", Application.StartupPath + @"\settings.ini", true);
+                    loadValues(Application.StartupPath + @"\settings.ini");
                     Globals.presetNumber = presets.SelectedIndex;
+                    Globals.formIsLoaded = true;
                 }
             }
         }

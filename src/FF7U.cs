@@ -149,8 +149,6 @@ namespace FF7_SYW_Unified
             {
                 menuLaunchGame_Click(sender, e);
             }
-
-            Globals.formIsLoaded = true;
         }
 
 

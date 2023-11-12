@@ -50,7 +50,7 @@
 	<control>
 		<name>presetchange</name>
 		<text>Are you sure you want to load this preset ?
-It will replace all your current settings (gameplay, patch ...)</text>
+It will replace all your current settings (only gameplay and audio setting are kept)</text>
 	</control>
 	
 	
