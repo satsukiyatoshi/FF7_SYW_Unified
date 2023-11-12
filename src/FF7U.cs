@@ -90,6 +90,7 @@ namespace FF7_SYW_Unified
             langInterface.Text = langInterface.GetItemText(langInterface.Items[0]);
 
             loadValues(Application.StartupPath + @"\lang.ini");
+
             setDefaultFFNxValues();
             setDefaultGameplayPatchsListValues();
             loadValues(Application.StartupPath + @"\settings.ini");
@@ -107,6 +108,8 @@ namespace FF7_SYW_Unified
             {
                 menuLaunchGame_Click(sender, e);
             }
+
+            Globals.formIsLoaded = true;
         }
 
 

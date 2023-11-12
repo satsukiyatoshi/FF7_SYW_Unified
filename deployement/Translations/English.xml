@@ -36,12 +36,21 @@
 		<text>No webpage listed for this mod</text>
 	</control>
 	<control>
+		<name>none</name>
+		<text>None</text>
+	</control>
+	<control>
 		<name>restorekb</name>
 		<text>Are you sure you want to restore the default controls?</text>
 	</control>
 	<control>
 		<name>restorenp</name>
 		<text>Are you sure you want to restore controls without a numeric keypad?</text>
+	</control>
+	<control>
+		<name>presetchange</name>
+		<text>Are you sure you want to load this preset ?
+It will replace all your current settings (gameplay, patch ...)</text>
 	</control>
 	
 	

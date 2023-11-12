@@ -36,12 +36,21 @@
 		<text>Pas de page web indiquée pour ce mod</text>
 	</control>
 	<control>
+		<name>none</name>
+		<text>Aucun</text>
+	</control>
+	<control>
 		<name>restorekb</name>
 		<text>Êtes-vous sur de vouloir restaurer les contrôles par défaut ?</text>
 	</control>
 	<control>
 		<name>restorenp</name>
 		<text>Êtes-vous sur de vouloir restaurer les contrôles sans pavé numérique ?</text>
+	</control>
+	<control>
+		<name>presetchange</name>
+		<text>Êtes-vous sur de vouloir charger ces réglages ?
+Cela va remplacer vos réglages actuels (y compris les mods de gameplay, les patch ...)</text>
 	</control>
 	
 	
@@ -54,7 +63,7 @@
 	</control>
 	<control>
 		<name>gamePreset</name>
-		<text>Pré-Réglages</text>
+		<text>Pré-réglages</text>
 	</control>
 	<control>
 		<name>settingsGroup</name>

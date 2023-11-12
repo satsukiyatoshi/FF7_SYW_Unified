@@ -16,8 +16,16 @@ namespace FF7_SYW_Unified
             graphicsClear();
             soundsClear();
             gameplayClear();
+            presetsClear();
 
             getTranslationXml(Application.StartupPath + @"\Translations\" + langInterface.Text + ".xml", Globals.translateUI);
+
+            string nonePreset = translate("none", Globals.translateUI);
+            presetsClear();
+            presets.Items.Add(nonePreset);
+            presetsLoad();
+            presets.Text = presets.Items[Globals.presetNumber].ToString(); 
+
             translateAll();
             helpList();
             loadRtf(Application.StartupPath + @"\Translations\About\" + langInterface.Text + ".rtf", aboutContributors);
@@ -27,6 +35,38 @@ namespace FF7_SYW_Unified
             soundsSetDefaults();
             gameplaySetDefaults();
             setDefaultFFNxValues();
+        }
+
+
+
+        private void presets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(Globals.formIsLoaded && presets.SelectedIndex != Globals.presetNumber)
+            {
+                var reponse = MessageBox.Show(translate("presetchange", Globals.translateUI), "FF7_SYW_Unified", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (reponse == DialogResult.Yes)
+                {
+                    //ajouter la logique de chargement du preset choisi
+                    MessageBox.Show("chargement du preset");
+                    Globals.presetNumber = presets.SelectedIndex;
+                }
+            }
+        }
+
+
+
+        private void presetsLoad()
+        {
+            //ajouter la logique de chargement de la liste de presets
+            presets.Items.Add("test1");
+        }
+
+
+
+        private void presetsClear()
+        {
+            presets.Items.Clear();
         }
 
 

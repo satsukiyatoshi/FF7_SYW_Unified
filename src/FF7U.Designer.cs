@@ -35,6 +35,8 @@
             PictureBox fmvPrev;
             PictureBox voicesPrev;
             menuFrame = new GroupBox();
+            gamePreset = new GroupBox();
+            presets = new ComboBox();
             menuLaunchGame = new Label();
             settingsGroup = new GroupBox();
             menuControls = new Label();
@@ -246,8 +248,6 @@
             controlsFrame1 = new GroupBox();
             psxPict = new PictureBox();
             gameplayComboPatchs = new ComboBox();
-            gamePreset = new GroupBox();
-            presets = new ComboBox();
             musicsPrev = new PictureBox();
             ambiantPrev = new PictureBox();
             sfxPrev = new PictureBox();
@@ -259,6 +259,7 @@
             ((System.ComponentModel.ISupportInitialize)fmvPrev).BeginInit();
             ((System.ComponentModel.ISupportInitialize)voicesPrev).BeginInit();
             menuFrame.SuspendLayout();
+            gamePreset.SuspendLayout();
             settingsGroup.SuspendLayout();
             ff7Lang.SuspendLayout();
             interfaceLang.SuspendLayout();
@@ -335,7 +336,6 @@
             controlsFrame3.SuspendLayout();
             controlsFrame1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)psxPict).BeginInit();
-            gamePreset.SuspendLayout();
             SuspendLayout();
             // 
             // musicsPrev
@@ -411,6 +411,32 @@
             menuFrame.Size = new Size(309, 699);
             menuFrame.TabIndex = 0;
             menuFrame.TabStop = false;
+            // 
+            // gamePreset
+            // 
+            gamePreset.Controls.Add(presets);
+            gamePreset.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            gamePreset.ForeColor = Color.FromArgb(224, 224, 224);
+            gamePreset.Location = new Point(10, 217);
+            gamePreset.Name = "gamePreset";
+            gamePreset.Size = new Size(290, 59);
+            gamePreset.TabIndex = 11;
+            gamePreset.TabStop = false;
+            gamePreset.Text = "Langue de l'interface";
+            // 
+            // presets
+            // 
+            presets.BackColor = Color.FromArgb(53, 60, 70);
+            presets.Cursor = Cursors.Hand;
+            presets.DropDownStyle = ComboBoxStyle.DropDownList;
+            presets.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            presets.ForeColor = Color.White;
+            presets.FormattingEnabled = true;
+            presets.Location = new Point(9, 23);
+            presets.Name = "presets";
+            presets.Size = new Size(273, 23);
+            presets.TabIndex = 0;
+            presets.SelectedIndexChanged += presets_SelectedIndexChanged;
             // 
             // menuLaunchGame
             // 
@@ -608,7 +634,7 @@
             langInterface.Name = "langInterface";
             langInterface.Size = new Size(125, 23);
             langInterface.TabIndex = 0;
-            langInterface.SelectedIndexChanged += langInterface_SelectedIndexChanged;
+            langInterface.SelectedIndexChanged += this.langInterface_SelectedIndexChanged;
             // 
             // pictureBox2
             // 
@@ -3184,31 +3210,6 @@
             gameplayComboPatchs.TabIndex = 42;
             gameplayComboPatchs.Visible = false;
             // 
-            // gamePreset
-            // 
-            gamePreset.Controls.Add(presets);
-            gamePreset.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            gamePreset.ForeColor = Color.FromArgb(224, 224, 224);
-            gamePreset.Location = new Point(10, 217);
-            gamePreset.Name = "gamePreset";
-            gamePreset.Size = new Size(290, 59);
-            gamePreset.TabIndex = 11;
-            gamePreset.TabStop = false;
-            gamePreset.Text = "Langue de l'interface";
-            // 
-            // presets
-            // 
-            presets.BackColor = Color.FromArgb(53, 60, 70);
-            presets.Cursor = Cursors.Hand;
-            presets.DropDownStyle = ComboBoxStyle.DropDownList;
-            presets.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            presets.ForeColor = Color.White;
-            presets.FormattingEnabled = true;
-            presets.Location = new Point(9, 23);
-            presets.Name = "presets";
-            presets.Size = new Size(273, 23);
-            presets.TabIndex = 0;
-            // 
             // FF7U
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -3240,6 +3241,7 @@
             ((System.ComponentModel.ISupportInitialize)fmvPrev).EndInit();
             ((System.ComponentModel.ISupportInitialize)voicesPrev).EndInit();
             menuFrame.ResumeLayout(false);
+            gamePreset.ResumeLayout(false);
             settingsGroup.ResumeLayout(false);
             ff7Lang.ResumeLayout(false);
             interfaceLang.ResumeLayout(false);
@@ -3320,7 +3322,6 @@
             controlsFrame3.ResumeLayout(false);
             controlsFrame1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)psxPict).EndInit();
-            gamePreset.ResumeLayout(false);
             ResumeLayout(false);
         }
 

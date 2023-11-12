@@ -10,6 +10,8 @@ namespace FF7_SYW_Unified
             public static readonly Color activButtonBolor = Color.FromArgb(240, 240, 240);
             public static readonly Color inactivButtonBolor = Color.FromArgb(200, 200, 200);
             public static string gameLang { get; set; } = "F";
+            public static int presetNumber { get; set; } = 0;
+            public static Boolean formIsLoaded { get; set; } = false;
             public static string isodrive { get; set; } = "";
             public static string activMenuName { get; set; } = "menuAbout";
             public static string vanilla { get; set; } = "";
