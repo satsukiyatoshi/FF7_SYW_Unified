@@ -9,7 +9,48 @@ namespace FF7_SYW_Unified
         public FF7U()
         {
             InitializeComponent();
+            AttachEventHandlers(this);
         }
+
+
+
+        //Check if a setting value's change to set the settings preset to "none"
+        private void AttachEventHandlers(Control control)
+        {
+            if (control == null || control.Controls.Count == 0)
+                return;
+
+            foreach (Control ctrl in control.Controls)
+            {
+                if (ctrl is CheckBox checkBox)
+                {
+                    checkBox.CheckedChanged += AnyControl_ValueChanged;
+                }
+                else if (ctrl is ComboBox comboBox)
+                {
+                    if (comboBox.Name != "presets" && comboBox.Name != "langGame" && comboBox.Name != "langInterface" && comboBox.Name != "HelpList")
+                    {
+                        comboBox.SelectedIndexChanged += AnyControl_ValueChanged;
+                    }
+                }
+
+                if (ctrl.Controls.Count > 0)
+                {
+                    AttachEventHandlers(ctrl);
+                }
+            }
+        }
+
+
+
+        private void AnyControl_ValueChanged(object sender, EventArgs e)
+        {
+            if (Globals.formIsLoaded == true)
+            {
+                presets.Text = presets.Items[0].ToString();
+            }
+        }
+
 
 
         //initialize form and load settings

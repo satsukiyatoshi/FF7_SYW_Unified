@@ -11,6 +11,7 @@ namespace FF7_SYW_Unified
         //call translation on menu lang selection
         private void langInterface_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Globals.formIsLoaded = false;
             Globals.translateUI.Clear();
             Globals.translateMod.Clear();
             graphicsClear();
@@ -35,20 +36,20 @@ namespace FF7_SYW_Unified
             soundsSetDefaults();
             gameplaySetDefaults();
             setDefaultFFNxValues();
+            Globals.formIsLoaded = true;
         }
 
 
 
         private void presets_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(Globals.formIsLoaded && presets.SelectedIndex != Globals.presetNumber)
+            if(Globals.formIsLoaded && presets.SelectedIndex != Globals.presetNumber && presets.SelectedIndex != 0)
             {
                 var reponse = MessageBox.Show(translate("presetchange", Globals.translateUI), "FF7_SYW_Unified", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (reponse == DialogResult.Yes)
                 {
                     //ajouter la logique de chargement du preset choisi
-                    MessageBox.Show("chargement du preset");
                     Globals.presetNumber = presets.SelectedIndex;
                 }
             }
@@ -58,8 +59,13 @@ namespace FF7_SYW_Unified
 
         private void presetsLoad()
         {
-            //ajouter la logique de chargement de la liste de presets
-            presets.Items.Add("test1");
+            string presetsFolder = (Application.StartupPath + @"\Presets\" + langInterface.Text);
+            string[] presetFiles = Directory.GetFiles(presetsFolder, "*.ini");
+
+            foreach (string presetName in presetFiles)
+            {
+                presets.Items.Add(Path.GetFileName(Path.GetFileNameWithoutExtension(presetName).Substring(3)));
+            }
         }
 
 

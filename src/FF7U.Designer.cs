@@ -634,7 +634,7 @@
             langInterface.Name = "langInterface";
             langInterface.Size = new Size(125, 23);
             langInterface.TabIndex = 0;
-            langInterface.SelectedIndexChanged += this.langInterface_SelectedIndexChanged;
+            langInterface.SelectedIndexChanged += langInterface_SelectedIndexChanged;
             // 
             // pictureBox2
             // 
