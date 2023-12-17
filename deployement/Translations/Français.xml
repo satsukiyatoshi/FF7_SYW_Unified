@@ -50,7 +50,7 @@
 	<control>
 		<name>presetchange</name>
 		<text>Êtes-vous sur de vouloir charger ces réglages ?
-Cela va remplacer vos réglages actuels (seul les réglages des parties gameplay et audio sont conservées...)</text>
+Cela va remplacer vos réglages actuels (seul les réglages des parties gameplay et audio sont conservés.)</text>
 	</control>
 	
 	
@@ -221,7 +221,7 @@ Il est conseillé d'activer cette option.</help>
 	<control>
 		<name>graphicsMiniGames</name>
 		<text>Mini-jeux HD</text>
-		<author>Aavock et Satsuki_Yatoshi</author>
+		<author>Aavock, Satsuki_Yatoshi, jtd</author>
 		<help>Textures des mini-jeux refaites en HD.
 		
 La grande majorité des textures est refaite de zéro, mais certains éléments ont été retraités en HD avec une IA ESRGan.
@@ -914,7 +914,7 @@ Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
 	</control>
 	<control>
 		<name>restoreFiles</name>
-		<text>Restoration des fichiers d'origine</text>
+		<text>Restauration des fichiers d'origine</text>
 	</control>
 	<control>
 		<name>noCdExe</name>

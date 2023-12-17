@@ -51,6 +51,18 @@ namespace FF7_SYW_Unified
                 {
                     Globals.formIsLoaded = false;
                     File.Copy(Application.StartupPath + @"\Presets\" + langInterface.Text + @"\" + presets.SelectedIndex.ToString("00") + "-" + presets.Text + ".ini", Application.StartupPath + @"\settings.ini", true);
+                    graphicsClear();
+                    graphicsSetDefaults();
+                    graphicsFields.Checked = false;
+                    graphicsAnimations.Checked = false;
+                    graphicsMiniGames.Checked = false;
+                    graphicsBattles.Checked = false;
+                    axl3dbattle.Checked = false;
+                    graphicsMagics.Checked = false;
+                    graphicsWorldMap.Checked = false;
+                    FFNxLighting.Checked = false;
+                    setDefaultFFNxValues();
+
                     loadValues(Application.StartupPath + @"\settings.ini");
                     Globals.presetNumber = presets.SelectedIndex;
                     Globals.formIsLoaded = true;

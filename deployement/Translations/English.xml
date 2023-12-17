@@ -50,7 +50,7 @@
 	<control>
 		<name>presetchange</name>
 		<text>Are you sure you want to load this preset ?
-It will replace all your current settings (only gameplay and audio setting are kept)</text>
+It will replace all your current settings (only gameplay and audio setting are kept).</text>
 	</control>
 	
 	
@@ -221,7 +221,7 @@ It is recommended to activate this option.</help>
 	<control>
 		<name>graphicsMiniGames</name>
 		<text>HD mini-games</text>
-		<author>Aavock and Satsuki_Yatoshi</author>
+		<author>Aavock, Satsuki_Yatoshi, jtd</author>
 		<help>Textures of the mini-games done from scratch in HD.
 
 The vast majority of textures are done from scratch but some elements have been reprocessed in HD with an ESRGan AI.

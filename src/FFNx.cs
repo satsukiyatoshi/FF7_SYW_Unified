@@ -422,7 +422,7 @@ namespace FF7_SYW_Unified
             if (soundsFMV.SelectedIndex != 0)
             {
                 twx.WriteLine("external_movie_audio_ext = " + soundsExts);
-                twx.WriteLine("ff7_external_opening_music = true ");
+                twx.WriteLine("ff7_external_opening_music = false "); //disabled for now, need a driver evolution or it'll need several opening fmv version
             }
             twx.Close();
 
