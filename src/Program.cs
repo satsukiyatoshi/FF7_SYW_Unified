@@ -1,3 +1,5 @@
+using static FF7_SYW_Unified.FF7U;
+
 namespace FF7_SYW_Unified
 {
     internal static class Program

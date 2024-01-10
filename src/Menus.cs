@@ -1,6 +1,7 @@
 ﻿
 
 using System;
+using System.Windows.Forms;
 using static FF7_SYW_Unified.FF7U;
 
 namespace FF7_SYW_Unified
@@ -115,13 +116,11 @@ namespace FF7_SYW_Unified
                 if (cpanel is Panel)
                 {
                     if (cpanel.Name.Contains(btn.Name)) {
-                        cpanel.Location = new Point(327, 0);
-                        cpanel.Visible = true;
+                        cpanel.Location = new Point((int)Math.Round(327 * Globals.scaleScreen), 0);
                     }
                     else
                     {
-                        cpanel.Location = new Point(1600, 0);
-                        cpanel.Visible = false;
+                        cpanel.Location = new Point(327, 16000);
                     }
                 }
             }

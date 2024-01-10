@@ -56,6 +56,12 @@ namespace FF7_SYW_Unified
         //initialize form and load settings
         private void FF7U_Load(object sender, EventArgs e)
         {
+            // get windows scale factor
+            using (Graphics graphics = this.CreateGraphics())
+            {
+                float scale = graphics.DpiX / 96f;
+                Globals.scaleScreen = scale;
+            }
 
             string[] args = Environment.GetCommandLineArgs();
             foreach (string arg in args)
