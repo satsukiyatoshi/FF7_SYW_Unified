@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Passer les vidéos d'introduction</text>
+		<help>Désactive les vidéos d'introduction pour accéder plus rapidement au menu de jeu.
+
+Ne s'applique pas au logo FFNx ni au générique.</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEGS</compatibily>
+	</control>
+</translation>
+

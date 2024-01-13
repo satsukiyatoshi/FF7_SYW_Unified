@@ -657,6 +657,34 @@ These noises can be adapted to the type of ground if you use an audio mod that a
 This eliminates the need to insert an FF7 CD to play.</help>
 		<url></url>
 	</control>
+	<control>
+		<name>FFNxGroupAlphaDiag</name>
+		<text>Windows's transparency (dialogs / battle)</text>
+		<author>FFNx's Team</author>
+		<help>Allows you to choose a level of transparency for the background of the dialogue and combat windows.</help>
+		<url></url>
+	</control>
+	<control>
+		<name>FFNxAlphaDiag</name>
+		<text>Enable for dialogs</text>
+		<author>FFNx's Team</author>
+		<help>Enable transparency on dialogs's windows.</help>
+		<url></url>
+	</control>
+	<control>
+		<name>FFNxAlphaBattle</name>
+		<text>Enable for battles</text>
+		<author>FFNx's Team</author>
+		<help>Enable transparency on battles's windows.</help>
+		<url></url>
+	</control>
+	<control>
+		<name>FFNxalphaValue</name>
+		<text>Transparency's level</text>
+		<author>FFNx's Team</author>
+		<help>Choose windows's transparency level.</help>
+		<url></url>
+	</control>
 		
 
 

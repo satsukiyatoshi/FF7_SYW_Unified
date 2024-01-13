@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Skip introduction</text>
+		<help>Disable introduction FMV to access faster to start game menu.
+
+Does not disable FFNx's logo nor game credits.</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEGS</compatibily>
+	</control>
+</translation>
+

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>Battle Test</text>
+		<help>Battle Test : 
+		
+Ce patch ajoute un personnage sur l'écran las0_2 (remplace celui de la quete spéciale pour le jeu en français).
+
+En lui parlant on peu déclencher n'importe quel combat du jeu.
+
+Pour les moddeurs, très utile pour tester des mods de difficulté par exemple.</help>
+		<author>Satsuki_Yatoshi</author>
+		<url></url>
+		<compatibily>FEGS</compatibily>
+</control>
+</translation>
+

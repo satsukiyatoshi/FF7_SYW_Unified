@@ -1,5 +1,8 @@
 ﻿
+using Microsoft.VisualBasic;
 using System.Diagnostics;
+using System.Drawing.Text;
+using System.Reflection.PortableExecutable;
 
 namespace FF7_SYW_Unified
 {
@@ -55,6 +58,20 @@ namespace FF7_SYW_Unified
             FFNxContolerDeathzoneStick.Items.Clear();
             FFNxContolerDeathzoneLT.Items.Clear();
             FFNxContolerDeathzoneRT.Items.Clear();
+            FFNxalphaValue.Items.Clear();
+
+            FFNxalphaValue.Items.Add("0 %");
+            FFNxalphaValue.Items.Add("10 %");
+            FFNxalphaValue.Items.Add("20 %");
+            FFNxalphaValue.Items.Add("30 %");
+            FFNxalphaValue.Items.Add("40 %");
+            FFNxalphaValue.Items.Add("50 %");
+            FFNxalphaValue.Items.Add("60 %");
+            FFNxalphaValue.Items.Add("70 %");
+            FFNxalphaValue.Items.Add("80 %");
+            FFNxalphaValue.Items.Add("90 %");
+            FFNxalphaValue.Items.Add("100 %");
+            FFNxalphaValue.Text = "0 %";
 
             FFNx3dEngine.Items.Add(translate("auto", Globals.translateUI));
             FFNx3dEngine.Items.Add("OpenGL");
@@ -269,6 +286,32 @@ namespace FF7_SYW_Unified
                     folderModCopy(dirs[i]);
                 }
             }
+
+
+            if (FFNxalphaValue.Text != "0 %" && (FFNxAlphaDiag.Checked || FFNxAlphaBattle.Checked))
+            {
+                int alphaValue = 255 - (int)Math.Round(double.Parse(FFNxalphaValue.Text.TrimEnd('%')) * 2.55);
+                if (alphaValue < 0) { alphaValue = 0; }
+                string alphaPatchValue = alphaValue.ToString("X");
+
+                string lastLine = "6E6C53 = " + alphaPatchValue;
+                string hextLang = "";
+
+                if(Globals.gameLang == "F") {hextLang="fr";}
+                if(Globals.gameLang == "E") {hextLang="en";}
+                if(Globals.gameLang == "G") {hextLang="es";}
+                if(Globals.gameLang == "S") {hextLang="de";}
+
+                string hextLangFile = Application.StartupPath + @"mods\SYW\Alphadiag\Common\Files\Hext\ff7\" + hextLang + @"\FFNx._GLOBALS.txt";
+
+                var lignes = File.ReadAllLines(hextLangFile).ToList();
+                lignes[lignes.Count - 1] = lastLine;
+                File.WriteAllLines(hextLangFile, lignes);
+
+                folderModCopy(Application.StartupPath + @"mods\SYW\Alphadiag\Common");
+                if (FFNxAlphaDiag.Checked) { folderModCopy(Application.StartupPath + @"mods\SYW\Alphadiag\Dialogs");}
+                if (FFNxAlphaBattle.Checked) { folderModCopy(Application.StartupPath + @"mods\SYW\Alphadiag\Battle");}
+            }
         }
 
 
@@ -296,7 +339,11 @@ namespace FF7_SYW_Unified
         private void FFNXSteamSucces_MouseEnter(object sender, EventArgs e) { modShow("FFNXSteamSucces", FFNxHelp, FFNxHelpAuthor, false); }
         private void FFNxGroup3dEngine_MouseEnter(object sender, EventArgs e) { modShow("FFNxGroup3dEngine", FFNxHelp, FFNxHelpAuthor, false); }
         private void FFNxNoCd_MouseEnter(object sender, EventArgs e) { modShow("FFNxNoCd", FFNxHelp, FFNxHelpAuthor, false); }
-        
+        private void FFNxGroupAlphaDiag_MouseEnter(object sender, EventArgs e) { modShow("FFNxGroupAlphaDiag", FFNxHelp, FFNxHelpAuthor, false); }
+        private void FFNxalphaValue_MouseEnter(object sender, EventArgs e) { modShow("FFNxalphaValue", FFNxHelp, FFNxHelpAuthor, false); }
+        private void FFNxAlphaDiag_MouseEnter(object sender, EventArgs e) { modShow("FFNxAlphaDiag", FFNxHelp, FFNxHelpAuthor, false); }
+        private void FFNxAlphaBattle_MouseEnter(object sender, EventArgs e) { modShow("FFNxAlphaBattle", FFNxHelp, FFNxHelpAuthor, false); }
+
         //generate FFNx config file
         private void ffnxTomlGenerate()
         {

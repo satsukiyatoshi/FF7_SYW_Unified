@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>Battle Test</text>
+		<help>Battle Test : 
+		
+This patch add a character on las02 field.
+
+Speaking to him you can choose and launch a specific battle.
+
+Usefull if you're a modder and when to test a specific battle without doing the full game.</help>
+		<author>Satsuki_Yatoshi</author>
+		<url></url>
+		<compatibily>FEGS</compatibily>
+</control>
+</translation>

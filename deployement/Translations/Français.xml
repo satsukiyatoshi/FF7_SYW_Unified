@@ -657,6 +657,34 @@ Ces bruits peuvent être adaptés au type de sol si vous utilisez un mod audio q
 Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
 		<url></url>
 	</control>
+	<control>
+		<name>FFNxGroupAlphaDiag</name>
+		<text>Transparence des fenêtres (dialogues / combat)</text>
+		<author>Team FFNx</author>
+		<help>Permet de choisir un niveau de transparence pour le fond des fenêtres de dialogue et de combat.</help>
+		<url></url>
+	</control>
+	<control>
+		<name>FFNxAlphaDiag</name>
+		<text>Activer pour les dialogues</text>
+		<author>Team FFNx</author>
+		<help>Active la tranparence pour le fond des fenêtres des dialogues.</help>
+		<url></url>
+	</control>
+	<control>
+		<name>FFNxAlphaBattle</name>
+		<text>Activer pour les combats</text>
+		<author>Team FFNx</author>
+		<help>Active la tranparence pour le fond des fenêtres des combats.</help>
+		<url></url>
+	</control>
+	<control>
+		<name>FFNxalphaValue</name>
+		<text>Niveau de tranparence</text>
+		<author>Team FFNx</author>
+		<help>Permet de choisir le niveau de tranparence des fonds des fenêtres.</help>
+		<url></url>
+	</control>
 		
 
 

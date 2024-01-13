@@ -8,10 +8,12 @@ Menu textures, fonts, and icons in HD.
 
 These textures respect the original game while correcting the alignments of certain letters.
 
+Also enable HD opening and ending credits.
+
 The combat menu is also re-aligned.</help>
-		<author>Aavock et Satsuki_Yatoshi</author>
+		<author>Aavock and Satsuki_Yatoshi</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=445353</url>
-		<compatibily>FE</compatibily>
+		<compatibily>FEGS</compatibily>
 	</control>
 </translation>
 
