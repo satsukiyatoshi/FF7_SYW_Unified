@@ -262,10 +262,13 @@ namespace FF7_SYW_Unified
             {
                 FFNxAnalogControllerArun.Checked = false;
                 FFNxAnalogControllerArun.Enabled = false;
+                graphicsCosmosGaia.Checked = false;
+                graphicsCosmosGaia.Enabled = false;
             }
             else
             {
                 FFNxAnalogControllerArun.Enabled = true;
+                graphicsCosmosGaia.Enabled = true;
             }
         }
 
@@ -312,6 +315,13 @@ namespace FF7_SYW_Unified
                 if (FFNxAlphaDiag.Checked) { folderModCopy(Application.StartupPath + @"mods\SYW\Alphadiag\Dialogs");}
                 if (FFNxAlphaBattle.Checked) { folderModCopy(Application.StartupPath + @"mods\SYW\Alphadiag\Battle");}
             }
+
+            if(graphicsCosmosGaia.Checked && FFNxAnalogController.Checked)
+            {
+                folderModCopy(Application.StartupPath + @"mods\SYW\Gaia");
+            }
+
+            folderModCopy(Application.StartupPath + @"mods\SYW\LimitBreak");
         }
 
 
@@ -343,6 +353,7 @@ namespace FF7_SYW_Unified
         private void FFNxalphaValue_MouseEnter(object sender, EventArgs e) { modShow("FFNxalphaValue", FFNxHelp, FFNxHelpAuthor, false); }
         private void FFNxAlphaDiag_MouseEnter(object sender, EventArgs e) { modShow("FFNxAlphaDiag", FFNxHelp, FFNxHelpAuthor, false); }
         private void FFNxAlphaBattle_MouseEnter(object sender, EventArgs e) { modShow("FFNxAlphaBattle", FFNxHelp, FFNxHelpAuthor, false); }
+        private void FFNxGamutNtsc_MouseEnter(object sender, EventArgs e) { modShow("FFNxGamutNtsc", FFNxHelp, FFNxHelpAuthor, false); }
 
         //generate FFNx config file
         private void ffnxTomlGenerate()
@@ -362,6 +373,11 @@ namespace FF7_SYW_Unified
             twx.WriteLine("direct_mode_path = " + quote + @"current\Direct" + quote);
             twx.WriteLine("override_path = " + quote + @"current\Data" + quote);
             twx.WriteLine("override_mod_path = " + quote + @"current\Textures" + quote);
+            if (graphicsCosmosGaia.Checked && FFNxAnalogController.Checked)
+            {
+                twx.WriteLine("external_mesh_path = " + quote + @"..\Mods\SYW\Gaia\mesh" + quote);
+                twx.WriteLine("enable_worldmap_external_mesh = true"); 
+            }
             if (FFNxScreen.SelectedIndex == 0) { twx.WriteLine("fullscreen = true"); }
             if (FFNxScreen.SelectedIndex == 1) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = false"); }
             if (FFNxScreen.SelectedIndex == 2) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = true"); }

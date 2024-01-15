@@ -69,8 +69,9 @@ namespace FF7_SYW_Unified
         private void graphicsFMVChange(object sender, EventArgs e) { modShowCustom(graphicsFMV, @"movies\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
         private void graphicsAddTexturesChange(object sender, EventArgs e) { modShowCustom(graphicsAddTextures, @"textures\", graphicsHelp, graphicsHelpAuthor, graphicPrevPic); }
         private void FFNxLighting_MouseEnter(object sender, EventArgs e) { modShow("FFNxLighting", graphicsHelp, graphicsHelpAuthor); }
-        private void FFNxGamutNtsc_MouseEnter(object sender, EventArgs e) { modShow("FFNxGamutNtsc", graphicsHelp, graphicsHelpAuthor); }
         private void axl3dbattle_MouseEnter(object sender, EventArgs e) { modShow("axl3dbattle", graphicsHelp, graphicsHelpAuthor); }
+
+        private void graphicsCosmosGaia_MouseEnter(object sender, EventArgs e) { modShow("graphicsCosmosGaia", graphicsHelp, graphicsHelpAuthor); }
 
     }
 }

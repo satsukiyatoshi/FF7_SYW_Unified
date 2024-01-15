@@ -53,12 +53,12 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             graphicFrame1 = new GroupBox();
+            graphicsCosmosGaia = new CheckBox();
             axl3dbattle = new CheckBox();
             graphicsGroupAddTextures = new GroupBox();
             graphicsAddTextures = new ComboBox();
             graphicsGroupModels3Dm = new GroupBox();
             graphicsModels3Dm = new ComboBox();
-            FFNxGamutNtsc = new CheckBox();
             graphicsGroupModels3Dw = new GroupBox();
             graphicsModels3Dw = new ComboBox();
             FFNxLighting = new CheckBox();
@@ -141,6 +141,7 @@
             flagFFFNxPatch = new PictureBox();
             flagEFFNxPatch = new PictureBox();
             FFNxFrame3 = new GroupBox();
+            FFNxGamutNtsc = new CheckBox();
             FFNxGroupAlphaDiag = new GroupBox();
             FFNxAlphaBattle = new CheckBox();
             FFNxAlphaDiag = new CheckBox();
@@ -663,10 +664,10 @@
             // 
             // graphicFrame1
             // 
+            graphicFrame1.Controls.Add(graphicsCosmosGaia);
             graphicFrame1.Controls.Add(axl3dbattle);
             graphicFrame1.Controls.Add(graphicsGroupAddTextures);
             graphicFrame1.Controls.Add(graphicsGroupModels3Dm);
-            graphicFrame1.Controls.Add(FFNxGamutNtsc);
             graphicFrame1.Controls.Add(graphicsGroupModels3Dw);
             graphicFrame1.Controls.Add(FFNxLighting);
             graphicFrame1.Controls.Add(graphicsGroupMenu);
@@ -687,6 +688,19 @@
             graphicFrame1.TabIndex = 6;
             graphicFrame1.TabStop = false;
             graphicFrame1.Text = "Mods graphiques";
+            // 
+            // graphicsCosmosGaia
+            // 
+            graphicsCosmosGaia.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsCosmosGaia.Cursor = Cursors.Hand;
+            graphicsCosmosGaia.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsCosmosGaia.Location = new Point(209, 66);
+            graphicsCosmosGaia.Name = "graphicsCosmosGaia";
+            graphicsCosmosGaia.Size = new Size(129, 19);
+            graphicsCosmosGaia.TabIndex = 42;
+            graphicsCosmosGaia.Text = "Cosmos Gaia";
+            graphicsCosmosGaia.UseVisualStyleBackColor = false;
+            graphicsCosmosGaia.MouseEnter += graphicsCosmosGaia_MouseEnter;
             // 
             // axl3dbattle
             // 
@@ -757,19 +771,6 @@
             graphicsModels3Dm.SelectedIndexChanged += graphicsModels3DmChange;
             graphicsModels3Dm.Click += getMousePos;
             // 
-            // FFNxGamutNtsc
-            // 
-            FFNxGamutNtsc.BackColor = Color.FromArgb(89, 98, 111);
-            FFNxGamutNtsc.Cursor = Cursors.Hand;
-            FFNxGamutNtsc.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            FFNxGamutNtsc.Location = new Point(349, 66);
-            FFNxGamutNtsc.Name = "FFNxGamutNtsc";
-            FFNxGamutNtsc.Size = new Size(156, 19);
-            FFNxGamutNtsc.TabIndex = 40;
-            FFNxGamutNtsc.Text = "Gamut NTSC-J";
-            FFNxGamutNtsc.UseVisualStyleBackColor = false;
-            FFNxGamutNtsc.MouseEnter += FFNxGamutNtsc_MouseEnter;
-            // 
             // graphicsGroupModels3Dw
             // 
             graphicsGroupModels3Dw.BackColor = Color.FromArgb(89, 98, 111);
@@ -803,9 +804,9 @@
             FFNxLighting.BackColor = Color.FromArgb(89, 98, 111);
             FFNxLighting.Cursor = Cursors.Hand;
             FFNxLighting.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            FFNxLighting.Location = new Point(197, 66);
+            FFNxLighting.Location = new Point(341, 66);
             FFNxLighting.Name = "FFNxLighting";
-            FFNxLighting.Size = new Size(149, 19);
+            FFNxLighting.Size = new Size(164, 19);
             FFNxLighting.TabIndex = 16;
             FFNxLighting.Text = "Ombres 3D";
             FFNxLighting.UseVisualStyleBackColor = false;
@@ -1000,7 +1001,7 @@
             graphicsWorldMap.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             graphicsWorldMap.Location = new Point(11, 66);
             graphicsWorldMap.Name = "graphicsWorldMap";
-            graphicsWorldMap.Size = new Size(183, 19);
+            graphicsWorldMap.Size = new Size(195, 19);
             graphicsWorldMap.TabIndex = 3;
             graphicsWorldMap.Text = "Carte du monde HD";
             graphicsWorldMap.UseVisualStyleBackColor = false;
@@ -1072,7 +1073,7 @@
             menuGraphicPanel.Controls.Add(graphicFrame2);
             menuGraphicPanel.Controls.Add(graphicFrame1);
             menuGraphicPanel.Controls.Add(graphicFrame3);
-            menuGraphicPanel.Location = new Point(327, 16000);
+            menuGraphicPanel.Location = new Point(327, 0);
             menuGraphicPanel.Name = "menuGraphicPanel";
             menuGraphicPanel.Size = new Size(795, 703);
             menuGraphicPanel.TabIndex = 10;
@@ -1685,7 +1686,7 @@
             menuFFNxPanel.Controls.Add(FFNxFrame2);
             menuFFNxPanel.Controls.Add(FFNxFrame1);
             menuFFNxPanel.Controls.Add(FFNxFrame3);
-            menuFFNxPanel.Location = new Point(327, 0);
+            menuFFNxPanel.Location = new Point(327, 16000);
             menuFFNxPanel.Name = "menuFFNxPanel";
             menuFFNxPanel.Size = new Size(795, 703);
             menuFFNxPanel.TabIndex = 14;
@@ -1817,6 +1818,7 @@
             // 
             // FFNxFrame3
             // 
+            FFNxFrame3.Controls.Add(FFNxGamutNtsc);
             FFNxFrame3.Controls.Add(FFNxGroupAlphaDiag);
             FFNxFrame3.Controls.Add(FFNxAnalogControllerArun);
             FFNxFrame3.Controls.Add(FFNxNoCd);
@@ -1849,6 +1851,19 @@
             FFNxFrame3.TabIndex = 9;
             FFNxFrame3.TabStop = false;
             FFNxFrame3.Text = "Configuration du pilote FFNx";
+            // 
+            // FFNxGamutNtsc
+            // 
+            FFNxGamutNtsc.BackColor = Color.FromArgb(89, 98, 111);
+            FFNxGamutNtsc.Cursor = Cursors.Hand;
+            FFNxGamutNtsc.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGamutNtsc.Location = new Point(182, 259);
+            FFNxGamutNtsc.Name = "FFNxGamutNtsc";
+            FFNxGamutNtsc.Size = new Size(153, 19);
+            FFNxGamutNtsc.TabIndex = 42;
+            FFNxGamutNtsc.Text = "Gamut NTSC-J";
+            FFNxGamutNtsc.UseVisualStyleBackColor = false;
+            FFNxGamutNtsc.MouseEnter += FFNxGamutNtsc_MouseEnter;
             // 
             // FFNxGroupAlphaDiag
             // 
@@ -2400,7 +2415,7 @@
             FFNxAnisotropic.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxAnisotropic.Location = new Point(10, 259);
             FFNxAnisotropic.Name = "FFNxAnisotropic";
-            FFNxAnisotropic.Size = new Size(325, 19);
+            FFNxAnisotropic.Size = new Size(169, 19);
             FFNxAnisotropic.TabIndex = 21;
             FFNxAnisotropic.Text = "Filtrage anisotrope";
             FFNxAnisotropic.UseVisualStyleBackColor = false;
@@ -3534,7 +3549,6 @@
         private Label loadingWait;
         private Label saveByMod;
         private Label documentsFolder;
-        private CheckBox FFNxGamutNtsc;
         private TextBox gameplayHelp;
         private TextBox graphicsHelp;
         private TextBox soundsHelp;
@@ -3618,5 +3632,7 @@
         private ComboBox FFNxalphaValue;
         private CheckBox FFNxAlphaBattle;
         private CheckBox FFNxAlphaDiag;
+        private CheckBox FFNxGamutNtsc;
+        private CheckBox graphicsCosmosGaia;
     }
 }

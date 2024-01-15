@@ -546,7 +546,7 @@ Cela permet de ne pas avoir la musique qui reprend de zéro après chaque combat
 		<author>FFNx team</author>
 		<help>Si vous jouez avec une manette de jeu avec un stick analogique, cette option permet de l'utiliser dans les menus et pour les déplacements (en plus de la croix directionnelle).
 		
-Cela ajoute également certains contrôles dans les combats (voir l'aide générale).</help>
+Cela ajoute également un contrôle de la caméra en combat avec le stick de gauche et un deplacement du fond d'écran dans les scènes de jeu avec le stick droit.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>

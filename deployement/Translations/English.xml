@@ -546,7 +546,7 @@ This allows you not to have the music start from the beginning after each fight,
 		<author>FFNx team</author>
 		<help>If you play with a gamepad with an analog stick, this option allows you to use it in the menus and for movement (in addition to the directional cross).
 
-It also adds some controls in fights (see general help).</help>
+It also add manual camera control in battle with left analog stick and screen deplacement in fields with right stick.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
