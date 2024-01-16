@@ -213,6 +213,17 @@ namespace FF7_SYW_Unified
             {
                 File.Delete(file);
             }
+
+            if (Directory.Exists(Application.StartupPath + @"Game\widescreen"))
+            {
+                Directory.Move(Application.StartupPath + @"Game\widescreen", Application.StartupPath + @"Game\widescreen_u");
+            }
+
+            if (Directory.Exists(Application.StartupPath + @"Mods\SYW\Textures\field_origin"))
+            {
+                Directory.Move(Application.StartupPath + @"Mods\SYW\Textures\field", Application.StartupPath + @"Mods\SYW\Textures\field_limitb");
+                Directory.Move(Application.StartupPath + @"Mods\SYW\Textures\field_origin", Application.StartupPath + @"Mods\SYW\Textures\field");
+            }
         }
 
 
