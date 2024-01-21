@@ -150,6 +150,8 @@ namespace FF7_SYW_Unified
             //set default menu status
             menuClick(menuAbout);
 
+            Globals.formSettingsLoaded = true;
+
             //if "direct" is used as argument, then launch the game without any changes
             if (Globals.directLaunch == true)
             {

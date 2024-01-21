@@ -43,14 +43,39 @@ namespace FF7_SYW_Unified
 
         private void graphicsFields_CheckedChanged(object sender, EventArgs e)
         {
-            if (!graphicsFields.Checked)
+            if (Globals.formSettingsLoaded == true)
             {
-                graphicsAnimations.Checked = false;
-                graphicsAnimations.Enabled = false;
-                return;
+                if (graphicsFields.Checked == false)
+                {
+                    graphicsAnimations.Checked = false;
+                }
             }
+        }
 
-            graphicsAnimations.Enabled = true;
+
+
+        private void graphicsAnimations_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Globals.formSettingsLoaded == true)
+            {
+                if (graphicsFields.Checked == false)
+                {
+                    graphicsAnimations.Checked = false;
+                }
+            }
+        }
+
+
+
+        private void graphicsCosmosGaia_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Globals.formSettingsLoaded == true)
+            {
+                if (FFNxAnalogController.Checked == false)
+                {
+                    graphicsCosmosGaia.Checked = false;
+                }
+            }
         }
 
 

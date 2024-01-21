@@ -258,17 +258,25 @@ namespace FF7_SYW_Unified
 
         private void FFNxAnalogController_CheckedChanged(object sender, EventArgs e)
         {
-            if (FFNxAnalogController.Checked == false)
+            if(Globals.formSettingsLoaded == true)
             {
-                FFNxAnalogControllerArun.Checked = false;
-                FFNxAnalogControllerArun.Enabled = false;
-                graphicsCosmosGaia.Checked = false;
-                graphicsCosmosGaia.Enabled = false;
+                if (FFNxAnalogController.Checked == false)
+                {
+                    FFNxAnalogControllerArun.Checked = false;
+                    graphicsCosmosGaia.Checked = false;
+                }
             }
-            else
+        }
+
+
+        private void FFNxAnalogControllerArun_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Globals.formSettingsLoaded == true)
             {
-                FFNxAnalogControllerArun.Enabled = true;
-                graphicsCosmosGaia.Enabled = true;
+                if (FFNxAnalogController.Checked == false)
+                {
+                    FFNxAnalogControllerArun.Checked = false;
+                }
             }
         }
 

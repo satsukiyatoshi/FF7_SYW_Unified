@@ -700,6 +700,7 @@
             graphicsCosmosGaia.TabIndex = 42;
             graphicsCosmosGaia.Text = "Cosmos Gaia";
             graphicsCosmosGaia.UseVisualStyleBackColor = false;
+            graphicsCosmosGaia.CheckedChanged += graphicsCosmosGaia_CheckedChanged;
             graphicsCosmosGaia.MouseEnter += graphicsCosmosGaia_MouseEnter;
             // 
             // axl3dbattle
@@ -1018,6 +1019,7 @@
             graphicsAnimations.TabIndex = 2;
             graphicsAnimations.Text = "Animations avancées";
             graphicsAnimations.UseVisualStyleBackColor = false;
+            graphicsAnimations.CheckedChanged += graphicsAnimations_CheckedChanged;
             graphicsAnimations.MouseEnter += graphicsAnimations_MouseEnter;
             // 
             // graphicsMiniGames
@@ -1073,7 +1075,7 @@
             menuGraphicPanel.Controls.Add(graphicFrame2);
             menuGraphicPanel.Controls.Add(graphicFrame1);
             menuGraphicPanel.Controls.Add(graphicFrame3);
-            menuGraphicPanel.Location = new Point(327, 0);
+            menuGraphicPanel.Location = new Point(327, 16000);
             menuGraphicPanel.Name = "menuGraphicPanel";
             menuGraphicPanel.Size = new Size(795, 703);
             menuGraphicPanel.TabIndex = 10;
@@ -1928,7 +1930,7 @@
             // 
             FFNxAnalogControllerArun.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAnalogControllerArun.Cursor = Cursors.Hand;
-            FFNxAnalogControllerArun.Enabled = false;
+            FFNxAnalogControllerArun.Enabled = true;
             FFNxAnalogControllerArun.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxAnalogControllerArun.Location = new Point(182, 533);
             FFNxAnalogControllerArun.Name = "FFNxAnalogControllerArun";
@@ -1936,6 +1938,7 @@
             FFNxAnalogControllerArun.TabIndex = 41;
             FFNxAnalogControllerArun.Text = "Course automatique";
             FFNxAnalogControllerArun.UseVisualStyleBackColor = false;
+            FFNxAnalogControllerArun.CheckedChanged += FFNxAnalogControllerArun_CheckedChanged;
             FFNxAnalogControllerArun.MouseEnter += FFNxAnalogControllerArun_MouseEnter;
             // 
             // FFNxNoCd
