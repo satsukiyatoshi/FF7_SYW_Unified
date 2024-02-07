@@ -160,8 +160,13 @@ namespace FF7_SYW_Unified
         //restore the lang specific files on game launch (exe and kernels..)
         private void ApplyGameLang()
         {
-            folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\GameLanguage\Common"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\GameLanguage\Common\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
             folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\GameLanguage\" + langGame.Text), new DirectoryInfo(Application.StartupPath + @"\Game"));
+
+            if (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3)
+            {
+                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\GameLanguage\WS\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
         }
 
 
