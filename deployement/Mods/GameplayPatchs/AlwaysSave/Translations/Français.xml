@@ -6,7 +6,10 @@
 		
 Permet de sauvegarder n'importe où, là où le jeu ne le permet pas normalement.
 		
-Attention des bugs sont possibles sur certaines séquences scriptés, gardez toujours autant de sauvegardes classiques que possible à part au cas où.</help>
+/!\ Attention /!\ des bugs sont possibles et ils peuvent apparaitre plusieurs heures après la sauvegarde.
+
+Utilisez cette option a vos risques et périls.
+</help>
 		<author>Satsuki</author>
 		<url></url>
 		<compatibily>FE</compatibily>

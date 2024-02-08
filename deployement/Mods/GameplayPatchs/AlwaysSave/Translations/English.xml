@@ -6,7 +6,10 @@
 		
 Allows you to save anywhere, where the game does not normally allow it.
 
-Be careful, bugs are possible on certain sequences, always keep as much as classic savegame as you can aside just in case.</help>
+/!\ Warning /!\ saving anywhere car corupt sage data and show sometine after several hours
+
+Use this option at your own risk.
+.</help>
 		<author>Satsuki</author>
 		<url></url>
 		<compatibily>FE</compatibily>

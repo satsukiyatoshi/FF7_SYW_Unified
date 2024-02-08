@@ -142,12 +142,14 @@ In addition, the pack contains various advanced configuration options and variou
 		
 The database is processed with an ESRGan AI.
 
+The fields have been extented from 4/3 to 16/9 by Comos and his Limit Break mod.
+
 Lots of optimizations by hand.
 
 This greatly improves the textures of the original game.
 
 It is recommended to activate this option.</help>
-		<author>Satsuki_Yatoshi and Aavock</author>
+		<author>Satsuki_Yatoshi, Aavock and Cosmos</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
@@ -157,9 +159,11 @@ It is recommended to activate this option.</help>
 
 For example the waterfall at Aerith's house and a lot of light effects.
 
+The fields have been extented from 4/3 to 16/9 by Comos and his Limit Break mod.
+
 It takes a lot of power, if you notice slowdowns in game, it is recommended to disable this option.
 </help>
-		<author>Satsuki_Yatoshi and Aavock</author>
+		<author>Satsuki_Yatoshi, Aavock and Cosmos</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
@@ -217,6 +221,17 @@ This greatly improves the textures of the original game.
 It is recommended to activate this option.</help>
 		<author>Satsuki_Yatoshi</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>graphicsCosmosGaia</name>
+		<text>Cosmos Gaia mod</text>
+		<help>Worldmap overhaul that re-implements the terrain rendering to add analog movement and camera controls, real-time lighting and extended view distance (use L2/R2 to change the viewing distance).
+
+You must use analog controller option or it won't work(driver section).
+
+It is recommended to activate this option as long as you use an analog controller.</help>
+		<author>Cosmos</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=21686</url>
 	</control>
 	<control>
 		<name>graphicsMiniGames</name>
@@ -546,7 +561,7 @@ This allows you not to have the music start from the beginning after each fight,
 		<author>FFNx team</author>
 		<help>If you play with a gamepad with an analog stick, this option allows you to use it in the menus and for movement (in addition to the directional cross).
 
-It also add manual camera control in battle with left analog stick and screen deplacement in fields with right stick.</help>
+It also add manual camera control in battle with left analog stick and in fields with right stick.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>

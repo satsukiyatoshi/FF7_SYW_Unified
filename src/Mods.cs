@@ -180,9 +180,14 @@ namespace FF7_SYW_Unified
             }
 
             //apply true 16/9 - 16/10 files
-            if (Directory.Exists(modFolder + @"FilesWS") && (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3))
+            if (Directory.Exists(modFolder + @"FilesWS\169") && FFNxRatio.SelectedIndex == 2)
             {
-                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\169"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWS\169") && FFNxRatio.SelectedIndex == 3)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\1610"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
             //replace ff7.exe with the gameplay's ff7 mod (used with vanilla exe option too)

@@ -142,12 +142,14 @@ De plus, le pack contient diverses options de configuration poussées et patchs 
 		
 La base est traitée avec une IA ESRGan.
 
+Les extensions en 16/9 ont été faite par Comos via son mod Limit Break.
+
 Beaucoup d'optimisations à la main.
 
 Cela améliore grandement les textures du jeu d'origine.
 
 Il est conseillé d'activer cette option.</help>
-		<author>Satsuki_Yatoshi et Aavock</author>
+		<author>Satsuki_Yatoshi, Aavock et Cosmos</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
@@ -157,9 +159,11 @@ Il est conseillé d'activer cette option.</help>
 		
 Par exemple la cascade de la maison de Aérith et pas mal d'effets de lumières.
 
+Les extensions en 16/9 ont été faite par Comos via son mod Limit Break.
+
 Cela prend pas mal de puissance, si vous constatez des ralentissements en jeu, il est conseillé de désactiver cette option.
 </help>
-		<author>Satsuki_Yatoshi et Aavock</author>
+		<author>Satsuki_Yatoshi, Aavock et Cosmos</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
@@ -217,6 +221,17 @@ Cela améliore grandement les textures du jeu d'origine.
 Il est conseillé d'activer cette option.</help>
 		<author>Satsuki_Yatoshi</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+	<control>
+		<name>graphicsCosmosGaia</name>
+		<text>Cosmos Gaia mod</text>
+		<help>Refonte de la carte du monde qui réimplémente le rendu du terrain pour ajouter des commandes de mouvement et de caméra analogiques, un éclairage en temps réel et une distance de vue étendue et variable (avec les L2/R2).
+
+Vous devez utiliser l'option 'contrôleur analogique', sinon cela ne fonctionnera pas (section 'Pilote et patchs').
+
+Il est recommandé d'activer cette option dès lors que vous utilisez un contrôleur analogique.</help>
+		<author>Cosmos</author>
+		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=21686</url>
 	</control>
 	<control>
 		<name>graphicsMiniGames</name>
@@ -546,7 +561,7 @@ Cela permet de ne pas avoir la musique qui reprend de zéro après chaque combat
 		<author>FFNx team</author>
 		<help>Si vous jouez avec une manette de jeu avec un stick analogique, cette option permet de l'utiliser dans les menus et pour les déplacements (en plus de la croix directionnelle).
 		
-Cela ajoute également un contrôle de la caméra en combat avec le stick de gauche et un deplacement du fond d'écran dans les scènes de jeu avec le stick droit.</help>
+Cela ajoute également un contrôle de la caméra en combat avec le stick de gauche et sur les fonds d'écran dans les scènes de jeu avec le stick droit.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>

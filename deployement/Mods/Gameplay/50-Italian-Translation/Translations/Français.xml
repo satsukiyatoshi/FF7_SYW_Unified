@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+<control>
+		<text>Traduction italienne (v1.63)</text>
+		<help>L'objectif de ce projet est de traduire FF7 en italien en utilisant le mod Reunion comme source anglaise pour les dialogues, tout en recoupant constamment avec le script japonais original.
+
+Pour les termes sans dialogue, Caledor a réutilisé autant que possible les traductions officielles.
+
+Le but n'est pas d'avoir une traduction qui utilise FF7 comme un jeu autonome, Caledor veut qu'il se mélange bien avec les autres jeux Final Fantasy qui existent déjà en italien.
+
+Il est fortement recommandé d'utiliser des textures HD avec ce mod.
+
+Comme cette traduction est basée sur la version anglaise du jeu, vous DEVEZ choisir l'anglais comme langue du jeu dans le menu de gauche, sinon cela ne fonctionnera pas comme prévu.
+</help>
+		<author>Caledor</author>
+		<url>https://forums.qhimm.com/index.php?topic=18903.0</url>
+		<compatibily>E</compatibily>
+</control>
+</translation>
+

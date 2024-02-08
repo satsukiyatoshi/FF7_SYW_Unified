@@ -18,10 +18,8 @@
 {\pntext\f2\'B7\tab}\cf1\kerning0\f0\lang12 Do not touch the contents of the SYW folder; it manages specific pack options.\cf2\kerning1\f1\lang1036\par
 
 \pard\sa140\sl276\slmult1\cf0\kerning0\i0\f0\fs24\lang12\par
-
-\pard\sa140\sl276\slmult1\cf2\fs20 It's also important to understand the difference between patches and mods. For example, a gameplay patch is applied after the mods, so it will overwrite the mod's settings or files. This can be useful for adding complementary parts like the True Honey Bee Inn, which is compatible with many existing gameplay mods.\cf0\fs24\par
-
-\pard\sa140\sl276\slmult1\cf2\fs20\par
+\cf2\fs20 It's also important to understand the difference between patches and mods. For example, a gameplay patch is applied after the mods, so it will overwrite the mod's settings or files. This can be useful for adding complementary parts like the True Honey Bee Inn, which is compatible with many existing gameplay mods.\cf0\fs24\par
+\cf2\fs20\par
 \b Creating a Mod for the Pack:\cf0\b0\fs24\par
 \cf2\fs20 Go to the 'Mods' sub-folder of your choice, for example, "\\Mods\\Models\\Battles" and create a new folder for your mod.\cf0\fs24\par
 \cf2\fs20 The folder can have any name, but I recommend following the format xx-Mod-Name, where xx is a number or a letter followed by a number. This will ensure that the original game (option 00-Vanilla) always appears at the top of the mods list.\cf0\fs24\par
@@ -31,12 +29,12 @@
 {\pntext\f2\'B7\tab}\cf1\i Files30fps \cf2\i0  \cf4\i (optional)\cf2\i0\par
 {\pntext\f2\'B7\tab}\cf1\i Files60fps \cf2\i0  \cf4\i (optional)\cf2\i0\par
 {\pntext\f2\'B7\tab}\cf1\i FilesLang\cf2\i0  \cf4\i (optional)\cf2\i0\par
+{\pntext\f2\'B7\tab}\cf1\i FilesWS\cf2\i0  \cf4\i (optional)\cf2\i0\par
 {\pntext\f2\'B7\tab}\cf1\i Translations \cf2\i0  \cf4\i (mandatory)\cf2\i0\par
 {\pntext\f2\'B7\tab}\cf1\i prev.jpg \cf2\i0  \cf4\i (mandatory except for generic patches)\cf2\i0\par
 
 \pard\sa140\sl276\slmult1\cf0\kerning0\f0\fs24\lang12\par
-
-\pard\sa140\sl276\slmult1\cf2\fs20 The Translations folder contains the mod's text files (English.xml, Fran\'e7ais.xml, Deutsch.xml, and Espa\'f1ol.xml). It's not mandatory to have all of these translation files, but at least one in English is necessary. For the file structure, see the end of the document.\cf0\fs24\par
+\cf2\fs20 The Translations folder contains the mod's text files (English.xml, Fran\'e7ais.xml, Deutsch.xml, and Espa\'f1ol.xml). It's not mandatory to have all of these translation files, but at least one in English is necessary. For the file structure, see the end of the document.\cf0\fs24\par
 \cf2\fs20 The file prev.jpg is an image representing your mod. The image formats are available in the pack's Resources folder (prev.xxx.png files).\cf0\fs24\par
 \cf2\fs20 Each 'File...' folder can contain the following sub-folders:\par
 
@@ -54,7 +52,8 @@
 \cf1\fs20 direct\cf2  contains folders and files directly accessed by the game's memory, for example, \\direct\\battle\\aada.\cf0\fs24\par
 \cf1\fs20 hext\cf2  contains memory patches according to the FFNx structure, for example, \\hext\\ff7\\fr\\autorun.txt.\cf0\fs24\par
 \cf1\fs20 textures\cf2  contain direct textures in dds or png format, for example, \\textures\\menu\\buster_00.dds.\cf0\fs24\par
-\cf2\fs20 The \cf1 Files30fps\cf2  and \cf1 Files60fps\cf2  folders are used in the same way but in the case where 30fps battles or 60fps gameplay are activated in the driver settings (this is crucial for 3D models and certain game scenes).\cf0\fs24\par
+\cf2\fs20 The \cf1 Files30fps\cf2  and \cf1 Files60fps\cf2  folders are used in the same way but in the case where 30fps battles or 60fps gameplay are activated in the driver settings (this is crucial for 3D models and certain game scenes).\par
+The \cf1 FilesWS\cf2  folder is used to auto-load files if real 16/9 or real 16/10 option is used by using \cf1 169\cf2  and \cf1 1610 \cf2 subfolders (so you can make alignments patch for widescreen). \cf0\fs24\par
 \cf2\fs20 The \cf1 FilesLang\cf2  folder has 4 sub-folders E/F/G/S which contain the sub-folders explained above (ambients, data...). They are used in cases where files need to be different in English, French, German, or Spanish.\cf0\fs24\par
 \cf2\fs20 Once your files are well organized in the folder structure of your mod, simply open the pack's configuration, and your mod will appear in the chosen section.\cf0\fs24\par
 \par
