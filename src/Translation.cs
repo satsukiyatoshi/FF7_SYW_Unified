@@ -162,15 +162,28 @@ namespace FF7_SYW_Unified
         {
             folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\GameLanguage\Common\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
             folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\GameLanguage\" + langGame.Text), new DirectoryInfo(Application.StartupPath + @"\Game"));
+        }
+
+        private void ApplyAR()
+        {
+            if (FFNxRatio.SelectedIndex == 0)
+            {
+                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\Mods\SYW\Ratio\43\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
+
+            if (FFNxRatio.SelectedIndex == 1)
+            {
+                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\Mods\SYW\Ratio\169st\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
 
             if (FFNxRatio.SelectedIndex == 2)
             {
-                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\GameLanguage\WS\169\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\Mods\SYW\Ratio\169\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
             }
 
             if (FFNxRatio.SelectedIndex == 3)
             {
-                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\GameLanguage\WS\1610\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\Mods\SYW\Ratio\1610\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
             }
         }
 

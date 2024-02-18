@@ -179,7 +179,17 @@ namespace FF7_SYW_Unified
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesLang60fps\" + Globals.gameLang), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
-            //apply true 16/9 - 16/10 files
+            //apply ratio specific files
+            if (Directory.Exists(modFolder + @"FilesWS\43") && FFNxRatio.SelectedIndex == 0)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\43"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWS\169") && FFNxRatio.SelectedIndex == 1)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\169st"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
             if (Directory.Exists(modFolder + @"FilesWS\169") && FFNxRatio.SelectedIndex == 2)
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\169"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));

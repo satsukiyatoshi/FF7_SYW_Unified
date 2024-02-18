@@ -137,7 +137,7 @@ De plus, le pack contient diverses options de configuration poussées et patchs 
 	</control>
 	<control>
 		<name>graphicsFields</name>
-		<text>Scènes du jeux HD</text>
+		<text>Scènes du jeu HD</text>
 		<help>Textures des scènes du jeu retraitées en HD.
 		
 La base est traitée avec une IA ESRGan.
@@ -816,7 +816,7 @@ Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
     </control>
     <control>
         <name>ctrlNumpadPad</name>
-        <text>Flêches</text>
+        <text>Flèches</text>
     </control>
     <control>
         <name>ctrlNumpadOk</name>
@@ -860,7 +860,7 @@ Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
     </control>
     <control>
         <name>ctrlKeyboardPad</name>
-        <text>Flêches</text>
+        <text>Flèches</text>
     </control>
     <control>
         <name>ctrlKeyboardOk</name>
