@@ -4,7 +4,7 @@
 		<text>Sauvegarder n'importe où</text>
 		<help>Sauvegarder n'importe où : 
 		
-Permet de sauvegarder n'importe où, là où le jeu ne le permet pas normalement.
+Permet de sauvegarder et d'utiliser le PHS n'importe où, même là où le jeu ne le permet pas normalement.
 		
 /!\ Attention /!\ des bugs sont possibles et ils peuvent apparaitre plusieurs heures après la sauvegarde.
 
@@ -12,7 +12,7 @@ Utilisez cette option a vos risques et périls.
 </help>
 		<author>Satsuki</author>
 		<url></url>
-		<compatibily>FE</compatibily>
+		<compatibily>FEG</compatibily>
 			</control>
 </translation>
 

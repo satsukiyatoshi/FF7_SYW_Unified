@@ -2,7 +2,9 @@
 <translation>
 	<control>
 		<text>Run by default</text>
-		<help>Enable running instead of walking by default in game scenes.</help>
+		<help>Run by default :
+
+Enable running instead of walking by default in game scenes.</help>
 		<author>Chysalis</author>
 		<url></url>
 		<compatibily>FEGS</compatibily>

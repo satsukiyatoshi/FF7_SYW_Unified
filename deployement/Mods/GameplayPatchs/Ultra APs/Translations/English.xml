@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Maximum de combats</text>
-		<help>Maximum de combats : 
-		
-Permet de maximiser le nombre de combats aléatoires.</help>
+		<text>Ultra AP</text>
+		<help>Ultra AP :
+
+You get 100000 additional APs (in addition to that received by enemies).</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>

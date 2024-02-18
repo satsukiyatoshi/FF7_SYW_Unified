@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Maximum de combats</text>
-		<help>Maximum de combats : 
-		
-Permet de maximiser le nombre de combats aléatoires.</help>
+		<text>Remove battle marker</text>
+		<help>Remove battle marker :
+
+Remove the pyramid marker that appears above the characters in battles.
+</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>

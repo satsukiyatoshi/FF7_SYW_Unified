@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Maximum de combats</text>
-		<help>Maximum de combats : 
-		
-Permet de maximiser le nombre de combats aléatoires.</help>
+		<text>Ctrl+z to exit</text>
+		<help>You can use the ctrl+z as an alternative to exit the game (default is ctrl+q).</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>

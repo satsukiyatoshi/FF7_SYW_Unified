@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>save anywhere</text>
-		<help>save anywhere : 
+		<text>Save anywhere</text>
+		<help>Save anywhere : 
 		
-Allows you to save anywhere, where the game does not normally allow it.
+Allows you to use PHS and save anywhere, even where the game does not normally allow it.
 
 /!\ Warning /!\ saving anywhere car corupt sage data and show sometine after several hours
 
@@ -12,7 +12,7 @@ Use this option at your own risk.
 .</help>
 		<author>Satsuki</author>
 		<url></url>
-		<compatibily>FE</compatibily>
+		<compatibily>FEG</compatibily>
 			</control>
 </translation>
 

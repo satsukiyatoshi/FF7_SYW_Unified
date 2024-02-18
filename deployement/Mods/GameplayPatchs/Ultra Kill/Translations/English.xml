@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Maximum de combats</text>
-		<help>Maximum de combats : 
-		
-Permet de maximiser le nombre de combats aléatoires.</help>
+		<text>Ultra kill</text>
+		<help>Ultra kill :
+
+Every enemy can be eliminated with one single hit
+</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>

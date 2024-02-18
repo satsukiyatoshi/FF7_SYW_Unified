@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Maximum de combats</text>
-		<help>Maximum de combats : 
-		
-Permet de maximiser le nombre de combats aléatoires.</help>
+		<text>Ultra BPs</text>
+		<help>Ultra BPs :
+
+Get 65000 battle points after just two rounds in the battle square (no need to finish all eight fights).</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>

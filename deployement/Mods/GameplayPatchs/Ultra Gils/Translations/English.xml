@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Maximum de combats</text>
-		<help>Maximum de combats : 
-		
-Permet de maximiser le nombre de combats aléatoires.</help>
+		<text>Ultra Gils</text>
+		<help>Ultra Gils :
+
+You get 100000 additional gils (in addition to that received by enemies).</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>

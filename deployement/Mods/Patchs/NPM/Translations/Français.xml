@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Supression du marqueur en combat</text>
+		<help>Supression du marqueur en combat :
+
+Supprime le marqueur en forme de pyramide visible sur les personnages en combats.</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+			</control>
+</translation>
+

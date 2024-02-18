@@ -4,12 +4,12 @@
 		<text>Suppression de la limite 9999</text>
 		<help>Suppression de la limite 9999 : 
 		
-Permet de supprimer les limites de 9999 de dégâts et points de vie.
+Permet de supprimer les limites de 9999 de dégâts et points de vie et de magie.
 
 La nouvelle limite est de 30000 points</help>
 		<author></author>
 		<url></url>
-		<compatibily>FE</compatibily>
+		<compatibily>FEG</compatibily>
 			</control>
 </translation>
 

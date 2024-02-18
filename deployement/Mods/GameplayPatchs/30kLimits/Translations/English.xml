@@ -4,12 +4,12 @@
 		<text>Removed 9999 limit</text>
 		<help>Removed 9999 limit : 
 		
-Allow to remove the damage and HP limit of 9999.
+Allow to remove the damage and HP/MP limit of 9999.
 
 The new limit is 30,000 points</help>
 		<author></author>
 		<url></url>
-		<compatibily>FE</compatibily>
+		<compatibily>FEG</compatibily>
 			</control>
 </translation>
 

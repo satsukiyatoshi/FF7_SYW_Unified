@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Maximum de combats</text>
-		<help>Maximum de combats : 
-		
-Permet de maximiser le nombre de combats aléatoires.</help>
+		<text>Limite permanente</text>
+		<help>Limite permanente :
+
+Permet d'être toujours en limite break pendant les combats.</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>

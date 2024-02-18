@@ -2,7 +2,9 @@
 <translation>
 	<control>
 		<text>Courrir par défaut</text>
-		<help>Permet de courir au lieu de marcher par défaut dans les séquences du jeu.</help>
+		<help>Courrir par défaut:
+
+Permet de courir au lieu de marcher par défaut dans les séquences du jeu.</help>
 		<author>Chysalis</author>
 		<url></url>
 		<compatibily>FEGS</compatibily>

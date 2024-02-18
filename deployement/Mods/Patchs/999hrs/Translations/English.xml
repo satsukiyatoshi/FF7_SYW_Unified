@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>999 Hours</text>
+		<help>999 Hours :
+
+Extend time to 999 hours on menu counter.
+
+Also align the texts arround to deal with it without graphical issue.
+</help>
+		<author></author>
+		<url></url>
+		<compatibily>EG</compatibily>
+			</control>
+</translation>
+
