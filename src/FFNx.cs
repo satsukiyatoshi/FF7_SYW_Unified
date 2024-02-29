@@ -90,11 +90,11 @@ namespace FF7_SYW_Unified
             getScreenResolutions();
             FFNxResolution.Text = (translate("auto", Globals.translateUI));
 
-            FFNxRatio.Items.Add("4/3 (" + translate("vanilla", Globals.translateUI) + ")");
+            FFNxRatio.Items.Add(translate("ogscreen", Globals.translateUI));
             FFNxRatio.Items.Add(translate("strechedwidescreen", Globals.translateUI));
             FFNxRatio.Items.Add(translate("realwidescreen", Globals.translateUI));
             FFNxRatio.Items.Add(translate("realwidescreendeck", Globals.translateUI));
-            FFNxRatio.Text = ("4/3 (" + translate("vanilla", Globals.translateUI) + ")");
+            FFNxRatio.Text=(translate("ogscreen", Globals.translateUI));
 
             FFNxIR.Items.Add(translate("auto", Globals.translateUI));
             FFNxIR.Items.Add("x1");

@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 <control>
-		<text>Traduction italienne</text>
-		<help>todo
+		<text>Traduction portugaise (v1.2)</text>
+		<help>Traduction portugaise:
+
+Traduction du jeu en portugais depuis la version japonaise.
 </help>
-		<author>todo</author>
+		<author>Xulikotony and UTK</author>
 		<url></url>
-		<compatibily>FES</compatibily>
+		<compatibily>E</compatibily>
 </control>
 </translation>
 
