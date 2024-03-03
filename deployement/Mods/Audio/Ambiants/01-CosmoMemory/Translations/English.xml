@@ -2,7 +2,7 @@
 <translation>
 	<control>
 		<text>Cosmo Memory</text>
-		<help>Cosmo Memory ambient sound (v1.1) : 
+		<help>Cosmo Memory (v1.1): 
 		
 Adds to each scene of the game ambient sounds in the form of background noise.
 
@@ -13,4 +13,3 @@ For optimal quality, we recommend to play with headphones and set the volume of 
 		<compatibily></compatibily>
 	</control>
 </translation>
-

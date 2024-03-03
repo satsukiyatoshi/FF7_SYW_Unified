@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Immer PHS und Speichern</text>
+		<help>Immer PHS und Speichern: 
+		
+Aktivieren Sie die ortsunabhängige Verwendung von PHS und Speichern, auch dort, wo das Spiel dies normalerweise nicht zulässt.
+
+/!\ Warnung /!\ Das Speichern an willkürlichen Orten kann dazu führen, dass gespeicherte Daten beschädigt werden. Dabei kann es manchmal mehrere Stunden dauern, bis sich diese Fehler bemerkbar machen.
+
+Nutzen Sie daher diesen Mod auf eigene Gefahr.
+		</help>
+		<author>Kranmer</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

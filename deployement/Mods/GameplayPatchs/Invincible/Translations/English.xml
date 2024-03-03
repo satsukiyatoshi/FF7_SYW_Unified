@@ -2,12 +2,12 @@
 <translation>
 	<control>
 		<text>Invincible</text>
-		<help>Invincible :
+		<help>Invincible:
 
-Your party don't loose life in battle.</help>
+Don't lose HP due to enemy attacks.
+		</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>
-			</control>
+	</control>
 </translation>
-

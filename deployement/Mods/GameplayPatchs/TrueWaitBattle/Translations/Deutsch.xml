@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Echtes Warten</text>
+		<help>Echtes Warten:
+
+Passen Sie das ATB-System so an, dass es auf Befehle und Animationen wartet, sodass die dringende Eingabe von Befehlen nicht mehr erforderlich ist (entspanntere Schlachten).
+
+Beachten Sie, dass ein Charakter mit doppelt so hoher Geschwindigkeit wie ein anderer Charakter doppelt so viele Aktionen ausführen kann, anstatt dass der Geschwindigkeitsunterschied bei Animationen verloren geht, wie es bei Vanilla der Fall ist.
+
+Beachten Sie, dass dieser Mod es im Vergleich zu Vanilla deutlich schwieriger macht, vor Feinden davonzulaufen.
+		</help>
+		<author>Postscriptthree</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

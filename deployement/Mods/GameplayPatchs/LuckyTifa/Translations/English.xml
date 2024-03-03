@@ -2,12 +2,14 @@
 <translation>
 	<control>
 		<text>Lucky Tifa</text>
-		<help>Lucky Tifa : 
-		
- Tifa's limit break always gives the best shots possible.</help>
-		<author></author>
+		<help>Lucky Tifa: 
+	
+Manipulate Tifa's limit break roulette.
+
+Tifa's limit break always has the best possible symbols.
+		</help>
+		<author>dziugo</author>
 		<url></url>
 		<compatibily>FEG</compatibily>
-			</control>
+	</control>
 </translation>
-

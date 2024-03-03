@@ -21,15 +21,15 @@
 	</control>
 	<control>
 		<name>errorloadingmod</name>
-		<text>Error loading mod, check folder  :  </text>
+		<text>Error loading mod, check folder:  </text>
 	</control>
 	<control>
 		<name>errorloadingmodtranslation</name>
-		<text>Error loading mod translation (English translation is required), check folder  :  </text>
+		<text>Error loading mod translation (English translation is required), check folder:  </text>
 	</control>
 	<control>
 		<name>errorloadingtransfile</name>
-		<text>Error loading file  :  </text>
+		<text>Error loading file:  </text>
 	</control>
 	<control>
 		<name>norulmod</name>
@@ -49,7 +49,7 @@
 	</control>
 	<control>
 		<name>presetchange</name>
-		<text>Are you sure you want to load this preset ?
+		<text>Are you sure you want to load this preset?
 It will replace all your current settings (only gameplay and audio setting are kept).</text>
 	</control>
 	
@@ -121,9 +121,10 @@ It will replace all your current settings (only gameplay and audio setting are k
 	</control>
 	<control>
 		<name>packStory</name>
-		<text>The FF7 SYW project is a pack including Final Fantasy VII with graphical reprocessing thanks to advanced artificial intelligence on background images, fights, world map, mini-games and video sequences, other elements have also been recreated while preserving the original essence of the game.
+		<text>The FF7 SYW project is a pack including Final Fantasy VII with graphical reprocessing thanks to advanced artificial intelligence on background images, fights, world map, mini games and video sequences, other elements have also been recreated while preserving the original essence of the game.
 		
-In addition, the pack contains various advanced configuration options and various patchs such as save-anywhere functions, autorun, disable random battles, fast forward, challenges and difficulty mods of all kinds...all this to offer an unprecedented gaming experience and comfort.</text>
+In addition, the pack contains various advanced configuration options and various patchs such as save-anywhere functions, autorun, disable random battles, fast forward, challenges and difficulty mods of all kinds... all this to offer an unprecedented gaming experience and comfort.
+</text>
 	</control>	
 	
 	
@@ -137,39 +138,46 @@ In addition, the pack contains various advanced configuration options and variou
 	</control>
 	<control>
 		<name>graphicsFields</name>
-		<text>HD Game Scenes</text>
-		<help>Textures of the game scenes reprocessed in HD.
+		<text>HD game scenes</text>
+		<help>HD game scenes:
+
+Textures of the game scenes reprocessed in HD.
 		
 The database is processed with an ESRGan AI.
 
-The fields have been extented from 4/3 to 16/9 by Comos and his Limit Break mod.
+The fields have been extented from 4:3 to 16:9 by Cosmos and his "Limit Break" mod.
 
 Lots of optimizations by hand.
 
 This greatly improves the textures of the original game.
 
-It is recommended to activate this option.</help>
+It is recommended to activate this option.
+		</help>
 		<author>Satsuki_Yatoshi, Aavock and Cosmos</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsAnimations</name>
 		<text>Advanced animations</text>
-		<help>Allow to restore the original animations of the scenes of the game with HD textures.
+		<help>Advanced animations:
+
+Allow to restore the original animations of the scenes of the game with HD textures.
 
 For example the waterfall at Aerith's house and a lot of light effects.
 
-The fields have been extented from 4/3 to 16/9 by Comos and his Limit Break mod.
+The fields have been extented from 4:3 to 16:9 by Cosmos and his "Limit Break" mod.
 
 It takes a lot of power, if you notice slowdowns in game, it is recommended to disable this option.
-</help>
+		</help>
 		<author>Satsuki_Yatoshi, Aavock and Cosmos</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsBattles</name>
 		<text>HD fight scenes</text>
-		<help>Textures of combat scenes reprocessed in HD.
+		<help>HD fight scenes:
+
+Textures of the battle scenes reprocessed in HD.
 
 The base is processed with an ESRGan AI plus hand optimizations.
 
@@ -177,82 +185,102 @@ This greatly improves the textures of the original game.
 
 Geometry and lighting bugs from the original game have been fixed by AxlRose.
 
-It is recommended to activate this option.</help>
+It is recommended to activate this option.
+		</help>
 		<author>Satsuki_Yatoshi and AxlRose</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>axl3dbattle</name>
 		<text>AxlRose's Blender</text>
-		<help>3D battle scenes corrections.
+		<help>AxlRose's Blender:
+
+3D battle scenes corrections.
 		
 Fixes the "shadow/light" effect (blending) of the ground/floor for all affected Battle Stages.
 
 Improvements to the Battle Fields were done directly to the 3D model's floor meshes.
 
-It is recommended to activate this option..
-</help>
+It is recommended to activate this option.
+		</help>
 		<author>AxlRose</author>
 		<url>https://forums.qhimm.com/index.php?topic=21357.0</url>
 	</control>
 	<control>
 		<name>graphicsMagics</name>
 		<text>HD battle magics</text>
-		<help>Textures of magic and combat effects done from scratch in 3D.
+		<help>HD battle magics:
+
+Textures of the magic and combat effects done from scratch in HD.
 
 The vast majority of textures are done from scratch but some elements have been reprocessed in HD with an ESRGan AI.
 
 This modernizes the original game without distorting it.
 
 It is recommended to activate this option.
-</help>
+		</help>
 		<author>Kela51 and Satsuki_Yatoshi</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsWorldMap</name>
-		<text>HD world map</text>
-		<help>World map textures reprocessed in HD.
+		<text>HD world maps</text>
+		<help>HD world maps:
+
+Textures of the world maps reprocessed in HD.
 
 The base is processed with an ESRGan AI plus hand optimizations.
 
 This greatly improves the textures of the original game.
 
-It is recommended to activate this option.</help>
+It is recommended to activate this option.
+		</help>
 		<author>Satsuki_Yatoshi</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>graphicsCosmosGaia</name>
-		<text>Cosmos Gaia mod</text>
-		<help>Worldmap overhaul that re-implements the terrain rendering to add analog movement and camera controls, real-time lighting and extended view distance (use L2/R2 to change the viewing distance).
+		<text>Cosmos Gaia</text>
+		<help>Cosmos Gaia:
 
-You must use analog controller option or it won't work(driver section).
+Worldmap overhaul that re-implements the terrain rendering to add analog movement and camera controls, real-time lighting and extended view distance.
 
-It is recommended to activate this option as long as you use an analog controller.</help>
+Use [CAMERA] and [TARGET] to change the viewing distance.
+
+You must use analog controller option or it won't work (driver section).
+
+It is recommended to activate this option as long as you use an analog controller.
+		</help>
 		<author>Cosmos</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=21686</url>
 	</control>
 	<control>
 		<name>graphicsMiniGames</name>
-		<text>HD mini-games</text>
-		<author>Aavock, Satsuki_Yatoshi, jtd</author>
-		<help>Textures of the mini-games done from scratch in HD.
+		<text>HD mini games</text>
+		<author>Aavock, Satsuki_Yatoshi and jtd</author>
+		<help>HD mini games:
+
+Textures of the mini games done from scratch in HD.
 
 The vast majority of textures are done from scratch but some elements have been reprocessed in HD with an ESRGan AI.
 
 This modernizes the original game without distorting it.
 
-It is recommended to activate this option.</help>
+It is recommended to activate this option.
+		</help>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
 		<name>FFNxGamutNtsc</name>
-		<text>Gamut NTSC-J</text>
+		<text>NTSC-J color gamut</text>
 		<author>ChthonVII</author>
-		<help>Allows you to find the true colors of the game which were badly converted on the PC version, the colors are warmer and more vivid.
+		<help>NTSC-J color gamut:
 
-This option is recommended whether with the original textures or the HD textures.
+Simulates the color gamut of the 1990s Japanese televisions for which FF7 was originally developed.
+
+This gives you the opportunity to recover the true colors of the game, which were poorly converted in the PC version. The colors are warmer and more vivid.
+
+Usable with original and HD textures.
 
 If you are using third party mods which are not HD conversions of the original game but textures made from scratch, this option may distort the colors.		
 		</help>
@@ -262,26 +290,29 @@ If you are using third party mods which are not HD conversions of the original g
 		<name>FFNxLighting</name>
 		<text>3D shadows</text>
 		<author>FFNx team</author>
-		<help>This option adds shadows to 3D models in the game.
+		<help>3D shadows:
+
+This option adds shadows to 3D models in the game.
 
 This gives a real presence to the 3D models, whether original ones or third-party models.
 
 You need a decent PC not to suffer from a slowdown in the game with this option.
 
-Some rare shading bugs are possible but the quality provided by this option is really worth it.</help>
+On rare occasions, shading bugs might arise, but the gaming immersion that this option offers outweighs any inconvenience.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>graphicsGroupModels3Df</name>
-		<text>3D models in game scenes</text>
+		<text>3D models in the game scenes</text>
 	</control>
 	<control>
 		<name>graphicsGroupModels3Dc</name>
-		<text>3D models in battle</text>
+		<text>3D models in the battle scenes</text>
 	</control>
 	<control>
 		<name>graphicsGroupModels3Dw</name>
-		<text>3D models of the world map</text>
+		<text>3D models on the world map</text>
 	</control>
 	<control>
 		<name>graphicsGroupModels3Dm</name>
@@ -293,7 +324,7 @@ Some rare shading bugs are possible but the quality provided by this option is r
 	</control>
 	<control>
 		<name>graphicsGroupMenu</name>
-		<text>Interface (menus and fonts)</text>
+		<text>Interface (menus and font)</text>
 	</control>
 		<control>
 		<name>graphicFrame2</name>
@@ -316,19 +347,19 @@ Some rare shading bugs are possible but the quality provided by this option is r
 <!--  -->
 	<control>
 		<name>soundsGroupMusics</name>
-		<text>Game music</text>
+		<text>Music in game</text>
 	</control>
 	<control>
 		<name>soundsGroupAmbients</name>
-		<text>Ambient game sounds</text>
+		<text>Ambient sounds in game</text>
 	</control>
 	<control>
 		<name>soundsGroupSfx</name>
-		<text>game sound effects</text>
+		<text>Sound effects in game</text>
 	</control>
 	<control>
 		<name>soundsGroupFMV</name>
-		<text>Cutscene audio tracks</text>
+		<text>Cutscene tracks in game</text>
 	</control>
 	<control>
 		<name>soundsGroupVoices</name>
@@ -340,15 +371,20 @@ Some rare shading bugs are possible but the quality provided by this option is r
 
 Then click on a track in the list to listen to it.
 
-It may take a few moments to launch.</text>
+It may take a few moments for playback to begin.
+		</text>
 	</control>
 	<control>
 		<name>soundFrame2</name>
 		<text>About the mod</text>
 	</control>
+    	<control>
+        	<name>soundFrame3</name>
+        	<text>Audio mods</text>
+   	</control>
 	<control>
 		<name>soundFrame4</name>
-		<text>Audio Preview</text>
+		<text>Audio preview</text>
 	</control>
 	
 	
@@ -405,7 +441,7 @@ It may take a few moments to launch.</text>
 	</control>
 	<control>
 		<name>FFNxFrame3</name>
-		<text>FFNx Driver setup</text>
+		<text>FFNx driver setup</text>
 	</control>
 	<control>
 		<name>FFNxFrame4</name>
@@ -413,20 +449,25 @@ It may take a few moments to launch.</text>
 	</control>
 	<control>
 		<name>FFNxGroup3dEngine</name>
-		<text>rendering engine</text>
+		<text>Rendering engine</text>
 		<author></author>
-		<help>The optimal type of render engine depends on the graphics card of the pc and the options of the game.
+		<help>Choose the rendering engine:
 
-It is strongly recommended to leave on automatic.
+The optimal type of rendering engine depends on the graphics card of the pc and the options of the game.
 
-Some ATI/AMD graphics cards are more stable in D3D12.</help>
+It is strongly recommended to keep Automatic selected.
+
+Crashes may occur when using OpenGL with ATI/AMD graphics cards.
+
+Some ATI/AMD graphics cards run more stable on D3D12.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupScreen</name>
 		<text>Display</text>
 		<author>FFNx team</author>
-		<help>Choose the display type of the game.</help>
+		<help>Choose the display type.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
@@ -445,259 +486,338 @@ Some ATI/AMD graphics cards are more stable in D3D12.</help>
 		<name>FFNxGroupResolution</name>
 		<text>Screen resolution</text>
 		<author>FFNx team</author>
-		<help>Allow you to choose the screen resolution.
+		<help>Choose the screen resolution:
 		
-Especially useful in windowed play.</help>
+Automatic uses the game resolution in windowed mode or the current desktop resolution in fullscreen mode.
+
+The selection is particularly useful when playing in windowed mode.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupRatio</name>
-		<text>Display size</text>
+		<text>Aspect ratio</text>
 		<author>FFNx team</author>
-		<help>You can choose different formats (ratio) of display) of the game : 
+		<help>Choose the aspect ratio: 
 
--4/3 like the original game.
+• 4:3 like the original game maintains the aspect ratio in 4:3 and fills the left and right sides with black bars.
 
--16/9 stretched, no known bug but the image is vertically crushed.
+• Stretched 16:9 fills the image according to the size. There are no known bugs for this aspect ratio but the image is vertically crushed.
 
--True 16/9, modifies the game engine in order to have a real 16/9 wherever possible, some bugs (non-blocking) may appear
+• True 16:9 modifies the game engine to output a real 16:9 wherever possible. Some bugs may appear (non-blocking).
 
--True 16/10, modifies the game engine in order to have a real 16/10 wherever possible, ideal ratio for steam deck, experimental feature.</help>
+• True 16:10 modifies the game engine to output a real 16:10 wherever possible. This is the ideal aspect ratio for the Steam Deck (experimental feature).
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
+        	<name>ogscreen</name>
+        	<text>4:3 (original game)</text>
+    	</control>
+	<control>
 		<name>strechedwidescreen</name>
-		<text>Stretched 16/9 (distorted)</text>
+		<text>Stretched 16:9 (distorted)</text>
 	</control>
 	<control>
 		<name>realwidescreen</name>
-		<text>True 16/9 real</text>
+		<text>True 16:9</text>
 	</control>
 	<control>
 		<name>realwidescreendeck</name>
-		<text>True 16/10 (beta)</text>
+		<text>True 16:10 (beta)</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>
 		<text>Internal resolution</text>
 		<author>FFNx team</author>
-		<help>Uses supersampling of the game to make the image much sharper.
+		<help>Choose the internal resolution:
 
-x4 is a good setting on a PC of decent power.
+Uses game supersampling to multiply the internal resolution of 640x480 by a selected value, making the image much sharper.
 
-If you see stray lines on certain elements of the game (rare but can happen with certain configurations), try a setting of x4 or x2.</help>
+On a PC with decent power, x4 is a good setting.
+
+If you see stray lines on certain elements of the game (rare but can happen with certain configurations), try a setting of x4 or x2.
+
+Higher values ​​require a more powerful graphics card but can remove scaling artifacts.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxVsync</name>
 		<text>V-Sync</text>
 		<author>FFNx team</author>
-		<help>Enables V-Sync.
+		<help>V-Sync:
 
-Allow you to avoid tearing of images in game, but limits the speed of the speedhack to the refresh rate of the screen.</help>
+Synchronizes the game frame rate with the monitor refresh rate and allows you to avoid in-game image tearing.
+
+May negatively impact performance.
+ 
+Limits the possible speed adjustment of the speed hack to the refresh rate of the screen (e.g. the base game is 30 fps, if your screen is 60 Hz, the speed hack can speed up the game by a maximum of 2 times).
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupAA</name>
-		<text>Anti Aliasing</text>
+		<text>Anti aliasing</text>
 		<author>FFNx team</author>
-		<help>The anti aliasing allows to smoothing the edges of the 3d models of the game.
+		<help>Choose the anti aliasing:
 
-If you use an internal resolution of x4, it is not useful.
+The edge smoothing of the 3D models is made possible by anti-aliasing.
 
-I advise not to exceed x4 on Anti-aliasing also</help>
+If you use an internal resolution of x4, this option is not useful.
+
+It is recommended not to exceed the value x4 on Anti-aliasing also.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxAnisotropic</name>
 		<text>Anisotropic filtering</text>
 		<author>FFNx team</author>
-		<help>Anisotropic filtering allows better rendering of very distant 3D textures.
+		<help>Anisotropic filtering:
 
-The difference in rendering in game is more or less obvious depending on the mods used.
+Anisotropic filtering enables better rendering of very distant 3D textures.
 
-I advise you to activate this option by default.</help>
+The difference in appearance in the game is more or less obvious depending on the mods used.
+
+May impact performance due to increased memory usage.
+
+It is still recommended that you enable this option by default.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupHDR</name>
-		<text>HDR Nits</text>
+		<text>HDR nits</text>
 		<author>FFNx team</author>
-		<help>Allows you to specify the maximum HDR value of your screen in case the automatic rendering is not optimal.
+		<help>Choose the HDR nits:
 
-This option is ignored if your display does not support HDR (or if it's not enabled in windows).</help>
+Allows you to specify the maximum HDR value of your screen in case automatic rendering is not optimal.
+
+This setting will be ignored if your display does not support HDR (or if it has not been enabled in the operating system).
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupAudioChannels</name>
 		<text>Audio channels</text>
 		<author>FFNx team</author>
-		<help>you can choose the number of audio channels for the game.
+		<help>Choose the audio channels:
+
+You can choose the number of audio channels for the game.
 
 Just because you choose multichannel does not mean they will all be used, it depends on the audio mods and their configurations.
 
-If you are unsure leave on automatic.</help>
+If you are unsure, leave Automatic as the selection.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupAudioSample</name>
 		<text>Audio sampling</text>
 		<author>FFNx team</author>
-		<help>It is advised to leave this option on automatic unless you know what you are doing.</help>
+		<help>Choose the audio sampling:
+
+It is recommended to keep Automatic as the selection unless you know what you are doing.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNXMusicResume</name>
 		<text>Resume music</text>
 		<author>FFNx team</author>
-		<help>Allow you to have continuity in the music of the game.
+		<help>Resume music:
 
-This allows you not to have the music start from the beginning after each fight, for example.</help>
+Allow you to have continuity in the music of the game.
+
+For example, this means the music doesn't start over again after every battle.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxAnalogController</name>
 		<text>Analog controller</text>
 		<author>FFNx team</author>
-		<help>If you play with a gamepad with an analog stick, this option allows you to use it in the menus and for movement (in addition to the directional cross).
+		<help>Analog controller:
 
-It also add manual camera control in battle with left analog stick and in fields with right stick.</help>
+Enables support for fully omnidirectional analog control for a gamepad with an analog stick.
+
+This option allows you to use the analog stick in menus and for movement (in addition to the directional pad).
+
+It also adds free camera movement in battle using the left analog stick and fully analog 360-degree movement on the fields using the right analog stick.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxAnalogControllerArun</name>
-		<text>Auto run</text>
+		<text>Analog run</text>
 		<author>FFNx team</author>
-		<help>If you play with a gamepad with an analog stick, this option allows you to run or walk depending on the inclination of the stick.</help>
+		<help>Analog run:
+
+If you play with a gamepad with an analog stick, this option allows you to run or walk depending on the inclination of the stick.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNXSteamSucces</name>
-		<text>Steam Achievements</text>
+		<text>Steam achievements</text>
 		<author>FFNx team</author>
-		<help>Allows you to get FF7 steam achievements with this pack.
+		<help>Steam achievements:
 
-Steam must also be running otherwise it will not work.</help>
+Enables Steam achievements.
+
+Requires Steam to already be started or it won't work.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupControllerDeathzones</name>
-		<text>Gamepad dead zone (stick, LT, RT)</text>
+		<text>Gamepad dead zones (stick, LT, RT)</text>
 		<author>FFNx team</author>
-		<help>Allows you to set the dead zones of the analog controls of the gamepad.
+		<help>Choose the gamepad dead zones (stick, LT, RT):
 
-This is taken into account only if the "analog controller" option is activated.</help>
+Allows you to set the dead zones of the analog controls of the gamepad.
+
+Requires "Analog Controller" to be enabled as an option.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupSpeedhack</name>
 		<text>Speedhack (step, minimum, maximum)</text>
 		<author>FFNx team</author>
-		<help>You can use a speedhack (fast forward) in game (see general help).
+		<help>Choose the speedhack (step, minimum, maximum):
 
-If you use the V-Sync option, the speed of the speedhack will be limited by the refresh rate of the screen (for example, the base game is 30fps, if your screen is 60hz, the speedhack can speed up the game in 2x at most).
+You can use a speed hack (fast forward) in the game (see general help).
 
-The maximum speed is also limited by the power of the pc.</help>
+When using V-Sync, the possible speed adjustment of the speed hack is limited to the refresh rate of the screen (e.g. the base game is 30 fps, if your screen is 60 Hz, the speed hack can speed up the game by a maximum of 2 times).
+
+The maximum speed is also limited by the performance of the PC.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupFps</name>
 		<text>Fluidity of the game (fps)</text>
 		<author>FFNx team</author>
-		<help>Originally the fluidity of FF7 is limited, the menus are in 60fps, but the game scenes are in 30fps and the fights in 15fps.
+		<help>Choose the fluidity of the game (fps):
 
-Thanks to this option you can choose to make the fights more fluid in 30fps or to have the full game in 60fps.
+Originally, FF7's fluidity is limited. The menus are in 60 fps, but the game scenes are in 30 fps and the battles scenes are in 15 fps.
 
-The option to have fights in 30fps requires having interpolated combat models.
+Thanks to this option, you can choose whether you want the battles to run more smoothly at 30 frames per second or whether you want the entire game to run at 60 frames per second.
 
-The 60fps game option also requires interpolated models (those of the game scenes) but also some game patchs to avoid (minor) bugs in certain scenes.
+The option to display battles in 30 frames per second requires interpolated battle models.
 
-the 3D models included in the pack are already interpolated.
+The option to display the full game in 60 frames per second also requires interpolated models (those of the game scenes) as well as some game patches to avoid (minor) errors in certain scenes.
 
-The game scenes in french and english are also patched.</help>
+The battle models included in the package are already interpolated.
+
+The game patches included in the package are available for German, French and English.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>gamefpsbattle30</name>
-		<text>30 fps figths</text>
+		<text>battles in 30 fps</text>
 	</control>
 	<control>
 		<name>gamefull60fps</name>
-		<text>60fps full game</text>
+		<text>full game in 60 fps</text>
 	</control>
 	<control>
 		<name>FFNxShowStats</name>
 		<text>View FFNx information</text>
 		<author>FFNx team</author>
-		<help>Display various information (on the left in full screen and in the windowed title bar).
+		<help>View FFNx information:
 
-There are the fps, the driver version, the memory usage...</help>
+Shows you various information (on the left in full screen mode or in the title bar of the window).
+
+This includes fps, driver version, memory usage,...
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxDebugTool</name>
-		<text>debug tool</text>
+		<text>Debug tool</text>
 		<author>FFNx team</author>
-		<help>Allow you to activate the debug tool in an overlay window of the game.
+		<help>Debug tool:
+
+Activates the debug tool in an overlay window.
 
 This window can be displayed or hidden using the F12 key on the keyboard.
 
-Among other things, there is a teleportation tool, information on the screen and management of the shadows of 3D models.</help>
+Among other things, real-time information about the rendering process and performance is displayed, as well as other information, a teleportation tool and the management of the shadows of 3D models.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxLogs</name>
 		<text>Complete logs</text>
 		<author>FFNx team</author>
-		<help>To be used only in the event of a major bug and only if the author of the pack or of FFNx asks you to.
+		<help>Complete logs:
 
-This consumes a lot of resources but allows to log all the information of the game driver.</help>
+To be used only in the event of a major bug and only when requested to do so by the package author or someone from the FFNx team.
+
+This consumes a lot of resources but allows to log all the information of the game driver.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxFootSteps</name>
-		<text>Enable Footsteps</text>
+		<text>Enable footsteps</text>
 		<author>FFNx team</author>
-		<help>This option activates footsteps on the various screens of the game.
+		<help>Enable footsteps:
 
-These noises can be adapted to the type of ground if you use an audio mod that allows it.</help>
+This option activates footsteps on the various screens of the game.
+
+These noises can be adapted to the type of ground if you use an audio mod that allows it.
+		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxNoCd</name>
 		<text>No-CD</text>
 		<author>Satsuki_Yatoshi</author>
-		<help>Applies a no-cd patch to the game executable before launching.
+		<help>No-CD:
 
-This eliminates the need to insert an FF7 CD to play.</help>
+Applies a no-cd patch to the game executable before launching.
+
+This eliminates the need to insert FF7 game discs to play.
+		</help>
 		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupAlphaDiag</name>
-		<text>Windows's transparency (dialogs / battle)</text>
+		<text>Transparency of all windows (dialogs / battles)</text>
 		<author>FFNx's Team</author>
-		<help>Allows you to choose a level of transparency for the background of the dialogue and combat windows.</help>
+		<help>Choose the transparency of all windows (dialogs / battles):
+
+Allows you to choose a level of transparency for the background of the dialogue and combat windows.
+		</help>
 		<url></url>
 	</control>
 	<control>
 		<name>FFNxAlphaDiag</name>
 		<text>Enable for dialogs</text>
 		<author>FFNx's Team</author>
-		<help>Enable transparency on dialogs's windows.</help>
+		<help>Enable transparency on dialogs's windows.
+		</help>
 		<url></url>
 	</control>
 	<control>
 		<name>FFNxAlphaBattle</name>
 		<text>Enable for battles</text>
 		<author>FFNx's Team</author>
-		<help>Enable transparency on battles's windows.</help>
+		<help>Enable transparency on battles's windows.
+		</help>
 		<url></url>
 	</control>
 	<control>
 		<name>FFNxalphaValue</name>
 		<text>Transparency's level</text>
 		<author>FFNx's Team</author>
-		<help>Choose windows's transparency level.</help>
+		<help>Choose windows's transparency level.
+		</help>
 		<url></url>
 	</control>
 		
@@ -920,7 +1040,8 @@ This eliminates the need to insert an FF7 CD to play.</help>
     </control>
     <control>
         <name>analogPadUse</name>
-        <text>To use the analog stick (L3) for movement, it is mandatory to activate the analog controller in the driver configuration.</text>
+        <text>In order to be able to use the analog stick (L3) for movement, it is mandatory to activate “Analog controller” in the driver configuration.
+	</text>
     </control>
 
 	
@@ -935,11 +1056,11 @@ This eliminates the need to insert an FF7 CD to play.</help>
 	</control>
 	<control>
 		<name>chooseHelp</name>
-		<text>Choose a help file from the drop-down list</text>
+		<text>Choose a help file from the drop-down list.</text>
 	</control>
 		<control>
 		<name>errorFile</name>
-		<text>An error occurred while loading the following file</text>
+		<text>An error occurred while loading the following file:</text>
 	</control>
 	
 	
@@ -965,7 +1086,8 @@ This eliminates the need to insert an FF7 CD to play.</help>
 	</control>
 	<control>
 		<name>unknownExe</name>
-		<text>this executable of FF7 is not recognized, impossible to use a noCd patch</text>
+		<text>This executable of FF7 is not recognized. Impossible to use a No-CD patch.
+		</text>
 	</control>
 	<control>
 		<name>ffnxConfigFile</name>
@@ -973,9 +1095,9 @@ This eliminates the need to insert an FF7 CD to play.</help>
 	</control>
 		<control>
 		<name>quit</name>
-		<text>Loading may take time depending on the options chosen and the power of the computer
-Are you sure you want to quit?</text>
+		<text>Loading may take time depending on the options chosen and the power of the computer.
+
+Are you sure you want to quit?
+		</text>
 	</control>
 </translation>
-
-

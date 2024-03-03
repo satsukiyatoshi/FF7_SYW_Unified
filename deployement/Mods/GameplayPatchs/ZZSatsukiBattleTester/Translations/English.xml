@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-<control>
-		<text>Battle Test</text>
-		<help>Battle Test : 
+	<control>
+		<text>Battle test</text>
+		<help>Battle test: 
 		
-This patch add a character on las02 field.
+Add a new NPC to the "las02" field.
 
-Speaking to him you can choose and launch a specific battle.
+Talking to the NPC will allow you to select and start a specific battle.
 
-Usefull if you're a modder and when to test a specific battle without doing the full game.</help>
+Useful if you are a modder and want to test a specific battle without playing the full game.
+		</help>
 		<author>Satsuki_Yatoshi</author>
 		<url></url>
 		<compatibily>FEGS</compatibily>
-</control>
+	</control>
 </translation>

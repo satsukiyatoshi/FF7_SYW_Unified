@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>ChaOs</text>
+		<help>ChaOs: 
+		
+Modernisierung der 3D-Modelle der Schlacht.
+
+Sie sind detaillierter als die Originalmodelle. 
+
+Es wird empfohlen, sie zu aktivieren, wenn Sie auch die ChaOs-Modelle für die Spielszenen aktivieren.
+		</help>
+		<author>Kaldarasha</author>
+		<url>https://forums.qhimm.com/index.php?topic=13960.0</url>
+		<compatibily></compatibily>
+	</control>
+</translation>

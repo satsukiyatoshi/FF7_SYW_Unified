@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-<control>
-		<text>No regen mod</text>
-		<help>No regen mod : 
+	<control>
+		<text>No Regen mod</text>
+		<help>No Regen mod: 
 		
 This mod aims to make the game more difficult without changing the enemies.
 
-The principle is simple, the objects and equipment that allow you to regain Hp or Mp have been modified apart from the following exceptions : 
--The "super tentes".
--Inns and other places of the same kind.
+The principle is simple, the objects and equipment that allow you to regain HP or MP have been modified apart from the following exceptions: 
+• super tents
+• Inns and other places of the same kind
 
-Note that it is not possible to buy the super tents, you will find them instead of the megalixirs.
-"Super tentes" can be used outside save points but not in combat.
+Note that it is not possible to buy the super tents, you will find them instead of the megalixirs. Super tents can be used outside save points but not in battles.
 
-It is therefore generally difficult to heal yourself in combat and out of combat.
+Thus it is generally difficult to heal yourself in battles and out of battles.
 
-It is also impossible to run away from fights (except against magic pots to avoid blocking), otherwise it's too simple ^^.
-we recommend not to deactivate random fights otherwise the mod is no longer of interest.
+It is also impossible to run away from battles (except against magic pots to avoid blocking), otherwise it's too simple.
 
-It is compatible with all versions of FF7 but some combat elements and menus will be in French only.</help>
-		<author>Mexico and Satsuki_yatoshi</author>
+It is recommended not to deactivate random battles, otherwise the mod is no longer of interest.
+
+It is compatible with all versions of FF7 but some combat elements and menus will be in French only.
+		</help>
+		<author>Mexico and Satsuki_Yatoshi</author>
 		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=440337</url>
 		<compatibily>F</compatibily>
-</control>
+	</control>
 </translation>
-

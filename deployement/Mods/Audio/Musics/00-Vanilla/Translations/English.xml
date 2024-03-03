@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>original midi music</text>
-		<help>original midi music : 
+		<text>Original</text>
+		<help>Original: 
 		
-The quality is very limited (much more than on the psx version).
+In the original, the PC version uses MIDI data, which greatly limits the overall quality (much more than on the original PSX version).
 
-It's better to use a music pack instead.</help>
+It is recommended to use a music pack.
+		</help>
 		<author>Squaresoft</author>
 		<url>https://finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
 	</control>
 </translation>
-

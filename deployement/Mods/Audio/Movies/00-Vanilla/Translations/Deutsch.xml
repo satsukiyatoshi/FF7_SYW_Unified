@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Original</text>
+		<help>Original: 
+		
+Zwischensequenzen haben ihre Originaltonspuren.
+
+Es wird empfohlen, diese Option zu verwenden, um die Originalatmosphäre des Spiels in den Zwischensequenzen zu erhalten.
+		</help>
+		<author>Squaresoft</author>
+		<url>https://finalfantasyviipc.square-enix-games.com/</url>
+		<compatibily></compatibily>
+	</control>
+</translation>

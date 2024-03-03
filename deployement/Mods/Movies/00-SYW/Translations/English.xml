@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-<control>
+	<control>
 		<text>HD videos 30 fps</text>
-		<help>HD videos 30 fps : 
+		<help>HD videos 30 fps: 
 		
-Considering their poor quality, the original videos of the game are not in this pack.
+Due to their poor quality, the game's original videos are not included in this package.
 
-The videos have been increased to 30fps instead of 15fps and upscaled directly from the psx version.
+The base material comes directly from the PSX version and has been increased from 15 fps to 30 fps and upscaled.
 
-It's not 100% perfect but it's the best compromise to have fluid videos of sufficient quality not to break the immersion in the game.</help>
+The result is not 100% perfect, but it is the best compromise to have smooth videos of sufficient quality that do not affect the immersion in the game.
+		</help>
 		<author>Satsuki_Yatoshi</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 		<compatibily></compatibily>
-</control>
+	</control>
 </translation>
-

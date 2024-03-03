@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>30.000 HP/MP max</text>
+		<help>30.000 HP/MP max : 
+		
+Permet de supprimer les limites de 9.999 points de dégâts, de vie, et de magie.
+
+La nouvelle limite est de 30.000 points</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+			</control>
+</translation>
+

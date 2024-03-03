@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>1.5 Mod</text>
+		<help>1.5 Mod: 
+		
+Ziel dieses Mods ist es, das Spiel etwas schwieriger zu machen, ohne das Originalspiel zu verändern.
+
+Die Stärke und Magie aller Feinde wird mit dem Faktor 1,5 multipliziert.
+
+Es ist mit allen Versionen von FF7 kompatibel, einige Kampfelemente werden jedoch nur auf Französisch verfügbar sein.
+		</help>
+		<author>Aavock</author>
+		<url>https://ff7.fr/forum/index.php</url>
+		<compatibily>F</compatibily>
+	</control>
+</translation>

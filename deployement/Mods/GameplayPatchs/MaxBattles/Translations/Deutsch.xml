@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Maximale Schlachten</text>
+		<help>Maximale Schlachten:
+
+Maximieren Sie die Anzahl der Zufallsschlachten.
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

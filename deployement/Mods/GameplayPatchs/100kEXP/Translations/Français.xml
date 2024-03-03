@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>100.000 Xp</text>
+		<help>100.000 Xp :
+
+Permet de recevoir 100.000 points d'xp en plus après chaque combat (en plus de ceux rapportés par le combat).</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+			</control>
+</translation>
+

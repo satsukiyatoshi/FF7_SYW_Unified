@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Immer Limit</text>
+		<help>Immer Limit:
+
+Aktivieren Sie, dass das Limit immer aktiv ist.
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

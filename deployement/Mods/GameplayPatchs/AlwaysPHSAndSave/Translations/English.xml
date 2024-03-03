@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Always PHS and save</text>
+		<help>Always PHS and save: 
+		
+Enable the use of PHS and save anywhere, even where the game doesn't normally allow it.
+
+/!\ Warning /!\ Saving to arbitrary locations may cause saved data to become corrupted. It can sometimes take several hours for these errors to become noticeable.
+
+Therefore, use this mod at your own risk.
+		</help>
+		<author>Kranmer</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

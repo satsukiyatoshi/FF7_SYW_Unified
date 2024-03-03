@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Unbegrenzte Objekte</text>
+		<help>Unbegrenzte Objekte:
+
+Lagern Sie eine unbegrenzten Anzahl an Objekten.
+
+Diese werden sowohl in den Schlachten als auch in den Menüs angezeigt.
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Instant kill</text>
+		<help>Instant kill:
+
+Eliminate any enemy with just a single hit.
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

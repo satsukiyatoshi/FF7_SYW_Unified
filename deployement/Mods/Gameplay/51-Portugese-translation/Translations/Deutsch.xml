@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Portugiesische Übersetzung</text>
+		<help>Portugiesische Übersetzung (v1.2):
+
+Übersetzung des Spiels aus der janapesischen Version ins Portugiesische.
+
+Da diese Übersetzung auf der englischen Spielversion basiert, MÜSSEN Sie im linken Menü Englisch als Spielsprache auswählen, sonst funktioniert es nicht wie vorgesehen.
+		</help>
+		<author>Xulikotony und UTK</author>
+		<url></url>
+		<compatibily>E</compatibily>
+	</control>
+</translation>

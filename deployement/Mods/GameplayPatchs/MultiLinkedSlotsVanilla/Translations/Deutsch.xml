@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+    <control>
+        <text>Mehrfach verknüpfte Schächte (Vanilla)</text>
+        <help>Mehrfach verknüpfte Schächte (Vanilla):
+
+Manipulieren Sie die Schachtverbindungen aller Waffen und Rüstungen für neue Substanzkombinationen.
+
+Normalerweise sind Sie auf die verknüpften Schächte A+B, C+D, E+F und G+H beschränkt. Mit diesem Mod können Sie Verknüpfungskombinationen wie A+B+C, D+E+F und G+H erstellen. Dies bedeutet, dass B mit zwei separaten Substanzen verknüpft sein kann, ohne dass eine zusätzliche Kopie von B genutzt werden muss.
+
+Beachten Sie, dass allein durch die Aktivierung zusätzlicher Verknüpfungen keine Änderungen an der Ausrüstung vorgenommen werden. Aus diesem Grund gehört zu diesem Mod eine modifizierte Kernel, wodurch dieser Mod auf die Vanilla-Spielmechnik beschränkt wird.
+        </help>
+        <author>Postscriptthree</author>
+		<url>https://forums.qhimm.com/index.php&#38;topic=21592.0</url>
+		<compatibily>FEG</compatibily>
+    </control>
+</translation>

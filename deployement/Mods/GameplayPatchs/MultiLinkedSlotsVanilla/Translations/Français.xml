@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Multi-liens des matériea</text>
+		<help>Multi-liens des matériea :
+
+Ce mod permet aux armes et aux armures d'avoir des liens entre n'importe quel emplacement de matéria.
+
+Normalement, vous êtes limité aux combinaisons A+B, C+D, E+F, et G+H pour les emplacements liés.
+
+Avec ce mod, vous pouvez avoir des combinaisons de liens comme A+B+C, D+E+F, G+H.
+Ce qui permet que B soit lié à deux matérias distinctes, sans nécessiter l'insertion d'une copie supplémentaire de la météria B.
+
+Ce mod n'est plainement compatible qu'avec le gameplay original car il utilise un kernel modifié.</help>
+		<author>Postscriptthree</author>
+		<url>https://forums.qhimm.com/index.php&#38;topic=21592.0</url>
+		<compatibily>FEG</compatibily>
+			</control>
+</translation>
+

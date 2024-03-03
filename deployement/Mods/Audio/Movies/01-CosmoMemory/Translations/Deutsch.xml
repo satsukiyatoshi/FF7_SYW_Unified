@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Cosmo Memory</text>
+		<help>Cosmo Memory (v1.1): 
+		
+Ersetzt die originalen Audiospuren der Zwischensequenzen.
+
+Dies modernisiert die Zwischensequenzen, kann aber die Atmosphäre verändern.
+		</help>
+		<author>Bonez</author>
+		<url>https://forums.qhimm.com/index.php?topic=20475.0</url>
+		<compatibily></compatibily>
+	</control>
+</translation>

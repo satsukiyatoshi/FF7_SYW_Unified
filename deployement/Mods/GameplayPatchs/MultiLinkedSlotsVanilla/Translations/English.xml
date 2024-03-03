@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+    <control>
+        <text>Multi-linked slots (Vanilla)</text>
+        <help>Multi-linked slots (Vanilla):
+
+Manipulate the slot connections of all weapons and armor for new materia combinations.
+
+Typically you are limited to the linked slots A+B, C+D, E+F, and G+H. With this mod you can create link combinations like A+B+C, D+E+F, and G+H. This means that B can be linked to two separate materias without the need to use an additional copy of B.
+
+Note that simply activating additional linkings does not make any changes to the equipment. For this reason, this mod includes a modified kernel, which limits this mod to vanilla gameplay.
+        </help>
+        <author>Postscriptthree</author>
+		<url>https://forums.qhimm.com/index.php&#38;topic=21592.0</url>
+		<compatibily>FEG</compatibily>
+    </control>
+</translation>

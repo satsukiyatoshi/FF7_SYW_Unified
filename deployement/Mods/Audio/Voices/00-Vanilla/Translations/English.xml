@@ -2,10 +2,10 @@
 <translation>
 	<control>
 		<text>None</text>
-		<help>The original game has no voice.</help>
+		<help>The original game has no voice.
+		</help>
 		<author>Squaresoft</author>
 		<url>https://finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
-			</control>
+	</control>
 </translation>
-

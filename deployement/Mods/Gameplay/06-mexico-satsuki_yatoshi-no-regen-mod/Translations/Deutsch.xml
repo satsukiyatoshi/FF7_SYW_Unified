@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>No Regen Mod</text>
+		<help>No Regen Mod: 
+		
+Ziel dieses Mods ist es, das Spiel schwieriger zu machen, ohne die Gegner zu verändern.
+
+Das Prinzip ist einfach: Die Objekte und Ausrüstung, mit denen Sie HP oder MP wiedererlangen können, wurden bis auf die folgenden Ausnahmen geändert:
+• Superzelte
+• Gasthäuser und andere Lokale der gleichen Art
+
+Beachten Sie, dass es nicht möglich ist, die Superzelte zu kaufen. Sie finden sie anstelle der Megalixiere. Superzelte können außerhalb von Speicherpunkten verwendet werden, jedoch nicht in Schlachten.
+
+Daher ist es generell schwierig, sich in Schlachten und außerhalb der Schlachten zu heilen.
+
+Es ist auch unmöglich, vor Schlachten davonzulaufen (außer vor Zaubertöpfen, um Blockierungen zu vermeiden), sonst ist es zu einfach.
+
+Es wird empfohlen, Zufallsschlachten nicht zu deaktivieren, da dieser Mod sonst nicht mehr interessant ist.
+
+Es ist mit allen Versionen von FF7 kompatibel, einige Schlachtelemente und Menüs werden jedoch nur auf Französisch verfügbar sein.
+		</help>
+		<author>Mexico und Satsuki_Yatoshi</author>
+		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=440337</url>
+		<compatibily>F</compatibily>
+	</control>
+</translation>

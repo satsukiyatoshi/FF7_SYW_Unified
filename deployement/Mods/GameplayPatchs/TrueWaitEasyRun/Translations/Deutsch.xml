@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+    <control>
+        <text>Echtes Warten mit einfachem Laufen</text>
+        <help>Echtes Warten mit einfachem Laufen:
+
+Passen Sie das ATB-System so an, dass es auf Befehle und Animationen wartet, sodass die dringende Eingabe von Befehlen nicht mehr erforderlich ist (entspanntere Schlachten).
+
+Beachten Sie, dass ein Charakter mit doppelt so hoher Geschwindigkeit wie ein anderer Charakter doppelt so viele Aktionen ausführen kann, anstatt dass der Geschwindigkeitsunterschied bei Animationen verloren geht, wie es bei Vanilla der Fall ist.
+
+Beachten Sie, dass es mit diesem Mod genauso einfach ist, vor Feinden davonzulaufen wie in Vanilla.
+        </help>
+        <author>Postscriptthree</author>
+        <url>https://forums.qhimm.com/index.php&#38;topic=21592.0</url>
+        <compatibily>FEG</compatibily>
+    </control>
+</translation>

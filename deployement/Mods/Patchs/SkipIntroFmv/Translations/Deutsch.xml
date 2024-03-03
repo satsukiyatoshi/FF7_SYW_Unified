@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Einführungs-FMV überspringen</text>
+		<help>Einführungs-FMV überspringen:
+
+Deaktivieren Sie Einführungs-FMV, um schneller auf das Startmenü zuzugreifen zu können.
+
+Das Logo und die Spiel-Credits von FFNx werden jedoch nicht deaktiviert.
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEGS</compatibily>
+	</control>
+</translation>

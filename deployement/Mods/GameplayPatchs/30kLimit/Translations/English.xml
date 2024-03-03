@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>30,000 limit</text>
+		<help>30,000 limit: 
+		
+Remove the damage limit as well as the HP limit of 9,999.
+
+The new limit is 30,000 points.
+
+In addition, the texts are aligned so that no graphical problems occur.
+		</help>
+		<author>dziugo</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Italienische Übersetzung</text>
+		<help>Italienische Übersetzung (v1.63):
+
+Das Ziel dieses Projekts besteht darin, FF7 in die italienische Sprache neu zu übersetzen, wobei Daniel Burkes „Reunion“ als englische Quelle für die Dialoge dient und gleichzeitig ein ständiger Abgleich mit dem japanischen Originalskript erfolgt.
+
+Für nicht-dialogbezogene Begriffe hat Caledor soweit wie möglich offizielle Übersetzungen wiederverwendet.
+
+Das Ziel besteht nicht darin, eine Lokalisierung zu haben, die nur auf FF7 als eigenständiges Spiel abzielt, sondern Caledor möchte, dass es gut mit den anderen Final Fantasy Spielen harmoniert, die es bereits in italienischer Sprache gibt.
+
+Es wird dringend empfohlen, mit diesem Mod HD-Texturen zu verwenden.
+
+Da diese Übersetzung auf der englischen Spielversion basiert, MÜSSEN Sie im linken Menü Englisch als Spielsprache auswählen, sonst funktioniert es nicht wie vorgesehen.
+		</help>
+		<author>Caledor</author>
+		<url>https://forums.qhimm.com/index.php?topic=18903.0</url>
+		<compatibily>E</compatibily>
+	</control>
+</translation>

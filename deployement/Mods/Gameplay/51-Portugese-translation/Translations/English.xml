@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-<control>
-		<text>Portugese translation (v1.2)</text>
-		<help>Portugese translation :
+	<control>
+		<text>Portugese translation</text>
+		<help>Portugese translation (v1.2):
 
-Translation of the game to portugese from the Janapese version
-</help>
+Translation of the game to portugese from the Janapese version.
+
+As this translation is based on English's game version, you MUST choose english as game language in the left menu or it'll wont work as intended.
+		</help>
 		<author>Xulikotony and UTK</author>
 		<url></url>
 		<compatibily>E</compatibily>
-</control>
+	</control>
 </translation>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>No XP Ebene 1</text>
+		<help>No XP Ebene 1: 
+		
+Dies ist ein sehr schwieriger Spielmodus.
+
+Feinde gewähren keine Erfahrungspunkte, was bedeutet, dass die Ebene Ihrer Charaktere nie steigt, aber zusätzlich sind die Charaktere auf Ebene 1.
+
+Das Spiel wird von Anfang an schwieriger sein, aber je weiter Sie kommen, desto schwieriger wird es, bis hin zum Unmöglichen.
+
+Dieser Mod wird empfohlen, wenn Sie das Spiel und die Feinde auswendig kennen, Fähigkeitstabellen und intensive Strategien mögen oder verrückt sind.
+
+Es ist mit allen Versionen von FF7 kompatibel, einige Kampfelemente werden jedoch nur auf Französisch verfügbar sein.
+		</help>
+		<author>Acro und Blank</author>
+		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=357743</url>
+		<compatibily>F</compatibily>
+	</control>
+</translation>

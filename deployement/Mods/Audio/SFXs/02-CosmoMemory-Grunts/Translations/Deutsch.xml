@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Cosmo Memory mit Schlachtstimmen</text>
+		<help>Cosmo Memory mit Schlachtstimmen (v1.1): 
+		
+Ersetzt die Soundeffekte im Spiel durch eine modernisierte Version, einschließlich derjenigen in den Menüs.
+
+In Schlachten sind bei Angriffen von Teamcharakteren auch angestrengte Stimmgeräusche zu hören.
+
+Kann die Stimmung in bestimmten Sequenzen verändern.
+
+Wenn Sie im Treiber Schrittgeräusche aktivieren, werden diese Geräusche auch an die Art des Bodens angepasst.
+		</help>
+		<author>Bonez</author>
+		<url>https://forums.qhimm.com/index.php?topic=20475.0</url>
+		<compatibily></compatibily>
+	</control>
+</translation>

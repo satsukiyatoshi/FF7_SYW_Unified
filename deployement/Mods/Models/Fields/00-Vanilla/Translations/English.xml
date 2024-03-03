@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Original models</text>
-		<help>Original models : 
+		<text>Original</text>
+		<help>Original: 
 		
-Models of chibi style game scenes in low quality.</help>
+Models of chibi style game scenes in low quality.
+		</help>
 		<author>Squaresoft</author>
 		<url>https://finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily></compatibily>
-			</control>
+	</control>
 </translation>
-

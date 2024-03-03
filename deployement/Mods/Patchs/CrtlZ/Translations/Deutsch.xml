@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Strg+Z zum Verlassen</text>
+		<help>Strg+Z zum Verlassen:
+
+Verwenden Sie Strg+Z, um das Spiel zu verlassen (Standard ist Strg+Q).
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

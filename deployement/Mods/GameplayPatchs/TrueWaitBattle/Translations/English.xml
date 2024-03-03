@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>True wait</text>
+		<help>True wait:
+
+Adjust the ATB system to wait for commands and animations so the urgent imput of commands is not necessary anymore (more relaxing battles).
+
+Note that a character with twice as much speed as another character can take twice as many actions, rather than the speed difference being lost during animations like it is in vanilla.
+
+Note that this mod is making it way harder to run away from enemies compared to vanilla.
+		</help>
+		<author>Postscriptthree</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

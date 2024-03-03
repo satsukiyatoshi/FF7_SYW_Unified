@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>No XP Mod</text>
+		<help>No XP Mod: 
+		
+Dies ist ein schwieriger Spielmodus.
+
+Feinde gewähren keine Erfahrungspunkte, was bedeutet, dass Ihre Charaktere nie eine höhere Stufe erreichen. 
+
+Das Spiel wird am Anfang nicht viel schwieriger sein, aber je weiter Sie kommen, desto schwieriger wird es. Am Ende wird es ohne eine gute Strategie sogar sehr schwierig.
+
+Dieser Mod wird empfohlen, wenn Sie das Spiel und die Feinde fast auswendig kennen.
+
+Es ist mit allen Versionen von FF7 kompatibel, einige Kampfelemente werden jedoch nur auf Französisch verfügbar sein.
+		</help>
+		<author>Acro</author>
+		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=181430</url>
+		<compatibily>F</compatibily>
+	</control>
+</translation>

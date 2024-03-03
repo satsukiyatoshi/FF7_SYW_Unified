@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Original</text>
+		<help>Original: 
+		
+Für ein Spielerlebnis, das mit der Version von 1998 identisch ist.
+
+Bestimmte Fehler, die der PC-Version innewohnen, wurden dennoch behoben.
+		</help>
+		<author>Squaresoft</author>
+		<url>https://finalfantasyviipc.square-enix-games.com/</url>
+		<compatibily>FESG</compatibily>
+	</control>
+</translation>

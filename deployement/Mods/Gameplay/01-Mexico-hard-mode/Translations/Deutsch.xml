@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Hard Mod</text>
+		<help>Hard Mod: 
+		
+Dies ist ein schwieriger Spielmodus.
+
+Die Feinde sind viel mächtiger als die des Originalspiels. Die Angriffe und Fähigkeiten der Feinde wurden geändert und haben nicht die gleichen Auswirkungen.
+
+Dieser Mod wird empfohlen, wenn Sie eine echte Herausforderung wollen. Da die Kämpfe nicht mehr die gleiche Logik haben, es ist fast ein anderes Spiel.
+
+Sie können diesen Mod mit allen FF7-Sprachen verwenden, es sind bislang jedoch nur französische und englische Übersetzungen verfügbar. Bei nicht unterstützten Sprachen sind einige Texte auf Englisch.
+		</help>
+		<author>Mexico</author>
+		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=319186</url>
+		<compatibily>FE</compatibily>
+	</control>
+</translation>

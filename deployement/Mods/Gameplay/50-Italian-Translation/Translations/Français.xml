@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 <control>
-		<text>Traduction italienne (v1.63)</text>
-		<help>L'objectif de ce projet est de traduire FF7 en italien en utilisant le mod Reunion comme source anglaise pour les dialogues, tout en recoupant constamment avec le script japonais original.
+		<text>Traduction italienne</text>
+		<help>Traduction italienne (v1.63) :
+L'objectif de ce projet est de traduire FF7 en italien en utilisant le mod Reunion comme source anglaise pour les dialogues, tout en recoupant constamment avec le script japonais original.
 
 Pour les termes sans dialogue, Caledor a réutilisé autant que possible les traductions officielles.
 

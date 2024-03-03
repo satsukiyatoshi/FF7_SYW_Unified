@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-<control>
-		<text>Italian ReTranslation (v1.63)</text>
-		<help>This project's goal is to retranslate FF7 into Italian using Daniel Burke's Reunion as the English source for the dialogues, while constantly cross-checking with the original Japanese script.
+	<control>
+		<text>Italian translation</text>
+		<help>Italian translation (v1.63):
+
+This project's goal is to retranslate FF7 into Italian using Daniel Burke's "Reunion" as the English source for the dialogues, while constantly cross-checking with the original Japanese script.
 
 For non-dialogue terms Caledor have been reusing official translations as much as possible.
 
@@ -10,10 +12,10 @@ The goal is not to have a localization that looks only to FF7 as a stand-alone g
 
 It's hightly recommended to use HD textures with this mod.
 
-As this translation is based on english's game version, you MUST choose english as game language in the left menu or it'll wont work as intended
-</help>
+As this translation is based on English's game version, you MUST choose english as game language in the left menu or it'll wont work as intended.
+		</help>
 		<author>Caledor</author>
 		<url>https://forums.qhimm.com/index.php?topic=18903.0</url>
 		<compatibily>E</compatibily>
-</control>
+	</control>
 </translation>

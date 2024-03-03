@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>100.000 Gil</text>
+		<help>100.000 Gil:
+
+Erhalten Sie 100.000 zusätzliche Gil (zusätzlich zu denen, die Sie von Feinden erhalten).
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

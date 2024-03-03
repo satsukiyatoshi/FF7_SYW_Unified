@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Aavock UI 1:1 Remastered</text>
-		<help>Aavock UI 1:1 Remastered : 
+		<text>Aavock UI 1:1 remastered</text>
+		<help>Aavock UI 1:1 remastered: 
 		
-Menu textures, fonts, and icons in HD.
+Menu textures, font, and icons done from scratch in HD.
 
 These textures respect the original game while correcting the alignments of certain letters.
 
-Also enable HD opening and ending credits.
+This mod also includes the opening and ending credits in HD.
 
-The combat menu is also re-aligned.</help>
+The combat menu is also re-aligned.
+		</help>
 		<author>Aavock and Satsuki_Yatoshi</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=445353</url>
 		<compatibily>FEGS</compatibily>
 	</control>
 </translation>
-

@@ -2,16 +2,15 @@
 <translation>
 	<control>
 		<text>ChaOs</text>
-		<help>ChaOs : 
+		<help>ChaOs: 
 
 Modern looking models.
 
 The morphology is not the same as that of the original models.
 
-The size of some elements doesn't seem to be exact, but it is a good modernization of the 3D models. 		
-</help>
+The size on some screens could seem not accurate, but it's a good modernization of 3D models. 		
+		</help>
 		<author>Kaldarasha</author>
 		<url>https://forums.qhimm.com/index.php?topic=13960.0</url>
-			</control>
+	</control>
 </translation>
-

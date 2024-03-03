@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>999 Stunden</text>
+		<help>999 Stunden:
+
+Maximieren Sie die angezeigte Zeit in allen Menüs auf 999 Stunden.
+
+Zudem werden die Texte so ausgerichtet, dass keine grafischen Probleme auftreten.
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>NinoStyle Realist</text>
-		<help>NinoStyle Realist : 
+		<text>NinoStyle modern</text>
+		<help>NinoStyle modern: 
 
-Modernization of combat 3D models.
+Modernization of the 3D models of the battle.
 
-It is recommended to activate them if you also use the NinoStyle models for the game scenes.</help>
+It is recommended to activate them if you also use the NinoStyle models for the game scenes.
+		</help>
 		<author>NinoStyle</author>
 		<url>https://www.nexusmods.com/finalfantasy7/mods/4</url>
 		<compatibily></compatibily>
-			</control>
+	</control>
 </translation>
-

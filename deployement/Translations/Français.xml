@@ -347,6 +347,10 @@ Cela peut prendre quelques instants pour ce lancer.</text>
 		<text>À propos du mod</text>
 	</control>
 	<control>
+		<name>soundFrame3</name>
+		<text>Mods audio</text>
+	</control>
+	<control>
 		<name>soundFrame4</name>
 		<text>Aperçu audio</text>
 	</control>
@@ -466,8 +470,12 @@ Surtout utile en jeu fenêtré.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
+		<name>ogscreen</name>
+		<text>4/3</text>
+	</control>
+	<control>
 		<name>strechedwidescreen</name>
-		<text>16/9 Étiré (déformé)</text>
+		<text>16/9 Étiré</text>
 	</control>
 	<control>
 		<name>realwidescreen</name>
@@ -475,7 +483,7 @@ Surtout utile en jeu fenêtré.</help>
 	</control>
 	<control>
 		<name>realwidescreendeck</name>
-		<text>16/10 réel (béta)</text>
+		<text>16/10 réel</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>
@@ -623,7 +631,7 @@ Les scènes du jeu en français et en anglais sont patchées également.</help>
 	</control>
 	<control>
 		<name>gamefull60fps</name>
-		<text>Jeu complet en 60 fps</text>
+		<text>Jeu en 60 fps</text>
 	</control>
 	<control>
 		<name>FFNxShowStats</name>

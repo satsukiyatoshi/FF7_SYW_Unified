@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>FFNx FF7Music</text>
+		<help>FFNx FF7Music: 
+		
+Diese Musik ist die des originalen PSX-Spiels (und damit viel besser als die originale PC-Version).
+
+Die Daten basieren auf den exakten Dateien, die von der PSX verwendet werden, womit die Darstellung identisch ist.
+
+Ideal für diejenigen, die ein gutes Rendering wie auf PSX wünschen. Dieser Mod stellt das bestmögliche Rendering für die Originalmusik dar.
+		</help>
+		<author>myst6re</author>
+		<url>http://forums.qhimm.com/index.php?topic=19967.0</url>
+		<compatibily></compatibily>
+	</control>
+</translation>

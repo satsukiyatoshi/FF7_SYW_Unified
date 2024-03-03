@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Lucky Cait Sith</text>
+		<help>Lucky Cait Sith: 
+
+Manipulieren Sie Cait Siths Limit Roulette.
+
+Durch Drücken von [MENU] können Sie das Roulette stoppen. 
+
+Wählen Sie danach mit [RUNTER], [LINKS] und [RECHTS] die gewünschten Symbole aus.
+		</help>
+		<author>dziugo</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

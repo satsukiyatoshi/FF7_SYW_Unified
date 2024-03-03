@@ -2,9 +2,9 @@
 <translation>
 	<control>
 		<text>Cosmo Memory</text>
-		<help>Cosmo Memory cinematic sounds (v1.1) : 
+		<help>Cosmo Memory (v1.1): 
 		
-Replaces cutscene audio tracks.
+Replaces the original cutscene audio tracks.
 
 This modernizes the cinematics but can change the atmosphere.
 		</help>
@@ -13,4 +13,3 @@ This modernizes the cinematics but can change the atmosphere.
 		<compatibily></compatibily>
 	</control>
 </translation>
-

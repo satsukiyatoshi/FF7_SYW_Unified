@@ -2,10 +2,12 @@
 <translation>
 	<control>
 		<text>Ctrl+z to exit</text>
-		<help>You can use the ctrl+z as an alternative to exit the game (default is ctrl+q).</help>
+		<help>Ctrl+z to exit:
+
+Use Ctrl+Z to exit the game (default is Ctrl+Q).
+		</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>
-			</control>
+	</control>
 </translation>
-

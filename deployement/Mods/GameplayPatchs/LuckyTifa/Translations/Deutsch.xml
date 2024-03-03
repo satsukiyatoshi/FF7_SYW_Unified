@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Lucky Tifa</text>
+		<help>Lucky Tifa: 
+
+Manipulieren Sie Tifas Limit Roulette.
+
+Tifas Limit hat immer die bestmöglichen Symbole.
+		</help>
+		<author>dziugo</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Unlimited Items</text>
-		<help>Unlimited Items : 
+		<text>Unlimited items</text>
+		<help>Unlimited items: 
 		
-You have unlimited items, in fights and in the menus.</help>
+Store an unlimited number of items.
+
+These are displayed both in battles and in the menus.
+		</help>
 		<author></author>
 		<url></url>
 		<compatibily>FEG</compatibily>
-			</control>
+	</control>
 </translation>
-

@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-<control>
+	<control>
 		<text>Final Parody VII Mexican</text>
-		<help>Final Parody VII Mexican : 
+		<help>Final Parody VII Mexican: 
 		
-this project is the parodic mode of azertyuiop2 to which we add the difficulty of the hard mode of mexico.
+This project is the parodic mode of azertyuiop2 to which we added the difficulty of the hard mode of mexico.
 
-So it offers a unique humorous experience based on the official game and the Neo-Midgar translation (in French only) while being very difficult.
-The patch parodies most of the game's text :  dialogues, menus, text in combat and on the world map, default character and location names, materia names, etc.
+So it offers a unique humorous experience based on the official game and the retranslation of Neo-Midgar (in French only) while being very difficult.
 
-The enemies are much more powerful than those of the original game.
-The attacks and abilities of the enemies have been changed and do not have the same effects.
+The patch parodies most of the game's text:  
+Dialogues, menus, texts in battles and on the world map, default names of characters and places, materia names, etc.
 
-we recommend using the soundtrack remixed by its author (in audio mods).
+The enemies are much more powerful than those of the original game. The attacks and abilities of the enemies have been changed and do not have the same effects.
+
+It is recommended to use the soundtrack remixed by its author for this mod (in audio mods).
 
 It is compatible with all versions of FF7 but the game will be 100% in French.</help>
-		<author>azertyuiop2</author>
+		<author>azertyuiop2 and Mexico</author>
 		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=378595</url>
 		<compatibily>F</compatibily>
-</control>
+	</control>
 </translation>
-

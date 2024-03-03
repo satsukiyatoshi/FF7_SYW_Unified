@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>100,000 EXP</text>
+		<help>100,000 EXP:
+
+Get 100,000 additional EXP (in addition to those obtained from enemies).
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

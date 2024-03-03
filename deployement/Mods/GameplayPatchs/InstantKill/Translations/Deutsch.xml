@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Sofortige Tötung</text>
+		<help>Sofortige Tötung:
+
+Eliminieren Sie jeden Feind mit nur einem einzigen Treffer.
+		</help>
+		<author></author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

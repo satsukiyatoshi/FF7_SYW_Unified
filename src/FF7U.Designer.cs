@@ -1699,9 +1699,9 @@
             FFNxFrame2.Controls.Add(FFNxHelpAuthor);
             FFNxFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
             FFNxFrame2.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxFrame2.Location = new Point(355, 4);
+            FFNxFrame2.Location = new Point(473, 4);
             FFNxFrame2.Name = "FFNxFrame2";
-            FFNxFrame2.Size = new Size(436, 330);
+            FFNxFrame2.Size = new Size(318, 330);
             FFNxFrame2.TabIndex = 10;
             FFNxFrame2.TabStop = false;
             FFNxFrame2.Text = "Aide";
@@ -1717,7 +1717,7 @@
             FFNxHelp.Name = "FFNxHelp";
             FFNxHelp.ReadOnly = true;
             FFNxHelp.ScrollBars = ScrollBars.Vertical;
-            FFNxHelp.Size = new Size(414, 274);
+            FFNxHelp.Size = new Size(296, 274);
             FFNxHelp.TabIndex = 22;
             // 
             // FFNxHelpAuthor
@@ -1728,7 +1728,7 @@
             FFNxHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             FFNxHelpAuthor.Location = new Point(12, 298);
             FFNxHelpAuthor.Name = "FFNxHelpAuthor";
-            FFNxHelpAuthor.Size = new Size(414, 22);
+            FFNxHelpAuthor.Size = new Size(296, 22);
             FFNxHelpAuthor.TabIndex = 3;
             FFNxHelpAuthor.TextAlign = ContentAlignment.MiddleCenter;
             FFNxHelpAuthor.Click += FFNxHelpAuthor_Click;
@@ -1743,9 +1743,9 @@
             FFNxFrame1.Controls.Add(flagEFFNxPatch);
             FFNxFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
             FFNxFrame1.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxFrame1.Location = new Point(355, 340);
+            FFNxFrame1.Location = new Point(473, 340);
             FFNxFrame1.Name = "FFNxFrame1";
-            FFNxFrame1.Size = new Size(436, 363);
+            FFNxFrame1.Size = new Size(318, 363);
             FFNxFrame1.TabIndex = 6;
             FFNxFrame1.TabStop = false;
             FFNxFrame1.Text = "Patchs mémoire";
@@ -1753,7 +1753,7 @@
             // flagGFFNxPatch
             // 
             flagGFFNxPatch.Image = (Image)resources.GetObject("flagGFFNxPatch.Image");
-            flagGFFNxPatch.Location = new Point(251, 323);
+            flagGFFNxPatch.Location = new Point(171, 323);
             flagGFFNxPatch.Name = "flagGFFNxPatch";
             flagGFFNxPatch.Size = new Size(56, 28);
             flagGFFNxPatch.SizeMode = PictureBoxSizeMode.Zoom;
@@ -1771,14 +1771,14 @@
             FFNxPatchsList.FormattingEnabled = true;
             FFNxPatchsList.Location = new Point(11, 22);
             FFNxPatchsList.Name = "FFNxPatchsList";
-            FFNxPatchsList.Size = new Size(415, 290);
+            FFNxPatchsList.Size = new Size(296, 290);
             FFNxPatchsList.TabIndex = 29;
             FFNxPatchsList.MouseMove += FFNxPatchsList_MouseMove;
             // 
             // flagSFFNxPatch
             // 
             flagSFFNxPatch.Image = (Image)resources.GetObject("flagSFFNxPatch.Image");
-            flagSFFNxPatch.Location = new Point(370, 323);
+            flagSFFNxPatch.Location = new Point(250, 323);
             flagSFFNxPatch.Name = "flagSFFNxPatch";
             flagSFFNxPatch.Size = new Size(56, 28);
             flagSFFNxPatch.SizeMode = PictureBoxSizeMode.Zoom;
@@ -1801,7 +1801,7 @@
             // flagFFFNxPatch
             // 
             flagFFFNxPatch.Image = (Image)resources.GetObject("flagFFFNxPatch.Image");
-            flagFFFNxPatch.Location = new Point(132, 323);
+            flagFFFNxPatch.Location = new Point(92, 323);
             flagFFFNxPatch.Name = "flagFFFNxPatch";
             flagFFFNxPatch.Size = new Size(56, 28);
             flagFFFNxPatch.SizeMode = PictureBoxSizeMode.Zoom;
@@ -1849,7 +1849,7 @@
             FFNxFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxFrame3.Location = new Point(3, 4);
             FFNxFrame3.Name = "FFNxFrame3";
-            FFNxFrame3.Size = new Size(346, 699);
+            FFNxFrame3.Size = new Size(464, 699);
             FFNxFrame3.TabIndex = 9;
             FFNxFrame3.TabStop = false;
             FFNxFrame3.Text = "Configuration du pilote FFNx";
@@ -1859,9 +1859,9 @@
             FFNxGamutNtsc.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGamutNtsc.Cursor = Cursors.Hand;
             FFNxGamutNtsc.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            FFNxGamutNtsc.Location = new Point(182, 259);
+            FFNxGamutNtsc.Location = new Point(234, 259);
             FFNxGamutNtsc.Name = "FFNxGamutNtsc";
-            FFNxGamutNtsc.Size = new Size(153, 19);
+            FFNxGamutNtsc.Size = new Size(221, 19);
             FFNxGamutNtsc.TabIndex = 42;
             FFNxGamutNtsc.Text = "Gamut NTSC-J";
             FFNxGamutNtsc.UseVisualStyleBackColor = false;
@@ -1877,7 +1877,7 @@
             FFNxGroupAlphaDiag.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAlphaDiag.Location = new Point(10, 557);
             FFNxGroupAlphaDiag.Name = "FFNxGroupAlphaDiag";
-            FFNxGroupAlphaDiag.Size = new Size(325, 57);
+            FFNxGroupAlphaDiag.Size = new Size(445, 57);
             FFNxGroupAlphaDiag.TabIndex = 34;
             FFNxGroupAlphaDiag.TabStop = false;
             FFNxGroupAlphaDiag.Text = "Transparence des fenêtres (dialogues / combat) ";
@@ -1891,7 +1891,7 @@
             FFNxAlphaBattle.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxAlphaBattle.Location = new Point(114, 33);
             FFNxAlphaBattle.Name = "FFNxAlphaBattle";
-            FFNxAlphaBattle.Size = new Size(205, 19);
+            FFNxAlphaBattle.Size = new Size(325, 19);
             FFNxAlphaBattle.TabIndex = 41;
             FFNxAlphaBattle.Text = "Activer pour les combats";
             FFNxAlphaBattle.UseVisualStyleBackColor = false;
@@ -1905,7 +1905,7 @@
             FFNxAlphaDiag.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxAlphaDiag.Location = new Point(114, 16);
             FFNxAlphaDiag.Name = "FFNxAlphaDiag";
-            FFNxAlphaDiag.Size = new Size(205, 19);
+            FFNxAlphaDiag.Size = new Size(325, 19);
             FFNxAlphaDiag.TabIndex = 40;
             FFNxAlphaDiag.Text = "Activer pour les dialogues";
             FFNxAlphaDiag.UseVisualStyleBackColor = false;
@@ -1931,9 +1931,9 @@
             FFNxAnalogControllerArun.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAnalogControllerArun.Cursor = Cursors.Hand;
             FFNxAnalogControllerArun.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            FFNxAnalogControllerArun.Location = new Point(182, 533);
+            FFNxAnalogControllerArun.Location = new Point(234, 533);
             FFNxAnalogControllerArun.Name = "FFNxAnalogControllerArun";
-            FFNxAnalogControllerArun.Size = new Size(153, 19);
+            FFNxAnalogControllerArun.Size = new Size(221, 19);
             FFNxAnalogControllerArun.TabIndex = 41;
             FFNxAnalogControllerArun.Text = "Course automatique";
             FFNxAnalogControllerArun.UseVisualStyleBackColor = false;
@@ -1945,9 +1945,9 @@
             FFNxNoCd.BackColor = Color.FromArgb(89, 98, 111);
             FFNxNoCd.Cursor = Cursors.Hand;
             FFNxNoCd.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            FFNxNoCd.Location = new Point(182, 628);
+            FFNxNoCd.Location = new Point(234, 628);
             FFNxNoCd.Name = "FFNxNoCd";
-            FFNxNoCd.Size = new Size(153, 19);
+            FFNxNoCd.Size = new Size(221, 19);
             FFNxNoCd.TabIndex = 39;
             FFNxNoCd.Text = "No-CD";
             FFNxNoCd.UseVisualStyleBackColor = false;
@@ -1959,9 +1959,9 @@
             FFNxGroupFps.Controls.Add(FFNxFps);
             FFNxGroupFps.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupFps.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxGroupFps.Location = new Point(175, 199);
+            FFNxGroupFps.Location = new Point(235, 199);
             FFNxGroupFps.Name = "FFNxGroupFps";
-            FFNxGroupFps.Size = new Size(160, 57);
+            FFNxGroupFps.Size = new Size(220, 57);
             FFNxGroupFps.TabIndex = 38;
             FFNxGroupFps.TabStop = false;
             FFNxGroupFps.Text = "Fluidité du jeu (fps)";
@@ -1977,9 +1977,9 @@
             FFNxFps.FormattingEnabled = true;
             FFNxFps.Location = new Point(7, 23);
             FFNxFps.Name = "FFNxFps";
-            FFNxFps.Size = new Size(146, 23);
+            FFNxFps.Size = new Size(204, 23);
             FFNxFps.TabIndex = 0;
-            FFNxFps.SelectedIndexChanged += setMousePos;
+            FFNxFps.SelectedIndexChanged += this.setMousePos;
             FFNxFps.Click += getMousePos;
             // 
             // FFNxShowStats
@@ -1989,7 +1989,7 @@
             FFNxShowStats.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxShowStats.Location = new Point(10, 650);
             FFNxShowStats.Name = "FFNxShowStats";
-            FFNxShowStats.Size = new Size(325, 19);
+            FFNxShowStats.Size = new Size(445, 19);
             FFNxShowStats.TabIndex = 37;
             FFNxShowStats.Text = "Afficher les informations de FFNx";
             FFNxShowStats.UseVisualStyleBackColor = false;
@@ -2002,7 +2002,7 @@
             FFNxDebugTool.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxDebugTool.Location = new Point(10, 672);
             FFNxDebugTool.Name = "FFNxDebugTool";
-            FFNxDebugTool.Size = new Size(128, 19);
+            FFNxDebugTool.Size = new Size(221, 19);
             FFNxDebugTool.TabIndex = 36;
             FFNxDebugTool.Text = "Outil de debug";
             FFNxDebugTool.UseVisualStyleBackColor = false;
@@ -2015,7 +2015,7 @@
             FFNxFootSteps.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxFootSteps.Location = new Point(10, 387);
             FFNxFootSteps.Name = "FFNxFootSteps";
-            FFNxFootSteps.Size = new Size(325, 19);
+            FFNxFootSteps.Size = new Size(445, 19);
             FFNxFootSteps.TabIndex = 35;
             FFNxFootSteps.Text = "Activer les bruits de pas";
             FFNxFootSteps.UseVisualStyleBackColor = false;
@@ -2026,9 +2026,9 @@
             FFNxLogs.BackColor = Color.FromArgb(89, 98, 111);
             FFNxLogs.Cursor = Cursors.Hand;
             FFNxLogs.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            FFNxLogs.Location = new Point(141, 672);
+            FFNxLogs.Location = new Point(234, 672);
             FFNxLogs.Name = "FFNxLogs";
-            FFNxLogs.Size = new Size(194, 19);
+            FFNxLogs.Size = new Size(221, 19);
             FFNxLogs.TabIndex = 34;
             FFNxLogs.Text = "Logs complets";
             FFNxLogs.UseVisualStyleBackColor = false;
@@ -2044,7 +2044,7 @@
             FFNxGroupSpeedhack.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupSpeedhack.Location = new Point(10, 411);
             FFNxGroupSpeedhack.Name = "FFNxGroupSpeedhack";
-            FFNxGroupSpeedhack.Size = new Size(325, 57);
+            FFNxGroupSpeedhack.Size = new Size(445, 57);
             FFNxGroupSpeedhack.TabIndex = 33;
             FFNxGroupSpeedhack.TabStop = false;
             FFNxGroupSpeedhack.Text = "Speedhack (step, minimum, maximum)";
@@ -2058,11 +2058,11 @@
             FFNxSpeedhackMax.DropDownStyle = ComboBoxStyle.DropDownList;
             FFNxSpeedhackMax.ForeColor = Color.White;
             FFNxSpeedhackMax.FormattingEnabled = true;
-            FFNxSpeedhackMax.Location = new Point(215, 22);
+            FFNxSpeedhackMax.Location = new Point(295, 22);
             FFNxSpeedhackMax.Name = "FFNxSpeedhackMax";
-            FFNxSpeedhackMax.Size = new Size(103, 23);
+            FFNxSpeedhackMax.Size = new Size(141, 23);
             FFNxSpeedhackMax.TabIndex = 2;
-            FFNxSpeedhackMax.SelectedIndexChanged += setMousePos;
+            FFNxSpeedhackMax.SelectedIndexChanged += this.setMousePos;
             FFNxSpeedhackMax.Click += getMousePos;
             // 
             // FFNxSpeedhackMin
@@ -2072,11 +2072,11 @@
             FFNxSpeedhackMin.DropDownStyle = ComboBoxStyle.DropDownList;
             FFNxSpeedhackMin.ForeColor = Color.White;
             FFNxSpeedhackMin.FormattingEnabled = true;
-            FFNxSpeedhackMin.Location = new Point(112, 22);
+            FFNxSpeedhackMin.Location = new Point(151, 22);
             FFNxSpeedhackMin.Name = "FFNxSpeedhackMin";
-            FFNxSpeedhackMin.Size = new Size(99, 23);
+            FFNxSpeedhackMin.Size = new Size(141, 23);
             FFNxSpeedhackMin.TabIndex = 1;
-            FFNxSpeedhackMin.SelectedIndexChanged += setMousePos;
+            FFNxSpeedhackMin.SelectedIndexChanged += this.setMousePos;
             FFNxSpeedhackMin.Click += getMousePos;
             // 
             // FFNxSpeedhackStep
@@ -2088,9 +2088,9 @@
             FFNxSpeedhackStep.FormattingEnabled = true;
             FFNxSpeedhackStep.Location = new Point(8, 22);
             FFNxSpeedhackStep.Name = "FFNxSpeedhackStep";
-            FFNxSpeedhackStep.Size = new Size(100, 23);
+            FFNxSpeedhackStep.Size = new Size(140, 23);
             FFNxSpeedhackStep.TabIndex = 0;
-            FFNxSpeedhackStep.SelectedIndexChanged += setMousePos;
+            FFNxSpeedhackStep.SelectedIndexChanged += this.setMousePos;
             FFNxSpeedhackStep.Click += getMousePos;
             // 
             // FFNxGroupControllerDeathzones
@@ -2103,7 +2103,7 @@
             FFNxGroupControllerDeathzones.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupControllerDeathzones.Location = new Point(10, 473);
             FFNxGroupControllerDeathzones.Name = "FFNxGroupControllerDeathzones";
-            FFNxGroupControllerDeathzones.Size = new Size(325, 57);
+            FFNxGroupControllerDeathzones.Size = new Size(445, 57);
             FFNxGroupControllerDeathzones.TabIndex = 32;
             FFNxGroupControllerDeathzones.TabStop = false;
             FFNxGroupControllerDeathzones.Text = "Zône morte de la manette (stick, LT, RT)";
@@ -2117,11 +2117,11 @@
             FFNxContolerDeathzoneRT.DropDownStyle = ComboBoxStyle.DropDownList;
             FFNxContolerDeathzoneRT.ForeColor = Color.White;
             FFNxContolerDeathzoneRT.FormattingEnabled = true;
-            FFNxContolerDeathzoneRT.Location = new Point(215, 22);
+            FFNxContolerDeathzoneRT.Location = new Point(295, 23);
             FFNxContolerDeathzoneRT.Name = "FFNxContolerDeathzoneRT";
-            FFNxContolerDeathzoneRT.Size = new Size(103, 23);
+            FFNxContolerDeathzoneRT.Size = new Size(141, 23);
             FFNxContolerDeathzoneRT.TabIndex = 2;
-            FFNxContolerDeathzoneRT.SelectedIndexChanged += setMousePos;
+            FFNxContolerDeathzoneRT.SelectedIndexChanged += this.setMousePos;
             FFNxContolerDeathzoneRT.Click += getMousePos;
             // 
             // FFNxContolerDeathzoneLT
@@ -2131,11 +2131,11 @@
             FFNxContolerDeathzoneLT.DropDownStyle = ComboBoxStyle.DropDownList;
             FFNxContolerDeathzoneLT.ForeColor = Color.White;
             FFNxContolerDeathzoneLT.FormattingEnabled = true;
-            FFNxContolerDeathzoneLT.Location = new Point(112, 23);
+            FFNxContolerDeathzoneLT.Location = new Point(151, 23);
             FFNxContolerDeathzoneLT.Name = "FFNxContolerDeathzoneLT";
-            FFNxContolerDeathzoneLT.Size = new Size(99, 23);
+            FFNxContolerDeathzoneLT.Size = new Size(141, 23);
             FFNxContolerDeathzoneLT.TabIndex = 1;
-            FFNxContolerDeathzoneLT.SelectedIndexChanged += setMousePos;
+            FFNxContolerDeathzoneLT.SelectedIndexChanged += this.setMousePos;
             FFNxContolerDeathzoneLT.Click += getMousePos;
             // 
             // FFNxContolerDeathzoneStick
@@ -2147,9 +2147,9 @@
             FFNxContolerDeathzoneStick.FormattingEnabled = true;
             FFNxContolerDeathzoneStick.Location = new Point(8, 23);
             FFNxContolerDeathzoneStick.Name = "FFNxContolerDeathzoneStick";
-            FFNxContolerDeathzoneStick.Size = new Size(100, 23);
+            FFNxContolerDeathzoneStick.Size = new Size(140, 23);
             FFNxContolerDeathzoneStick.TabIndex = 0;
-            FFNxContolerDeathzoneStick.SelectedIndexChanged += setMousePos;
+            FFNxContolerDeathzoneStick.SelectedIndexChanged += this.setMousePos;
             FFNxContolerDeathzoneStick.Click += getMousePos;
             // 
             // FFNxGroupAudioSample
@@ -2158,9 +2158,9 @@
             FFNxGroupAudioSample.Controls.Add(FFNxAudioSample);
             FFNxGroupAudioSample.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupAudioSample.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxGroupAudioSample.Location = new Point(175, 305);
+            FFNxGroupAudioSample.Location = new Point(235, 305);
             FFNxGroupAudioSample.Name = "FFNxGroupAudioSample";
-            FFNxGroupAudioSample.Size = new Size(160, 57);
+            FFNxGroupAudioSample.Size = new Size(220, 57);
             FFNxGroupAudioSample.TabIndex = 31;
             FFNxGroupAudioSample.TabStop = false;
             FFNxGroupAudioSample.Text = "Echantillonnage audio";
@@ -2176,9 +2176,9 @@
             FFNxAudioSample.FormattingEnabled = true;
             FFNxAudioSample.Location = new Point(7, 23);
             FFNxAudioSample.Name = "FFNxAudioSample";
-            FFNxAudioSample.Size = new Size(146, 23);
+            FFNxAudioSample.Size = new Size(204, 23);
             FFNxAudioSample.TabIndex = 0;
-            FFNxAudioSample.SelectedIndexChanged += setMousePos;
+            FFNxAudioSample.SelectedIndexChanged += this.setMousePos;
             FFNxAudioSample.Click += getMousePos;
             // 
             // FFNxGroupIR
@@ -2187,9 +2187,9 @@
             FFNxGroupIR.Controls.Add(FFNxIR);
             FFNxGroupIR.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupIR.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxGroupIR.Location = new Point(11, 139);
+            FFNxGroupIR.Location = new Point(10, 139);
             FFNxGroupIR.Name = "FFNxGroupIR";
-            FFNxGroupIR.Size = new Size(160, 57);
+            FFNxGroupIR.Size = new Size(220, 57);
             FFNxGroupIR.TabIndex = 30;
             FFNxGroupIR.TabStop = false;
             FFNxGroupIR.Text = "Résolution interne";
@@ -2205,9 +2205,9 @@
             FFNxIR.FormattingEnabled = true;
             FFNxIR.Location = new Point(7, 23);
             FFNxIR.Name = "FFNxIR";
-            FFNxIR.Size = new Size(146, 23);
+            FFNxIR.Size = new Size(204, 23);
             FFNxIR.TabIndex = 0;
-            FFNxIR.SelectedIndexChanged += setMousePos;
+            FFNxIR.SelectedIndexChanged += this.setMousePos;
             FFNxIR.Click += getMousePos;
             // 
             // FFNxGroupAudioChannels
@@ -2218,7 +2218,7 @@
             FFNxGroupAudioChannels.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAudioChannels.Location = new Point(10, 305);
             FFNxGroupAudioChannels.Name = "FFNxGroupAudioChannels";
-            FFNxGroupAudioChannels.Size = new Size(161, 57);
+            FFNxGroupAudioChannels.Size = new Size(220, 57);
             FFNxGroupAudioChannels.TabIndex = 29;
             FFNxGroupAudioChannels.TabStop = false;
             FFNxGroupAudioChannels.Text = "Canaux audio";
@@ -2234,9 +2234,9 @@
             FFNxAudioChannels.FormattingEnabled = true;
             FFNxAudioChannels.Location = new Point(8, 23);
             FFNxAudioChannels.Name = "FFNxAudioChannels";
-            FFNxAudioChannels.Size = new Size(146, 23);
+            FFNxAudioChannels.Size = new Size(204, 23);
             FFNxAudioChannels.TabIndex = 0;
-            FFNxAudioChannels.SelectedIndexChanged += setMousePos;
+            FFNxAudioChannels.SelectedIndexChanged += this.setMousePos;
             FFNxAudioChannels.Click += getMousePos;
             // 
             // FFNxGroupAA
@@ -2245,9 +2245,9 @@
             FFNxGroupAA.Controls.Add(FFNxAA);
             FFNxGroupAA.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupAA.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxGroupAA.Location = new Point(175, 139);
+            FFNxGroupAA.Location = new Point(235, 139);
             FFNxGroupAA.Name = "FFNxGroupAA";
-            FFNxGroupAA.Size = new Size(160, 57);
+            FFNxGroupAA.Size = new Size(220, 57);
             FFNxGroupAA.TabIndex = 28;
             FFNxGroupAA.TabStop = false;
             FFNxGroupAA.Text = "Anti-Aliasing";
@@ -2263,9 +2263,9 @@
             FFNxAA.FormattingEnabled = true;
             FFNxAA.Location = new Point(7, 23);
             FFNxAA.Name = "FFNxAA";
-            FFNxAA.Size = new Size(146, 23);
+            FFNxAA.Size = new Size(204, 23);
             FFNxAA.TabIndex = 0;
-            FFNxAA.SelectedIndexChanged += setMousePos;
+            FFNxAA.SelectedIndexChanged += this.setMousePos;
             FFNxAA.Click += getMousePos;
             // 
             // FFNxGroupResolution
@@ -2274,9 +2274,9 @@
             FFNxGroupResolution.Controls.Add(FFNxResolution);
             FFNxGroupResolution.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupResolution.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxGroupResolution.Location = new Point(11, 79);
+            FFNxGroupResolution.Location = new Point(10, 79);
             FFNxGroupResolution.Name = "FFNxGroupResolution";
-            FFNxGroupResolution.Size = new Size(160, 57);
+            FFNxGroupResolution.Size = new Size(220, 57);
             FFNxGroupResolution.TabIndex = 27;
             FFNxGroupResolution.TabStop = false;
             FFNxGroupResolution.Text = "Résolution d'écran";
@@ -2292,9 +2292,9 @@
             FFNxResolution.FormattingEnabled = true;
             FFNxResolution.Location = new Point(7, 23);
             FFNxResolution.Name = "FFNxResolution";
-            FFNxResolution.Size = new Size(146, 23);
+            FFNxResolution.Size = new Size(204, 23);
             FFNxResolution.TabIndex = 0;
-            FFNxResolution.SelectedIndexChanged += setMousePos;
+            FFNxResolution.SelectedIndexChanged += this.setMousePos;
             FFNxResolution.Click += getMousePos;
             // 
             // FFNxGroupHDR
@@ -2305,7 +2305,7 @@
             FFNxGroupHDR.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupHDR.Location = new Point(10, 199);
             FFNxGroupHDR.Name = "FFNxGroupHDR";
-            FFNxGroupHDR.Size = new Size(161, 57);
+            FFNxGroupHDR.Size = new Size(220, 57);
             FFNxGroupHDR.TabIndex = 26;
             FFNxGroupHDR.TabStop = false;
             FFNxGroupHDR.Text = "HDR Nits";
@@ -2321,9 +2321,9 @@
             FFNxHDR.FormattingEnabled = true;
             FFNxHDR.Location = new Point(8, 23);
             FFNxHDR.Name = "FFNxHDR";
-            FFNxHDR.Size = new Size(146, 23);
+            FFNxHDR.Size = new Size(204, 23);
             FFNxHDR.TabIndex = 0;
-            FFNxHDR.SelectedIndexChanged += setMousePos;
+            FFNxHDR.SelectedIndexChanged += this.setMousePos;
             FFNxHDR.Click += getMousePos;
             // 
             // FFNxGroupRatio
@@ -2332,9 +2332,9 @@
             FFNxGroupRatio.Controls.Add(FFNxRatio);
             FFNxGroupRatio.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupRatio.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxGroupRatio.Location = new Point(175, 79);
+            FFNxGroupRatio.Location = new Point(235, 79);
             FFNxGroupRatio.Name = "FFNxGroupRatio";
-            FFNxGroupRatio.Size = new Size(160, 57);
+            FFNxGroupRatio.Size = new Size(220, 57);
             FFNxGroupRatio.TabIndex = 25;
             FFNxGroupRatio.TabStop = false;
             FFNxGroupRatio.Text = "Format d'affichage";
@@ -2350,9 +2350,9 @@
             FFNxRatio.FormattingEnabled = true;
             FFNxRatio.Location = new Point(7, 22);
             FFNxRatio.Name = "FFNxRatio";
-            FFNxRatio.Size = new Size(146, 23);
+            FFNxRatio.Size = new Size(204, 23);
             FFNxRatio.TabIndex = 0;
-            FFNxRatio.SelectedIndexChanged += setMousePos;
+            FFNxRatio.SelectedIndexChanged += this.setMousePos;
             FFNxRatio.Click += getMousePos;
             // 
             // FFNxGroupScreen
@@ -2361,9 +2361,9 @@
             FFNxGroupScreen.Controls.Add(FFNxScreen);
             FFNxGroupScreen.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroupScreen.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxGroupScreen.Location = new Point(175, 19);
+            FFNxGroupScreen.Location = new Point(235, 19);
             FFNxGroupScreen.Name = "FFNxGroupScreen";
-            FFNxGroupScreen.Size = new Size(160, 57);
+            FFNxGroupScreen.Size = new Size(220, 57);
             FFNxGroupScreen.TabIndex = 24;
             FFNxGroupScreen.TabStop = false;
             FFNxGroupScreen.Text = "Affichage";
@@ -2379,9 +2379,9 @@
             FFNxScreen.FormattingEnabled = true;
             FFNxScreen.Location = new Point(7, 23);
             FFNxScreen.Name = "FFNxScreen";
-            FFNxScreen.Size = new Size(146, 23);
+            FFNxScreen.Size = new Size(204, 23);
             FFNxScreen.TabIndex = 0;
-            FFNxScreen.SelectedIndexChanged += setMousePos;
+            FFNxScreen.SelectedIndexChanged += this.setMousePos;
             FFNxScreen.Click += getMousePos;
             // 
             // FFNxVsync
@@ -2391,7 +2391,7 @@
             FFNxVsync.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxVsync.Location = new Point(10, 281);
             FFNxVsync.Name = "FFNxVsync";
-            FFNxVsync.Size = new Size(325, 19);
+            FFNxVsync.Size = new Size(445, 19);
             FFNxVsync.TabIndex = 23;
             FFNxVsync.Text = "Synchronisation verticale";
             FFNxVsync.UseVisualStyleBackColor = false;
@@ -2404,7 +2404,7 @@
             FFNXMusicResume.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNXMusicResume.Location = new Point(10, 365);
             FFNXMusicResume.Name = "FFNXMusicResume";
-            FFNXMusicResume.Size = new Size(325, 19);
+            FFNXMusicResume.Size = new Size(445, 19);
             FFNXMusicResume.TabIndex = 22;
             FFNXMusicResume.Text = "Reprendre les musiques";
             FFNXMusicResume.UseVisualStyleBackColor = false;
@@ -2417,7 +2417,7 @@
             FFNxAnisotropic.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxAnisotropic.Location = new Point(10, 259);
             FFNxAnisotropic.Name = "FFNxAnisotropic";
-            FFNxAnisotropic.Size = new Size(169, 19);
+            FFNxAnisotropic.Size = new Size(221, 19);
             FFNxAnisotropic.TabIndex = 21;
             FFNxAnisotropic.Text = "Filtrage anisotrope";
             FFNxAnisotropic.UseVisualStyleBackColor = false;
@@ -2430,7 +2430,7 @@
             FFNxAnalogController.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxAnalogController.Location = new Point(10, 533);
             FFNxAnalogController.Name = "FFNxAnalogController";
-            FFNxAnalogController.Size = new Size(169, 19);
+            FFNxAnalogController.Size = new Size(221, 19);
             FFNxAnalogController.TabIndex = 19;
             FFNxAnalogController.Text = "Contôleur analogique";
             FFNxAnalogController.UseVisualStyleBackColor = false;
@@ -2444,7 +2444,7 @@
             FFNXSteamSucces.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNXSteamSucces.Location = new Point(10, 628);
             FFNXSteamSucces.Name = "FFNXSteamSucces";
-            FFNXSteamSucces.Size = new Size(169, 19);
+            FFNXSteamSucces.Size = new Size(221, 19);
             FFNXSteamSucces.TabIndex = 18;
             FFNXSteamSucces.Text = "Succès Steam";
             FFNXSteamSucces.UseVisualStyleBackColor = false;
@@ -2456,9 +2456,9 @@
             FFNxGroup3dEngine.Controls.Add(FFNx3dEngine);
             FFNxGroup3dEngine.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             FFNxGroup3dEngine.ForeColor = Color.FromArgb(224, 224, 224);
-            FFNxGroup3dEngine.Location = new Point(11, 19);
+            FFNxGroup3dEngine.Location = new Point(10, 19);
             FFNxGroup3dEngine.Name = "FFNxGroup3dEngine";
-            FFNxGroup3dEngine.Size = new Size(160, 57);
+            FFNxGroup3dEngine.Size = new Size(220, 57);
             FFNxGroup3dEngine.TabIndex = 17;
             FFNxGroup3dEngine.TabStop = false;
             FFNxGroup3dEngine.Text = "Moteur de rendu";
@@ -2473,9 +2473,9 @@
             FFNx3dEngine.FormattingEnabled = true;
             FFNx3dEngine.Location = new Point(7, 23);
             FFNx3dEngine.Name = "FFNx3dEngine";
-            FFNx3dEngine.Size = new Size(146, 23);
+            FFNx3dEngine.Size = new Size(204, 23);
             FFNx3dEngine.TabIndex = 0;
-            FFNx3dEngine.SelectedIndexChanged += setMousePos;
+            FFNx3dEngine.SelectedIndexChanged += this.setMousePos;
             FFNx3dEngine.Click += getMousePos;
             // 
             // menuHelpPanel

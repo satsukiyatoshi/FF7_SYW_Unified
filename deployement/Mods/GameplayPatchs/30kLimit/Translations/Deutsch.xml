@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>30.000 Limit</text>
+		<help>30.000 Limit: 
+		
+Entfernen Sie das Schadenslimit sowie das HP-Limit von 9.999.
+
+Das neue Limit liegt bei 30.000 Punkten.
+
+Zudem werden die Texte so ausgerichtet, dass keine grafischen Probleme auftreten.
+		</help>
+		<author>dziugo</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

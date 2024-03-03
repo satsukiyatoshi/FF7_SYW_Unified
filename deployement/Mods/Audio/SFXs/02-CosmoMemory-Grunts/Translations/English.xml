@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Cosmo Memory + battle voice</text>
-		<help>Cosmo Memory sound effects + battle voice (v1.1) : 
+		<text>Cosmo Memory with battle voices</text>
+		<help>Cosmo Memory with battle voices (v1.1): 
 		
 Replaces in-game sound effects with a modernized version, including those in menus.
 
-In combat,character attacks also feature grunts vocal sounds.
+In battles, character attacks also feature grunts vocal sounds.
 
 Can change the mood on some sequences.
 
@@ -17,4 +17,3 @@ If you enable footsteps in the driver, these sounds will also be adapted to the 
 		<compatibily></compatibily>
 	</control>
 </translation>
-

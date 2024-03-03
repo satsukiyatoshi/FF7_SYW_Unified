@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Schlachttest</text>
+		<help>Schlachttest:
+
+Fügen Sie einen neuen NPC zum Feld „las02“ hinzu.
+
+Wenn Sie mit dem NPC sprechen, können Sie eine bestimmte Schlacht auswählen und starten.
+
+Nützlich, wenn Sie ein Modder sind und eine bestimmte Schlacht testen möchten, ohne das vollständige Spiel zu spielen.
+		</help>
+		<author>Satsuki_Yatoshi</author>
+		<url></url>
+		<compatibily>FEGS</compatibily>
+	</control>
+</translation>

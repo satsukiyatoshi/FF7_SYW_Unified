@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Industrial music</text>
-		<help>Industrial music : 
+		<text>Industrial</text>
+		<help>Industrial: 
 		
-These musics were created by azertyuiop2 for its Final Parody VII game mode.
+This music was created for the "Final Parody VII" game mode.
 
-They have an industrial vibe.
+You get an industrial atmosphere.
 
-It changes the mood of the game a bit.</help>		
+This changes the atmosphere of the game a bit, but it's worth giving it a try.
+		</help>		
 		<author>azertyuiop2</author>
 		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=378595</url>
 		<compatibily></compatibily>
 	</control>
 </translation>
-

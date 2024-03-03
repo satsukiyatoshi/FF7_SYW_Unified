@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Symphonic music</text>
-		<help>Symphonic music : 
+		<text>Symphonic</text>
+		<help>Symphonic: 
 		
 These musics are a re-orchestration in a symphonic way.
 
 It gives a more epic vibe to the game.
 
-The atmosphere of the game seems more modern.</help>
+The atmosphere of the game seems more modern.
+		</help>
 		<author>Captain Epic</author>
 		<url>http://forums.qhimm.com/index.php?topic=14541.0</url>
 		<compatibily></compatibily>
 	</control>
 </translation>
-

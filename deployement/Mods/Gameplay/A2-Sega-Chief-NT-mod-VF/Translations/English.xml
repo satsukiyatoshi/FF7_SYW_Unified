@@ -1,23 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 <control>
-		<text>NT mod 2.09991 French version</text>
-		<help>NT mod FR: 
+		<text>New Threat mod (French version)</text>
+		<help>New Threat mod (French version, v2.09998): 
 
-This mod is a quick french translation of the original NT mod, it's based on an old NT mod.
-I recommand to use the official NT mod if you can read english.
+This mod is a quick french translation of the original "New Threat mod", it's based on an old "New Threat mod".
 
-NT mod :		
+It is recommended to use the official "New Threat mod" if you can read english.
+
+"New Threat mod":		
 This mod is a complete overhaul of the FF7 game system.
   
 Third-party 3D models (modern, or additional textures) are not recommended, they may cause bugs.
-The overall scenario is the same but there are many changes, side quests, new enemies... this mod is difficult to describe because it changes the game in depth.
 
-I recommend this mod if you have already done FF7 at least once.
-</help>
+The overall scenario is the same but there are many changes, side quests, new enemies,... 
+
+This mod is difficult to describe because it changes the game in depth.
+
+This mod is recommended if you have already played through FF7 at least once and speak English.
+
+It is compatible with all versions of FF7 but the game will be 100% in English.
+		</help>
 		<author>Sega Chief and Diablo</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=464716</url>
 		<compatibily>F</compatibily>
 </control>
 </translation>
-

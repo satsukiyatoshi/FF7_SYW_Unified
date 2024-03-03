@@ -1,14 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>original game menu and fonts</text>
-		<help>original game menu and fonts : 
+		<text>Original game menus and font</text>
+		<help>Original game menus and font: 
 
-Low quality, we recommend to use HD textures instead.		
+Due to the low quality, it is recommended to use HD textures.	
 		</help>
 		<author>Squaresoft</author>
 		<url>https://finalfantasyviipc.square-enix-games.com/</url>
 		<compatibily>FEGS</compatibily>
 	</control>
 </translation>
-

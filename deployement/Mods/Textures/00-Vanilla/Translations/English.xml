@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-<control>
+	<control>
 		<text>None</text>
-		<help>No additional texture.</help>
+		<help>No additional textures.
+		</help>
 		<author></author>
 		<url></url>
 		<compatibily></compatibily>
-</control>
+	</control>
 </translation>
-

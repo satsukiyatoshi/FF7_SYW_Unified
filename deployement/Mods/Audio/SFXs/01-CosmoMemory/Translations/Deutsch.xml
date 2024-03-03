@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Cosmo Memory</text>
+		<help>Cosmo Memory (v1.1): 
+		
+Ersetzt die Soundeffekte im Spiel durch eine modernisierte Version, einschließlich der Soundeffekte der Menüs und Schlachten.
+
+Kann die Stimmung in bestimmten Sequenzen verändern.
+
+Wenn Sie im Treiber Schrittgeräusche aktivieren, werden diese Geräusche auch an die Art des Bodens angepasst.
+		</help>
+		<author>Bonez</author>
+		<url>https://forums.qhimm.com/index.php?topic=20475.0</url>
+		<compatibily></compatibily>
+	</control>
+</translation>

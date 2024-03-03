@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>New Threat Mod</text>
+		<help>New Threat Mod (v2.09998): 
+		
+Dieser Mod ist eine komplette Überarbeitung des FF7-Spielsystems.
+  
+3D-Modelle von Drittanbietern (moderne oder zusätzliche Texturen) werden nicht empfohlen, da sie Fehler verursachen können.
+
+Das Gesamtszenario ist das gleiche, aber es gibt viele Änderungen, Nebenquests, neue Feinde,...
+
+Dieser Mod ist schwer zu beschreiben, da er das Spiel grundlegend verändert.
+
+Dieser Mod wird empfohlen, wenn Sie FF7 bereits mindestens einmal durchgespielt haben und Englisch sprechen.
+
+Es ist mit allen Versionen von FF7 kompatibel, aber das Spiel wird zu 100% auf Englisch sein.
+		</help>
+		<author>Sega Chief</author>
+		<url>http://forums.qhimm.com/index.php?topic=14938.0</url>
+		<compatibily>E</compatibily>
+	</control>
+</translation>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+	<control>
+		<text>Original</text>
+		<help>Original: 
+		
+Begrenzte Qualität, aber es ist sehr nah am ursprünglichen PSX-Spiel. 
+
+Es wird empfohlen, diese Option zu verwenden, um die ursprüngliche Atmosphäre des Spiels zu erhalten.
+		</help>
+		<author>Squaresoft</author>
+		<url>https://finalfantasyviipc.square-enix-games.com/</url>
+		<compatibily></compatibily>
+	</control>
+</translation>

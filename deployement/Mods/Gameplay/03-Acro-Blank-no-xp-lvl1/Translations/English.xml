@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
-<control>
-		<text>No xp level 1</text>
-		<help>No xp level 1 : 
+	<control>
+		<text>No XP level 1</text>
+		<help>No XP level 1: 
 		
 This is a very difficult game mode.
 
-Enemies don't grant any experience, which means that the level of your characters never increases, but in addition the characters will be at level 1.
-The game will be harder from the start and the further you go, the harder it will be, bordering on impossible.
+Enemies don't grant experience points, which means that the level of your characters never increases, but in addition the characters will be at level 1.
 
-I recommend this setting if you know the game and the enemies by heart, if you like ability charts and intensive strategies, or if you are crazy.
+The game will be harder from the beginning, but the further you get, the harder it will be, bordering on impossible.
 
-It is compatible with all versions of FF7 but some combat elements will be in French only.</help>
+This mod is recommended if you know the game and the enemies by heart, if you like ability charts and intensive strategies, or if you are crazy.
+
+It is compatible with all versions of FF7 but some combat elements will be in French only.
+		</help>
 		<author>Acro and Blank</author>
 		<url>http://ff7.fr/forum/index.php?page=post&#38;ids=357743</url>
 		<compatibily>F</compatibily>
-</control>
+	</control>
 </translation>
-

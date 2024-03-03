@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<translation>
+    <control>
+        <text>True wait with easy run</text>
+        <help>True wait with easy run:
+
+Adjust the ATB system to wait for commands and animations so the urgent imput of commands is not necessary anymore (more relaxing battles).
+
+Note that a character with twice as much speed as another character can take twice as many actions, rather than the speed difference being lost during animations like it is in vanilla.
+
+Note that with this mod running away from enemies is as easy as it is in vanilla.
+        </help>
+        <author>Postscriptthree</author>
+        <url>https://forums.qhimm.com/index.php&#38;topic=21592.0</url>
+        <compatibily>FEG</compatibily>
+    </control>
+</translation>
