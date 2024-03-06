@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Reflection.PortableExecutable;
 
 namespace FF7_SYW_Unified
 {
@@ -28,7 +29,7 @@ namespace FF7_SYW_Unified
                 else
                 {
                     string[] translations = Directory.GetFiles(dir + @"\Translations\", "*.xml");
-                    if(translations.Length > 0)
+                    if (translations.Length > 0)
                     {
                         translationFile = dir + @"\Translations\" + Path.GetFileName(translations[0]);
                     } else
@@ -52,11 +53,11 @@ namespace FF7_SYW_Unified
         //display preview picture and description for SYW mods and FFNx options
         private void modShow(string name, TextBox help, Label author, Boolean showPrev = true)
         {
-            if(showPrev)
+            if (showPrev)
             {
                 graphicPrevPic.ImageLocation = Application.StartupPath + @"Mods\SYW\Prev\" + name + ".jpg";
             }
-            
+
             help.Text = translate(name + "help", Globals.translateUI).ReplaceLineEndings();
             author.Text = translate(name + "author", Globals.translateUI);
             Globals.actualModUrl = translate(name + "url", Globals.translateUI);
@@ -138,7 +139,9 @@ namespace FF7_SYW_Unified
         //copy mod folder content to current mod folder recusively and overwrite
         public void folderModCopy(string modFolder)
         {
-            if(!(modFolder.Length - 1).Equals(@"\"))
+            string current_mod_folder = "";
+
+            if (!(modFolder.Length - 1).Equals(@"\"))
             {
                 modFolder = modFolder + @"\";
             }
@@ -205,8 +208,14 @@ namespace FF7_SYW_Unified
             {
                 File.Copy(Application.StartupPath + @"Game\current\ff7.exe", Application.StartupPath + @"Game\ff7.exe", true);
             }
-        }
 
+            current_mod_folder = Path.GetFileName(modFolder.Remove(modFolder.Length - 1));
+            if (!current_mod_folder.Contains("Vanilla") && current_mod_folder != "")
+            {
+                Globals.modApplied.Add(Path.GetFileName(current_mod_folder));
+            }
+            
+        }
 
 
         //restore all dds files and delete the currently used mods file

@@ -143,6 +143,26 @@ namespace FF7_SYW_Unified
                 {
                     string[] dirs = Directory.GetDirectories(Application.StartupPath + @"mods\GameplayPatchs", "*", SearchOption.TopDirectoryOnly);
                     folderModCopy(dirs[i]);
+
+                    string filesExtraPath = Path.Combine(dirs[i], "FilesExtra");
+
+                    if (Directory.Exists(filesExtraPath))
+                    {
+                        string[] subDirectories = Directory.GetDirectories(filesExtraPath);
+
+                        foreach (string subDir in subDirectories)
+                        {
+                            foreach (string item in Globals.modApplied)
+                            {
+                                if (Path.GetFileName(subDir) == item)
+                                {
+                                    folderCopyAll(new DirectoryInfo(subDir), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+                                }
+                            }
+
+                        }
+                    }
+
                 }
             }
         }

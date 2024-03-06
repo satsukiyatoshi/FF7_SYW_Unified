@@ -459,13 +459,13 @@ Surtout utile en jeu fenêtré.</help>
 		<author>FFNx team</author>
 		<help>Vous pouvez choisir différents formats (ratio) d'affichage) du jeu : 
 		
--4/3 comme le jeu d'origine.
+• 4/3 comme le jeu d'origine.
 
--16/9 étiré, pas de bug connu mais l'image est verticalement écrasée.
+• 16/9 étiré, pas de bug connu mais l'image est verticalement écrasée.
 
--16/9 réel, modifie le moteur du jeu afin d'avoir un vrai 16/9 partout ou cela est possible, quelques bugs (non bloquants) peuvent apparaître.
+• 16/9 réel, modifie le moteur du jeu afin d'avoir un vrai 16/9 partout ou cela est possible, quelques bugs (non bloquants) peuvent apparaître.
 
--16/10 réel, modifie le moteur du jeu afin d'avoir un vrai 16/10 partout ou cela est possible, idéal pour le steam deck, option expérientale.
+• 16/10 réel, modifie le moteur du jeu afin d'avoir un vrai 16/10 partout ou cela est possible, idéal pour le steam deck, option expérientale.
 </help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
@@ -622,7 +622,7 @@ L'option du jeu en 60 fps necessite également des modèles interpolés (ceux de
 		
 les modèles 3D inclus dans le pack sont déjà interpolés.
 
-Les scènes du jeu en français et en anglais sont patchées également.</help>
+Les scènes du jeu en français, anglais et allemand sont patchées également.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
