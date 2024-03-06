@@ -22,6 +22,8 @@ namespace FF7_SYW_Unified
             public static string actualModFlags { get; set; } = "";
             public static Boolean isFoobarRunning { get; set; } = false;
             public static Boolean isGameLoading { get; set; } = false;
+            public static List<string> modApplied { get; set; } = new List<string>();
+            public static string[,] extraList { get; set; } = { };
             public static int mouseY { get; set; } = 0;
             public static System.Drawing.Point mousePos { get; set; } = new System.Drawing.Point(0, 0);
             public static List<(string name, string text)> translateUI { get; set; } = new List<(string name, string text)> { }; //global UI translation list
