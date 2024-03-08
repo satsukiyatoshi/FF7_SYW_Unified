@@ -187,6 +187,7 @@
             FFNx3dEngine = new ComboBox();
             menuHelpPanel = new Panel();
             HelpFrame2 = new GroupBox();
+            makeDebugPack = new Label();
             chooseHelp = new Label();
             HelpList = new ComboBox();
             GeneralHelp = new RichTextBox();
@@ -1979,7 +1980,7 @@
             FFNxFps.Name = "FFNxFps";
             FFNxFps.Size = new Size(204, 23);
             FFNxFps.TabIndex = 0;
-            FFNxFps.SelectedIndexChanged += this.setMousePos;
+            FFNxFps.SelectedIndexChanged += setMousePos;
             FFNxFps.Click += getMousePos;
             // 
             // FFNxShowStats
@@ -2062,7 +2063,7 @@
             FFNxSpeedhackMax.Name = "FFNxSpeedhackMax";
             FFNxSpeedhackMax.Size = new Size(141, 23);
             FFNxSpeedhackMax.TabIndex = 2;
-            FFNxSpeedhackMax.SelectedIndexChanged += this.setMousePos;
+            FFNxSpeedhackMax.SelectedIndexChanged += setMousePos;
             FFNxSpeedhackMax.Click += getMousePos;
             // 
             // FFNxSpeedhackMin
@@ -2076,7 +2077,7 @@
             FFNxSpeedhackMin.Name = "FFNxSpeedhackMin";
             FFNxSpeedhackMin.Size = new Size(141, 23);
             FFNxSpeedhackMin.TabIndex = 1;
-            FFNxSpeedhackMin.SelectedIndexChanged += this.setMousePos;
+            FFNxSpeedhackMin.SelectedIndexChanged += setMousePos;
             FFNxSpeedhackMin.Click += getMousePos;
             // 
             // FFNxSpeedhackStep
@@ -2090,7 +2091,7 @@
             FFNxSpeedhackStep.Name = "FFNxSpeedhackStep";
             FFNxSpeedhackStep.Size = new Size(140, 23);
             FFNxSpeedhackStep.TabIndex = 0;
-            FFNxSpeedhackStep.SelectedIndexChanged += this.setMousePos;
+            FFNxSpeedhackStep.SelectedIndexChanged += setMousePos;
             FFNxSpeedhackStep.Click += getMousePos;
             // 
             // FFNxGroupControllerDeathzones
@@ -2121,7 +2122,7 @@
             FFNxContolerDeathzoneRT.Name = "FFNxContolerDeathzoneRT";
             FFNxContolerDeathzoneRT.Size = new Size(141, 23);
             FFNxContolerDeathzoneRT.TabIndex = 2;
-            FFNxContolerDeathzoneRT.SelectedIndexChanged += this.setMousePos;
+            FFNxContolerDeathzoneRT.SelectedIndexChanged += setMousePos;
             FFNxContolerDeathzoneRT.Click += getMousePos;
             // 
             // FFNxContolerDeathzoneLT
@@ -2135,7 +2136,7 @@
             FFNxContolerDeathzoneLT.Name = "FFNxContolerDeathzoneLT";
             FFNxContolerDeathzoneLT.Size = new Size(141, 23);
             FFNxContolerDeathzoneLT.TabIndex = 1;
-            FFNxContolerDeathzoneLT.SelectedIndexChanged += this.setMousePos;
+            FFNxContolerDeathzoneLT.SelectedIndexChanged += setMousePos;
             FFNxContolerDeathzoneLT.Click += getMousePos;
             // 
             // FFNxContolerDeathzoneStick
@@ -2149,7 +2150,7 @@
             FFNxContolerDeathzoneStick.Name = "FFNxContolerDeathzoneStick";
             FFNxContolerDeathzoneStick.Size = new Size(140, 23);
             FFNxContolerDeathzoneStick.TabIndex = 0;
-            FFNxContolerDeathzoneStick.SelectedIndexChanged += this.setMousePos;
+            FFNxContolerDeathzoneStick.SelectedIndexChanged += setMousePos;
             FFNxContolerDeathzoneStick.Click += getMousePos;
             // 
             // FFNxGroupAudioSample
@@ -2178,7 +2179,7 @@
             FFNxAudioSample.Name = "FFNxAudioSample";
             FFNxAudioSample.Size = new Size(204, 23);
             FFNxAudioSample.TabIndex = 0;
-            FFNxAudioSample.SelectedIndexChanged += this.setMousePos;
+            FFNxAudioSample.SelectedIndexChanged += setMousePos;
             FFNxAudioSample.Click += getMousePos;
             // 
             // FFNxGroupIR
@@ -2207,7 +2208,7 @@
             FFNxIR.Name = "FFNxIR";
             FFNxIR.Size = new Size(204, 23);
             FFNxIR.TabIndex = 0;
-            FFNxIR.SelectedIndexChanged += this.setMousePos;
+            FFNxIR.SelectedIndexChanged += setMousePos;
             FFNxIR.Click += getMousePos;
             // 
             // FFNxGroupAudioChannels
@@ -2236,7 +2237,7 @@
             FFNxAudioChannels.Name = "FFNxAudioChannels";
             FFNxAudioChannels.Size = new Size(204, 23);
             FFNxAudioChannels.TabIndex = 0;
-            FFNxAudioChannels.SelectedIndexChanged += this.setMousePos;
+            FFNxAudioChannels.SelectedIndexChanged += setMousePos;
             FFNxAudioChannels.Click += getMousePos;
             // 
             // FFNxGroupAA
@@ -2265,7 +2266,7 @@
             FFNxAA.Name = "FFNxAA";
             FFNxAA.Size = new Size(204, 23);
             FFNxAA.TabIndex = 0;
-            FFNxAA.SelectedIndexChanged += this.setMousePos;
+            FFNxAA.SelectedIndexChanged += setMousePos;
             FFNxAA.Click += getMousePos;
             // 
             // FFNxGroupResolution
@@ -2294,7 +2295,7 @@
             FFNxResolution.Name = "FFNxResolution";
             FFNxResolution.Size = new Size(204, 23);
             FFNxResolution.TabIndex = 0;
-            FFNxResolution.SelectedIndexChanged += this.setMousePos;
+            FFNxResolution.SelectedIndexChanged += setMousePos;
             FFNxResolution.Click += getMousePos;
             // 
             // FFNxGroupHDR
@@ -2323,7 +2324,7 @@
             FFNxHDR.Name = "FFNxHDR";
             FFNxHDR.Size = new Size(204, 23);
             FFNxHDR.TabIndex = 0;
-            FFNxHDR.SelectedIndexChanged += this.setMousePos;
+            FFNxHDR.SelectedIndexChanged += setMousePos;
             FFNxHDR.Click += getMousePos;
             // 
             // FFNxGroupRatio
@@ -2352,7 +2353,7 @@
             FFNxRatio.Name = "FFNxRatio";
             FFNxRatio.Size = new Size(204, 23);
             FFNxRatio.TabIndex = 0;
-            FFNxRatio.SelectedIndexChanged += this.setMousePos;
+            FFNxRatio.SelectedIndexChanged += setMousePos;
             FFNxRatio.Click += getMousePos;
             // 
             // FFNxGroupScreen
@@ -2381,7 +2382,7 @@
             FFNxScreen.Name = "FFNxScreen";
             FFNxScreen.Size = new Size(204, 23);
             FFNxScreen.TabIndex = 0;
-            FFNxScreen.SelectedIndexChanged += this.setMousePos;
+            FFNxScreen.SelectedIndexChanged += setMousePos;
             FFNxScreen.Click += getMousePos;
             // 
             // FFNxVsync
@@ -2475,7 +2476,7 @@
             FFNx3dEngine.Name = "FFNx3dEngine";
             FFNx3dEngine.Size = new Size(204, 23);
             FFNx3dEngine.TabIndex = 0;
-            FFNx3dEngine.SelectedIndexChanged += this.setMousePos;
+            FFNx3dEngine.SelectedIndexChanged += setMousePos;
             FFNx3dEngine.Click += getMousePos;
             // 
             // menuHelpPanel
@@ -2488,6 +2489,7 @@
             // 
             // HelpFrame2
             // 
+            HelpFrame2.Controls.Add(makeDebugPack);
             HelpFrame2.Controls.Add(chooseHelp);
             HelpFrame2.Controls.Add(HelpList);
             HelpFrame2.Controls.Add(GeneralHelp);
@@ -2500,14 +2502,30 @@
             HelpFrame2.TabStop = false;
             HelpFrame2.Text = "Aide générale";
             // 
+            // makeDebugPack
+            // 
+            makeDebugPack.BackColor = SystemColors.ScrollBar;
+            makeDebugPack.Cursor = Cursors.Hand;
+            makeDebugPack.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            makeDebugPack.ForeColor = Color.Black;
+            makeDebugPack.Location = new Point(10, 653);
+            makeDebugPack.Name = "makeDebugPack";
+            makeDebugPack.Size = new Size(766, 32);
+            makeDebugPack.TabIndex = 6;
+            makeDebugPack.Text = "Créer une archive de débug (à fournir en cas report de bug)";
+            makeDebugPack.TextAlign = ContentAlignment.MiddleCenter;
+            makeDebugPack.Click += makeDebugPack_Click;
+            makeDebugPack.MouseEnter += makeDebugPack_MouseEnter;
+            makeDebugPack.MouseLeave += makeDebugPack_MouseLeave;
+            // 
             // chooseHelp
             // 
             chooseHelp.BackColor = Color.Transparent;
             chooseHelp.Font = new Font("Roboto Black", 36F, FontStyle.Bold, GraphicsUnit.Point);
             chooseHelp.ForeColor = Color.White;
-            chooseHelp.Location = new Point(14, 51);
+            chooseHelp.Location = new Point(14, 61);
             chooseHelp.Name = "chooseHelp";
-            chooseHelp.Size = new Size(764, 634);
+            chooseHelp.Size = new Size(764, 580);
             chooseHelp.TabIndex = 5;
             chooseHelp.Text = "Choisissez un fichier d'aide dans la liste";
             chooseHelp.TextAlign = ContentAlignment.MiddleCenter;
@@ -2529,10 +2547,10 @@
             // 
             GeneralHelp.BorderStyle = BorderStyle.None;
             GeneralHelp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            GeneralHelp.Location = new Point(14, 51);
+            GeneralHelp.Location = new Point(14, 61);
             GeneralHelp.Name = "GeneralHelp";
             GeneralHelp.ReadOnly = true;
-            GeneralHelp.Size = new Size(762, 634);
+            GeneralHelp.Size = new Size(762, 580);
             GeneralHelp.TabIndex = 0;
             GeneralHelp.Text = "";
             // 
@@ -3636,5 +3654,6 @@
         private CheckBox FFNxAlphaDiag;
         private CheckBox FFNxGamutNtsc;
         private CheckBox graphicsCosmosGaia;
+        private Label makeDebugPack;
     }
 }
