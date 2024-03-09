@@ -121,7 +121,7 @@ Es ersetzt alle Ihre aktuellen Einstellungen (nur Spielmechanik- und Audioeinste
 	</control>
 	<control>
 		<name>packStory</name>
-		<text>Das Projekt FF7 SYW ist ein Paket, das Final Fantasy VII mit grafischer Neubearbeitung dank fortschrittlicher künstlicher Intelligenz an Hintergrundbildern, Schlachten, Weltkarte, Minispielen und Videosequenzen enthält. Auch andere Elemente wurden unter Beibehaltung der originalen Essenz des Spiels rekriert.
+		<text>Das Projekt FF7 SYW ist ein Paket, das Final Fantasy VII mit grafischer Neubearbeitung dank fortschrittlicher künstlicher Intelligenz an Hintergrundbildern, Schlachten, Weltkarten, Minispielen und Videosequenzen enthält. Auch andere Elemente wurden unter Beibehaltung der originalen Essenz des Spiels rekriert.
 
 Darüber hinaus enthält das Paket verschiedene erweiterte Konfigurationsoptionen und verschiedene Patches wie Funktionen zum überall Speichern, automatisches Laufen, Deaktivierung von Zufallsschlachten, Schnellvorlauf, Herausforderungs- und Schwierigkeitsgrad-Mods aller Art... all dies, um ein beispielloses Spielerlebnis und Komfort zu bieten.
 </text>
@@ -158,8 +158,8 @@ Es wird empfohlen, diese Option zu aktivieren.
 	</control>
 	<control>
 		<name>graphicsAnimations</name>
-		<text>Erweiterte Animationen</text>
-		<help>Erweiterte Animationen:
+		<text>Extra-Animationen</text>
+		<help>Extra-Animationen:
 
 Ermöglicht die Wiederherstellung der Originalanimationen der Spielszenen mit HD-Texturen.
 
