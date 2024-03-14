@@ -188,7 +188,7 @@ namespace FF7_SYW_Unified
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\43"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
-            if (Directory.Exists(modFolder + @"FilesWS\169") && FFNxRatio.SelectedIndex == 1)
+            if (Directory.Exists(modFolder + @"FilesWS\169st") && FFNxRatio.SelectedIndex == 1)
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\169st"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
@@ -198,7 +198,7 @@ namespace FF7_SYW_Unified
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\169"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
-            if (Directory.Exists(modFolder + @"FilesWS\169") && FFNxRatio.SelectedIndex == 3)
+            if (Directory.Exists(modFolder + @"FilesWS\1610") && FFNxRatio.SelectedIndex == 3)
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\1610"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
