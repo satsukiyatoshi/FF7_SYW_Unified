@@ -1,6 +1,9 @@
 ﻿
 using System.Windows.Forms;
 using System.IO.Compression;
+using System.Management;
+using System;
+using System.IO;
 
 namespace FF7_SYW_Unified
 {
@@ -63,17 +66,22 @@ namespace FF7_SYW_Unified
 
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
+                menuFrame.Enabled = false;
+                menuHelpPanel.Enabled = false;
                 string dossierDestination = folderBrowserDialog.SelectedPath;
                 string archiveDestination = Path.Combine(dossierDestination, "SYW_Unified_Debug_Pack.zip");
+                makeSystemInfos();
 
-                makeArchiv(archiveDestination, Path.Combine(getModCustomFolder(gameplayMods, @"gameplay\"),"save"), new string[] { Application.StartupPath + @"\settings.ini", Application.StartupPath + @"\lang.ini", Application.StartupPath + @"\game\ffnx.log" });
+                makeArchiv(archiveDestination, Path.Combine(getModCustomFolder(gameplayMods, @"gameplay\"),"save"), new string[] { Application.StartupPath + @"\settings.ini", Application.StartupPath + @"\lang.ini", Application.StartupPath + @"\game\ffnx.log", Application.StartupPath + @"system.txt" });
 
+                menuFrame.Enabled = true;
+                menuHelpPanel.Enabled = true;
                 MessageBox.Show(translate("dbgArchiv", Globals.translateUI));
             }
         }
 
 
-        static void makeArchiv(string destinationArchive, string sourceFolder, string[] uniqueFiles)
+        private void makeArchiv(string destinationArchive, string sourceFolder, string[] uniqueFiles)
         {
             using (FileStream fs = new FileStream(destinationArchive, FileMode.Create))
             {
@@ -92,6 +100,79 @@ namespace FF7_SYW_Unified
                     }
                 }
             }
+        }
+
+
+        private void makeSystemInfos()
+        {
+            string cpuInfo = GetCPUInfo();
+            string gpuInfo = GetGPUInfo();
+            string ramInfo = GetRAMInfo();
+            string windowsVersion = GetWindowsVersion();
+            string screenResolution = GetScreenResolution();
+
+            string filePath = Application.StartupPath + @"system.txt";
+
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                writer.WriteLine("CPU: " + cpuInfo);
+                writer.WriteLine("GPU: " + gpuInfo);
+                writer.WriteLine("RAM: " + ramInfo);
+                writer.WriteLine("Windows Version: " + windowsVersion);
+                writer.WriteLine("Screen Resolution: " + screenResolution);
+            }
+        }
+
+
+        private string GetCPUInfo()
+        {
+            string cpuInfo = string.Empty;
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_Processor");
+            foreach (ManagementObject obj in searcher.Get())
+            {
+                cpuInfo = obj["Name"].ToString();
+                break;
+            }
+            return cpuInfo;
+        }
+
+        private string GetGPUInfo()
+        {
+            string gpuInfo = string.Empty;
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_VideoController");
+            foreach (ManagementObject obj in searcher.Get())
+            {
+                gpuInfo = obj["Name"].ToString();
+                break;
+            }
+            return gpuInfo;
+        }
+
+        private string GetRAMInfo()
+        {
+            string ramInfo = string.Empty;
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_ComputerSystem");
+            foreach (ManagementObject obj in searcher.Get())
+            {
+                ulong totalPhysicalMemory = 0;
+                if (obj["TotalPhysicalMemory"] != null && ulong.TryParse(obj["TotalPhysicalMemory"].ToString(), out totalPhysicalMemory))
+                {
+                    ramInfo = (totalPhysicalMemory / (1024 * 1024 * 1024) + 1).ToString() + " Go";
+                }
+                break;
+            }
+            return ramInfo;
+        }
+
+        private string GetWindowsVersion()
+        {
+            return Environment.OSVersion.ToString();
+        }
+
+        private string GetScreenResolution()
+        {
+            return System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width + "x" +
+                   System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
         }
 
 
