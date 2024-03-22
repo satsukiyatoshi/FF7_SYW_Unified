@@ -1,5 +1,8 @@
 ﻿using System.Diagnostics;
 using System.Reflection.PortableExecutable;
+using System;
+using System.IO;
+using System.Collections.Generic;
 
 namespace FF7_SYW_Unified
 {
@@ -188,7 +191,7 @@ namespace FF7_SYW_Unified
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\43"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
-            if (Directory.Exists(modFolder + @"FilesWS\169") && FFNxRatio.SelectedIndex == 1)
+            if (Directory.Exists(modFolder + @"FilesWS\169st") && FFNxRatio.SelectedIndex == 1)
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\169st"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
@@ -198,7 +201,7 @@ namespace FF7_SYW_Unified
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\169"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
 
-            if (Directory.Exists(modFolder + @"FilesWS\169") && FFNxRatio.SelectedIndex == 3)
+            if (Directory.Exists(modFolder + @"FilesWS\1610") && FFNxRatio.SelectedIndex == 3)
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\1610"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
             }
@@ -226,6 +229,15 @@ namespace FF7_SYW_Unified
             List<string> disabledFiles = Directory.GetFiles(Application.StartupPath + @"mods\SYW\Textures", "*.SYWT", SearchOption.AllDirectories).ToList();
             List<string> disabledFolders = Directory.GetDirectories(Application.StartupPath + @"mods\SYW\Textures", "*SYWF", SearchOption.AllDirectories).ToList();
             List<string> currentFiles = Directory.GetFiles(Application.StartupPath + @"Game\current", "*", SearchOption.AllDirectories).ToList();
+
+            foreach (string fichier in Directory.GetFiles(Application.StartupPath + @"Game\data\movies"))
+            {
+                //remove files from movies game folder - to deal with external audio fmv file witch MUST be in OG folder, no possible overide
+                if (Path.GetExtension(fichier) != ".avi" && Path.GetExtension(fichier) != ".lgp")
+                {
+                    File.Delete(fichier);
+                }
+            }
 
             foreach (string file in disabledFiles)
             {
@@ -421,7 +433,7 @@ namespace FF7_SYW_Unified
             folderModCopy(getModCustomFolder(graphicsAddTextures, @"textures\"));
 
             loadingLog(soundsFMV.Text);
-            folderModCopy(getModCustomFolder(soundsFMV, @"audio\movies"));
+            CopyUniqueFiles(getModCustomFolder(soundsFMV, @"audio\movies") + @"\Files\data\movies", Application.StartupPath + @"\game\data\movies", Application.StartupPath + @"\game\current\Data\movies");
 
             loadingLog(soundsAmbients.Text);
             folderModCopy(getModCustomFolder(soundsAmbients, @"audio\ambiants"));
@@ -434,6 +446,48 @@ namespace FF7_SYW_Unified
 
             loadingLog(soundsVoices.Text);
             folderModCopy(getModCustomFolder(soundsVoices, @"audio\voices"));
+        }
+
+
+        private void CopyUniqueFiles(string sourceDirectory, string moviesDirectory, string overideDirectory)
+        {
+            //specific function for fmv music's mod, if file is unique, then copy it to one folder (data\movies) if 2 files with the same name then it's movie + audio then copy them to the overide folder
+
+            if (Directory.Exists(sourceDirectory) && Directory.Exists(moviesDirectory) && Directory.Exists(overideDirectory))
+            {
+                Dictionary<string, List<string>> fileDictionary = new Dictionary<string, List<string>>();
+
+                foreach (string filePath in Directory.GetFiles(sourceDirectory))
+                {
+                    string fileName = Path.GetFileNameWithoutExtension(filePath);
+                    string fileExtension = Path.GetExtension(filePath);
+
+                    if (!fileDictionary.ContainsKey(fileName))
+                    {
+                        fileDictionary[fileName] = new List<string>();
+                    }
+
+                    fileDictionary[fileName].Add(filePath);
+                }
+
+                foreach (var pair in fileDictionary)
+                {
+                    if (pair.Value.Count == 1)
+                    {
+                        string destinationFilePath = Path.Combine(moviesDirectory, Path.GetFileName(pair.Value[0]));
+                        File.Copy(pair.Value[0], destinationFilePath, true);
+                    }
+
+                    else
+                    {
+                        foreach (string filePath in pair.Value)
+                        {
+                            string destinationFilePath = Path.Combine(overideDirectory, Path.GetFileName(filePath));
+                            File.Copy(filePath, destinationFilePath, true);
+                        }
+                    }
+                }
+            }
         }
 
     }

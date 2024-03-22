@@ -1,5 +1,8 @@
 
 using System.Diagnostics;
+using System.IO;
+using System;
+using System.Management;
 
 namespace FF7_SYW_Unified
 {
@@ -53,9 +56,43 @@ namespace FF7_SYW_Unified
 
 
 
+        private int Program_Is_Running(string FullPath)
+        {
+            string FilePath = Path.GetDirectoryName(FullPath);
+            string FileName = Path.GetFileNameWithoutExtension(FullPath).ToLower();
+            int total_run = 0;
+            bool isRunning = false;
+
+            Process[] pList = Process.GetProcessesByName(FileName);
+
+            foreach (Process p in pList)
+            {
+                if (p.MainModule.FileName.StartsWith(FilePath, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    total_run++;
+                    if(total_run > 1) { break; }
+                }
+            }
+
+            return total_run;
+        }
+
+
         //initialize form and load settings
         private void FF7U_Load(object sender, EventArgs e)
         {
+            if (Program_Is_Running(Application.StartupPath + @"\FF7_SYW_Unified.exe") > 1)
+            {
+                MessageBox.Show("FF7 SYW Unified is already running");
+                this.Close();
+            }
+
+            if (Program_Is_Running(Application.StartupPath + @"\game\ff7.exe") > 0)
+            {
+                MessageBox.Show("FF7 is already running");
+                this.Close();
+            }
+
             // get windows scale factor
             using (Graphics graphics = this.CreateGraphics())
             {
