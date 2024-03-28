@@ -40,6 +40,9 @@
     <Compile Update="Statics.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Translation.cs">
       <SubType>Form</SubType>
     </Compile>

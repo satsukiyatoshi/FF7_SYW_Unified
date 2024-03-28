@@ -149,6 +149,27 @@ namespace FF7_SYW_Unified
                 modFolder = modFolder + @"\";
             }
 
+            if (File.Exists(modFolder + @"Trainers\Config.xml"))
+            {
+                Globals.isTrainer = true;
+
+                using (StreamWriter writer = new StreamWriter(Application.StartupPath + @"\Mods\SYW\Trainer\config.xml", true))
+                {
+
+                    string xmlContent = File.ReadAllText(modFolder + @"Trainers\Config.xml");
+
+                    if (xmlContent.Contains("<action_condition>use_files</action_condition>"))
+                    {
+                        int index = xmlContent.IndexOf("<action_condition>use_files</action_condition>") +
+                                    "<action_condition>use_files</action_condition>".Length;
+
+                        xmlContent = xmlContent.Insert(index, "<action_condition_folder>"+ modFolder + @"Trainers" + "</action_condition_folder>");
+                    }
+
+                    writer.WriteLine(xmlContent);
+                }
+            }
+
             if (Directory.Exists(modFolder + @"Files"))
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"Files"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));

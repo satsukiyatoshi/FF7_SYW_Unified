@@ -215,6 +215,7 @@ namespace FF7_SYW_Unified
             {
                 playAudioClose();
                 restoreFiles();
+                initTrainers(0);
                 ApplyGameLang();
                 ApplyAR();
                 applySywTextures();
@@ -222,6 +223,7 @@ namespace FF7_SYW_Unified
                 applyGameplayPatchs();
                 applyPatchs();
                 ffnxTomlGenerate();
+                initTrainers(1);
                 saveValues();
 
                 string exeVersion = checkExeVersion();
@@ -238,6 +240,8 @@ namespace FF7_SYW_Unified
                     }
 
                 }
+
+                if (Globals.isTrainer == true) { enableTrainers(); }
             }
 
             regFF7();
@@ -254,9 +258,28 @@ namespace FF7_SYW_Unified
                 WindowStyle = ProcessWindowStyle.Normal,
             };
 
+            Process.Start(ff7Launch);
+
+            /*
             using (Process ff7 = Process.Start(ff7Launch))
             {
                 ff7.WaitForExit();
+            }
+            */
+
+            string trainerPath = Application.StartupPath + @"\Game\current\FF7_Multi_Trainer.exe";
+
+            if (File.Exists(trainerPath))
+            {
+                ProcessStartInfo ff7TrainerLaunch = new ProcessStartInfo(trainerPath)
+                {
+                    WorkingDirectory = Path.GetDirectoryName(trainerPath),
+                    UseShellExecute = true,
+                    CreateNoWindow = false,
+                    WindowStyle = ProcessWindowStyle.Normal,
+                };
+
+                Process.Start(trainerPath);
             }
 
             Globals.isGameLoading = false;

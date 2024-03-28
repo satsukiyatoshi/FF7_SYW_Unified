@@ -13,6 +13,7 @@ namespace FF7_SYW_Unified
             public static int presetNumber { get; set; } = 0;
             public static Boolean formIsLoaded { get; set; } = false;
             public static Boolean formSettingsLoaded { get; set; } = false;
+            public static Boolean isTrainer { get; set; } = false;
             public static string isodrive { get; set; } = "";
             public static string activMenuName { get; set; } = "menuAbout";
             public static string vanilla { get; set; } = "";
