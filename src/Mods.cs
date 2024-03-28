@@ -166,6 +166,14 @@ namespace FF7_SYW_Unified
                         xmlContent = xmlContent.Insert(index, "<action_condition_folder>"+ modFolder + @"Trainers" + "</action_condition_folder>");
                     }
 
+                    if (xmlContent.Contains("<action_condition>change_value</action_condition>"))
+                    {
+                        int index = xmlContent.IndexOf("<action_condition>change_value</action_condition>") +
+                                    "<action_condition>change_value</action_condition>".Length;
+
+                        xmlContent = xmlContent.Insert(index, "<action_condition_folder></action_condition_folder>");
+                    }
+
                     writer.WriteLine(xmlContent);
                 }
             }
