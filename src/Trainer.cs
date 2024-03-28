@@ -15,20 +15,20 @@ namespace FF7_SYW_Unified
             iniw.WriteLine(Globals.gameLang);
             iniw.Close();
 
-            TextWriter twx = new StreamWriter(Application.StartupPath + @"\Mods\SYW\Trainer\config.xml", false);
-
             if (step == 0)
             {
+                TextWriter twx = new StreamWriter(Application.StartupPath + @"\Mods\SYW\Trainer\config.xml", false);
                 twx.WriteLine("<trainers>");
+                twx.Close();
             }
-
 
             if (step == 1) 
             {
+                TextWriter twx = new StreamWriter(Application.StartupPath + @"\Mods\SYW\Trainer\config.xml", true);
                 twx.WriteLine("</trainers>");
+                twx.Close();
             }
-
-            twx.Close();
+            
         }
 
 
