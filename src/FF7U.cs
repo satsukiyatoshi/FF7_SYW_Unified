@@ -260,13 +260,6 @@ namespace FF7_SYW_Unified
 
             Process.Start(ff7Launch);
 
-            /*
-            using (Process ff7 = Process.Start(ff7Launch))
-            {
-                ff7.WaitForExit();
-            }
-            */
-
             string trainerPath = Application.StartupPath + @"\Game\current\FF7_Multi_Trainer.exe";
 
             if (File.Exists(trainerPath))

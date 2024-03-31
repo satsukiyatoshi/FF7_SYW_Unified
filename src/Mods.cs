@@ -155,23 +155,13 @@ namespace FF7_SYW_Unified
 
                 using (StreamWriter writer = new StreamWriter(Application.StartupPath + @"\Mods\SYW\Trainer\config.xml", true))
                 {
-
                     string xmlContent = File.ReadAllText(modFolder + @"Trainers\Config.xml");
 
-                    if (xmlContent.Contains("<action_condition>use_files</action_condition>"))
+                    int index = 0;
+                    while ((index = xmlContent.IndexOf("</action_condition>", index)) != -1)
                     {
-                        int index = xmlContent.IndexOf("<action_condition>use_files</action_condition>") +
-                                    "<action_condition>use_files</action_condition>".Length;
-
-                        xmlContent = xmlContent.Insert(index, "<action_condition_folder>"+ modFolder + @"Trainers" + "</action_condition_folder>");
-                    }
-
-                    if (xmlContent.Contains("<action_condition>change_value</action_condition>"))
-                    {
-                        int index = xmlContent.IndexOf("<action_condition>change_value</action_condition>") +
-                                    "<action_condition>change_value</action_condition>".Length;
-
-                        xmlContent = xmlContent.Insert(index, "<action_condition_folder></action_condition_folder>");
+                        xmlContent = xmlContent.Insert(index + "</action_condition>".Length, "\n<action_condition_folder>" + modFolder + @"Trainers" + "</action_condition_folder>");
+                        index += "</action_condition>".Length + "\n<action_condition_folder>".Length;
                     }
 
                     writer.WriteLine(xmlContent);
