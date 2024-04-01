@@ -1,0 +1,743 @@
+<!-- battle_status
+0 = Ok
+1 = Ko
+
+4 = Sleep
+8 = Poison
+16 = Sadness
+32 = Fury
+64 = Confusion
+128 = Silence
+512 = Slow
+1024 = Stop
+2048 = Frog
+4096 = Mini
+8192 = Slow
+16384 = Petrified
+2097152 = Death penalty
+8388608 = Fury
+33554432 = Paralysis
+67108864 = Darkness
+
+256 = Haste
+536870912 = Resist
+32768 = Regen
+65536 = Barrier
+131072 = Magic Barrier
+262144 = Reflection
+196608 = Wall
+1048576 = Shield
+196864 = Super Guard
+268435456 = Death Shield
+
+for cumulative status you need to add the vaulues, for exemple poison+frog+regen = 8+2048+32768 = 34824
+-->
+
+<!-- special_localisation
+1 = in fied
+2 = in battle
+3 = in worldmap
+5 = in menu + in field (remain 3 if in worldmap)
+20 = loading / new game screen
+27 = opening credit
+-->
+
+<!-- party_member
+0 = cloud
+1 = barret
+2 = tifa
+3 = aerith
+4 = red 13
+5 = yuffie
+6 = caith sith
+7 = vincent
+8 = cid	
+255 = none
+-->
+
+<!-- item_type
+1 = Hi-Potion\Iron Bangle
+2 = X-Potion\Titan Bangle
+3 = Ether\Mythril Armlet
+4 = Turbo Ether\Carbon Bangle
+5 = Elixir\Silver Armlet
+6 = Megalixir\Gold Armlet
+7 = Pheonix Down\Diamond Bangle
+8 = Antidode\Crystal Bangle
+9 = Soft\Platinum Bangle
+10 = Maiden's Kiss\Rune Armlet
+11 = Cornucopia\Edincoat
+12 = Echo Screen\Wizard Bracelet
+13 = Hyper\Adaman Bangle
+14 = Tranquilizer\Gigas Armlet
+15 = Remedy\Imperial Guard
+16 = Smoke Bomb\Aegis Armlet
+17 = Speed Drink\Fourth Bracelet
+18 = Hero Drink\Warrior Bangle
+19 = Vaccine\Shinra Beta
+20 = Grenade\Shinra Alpha
+21 = Shrapnel\Four Slots
+22 = Right Arm\Fire Armlet
+23 = Hourglass\Aurora Armlet
+24 = Kiss of Death\Bolt Armlet
+25 = Spider web\Dragon Armlet
+26 = Dream Powder\Minerva band
+27 = Mute Mask\Escord Guard
+28 = War Gong\Mystil
+29 = Loco Weed\Ziedrich
+30 = Fire Fang\Precious Watch
+31 = Fire Vail\Chocobracelet
+32 = Anarctic Wind\Power Wrist
+33 = Ice Crystal\Protect Vest
+34 = Blot Plume\Earring
+35 = Swift Bolt\Talisman
+36 = Earth Drum\Choco Feather
+37 = Earth Mallet\Amulet
+38 = Deadly Waist\Champion Belt
+39 = M-Tentacle\Poison Ring
+40 = Stardust\Tough Ring
+41 = Vampire Fang\Circlet
+42 = Ghost Hand\Star Pendant
+43 = Vagyrisk Claw\Silver Glasses
+44 = Light Curtain\Headband
+45 = Lunar Curtain\Fairy Ring
+46 = Mirror\Gem Ring
+47 = Holy Torch\White Cape
+48 = Bird Wing\Sprint Shoes
+49 = Dragon Scales\Peace Ring
+50 = Impalor\Ribbon
+51 = Shrivel\Fire Ring
+52 = Eye Drop\Ice Ring
+53 = Molotov\Bolt Ring
+54 = S-Mine\TetraElement
+55 = 8-Inch Cannon/Safety Bit
+56 = GraviBall\Fury Ring
+57 = T/S Bomb\Curse Ring
+58 = Ink\Protect Ring
+59 = Dazers\Cat's Bell
+60 = Dragon Fang\Reflect Ring
+61 = Cauldron\Water Ring
+62 = Sylkis Greens\Snake Glove
+63 = Reagan Greens\HypnoCrown
+64 = Mimett Greens
+65 = Curiel Greens
+66 = Phasana Greens
+67 = Tantal Greens
+68 = Krakka Greens
+69 = Gysahl Greens
+70 = Tent
+71 = Power Source
+72 = Guard Source
+73 = Magic Source
+74 = Mind Source
+75 = Speed Source
+76 = Luck Source
+77 = Zeio Nut
+78 = Carub Nut
+79 = Porov Nut
+80 = Pram Nut
+81 = Lasan Nut
+82 = Saraha Nut
+83 = Luchile Nut
+84 = Pepio Nut
+85 = Battery
+86 = Tissue
+87 = OmniSlash
+88 = Catastrophe
+89 = Final Heaven
+90 = Great Gospel
+91 = CosmoMemory
+92 = All Creation
+93 = Chaos
+94 = HighWind
+95 = 1/35 Soldier	
+96 = Super Sweeper
+97 = Masamune Blade
+98 = Save Crystal
+99 = Combat Diary
+100 = AutoGraph
+101 = Gambler
+102 = Desert Rose
+103 = Earth Harp
+104 = Guide Book
+128 = Buster Sword
+129 = Mythril Saber
+130 = Hardedge
+131 = Butterfly Edge
+132 = Enhance Sword
+133 = Organics
+134 = Crystal Sword
+135 = Force Stealer
+136 = Rune Blade
+137 = Murasame
+138 = Nail Bat
+139 = Yoshiyuki
+140 = Apocalypse
+141 = Heaven's Cloud
+142 = Ragnarok
+143 = Ultima Weapon
+144 = Leather Glove
+145 = Metal Knockle
+146 = Mythril Claw
+147 = Grand Glove
+148 = Tiger Fang
+149 = Diamond Knockle
+150 = Dragon Claw
+151 = Crystal Glove
+152 = Motor Drive
+153 = Platinum Fist
+154 = Kaiser Knockle
+155 = Work Glowe
+156 = PowerSoul
+157 = Master Fisr
+158 = God's Hand
+159 = Premium Hart
+160 = Gatling Gun
+161 = Assult Gun
+162 = Cannon Ball
+163 = Atomic Sissors
+164 = Heavy Vulcan
+165 = Chainsaw
+166 = Microlaser
+167 = A-M Cannon
+168 = W Maschine Gun
+169 = Drill Arm
+170 = Solid Bazooka
+171 = Rocket Punch
+172 = Enemy Launcher
+173 = Pile Banger
+174 = Max Ray
+175 = Missing Score
+176 = Mythril Clip
+177 = Diamond Pin
+178 = Silver Barretta
+179 = Gold Barretta
+180 = Adaman Clip
+181 = Crystal Comb
+182 = Magic Comb
+183 = Plus Barretta
+184 = Centclip
+185 = Hairpin
+186 = Seraph Comb
+187 = Begemoth Horn
+188 = Spring Gun Clip
+189 = Limited Mood
+190 = Guard Stick
+191 = Hythril Rod
+192 = Full Metal Staff
+193 = Striking Staff
+194 = Prism Staff
+195 = Aurora Rod
+196 = Wizard Staff
+197 = Wizer Staff
+198 = Fairy Tale
+199 = Umbrella
+200 = Princess Guard
+201 = Spear
+202 = Slach Lance
+203 = Trident
+204 = Mast Ax
+205 = Partisan
+206 = Viper Halberd
+207 = Javelin
+208 = Grow Lance
+209 = Mop
+210 = Dragon Lance
+211 = Scimitar
+212 = Flayer
+213 = Spirit Lance
+214 = Venus Gospel
+215 = 4-Point Shuriken	
+216 = Boomerang
+217 = Pinwheel
+218 = Razor Ring
+219 = Hawkeye
+220 = Crystal Cross
+221 = Wind Slash
+222 = Rwin Viper
+223 = Spiral Shuriken
+224 = Superball
+225 = Magic Shuriken
+226 = Rising Sun
+227 = Oritsuro
+228 = Conformer
+229 = Yellow M-Phone
+230 = Green M-Phone
+231 = Blue M-Phone
+232 = Red M-Phone
+233 = Crystal M-Phone
+234 = White M-Phone
+235 = Black M-Phone
+236 = Silver M-Phone
+237 = Trumpet Shell
+238 = Gold M-Phone
+239 = Battle Trumpet
+240 = Starlight Phone
+241 = HP Shout
+242 = Quicksilver
+243 = Shotgun
+244 = Shortbarrel
+245 = Lariat
+246 = Winchester
+247 = Peacemeaker
+248 = Buntline
+249 = Long Barrel R
+250 = Silver Rifle
+251 = Sniper CR
+252 = Supershot ST
+253 = Outsider
+254 = Death Penalty
+-->
+
+
+<conditions>
+	<condition>
+		<name>gils</name>
+		<bytes>4</bytes>
+		<F>F3A5F4</F>
+		<E>DC08B4</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>cloud_weapon</name>
+		<bytes>1</bytes>
+		<F>F39AE8</F>
+		<E>DBFDA8</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>cid_weapon</name>
+		<bytes>1</bytes>
+		<F>F39F08</F>
+		<E>DC01C8</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>aerith_weapon</name>
+		<bytes>1</bytes>
+		<F>F39C74</F>
+		<E>DBFF34</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>field_number</name>
+		<bytes>4</bytes>
+		<F>D01258</F>
+		<E>CC15D0</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>game_time</name>
+		<bytes>4</bytes>
+		<F>F3A5F8</F>
+		<E>DC08B8</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>is_in_battle</name><!-- 1 if in battle // 0 if not in battle -->
+		<bytes>1</bytes>
+		<F>9AA8E8</F>
+		<E>9A8AF8</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>special_localisation</name>
+		<bytes>2</bytes>
+		<F>CC17CC</F>
+		<E>CBF9DC</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_1_battle_status</name>
+		<bytes>4</bytes>
+		<F>9ACECC</F>
+		<E>9AB0DC</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_1_battle_status_animation</name>
+		<bytes>4</bytes>
+		<F>BF41B0</F>
+		<E>BF23C0</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_2_battle_status</name>
+		<bytes>4</bytes>
+		<F>9ACF34</F>
+		<E>9AB144</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_2_battle_status_animation</name>
+		<bytes>4</bytes>
+		<F>BF4224</F>
+		<E>BF2434</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_3_battle_status</name>
+		<bytes>4</bytes>
+		<F>9ACF9C</F>
+		<E>9AB1AC</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_3_battle_status_animation</name>
+		<bytes>4</bytes>
+		<F>BF4298</F>
+		<E>BF24A8</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_1_battle_current_hp</name>
+		<bytes>2</bytes>
+		<F>9ACEF8</F>
+		<E>9AB108</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_2_battle_current_hp</name>
+		<bytes>2</bytes>
+		<F>9ACF60</F>
+		<E>9AB170</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_3_battle_current_hp</name>
+		<bytes>2</bytes>
+		<F>9ACFC8</F>
+		<E>9AB1D8</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_1_battle_current_mp</name>
+		<bytes>2</bytes>
+		<F>9ACEF4</F>
+		<E>9AB104</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_2_battle_current_mp</name>
+		<bytes>2</bytes>
+		<F>9ACF5C</F>
+		<E>9AB16C</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_3_battle_current_mp</name>
+		<bytes>2</bytes>
+		<F>9ACFC4</F>
+		<E>9AB1D4</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_1</name>
+		<bytes>1</bytes>
+		<F>F39F70</F>
+		<E>DC0230</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_2</name>
+		<bytes>1</bytes>
+		<F>F39F71</F>
+		<E>DC0231</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>party_member_3</name>
+		<bytes>1</bytes>
+		<F>F39F72</F>
+		<E>DC023</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>cloud_level</name>
+		<bytes>1</bytes>
+		<F>F39ACD</F>
+		<E>DBFD8D</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>barret_level</name>
+		<bytes>1</bytes>
+		<F>F39B51</F>
+		<E>DBFE11</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>tifa_level</name>
+		<bytes>1</bytes>
+		<F>F39BD5</F>
+		<E>DBFE95</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>aerith_level</name>
+		<bytes>1</bytes>
+		<F>F39C59</F>
+		<E>DBFF19</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>red_13_level</name>
+		<bytes>1</bytes>
+		<F>F39CDD</F>
+		<E>DBFF9D</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>yuffie_level</name>
+		<bytes>1</bytes>
+		<F>F39D61</F>
+		<E>DC0021</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>caith_sith_level</name>
+		<bytes>1</bytes>
+		<F>F39DE5</F>
+		<E>DC00A5</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>vincent_level</name>
+		<bytes>1</bytes>
+		<F>F39E69</F>
+		<E>DC0129</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>cid_level</name>
+		<bytes>1</bytes>
+		<F>F39EED</F>
+		<E>DC01AD</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_1_current_hp</name>
+		<bytes>2</bytes>
+		<F>9AD098</F>
+		<E>9AB2A8</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_2_current_hp</name>
+		<bytes>2</bytes>
+		<F>9AD100</F>
+		<E>9AB310</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_3_current_hp</name>
+		<bytes>2</bytes>
+		<F>9AD168</F>
+		<E>9AB378</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_4_current_hp</name>
+		<bytes>2</bytes>
+		<F>9AD1D0</F>
+		<E>9AB3E0</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_5_current_hp</name>
+		<bytes>2</bytes>
+		<F>9AD238</F>
+		<E>9AB448</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_6_current_hp</name>
+		<bytes>2</bytes>
+		<F>9AD2A0</F>
+		<E>9AB4B0</E>
+		<G></G>
+		<S></S>
+	</condition>
+		<condition>
+		<name>ennemy_1_current_mp</name>
+		<bytes>2</bytes>
+		<F>9AD094</F>
+		<E>9AB2A4</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_2_current_mp</name>
+		<bytes>2</bytes>
+		<F>9AD0FC</F>
+		<E>9AB30C</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_3_current_mp</name>
+		<bytes>2</bytes>
+		<F>9AD164</F>
+		<E>9AB374</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_4_current_mp</name>
+		<bytes>2</bytes>
+		<F>9AD1CC</F>
+		<E>9AB3DC</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_5_current_mp</name>
+		<bytes>2</bytes>
+		<F>9AD234</F>
+		<E>9AB444</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>ennemy_6_current_mp</name>
+		<bytes>2</bytes>
+		<F>9AD29C</F>
+		<E>9AB4AC</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_1_number</name>
+		<bytes>1</bytes>
+		<F>F39F75</F>
+		<E>DC0235</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_1_type</name>
+		<bytes>1</bytes>
+		<F>F39F74</F>
+		<E>DC0234</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_2_number</name>
+		<bytes>1</bytes>
+		<F>F39F77</F>
+		<E>DC0237</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_2_type</name>
+		<bytes>1</bytes>
+		<F>F39F76</F>
+		<E>DC0236</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_3_number</name>
+		<bytes>1</bytes>
+		<F>F39F79</F>
+		<E>DC0239</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_3_type</name>
+		<bytes>1</bytes>
+		<F>F39F78</F>
+		<E>DC0238</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_4_number</name>
+		<bytes>1</bytes>
+		<F>F39F7B</F>
+		<E>DC023B</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_4_type</name>
+		<bytes>1</bytes>
+		<F>F39F7A</F>
+		<E>DC023A</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_5_number</name>
+		<bytes>1</bytes>
+		<F>F39F7D</F>
+		<E>DC023D</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_5_type</name>
+		<bytes>1</bytes>
+		<F>F39F7C</F>
+		<E>DC0234C</E>
+		<G></G>
+		<S></S>
+	</condition>
+<!-- each item is the same address logic -->
+	<condition>
+		<name>item_320_number</name>
+		<bytes>1</bytes>
+		<F>F3A1F3</F>
+		<E>DC04B3</E>
+		<G></G>
+		<S></S>
+	</condition>
+	<condition>
+		<name>item_320_type</name>
+		<bytes>1</bytes>
+		<F>F3A1F2</F>
+		<E>DC04B2</E>
+		<G></G>
+		<S></S>
+	</condition>
+</conditions>

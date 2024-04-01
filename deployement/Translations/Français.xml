@@ -21,15 +21,15 @@
 	</control>
 	<control>
 		<name>errorloadingmod</name>
-		<text>Erreur lors du chargement du mod, vérifiez le dossier  :  </text>
+		<text>Erreur lors du chargement du mod, vérifiez le dossier : </text>
 	</control>
 	<control>
 		<name>errorloadingmodtranslation</name>
-		<text>Erreur lors du chargement de la traduction du mod (la traduction anglaise est obligatoire), vérifiez le dossier  :  </text>
+		<text>Erreur lors du chargement de la traduction du mod (la traduction anglaise est obligatoire), vérifiez le dossier : </text>
 	</control>
 	<control>
 		<name>errorloadingtransfile</name>
-		<text>Erreur lors du chargement du fichier  :  </text>
+		<text>Erreur lors du chargement du fichier : </text>
 	</control>
 	<control>
 		<name>norulmod</name>
@@ -41,16 +41,24 @@
 	</control>
 	<control>
 		<name>restorekb</name>
-		<text>Êtes-vous sur de vouloir restaurer les contrôles par défaut ?</text>
+		<text>Êtes-vous sûr de vouloir restaurer les contrôles par défaut ?</text>
 	</control>
 	<control>
 		<name>restorenp</name>
-		<text>Êtes-vous sur de vouloir restaurer les contrôles sans pavé numérique ?</text>
+		<text>Êtes-vous sûr de vouloir restaurer les contrôles sans pavé numérique ?</text>
 	</control>
 	<control>
 		<name>presetchange</name>
-		<text>Êtes-vous sur de vouloir charger ces réglages ?
+		<text>Êtes-vous sûr de vouloir charger ces réglages ?
 Cela va remplacer vos réglages actuels (seul les réglages des parties gameplay et audio sont conservés.)</text>
+	</control>
+	<control>
+		<name>makeDebugPack</name>
+		<text>Créer une archive de débug (à fournir en cas de report de bug)</text>
+	</control>
+	<control>
+		<name>dbgArchiv</name>
+		<text>Pack de débug bien créé</text>
 	</control>
 	
 	
@@ -121,7 +129,7 @@ Cela va remplacer vos réglages actuels (seul les réglages des parties gameplay
 	</control>
 	<control>
 		<name>packStory</name>
-		<text>Le projet FF7 SYW est un pack comprenant le jeu Final Fantasy VII retraduit intégralement avec retraitement graphique grâce à de l'intelligence artificielle avancée sur les images de fonds, combats, mappemonde, mini-jeux et séquences vidéos, d’autres éléments ont également été recréés tout en préservant l'essence originelle du jeu.
+		<text>Le projet FF7 SYW est un pack comprenant le jeu Final Fantasy VII retraduit intégralement avec retraitement graphique grâce à de l'intelligence artificielle avancée sur les images de fonds, combats, carte du monde, mini-jeux, séquences vidéos et d’autres éléments ont également été recréés tout en préservant l'essence originelle du jeu.
 		
 De plus, le pack contient diverses options de configuration poussées et patchs divers comme les fonctions de sauvegarde en tout lieu, se déplacer automatiquement en courant, désactiver les combats aléatoires, l’avance rapide, des défis et mods de difficulté en tout genre... Tout ça pour offrir une expérience et un confort de jeu inédit.</text>
 	</control>	
@@ -140,9 +148,9 @@ De plus, le pack contient diverses options de configuration poussées et patchs 
 		<text>Scènes du jeu HD</text>
 		<help>Textures des scènes du jeu retraitées en HD.
 		
-La base est traitée avec une IA ESRGan.
+La base est traitée avec une IA ESRGAN.
 
-Les extensions en 16/9 ont été faite par Comos via son mod Limit Break.
+Les extensions en 16/9 ont été faite par Cosmos via son mod Limit Break.
 
 Beaucoup d'optimisations à la main.
 
@@ -157,9 +165,9 @@ Il est conseillé d'activer cette option.</help>
 		<text>Animations avancées</text>
 		<help>Permet de rétablir les animations d'origine des scènes du jeu avec des textures HD.
 		
-Par exemple la cascade de la maison de Aérith et pas mal d'effets de lumières.
+Par exemple, la cascade de la maison d'Aérith et pas mal d'effets de lumières.
 
-Les extensions en 16/9 ont été faite par Comos via son mod Limit Break.
+Les extensions en 16/9 ont été faite par Cosmos via son mod Limit Break.
 
 Cela prend pas mal de puissance, si vous constatez des ralentissements en jeu, il est conseillé de désactiver cette option.
 </help>
@@ -171,11 +179,11 @@ Cela prend pas mal de puissance, si vous constatez des ralentissements en jeu, i
 		<text>Scènes de combat HD</text>
 		<help>Textures des scènes de combat retraitées en HD.
 		
-La base est traitée avec une IA ESRGan plus des optimisations à la main.
+La base est traitée avec une IA ESRGAN plus des optimisations à la main.
 
 Cela améliore grandement les textures du jeu d'origine.
 
-La géométrie et les bug d'éclairages du jeu d'origine ont été corrigé par AxlRose. 
+La géométrie et les bugs d'éclairages du jeu d'origine ont été corrigé par AxlRose. 
 
 Il est conseillé d'activer cette option.</help>
 		<author>Satsuki_Yatoshi et AxlRose</author>
@@ -184,7 +192,7 @@ Il est conseillé d'activer cette option.</help>
 	<control>
 		<name>axl3dbattle</name>
 		<text>AxlRose's Blender</text>
-		<help>Correction de la 3D des scenes de combat.
+		<help>Correction de la 3D des scènes de combat.
 		
 Corrige les effets d'ombre et de lumière du sol des environnements de combat.
 
@@ -200,7 +208,7 @@ Il est conseillé d'activer cette option.
 		<text>Magies de combat HD</text>
 		<help>Textures des magies et effets en combat refaits en 3D.
 		
-La grande majorité des textures est refaite de zéro mais certains éléments ont été retraités en HD avec une IA ESRGan.
+La grande majorité des textures sont refaite de zéro mais certains éléments ont été retraités en HD avec une IA ESRGAN.
 
 Cela modernise le jeu d'origine sans le dénaturer.
 
@@ -214,7 +222,7 @@ Il est conseillé d'activer cette option.
 		<text>Carte du monde HD</text>
 		<help>Textures de la carte du monde retraitées en HD.
 		
-La base est traitée avec une IA ESRGan plus des optimisations à la main.
+La base est traitée avec une IA ESRGAN plus des optimisations à la main.
 
 Cela améliore grandement les textures du jeu d'origine.
 
@@ -225,7 +233,7 @@ Il est conseillé d'activer cette option.</help>
 	<control>
 		<name>graphicsCosmosGaia</name>
 		<text>Cosmos Gaia mod</text>
-		<help>Refonte de la carte du monde qui réimplémente le rendu du terrain pour ajouter des commandes de mouvement et de caméra analogiques, un éclairage en temps réel et une distance de vue étendue et variable (avec les L2/R2).
+		<help>Refonte de la carte du monde qui réimplémente le rendu du terrain pour ajouter des commandes de mouvements et de caméra analogique, un éclairage en temps réel et une distance de vue étendue et variable (avec les L2/R2).
 
 Vous devez utiliser l'option 'contrôleur analogique', sinon cela ne fonctionnera pas (section 'Pilote et patchs').
 
@@ -239,7 +247,7 @@ Il est recommandé d'activer cette option dès lors que vous utilisez un contrô
 		<author>Aavock, Satsuki_Yatoshi, jtd</author>
 		<help>Textures des mini-jeux refaites en HD.
 		
-La grande majorité des textures est refaite de zéro, mais certains éléments ont été retraités en HD avec une IA ESRGan.
+La grande majorité des textures sont refaite de zéro, mais certains éléments ont été retraités en HD avec une IA ESRGAN.
 
 Cela modernise le jeu d'origine sans le dénaturer.
 
@@ -254,7 +262,7 @@ Il est conseillé d'activer cette option.</help>
 
 Cette option est conseillée que ce soit avec les textures d'origine ou les textures HD.
 
-Si vous utilisez des mods tiers qui ne sont pas des convertions HD du jeux original mais des textures faites de zéro, cette option peut fausser les couleurs.		
+Si vous utilisez des mods tiers qui ne sont pas des conversions HD du jeux original mais des textures refaites de zéro, cette option peut fausser les couleurs.		
 		</help>
 		<url></url>
 	</control>
@@ -264,7 +272,7 @@ Si vous utilisez des mods tiers qui ne sont pas des convertions HD du jeux origi
 		<author>FFNx team</author>
 		<help>Cette option ajoute des ombres sur les modèles 3D du jeu.
 		
-Cela donne une vrai présence aux modèles 3D, que ce soit ceux d'origines ou les modèles tiers.
+Cela donne une vrai présence aux modèles 3D, que ce soit ceux d'origine ou les modèles tiers.
 
 Il faut un pc correct pour ne pas subir de ralentissement en jeu avec cette option.
 
@@ -281,7 +289,7 @@ Quelques rares bugs d'ombrage sont possibles mais la qualité apportée par cett
 	</control>
 	<control>
 		<name>graphicsGroupModels3Dw</name>
-		<text>Modèles 3D de la mappemonde</text>
+		<text>Modèles 3D de la carte du monde</text>
 	</control>
 	<control>
 		<name>graphicsGroupModels3Dm</name>
@@ -340,7 +348,7 @@ Quelques rares bugs d'ombrage sont possibles mais la qualité apportée par cett
 		
 Ensuite cliquez sur une piste dans la liste pour l'écouter.
 
-Cela peut prendre quelques instants pour ce lancer.</text>
+Cela peut prendre quelques instants pour se lancer.</text>
 	</control>
 	<control>
 		<name>soundFrame2</name>
@@ -457,15 +465,15 @@ Surtout utile en jeu fenêtré.</help>
 		<name>FFNxGroupRatio</name>
 		<text>Format d'affichage</text>
 		<author>FFNx team</author>
-		<help>Vous pouvez choisir différents formats (ratio) d'affichage) du jeu : 
+		<help>Vous pouvez choisir différents formats (ratio) d'affichage du jeu : 
 		
 • 4/3 comme le jeu d'origine.
 
 • 16/9 étiré, pas de bug connu mais l'image est verticalement écrasée.
 
-• 16/9 réel, modifie le moteur du jeu afin d'avoir un vrai 16/9 partout ou cela est possible, quelques bugs (non bloquants) peuvent apparaître.
+• 16/9 réel, modifie le moteur du jeu afin d'avoir un vrai 16/9 partout où cela est possible, quelques bugs (non bloquants) peuvent apparaître.
 
-• 16/10 réel, modifie le moteur du jeu afin d'avoir un vrai 16/10 partout ou cela est possible, idéal pour le steam deck, option expérientale.
+• 16/10 réel, modifie le moteur du jeu afin d'avoir un vrai 16/10 partout où cela est possible, idéal pour le steam deck. Option expérimentale.
 </help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
@@ -475,7 +483,7 @@ Surtout utile en jeu fenêtré.</help>
 	</control>
 	<control>
 		<name>strechedwidescreen</name>
-		<text>16/9 Étiré</text>
+		<text>16/9 étiré</text>
 	</control>
 	<control>
 		<name>realwidescreen</name>
@@ -502,7 +510,7 @@ Si vous voyez des lignes parasites sur certains éléments du jeu (rare mais peu
 		<author>FFNx team</author>
 		<help>Active la synchronisation verticale de l'écran.
 		
-Permet d'éviter les déchirements d'images en jeu, mais limite la vitesse du speedhack au taux de refraichissement de l'écran.</help>
+Permet d'éviter les déchirements d'images en jeu, mais limite la vitesse du speedhack au taux de rafraîchissement de l'écran.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
@@ -524,16 +532,16 @@ Je conseille de ne pas dépasser x4 sur L'anti-aliasing également</help>
 		
 La différence de rendu en jeu est plus ou moins flagrante selon les mods utilisés.
 
-Je vous conseille d'activer cette option par defaut.</help>
+Je vous conseille d'activer cette option par défaut.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxGroupHDR</name>
 		<text>HDR Nits</text>
 		<author>FFNx team</author>
-		<help>Permet de préciser la valeur maximale du HDR de votre écran au cas où le rendu automatique ne soit pas optimal.
+		<help>Permet de régler la valeur maximale de l'HDR de votre écran au cas où le rendu automatique ne soit pas optimal.
 		
-Cette option est ignorée si votre écran ne supporte pas le HDR (ou qu'il n'est pas activé dans windows).</help>
+Cette option est ignorée si votre écran ne supporte pas l'HDR (ou qu'il n'est pas activé dans windows).</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
@@ -542,7 +550,7 @@ Cette option est ignorée si votre écran ne supporte pas le HDR (ou qu'il n'est
 		<author>FFNx team</author>
 		<help>Vous pouvez choisir le nombre de canaux audio pour le jeu.
 
-Ce n'est pas parce-que vous choisissez du multicanaux qu'ils seront tous utilisés, cela dépend des mods audios et de leurs configurations. 
+Ce n'est pas parce que vous choisissez du multicanaux qu'ils seront tous utilisés, cela dépend des mods audios et de leurs configurations. 
 		
 Si vous n'êtes pas sûr laissez sur automatique.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
@@ -565,7 +573,7 @@ Cela permet de ne pas avoir la musique qui reprend de zéro après chaque combat
 	</control>
 	<control>
 		<name>FFNxAnalogController</name>
-		<text>Contôleur analogique</text>
+		<text>Contrôleur analogique</text>
 		<author>FFNx team</author>
 		<help>Si vous jouez avec une manette de jeu avec un stick analogique, cette option permet de l'utiliser dans les menus et pour les déplacements (en plus de la croix directionnelle).
 		
@@ -576,12 +584,12 @@ Cela ajoute également un contrôle de la caméra en combat avec le stick de gau
 		<name>FFNxAnalogControllerArun</name>
 		<text>Course automatique</text>
 		<author>FFNx team</author>
-		<help>Si vous jouez avec une manette de jeu avec un stick analogique, celle option permet de courrir ou de marcher selon l'inclinaison du stick.</help>
+		<help>Si vous jouez avec une manette de jeu avec un stick analogique, cette option permet de courir ou de marcher selon l'inclinaison du stick.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNXSteamSucces</name>
-		<text>Succès Steam</text>
+		<text>Succès steam</text>
 		<author>FFNx team</author>
 		<help>Vous permet d'obtenir les succès steam de FF7 avec ce pack.
 		
@@ -603,7 +611,7 @@ Cela est pris en compte uniquement si l'option "contrôleur analogique" est acti
 		<author>FFNx team</author>
 		<help>Vous pouvez utiliser un speedhack (avance rapide) en jeu (voir l'aide générale).
 
-Si vous utilisez l'option de synchronisation verticale, la vitesse du speedhack sera limitée par la taux de rafraichissement de l'écran (par exemple, le jeu de base est en 30 fps, si votre écran est en 60 Hz, le speedhack pourra accélérer le jeu en 2x maximum).
+Si vous utilisez l'option de synchronisation verticale, la vitesse du speedhack sera limitée par la taux de rafraîchissement de l'écran (par exemple, si le jeu de base est en 30 fps et votre écran en 60 Hz, le speedhack pourra accélérer le jeu en 2x maximum).
 
 La vitesse maximale du speedhack est également limitée par la puissance du pc.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
@@ -612,15 +620,15 @@ La vitesse maximale du speedhack est également limitée par la puissance du pc.
 		<name>FFNxGroupFps</name>
 		<text>Fluidité du jeu (fps)</text>
 		<author>FFNx team</author>
-		<help>D'origine la fluidité de FF7 est limitée, les menus sont en 60 fps, mais les scènes de jeu sont en 30 fps et les combats en 15 fps.
+		<help>D'origine la fluidité de FF7 est limitée, les menus sont en 60 fps mais les scènes de jeu sont en 30 fps et les combats en 15 fps.
 		
 Grâce à cette option vous pouvez choisir de fluidifier les combats en 30 fps ou d'avoir le jeu complet en 60 fps.
 		
-L'option d'avoir les combats en 30 fps nécéssite d'avoir des modèles de combats interpolés.
+L'option d'avoir les combats en 30 fps nécessite d'avoir des modèles de combats interpolés.
 		
-L'option du jeu en 60 fps necessite également des modèles interpolés (ceux des scènes du jeu) mais aussi quelques patch du jeu pour éviter des bugs (mineurs) dans certaines scènes.
+L'option du jeu en 60 fps nécessite également des modèles interpolés (ceux des scènes du jeu) mais aussi quelques patchs du jeu pour éviter des bugs (mineurs) dans certaines scènes.
 		
-les modèles 3D inclus dans le pack sont déjà interpolés.
+Les modèles 3D inclus dans le pack sont déjà interpolés.
 
 Les scènes du jeu en français, anglais et allemand sont patchées également.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
@@ -644,20 +652,20 @@ On y trouve les fps, la version du pilote, l'utilisation mémoire ...</help>
 	</control>
 	<control>
 		<name>FFNxDebugTool</name>
-		<text>Outil de debug</text>
+		<text>Outil de débug</text>
 		<author>FFNx team</author>
 		<help>Permet d'activer l'outil de débug dans une fenêtre en surimpression du jeu.
 		
 Cette fenêtre peut être affichée ou masquée à l'aide de la touche F12 du clavier.
 
-On y trouve, entre autres, un outil de téléportation, des informations sur l'écran et la gestion des ombres des modèles 3D.</help>
+On y trouve entre autres, un outil de téléportation, des informations sur l'écran et la gestion des ombres des modèles 3D.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
 		<name>FFNxLogs</name>
 		<text>Logs complets</text>
 		<author>FFNx team</author>
-		<help>A n'utiliser que en cas de bug important et uniquement si l'auteur du pack ou de FFNx vous le demande.
+		<help>À n'utiliser qu'en cas de bug important et uniquement si l'auteur du pack ou de FFNx vous le demande.
 		
 Cela consomme énormément de ressources, mais permet de loguer toutes les informations du pilote du jeu.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
@@ -673,16 +681,16 @@ Ces bruits peuvent être adaptés au type de sol si vous utilisez un mod audio q
 	</control>
 	<control>
 		<name>FFNxNoCd</name>
-		<text>No-CD</text>
+		<text>No-cd</text>
 		<author>Satsuki_Yatoshi</author>
-		<help>Applique un patch no-CD a l'exécutable du jeu avant son lancement.
+		<help>Applique un patch no-cd à l'exécutable du jeu avant son lancement.
 		
-Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
+Cela permet de ne pas avoir besoin d'insérer un cd de FF7 pour jouer.</help>
 		<url></url>
 	</control>
 	<control>
 		<name>FFNxGroupAlphaDiag</name>
-		<text>Transparence des fenêtres (dialogues / combat)</text>
+		<text>Transparence des fenêtres (dialogues/combats)</text>
 		<author>Team FFNx</author>
 		<help>Permet de choisir un niveau de transparence pour le fond des fenêtres de dialogue et de combat.</help>
 		<url></url>
@@ -973,7 +981,7 @@ Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
 	</control>
 	<control>
 		<name>unknownExe</name>
-		<text>Cet executable de FF7 n'est pas reconnu, impossible d'utiliser un patch noCd</text>
+		<text>Cet exécutable de FF7 n'est pas reconnu, impossible d'utiliser un patch no-cd</text>
 	</control>
 	<control>
 		<name>ffnxConfigFile</name>
@@ -982,7 +990,7 @@ Cela permet de ne pas avoir besoin d'insérer un CD de FF7 pour jouer.</help>
 		<control>
 		<name>quit</name>
 		<text>Le chargement peut prendre du temps selon les options choisies et la puissance de l'ordinateur
-Êtes vous sur vouloir quitter ?</text>
+Êtes vous sûr de vouloir quitter ?</text>
 	</control>
 </translation>
 

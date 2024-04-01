@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<translation>
+    <control>
+        <text>Adaptive NinoStyle Weapons</text>
+        <help>Adaptive NinoStyle Weapons:
+
+Cloud, Aerith, and Cid's 3D models have their equipped weapons visible whether in-game scenes or on the worldmaps.
+
+/!\ Only use this if you are using NinoStyle models for fields and worldmaps.</help>
+        <author>Nino and Satsuki_Yatoshi</author>
+        <url></url>
+        <compatibily>FEG</compatibily>
+    </control>
+</translation>

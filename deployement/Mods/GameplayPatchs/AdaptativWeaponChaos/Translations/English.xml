@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<translation>
+    <control>
+        <text>Adaptive ChaOs Weapons</text>
+        <help>Adaptive ChaOs Weapons:
+
+Cloud's 3D models have their equipped weapons visible whether in-game scenes or on worldmaps.
+
+/!\ Only use this if you are using ChaOs 3D models for fields and worldmaps.</help>
+        <author>Kaldarasha and Satsuki_Yatoshi</author>
+        <url></url>
+        <compatibily>FEG</compatibily>
+    </control>
+</translation>

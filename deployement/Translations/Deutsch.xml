@@ -52,6 +52,14 @@
 		<text>Möchten Sie diese Voreinstellung wirklich laden?
 Es ersetzt alle Ihre aktuellen Einstellungen (nur Spielmechanik- und Audioeinstellungen bleiben erhalten).</text>
 	</control>
+    <control>
+        <name>makeDebugPack</name>
+        <text>Erstellen Sie ein Debug-Paket (Sie müssen es bereitstellen, wenn Sie einen Fehlerbericht erstellen)</text>
+    </control>
+    <control>
+        <name>dbgArchiv</name>
+        <text>Debug-Paket erfolgreich erstellt</text>
+    </control>
 	
 	
 <!--  -->

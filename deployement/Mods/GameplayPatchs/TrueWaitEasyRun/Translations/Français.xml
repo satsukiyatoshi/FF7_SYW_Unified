@@ -2,10 +2,10 @@
 <translation>
 	<control>
 		<text>Combat temps réel facile</text>
-		<help>Combat temps réel facil
+		<help>Combat temps réel facile :
 Ce mod ajuste le système ATB pour attendre les commandes et les animations afin que la saisie des commandes ne soit plus nécessaire.
 
-Notez qu'un personnage avec deux fois plus de vitesse qu'un autre personnage effectuera deux fois plus d'actions, plutôt que de perdre la différence de vitesse lors des animations comme c'est le cas dans dans le jeu original.
+Notez qu'un personnage avec deux fois plus de vitesse qu'un autre personnage effectuera deux fois plus d'actions, plutôt que de perdre la différence de vitesse lors des animations comme c'est le cas dans le jeu original.
 
 Notez qu'avec ce mod, fuir les ennemis est aussi facile qu'avec la version originale.</help>
 		<author>Postscriptthree</author>
