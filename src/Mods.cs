@@ -157,6 +157,11 @@ namespace FF7_SYW_Unified
                 {
                     string xmlContent = File.ReadAllText(modFolder + @"Trainers\Config.xml");
 
+                    while (xmlContent.Contains("##lang##"))
+                    {
+                        xmlContent = xmlContent.Replace("##lang##", @"FilesLang\" + Globals.gameLang +@"\");
+                    }
+
                     int index = 0;
                     while ((index = xmlContent.IndexOf("</action_condition>", index)) != -1)
                     {

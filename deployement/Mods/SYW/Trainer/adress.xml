@@ -296,40 +296,40 @@ for cumulative status you need to add the vaulues, for exemple poison+frog+regen
 		<bytes>4</bytes>
 		<F>F3A5F4</F>
 		<E>DC08B4</E>
-		<G></G>
-		<S></S>
+		<G>F395E4</G>
+		<S>F3B0C4</S>
 	</condition>
 	<condition>
 		<name>cloud_weapon</name>
 		<bytes>1</bytes>
 		<F>F39AE8</F>
 		<E>DBFDA8</E>
-		<G></G>
-		<S></S>
+		<G>F38AD8</G>
+		<S>F3A5B8</S>
 	</condition>
 	<condition>
 		<name>cid_weapon</name>
 		<bytes>1</bytes>
 		<F>F39F08</F>
 		<E>DC01C8</E>
-		<G></G>
-		<S></S>
+		<G>F38EF8</G>
+		<S>F3A9D8</S>
 	</condition>
 	<condition>
 		<name>aerith_weapon</name>
 		<bytes>1</bytes>
 		<F>F39C74</F>
 		<E>DBFF34</E>
-		<G></G>
-		<S></S>
+		<G>F38C64</G>
+		<S>F3A744</S>
 	</condition>
 	<condition>
 		<name>field_number</name>
 		<bytes>4</bytes>
-		<F>D01258</F>
+		<F>CC33C0</F>
 		<E>CC15D0</E>
-		<G></G>
-		<S></S>
+		<G>CC2390</G>
+		<S>CC3E20</S>
 	</condition>
 	<condition>
 		<name>game_time</name>
@@ -456,96 +456,96 @@ for cumulative status you need to add the vaulues, for exemple poison+frog+regen
 		<bytes>1</bytes>
 		<F>F39F70</F>
 		<E>DC0230</E>
-		<G></G>
-		<S></S>
+		<G>F38F60</G>
+		<S>F3AA40</S>
 	</condition>
 	<condition>
 		<name>party_member_2</name>
 		<bytes>1</bytes>
 		<F>F39F71</F>
 		<E>DC0231</E>
-		<G></G>
-		<S></S>
+		<G>F38F61</G>
+		<S>F3AA41</S>
 	</condition>
 	<condition>
 		<name>party_member_3</name>
 		<bytes>1</bytes>
 		<F>F39F72</F>
-		<E>DC023</E>
-		<G></G>
-		<S></S>
+		<E>DC0232</E>
+		<G>F38F62</G>
+		<S>F3AA42</S>
 	</condition>
 	<condition>
 		<name>cloud_level</name>
 		<bytes>1</bytes>
 		<F>F39ACD</F>
 		<E>DBFD8D</E>
-		<G></G>
-		<S></S>
+		<G>F38ABD</G>
+		<S>F3A59D</S>
 	</condition>
 	<condition>
 		<name>barret_level</name>
 		<bytes>1</bytes>
 		<F>F39B51</F>
 		<E>DBFE11</E>
-		<G></G>
-		<S></S>
+		<G>F38B41</G>
+		<S>F3A621</S>
 	</condition>
 	<condition>
 		<name>tifa_level</name>
 		<bytes>1</bytes>
 		<F>F39BD5</F>
 		<E>DBFE95</E>
-		<G></G>
-		<S></S>
+		<G>F38BC5</G>
+		<S>F3A6A5</S>
 	</condition>
 	<condition>
 		<name>aerith_level</name>
 		<bytes>1</bytes>
 		<F>F39C59</F>
 		<E>DBFF19</E>
-		<G></G>
-		<S></S>
+		<G>F38C49</G>
+		<S>F3A729</S>
 	</condition>
 	<condition>
 		<name>red_13_level</name>
 		<bytes>1</bytes>
 		<F>F39CDD</F>
 		<E>DBFF9D</E>
-		<G></G>
-		<S></S>
+		<G>F38CCD</G>
+		<S>F3A7AD</S>
 	</condition>
 	<condition>
 		<name>yuffie_level</name>
 		<bytes>1</bytes>
 		<F>F39D61</F>
 		<E>DC0021</E>
-		<G></G>
-		<S></S>
+		<G>F38D51</G>
+		<S>F3A831</S>
 	</condition>
 	<condition>
 		<name>caith_sith_level</name>
 		<bytes>1</bytes>
 		<F>F39DE5</F>
 		<E>DC00A5</E>
-		<G></G>
-		<S></S>
+		<G>F38DD5</G>
+		<S>F3A8B5</S>
 	</condition>
 	<condition>
 		<name>vincent_level</name>
 		<bytes>1</bytes>
 		<F>F39E69</F>
 		<E>DC0129</E>
-		<G></G>
-		<S></S>
+		<G>F38E59</G>
+		<S>F3A939</S>
 	</condition>
 	<condition>
 		<name>cid_level</name>
 		<bytes>1</bytes>
 		<F>F39EED</F>
 		<E>DC01AD</E>
-		<G></G>
-		<S></S>
+		<G>F38EDD</G>
+		<S>F3A9BD</S>
 	</condition>
 	<condition>
 		<name>ennemy_1_current_hp</name>
@@ -729,15 +729,15 @@ for cumulative status you need to add the vaulues, for exemple poison+frog+regen
 		<bytes>1</bytes>
 		<F>F3A1F3</F>
 		<E>DC04B3</E>
-		<G></G>
-		<S></S>
+		<G>F391E3</G>
+		<S>F3ACC3</S>
 	</condition>
 	<condition>
 		<name>item_320_type</name>
 		<bytes>1</bytes>
 		<F>F3A1F2</F>
 		<E>DC04B2</E>
-		<G></G>
-		<S></S>
+		<G>F391E2</G>
+		<S>F3ACC2</S>
 	</condition>
 </conditions>
