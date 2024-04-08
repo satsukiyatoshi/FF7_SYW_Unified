@@ -329,7 +329,12 @@ namespace FF7_SYW_Unified
                 folderModCopy(Application.StartupPath + @"mods\SYW\Gaia");
             }
 
-            if(FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3)
+            if (FFNxLighting.Checked)
+            {
+                folderModCopy(Application.StartupPath + @"mods\SYW\Lighting");
+            }
+
+            if (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3)
             {
                 Directory.Move(Application.StartupPath + @"Game\widescreen_u", Application.StartupPath + @"Game\widescreen");
                 Directory.Move(Application.StartupPath + @"Mods\SYW\Textures\field", Application.StartupPath + @"Mods\SYW\Textures\field_origin");
