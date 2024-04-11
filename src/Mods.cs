@@ -156,16 +156,18 @@ namespace FF7_SYW_Unified
                 using (StreamWriter writer = new StreamWriter(Application.StartupPath + @"\Mods\SYW\Trainer\config.xml", true))
                 {
                     string xmlContent = File.ReadAllText(modFolder + @"Trainers\Config.xml");
+                    string filesFolder = @"Files\";
 
                     while (xmlContent.Contains("##lang##"))
                     {
-                        xmlContent = xmlContent.Replace("##lang##", @"FilesLang\" + Globals.gameLang +@"\");
+                        xmlContent = xmlContent.Replace("##lang##", "");
+                        filesFolder = @"FilesLang\" + Globals.gameLang + @"\";
                     }
 
                     int index = 0;
                     while ((index = xmlContent.IndexOf("</action_condition>", index)) != -1)
                     {
-                        xmlContent = xmlContent.Insert(index + "</action_condition>".Length, "\n<action_condition_folder>" + modFolder + @"Trainers" + "</action_condition_folder>");
+                        xmlContent = xmlContent.Insert(index + "</action_condition>".Length, "\n<action_condition_folder>" + modFolder + @"Trainers\" + filesFolder + "</action_condition_folder>");
                         index += "</action_condition>".Length + "\n<action_condition_folder>".Length;
                     }
 
