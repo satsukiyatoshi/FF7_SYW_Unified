@@ -1,0 +1,20 @@
+﻿<translation>
+	<control>
+		<text>1 Gil</text>
+		<help>1 Gil:
+
+Mit diesem Schwierigkeitsmodus können Sie kein Geld verdienen, unabhängig von der Methode; Sie werden immer 1 Gil bei sich haben.
+
+Um das Spiel abzuschließen:
+
+• Sie starten das Spiel mit den 3 Batterien, die erforderlich sind, um das Shinra-Gebäude zu betreten.
+
+• Am Eingang des Gold Saucer haben Sie immer 30.000 Gil, mit denen Sie das Zugangsticket kaufen können.
+
+• In der unteren Stadt von Junon haben Sie immer 10 Gil, um den Aufzugswächter zu kaufen.
+</help>
+		<author>Satsuki_Yatoshi</author>
+		<url></url>
+		<compatibily>FEG</compatibily>
+	</control>
+</translation>

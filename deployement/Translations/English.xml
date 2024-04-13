@@ -52,6 +52,14 @@
 		<text>Are you sure you want to load this preset?
 It will replace all your current settings (only gameplay and audio setting are kept).</text>
 	</control>
+    <control>
+        <name>makeDebugPack</name>
+        <text>Make a debug pack (you must provide it if doing a bug report)</text>
+    </control>
+    <control>
+        <name>dbgArchiv</name>
+        <text>Debug pack successfully created</text>
+    </control>
 	
 	
 <!--  -->
@@ -87,7 +95,7 @@ It will replace all your current settings (only gameplay and audio setting are k
 	</control>
 	<control>
 		<name>menuFFNx</name>
-		<text>Driver and Patchs</text>
+		<text>Driver and Patches</text>
 	</control>
 	<control>
 		<name>menuHelp</name>
@@ -123,7 +131,7 @@ It will replace all your current settings (only gameplay and audio setting are k
 		<name>packStory</name>
 		<text>The FF7 SYW project is a pack including Final Fantasy VII with graphical reprocessing thanks to advanced artificial intelligence on background images, fights, world map, mini games and video sequences, other elements have also been recreated while preserving the original essence of the game.
 		
-In addition, the pack contains various advanced configuration options and various patchs such as save-anywhere functions, autorun, disable random battles, fast forward, challenges and difficulty mods of all kinds... all this to offer an unprecedented gaming experience and comfort.
+In addition, the pack contains various advanced configuration options and various patches such as save-anywhere functions, autorun, disable random battles, fast forward, challenges and difficulty mods of all kinds... all this to offer an unprecedented gaming experience and comfort.
 </text>
 	</control>	
 	
@@ -410,7 +418,7 @@ It may take a few moments for playback to begin.
 	</control>
 	<control>
 		<name>gameplayFrame5</name>
-		<text>Gameplay patchs</text>
+		<text>Gameplay patches</text>
 	</control>
 	<control>
 		<name>saveByMod</name>
@@ -433,7 +441,7 @@ It may take a few moments for playback to begin.
 <!--  -->
 	<control>
 		<name>FFNxFrame1</name>
-		<text>Patchs</text>
+		<text>Patches</text>
 	</control>	
 	<control>
 		<name>FFNxFrame2</name>

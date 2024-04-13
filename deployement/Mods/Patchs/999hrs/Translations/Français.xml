@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>999 Heures</text>
-		<help>999 Heures :
+		<text>999 heures</text>
+		<help>999 heures :
 
-La limite du temps de jeu visible dans le menu passe a 999h.
+La limite du temps de jeu visible dans le menu passe à 999h.
 
 Les textes autour sont également alignés en conséquence.</help>
 		<author></author>

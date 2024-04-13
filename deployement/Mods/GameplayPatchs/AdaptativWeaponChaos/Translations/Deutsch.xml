@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<translation>
+    <control>
+        <text>Anpassbare ChaOs-Waffen</text>
+        <help>Anpassbare ChaOs-Waffen:
+
+Die 3D-Modelle von Cloud zeigen ihre ausgerüsteten Waffen sowohl in Spielszenen als auch auf der Weltkarte.
+
+/!\ Verwenden Sie dies nur, wenn Sie die ChaOs-3D-Modelle für Spielszenen und die Weltkarte verwenden.</help>
+        <author>Kaldarasha und Satsuki_Yatoshi</author>
+        <url></url>
+        <compatibily>FEG</compatibily>
+    </control>
+</translation>

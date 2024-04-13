@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<translation>
+    <control>
+        <text>Anpassbare NinoStyle-Waffen</text>
+        <help>Anpassbare NinoStyle-Waffen:
+
+Die 3D-Modelle von Cloud, Aerith und Cid zeigen ihre ausgerüsteten Waffen sowohl in Spielszenen als auch auf der Weltkarte.
+
+/!\ Verwenden Sie dies nur, wenn Sie die NinoStyle-Modelle für Spielszenen und die Weltkarte verwenden.</help>
+        <author>Nino und Satsuki_Yatoshi</author>
+        <url></url>
+        <compatibily>FEG</compatibily>
+    </control>
+</translation>

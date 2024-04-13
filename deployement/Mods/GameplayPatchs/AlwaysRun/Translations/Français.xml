@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <translation>
 	<control>
-		<text>Courrir par défaut</text>
-		<help>Courrir par défaut:
+		<text>Courir par défaut</text>
+		<help>Courir par défaut :
 
 Permet de courir au lieu de marcher par défaut dans les séquences du jeu.</help>
 		<author>Chysalis</author>
