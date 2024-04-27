@@ -329,7 +329,7 @@ namespace FF7_SYW_Unified
                 folderModCopy(Application.StartupPath + @"mods\SYW\Gaia");
             }
 
-            if (FFNxLighting.Checked)
+            if (FFNxLighting.Checked && !gameplayMods.Text.ToLower().Contains("new threat mod"))
             {
                 folderModCopy(Application.StartupPath + @"mods\SYW\Lighting");
             }
