@@ -1,11 +1,9 @@
 
 using System.Diagnostics;
-using System.IO;
-using System;
-using System.Management;
 
 namespace FF7_SYW_Unified
 {
+
     public partial class FF7U : Form
     {
 
@@ -14,8 +12,6 @@ namespace FF7_SYW_Unified
             InitializeComponent();
             AttachEventHandlers(this);
         }
-
-
 
         //Check if a setting value's change to set the settings preset to "none"
         private void AttachEventHandlers(Control control)
@@ -76,6 +72,7 @@ namespace FF7_SYW_Unified
 
             return total_run;
         }
+
 
 
         //initialize form and load settings
@@ -146,7 +143,7 @@ namespace FF7_SYW_Unified
 
             using (StreamReader sr = new StreamReader(Application.StartupPath + @"\version.vrs"))
             {
-                this.Text = "FF7_SYW_Unified " + sr.ReadLine();
+                Text = "FF7_SYW_Unified " + sr.ReadLine();
             }
 
 

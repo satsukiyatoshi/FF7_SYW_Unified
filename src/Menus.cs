@@ -113,15 +113,19 @@ namespace FF7_SYW_Unified
 
             foreach (Control cpanel in Controls)
             {
-                if (cpanel is Panel)
+                if (cpanel is Panel && !cpanel.Name.Contains(btn.Name))
                 {
-                    if (cpanel.Name.Contains(btn.Name)) {
-                        cpanel.Location = new Point((int)Math.Round(327 * Globals.scaleScreen), 0);
-                    }
-                    else
-                    {
-                        cpanel.Location = new Point(327, 16000);
-                    }
+                    cpanel.Visible = false;
+                    cpanel.Location = new Point(327, 0);
+                }
+            }
+
+            foreach (Control cpanel in Controls)
+            {
+                if (cpanel is Panel && cpanel.Name.Contains(btn.Name))
+                {
+                    cpanel.Location = new Point((int)Math.Round(327 * Globals.scaleScreen), 0);
+                    cpanel.Visible = true;
                 }
             }
         }
