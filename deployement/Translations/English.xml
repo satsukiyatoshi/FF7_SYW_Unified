@@ -161,7 +161,7 @@ This greatly improves the textures of the original game.
 
 It is recommended to activate this option.
 		</help>
-		<author>Satsuki_Yatoshi, Aavock and Cosmos</author>
+		<author>Satsuki_Yatoshi and Aavock</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
@@ -177,8 +177,28 @@ The fields have been extented from 4:3 to 16:9 by Cosmos and his "Limit Break" m
 
 It takes a lot of power, if you notice slowdowns in game, it is recommended to disable this option.
 		</help>
-		<author>Satsuki_Yatoshi, Aavock and Cosmos</author>
+		<author>Satsuki_Yatoshi and Aavock</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+		<control>
+		<name>graphicsLb</name>
+		<text>Limit Break textures</text>
+		<help>Limit Break textures:
+
+Textures of the game scenes reprocessed in HD by Cosmos.
+
+It's mandatory for real 16/9 option but can be used in original 4/3 too.
+		
+Lots of optimizations by hand.
+
+This greatly improves the textures of the original game.
+
+Compared to original SYW HD textures, it tend to be recover more details but is less smooth, and is less consistant from one field to another.
+
+Which is looking the best is realy up to you, try both and use the one you want.
+		</help>
+		<author>Cosmos</author>
+		<url>https://www.nexusmods.com/finalfantasy7/mods/104</url>
 	</control>
 	<control>
 		<name>graphicsBattles</name>
@@ -515,13 +535,15 @@ The selection is particularly useful when playing in windowed mode.
 • True 16:9 modifies the game engine to output a real 16:9 wherever possible. Some bugs may appear (non-blocking).
 
 • True 16:10 modifies the game engine to output a real 16:10 wherever possible. This is the ideal aspect ratio for the Steam Deck (experimental feature).
+
+• Uncropped 4:3 modifies the game engine to output a real 4:3 without top and bottom black bars (experimental feature).
 		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
-        	<name>ogscreen</name>
-        	<text>4:3 (original game)</text>
-    	</control>
+        <name>ogscreen</name>
+        <text>4:3 (original game)</text>
+    </control>
 	<control>
 		<name>strechedwidescreen</name>
 		<text>Stretched 16:9 (distorted)</text>
@@ -533,6 +555,10 @@ The selection is particularly useful when playing in windowed mode.
 	<control>
 		<name>realwidescreendeck</name>
 		<text>True 16:10 (beta)</text>
+	</control>
+	<control>
+		<name>uncropped43</name>
+		<text>Uncropped 4:3</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>

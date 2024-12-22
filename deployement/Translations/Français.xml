@@ -157,7 +157,7 @@ Beaucoup d'optimisations à la main.
 Cela améliore grandement les textures du jeu d'origine.
 
 Il est conseillé d'activer cette option.</help>
-		<author>Satsuki_Yatoshi, Aavock et Cosmos</author>
+		<author>Satsuki_Yatoshi, et Aavock</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
@@ -165,14 +165,32 @@ Il est conseillé d'activer cette option.</help>
 		<text>Animations avancées</text>
 		<help>Permet de rétablir les animations d'origine des scènes du jeu avec des textures HD.
 		
-Par exemple, la cascade de la maison d'Aérith et pas mal d'effets de lumières.
+Par exemple, la cascade de la maison d'Aerith et pas mal d'effets de lumières.
 
 Les extensions en 16/9 ont été faite par Cosmos via son mod Limit Break.
 
 Cela prend pas mal de puissance, si vous constatez des ralentissements en jeu, il est conseillé de désactiver cette option.
 </help>
-		<author>Satsuki_Yatoshi, Aavock et Cosmos</author>
+		<author>Satsuki_Yatoshi et Aavock</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
+	</control>
+		<control>
+		<name>graphicsLb</name>
+		<text>Textures Limit Break</text>
+		<help>Textures Limit Break.
+		
+Textures des scènes du jeu retraitées en HD par Cosmos.
+
+Elles sont obligatoires pour le mod 16/9 réel mais peuvent aussi être utilisées en 4/3 original.
+
+Beaucoup d'optimisations à la main.
+
+Comparées au scènes du jeu HD SYW originales, Limit Break a tendance a conserver plus de détails mais plus de defaut de textures aussi, c'est également moins constant d'un écran a l'autre.
+
+Quoi de SYW ou Limit Break est le plus qualitatif dépend de votre sensibilité, testez les 2 et utilisez celui de votre choix.
+</help>
+		<author>Comos</author>
+		<url>https://www.nexusmods.com/finalfantasy7/mods/104</url>
 	</control>
 	<control>
 		<name>graphicsBattles</name>
@@ -370,7 +388,7 @@ Cela peut prendre quelques instants pour se lancer.</text>
 <!--  -->	
 	<control>
 		<name>gameplayGroupMods</name>
-		<text>Mod de gameplay</text>
+		<text>Gameplay</text>
 	</control>
 	<control>
 		<name>gameplayFrame1</name>
@@ -474,6 +492,8 @@ Surtout utile en jeu fenêtré.</help>
 • 16/9 réel, modifie le moteur du jeu afin d'avoir un vrai 16/9 partout où cela est possible, quelques bugs (non bloquants) peuvent apparaître.
 
 • 16/10 réel, modifie le moteur du jeu afin d'avoir un vrai 16/10 partout où cela est possible, idéal pour le steam deck. Option expérimentale.
+
+• 4/3 étendu, modifie le moteur du jeu afin d'avoir un vrai 4/3 sans bandes noires horizontales. Option expérimentale.
 </help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
@@ -492,6 +512,10 @@ Surtout utile en jeu fenêtré.</help>
 	<control>
 		<name>realwidescreendeck</name>
 		<text>16/10 réel</text>
+	</control>
+	<control>
+		<name>uncropped43</name>
+		<text>4/3 étendu</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>
@@ -521,7 +545,7 @@ Permet d'éviter les déchirements d'images en jeu, mais limite la vitesse du sp
 		
 En réalité si vous utilisez une résolution interne de x4, ce n'est pas utile.
 
-Je conseille de ne pas dépasser x4 sur L'anti-aliasing également</help>
+Je conseille de ne pas dépasser x4 sur l'anti-aliasing également.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
@@ -559,7 +583,7 @@ Si vous n'êtes pas sûr laissez sur automatique.</help>
 		<name>FFNxGroupAudioSample</name>
 		<text>Échantillonnage audio</text>
 		<author>FFNx team</author>
-		<help>Il est consillé de laisser cette option sur automatique sauf si vous savez ce que vous faites.</help>
+		<help>Il est conseillé de laisser cette option sur automatique sauf si vous savez ce que vous faites.</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>
@@ -647,7 +671,7 @@ Les scènes du jeu en français, anglais et allemand sont patchées également.<
 		<author>FFNx team</author>
 		<help>Affiche des informations diverses (à gauche en plein écran et dans la barre de titre en fenêtré).
 
-On y trouve les fps, la version du pilote, l'utilisation mémoire ...</help>
+On y trouve les fps, la version du pilote, l'utilisation mémoire...</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
 	<control>

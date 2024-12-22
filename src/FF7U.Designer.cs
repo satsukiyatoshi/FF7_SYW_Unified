@@ -53,6 +53,7 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             graphicFrame1 = new GroupBox();
+            graphicsLb = new CheckBox();
             graphicsCosmosGaia = new CheckBox();
             axl3dbattle = new CheckBox();
             graphicsGroupAddTextures = new GroupBox();
@@ -422,7 +423,7 @@
             // gamePreset
             // 
             gamePreset.Controls.Add(presets);
-            gamePreset.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            gamePreset.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             gamePreset.ForeColor = Color.FromArgb(224, 224, 224);
             gamePreset.Location = new Point(10, 217);
             gamePreset.Name = "gamePreset";
@@ -436,7 +437,7 @@
             presets.BackColor = Color.FromArgb(53, 60, 70);
             presets.Cursor = Cursors.Hand;
             presets.DropDownStyle = ComboBoxStyle.DropDownList;
-            presets.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            presets.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             presets.ForeColor = Color.White;
             presets.FormattingEnabled = true;
             presets.Location = new Point(9, 23);
@@ -449,7 +450,7 @@
             // 
             menuLaunchGame.BackColor = Color.FromArgb(210, 210, 210);
             menuLaunchGame.Cursor = Cursors.Hand;
-            menuLaunchGame.Font = new Font("Roboto Black", 19.75F, FontStyle.Bold, GraphicsUnit.Point);
+            menuLaunchGame.Font = new Font("Roboto Black", 19.75F, FontStyle.Bold);
             menuLaunchGame.ForeColor = Color.Black;
             menuLaunchGame.Location = new Point(10, 653);
             menuLaunchGame.Name = "menuLaunchGame";
@@ -470,7 +471,7 @@
             settingsGroup.Controls.Add(menuSound);
             settingsGroup.Controls.Add(menuGraphic);
             settingsGroup.Controls.Add(menuAbout);
-            settingsGroup.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            settingsGroup.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             settingsGroup.ForeColor = Color.FromArgb(224, 224, 224);
             settingsGroup.Location = new Point(10, 278);
             settingsGroup.Name = "settingsGroup";
@@ -483,7 +484,7 @@
             // 
             menuControls.BackColor = SystemColors.ScrollBar;
             menuControls.Cursor = Cursors.Hand;
-            menuControls.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            menuControls.Font = new Font("Roboto Black", 14F, FontStyle.Bold);
             menuControls.ForeColor = Color.Black;
             menuControls.Location = new Point(6, 177);
             menuControls.Name = "menuControls";
@@ -499,7 +500,7 @@
             // 
             menuHelp.BackColor = SystemColors.ScrollBar;
             menuHelp.Cursor = Cursors.Hand;
-            menuHelp.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            menuHelp.Font = new Font("Roboto Black", 14F, FontStyle.Bold);
             menuHelp.ForeColor = Color.Black;
             menuHelp.Location = new Point(6, 208);
             menuHelp.Name = "menuHelp";
@@ -515,7 +516,7 @@
             // 
             menuFFNx.BackColor = SystemColors.ScrollBar;
             menuFFNx.Cursor = Cursors.Hand;
-            menuFFNx.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            menuFFNx.Font = new Font("Roboto Black", 14F, FontStyle.Bold);
             menuFFNx.ForeColor = Color.Black;
             menuFFNx.Location = new Point(6, 146);
             menuFFNx.Name = "menuFFNx";
@@ -531,7 +532,7 @@
             // 
             menuGameplay.BackColor = SystemColors.ScrollBar;
             menuGameplay.Cursor = Cursors.Hand;
-            menuGameplay.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            menuGameplay.Font = new Font("Roboto Black", 14F, FontStyle.Bold);
             menuGameplay.ForeColor = Color.Black;
             menuGameplay.Location = new Point(6, 115);
             menuGameplay.Name = "menuGameplay";
@@ -547,7 +548,7 @@
             // 
             menuSound.BackColor = SystemColors.ScrollBar;
             menuSound.Cursor = Cursors.Hand;
-            menuSound.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            menuSound.Font = new Font("Roboto Black", 14F, FontStyle.Bold);
             menuSound.ForeColor = Color.Black;
             menuSound.Location = new Point(6, 84);
             menuSound.Name = "menuSound";
@@ -563,7 +564,7 @@
             // 
             menuGraphic.BackColor = SystemColors.ScrollBar;
             menuGraphic.Cursor = Cursors.Hand;
-            menuGraphic.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            menuGraphic.Font = new Font("Roboto Black", 14F, FontStyle.Bold);
             menuGraphic.ForeColor = Color.Black;
             menuGraphic.Location = new Point(6, 53);
             menuGraphic.Name = "menuGraphic";
@@ -579,7 +580,7 @@
             // 
             menuAbout.BackColor = SystemColors.ScrollBar;
             menuAbout.Cursor = Cursors.Hand;
-            menuAbout.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            menuAbout.Font = new Font("Roboto Black", 14F, FontStyle.Bold);
             menuAbout.ForeColor = Color.Black;
             menuAbout.Location = new Point(6, 22);
             menuAbout.Name = "menuAbout";
@@ -594,7 +595,7 @@
             // ff7Lang
             // 
             ff7Lang.Controls.Add(langGame);
-            ff7Lang.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            ff7Lang.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             ff7Lang.ForeColor = Color.FromArgb(224, 224, 224);
             ff7Lang.Location = new Point(158, 154);
             ff7Lang.Name = "ff7Lang";
@@ -608,7 +609,7 @@
             langGame.BackColor = Color.FromArgb(53, 60, 70);
             langGame.Cursor = Cursors.Hand;
             langGame.DropDownStyle = ComboBoxStyle.DropDownList;
-            langGame.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            langGame.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             langGame.ForeColor = Color.White;
             langGame.FormattingEnabled = true;
             langGame.Location = new Point(9, 23);
@@ -620,7 +621,7 @@
             // interfaceLang
             // 
             interfaceLang.Controls.Add(langInterface);
-            interfaceLang.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            interfaceLang.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             interfaceLang.ForeColor = Color.FromArgb(224, 224, 224);
             interfaceLang.Location = new Point(10, 154);
             interfaceLang.Name = "interfaceLang";
@@ -634,7 +635,7 @@
             langInterface.BackColor = Color.FromArgb(53, 60, 70);
             langInterface.Cursor = Cursors.Hand;
             langInterface.DropDownStyle = ComboBoxStyle.DropDownList;
-            langInterface.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            langInterface.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             langInterface.ForeColor = Color.White;
             langInterface.FormattingEnabled = true;
             langInterface.Location = new Point(9, 23);
@@ -665,6 +666,7 @@
             // 
             // graphicFrame1
             // 
+            graphicFrame1.Controls.Add(graphicsLb);
             graphicFrame1.Controls.Add(graphicsCosmosGaia);
             graphicFrame1.Controls.Add(axl3dbattle);
             graphicFrame1.Controls.Add(graphicsGroupAddTextures);
@@ -681,7 +683,7 @@
             graphicFrame1.Controls.Add(graphicsAnimations);
             graphicFrame1.Controls.Add(graphicsMiniGames);
             graphicFrame1.Controls.Add(graphicsFields);
-            graphicFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             graphicFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             graphicFrame1.Location = new Point(3, 4);
             graphicFrame1.Name = "graphicFrame1";
@@ -690,14 +692,28 @@
             graphicFrame1.TabStop = false;
             graphicFrame1.Text = "Mods graphiques";
             // 
+            // graphicsLb
+            // 
+            graphicsLb.BackColor = Color.FromArgb(89, 98, 111);
+            graphicsLb.Cursor = Cursors.Hand;
+            graphicsLb.Font = new Font("Roboto", 9.5F);
+            graphicsLb.Location = new Point(341, 22);
+            graphicsLb.Name = "graphicsLb";
+            graphicsLb.Size = new Size(164, 19);
+            graphicsLb.TabIndex = 43;
+            graphicsLb.Text = "Textures Limit Break";
+            graphicsLb.UseVisualStyleBackColor = false;
+            graphicsLb.CheckedChanged += graphicsLb_CheckedChanged;
+            graphicsLb.MouseEnter += graphicsLb_MouseEnter;
+            // 
             // graphicsCosmosGaia
             // 
             graphicsCosmosGaia.BackColor = Color.FromArgb(89, 98, 111);
             graphicsCosmosGaia.Cursor = Cursors.Hand;
-            graphicsCosmosGaia.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            graphicsCosmosGaia.Location = new Point(185, 66);
+            graphicsCosmosGaia.Font = new Font("Roboto", 9.5F);
+            graphicsCosmosGaia.Location = new Point(299, 66);
             graphicsCosmosGaia.Name = "graphicsCosmosGaia";
-            graphicsCosmosGaia.Size = new Size(153, 19);
+            graphicsCosmosGaia.Size = new Size(108, 19);
             graphicsCosmosGaia.TabIndex = 42;
             graphicsCosmosGaia.Text = "Cosmos Gaia";
             graphicsCosmosGaia.UseVisualStyleBackColor = false;
@@ -708,7 +724,7 @@
             // 
             axl3dbattle.BackColor = Color.FromArgb(89, 98, 111);
             axl3dbattle.Cursor = Cursors.Hand;
-            axl3dbattle.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            axl3dbattle.Font = new Font("Roboto", 9.5F);
             axl3dbattle.Location = new Point(185, 44);
             axl3dbattle.Name = "axl3dbattle";
             axl3dbattle.Size = new Size(153, 19);
@@ -721,7 +737,7 @@
             // 
             graphicsGroupAddTextures.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupAddTextures.Controls.Add(graphicsAddTextures);
-            graphicsGroupAddTextures.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupAddTextures.Font = new Font("Roboto", 9.5F);
             graphicsGroupAddTextures.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupAddTextures.Location = new Point(260, 274);
             graphicsGroupAddTextures.Name = "graphicsGroupAddTextures";
@@ -749,7 +765,7 @@
             // 
             graphicsGroupModels3Dm.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupModels3Dm.Controls.Add(graphicsModels3Dm);
-            graphicsGroupModels3Dm.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dm.Font = new Font("Roboto", 9.5F);
             graphicsGroupModels3Dm.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupModels3Dm.Location = new Point(260, 212);
             graphicsGroupModels3Dm.Name = "graphicsGroupModels3Dm";
@@ -777,7 +793,7 @@
             // 
             graphicsGroupModels3Dw.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupModels3Dw.Controls.Add(graphicsModels3Dw);
-            graphicsGroupModels3Dw.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dw.Font = new Font("Roboto", 9.5F);
             graphicsGroupModels3Dw.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupModels3Dw.Location = new Point(11, 212);
             graphicsGroupModels3Dw.Name = "graphicsGroupModels3Dw";
@@ -805,10 +821,10 @@
             // 
             FFNxLighting.BackColor = Color.FromArgb(89, 98, 111);
             FFNxLighting.Cursor = Cursors.Hand;
-            FFNxLighting.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            FFNxLighting.Location = new Point(341, 66);
+            FFNxLighting.Font = new Font("Roboto", 9.5F);
+            FFNxLighting.Location = new Point(410, 66);
             FFNxLighting.Name = "FFNxLighting";
-            FFNxLighting.Size = new Size(164, 19);
+            FFNxLighting.Size = new Size(95, 19);
             FFNxLighting.TabIndex = 16;
             FFNxLighting.Text = "Ombres 3D";
             FFNxLighting.UseVisualStyleBackColor = false;
@@ -822,7 +838,7 @@
             graphicsGroupMenu.Controls.Add(flagSGraphicsMenu);
             graphicsGroupMenu.Controls.Add(flagFGraphicsMenu);
             graphicsGroupMenu.Controls.Add(graphicsMenu);
-            graphicsGroupMenu.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupMenu.Font = new Font("Roboto", 9.5F);
             graphicsGroupMenu.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupMenu.Location = new Point(11, 88);
             graphicsGroupMenu.Name = "graphicsGroupMenu";
@@ -890,7 +906,7 @@
             // 
             graphicsGroupFMV.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupFMV.Controls.Add(graphicsFMV);
-            graphicsGroupFMV.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupFMV.Font = new Font("Roboto", 9.5F);
             graphicsGroupFMV.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupFMV.Location = new Point(11, 274);
             graphicsGroupFMV.Name = "graphicsGroupFMV";
@@ -918,7 +934,7 @@
             // 
             graphicsGroupModels3Dc.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupModels3Dc.Controls.Add(graphicsModels3Dc);
-            graphicsGroupModels3Dc.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Dc.Font = new Font("Roboto", 9.5F);
             graphicsGroupModels3Dc.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupModels3Dc.Location = new Point(260, 150);
             graphicsGroupModels3Dc.Name = "graphicsGroupModels3Dc";
@@ -946,7 +962,7 @@
             // 
             graphicsGroupModels3Df.BackColor = Color.FromArgb(89, 98, 111);
             graphicsGroupModels3Df.Controls.Add(graphicsModels3Df);
-            graphicsGroupModels3Df.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsGroupModels3Df.Font = new Font("Roboto", 9.5F);
             graphicsGroupModels3Df.ForeColor = Color.FromArgb(224, 224, 224);
             graphicsGroupModels3Df.Location = new Point(11, 150);
             graphicsGroupModels3Df.Name = "graphicsGroupModels3Df";
@@ -974,7 +990,7 @@
             // 
             graphicsMagics.BackColor = Color.FromArgb(89, 98, 111);
             graphicsMagics.Cursor = Cursors.Hand;
-            graphicsMagics.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsMagics.Font = new Font("Roboto", 9.5F);
             graphicsMagics.Location = new Point(341, 44);
             graphicsMagics.Name = "graphicsMagics";
             graphicsMagics.Size = new Size(164, 19);
@@ -987,7 +1003,7 @@
             // 
             graphicsBattles.BackColor = Color.FromArgb(89, 98, 111);
             graphicsBattles.Cursor = Cursors.Hand;
-            graphicsBattles.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsBattles.Font = new Font("Roboto", 9.5F);
             graphicsBattles.Location = new Point(11, 44);
             graphicsBattles.Name = "graphicsBattles";
             graphicsBattles.Size = new Size(171, 19);
@@ -1000,7 +1016,7 @@
             // 
             graphicsWorldMap.BackColor = Color.FromArgb(89, 98, 111);
             graphicsWorldMap.Cursor = Cursors.Hand;
-            graphicsWorldMap.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsWorldMap.Font = new Font("Roboto", 9.5F);
             graphicsWorldMap.Location = new Point(11, 66);
             graphicsWorldMap.Name = "graphicsWorldMap";
             graphicsWorldMap.Size = new Size(171, 19);
@@ -1013,7 +1029,7 @@
             // 
             graphicsAnimations.BackColor = Color.FromArgb(89, 98, 111);
             graphicsAnimations.Cursor = Cursors.Hand;
-            graphicsAnimations.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsAnimations.Font = new Font("Roboto", 9.5F);
             graphicsAnimations.Location = new Point(185, 22);
             graphicsAnimations.Name = "graphicsAnimations";
             graphicsAnimations.Size = new Size(153, 19);
@@ -1027,10 +1043,10 @@
             // 
             graphicsMiniGames.BackColor = Color.FromArgb(89, 98, 111);
             graphicsMiniGames.Cursor = Cursors.Hand;
-            graphicsMiniGames.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            graphicsMiniGames.Location = new Point(341, 22);
+            graphicsMiniGames.Font = new Font("Roboto", 9.5F);
+            graphicsMiniGames.Location = new Point(185, 66);
             graphicsMiniGames.Name = "graphicsMiniGames";
-            graphicsMiniGames.Size = new Size(164, 19);
+            graphicsMiniGames.Size = new Size(111, 19);
             graphicsMiniGames.TabIndex = 1;
             graphicsMiniGames.Text = "Mini-jeux HD";
             graphicsMiniGames.UseVisualStyleBackColor = false;
@@ -1040,7 +1056,7 @@
             // 
             graphicsFields.BackColor = Color.FromArgb(89, 98, 111);
             graphicsFields.Cursor = Cursors.Hand;
-            graphicsFields.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsFields.Font = new Font("Roboto", 9.5F);
             graphicsFields.Location = new Point(11, 22);
             graphicsFields.Name = "graphicsFields";
             graphicsFields.Size = new Size(171, 19);
@@ -1053,7 +1069,7 @@
             // graphicFrame3
             // 
             graphicFrame3.Controls.Add(graphicPrevPic);
-            graphicFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             graphicFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             graphicFrame3.Location = new Point(3, 350);
             graphicFrame3.Name = "graphicFrame3";
@@ -1086,7 +1102,7 @@
             // 
             graphicFrame2.Controls.Add(graphicsHelp);
             graphicFrame2.Controls.Add(graphicsHelpAuthor);
-            graphicFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             graphicFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             graphicFrame2.Location = new Point(526, 4);
             graphicFrame2.Name = "graphicFrame2";
@@ -1099,7 +1115,7 @@
             // 
             graphicsHelp.BackColor = Color.FromArgb(89, 98, 111);
             graphicsHelp.BorderStyle = BorderStyle.None;
-            graphicsHelp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            graphicsHelp.Font = new Font("Roboto", 9.5F);
             graphicsHelp.ForeColor = Color.FromArgb(32, 225, 229);
             graphicsHelp.HideSelection = false;
             graphicsHelp.Location = new Point(12, 19);
@@ -1113,7 +1129,7 @@
             // 
             graphicsHelpAuthor.BackColor = Color.Black;
             graphicsHelpAuthor.Cursor = Cursors.Hand;
-            graphicsHelpAuthor.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            graphicsHelpAuthor.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             graphicsHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             graphicsHelpAuthor.Location = new Point(12, 311);
             graphicsHelpAuthor.Name = "graphicsHelpAuthor";
@@ -1126,7 +1142,7 @@
             // 
             menuAboutPanel.Controls.Add(aboutFrame1);
             menuAboutPanel.Controls.Add(aboutFrame2);
-            menuAboutPanel.Location = new Point(327, 0);
+            menuAboutPanel.Location = new Point(16000, 0);
             menuAboutPanel.Name = "menuAboutPanel";
             menuAboutPanel.Size = new Size(799, 715);
             menuAboutPanel.TabIndex = 11;
@@ -1135,7 +1151,7 @@
             // aboutFrame1
             // 
             aboutFrame1.Controls.Add(aboutContributors);
-            aboutFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            aboutFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             aboutFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             aboutFrame1.Location = new Point(3, 4);
             aboutFrame1.Name = "aboutFrame1";
@@ -1148,7 +1164,7 @@
             // 
             aboutContributors.BackColor = Color.FromArgb(33, 40, 50);
             aboutContributors.BorderStyle = BorderStyle.None;
-            aboutContributors.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            aboutContributors.Font = new Font("Roboto", 9.5F);
             aboutContributors.Location = new Point(11, 22);
             aboutContributors.Name = "aboutContributors";
             aboutContributors.ReadOnly = true;
@@ -1161,7 +1177,7 @@
             // aboutFrame2
             // 
             aboutFrame2.Controls.Add(packStory);
-            aboutFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            aboutFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             aboutFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             aboutFrame2.Location = new Point(3, 523);
             aboutFrame2.Name = "aboutFrame2";
@@ -1173,7 +1189,7 @@
             // packStory
             // 
             packStory.BackColor = Color.FromArgb(89, 98, 111);
-            packStory.Font = new Font("Roboto", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
+            packStory.Font = new Font("Roboto", 10.25F);
             packStory.ForeColor = Color.White;
             packStory.Location = new Point(11, 24);
             packStory.Name = "packStory";
@@ -1187,7 +1203,7 @@
             menuSoundPanel.Controls.Add(soundFrame4);
             menuSoundPanel.Controls.Add(soundFrame2);
             menuSoundPanel.Controls.Add(soundFrame3);
-            menuSoundPanel.Location = new Point(327, 0);
+            menuSoundPanel.Location = new Point(16000, 0);
             menuSoundPanel.Name = "menuSoundPanel";
             menuSoundPanel.Size = new Size(795, 703);
             menuSoundPanel.TabIndex = 12;
@@ -1196,7 +1212,7 @@
             // soundFrame5
             // 
             soundFrame5.Controls.Add(soundPrevPic);
-            soundFrame5.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame5.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             soundFrame5.ForeColor = Color.FromArgb(224, 224, 224);
             soundFrame5.Location = new Point(270, 352);
             soundFrame5.Name = "soundFrame5";
@@ -1217,7 +1233,7 @@
             // 
             soundFrame4.Controls.Add(soundsListHelp);
             soundFrame4.Controls.Add(soundsList);
-            soundFrame4.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame4.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             soundFrame4.ForeColor = Color.FromArgb(224, 224, 224);
             soundFrame4.Location = new Point(3, 352);
             soundFrame4.Name = "soundFrame4";
@@ -1230,7 +1246,7 @@
             // soundsListHelp
             // 
             soundsListHelp.BackColor = Color.FromArgb(89, 98, 111);
-            soundsListHelp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsListHelp.Font = new Font("Roboto", 9.5F);
             soundsListHelp.ForeColor = Color.FromArgb(32, 225, 229);
             soundsListHelp.Location = new Point(11, 22);
             soundsListHelp.Name = "soundsListHelp";
@@ -1243,7 +1259,7 @@
             soundsList.BackColor = Color.FromArgb(89, 98, 111);
             soundsList.BorderStyle = BorderStyle.FixedSingle;
             soundsList.Cursor = Cursors.Hand;
-            soundsList.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsList.Font = new Font("Roboto", 9.5F);
             soundsList.ForeColor = Color.FromArgb(224, 224, 224);
             soundsList.FormattingEnabled = true;
             soundsList.ItemHeight = 15;
@@ -1257,7 +1273,7 @@
             // 
             soundFrame2.Controls.Add(soundsHelp);
             soundFrame2.Controls.Add(soundsHelpAuthor);
-            soundFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             soundFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             soundFrame2.Location = new Point(395, 4);
             soundFrame2.Name = "soundFrame2";
@@ -1270,7 +1286,7 @@
             // 
             soundsHelp.BackColor = Color.FromArgb(89, 98, 111);
             soundsHelp.BorderStyle = BorderStyle.None;
-            soundsHelp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsHelp.Font = new Font("Roboto", 9.5F);
             soundsHelp.ForeColor = Color.FromArgb(32, 225, 229);
             soundsHelp.Location = new Point(11, 22);
             soundsHelp.Multiline = true;
@@ -1284,7 +1300,7 @@
             // 
             soundsHelpAuthor.BackColor = Color.Black;
             soundsHelpAuthor.Cursor = Cursors.Hand;
-            soundsHelpAuthor.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            soundsHelpAuthor.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             soundsHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             soundsHelpAuthor.Location = new Point(11, 308);
             soundsHelpAuthor.Name = "soundsHelpAuthor";
@@ -1300,7 +1316,7 @@
             soundFrame3.Controls.Add(soundsGroupAmbients);
             soundFrame3.Controls.Add(soundsGroupSfx);
             soundFrame3.Controls.Add(soundsGroupMusics);
-            soundFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            soundFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             soundFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             soundFrame3.Location = new Point(3, 4);
             soundFrame3.Name = "soundFrame3";
@@ -1314,7 +1330,7 @@
             soundsGroupVoices.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupVoices.Controls.Add(voicesPrev);
             soundsGroupVoices.Controls.Add(soundsVoices);
-            soundsGroupVoices.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupVoices.Font = new Font("Roboto", 9.5F);
             soundsGroupVoices.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupVoices.Location = new Point(11, 271);
             soundsGroupVoices.Name = "soundsGroupVoices";
@@ -1343,7 +1359,7 @@
             soundsGroupFMV.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupFMV.Controls.Add(fmvPrev);
             soundsGroupFMV.Controls.Add(soundsFMV);
-            soundsGroupFMV.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupFMV.Font = new Font("Roboto", 9.5F);
             soundsGroupFMV.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupFMV.Location = new Point(11, 208);
             soundsGroupFMV.Name = "soundsGroupFMV";
@@ -1372,7 +1388,7 @@
             soundsGroupAmbients.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupAmbients.Controls.Add(ambiantPrev);
             soundsGroupAmbients.Controls.Add(soundsAmbients);
-            soundsGroupAmbients.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupAmbients.Font = new Font("Roboto", 9.5F);
             soundsGroupAmbients.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupAmbients.Location = new Point(11, 84);
             soundsGroupAmbients.Name = "soundsGroupAmbients";
@@ -1401,7 +1417,7 @@
             soundsGroupSfx.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupSfx.Controls.Add(sfxPrev);
             soundsGroupSfx.Controls.Add(soundsSfx);
-            soundsGroupSfx.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupSfx.Font = new Font("Roboto", 9.5F);
             soundsGroupSfx.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupSfx.Location = new Point(11, 146);
             soundsGroupSfx.Name = "soundsGroupSfx";
@@ -1430,7 +1446,7 @@
             soundsGroupMusics.BackColor = Color.FromArgb(89, 98, 111);
             soundsGroupMusics.Controls.Add(musicsPrev);
             soundsGroupMusics.Controls.Add(soundsMusics);
-            soundsGroupMusics.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            soundsGroupMusics.Font = new Font("Roboto", 9.5F);
             soundsGroupMusics.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupMusics.Location = new Point(11, 22);
             soundsGroupMusics.Name = "soundsGroupMusics";
@@ -1460,7 +1476,7 @@
             menuGameplayPanel.Controls.Add(gameplayFrame5);
             menuGameplayPanel.Controls.Add(gameplayFrame1);
             menuGameplayPanel.Controls.Add(gameplayFrame3);
-            menuGameplayPanel.Location = new Point(327, 0);
+            menuGameplayPanel.Location = new Point(16000, 0);
             menuGameplayPanel.Name = "menuGameplayPanel";
             menuGameplayPanel.Size = new Size(795, 703);
             menuGameplayPanel.TabIndex = 13;
@@ -1474,7 +1490,7 @@
             gameplayFrame2.Controls.Add(flagEGameplay);
             gameplayFrame2.Controls.Add(flagFGameplay);
             gameplayFrame2.Controls.Add(flagGGameplay);
-            gameplayFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             gameplayFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayFrame2.Location = new Point(355, 5);
             gameplayFrame2.Name = "gameplayFrame2";
@@ -1487,7 +1503,7 @@
             // 
             gameplayHelp.BackColor = Color.FromArgb(89, 98, 111);
             gameplayHelp.BorderStyle = BorderStyle.None;
-            gameplayHelp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            gameplayHelp.Font = new Font("Roboto", 9.5F);
             gameplayHelp.ForeColor = Color.FromArgb(32, 225, 229);
             gameplayHelp.Location = new Point(12, 20);
             gameplayHelp.Multiline = true;
@@ -1501,7 +1517,7 @@
             // 
             gameplayHelpAuthor.BackColor = Color.Black;
             gameplayHelpAuthor.Cursor = Cursors.Hand;
-            gameplayHelpAuthor.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayHelpAuthor.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             gameplayHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             gameplayHelpAuthor.Location = new Point(11, 307);
             gameplayHelpAuthor.Name = "gameplayHelpAuthor";
@@ -1553,7 +1569,7 @@
             // gameplayFrame5
             // 
             gameplayFrame5.Controls.Add(GameplayPatchsList);
-            gameplayFrame5.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame5.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             gameplayFrame5.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayFrame5.Location = new Point(3, 178);
             gameplayFrame5.Name = "gameplayFrame5";
@@ -1568,7 +1584,7 @@
             GameplayPatchsList.BorderStyle = BorderStyle.FixedSingle;
             GameplayPatchsList.CheckOnClick = true;
             GameplayPatchsList.Cursor = Cursors.Hand;
-            GameplayPatchsList.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            GameplayPatchsList.Font = new Font("Roboto", 9.5F);
             GameplayPatchsList.ForeColor = Color.FromArgb(224, 224, 224);
             GameplayPatchsList.FormattingEnabled = true;
             GameplayPatchsList.Location = new Point(10, 22);
@@ -1583,7 +1599,7 @@
             gameplayFrame1.Controls.Add(saveEdit);
             gameplayFrame1.Controls.Add(saveByMod);
             gameplayFrame1.Controls.Add(documentsFolder);
-            gameplayFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             gameplayFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayFrame1.Location = new Point(3, 4);
             gameplayFrame1.Name = "gameplayFrame1";
@@ -1596,7 +1612,7 @@
             // 
             gameplayGroupMods.BackColor = Color.FromArgb(89, 98, 111);
             gameplayGroupMods.Controls.Add(gameplayMods);
-            gameplayGroupMods.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            gameplayGroupMods.Font = new Font("Roboto", 9.5F);
             gameplayGroupMods.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayGroupMods.Location = new Point(10, 21);
             gameplayGroupMods.Name = "gameplayGroupMods";
@@ -1623,7 +1639,7 @@
             // 
             saveEdit.BackColor = SystemColors.ScrollBar;
             saveEdit.Cursor = Cursors.Hand;
-            saveEdit.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            saveEdit.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
             saveEdit.ForeColor = Color.Black;
             saveEdit.Location = new Point(10, 108);
             saveEdit.Name = "saveEdit";
@@ -1639,7 +1655,7 @@
             // 
             saveByMod.BackColor = SystemColors.ScrollBar;
             saveByMod.Cursor = Cursors.Hand;
-            saveByMod.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            saveByMod.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
             saveByMod.ForeColor = Color.Black;
             saveByMod.Location = new Point(10, 81);
             saveByMod.Name = "saveByMod";
@@ -1655,7 +1671,7 @@
             // 
             documentsFolder.BackColor = SystemColors.ScrollBar;
             documentsFolder.Cursor = Cursors.Hand;
-            documentsFolder.Font = new Font("Roboto Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            documentsFolder.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
             documentsFolder.ForeColor = Color.Black;
             documentsFolder.Location = new Point(10, 135);
             documentsFolder.Name = "documentsFolder";
@@ -1670,7 +1686,7 @@
             // gameplayFrame3
             // 
             gameplayFrame3.Controls.Add(gameplayPrevPic);
-            gameplayFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            gameplayFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             gameplayFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             gameplayFrame3.Location = new Point(3, 382);
             gameplayFrame3.Name = "gameplayFrame3";
@@ -1693,7 +1709,7 @@
             menuFFNxPanel.Controls.Add(FFNxFrame2);
             menuFFNxPanel.Controls.Add(FFNxFrame1);
             menuFFNxPanel.Controls.Add(FFNxFrame3);
-            menuFFNxPanel.Location = new Point(327, 0);
+            menuFFNxPanel.Location = new Point(16000, 0);
             menuFFNxPanel.Name = "menuFFNxPanel";
             menuFFNxPanel.Size = new Size(795, 703);
             menuFFNxPanel.TabIndex = 14;
@@ -1703,7 +1719,7 @@
             // 
             FFNxFrame2.Controls.Add(FFNxHelp);
             FFNxFrame2.Controls.Add(FFNxHelpAuthor);
-            FFNxFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             FFNxFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxFrame2.Location = new Point(473, 4);
             FFNxFrame2.Name = "FFNxFrame2";
@@ -1716,7 +1732,7 @@
             // 
             FFNxHelp.BackColor = Color.FromArgb(89, 98, 111);
             FFNxHelp.BorderStyle = BorderStyle.None;
-            FFNxHelp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxHelp.Font = new Font("Roboto", 9.5F);
             FFNxHelp.ForeColor = Color.FromArgb(32, 225, 229);
             FFNxHelp.Location = new Point(12, 22);
             FFNxHelp.Multiline = true;
@@ -1730,7 +1746,7 @@
             // 
             FFNxHelpAuthor.BackColor = Color.Black;
             FFNxHelpAuthor.Cursor = Cursors.Hand;
-            FFNxHelpAuthor.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxHelpAuthor.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             FFNxHelpAuthor.ForeColor = Color.FromArgb(32, 225, 229);
             FFNxHelpAuthor.Location = new Point(12, 298);
             FFNxHelpAuthor.Name = "FFNxHelpAuthor";
@@ -1747,7 +1763,7 @@
             FFNxFrame1.Controls.Add(FFNxComboPatchs);
             FFNxFrame1.Controls.Add(flagFFFNxPatch);
             FFNxFrame1.Controls.Add(flagEFFNxPatch);
-            FFNxFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             FFNxFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxFrame1.Location = new Point(473, 340);
             FFNxFrame1.Name = "FFNxFrame1";
@@ -1772,7 +1788,7 @@
             FFNxPatchsList.BorderStyle = BorderStyle.FixedSingle;
             FFNxPatchsList.CheckOnClick = true;
             FFNxPatchsList.Cursor = Cursors.Hand;
-            FFNxPatchsList.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxPatchsList.Font = new Font("Roboto", 9.5F);
             FFNxPatchsList.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxPatchsList.FormattingEnabled = true;
             FFNxPatchsList.Location = new Point(11, 22);
@@ -1851,7 +1867,7 @@
             FFNxFrame3.Controls.Add(FFNxAnalogController);
             FFNxFrame3.Controls.Add(FFNXSteamSucces);
             FFNxFrame3.Controls.Add(FFNxGroup3dEngine);
-            FFNxFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            FFNxFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             FFNxFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxFrame3.Location = new Point(3, 4);
             FFNxFrame3.Name = "FFNxFrame3";
@@ -1864,7 +1880,7 @@
             // 
             FFNxGamutNtsc.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGamutNtsc.Cursor = Cursors.Hand;
-            FFNxGamutNtsc.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGamutNtsc.Font = new Font("Roboto", 9.5F);
             FFNxGamutNtsc.Location = new Point(234, 259);
             FFNxGamutNtsc.Name = "FFNxGamutNtsc";
             FFNxGamutNtsc.Size = new Size(221, 19);
@@ -1879,7 +1895,7 @@
             FFNxGroupAlphaDiag.Controls.Add(FFNxAlphaBattle);
             FFNxGroupAlphaDiag.Controls.Add(FFNxAlphaDiag);
             FFNxGroupAlphaDiag.Controls.Add(FFNxalphaValue);
-            FFNxGroupAlphaDiag.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAlphaDiag.Font = new Font("Roboto", 9.5F);
             FFNxGroupAlphaDiag.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAlphaDiag.Location = new Point(10, 557);
             FFNxGroupAlphaDiag.Name = "FFNxGroupAlphaDiag";
@@ -1894,7 +1910,7 @@
             // 
             FFNxAlphaBattle.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAlphaBattle.Cursor = Cursors.Hand;
-            FFNxAlphaBattle.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAlphaBattle.Font = new Font("Roboto", 9.5F);
             FFNxAlphaBattle.Location = new Point(114, 33);
             FFNxAlphaBattle.Name = "FFNxAlphaBattle";
             FFNxAlphaBattle.Size = new Size(325, 19);
@@ -1908,7 +1924,7 @@
             // 
             FFNxAlphaDiag.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAlphaDiag.Cursor = Cursors.Hand;
-            FFNxAlphaDiag.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAlphaDiag.Font = new Font("Roboto", 9.5F);
             FFNxAlphaDiag.Location = new Point(114, 16);
             FFNxAlphaDiag.Name = "FFNxAlphaDiag";
             FFNxAlphaDiag.Size = new Size(325, 19);
@@ -1936,7 +1952,7 @@
             // 
             FFNxAnalogControllerArun.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAnalogControllerArun.Cursor = Cursors.Hand;
-            FFNxAnalogControllerArun.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAnalogControllerArun.Font = new Font("Roboto", 9.5F);
             FFNxAnalogControllerArun.Location = new Point(234, 533);
             FFNxAnalogControllerArun.Name = "FFNxAnalogControllerArun";
             FFNxAnalogControllerArun.Size = new Size(221, 19);
@@ -1950,7 +1966,7 @@
             // 
             FFNxNoCd.BackColor = Color.FromArgb(89, 98, 111);
             FFNxNoCd.Cursor = Cursors.Hand;
-            FFNxNoCd.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxNoCd.Font = new Font("Roboto", 9.5F);
             FFNxNoCd.Location = new Point(234, 628);
             FFNxNoCd.Name = "FFNxNoCd";
             FFNxNoCd.Size = new Size(221, 19);
@@ -1963,7 +1979,7 @@
             // 
             FFNxGroupFps.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupFps.Controls.Add(FFNxFps);
-            FFNxGroupFps.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupFps.Font = new Font("Roboto", 9.5F);
             FFNxGroupFps.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupFps.Location = new Point(235, 199);
             FFNxGroupFps.Name = "FFNxGroupFps";
@@ -1992,7 +2008,7 @@
             // 
             FFNxShowStats.BackColor = Color.FromArgb(89, 98, 111);
             FFNxShowStats.Cursor = Cursors.Hand;
-            FFNxShowStats.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxShowStats.Font = new Font("Roboto", 9.5F);
             FFNxShowStats.Location = new Point(10, 650);
             FFNxShowStats.Name = "FFNxShowStats";
             FFNxShowStats.Size = new Size(445, 19);
@@ -2005,7 +2021,7 @@
             // 
             FFNxDebugTool.BackColor = Color.FromArgb(89, 98, 111);
             FFNxDebugTool.Cursor = Cursors.Hand;
-            FFNxDebugTool.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxDebugTool.Font = new Font("Roboto", 9.5F);
             FFNxDebugTool.Location = new Point(10, 672);
             FFNxDebugTool.Name = "FFNxDebugTool";
             FFNxDebugTool.Size = new Size(221, 19);
@@ -2018,7 +2034,7 @@
             // 
             FFNxFootSteps.BackColor = Color.FromArgb(89, 98, 111);
             FFNxFootSteps.Cursor = Cursors.Hand;
-            FFNxFootSteps.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxFootSteps.Font = new Font("Roboto", 9.5F);
             FFNxFootSteps.Location = new Point(10, 387);
             FFNxFootSteps.Name = "FFNxFootSteps";
             FFNxFootSteps.Size = new Size(445, 19);
@@ -2031,7 +2047,7 @@
             // 
             FFNxLogs.BackColor = Color.FromArgb(89, 98, 111);
             FFNxLogs.Cursor = Cursors.Hand;
-            FFNxLogs.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxLogs.Font = new Font("Roboto", 9.5F);
             FFNxLogs.Location = new Point(234, 672);
             FFNxLogs.Name = "FFNxLogs";
             FFNxLogs.Size = new Size(221, 19);
@@ -2046,7 +2062,7 @@
             FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackMax);
             FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackMin);
             FFNxGroupSpeedhack.Controls.Add(FFNxSpeedhackStep);
-            FFNxGroupSpeedhack.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupSpeedhack.Font = new Font("Roboto", 9.5F);
             FFNxGroupSpeedhack.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupSpeedhack.Location = new Point(10, 411);
             FFNxGroupSpeedhack.Name = "FFNxGroupSpeedhack";
@@ -2105,7 +2121,7 @@
             FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneRT);
             FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneLT);
             FFNxGroupControllerDeathzones.Controls.Add(FFNxContolerDeathzoneStick);
-            FFNxGroupControllerDeathzones.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupControllerDeathzones.Font = new Font("Roboto", 9.5F);
             FFNxGroupControllerDeathzones.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupControllerDeathzones.Location = new Point(10, 473);
             FFNxGroupControllerDeathzones.Name = "FFNxGroupControllerDeathzones";
@@ -2162,7 +2178,7 @@
             // 
             FFNxGroupAudioSample.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupAudioSample.Controls.Add(FFNxAudioSample);
-            FFNxGroupAudioSample.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAudioSample.Font = new Font("Roboto", 9.5F);
             FFNxGroupAudioSample.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAudioSample.Location = new Point(235, 305);
             FFNxGroupAudioSample.Name = "FFNxGroupAudioSample";
@@ -2191,7 +2207,7 @@
             // 
             FFNxGroupIR.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupIR.Controls.Add(FFNxIR);
-            FFNxGroupIR.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupIR.Font = new Font("Roboto", 9.5F);
             FFNxGroupIR.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupIR.Location = new Point(10, 139);
             FFNxGroupIR.Name = "FFNxGroupIR";
@@ -2220,7 +2236,7 @@
             // 
             FFNxGroupAudioChannels.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupAudioChannels.Controls.Add(FFNxAudioChannels);
-            FFNxGroupAudioChannels.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAudioChannels.Font = new Font("Roboto", 9.5F);
             FFNxGroupAudioChannels.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAudioChannels.Location = new Point(10, 305);
             FFNxGroupAudioChannels.Name = "FFNxGroupAudioChannels";
@@ -2249,7 +2265,7 @@
             // 
             FFNxGroupAA.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupAA.Controls.Add(FFNxAA);
-            FFNxGroupAA.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupAA.Font = new Font("Roboto", 9.5F);
             FFNxGroupAA.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupAA.Location = new Point(235, 139);
             FFNxGroupAA.Name = "FFNxGroupAA";
@@ -2278,7 +2294,7 @@
             // 
             FFNxGroupResolution.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupResolution.Controls.Add(FFNxResolution);
-            FFNxGroupResolution.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupResolution.Font = new Font("Roboto", 9.5F);
             FFNxGroupResolution.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupResolution.Location = new Point(10, 79);
             FFNxGroupResolution.Name = "FFNxGroupResolution";
@@ -2307,7 +2323,7 @@
             // 
             FFNxGroupHDR.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupHDR.Controls.Add(FFNxHDR);
-            FFNxGroupHDR.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupHDR.Font = new Font("Roboto", 9.5F);
             FFNxGroupHDR.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupHDR.Location = new Point(10, 199);
             FFNxGroupHDR.Name = "FFNxGroupHDR";
@@ -2336,7 +2352,7 @@
             // 
             FFNxGroupRatio.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupRatio.Controls.Add(FFNxRatio);
-            FFNxGroupRatio.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupRatio.Font = new Font("Roboto", 9.5F);
             FFNxGroupRatio.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupRatio.Location = new Point(235, 79);
             FFNxGroupRatio.Name = "FFNxGroupRatio";
@@ -2365,7 +2381,7 @@
             // 
             FFNxGroupScreen.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroupScreen.Controls.Add(FFNxScreen);
-            FFNxGroupScreen.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroupScreen.Font = new Font("Roboto", 9.5F);
             FFNxGroupScreen.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroupScreen.Location = new Point(235, 19);
             FFNxGroupScreen.Name = "FFNxGroupScreen";
@@ -2394,7 +2410,7 @@
             // 
             FFNxVsync.BackColor = Color.FromArgb(89, 98, 111);
             FFNxVsync.Cursor = Cursors.Hand;
-            FFNxVsync.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxVsync.Font = new Font("Roboto", 9.5F);
             FFNxVsync.Location = new Point(10, 281);
             FFNxVsync.Name = "FFNxVsync";
             FFNxVsync.Size = new Size(445, 19);
@@ -2407,7 +2423,7 @@
             // 
             FFNXMusicResume.BackColor = Color.FromArgb(89, 98, 111);
             FFNXMusicResume.Cursor = Cursors.Hand;
-            FFNXMusicResume.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNXMusicResume.Font = new Font("Roboto", 9.5F);
             FFNXMusicResume.Location = new Point(10, 365);
             FFNXMusicResume.Name = "FFNXMusicResume";
             FFNXMusicResume.Size = new Size(445, 19);
@@ -2420,7 +2436,7 @@
             // 
             FFNxAnisotropic.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAnisotropic.Cursor = Cursors.Hand;
-            FFNxAnisotropic.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAnisotropic.Font = new Font("Roboto", 9.5F);
             FFNxAnisotropic.Location = new Point(10, 259);
             FFNxAnisotropic.Name = "FFNxAnisotropic";
             FFNxAnisotropic.Size = new Size(221, 19);
@@ -2433,7 +2449,7 @@
             // 
             FFNxAnalogController.BackColor = Color.FromArgb(89, 98, 111);
             FFNxAnalogController.Cursor = Cursors.Hand;
-            FFNxAnalogController.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxAnalogController.Font = new Font("Roboto", 9.5F);
             FFNxAnalogController.Location = new Point(10, 533);
             FFNxAnalogController.Name = "FFNxAnalogController";
             FFNxAnalogController.Size = new Size(221, 19);
@@ -2447,7 +2463,7 @@
             // 
             FFNXSteamSucces.BackColor = Color.FromArgb(89, 98, 111);
             FFNXSteamSucces.Cursor = Cursors.Hand;
-            FFNXSteamSucces.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNXSteamSucces.Font = new Font("Roboto", 9.5F);
             FFNXSteamSucces.Location = new Point(10, 628);
             FFNXSteamSucces.Name = "FFNXSteamSucces";
             FFNXSteamSucces.Size = new Size(221, 19);
@@ -2460,7 +2476,7 @@
             // 
             FFNxGroup3dEngine.BackColor = Color.FromArgb(89, 98, 111);
             FFNxGroup3dEngine.Controls.Add(FFNx3dEngine);
-            FFNxGroup3dEngine.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            FFNxGroup3dEngine.Font = new Font("Roboto", 9.5F);
             FFNxGroup3dEngine.ForeColor = Color.FromArgb(224, 224, 224);
             FFNxGroup3dEngine.Location = new Point(10, 19);
             FFNxGroup3dEngine.Name = "FFNxGroup3dEngine";
@@ -2487,7 +2503,7 @@
             // menuHelpPanel
             // 
             menuHelpPanel.Controls.Add(HelpFrame2);
-            menuHelpPanel.Location = new Point(327, 0);
+            menuHelpPanel.Location = new Point(16000, 0);
             menuHelpPanel.Name = "menuHelpPanel";
             menuHelpPanel.Size = new Size(795, 703);
             menuHelpPanel.TabIndex = 15;
@@ -2499,7 +2515,7 @@
             HelpFrame2.Controls.Add(chooseHelp);
             HelpFrame2.Controls.Add(HelpList);
             HelpFrame2.Controls.Add(GeneralHelp);
-            HelpFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            HelpFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             HelpFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             HelpFrame2.Location = new Point(3, 4);
             HelpFrame2.Name = "HelpFrame2";
@@ -2512,7 +2528,7 @@
             // 
             makeDebugPack.BackColor = SystemColors.ScrollBar;
             makeDebugPack.Cursor = Cursors.Hand;
-            makeDebugPack.Font = new Font("Roboto Black", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            makeDebugPack.Font = new Font("Roboto Black", 14F, FontStyle.Bold);
             makeDebugPack.ForeColor = Color.Black;
             makeDebugPack.Location = new Point(10, 653);
             makeDebugPack.Name = "makeDebugPack";
@@ -2527,7 +2543,7 @@
             // chooseHelp
             // 
             chooseHelp.BackColor = Color.Transparent;
-            chooseHelp.Font = new Font("Roboto Black", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            chooseHelp.Font = new Font("Roboto Black", 36F, FontStyle.Bold);
             chooseHelp.ForeColor = Color.White;
             chooseHelp.Location = new Point(14, 61);
             chooseHelp.Name = "chooseHelp";
@@ -2552,7 +2568,7 @@
             // GeneralHelp
             // 
             GeneralHelp.BorderStyle = BorderStyle.None;
-            GeneralHelp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            GeneralHelp.Font = new Font("Roboto", 9.5F);
             GeneralHelp.Location = new Point(14, 61);
             GeneralHelp.Name = "GeneralHelp";
             GeneralHelp.ReadOnly = true;
@@ -2563,7 +2579,7 @@
             // menuLaunchGamePanel
             // 
             menuLaunchGamePanel.Controls.Add(groupBox2);
-            menuLaunchGamePanel.Location = new Point(327, 0);
+            menuLaunchGamePanel.Location = new Point(16000, 0);
             menuLaunchGamePanel.Name = "menuLaunchGamePanel";
             menuLaunchGamePanel.Size = new Size(795, 703);
             menuLaunchGamePanel.TabIndex = 16;
@@ -2574,7 +2590,7 @@
             groupBox2.Controls.Add(loadingAnimation);
             groupBox2.Controls.Add(loadingWaitDetails);
             groupBox2.Controls.Add(loadingWait);
-            groupBox2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             groupBox2.ForeColor = Color.FromArgb(224, 224, 224);
             groupBox2.Location = new Point(3, 4);
             groupBox2.Name = "groupBox2";
@@ -2597,7 +2613,7 @@
             // 
             loadingWaitDetails.BackColor = Color.FromArgb(12, 120, 120);
             loadingWaitDetails.Cursor = Cursors.Hand;
-            loadingWaitDetails.Font = new Font("Roboto", 21.75F, FontStyle.Italic, GraphicsUnit.Point);
+            loadingWaitDetails.Font = new Font("Roboto", 21.75F, FontStyle.Italic);
             loadingWaitDetails.ForeColor = Color.FromArgb(224, 224, 224);
             loadingWaitDetails.Location = new Point(18, 626);
             loadingWaitDetails.Name = "loadingWaitDetails";
@@ -2610,7 +2626,7 @@
             // 
             loadingWait.BackColor = Color.FromArgb(6, 60, 60);
             loadingWait.Cursor = Cursors.Hand;
-            loadingWait.Font = new Font("Roboto", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            loadingWait.Font = new Font("Roboto", 36F);
             loadingWait.ForeColor = Color.FromArgb(224, 224, 224);
             loadingWait.Location = new Point(18, 551);
             loadingWait.Name = "loadingWait";
@@ -2624,7 +2640,7 @@
             menuControlsPanel.Controls.Add(controlsFrame2);
             menuControlsPanel.Controls.Add(controlsFrame3);
             menuControlsPanel.Controls.Add(controlsFrame1);
-            menuControlsPanel.Location = new Point(327, 0);
+            menuControlsPanel.Location = new Point(16000, 0);
             menuControlsPanel.Name = "menuControlsPanel";
             menuControlsPanel.Size = new Size(795, 703);
             menuControlsPanel.TabIndex = 41;
@@ -2681,7 +2697,7 @@
             controlsFrame2.Controls.Add(ctrlMenu);
             controlsFrame2.Controls.Add(ctrlCancel);
             controlsFrame2.Controls.Add(ctrlMove);
-            controlsFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            controlsFrame2.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             controlsFrame2.ForeColor = Color.FromArgb(224, 224, 224);
             controlsFrame2.Location = new Point(402, 4);
             controlsFrame2.Name = "controlsFrame2";
@@ -2693,7 +2709,7 @@
             // analogPadUse
             // 
             analogPadUse.BackColor = Color.Transparent;
-            analogPadUse.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            analogPadUse.Font = new Font("Roboto", 9.5F);
             analogPadUse.ForeColor = Color.White;
             analogPadUse.Location = new Point(9, 239);
             analogPadUse.Name = "analogPadUse";
@@ -2704,7 +2720,7 @@
             // ctrlKeyboard
             // 
             ctrlKeyboard.BackColor = Color.Transparent;
-            ctrlKeyboard.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            ctrlKeyboard.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             ctrlKeyboard.ForeColor = Color.White;
             ctrlKeyboard.Location = new Point(297, 25);
             ctrlKeyboard.Name = "ctrlKeyboard";
@@ -2715,7 +2731,7 @@
             // ctrlNumpad
             // 
             ctrlNumpad.BackColor = Color.Transparent;
-            ctrlNumpad.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            ctrlNumpad.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             ctrlNumpad.ForeColor = Color.White;
             ctrlNumpad.Location = new Point(207, 25);
             ctrlNumpad.Name = "ctrlNumpad";
@@ -2726,7 +2742,7 @@
             // ctrlGamepad
             // 
             ctrlGamepad.BackColor = Color.Transparent;
-            ctrlGamepad.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            ctrlGamepad.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             ctrlGamepad.ForeColor = Color.White;
             ctrlGamepad.Location = new Point(121, 25);
             ctrlGamepad.Name = "ctrlGamepad";
@@ -2737,7 +2753,7 @@
             // ctrlControls
             // 
             ctrlControls.BackColor = Color.Transparent;
-            ctrlControls.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            ctrlControls.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             ctrlControls.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlControls.Location = new Point(8, 25);
             ctrlControls.Name = "ctrlControls";
@@ -2748,7 +2764,7 @@
             // ctrlKeyboardStart
             // 
             ctrlKeyboardStart.BackColor = Color.Transparent;
-            ctrlKeyboardStart.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardStart.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardStart.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardStart.Location = new Point(297, 213);
             ctrlKeyboardStart.Name = "ctrlKeyboardStart";
@@ -2759,7 +2775,7 @@
             // ctrlKeyboardAssist
             // 
             ctrlKeyboardAssist.BackColor = Color.Transparent;
-            ctrlKeyboardAssist.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardAssist.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardAssist.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardAssist.Location = new Point(297, 197);
             ctrlKeyboardAssist.Name = "ctrlKeyboardAssist";
@@ -2770,7 +2786,7 @@
             // ctrlKeyboardTarget
             // 
             ctrlKeyboardTarget.BackColor = Color.Transparent;
-            ctrlKeyboardTarget.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardTarget.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardTarget.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardTarget.Location = new Point(297, 180);
             ctrlKeyboardTarget.Name = "ctrlKeyboardTarget";
@@ -2781,7 +2797,7 @@
             // ctrlKeyboardCam
             // 
             ctrlKeyboardCam.BackColor = Color.Transparent;
-            ctrlKeyboardCam.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardCam.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardCam.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardCam.Location = new Point(297, 163);
             ctrlKeyboardCam.Name = "ctrlKeyboardCam";
@@ -2792,7 +2808,7 @@
             // ctrlKeyboardPgDown
             // 
             ctrlKeyboardPgDown.BackColor = Color.Transparent;
-            ctrlKeyboardPgDown.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardPgDown.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardPgDown.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardPgDown.Location = new Point(297, 146);
             ctrlKeyboardPgDown.Name = "ctrlKeyboardPgDown";
@@ -2803,7 +2819,7 @@
             // ctrlKeyboardPgUp
             // 
             ctrlKeyboardPgUp.BackColor = Color.Transparent;
-            ctrlKeyboardPgUp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardPgUp.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardPgUp.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardPgUp.Location = new Point(297, 129);
             ctrlKeyboardPgUp.Name = "ctrlKeyboardPgUp";
@@ -2814,7 +2830,7 @@
             // ctrlKeyboardChange
             // 
             ctrlKeyboardChange.BackColor = Color.Transparent;
-            ctrlKeyboardChange.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardChange.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardChange.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardChange.Location = new Point(297, 112);
             ctrlKeyboardChange.Name = "ctrlKeyboardChange";
@@ -2825,7 +2841,7 @@
             // ctrlKeyboardMenu
             // 
             ctrlKeyboardMenu.BackColor = Color.Transparent;
-            ctrlKeyboardMenu.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardMenu.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardMenu.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardMenu.Location = new Point(297, 95);
             ctrlKeyboardMenu.Name = "ctrlKeyboardMenu";
@@ -2836,7 +2852,7 @@
             // ctrlKeyboardCancel
             // 
             ctrlKeyboardCancel.BackColor = Color.Transparent;
-            ctrlKeyboardCancel.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardCancel.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardCancel.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardCancel.Location = new Point(297, 78);
             ctrlKeyboardCancel.Name = "ctrlKeyboardCancel";
@@ -2847,7 +2863,7 @@
             // ctrlKeyboardOk
             // 
             ctrlKeyboardOk.BackColor = Color.Transparent;
-            ctrlKeyboardOk.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardOk.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardOk.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardOk.Location = new Point(297, 61);
             ctrlKeyboardOk.Name = "ctrlKeyboardOk";
@@ -2858,7 +2874,7 @@
             // ctrlKeyboardPad
             // 
             ctrlKeyboardPad.BackColor = Color.Transparent;
-            ctrlKeyboardPad.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlKeyboardPad.Font = new Font("Roboto", 9.5F);
             ctrlKeyboardPad.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlKeyboardPad.Location = new Point(297, 44);
             ctrlKeyboardPad.Name = "ctrlKeyboardPad";
@@ -2869,7 +2885,7 @@
             // ctrlNumpadStart
             // 
             ctrlNumpadStart.BackColor = Color.Transparent;
-            ctrlNumpadStart.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadStart.Font = new Font("Roboto", 9.5F);
             ctrlNumpadStart.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadStart.Location = new Point(208, 213);
             ctrlNumpadStart.Name = "ctrlNumpadStart";
@@ -2880,7 +2896,7 @@
             // ctrlNumpadAssist
             // 
             ctrlNumpadAssist.BackColor = Color.Transparent;
-            ctrlNumpadAssist.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadAssist.Font = new Font("Roboto", 9.5F);
             ctrlNumpadAssist.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadAssist.Location = new Point(208, 197);
             ctrlNumpadAssist.Name = "ctrlNumpadAssist";
@@ -2891,7 +2907,7 @@
             // ctrlNumpadTarget
             // 
             ctrlNumpadTarget.BackColor = Color.Transparent;
-            ctrlNumpadTarget.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadTarget.Font = new Font("Roboto", 9.5F);
             ctrlNumpadTarget.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadTarget.Location = new Point(208, 180);
             ctrlNumpadTarget.Name = "ctrlNumpadTarget";
@@ -2902,7 +2918,7 @@
             // ctrlNumpadCam
             // 
             ctrlNumpadCam.BackColor = Color.Transparent;
-            ctrlNumpadCam.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadCam.Font = new Font("Roboto", 9.5F);
             ctrlNumpadCam.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadCam.Location = new Point(208, 163);
             ctrlNumpadCam.Name = "ctrlNumpadCam";
@@ -2913,7 +2929,7 @@
             // ctrlNumpadPgDown
             // 
             ctrlNumpadPgDown.BackColor = Color.Transparent;
-            ctrlNumpadPgDown.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadPgDown.Font = new Font("Roboto", 9.5F);
             ctrlNumpadPgDown.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadPgDown.Location = new Point(208, 146);
             ctrlNumpadPgDown.Name = "ctrlNumpadPgDown";
@@ -2924,7 +2940,7 @@
             // ctrlNumpadPgUp
             // 
             ctrlNumpadPgUp.BackColor = Color.Transparent;
-            ctrlNumpadPgUp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadPgUp.Font = new Font("Roboto", 9.5F);
             ctrlNumpadPgUp.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadPgUp.Location = new Point(208, 129);
             ctrlNumpadPgUp.Name = "ctrlNumpadPgUp";
@@ -2935,7 +2951,7 @@
             // ctrlNumpadChange
             // 
             ctrlNumpadChange.BackColor = Color.Transparent;
-            ctrlNumpadChange.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadChange.Font = new Font("Roboto", 9.5F);
             ctrlNumpadChange.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadChange.Location = new Point(208, 112);
             ctrlNumpadChange.Name = "ctrlNumpadChange";
@@ -2946,7 +2962,7 @@
             // ctrlNumpadMenu
             // 
             ctrlNumpadMenu.BackColor = Color.Transparent;
-            ctrlNumpadMenu.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadMenu.Font = new Font("Roboto", 9.5F);
             ctrlNumpadMenu.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadMenu.Location = new Point(208, 95);
             ctrlNumpadMenu.Name = "ctrlNumpadMenu";
@@ -2957,7 +2973,7 @@
             // ctrlNumpadCancel
             // 
             ctrlNumpadCancel.BackColor = Color.Transparent;
-            ctrlNumpadCancel.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadCancel.Font = new Font("Roboto", 9.5F);
             ctrlNumpadCancel.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadCancel.Location = new Point(208, 78);
             ctrlNumpadCancel.Name = "ctrlNumpadCancel";
@@ -2968,7 +2984,7 @@
             // ctrlNumpadOk
             // 
             ctrlNumpadOk.BackColor = Color.Transparent;
-            ctrlNumpadOk.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadOk.Font = new Font("Roboto", 9.5F);
             ctrlNumpadOk.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadOk.Location = new Point(208, 61);
             ctrlNumpadOk.Name = "ctrlNumpadOk";
@@ -2979,7 +2995,7 @@
             // ctrlNumpadPad
             // 
             ctrlNumpadPad.BackColor = Color.Transparent;
-            ctrlNumpadPad.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlNumpadPad.Font = new Font("Roboto", 9.5F);
             ctrlNumpadPad.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlNumpadPad.Location = new Point(208, 44);
             ctrlNumpadPad.Name = "ctrlNumpadPad";
@@ -2990,7 +3006,7 @@
             // ctrlGpadStart
             // 
             ctrlGpadStart.BackColor = Color.Transparent;
-            ctrlGpadStart.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadStart.Font = new Font("Roboto", 9.5F);
             ctrlGpadStart.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadStart.Location = new Point(121, 213);
             ctrlGpadStart.Name = "ctrlGpadStart";
@@ -3001,7 +3017,7 @@
             // ctrlGpadAssist
             // 
             ctrlGpadAssist.BackColor = Color.Transparent;
-            ctrlGpadAssist.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadAssist.Font = new Font("Roboto", 9.5F);
             ctrlGpadAssist.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadAssist.Location = new Point(121, 197);
             ctrlGpadAssist.Name = "ctrlGpadAssist";
@@ -3012,7 +3028,7 @@
             // ctrlGpadTarget
             // 
             ctrlGpadTarget.BackColor = Color.Transparent;
-            ctrlGpadTarget.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadTarget.Font = new Font("Roboto", 9.5F);
             ctrlGpadTarget.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadTarget.Location = new Point(121, 180);
             ctrlGpadTarget.Name = "ctrlGpadTarget";
@@ -3023,7 +3039,7 @@
             // ctrlGpadCam
             // 
             ctrlGpadCam.BackColor = Color.Transparent;
-            ctrlGpadCam.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadCam.Font = new Font("Roboto", 9.5F);
             ctrlGpadCam.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadCam.Location = new Point(121, 163);
             ctrlGpadCam.Name = "ctrlGpadCam";
@@ -3034,7 +3050,7 @@
             // ctrlGpadPgDown
             // 
             ctrlGpadPgDown.BackColor = Color.Transparent;
-            ctrlGpadPgDown.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadPgDown.Font = new Font("Roboto", 9.5F);
             ctrlGpadPgDown.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadPgDown.Location = new Point(121, 146);
             ctrlGpadPgDown.Name = "ctrlGpadPgDown";
@@ -3045,7 +3061,7 @@
             // ctrlGpadPgUp
             // 
             ctrlGpadPgUp.BackColor = Color.Transparent;
-            ctrlGpadPgUp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadPgUp.Font = new Font("Roboto", 9.5F);
             ctrlGpadPgUp.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadPgUp.Location = new Point(121, 129);
             ctrlGpadPgUp.Name = "ctrlGpadPgUp";
@@ -3056,7 +3072,7 @@
             // ctrlGpadChange
             // 
             ctrlGpadChange.BackColor = Color.Transparent;
-            ctrlGpadChange.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadChange.Font = new Font("Roboto", 9.5F);
             ctrlGpadChange.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadChange.Location = new Point(121, 112);
             ctrlGpadChange.Name = "ctrlGpadChange";
@@ -3067,7 +3083,7 @@
             // ctrlGpadMenu
             // 
             ctrlGpadMenu.BackColor = Color.Transparent;
-            ctrlGpadMenu.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadMenu.Font = new Font("Roboto", 9.5F);
             ctrlGpadMenu.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadMenu.Location = new Point(121, 95);
             ctrlGpadMenu.Name = "ctrlGpadMenu";
@@ -3078,7 +3094,7 @@
             // ctrlGpadCancel
             // 
             ctrlGpadCancel.BackColor = Color.Transparent;
-            ctrlGpadCancel.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadCancel.Font = new Font("Roboto", 9.5F);
             ctrlGpadCancel.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadCancel.Location = new Point(121, 78);
             ctrlGpadCancel.Name = "ctrlGpadCancel";
@@ -3089,7 +3105,7 @@
             // ctrlGpadOk
             // 
             ctrlGpadOk.BackColor = Color.Transparent;
-            ctrlGpadOk.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadOk.Font = new Font("Roboto", 9.5F);
             ctrlGpadOk.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadOk.Location = new Point(121, 61);
             ctrlGpadOk.Name = "ctrlGpadOk";
@@ -3100,7 +3116,7 @@
             // ctrlGpadPad
             // 
             ctrlGpadPad.BackColor = Color.Transparent;
-            ctrlGpadPad.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlGpadPad.Font = new Font("Roboto", 9.5F);
             ctrlGpadPad.ForeColor = Color.FromArgb(32, 225, 229);
             ctrlGpadPad.Location = new Point(121, 44);
             ctrlGpadPad.Name = "ctrlGpadPad";
@@ -3111,7 +3127,7 @@
             // ctrlOk
             // 
             ctrlOk.BackColor = Color.Transparent;
-            ctrlOk.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlOk.Font = new Font("Roboto", 9.5F);
             ctrlOk.ForeColor = Color.White;
             ctrlOk.Location = new Point(8, 61);
             ctrlOk.Name = "ctrlOk";
@@ -3122,7 +3138,7 @@
             // ctrlStart
             // 
             ctrlStart.BackColor = Color.Transparent;
-            ctrlStart.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlStart.Font = new Font("Roboto", 9.5F);
             ctrlStart.ForeColor = Color.White;
             ctrlStart.Location = new Point(8, 213);
             ctrlStart.Name = "ctrlStart";
@@ -3133,7 +3149,7 @@
             // ctrlAssist
             // 
             ctrlAssist.BackColor = Color.Transparent;
-            ctrlAssist.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlAssist.Font = new Font("Roboto", 9.5F);
             ctrlAssist.ForeColor = Color.White;
             ctrlAssist.Location = new Point(8, 197);
             ctrlAssist.Name = "ctrlAssist";
@@ -3144,7 +3160,7 @@
             // ctrlTarget
             // 
             ctrlTarget.BackColor = Color.Transparent;
-            ctrlTarget.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlTarget.Font = new Font("Roboto", 9.5F);
             ctrlTarget.ForeColor = Color.White;
             ctrlTarget.Location = new Point(8, 180);
             ctrlTarget.Name = "ctrlTarget";
@@ -3155,7 +3171,7 @@
             // ctrlCam
             // 
             ctrlCam.BackColor = Color.Transparent;
-            ctrlCam.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlCam.Font = new Font("Roboto", 9.5F);
             ctrlCam.ForeColor = Color.White;
             ctrlCam.Location = new Point(8, 163);
             ctrlCam.Name = "ctrlCam";
@@ -3166,7 +3182,7 @@
             // ctrlPgDown
             // 
             ctrlPgDown.BackColor = Color.Transparent;
-            ctrlPgDown.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlPgDown.Font = new Font("Roboto", 9.5F);
             ctrlPgDown.ForeColor = Color.White;
             ctrlPgDown.Location = new Point(8, 146);
             ctrlPgDown.Name = "ctrlPgDown";
@@ -3177,7 +3193,7 @@
             // ctrlPgUp
             // 
             ctrlPgUp.BackColor = Color.Transparent;
-            ctrlPgUp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlPgUp.Font = new Font("Roboto", 9.5F);
             ctrlPgUp.ForeColor = Color.White;
             ctrlPgUp.Location = new Point(8, 129);
             ctrlPgUp.Name = "ctrlPgUp";
@@ -3188,7 +3204,7 @@
             // ctrlChange
             // 
             ctrlChange.BackColor = Color.Transparent;
-            ctrlChange.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlChange.Font = new Font("Roboto", 9.5F);
             ctrlChange.ForeColor = Color.White;
             ctrlChange.Location = new Point(8, 112);
             ctrlChange.Name = "ctrlChange";
@@ -3199,7 +3215,7 @@
             // ctrlMenu
             // 
             ctrlMenu.BackColor = Color.Transparent;
-            ctrlMenu.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlMenu.Font = new Font("Roboto", 9.5F);
             ctrlMenu.ForeColor = Color.White;
             ctrlMenu.Location = new Point(8, 95);
             ctrlMenu.Name = "ctrlMenu";
@@ -3210,7 +3226,7 @@
             // ctrlCancel
             // 
             ctrlCancel.BackColor = Color.Transparent;
-            ctrlCancel.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlCancel.Font = new Font("Roboto", 9.5F);
             ctrlCancel.ForeColor = Color.White;
             ctrlCancel.Location = new Point(8, 78);
             ctrlCancel.Name = "ctrlCancel";
@@ -3221,7 +3237,7 @@
             // ctrlMove
             // 
             ctrlMove.BackColor = Color.Transparent;
-            ctrlMove.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            ctrlMove.Font = new Font("Roboto", 9.5F);
             ctrlMove.ForeColor = Color.White;
             ctrlMove.Location = new Point(8, 44);
             ctrlMove.Name = "ctrlMove";
@@ -3234,7 +3250,7 @@
             controlsFrame3.Controls.Add(specialShortcutHelp);
             controlsFrame3.Controls.Add(controleRestoreKb);
             controlsFrame3.Controls.Add(controleRestoreNp);
-            controlsFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            controlsFrame3.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             controlsFrame3.ForeColor = Color.FromArgb(224, 224, 224);
             controlsFrame3.Location = new Point(3, 311);
             controlsFrame3.Name = "controlsFrame3";
@@ -3247,7 +3263,7 @@
             // 
             specialShortcutHelp.BackColor = Color.FromArgb(33, 40, 50);
             specialShortcutHelp.BorderStyle = BorderStyle.None;
-            specialShortcutHelp.Font = new Font("Roboto", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            specialShortcutHelp.Font = new Font("Roboto", 9.5F);
             specialShortcutHelp.Location = new Point(11, 22);
             specialShortcutHelp.Name = "specialShortcutHelp";
             specialShortcutHelp.ReadOnly = true;
@@ -3260,7 +3276,7 @@
             // 
             controleRestoreKb.BackColor = SystemColors.ScrollBar;
             controleRestoreKb.Cursor = Cursors.Hand;
-            controleRestoreKb.Font = new Font("Roboto Black", 12.5F, FontStyle.Bold, GraphicsUnit.Point);
+            controleRestoreKb.Font = new Font("Roboto Black", 12.5F, FontStyle.Bold);
             controleRestoreKb.ForeColor = Color.Black;
             controleRestoreKb.Location = new Point(11, 346);
             controleRestoreKb.Name = "controleRestoreKb";
@@ -3276,7 +3292,7 @@
             // 
             controleRestoreNp.BackColor = SystemColors.ScrollBar;
             controleRestoreNp.Cursor = Cursors.Hand;
-            controleRestoreNp.Font = new Font("Roboto Black", 12.5F, FontStyle.Bold, GraphicsUnit.Point);
+            controleRestoreNp.Font = new Font("Roboto Black", 12.5F, FontStyle.Bold);
             controleRestoreNp.ForeColor = Color.Black;
             controleRestoreNp.Location = new Point(396, 346);
             controleRestoreNp.Name = "controleRestoreNp";
@@ -3291,7 +3307,7 @@
             // controlsFrame1
             // 
             controlsFrame1.Controls.Add(psxPict);
-            controlsFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold, GraphicsUnit.Point);
+            controlsFrame1.Font = new Font("Roboto Black", 9.5F, FontStyle.Bold);
             controlsFrame1.ForeColor = Color.FromArgb(224, 224, 224);
             controlsFrame1.Location = new Point(3, 4);
             controlsFrame1.Name = "controlsFrame1";
@@ -3662,5 +3678,6 @@
         private CheckBox FFNxGamutNtsc;
         private CheckBox graphicsCosmosGaia;
         private Label makeDebugPack;
+        private CheckBox graphicsLb;
     }
 }

@@ -48,6 +48,7 @@ namespace FF7_SYW_Unified
                 if (graphicsFields.Checked == false)
                 {
                     graphicsAnimations.Checked = false;
+                    graphicsLb.Checked = false;
                 }
             }
         }
@@ -67,6 +68,23 @@ namespace FF7_SYW_Unified
 
 
 
+        private void graphicsLb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Globals.formSettingsLoaded == true)
+            {
+                if (graphicsFields.Checked == false)
+                {
+                    graphicsLb.Checked = false;
+                }
+
+                if(graphicsLb.Checked == false && (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3))
+                {
+                    FFNxRatio.SelectedIndex = 0;
+                }
+            }
+        }
+
+
         private void graphicsCosmosGaia_CheckedChanged(object sender, EventArgs e)
         {
             if (Globals.formSettingsLoaded == true)
@@ -82,6 +100,7 @@ namespace FF7_SYW_Unified
 
         private void graphicsFields_MouseEnter(object sender, EventArgs e) { modShow("graphicsFields", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsAnimations_MouseEnter(object sender, EventArgs e) { modShow("graphicsAnimations", graphicsHelp, graphicsHelpAuthor); }
+        private void graphicsLb_MouseEnter(object sender, EventArgs e) { modShow("graphicsLb", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsBattles_MouseEnter(object sender, EventArgs e) { modShow("graphicsBattles", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsMagics_MouseEnter(object sender, EventArgs e) { modShow("graphicsMagics", graphicsHelp, graphicsHelpAuthor); }
         private void graphicsWorldMap_MouseEnter(object sender, EventArgs e) { modShow("graphicsWorldMap", graphicsHelp, graphicsHelpAuthor); }

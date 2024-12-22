@@ -56,6 +56,7 @@ namespace FF7_SYW_Unified
                     graphicsSetDefaults();
                     graphicsFields.Checked = false;
                     graphicsAnimations.Checked = false;
+                    graphicsLb.Checked = false;
                     graphicsMiniGames.Checked = false;
                     graphicsBattles.Checked = false;
                     axl3dbattle.Checked = false;

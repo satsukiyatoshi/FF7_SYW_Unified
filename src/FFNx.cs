@@ -94,6 +94,7 @@ namespace FF7_SYW_Unified
             FFNxRatio.Items.Add(translate("strechedwidescreen", Globals.translateUI));
             FFNxRatio.Items.Add(translate("realwidescreen", Globals.translateUI));
             FFNxRatio.Items.Add(translate("realwidescreendeck", Globals.translateUI));
+            FFNxRatio.Items.Add(translate("uncropped43", Globals.translateUI));
             FFNxRatio.Text=(translate("ogscreen", Globals.translateUI));
 
             FFNxIR.Items.Add(translate("auto", Globals.translateUI));
@@ -276,6 +277,20 @@ namespace FF7_SYW_Unified
                 if (FFNxAnalogController.Checked == false)
                 {
                     FFNxAnalogControllerArun.Checked = false;
+                }
+            }
+        }
+
+
+
+        private void checkAr(object sender, EventArgs e)
+        {
+            if (Globals.formSettingsLoaded == true)
+            {
+                if (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3)
+                {
+                    graphicsFields.Checked = true;
+                    graphicsLb.Checked = true;
                 }
             }
         }

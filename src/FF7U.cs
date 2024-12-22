@@ -66,7 +66,7 @@ namespace FF7_SYW_Unified
                 if (p.MainModule.FileName.StartsWith(FilePath, StringComparison.InvariantCultureIgnoreCase))
                 {
                     total_run++;
-                    if(total_run > 1) { break; }
+                    if (total_run > 1) { break; }
                 }
             }
 
@@ -298,6 +298,7 @@ namespace FF7_SYW_Unified
             playAudioClose();
             Process.GetCurrentProcess().Kill();
         }
+
     }
 
 }
