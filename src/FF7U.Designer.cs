@@ -1142,7 +1142,7 @@
             // 
             menuAboutPanel.Controls.Add(aboutFrame1);
             menuAboutPanel.Controls.Add(aboutFrame2);
-            menuAboutPanel.Location = new Point(16000, 0);
+            menuAboutPanel.Location = new Point(327, 0);
             menuAboutPanel.Name = "menuAboutPanel";
             menuAboutPanel.Size = new Size(799, 715);
             menuAboutPanel.TabIndex = 11;
@@ -1203,7 +1203,7 @@
             menuSoundPanel.Controls.Add(soundFrame4);
             menuSoundPanel.Controls.Add(soundFrame2);
             menuSoundPanel.Controls.Add(soundFrame3);
-            menuSoundPanel.Location = new Point(16000, 0);
+            menuSoundPanel.Location = new Point(327, 0);
             menuSoundPanel.Name = "menuSoundPanel";
             menuSoundPanel.Size = new Size(795, 703);
             menuSoundPanel.TabIndex = 12;
@@ -1476,7 +1476,7 @@
             menuGameplayPanel.Controls.Add(gameplayFrame5);
             menuGameplayPanel.Controls.Add(gameplayFrame1);
             menuGameplayPanel.Controls.Add(gameplayFrame3);
-            menuGameplayPanel.Location = new Point(16000, 0);
+            menuGameplayPanel.Location = new Point(327, 0);
             menuGameplayPanel.Name = "menuGameplayPanel";
             menuGameplayPanel.Size = new Size(795, 703);
             menuGameplayPanel.TabIndex = 13;
@@ -1709,7 +1709,7 @@
             menuFFNxPanel.Controls.Add(FFNxFrame2);
             menuFFNxPanel.Controls.Add(FFNxFrame1);
             menuFFNxPanel.Controls.Add(FFNxFrame3);
-            menuFFNxPanel.Location = new Point(16000, 0);
+            menuFFNxPanel.Location = new Point(327, 0);
             menuFFNxPanel.Name = "menuFFNxPanel";
             menuFFNxPanel.Size = new Size(795, 703);
             menuFFNxPanel.TabIndex = 14;
@@ -2503,7 +2503,7 @@
             // menuHelpPanel
             // 
             menuHelpPanel.Controls.Add(HelpFrame2);
-            menuHelpPanel.Location = new Point(16000, 0);
+            menuHelpPanel.Location = new Point(327, 0);
             menuHelpPanel.Name = "menuHelpPanel";
             menuHelpPanel.Size = new Size(795, 703);
             menuHelpPanel.TabIndex = 15;
@@ -2579,7 +2579,7 @@
             // menuLaunchGamePanel
             // 
             menuLaunchGamePanel.Controls.Add(groupBox2);
-            menuLaunchGamePanel.Location = new Point(16000, 0);
+            menuLaunchGamePanel.Location = new Point(327, 0);
             menuLaunchGamePanel.Name = "menuLaunchGamePanel";
             menuLaunchGamePanel.Size = new Size(795, 703);
             menuLaunchGamePanel.TabIndex = 16;
@@ -2640,7 +2640,7 @@
             menuControlsPanel.Controls.Add(controlsFrame2);
             menuControlsPanel.Controls.Add(controlsFrame3);
             menuControlsPanel.Controls.Add(controlsFrame1);
-            menuControlsPanel.Location = new Point(16000, 0);
+            menuControlsPanel.Location = new Point(327, 0);
             menuControlsPanel.Name = "menuControlsPanel";
             menuControlsPanel.Size = new Size(795, 703);
             menuControlsPanel.TabIndex = 41;

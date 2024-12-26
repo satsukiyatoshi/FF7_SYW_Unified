@@ -3,6 +3,7 @@ using System.Reflection.PortableExecutable;
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace FF7_SYW_Unified
 {
@@ -149,6 +150,8 @@ namespace FF7_SYW_Unified
                 modFolder = modFolder + @"\";
             }
 
+            modFolder = modFolder.Replace(@"\\", @"\");
+
             if (File.Exists(modFolder + @"Trainers\Config.xml"))
             {
                 Globals.isTrainer = true;
@@ -212,6 +215,7 @@ namespace FF7_SYW_Unified
             }
 
             //apply ratio specific files
+
             if (Directory.Exists(modFolder + @"FilesWS\43") && FFNxRatio.SelectedIndex == 0)
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\43"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
@@ -230,6 +234,47 @@ namespace FF7_SYW_Unified
             if (Directory.Exists(modFolder + @"FilesWS\1610") && FFNxRatio.SelectedIndex == 3)
             {
                 folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\1610"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWS\43uc") && FFNxRatio.SelectedIndex == 4)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\43uc"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWS\169uc") && FFNxRatio.SelectedIndex == 5)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWS\169uc"), new DirectoryInfo(Application.StartupPath + @"\Game\current"));
+            }
+
+            //apply ratio specific files game folder form widescreen config files for exemple
+            if (Directory.Exists(modFolder + @"FilesWSG\43") && FFNxRatio.SelectedIndex == 0)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWSG\43"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWSG\169st") && FFNxRatio.SelectedIndex == 1)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWSG\169st"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWSG\169") && FFNxRatio.SelectedIndex == 2)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWSG\169"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWSG\1610") && FFNxRatio.SelectedIndex == 3)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWSG\1610"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWSG\43uc") && FFNxRatio.SelectedIndex == 4)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWSG\43uc"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
+
+            if (Directory.Exists(modFolder + @"FilesWSG\169uc") && FFNxRatio.SelectedIndex == 5)
+            {
+                folderCopyAll(new DirectoryInfo(modFolder + @"FilesWSG\169uc"), new DirectoryInfo(Application.StartupPath + @"\Game"));
             }
 
             //replace ff7.exe with the gameplay's ff7 mod (used with vanilla exe option too)
@@ -256,6 +301,12 @@ namespace FF7_SYW_Unified
             List<string> disabledFolders = Directory.GetDirectories(Application.StartupPath + @"mods\SYW\Textures", "*SYWF", SearchOption.AllDirectories).ToList();
             List<string> currentFiles = Directory.GetFiles(Application.StartupPath + @"Game\current", "*", SearchOption.AllDirectories).ToList();
 
+            foreach (string fichier in Directory.GetFiles(Application.StartupPath + @"Game\widescreen"))
+            {
+                //remove files from LB mod
+                    File.Delete(fichier);
+            }
+
             foreach (string fichier in Directory.GetFiles(Application.StartupPath + @"Game\data\movies"))
             {
                 //remove files from movies game folder - to deal with external audio fmv file witch MUST be in OG folder, no possible overide
@@ -280,11 +331,6 @@ namespace FF7_SYW_Unified
             foreach (string file in currentFiles)
             {
                 File.Delete(file);
-            }
-
-            if (Directory.Exists(Application.StartupPath + @"Game\widescreen"))
-            {
-                Directory.Move(Application.StartupPath + @"Game\widescreen", Application.StartupPath + @"Game\widescreen_u");
             }
 
             if (Directory.Exists(Application.StartupPath + @"Mods\SYW\Textures\field_origin"))

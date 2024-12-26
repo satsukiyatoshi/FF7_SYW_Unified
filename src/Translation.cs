@@ -185,6 +185,16 @@ namespace FF7_SYW_Unified
             {
                 folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\Mods\SYW\Ratio\1610\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
             }
+
+            if (FFNxRatio.SelectedIndex == 4)
+            {
+                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\Mods\SYW\Ratio\43uc\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
+
+            if (FFNxRatio.SelectedIndex == 5)
+            {
+                folderCopyAll(new DirectoryInfo(Application.StartupPath + @"\Mods\SYW\Ratio\169uc\"), new DirectoryInfo(Application.StartupPath + @"\Game"));
+            }
         }
 
 

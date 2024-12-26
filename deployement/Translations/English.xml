@@ -187,7 +187,7 @@ It takes a lot of power, if you notice slowdowns in game, it is recommended to d
 
 Textures of the game scenes reprocessed in HD by Cosmos.
 
-It's mandatory for real 16/9 option but can be used in original 4/3 too.
+It's mandatory for real 16/9 option but can be used in original 4:3 too.
 		
 Lots of optimizations by hand.
 
@@ -537,6 +537,8 @@ The selection is particularly useful when playing in windowed mode.
 • True 16:10 modifies the game engine to output a real 16:10 wherever possible. This is the ideal aspect ratio for the Steam Deck (experimental feature).
 
 • Uncropped 4:3 modifies the game engine to output a real 4:3 without top and bottom black bars (experimental feature).
+
+• Uncropped Stretched 16:9, same as Stretched 16:9 but without top and bottom black bars (experimental feature).
 		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
@@ -559,6 +561,10 @@ The selection is particularly useful when playing in windowed mode.
 	<control>
 		<name>uncropped43</name>
 		<text>Uncropped 4:3</text>
+	</control>
+	<control>
+		<name>uncropped169</name>
+		<text>Uncropped Stretched 16:9 (distorded)</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>

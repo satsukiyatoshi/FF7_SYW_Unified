@@ -494,6 +494,8 @@ Surtout utile en jeu fenêtré.</help>
 • 16/10 réel, modifie le moteur du jeu afin d'avoir un vrai 16/10 partout où cela est possible, idéal pour le steam deck. Option expérimentale.
 
 • 4/3 étendu, modifie le moteur du jeu afin d'avoir un vrai 4/3 sans bandes noires horizontales. Option expérimentale.
+
+• 16/9 étiré et étendu, comme le 16/9 étiré mais sans bandes noires horizontales. Option expérimentale.
 </help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
@@ -516,6 +518,10 @@ Surtout utile en jeu fenêtré.</help>
 	<control>
 		<name>uncropped43</name>
 		<text>4/3 étendu</text>
+	</control>
+	<control>
+		<name>uncropped169</name>
+		<text>16/9 étiré et étendu</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>

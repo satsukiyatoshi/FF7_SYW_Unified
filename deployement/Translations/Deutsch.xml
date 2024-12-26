@@ -539,6 +539,8 @@ Die Auswahl ist besonders nützlich beim Spielen im Fenstermodus.
 • Echtes 16:10 modifiziert die Spiel-Engine, um möglichst überall ein echtes 16:10 zu erzeugen. Dies ist das ideales Seitenverhältnis für das Steam Deck (experimentelle Funktion).
 
 • unbeschnitten 4:3 modifiziert die Spiel-Engine, um ein echtes 4:3 Bild ohne schwarze Balken oben und unten auszugeben (experimentelles Feature).
+
+• Gestrecktes und unbeschnitten 16:9 modifiziert die Spiel-Engine, um ein echtes 16:9 Bild ohne schwarze Balken oben und unten auszugeben (experimentelles Feature).
 		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
@@ -560,7 +562,11 @@ Die Auswahl ist besonders nützlich beim Spielen im Fenstermodus.
 	</control>
 	<control>
 		<name>uncropped43</name>
-		<text>Unbeschnitten 4/3</text>
+		<text>Unbeschnitten 4:3</text>
+	</control>
+	<control>
+		<name>uncropped169</name>
+		<text>Gestrecktes und unbeschnitten 16:9</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>
