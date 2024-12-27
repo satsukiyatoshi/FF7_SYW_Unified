@@ -45,9 +45,13 @@ namespace FF7_SYW_Unified
         {
             if (Globals.formSettingsLoaded == true)
             {
-                if (graphicsFields.Checked == false)
+                if (graphicsFields.Checked == false && graphicsLb.Checked == false)
                 {
                     graphicsAnimations.Checked = false;
+                }
+
+                if (graphicsFields.Checked == true && graphicsLb.Checked == true)
+                {
                     graphicsLb.Checked = false;
                 }
             }
@@ -59,7 +63,7 @@ namespace FF7_SYW_Unified
         {
             if (Globals.formSettingsLoaded == true)
             {
-                if (graphicsFields.Checked == false)
+                if (graphicsFields.Checked == false && graphicsLb.Checked == false)
                 {
                     graphicsAnimations.Checked = false;
                 }
@@ -72,12 +76,17 @@ namespace FF7_SYW_Unified
         {
             if (Globals.formSettingsLoaded == true)
             {
-                if (graphicsFields.Checked == false)
+                if (graphicsFields.Checked == false && graphicsLb.Checked == false)
                 {
-                    graphicsLb.Checked = false;
+                    graphicsAnimations.Checked = false;
                 }
 
-                if(graphicsLb.Checked == false && (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3))
+                if (graphicsFields.Checked == true && graphicsLb.Checked == true)
+                {
+                    graphicsFields.Checked = false;
+                }
+
+                if (graphicsLb.Checked == false && (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3))
                 {
                     FFNxRatio.SelectedIndex = 0;
                 }

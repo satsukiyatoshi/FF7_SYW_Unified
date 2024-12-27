@@ -145,12 +145,10 @@ De plus, le pack contient diverses options de configuration poussées et patchs 
 	</control>
 	<control>
 		<name>graphicsFields</name>
-		<text>Scènes du jeu HD</text>
+		<text>Scènes HD SYW</text>
 		<help>Textures des scènes du jeu retraitées en HD.
 		
 La base est traitée avec une IA ESRGAN.
-
-Les extensions en 16/9 ont été faite par Cosmos via son mod Limit Break.
 
 Beaucoup d'optimisations à la main.
 
@@ -167,8 +165,6 @@ Il est conseillé d'activer cette option.</help>
 		
 Par exemple, la cascade de la maison d'Aerith et pas mal d'effets de lumières.
 
-Les extensions en 16/9 ont été faite par Cosmos via son mod Limit Break.
-
 Cela prend pas mal de puissance, si vous constatez des ralentissements en jeu, il est conseillé de désactiver cette option.
 </help>
 		<author>Satsuki_Yatoshi et Aavock</author>
@@ -176,7 +172,7 @@ Cela prend pas mal de puissance, si vous constatez des ralentissements en jeu, i
 	</control>
 		<control>
 		<name>graphicsLb</name>
-		<text>Textures Limit Break</text>
+		<text>Scènes HD Cosmos</text>
 		<help>Textures Limit Break.
 		
 Textures des scènes du jeu retraitées en HD par Cosmos.

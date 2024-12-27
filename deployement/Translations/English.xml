@@ -146,14 +146,12 @@ In addition, the pack contains various advanced configuration options and variou
 	</control>
 	<control>
 		<name>graphicsFields</name>
-		<text>HD game scenes</text>
-		<help>HD game scenes:
+		<text>HD SYW fields</text>
+		<help>HD SYW fields:
 
-Textures of the game scenes reprocessed in HD.
+Textures of the game fields reprocessed in HD.
 		
 The database is processed with an ESRGan AI.
-
-The fields have been extented from 4:3 to 16:9 by Cosmos and his "Limit Break" mod.
 
 Lots of optimizations by hand.
 
@@ -173,8 +171,6 @@ Allow to restore the original animations of the scenes of the game with HD textu
 
 For example the waterfall at Aerith's house and a lot of light effects.
 
-The fields have been extented from 4:3 to 16:9 by Cosmos and his "Limit Break" mod.
-
 It takes a lot of power, if you notice slowdowns in game, it is recommended to disable this option.
 		</help>
 		<author>Satsuki_Yatoshi and Aavock</author>
@@ -182,10 +178,10 @@ It takes a lot of power, if you notice slowdowns in game, it is recommended to d
 	</control>
 		<control>
 		<name>graphicsLb</name>
-		<text>Limit Break textures</text>
-		<help>Limit Break textures:
+		<text>HD Cosmos fields</text>
+		<help>Limit Break fields:
 
-Textures of the game scenes reprocessed in HD by Cosmos.
+Textures of the game fields reprocessed in HD by Cosmos.
 
 It's mandatory for real 16/9 option but can be used in original 4:3 too.
 		

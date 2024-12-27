@@ -697,9 +697,9 @@
             graphicsLb.BackColor = Color.FromArgb(89, 98, 111);
             graphicsLb.Cursor = Cursors.Hand;
             graphicsLb.Font = new Font("Roboto", 9.5F);
-            graphicsLb.Location = new Point(341, 22);
+            graphicsLb.Location = new Point(166, 22);
             graphicsLb.Name = "graphicsLb";
-            graphicsLb.Size = new Size(164, 19);
+            graphicsLb.Size = new Size(172, 19);
             graphicsLb.TabIndex = 43;
             graphicsLb.Text = "Textures Limit Break";
             graphicsLb.UseVisualStyleBackColor = false;
@@ -1030,9 +1030,9 @@
             graphicsAnimations.BackColor = Color.FromArgb(89, 98, 111);
             graphicsAnimations.Cursor = Cursors.Hand;
             graphicsAnimations.Font = new Font("Roboto", 9.5F);
-            graphicsAnimations.Location = new Point(185, 22);
+            graphicsAnimations.Location = new Point(341, 22);
             graphicsAnimations.Name = "graphicsAnimations";
-            graphicsAnimations.Size = new Size(153, 19);
+            graphicsAnimations.Size = new Size(164, 19);
             graphicsAnimations.TabIndex = 2;
             graphicsAnimations.Text = "Animations avancées";
             graphicsAnimations.UseVisualStyleBackColor = false;
@@ -1059,7 +1059,7 @@
             graphicsFields.Font = new Font("Roboto", 9.5F);
             graphicsFields.Location = new Point(11, 22);
             graphicsFields.Name = "graphicsFields";
-            graphicsFields.Size = new Size(171, 19);
+            graphicsFields.Size = new Size(152, 19);
             graphicsFields.TabIndex = 0;
             graphicsFields.Text = "Scènes du jeu HD";
             graphicsFields.UseVisualStyleBackColor = false;
@@ -3343,7 +3343,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(33, 40, 50);
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1127, 710);
+            ClientSize = new Size(1129, 710);
             Controls.Add(gameplayComboPatchs);
             Controls.Add(menuControlsPanel);
             Controls.Add(menuLaunchGamePanel);

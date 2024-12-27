@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Text.RegularExpressions;
 
 namespace FF7_SYW_Unified
 {
@@ -363,7 +364,6 @@ namespace FF7_SYW_Unified
         }
 
 
-
         private void loadingLog(string modDescription)
         {
             translateCtrl(loadingWaitDetails);
@@ -391,7 +391,7 @@ namespace FF7_SYW_Unified
         {
 
             loadingLog(graphicsFields.Text);
-            if (!graphicsFields.Checked)
+            if (!graphicsFields.Checked && !graphicsLb.Checked)
             {
                 disableFolder(@"mods\SYW\Textures\char");
                 disableFolder(@"mods\SYW\Textures\field");
@@ -456,7 +456,7 @@ namespace FF7_SYW_Unified
 
             //disable some texture files if no animation used to avoid bug in certains fields
             loadingLog(graphicsAnimations.Text);
-            if (!graphicsAnimations.Checked && graphicsFields.Checked)
+            if (!graphicsAnimations.Checked && (graphicsFields.Checked || graphicsLb.Checked))
             {
                 string file = "";
 
