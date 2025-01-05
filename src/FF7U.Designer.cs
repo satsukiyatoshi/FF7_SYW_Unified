@@ -2375,6 +2375,7 @@
             FFNxRatio.Size = new Size(204, 23);
             FFNxRatio.TabIndex = 0;
             FFNxRatio.SelectedIndexChanged += setMousePos;
+            FFNxRatio.SelectedIndexChanged += checkAr;
             FFNxRatio.Click += getMousePos;
             // 
             // FFNxGroupScreen

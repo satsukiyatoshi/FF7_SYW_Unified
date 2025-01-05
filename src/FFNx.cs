@@ -290,8 +290,8 @@ namespace FF7_SYW_Unified
             {
                 if (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3)
                 {
-                    graphicsFields.Checked = false;
                     graphicsLb.Checked = true;
+                    graphicsFields.Checked = false;
                 }
             }
         }

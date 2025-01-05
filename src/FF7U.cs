@@ -186,6 +186,8 @@ namespace FF7_SYW_Unified
 
             Globals.formSettingsLoaded = true;
 
+            checkAr(sender, e);
+
             //if "direct" is used as argument, then launch the game without any changes
             if (Globals.directLaunch == true)
             {
