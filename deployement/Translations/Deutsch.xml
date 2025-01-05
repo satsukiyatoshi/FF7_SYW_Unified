@@ -146,14 +146,12 @@ Darüber hinaus enthält das Paket verschiedene erweiterte Konfigurationsoptione
 	</control>
 	<control>
 		<name>graphicsFields</name>
-		<text>HD-Spielszenen</text>
-		<help>HD-Spielszenen:
+		<text>SYW HD-Spielszenen</text>
+		<help>SYW HD-Spielszenen:
 
 Texturen der Spielszenen in HD neu verarbeitet.
 
 Die Datenbank ist mit einer ESRGan-KI verarbeitet worden.
-
-Die Felder wurden von Cosmos und seinem „Limit Break“-Mod von 4:3 auf 16:9 erweitert.
 
 Viele Optimierungen von Hand.
 
@@ -161,7 +159,7 @@ Dadurch werden die Texturen des Originalspiels erheblich verbessert.
 
 Es wird empfohlen, diese Option zu aktivieren.
 		</help>
-		<author>Satsuki_Yatoshi, Aavock und Cosmos</author>
+		<author>Satsuki_Yatoshi und Aavock</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
 	<control>
@@ -173,13 +171,34 @@ Ermöglicht die Wiederherstellung der Originalanimationen der Spielszenen mit HD
 
 Zum Beispiel der Wasserfall bei Aeriths Haus und jede Menge Lichteffekte.
 
-Die Felder wurden von Cosmos und seinem „Limit Break“-Mod von 4:3 auf 16:9 erweitert.
-
 Es verbraucht viel Leistung. Wenn Sie im Spiel eine Verlangsamung bemerken, wird empfohlen, diese Option zu deaktivieren.
 		</help>
-		<author>Satsuki_Yatoshi, Aavock und Cosmos</author>
+		<author>Satsuki_Yatoshi und Aavock</author>
 		<url>https://ff7.fr/forum/index.php?page=post&#38;ids=462605</url>
 	</control>
+	
+		<control>
+		<name>graphicsLb</name>
+		<text>Cosmos HD-Spielszenen</text>
+		<help>Limit Break Spielszenen:
+
+Texturen der Spielszenerien in HD von Cosmos neu verarbeitet.
+
+Dies ist obligatorisch für die echte 16:9-Option, kann jedoch auch im ursprünglichen 4:3-Format verwendet werden.
+
+Viele Optimierungen wurden manuell durchgeführt.
+
+Dies verbessert die Texturen des Originalspiels erheblich.
+
+Im Vergleich zu den ursprünglichen SYW-HD-Texturen neigen sie dazu, mehr Details wiederherzustellen, sind jedoch weniger glatt und weniger konsistent von einem Bereich zum anderen.
+
+Welche Version besser aussieht, hängt ganz von Ihnen ab. Probieren Sie beide aus und verwenden Sie die, die Ihnen am besten gefällt.
+		</help>
+		<author>Cosmos</author>
+		<url>https://www.nexusmods.com/finalfantasy7/mods/104</url>
+	</control>
+	
+	
 	<control>
 		<name>graphicsBattles</name>
 		<text>HD-Schlachtszenen</text>
@@ -514,6 +533,10 @@ Die Auswahl ist besonders nützlich beim Spielen im Fenstermodus.
 • Echtes 16:9 modifiziert die Spiel-Engine, um möglichst überall ein echtes 16:9 zu erzeugen. Einige Fehler können auftreten (nicht blockierend).
 
 • Echtes 16:10 modifiziert die Spiel-Engine, um möglichst überall ein echtes 16:10 zu erzeugen. Dies ist das ideales Seitenverhältnis für das Steam Deck (experimentelle Funktion).
+
+• unbeschnitten 4:3 modifiziert die Spiel-Engine, um ein echtes 4:3 Bild ohne schwarze Balken oben und unten auszugeben (experimentelles Feature).
+
+• Gestrecktes und unbeschnitten 16:9 modifiziert die Spiel-Engine, um ein echtes 16:9 Bild ohne schwarze Balken oben und unten auszugeben (experimentelles Feature).
 		</help>
 		<url>https://github.com/julianxhokaxhiu/FFNx</url>
 	</control>
@@ -532,6 +555,14 @@ Die Auswahl ist besonders nützlich beim Spielen im Fenstermodus.
 	<control>
 		<name>realwidescreendeck</name>
 		<text>Echtes 16:10 (Beta)</text>
+	</control>
+	<control>
+		<name>uncropped43</name>
+		<text>Unbeschnitten 4:3</text>
+	</control>
+	<control>
+		<name>uncropped169</name>
+		<text>Gestrecktes und unbeschnitten 16:9</text>
 	</control>
 	<control>
 		<name>FFNxGroupIR</name>

@@ -94,6 +94,8 @@ namespace FF7_SYW_Unified
             FFNxRatio.Items.Add(translate("strechedwidescreen", Globals.translateUI));
             FFNxRatio.Items.Add(translate("realwidescreen", Globals.translateUI));
             FFNxRatio.Items.Add(translate("realwidescreendeck", Globals.translateUI));
+            FFNxRatio.Items.Add(translate("uncropped43", Globals.translateUI));
+            FFNxRatio.Items.Add(translate("uncropped169", Globals.translateUI));
             FFNxRatio.Text=(translate("ogscreen", Globals.translateUI));
 
             FFNxIR.Items.Add(translate("auto", Globals.translateUI));
@@ -282,6 +284,20 @@ namespace FF7_SYW_Unified
 
 
 
+        private void checkAr(object sender, EventArgs e)
+        {
+            if (Globals.formSettingsLoaded == true)
+            {
+                if (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3)
+                {
+                    graphicsLb.Checked = true;
+                    graphicsFields.Checked = false;
+                }
+            }
+        }
+
+
+
         private void applyPatchs()
         {
 
@@ -334,9 +350,8 @@ namespace FF7_SYW_Unified
                 folderModCopy(Application.StartupPath + @"mods\SYW\Lighting");
             }
 
-            if (FFNxRatio.SelectedIndex == 2 || FFNxRatio.SelectedIndex == 3)
+            if (graphicsLb.Checked)
             {
-                Directory.Move(Application.StartupPath + @"Game\widescreen_u", Application.StartupPath + @"Game\widescreen");
                 Directory.Move(Application.StartupPath + @"Mods\SYW\Textures\field", Application.StartupPath + @"Mods\SYW\Textures\field_origin");
                 Directory.Move(Application.StartupPath + @"Mods\SYW\Textures\field_limitb", Application.StartupPath + @"Mods\SYW\Textures\field");
                 folderModCopy(Application.StartupPath + @"mods\SYW\LimitBreak");
@@ -395,13 +410,28 @@ namespace FF7_SYW_Unified
             if (graphicsCosmosGaia.Checked && FFNxAnalogController.Checked)
             {
                 twx.WriteLine("external_mesh_path = " + quote + @"..\Mods\SYW\Gaia\mesh" + quote);
-                twx.WriteLine("enable_worldmap_external_mesh = true"); 
+                twx.WriteLine("enable_worldmap_external_mesh = true");
             }
             if (FFNxScreen.SelectedIndex == 0) { twx.WriteLine("fullscreen = true"); }
             if (FFNxScreen.SelectedIndex == 1) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = false"); }
             if (FFNxScreen.SelectedIndex == 2) { twx.WriteLine("fullscreen = false"); twx.WriteLine("borderless = true"); }
             if (FFNxResolution.SelectedIndex != 0) { twx.WriteLine("window_size_x = " + FFNxResolution.Text.Substring(0, FFNxResolution.Text.LastIndexOf("x"))); twx.WriteLine("window_size_y = " + FFNxResolution.Text.Substring(FFNxResolution.Text.LastIndexOf("x") + 1)); }
-            twx.WriteLine("aspect_ratio = " + FFNxRatio.SelectedIndex.ToString());
+            if (FFNxRatio.SelectedIndex < 4)
+            {
+                twx.WriteLine("aspect_ratio = " + FFNxRatio.SelectedIndex.ToString());
+            } else if (FFNxRatio.SelectedIndex == 4)
+            {
+                twx.WriteLine("aspect_ratio = 0");
+            } else if (FFNxRatio.SelectedIndex == 5)
+            {
+                twx.WriteLine("aspect_ratio = 1");
+            }
+            if (FFNxRatio.SelectedIndex < 2)
+            {
+                twx.WriteLine("enable_uncrop = false");
+            } else {
+                twx.WriteLine("enable_uncrop = true");
+            }
             if (FFNxIR.SelectedIndex != 0) { twx.WriteLine("internal_resolution_scale = " + FFNxIR.Text.Substring(1)); }
             if (FFNxAA.SelectedIndex != 0) { twx.WriteLine("enable_antialiasing = " + FFNxAA.Text.Substring(1)); }
             twx.WriteLine("external_audio_number_of_channels = " + FFNxAudioChannels.SelectedIndex.ToString());

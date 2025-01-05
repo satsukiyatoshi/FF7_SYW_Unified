@@ -66,7 +66,7 @@ namespace FF7_SYW_Unified
                 if (p.MainModule.FileName.StartsWith(FilePath, StringComparison.InvariantCultureIgnoreCase))
                 {
                     total_run++;
-                    if(total_run > 1) { break; }
+                    if (total_run > 1) { break; }
                 }
             }
 
@@ -186,6 +186,8 @@ namespace FF7_SYW_Unified
 
             Globals.formSettingsLoaded = true;
 
+            checkAr(sender, e);
+
             //if "direct" is used as argument, then launch the game without any changes
             if (Globals.directLaunch == true)
             {
@@ -298,6 +300,7 @@ namespace FF7_SYW_Unified
             playAudioClose();
             Process.GetCurrentProcess().Kill();
         }
+
     }
 
 }
