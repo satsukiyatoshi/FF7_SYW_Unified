@@ -392,6 +392,25 @@ namespace FF7_SYW_Unified
         //generate FFNx config file
         private void ffnxTomlGenerate()
         {
+            string ambiantConfig = Application.StartupPath + @"\Game\current\ambiants\config.toml";
+
+            if (File.Exists(ambiantConfig))
+            {
+                string[] lines = File.ReadAllLines(ambiantConfig);
+                List<string> modifiedLines = new List<string>();
+
+                foreach (string line in lines)
+                {
+                    modifiedLines.Add(line);
+                    if (line.Trim().StartsWith("fade_out"))
+                    {
+                        modifiedLines.Add("volume = " + soundsAmbientsVol.Text.Replace("%", ""));
+                    }
+                }
+
+                File.WriteAllLines(ambiantConfig, modifiedLines);
+            }
+
             loadingLog(translate("ffnxConfigFile", Globals.translateUI));
 
             string soundsFolder;

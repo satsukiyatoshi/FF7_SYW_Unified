@@ -160,6 +160,15 @@ namespace FF7_SYW_Unified
                 langGame.Items.Add("English");
                 langGame.Items.Add("Deutsch");
                 langGame.Items.Add("Español");
+
+                soundsAmbientsVol.Items.Clear();
+
+                for (int i = 10; i <= 100; i += 10)
+                {
+                    soundsAmbientsVol.Items.Add(i + "%");
+                }
+
+                soundsAmbientsVol.Text = "100%";
             }
 
             catch
@@ -300,7 +309,6 @@ namespace FF7_SYW_Unified
             playAudioClose();
             Process.GetCurrentProcess().Kill();
         }
-
     }
 
 }

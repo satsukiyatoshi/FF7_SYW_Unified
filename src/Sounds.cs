@@ -154,6 +154,7 @@ namespace FF7_SYW_Unified
         private void soundFrame4_MouseLeave(object sender, EventArgs e){ playAudioClose(); }
         private void soundsMusicsChange(object sender, EventArgs e) { modShowCustom(soundsMusics, @"audio\musics", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsAmbiantChange(object sender, EventArgs e) {modShowCustom(soundsAmbients, @"audio\ambiants", soundsHelp, soundsHelpAuthor, soundPrevPic); }
+        private void soundsAmbiantVolChange(object sender, EventArgs e) {modShowCustom(soundsAmbients, @"audio\ambiants", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsSfxChange(object sender, EventArgs e) { modShowCustom(soundsSfx, @"audio\sfxs", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsFMVChange(object sender, EventArgs e) { modShowCustom(soundsFMV, @"audio\movies", soundsHelp, soundsHelpAuthor, soundPrevPic); }
         private void soundsVoicesChange(object sender, EventArgs e) { modShowCustom(soundsVoices, @"audio\voices", soundsHelp, soundsHelpAuthor, soundPrevPic); }
