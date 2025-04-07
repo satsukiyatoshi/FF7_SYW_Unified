@@ -102,6 +102,8 @@
             soundsHelp = new TextBox();
             soundsHelpAuthor = new Label();
             soundFrame3 = new GroupBox();
+            soundsGroupAmbientsVol = new GroupBox();
+            soundsAmbientsVol = new ComboBox();
             soundsGroupVoices = new GroupBox();
             soundsVoices = new ComboBox();
             soundsGroupFMV = new GroupBox();
@@ -297,6 +299,7 @@
             soundFrame4.SuspendLayout();
             soundFrame2.SuspendLayout();
             soundFrame3.SuspendLayout();
+            soundsGroupAmbientsVol.SuspendLayout();
             soundsGroupVoices.SuspendLayout();
             soundsGroupFMV.SuspendLayout();
             soundsGroupAmbients.SuspendLayout();
@@ -360,7 +363,7 @@
             // ambiantPrev
             // 
             ambiantPrev.Image = (Image)resources.GetObject("ambiantPrev.Image");
-            ambiantPrev.Location = new Point(330, 20);
+            ambiantPrev.Location = new Point(226, 20);
             ambiantPrev.Name = "ambiantPrev";
             ambiantPrev.Size = new Size(28, 28);
             ambiantPrev.SizeMode = PictureBoxSizeMode.Zoom;
@@ -1092,7 +1095,7 @@
             menuGraphicPanel.Controls.Add(graphicFrame2);
             menuGraphicPanel.Controls.Add(graphicFrame1);
             menuGraphicPanel.Controls.Add(graphicFrame3);
-            menuGraphicPanel.Location = new Point(327, 0);
+            menuGraphicPanel.Location = new Point(327, 16000);
             menuGraphicPanel.Name = "menuGraphicPanel";
             menuGraphicPanel.Size = new Size(795, 703);
             menuGraphicPanel.TabIndex = 10;
@@ -1262,7 +1265,6 @@
             soundsList.Font = new Font("Roboto", 9.5F);
             soundsList.ForeColor = Color.FromArgb(224, 224, 224);
             soundsList.FormattingEnabled = true;
-            soundsList.ItemHeight = 15;
             soundsList.Location = new Point(11, 172);
             soundsList.Name = "soundsList";
             soundsList.Size = new Size(240, 167);
@@ -1311,6 +1313,7 @@
             // 
             // soundFrame3
             // 
+            soundFrame3.Controls.Add(soundsGroupAmbientsVol);
             soundFrame3.Controls.Add(soundsGroupVoices);
             soundFrame3.Controls.Add(soundsGroupFMV);
             soundFrame3.Controls.Add(soundsGroupAmbients);
@@ -1324,6 +1327,33 @@
             soundFrame3.TabIndex = 6;
             soundFrame3.TabStop = false;
             soundFrame3.Text = "Mods audio";
+            // 
+            // soundsGroupAmbientsVol
+            // 
+            soundsGroupAmbientsVol.BackColor = Color.FromArgb(89, 98, 111);
+            soundsGroupAmbientsVol.Controls.Add(soundsAmbientsVol);
+            soundsGroupAmbientsVol.Font = new Font("Roboto", 9.5F);
+            soundsGroupAmbientsVol.ForeColor = Color.FromArgb(224, 224, 224);
+            soundsGroupAmbientsVol.Location = new Point(281, 84);
+            soundsGroupAmbientsVol.Name = "soundsGroupAmbientsVol";
+            soundsGroupAmbientsVol.Size = new Size(95, 59);
+            soundsGroupAmbientsVol.TabIndex = 18;
+            soundsGroupAmbientsVol.TabStop = false;
+            soundsGroupAmbientsVol.Text = "Volume";
+            soundsGroupAmbientsVol.MouseEnter += soundsAmbiantVolChange;
+            // 
+            // soundsAmbientsVol
+            // 
+            soundsAmbientsVol.BackColor = Color.FromArgb(53, 60, 70);
+            soundsAmbientsVol.Cursor = Cursors.Hand;
+            soundsAmbientsVol.DropDownStyle = ComboBoxStyle.DropDownList;
+            soundsAmbientsVol.ForeColor = Color.White;
+            soundsAmbientsVol.FormattingEnabled = true;
+            soundsAmbientsVol.Location = new Point(9, 23);
+            soundsAmbientsVol.Name = "soundsAmbientsVol";
+            soundsAmbientsVol.Size = new Size(79, 23);
+            soundsAmbientsVol.TabIndex = 0;
+            soundsAmbientsVol.MouseEnter += soundsAmbiantVolChange;
             // 
             // soundsGroupVoices
             // 
@@ -1392,7 +1422,7 @@
             soundsGroupAmbients.ForeColor = Color.FromArgb(224, 224, 224);
             soundsGroupAmbients.Location = new Point(11, 84);
             soundsGroupAmbients.Name = "soundsGroupAmbients";
-            soundsGroupAmbients.Size = new Size(365, 59);
+            soundsGroupAmbients.Size = new Size(264, 59);
             soundsGroupAmbients.TabIndex = 15;
             soundsGroupAmbients.TabStop = false;
             soundsGroupAmbients.Text = "Sons d'ambiance du jeu";
@@ -1407,7 +1437,7 @@
             soundsAmbients.FormattingEnabled = true;
             soundsAmbients.Location = new Point(9, 23);
             soundsAmbients.Name = "soundsAmbients";
-            soundsAmbients.Size = new Size(315, 23);
+            soundsAmbients.Size = new Size(211, 23);
             soundsAmbients.TabIndex = 0;
             soundsAmbients.SelectedIndexChanged += soundsAmbiantChange;
             soundsAmbients.Click += getMousePos;
@@ -1476,7 +1506,7 @@
             menuGameplayPanel.Controls.Add(gameplayFrame5);
             menuGameplayPanel.Controls.Add(gameplayFrame1);
             menuGameplayPanel.Controls.Add(gameplayFrame3);
-            menuGameplayPanel.Location = new Point(327, 0);
+            menuGameplayPanel.Location = new Point(327, 16000);
             menuGameplayPanel.Name = "menuGameplayPanel";
             menuGameplayPanel.Size = new Size(795, 703);
             menuGameplayPanel.TabIndex = 13;
@@ -1709,7 +1739,7 @@
             menuFFNxPanel.Controls.Add(FFNxFrame2);
             menuFFNxPanel.Controls.Add(FFNxFrame1);
             menuFFNxPanel.Controls.Add(FFNxFrame3);
-            menuFFNxPanel.Location = new Point(327, 0);
+            menuFFNxPanel.Location = new Point(327, 16000);
             menuFFNxPanel.Name = "menuFFNxPanel";
             menuFFNxPanel.Size = new Size(795, 703);
             menuFFNxPanel.TabIndex = 14;
@@ -2374,7 +2404,6 @@
             FFNxRatio.Name = "FFNxRatio";
             FFNxRatio.Size = new Size(204, 23);
             FFNxRatio.TabIndex = 0;
-            FFNxRatio.SelectedIndexChanged += setMousePos;
             FFNxRatio.SelectedIndexChanged += checkAr;
             FFNxRatio.Click += getMousePos;
             // 
@@ -2504,7 +2533,7 @@
             // menuHelpPanel
             // 
             menuHelpPanel.Controls.Add(HelpFrame2);
-            menuHelpPanel.Location = new Point(327, 0);
+            menuHelpPanel.Location = new Point(327, 16000);
             menuHelpPanel.Name = "menuHelpPanel";
             menuHelpPanel.Size = new Size(795, 703);
             menuHelpPanel.TabIndex = 15;
@@ -2580,7 +2609,7 @@
             // menuLaunchGamePanel
             // 
             menuLaunchGamePanel.Controls.Add(groupBox2);
-            menuLaunchGamePanel.Location = new Point(327, 0);
+            menuLaunchGamePanel.Location = new Point(327, 16000);
             menuLaunchGamePanel.Name = "menuLaunchGamePanel";
             menuLaunchGamePanel.Size = new Size(795, 703);
             menuLaunchGamePanel.TabIndex = 16;
@@ -2641,7 +2670,7 @@
             menuControlsPanel.Controls.Add(controlsFrame2);
             menuControlsPanel.Controls.Add(controlsFrame3);
             menuControlsPanel.Controls.Add(controlsFrame1);
-            menuControlsPanel.Location = new Point(327, 0);
+            menuControlsPanel.Location = new Point(327, 16000);
             menuControlsPanel.Name = "menuControlsPanel";
             menuControlsPanel.Size = new Size(795, 703);
             menuControlsPanel.TabIndex = 41;
@@ -3402,6 +3431,7 @@
             soundFrame2.ResumeLayout(false);
             soundFrame2.PerformLayout();
             soundFrame3.ResumeLayout(false);
+            soundsGroupAmbientsVol.ResumeLayout(false);
             soundsGroupVoices.ResumeLayout(false);
             soundsGroupFMV.ResumeLayout(false);
             soundsGroupAmbients.ResumeLayout(false);
@@ -3680,5 +3710,7 @@
         private CheckBox graphicsCosmosGaia;
         private Label makeDebugPack;
         private CheckBox graphicsLb;
+        private GroupBox soundsGroupAmbientsVol;
+        private ComboBox soundsAmbientsVol;
     }
 }
